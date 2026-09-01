@@ -19,15 +19,16 @@ env:
   PIPER_VOICE: vi_VN-vais1000-medium
 
 jobs:
-  voice-smoke:
-    name: Validate Vietnamese neural voice
+  repair-and-publish:
+    name: Repair MN113..MN120 and publish 152/152
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+
       - name: Install Piper, Vietnamese voice and FFmpeg
         run: |
           python -m pip install --upgrade pip
@@ -35,87 +36,20 @@ jobs:
           python -m piper.download_voices "$PIPER_VOICE"
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg
-      - name: Render and validate Vietnamese sample
-        run: |
-          mkdir -p /tmp/voice-test
-          printf '%s\n' 'Đây là bài kiểm tra giọng đọc tiếng Việt của Thư viện Năm Đại Tạng Kinh Nikāya. Giọng đọc phải rõ ràng, ổn định, và được tạo một lần trên máy chủ.' \
-            | piper --model "$PIPER_VOICE" --sentence-silence 0.18 --output_file /tmp/voice-test/test.wav
-          ffmpeg -hide_banner -loglevel error -y -i /tmp/voice-test/test.wav -ac 1 -ar 22050 -codec:a libmp3lame -b:a 48k /tmp/voice-test/test.mp3
-          test "$(wc -c < /tmp/voice-test/test.mp3)" -gt 20000
-          DURATION="$(ffprobe -v error -show_entries format=duration -of default=nw=1:nk=1 /tmp/voice-test/test.mp3)"
-          python - "$DURATION" <<'PY'
-          import sys
-          duration=float(sys.argv[1])
-          assert 3 < duration < 120, duration
-          print(f'Voice smoke OK: {duration:.2f}s')
-          PY
 
-  prepare-release:
-    name: Prepare draft audio release
-    needs: voice-smoke
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Create or reuse draft release
-        env:
-          GH_TOKEN: ${{ github.token }}
+      - name: Render only the missing MN113..MN120 shard
         run: |
-          if gh release view "$AUDIO_TAG" >/dev/null 2>&1; then
-            echo "Reusing release $AUDIO_TAG"
-          else
-            gh release create "$AUDIO_TAG" \
-              --draft \
-              --target "$GITHUB_SHA" \
-              --title 'Trung Bộ Kinh · 152 MP3 tiếng Việt · v1' \
-              --notes 'MP3 dựng sẵn cho toàn bộ 152 bài Majjhima Nikāya. Văn bản tiếng Việt lấy từ bản đang dùng trên SuttaCentral; giọng neural Piper vi_VN-vais1000-medium. File được dựng một lần và dùng chung cho mọi trình duyệt/hệ điều hành.'
-          fi
+          python scripts/build_mn_audio.py --start 113 --end 120 --out dist/mn-audio
 
-  render:
-    name: Render MN shard ${{ matrix.shard }}
-    needs: prepare-release
-    runs-on: ubuntu-latest
-    timeout-minutes: 330
-    strategy:
-      fail-fast: false
-      max-parallel: 10
-      matrix:
-        shard: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - name: Install Piper, Vietnamese voice and FFmpeg
-        run: |
-          python -m pip install --upgrade pip
-          pip install piper-tts==1.7.0
-          python -m piper.download_voices "$PIPER_VOICE"
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg
-      - name: Calculate shard range
-        id: range
-        shell: bash
-        run: |
-          START=$(( ${{ matrix.shard }} * 8 + 1 ))
-          END=$(( START + 7 ))
-          if [ "$END" -gt 152 ]; then END=152; fi
-          echo "start=$START" >> "$GITHUB_OUTPUT"
-          echo "end=$END" >> "$GITHUB_OUTPUT"
-          echo "Rendering MN $START..$END"
-      - name: Render MP3 batch
-        run: |
-          python scripts/build_mn_audio.py \
-            --start '${{ steps.range.outputs.start }}' \
-            --end '${{ steps.range.outputs.end }}' \
-            --out dist/mn-audio
-      - name: Validate every MP3 in batch
+      - name: Validate repaired MP3 files
         shell: bash
         run: |
           set -euo pipefail
-          EXPECTED=$(( ${{ steps.range.outputs.end }} - ${{ steps.range.outputs.start }} + 1 ))
           ACTUAL=$(find dist/mn-audio -maxdepth 1 -name 'mn*.mp3' | wc -l)
-          test "$ACTUAL" -eq "$EXPECTED"
-          for file in dist/mn-audio/mn*.mp3; do
+          test "$ACTUAL" -eq 8
+          for i in $(seq 113 120); do
+            file="dist/mn-audio/mn${i}.mp3"
+            test -f "$file"
             test "$(wc -c < "$file")" -gt 100000
             DURATION=$(ffprobe -v error -show_entries format=duration -of default=nw=1:nk=1 "$file")
             python - "$file" "$DURATION" <<'PY'
@@ -125,33 +59,35 @@ jobs:
           print(f'validated {path}: {duration/60:.1f} min')
           PY
           done
-      - name: Upload batch directly to draft release
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          for file in dist/mn-audio/mn*.mp3; do
-            echo "Uploading $file"
-            gh release upload "$AUDIO_TAG" "$file" --clobber
-          done
-      - name: Save tiny metadata artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: mn-meta-${{ matrix.shard }}
-          path: dist/mn-audio/*.json
-          retention-days: 14
-          compression-level: 9
 
-  finalize:
-    name: Verify all 152 and publish release
-    needs: render
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Verify release contains exactly MN1..MN152
+      - name: Find existing draft release
+        id: release
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          RELEASE_ID=$(gh api "repos/$GITHUB_REPOSITORY/releases/tags/$AUDIO_TAG" --jq '.id')
+          set -euo pipefail
+          RELEASE_ID=$(gh api "repos/$GITHUB_REPOSITORY/releases?per_page=100" \
+            | jq -r --arg tag "$AUDIO_TAG" '.[] | select(.tag_name==$tag) | .id' \
+            | head -n1)
+          test -n "$RELEASE_ID"
+          echo "release_id=$RELEASE_ID" >> "$GITHUB_OUTPUT"
+          echo "Found release id=$RELEASE_ID"
+
+      - name: Upload only MN113..MN120 to existing draft release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          for i in $(seq 113 120); do
+            gh release upload "$AUDIO_TAG" "dist/mn-audio/mn${i}.mp3" --clobber
+          done
+
+      - name: Verify exact MN1..MN152 set
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_ID: ${{ steps.release.outputs.release_id }}
+        run: |
+          set -euo pipefail
           gh api "repos/$GITHUB_REPOSITORY/releases/$RELEASE_ID/assets?per_page=100&page=1" > /tmp/assets1.json
           gh api "repos/$GITHUB_REPOSITORY/releases/$RELEASE_ID/assets?per_page=100&page=2" > /tmp/assets2.json
           jq -s 'add' /tmp/assets1.json /tmp/assets2.json > /tmp/assets.json
@@ -165,8 +101,9 @@ jobs:
           print('MP3 assets:',len(names))
           if missing: print('Missing:',missing)
           if extra: print('Extra:',extra)
-          assert names==expected, f'expected 152 exact MN assets, got {len(names)}'
+          assert names==expected, f'expected exact MN1..MN152; got {len(names)} MP3 assets'
           PY
+
       - name: Build public audio manifest
         run: |
           python - <<'PY'
@@ -188,10 +125,14 @@ jobs:
           with open('mn-audio-manifest.json','w',encoding='utf-8') as f:
               json.dump({'version':'1','collection':'MN','language':'vi','count':152,'items':items},f,ensure_ascii=False,indent=2)
           PY
-      - name: Upload manifest and publish release
+
+      - name: Upload manifest and publish verified release
         env:
           GH_TOKEN: ${{ github.token }}
+          RELEASE_ID: ${{ steps.release.outputs.release_id }}
         run: |
+          set -euo pipefail
           gh release upload "$AUDIO_TAG" mn-audio-manifest.json --clobber
-          gh release edit "$AUDIO_TAG" --draft=false
+          gh api --method PATCH "repos/$GITHUB_REPOSITORY/releases/$RELEASE_ID" -f draft=false >/dev/null
+          gh api "repos/$GITHUB_REPOSITORY/releases/tags/$AUDIO_TAG" --jq '{id,tag_name,draft,assets:(.assets|length)}'
           echo 'FULL MN AUDIO RELEASE COMPLETE: 152/152' >> "$GITHUB_STEP_SUMMARY"
