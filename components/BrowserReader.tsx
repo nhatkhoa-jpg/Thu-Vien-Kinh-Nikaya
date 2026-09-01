@@ -123,6 +123,21 @@ export default function BrowserReader({text,locale}:{text:string;locale:string})
     if(update){setState('idle');setMessage(vi?'Đã dừng.':'Stopped.');}
   }
 
+  function stopAndRemember(){
+    if(state==='speaking'||state==='paused'){
+      if(activeEngine==='library'&&audioRef.current)audioRef.current.pause();
+      else if(activeEngine==='device'&&typeof window!=='undefined'&&'speechSynthesis' in window)window.speechSynthesis.pause();
+      setState('paused');
+      setMessage(vi?'Đã dừng tại vị trí hiện tại. Bấm Đọc tiếp để tiếp tục.':'Stopped at the current position. Tap Resume to continue.');
+      return;
+    }
+    if(state==='loading'){
+      stopAll(true);
+      return;
+    }
+    if(state==='idle')setMessage(vi?'Chưa có nội dung đang phát.':'Nothing is currently playing.');
+  }
+
   function finish(){
     activeRef.current=false;prefetchRef.current=null;clearAudio();setActiveEngine(null);setState('idle');setMessage(vi?'Đã đọc xong.':'Finished.');
   }
@@ -222,7 +237,7 @@ export default function BrowserReader({text,locale}:{text:string;locale:string})
   return <div className="browserReader compactTts">
     <div className="ttsPrimary">
       {!active?<button className="ttsMain" onClick={start}><Play size={17} fill="currentColor"/>{vi?'Nghe':'Listen'}</button>:<button className="ttsMain" onClick={togglePause}>{state==='paused'?<Play size={17}/>:<Pause size={17}/>} {state==='paused'?(vi?'Đọc tiếp':'Resume'):(state==='loading'?(vi?'Đang chuẩn bị…':'Preparing…'):(vi?'Tạm dừng':'Pause'))}</button>}
-      <button className="ttsIcon" onClick={()=>stopAll(true)} title={vi?'Dừng':'Stop'}><Square size={16}/></button>
+      <button className="ttsIcon" onClick={stopAndRemember} title={vi?'Dừng':'Stop'}><Square size={16}/></button>
       <button className="ttsIcon" onClick={restart} title={vi?'Đọc lại':'Restart'}><RotateCcw size={16}/></button>
     </div>
     <div className="ttsSettings compactSettings">
