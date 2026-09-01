@@ -38,7 +38,7 @@ jobs:
           curl --fail --silent http://127.0.0.1:3000/vi/library/mn-21-kakacupama -o /tmp/mn21.html
           grep -q 'compactEssentials' /tmp/mn21.html
           grep -q 'essentialDisclosure' /tmp/mn21.html
-          grep -q 'V4.9' /tmp/mn21.html
+          grep -q 'V4.10' /tmp/mn21.html
           curl --fail --silent http://127.0.0.1:3000/en > /dev/null
           curl --fail --silent http://127.0.0.1:3000/api/tts-assets/espeakng.js -o /tmp/espeakng.js
           grep -q 'function eSpeakNG' /tmp/espeakng.js
@@ -48,7 +48,7 @@ jobs:
           test "$(wc -c < /tmp/espeakng.worker.data)" -gt 1000000
           curl --fail --silent --show-error -X POST http://127.0.0.1:3000/api/tts \
             -H 'Content-Type: application/json' \
-            --data '{"text":"Đây là bài kiểm tra giọng đọc tiếng Việt của thư viện.","locale":"vi","rate":1}' \
+            --data '{"text":"Đây là bài kiểm tra giọng đọc tiếng Việt của thư viện. Đọc chậm, rõ, có ngắt câu.","locale":"vi","rate":0.8}' \
             -o /tmp/nikaya-tts.wav
           test "$(head -c 4 /tmp/nikaya-tts.wav)" = "RIFF"
           test "$(wc -c < /tmp/nikaya-tts.wav)" -gt 1000
