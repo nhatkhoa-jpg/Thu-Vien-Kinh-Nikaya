@@ -1,7 +1,6 @@
 import type {MetadataRoute} from 'next';
-
-const base=process.env.NEXT_PUBLIC_SITE_URL || 'https://thu-vien-kinh-nikaya-khoa-3f1b.vercel.app';
+import {SITE_URL} from '@/lib/site';
 
 export default function robots():MetadataRoute.Robots{
-  return {rules:{userAgent:'*',allow:'/'},sitemap:`${base}/sitemap.xml`};
+  return {rules:{userAgent:'*',allow:'/'},sitemap:`${SITE_URL}/sitemap.xml`};
 }
