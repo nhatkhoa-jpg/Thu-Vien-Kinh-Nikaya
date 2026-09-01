@@ -14,15 +14,21 @@ const VOICE_BY_LOCALE:Record<string,string>={
   ru:'ru_RU-irina-medium'
 };
 
-let modulePromise:Promise<typeof import('@diffusionstudio/vits-web')>|null=null;
-let inferenceTail:Promise<void>=Promise.resolve();
-const blobCache=new Map<string,Blob>();
-const MAX_CACHE=5;
+type Pending={
+  resolve:(blob:Blob)=>void;
+  reject:(error:Error)=>void;
+  onProgress?:(progress:PiperProgress)=>void;
+  timer:ReturnType<typeof setTimeout>;
+};
+type WorkerState={worker:Worker;voiceId:string;pending:Map<string,Pending>};
 
-function moduleLoader(){
-  if(!modulePromise)modulePromise=import('@diffusionstudio/vits-web');
-  return modulePromise;
-}
+let workerState:WorkerState|null=null;
+let inferenceTail:Promise<void>=Promise.resolve();
+let fallbackModulePromise:Promise<typeof import('@mintplex-labs/piper-tts-web')>|null=null;
+let fallbackSessionPromise:Promise<any>|null=null;
+let fallbackVoice='';
+const blobCache=new Map<string,Blob>();
+const MAX_CACHE=8;
 
 function cacheKey(voiceId:string,text:string){return `${voiceId}\n${text}`;}
 function remember(key:string,blob:Blob){
@@ -34,55 +40,90 @@ function remember(key:string,blob:Blob){
     blobCache.delete(oldest);
   }
 }
-
 function enqueue<T>(task:()=>Promise<T>):Promise<T>{
   const run=inferenceTail.catch(()=>{}).then(task);
   inferenceTail=run.then(()=>undefined,()=>undefined);
   return run;
 }
+function progressValue(data:any):PiperProgress{
+  const total=Number(data?.total)||0;
+  const loaded=Number(data?.loaded)||0;
+  return {loaded,total,percent:total?Math.max(0,Math.min(100,Math.round(loaded*100/total))):0,url:String(data?.url||'')};
+}
+
+function disposeWorker(reason?:Error){
+  const state=workerState;
+  if(!state)return;
+  workerState=null;
+  state.worker.terminate();
+  if(reason){
+    for(const pending of state.pending.values()){
+      clearTimeout(pending.timer);
+      pending.reject(reason);
+    }
+  }
+  state.pending.clear();
+}
+
+function ensureWorker(voiceId:string){
+  if(workerState?.voiceId===voiceId)return workerState;
+  if(workerState)disposeWorker(new Error('piper-voice-changed'));
+  const worker=new Worker(new URL('../workers/piper.worker.ts',import.meta.url),{type:'module',name:'nikaya-piper-session'});
+  const state:WorkerState={worker,voiceId,pending:new Map()};
+  workerState=state;
+  worker.onmessage=(event:MessageEvent)=>{
+    const data:any=event.data||{};
+    const pending=state.pending.get(String(data.id||''));
+    if(!pending)return;
+    if(data.type==='progress'){
+      pending.onProgress?.(progressValue(data));
+      return;
+    }
+    clearTimeout(pending.timer);
+    state.pending.delete(String(data.id));
+    if(data.type==='result'){
+      pending.resolve(new Blob([data.buffer],{type:String(data.mime||'audio/x-wav')}));
+      return;
+    }
+    const error=new Error(String(data.message||'piper-session-failed'));
+    pending.reject(error);
+    // If ONNX/session inference fails, rebuild the session once on retry.
+    disposeWorker(error);
+  };
+  worker.onerror=(event:any)=>disposeWorker(new Error(event?.message||'piper-worker-error'));
+  return state;
+}
 
 async function directPredict(text:string,voiceId:string,onProgress?:(progress:PiperProgress)=>void){
-  const tts=await moduleLoader();
-  return tts.predict({text,voiceId:voiceId as any},(progress:any)=>{
-    const total=Number(progress?.total)||0;
-    const loaded=Number(progress?.loaded)||0;
-    const url=String(progress?.url||'');
-    onProgress?.({loaded,total,percent:total?Math.max(0,Math.min(100,Math.round(loaded*100/total))):0,url});
-  });
+  if(!fallbackModulePromise)fallbackModulePromise=import('@mintplex-labs/piper-tts-web');
+  const mod=await fallbackModulePromise;
+  if(fallbackVoice!==voiceId){
+    mod.TtsSession._instance=null;
+    fallbackSessionPromise=null;
+    fallbackVoice=voiceId;
+  }
+  if(!fallbackSessionPromise){
+    fallbackSessionPromise=mod.TtsSession.create({
+      voiceId:voiceId as any,
+      progress:(data:any)=>onProgress?.(progressValue(data))
+    });
+  }
+  const session=await fallbackSessionPromise;
+  return session.predict(text);
 }
 
 function workerPredict(text:string,voiceId:string,onProgress?:(progress:PiperProgress)=>void):Promise<Blob>{
+  if(typeof Worker==='undefined')return directPredict(text,voiceId,onProgress);
   return new Promise((resolve,reject)=>{
-    if(typeof Worker==='undefined'){
-      void directPredict(text,voiceId,onProgress).then(resolve,reject);
-      return;
-    }
-    let settled=false;
-    const worker=new Worker(new URL('../workers/piper.worker.ts',import.meta.url),{type:'module',name:'nikaya-piper'});
+    const state=ensureWorker(voiceId);
     const id=`tts-${Date.now()}-${Math.random().toString(36).slice(2)}`;
-    const cleanup=()=>{clearTimeout(timer);worker.terminate();};
-    const fail=(error:any)=>{if(settled)return;settled=true;cleanup();reject(error instanceof Error?error:new Error(String(error||'piper-worker-failed')));};
-    const timer=setTimeout(()=>fail(new Error('piper-worker-timeout')),180_000);
-    worker.onerror=(event:any)=>fail(new Error(event?.message||'piper-worker-error'));
-    worker.onmessage=(event:MessageEvent)=>{
-      const data:any=event.data||{};
-      if(data.id!==id)return;
-      if(data.type==='progress'){
-        const total=Number(data.total)||0;
-        const loaded=Number(data.loaded)||0;
-        onProgress?.({loaded,total,percent:total?Math.max(0,Math.min(100,Math.round(loaded*100/total))):0,url:String(data.url||'')});
-        return;
-      }
-      if(data.type==='error'){fail(new Error(String(data.message||'piper-worker-failed')));return;}
-      if(data.type==='result'){
-        if(settled)return;
-        settled=true;
-        cleanup();
-        const blob=new Blob([data.buffer],{type:String(data.mime||'audio/x-wav')});
-        resolve(blob);
-      }
-    };
-    worker.postMessage({id,text,voiceId});
+    const timer=setTimeout(()=>{
+      state.pending.delete(id);
+      reject(new Error('piper-session-timeout'));
+      disposeWorker(new Error('piper-session-timeout'));
+    },180_000);
+    state.pending.set(id,{resolve,reject,onProgress,timer});
+    state.worker.postMessage({id,text,voiceId});
   });
 }
 
@@ -101,22 +142,17 @@ export async function synthesizePiper(
   const normalized=text.normalize('NFC').trim();
   const key=cacheKey(voiceId,normalized);
   const cached=blobCache.get(key);
-  if(cached){
-    remember(key,cached);
-    onStage?.('inference-ready',String(cached.size));
-    return cached;
-  }
+  if(cached){remember(key,cached);onStage?.('inference-ready',String(cached.size));return cached;}
 
   onStage?.('importing');
   onStage?.('module-ready');
   onStage?.('session-start',voiceId);
-  onStage?.('session-ready');
-
   return enqueue(async()=>{
-    onStage?.('inference-start');
     let lastError:any;
     for(let attempt=1;attempt<=2;attempt++){
       try{
+        onStage?.('session-ready');
+        onStage?.('inference-start');
         const wav=await workerPredict(normalized,voiceId,progress=>{
           onStage?.('model-download',progress.url||'');
           onProgress?.(progress);
@@ -127,10 +163,10 @@ export async function synthesizePiper(
         return wav;
       }catch(error){
         lastError=error;
-        if(attempt<2)await new Promise(resolve=>setTimeout(resolve,350));
+        if(attempt<2)await new Promise(resolve=>setTimeout(resolve,300));
       }
     }
-    throw lastError||new Error('piper-worker-failed');
+    throw lastError||new Error('piper-session-failed');
   });
 }
 
