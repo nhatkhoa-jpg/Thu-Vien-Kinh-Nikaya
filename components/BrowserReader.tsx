@@ -1,21 +1,18 @@
 'use client';
 import {useEffect,useMemo,useRef,useState} from 'react';
 import {AlertCircle,Pause,Play,RefreshCw,RotateCcw,Square,Volume2} from 'lucide-react';
+import {decodeWavDuration,piperVoiceForLocale,synthesizePiper} from '@/lib/piperClient';
 
 const localeVoice:Record<string,string>={vi:'vi-VN',en:'en-US',zh:'zh-CN',hi:'hi-IN',es:'es-ES',ar:'ar-SA',fr:'fr-FR',bn:'bn-BD',pt:'pt-BR',ru:'ru-RU',id:'id-ID',ur:'ur-PK',de:'de-DE',ja:'ja-JP',ko:'ko-KR',th:'th-TH'};
-const libraryVoice:Record<string,string>={vi:'vi',en:'en-us',zh:'zh',hi:'hi',es:'es',ar:'ar',fr:'fr',bn:'bn',pt:'pt',ru:'ru',id:'id',ur:'ur',de:'de',ja:'ja',ko:'ko',th:'th'};
 type ReaderState='idle'|'loading'|'speaking'|'paused'|'error';
-type Engine='auto'|'device'|'internal';
-type ActiveEngine='device'|'library'|'server'|null;
-
-let libraryTtsPromise:Promise<any>|null=null;
+type Engine='auto'|'library'|'device';
+type ActiveEngine='library'|'device'|null;
+type Prefetch={index:number;promise:Promise<Blob>}|null;
 
 function prepareSpeechText(text:string,vi:boolean){
   let value=text.normalize('NFC')
     .replace(/\u00a0/g,' ')
     .replace(/[–—]/g,', ')
-    .replace(/\s*;\s*/g,'; ')
-    .replace(/\s*:\s*/g,': ')
     .replace(/\s+/g,' ')
     .trim();
   if(vi){
@@ -27,96 +24,65 @@ function prepareSpeechText(text:string,vi:boolean){
   return value;
 }
 
-function chunkText(text:string,max=180,vi=false){
+function chunkText(text:string,max=420,vi=false){
   const normalized=prepareSpeechText(text,vi);
   if(!normalized)return[];
   const sentences=normalized.split(/(?<=[.!?。！？])\s+/);
   const out:string[]=[];
-  for(const sentence of sentences){
-    let rest=sentence.trim();
+  let current='';
+  for(const raw of sentences){
+    const sentence=raw.trim();
+    if(!sentence)continue;
+    if((current+' '+sentence).trim().length<=max){current=(current+' '+sentence).trim();continue;}
+    if(current)out.push(current);
+    if(sentence.length<=max){current=sentence;continue;}
+    let rest=sentence;
     while(rest.length>max){
       let cut=rest.lastIndexOf(',',max);
-      if(cut<Math.floor(max*.5))cut=rest.lastIndexOf(';',max);
-      if(cut<Math.floor(max*.5))cut=rest.lastIndexOf(':',max);
-      if(cut<Math.floor(max*.5))cut=rest.lastIndexOf(' ',max);
-      if(cut<Math.floor(max*.5))cut=max;
-      const piece=rest.slice(0,cut+1).trim();
-      if(piece)out.push(piece);
+      if(cut<Math.floor(max*.55))cut=rest.lastIndexOf(';',max);
+      if(cut<Math.floor(max*.55))cut=rest.lastIndexOf(' ',max);
+      if(cut<Math.floor(max*.55))cut=max;
+      out.push(rest.slice(0,cut+1).trim());
       rest=rest.slice(cut+1).trim();
     }
-    if(rest)out.push(rest);
+    current=rest;
   }
+  if(current)out.push(current);
   return out;
 }
 
 function readableError(code:string,vi:boolean){
   const map:Record<string,[string,string]>={
-    'internal-tts-failed':['Giọng thư viện chưa tạo được âm thanh.','Library speech engine failed.'],
-    'library-engine-unavailable':['Không tải được bộ giọng của thư viện.','The library speech engine could not load.'],
-    'synthesis-unavailable':['Máy chưa có bộ máy chuyển văn bản thành giọng nói.','No speech synthesis engine is available on this device.'],
-    'language-unavailable':['Máy chưa có giọng phù hợp với ngôn ngữ này.','No voice is available for this language.'],
-    'voice-unavailable':['Giọng đã chọn hiện không khả dụng.','The selected voice is unavailable.'],
-    'not-allowed':['Trình duyệt chưa cho phép bắt đầu phát giọng nói. Hãy bấm Thử lại.','The browser did not allow speech to start. Tap Retry.'],
-    'synthesis-failed':['Bộ máy giọng nói trên thiết bị không phản hồi.','The device speech engine failed to respond.']
+    'library-language-unavailable':['Giọng thư viện chưa hỗ trợ ngôn ngữ này.','The library voice does not support this language yet.'],
+    'library-tts-failed':['Giọng thư viện chưa tạo được âm thanh. Hãy thử lại.','The library voice could not generate audio. Please retry.'],
+    'synthesis-unavailable':['Thiết bị không có giọng hệ thống phù hợp. Hãy dùng Giọng thư viện.','No matching device voice is available. Use Library voice.'],
+    'not-allowed':['Trình duyệt chưa cho phép phát âm thanh. Hãy bấm Nghe lại.','The browser did not allow audio playback. Tap Listen again.']
   };
   return (map[code]||[vi?`Không phát được giọng đọc (${code}).`:`Speech failed (${code}).`,vi?`Không phát được giọng đọc (${code}).`:`Speech failed (${code}).`])[vi?0:1];
 }
 
-function loadLibraryTts(){
-  if(typeof window==='undefined')return Promise.reject(new Error('browser-only'));
-  if(libraryTtsPromise)return libraryTtsPromise;
-  libraryTtsPromise=new Promise<any>((resolve,reject)=>{
-    const boot=()=>{
-      const Ctor=(window as any).eSpeakNG;
-      if(!Ctor){reject(new Error('espeak-constructor-missing'));return;}
-      let settled=false;
-      const timer=setTimeout(()=>{if(!settled){settled=true;reject(new Error('espeak-worker-timeout'));}},25000);
-      try{
-        const instance=new Ctor('/api/tts-assets/espeakng.worker.js',()=>{
-          if(settled)return;
-          settled=true;clearTimeout(timer);resolve(instance);
-        });
-      }catch(error){clearTimeout(timer);reject(error);}
-    };
-    if((window as any).eSpeakNG){boot();return;}
-    const id='nikaya-espeakng-script';
-    const existing=document.getElementById(id) as HTMLScriptElement|null;
-    if(existing){
-      if(existing.dataset.ready==='1'){boot();return;}
-      existing.addEventListener('load',boot,{once:true});
-      existing.addEventListener('error',()=>reject(new Error('espeak-script-load-failed')),{once:true});
-      return;
-    }
-    const script=document.createElement('script');
-    script.id=id;script.async=true;script.src='/api/tts-assets/espeakng.js';
-    script.onload=()=>{script.dataset.ready='1';boot();};
-    script.onerror=()=>reject(new Error('espeak-script-load-failed'));
-    document.head.appendChild(script);
-  }).catch(error=>{libraryTtsPromise=null;throw error;});
-  return libraryTtsPromise;
-}
-
 export default function BrowserReader({text,locale}:{text:string;locale:string}){
   const vi=locale==='vi';
-  const deviceChunks=useMemo(()=>chunkText(text,155,vi),[text,vi]);
-  const internalChunks=useMemo(()=>chunkText(text,230,vi),[text,vi]);
+  const libraryChunks=useMemo(()=>chunkText(text,420,vi),[text,vi]);
+  const deviceChunks=useMemo(()=>chunkText(text,240,vi),[text,vi]);
   const [supported,setSupported]=useState(true);
   const [voices,setVoices]=useState<SpeechSynthesisVoice[]>([]);
   const [voiceUri,setVoiceUri]=useState('');
-  const [rate,setRate]=useState(vi?.8:.9);
+  const [rate,setRate]=useState(1);
   const [engine,setEngine]=useState<Engine>('auto');
   const [activeEngine,setActiveEngine]=useState<ActiveEngine>(null);
   const [state,setState]=useState<ReaderState>('idle');
   const [message,setMessage]=useState('');
+  const [progress,setProgress]=useState(0);
+  const [diag,setDiag]=useState({bytes:0,duration:0});
   const queueRef=useRef<string[]>([]);
   const indexRef=useRef(0);
   const activeRef=useRef(false);
-  const utteranceRef=useRef<SpeechSynthesisUtterance|null>(null);
+  const runRef=useRef(0);
   const audioRef=useRef<HTMLAudioElement|null>(null);
-  const audioUrlRef=useRef<string>('');
-  const libraryContextRef=useRef<AudioContext|null>(null);
-  const libraryNodeRef=useRef<ScriptProcessorNode|null>(null);
-  const watchdogRef=useRef<ReturnType<typeof setTimeout>|null>(null);
+  const audioUrlRef=useRef('');
+  const utteranceRef=useRef<SpeechSynthesisUtterance|null>(null);
+  const prefetchRef=useRef<Prefetch>(null);
 
   useEffect(()=>{
     if(!('speechSynthesis' in window)||!('SpeechSynthesisUtterance' in window)){setSupported(false);return;}
@@ -126,206 +92,133 @@ export default function BrowserReader({text,locale}:{text:string;locale:string})
       const wanted=(localeVoice[locale]||locale).toLowerCase().replace('_','-');
       const base=wanted.split('-')[0];
       const matching=all.filter(v=>v.lang.toLowerCase().replace('_','-').startsWith(base));
-      const shown=matching.length?matching:all;
-      setVoices(shown);
-      setVoiceUri(current=>{
-        if(current&&shown.some(v=>v.voiceURI===current))return current;
-        const preferred=matching.find(v=>v.lang.toLowerCase().replace('_','-')===wanted)||matching[0]||all.find(v=>v.default)||all[0];
-        return preferred?.voiceURI||'';
-      });
+      setVoices(matching);
+      setVoiceUri(current=>current&&matching.some(v=>v.voiceURI===current)?current:(matching[0]?.voiceURI||''));
     };
     load();
-    const timers=[180,650,1500,3000].map(ms=>setTimeout(load,ms));
+    const timers=[200,800,1800].map(ms=>setTimeout(load,ms));
     synth.addEventListener?.('voiceschanged',load);
-    return()=>{
-      timers.forEach(clearTimeout);
-      synth.removeEventListener?.('voiceschanged',load);
-      stopAll(false);
-    };
+    return()=>{timers.forEach(clearTimeout);synth.removeEventListener?.('voiceschanged',load);stopAll(false);};
   },[locale]);
 
-  function clearLibraryAudio(){
-    if(libraryNodeRef.current){try{libraryNodeRef.current.disconnect();}catch{}libraryNodeRef.current.onaudioprocess=null;libraryNodeRef.current=null;}
-    if(libraryContextRef.current){void libraryContextRef.current.close().catch(()=>{});libraryContextRef.current=null;}
-  }
+  useEffect(()=>{
+    if(audioRef.current){audioRef.current.playbackRate=rate;audioRef.current.preservesPitch=true;}
+  },[rate]);
 
   function clearAudio(){
-    clearLibraryAudio();
     if(audioRef.current){audioRef.current.pause();audioRef.current.src='';audioRef.current=null;}
     if(audioUrlRef.current){URL.revokeObjectURL(audioUrlRef.current);audioUrlRef.current='';}
   }
 
   function stopAll(update=true){
-    if(watchdogRef.current){clearTimeout(watchdogRef.current);watchdogRef.current=null;}
-    if(typeof window!=='undefined'&&'speechSynthesis' in window)window.speechSynthesis.cancel();
-    clearAudio();
+    runRef.current+=1;
     activeRef.current=false;
+    prefetchRef.current=null;
+    if(typeof window!=='undefined'&&'speechSynthesis' in window)window.speechSynthesis.cancel();
     utteranceRef.current=null;
+    clearAudio();
     indexRef.current=0;
     setActiveEngine(null);
+    setProgress(0);
     if(update){setState('idle');setMessage(vi?'Đã dừng.':'Stopped.');}
   }
 
   function finish(){
-    activeRef.current=false;utteranceRef.current=null;clearAudio();setActiveEngine(null);setState('idle');setMessage(vi?'Đã đọc xong.':'Finished.');
+    activeRef.current=false;prefetchRef.current=null;clearAudio();setActiveEngine(null);setState('idle');setMessage(vi?'Đã đọc xong.':'Finished.');
   }
+
   function fail(code:string){
-    activeRef.current=false;utteranceRef.current=null;clearAudio();setActiveEngine(null);setState('error');setMessage(readableError(code,vi));
+    activeRef.current=false;prefetchRef.current=null;clearAudio();setActiveEngine(null);setState('error');setMessage(readableError(code,vi));
   }
 
-  function unlockAudio(){
-    try{
-      const Ctx=(window.AudioContext||(window as any).webkitAudioContext) as typeof AudioContext|undefined;
-      if(!Ctx)return;
-      const ctx=new Ctx();
-      const osc=ctx.createOscillator();
-      const gain=ctx.createGain();
-      gain.gain.value=.00001;
-      osc.connect(gain);gain.connect(ctx.destination);osc.start();osc.stop(ctx.currentTime+.02);
-      osc.onended=()=>void ctx.close();
-    }catch{}
+  async function getLibraryBlob(index:number,run:number){
+    if(prefetchRef.current?.index===index){
+      const p=prefetchRef.current.promise;prefetchRef.current=null;return p;
+    }
+    return synthesizePiper(queueRef.current[index],locale,p=>{
+      if(run!==runRef.current)return;
+      setProgress(p.percent);
+      if(p.total>20_000_000)setMessage(vi?`Lần đầu đang tải giọng Việt ${p.percent}%…`:`Downloading voice ${p.percent}%…`);
+    });
   }
 
-  async function speakServerInternal(){
-    if(!activeRef.current)return;
-    setActiveEngine('server');setState('loading');setMessage(vi?'Đang dùng giọng dự phòng của máy chủ…':'Using server speech fallback…');
+  async function playLibrary(index:number,run:number){
+    if(!activeRef.current||run!==runRef.current)return;
+    if(index>=queueRef.current.length){finish();return;}
+    setActiveEngine('library');setState('loading');setProgress(0);
+    setMessage(vi?'Đang chuẩn bị giọng Việt tự nhiên…':'Preparing neural library voice…');
     try{
-      const response=await fetch('/api/tts',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text:queueRef.current[indexRef.current],locale,rate})});
-      if(!response.ok)throw new Error('internal-tts-failed');
-      const blob=await response.blob();
-      if(!activeRef.current)return;
+      const blob=await getLibraryBlob(index,run);
+      if(!activeRef.current||run!==runRef.current)return;
+      const duration=await decodeWavDuration(blob).catch(()=>0);
+      setDiag({bytes:blob.size,duration});
       clearAudio();
       const url=URL.createObjectURL(blob);audioUrlRef.current=url;
       const audio=new Audio(url);audioRef.current=audio;
-      audio.preload='auto';
-      audio.onplay=()=>{setState('speaking');setMessage(vi?`Đang đọc chậm, rõ bằng giọng dự phòng · ${rate}×.`:`Reading with server fallback · ${rate}×.`);};
-      audio.onended=()=>{clearAudio();if(!activeRef.current)return;indexRef.current+=1;setTimeout(()=>void speakInternal(),220);};
-      audio.onerror=()=>fail('internal-tts-failed');
+      audio.preload='auto';audio.playbackRate=rate;audio.preservesPitch=true;
+      audio.onplay=()=>{
+        if(run!==runRef.current)return;
+        setState('speaking');setMessage(vi?`Đang đọc bằng giọng thư viện · ${rate}×.`:`Reading with library voice · ${rate}×.`);
+        const next=index+1;
+        if(next<queueRef.current.length&&!prefetchRef.current){
+          prefetchRef.current={index:next,promise:synthesizePiper(queueRef.current[next],locale)};
+        }
+      };
+      audio.onended=()=>{if(!activeRef.current||run!==runRef.current)return;indexRef.current=index+1;void playLibrary(index+1,run);};
+      audio.onerror=()=>{if(run===runRef.current)fail('library-tts-failed');};
       await audio.play();
-    }catch{fail('internal-tts-failed');}
-  }
-
-  async function speakBrowserLibrary(){
-    if(!activeRef.current)return;
-    if(indexRef.current>=queueRef.current.length){finish();return;}
-    setActiveEngine('library');setState('loading');setMessage(vi?'Đang tải giọng thư viện…':'Loading library voice…');
-    try{
-      const tts=await loadLibraryTts();
-      if(!activeRef.current)return;
-      const Ctx=(window.AudioContext||(window as any).webkitAudioContext) as typeof AudioContext|undefined;
-      if(!Ctx)throw new Error('audio-context-unavailable');
-      clearLibraryAudio();
-      const ctx=new Ctx();libraryContextRef.current=ctx;await ctx.resume();
-      const node=ctx.createScriptProcessor(4096,1,1);libraryNodeRef.current=node;
-      const samplesQueue:Float32Array[]=[];
-      let closed=false;let first=false;let completed=false;
-      const endChunk=()=>{
-        if(completed)return;completed=true;
-        clearLibraryAudio();
-        if(!activeRef.current)return;
-        indexRef.current+=1;
-        setTimeout(()=>void speakInternal(),240);
-      };
-      node.onaudioprocess=event=>{
-        const output=event.outputBuffer.getChannelData(0);output.fill(0);
-        let offset=0;
-        while(samplesQueue.length&&offset<output.length){
-          const head=samplesQueue[0];
-          const count=Math.min(head.length,output.length-offset);
-          output.set(head.subarray(0,count),offset);offset+=count;
-          if(count===head.length)samplesQueue.shift();else samplesQueue[0]=head.subarray(count);
-        }
-        if(closed&&!samplesQueue.length)endChunk();
-      };
-      node.connect(ctx.destination);
-      if(watchdogRef.current)clearTimeout(watchdogRef.current);
-      watchdogRef.current=setTimeout(()=>{
-        if(activeRef.current&&!first){clearLibraryAudio();void speakServerInternal();}
-      },18000);
-      const baseWpm=vi?120:135;
-      tts.set_rate(Math.max(78,Math.round(baseWpm*rate)));
-      tts.set_pitch(44);
-      tts.set_voice(libraryVoice[locale]||locale.split('-')[0]||'en-us');
-      tts.synthesize(queueRef.current[indexRef.current],(samples:any)=>{
-        if(!activeRef.current)return;
-        if(!samples){closed=true;return;}
-        const chunk=new Float32Array(samples);
-        if(!chunk.length)return;
-        if(!first){
-          first=true;
-          if(watchdogRef.current){clearTimeout(watchdogRef.current);watchdogRef.current=null;}
-          setState('speaking');setMessage(vi?`Đang đọc bằng giọng thư viện · ${rate}× · có ngắt câu.`:`Reading with the library voice · ${rate}×.`);
-        }
-        samplesQueue.push(chunk);
-      });
-    }catch{
-      if(activeRef.current)void speakServerInternal();
+    }catch(error:any){
+      console.error('piper-library-tts-failed',error);
+      if(run===runRef.current)fail(piperVoiceForLocale(locale)?'library-tts-failed':'library-language-unavailable');
     }
   }
 
-  async function speakInternal(){
-    if(!activeRef.current)return;
-    if(indexRef.current>=queueRef.current.length){finish();return;}
-    await speakBrowserLibrary();
-  }
-
-  function speakDevice(){
-    if(!activeRef.current)return;
-    if(!supported||!('speechSynthesis' in window)){fail('synthesis-unavailable');return;}
-    if(indexRef.current>=queueRef.current.length){finish();return;}
+  function speakDevice(index:number,run:number){
+    if(!activeRef.current||run!==runRef.current)return;
+    if(!supported||!('speechSynthesis' in window)||!voiceUri){fail('synthesis-unavailable');return;}
+    if(index>=queueRef.current.length){finish();return;}
     const synth=window.speechSynthesis;
-    const liveVoices=synth.getVoices();
-    if(!liveVoices.length){fail('synthesis-unavailable');return;}
-    setActiveEngine('device');setState('loading');setMessage(vi?'Đang khởi động giọng thiết bị…':'Starting device voice…');
-    const utterance=new SpeechSynthesisUtterance(queueRef.current[indexRef.current]);
-    utterance.lang=localeVoice[locale]||locale;
-    utterance.rate=Math.max(.5,Math.min(1.5,rate*.85));
-    utterance.pitch=.96;utterance.volume=1;
-    const selected=liveVoices.find(v=>v.voiceURI===voiceUri)||liveVoices.find(v=>v.lang.toLowerCase().startsWith(locale.split('-')[0]))||liveVoices.find(v=>v.default)||liveVoices[0];
-    if(selected)utterance.voice=selected;
+    const live=synth.getVoices();
+    const selected=live.find(v=>v.voiceURI===voiceUri)||voices[0];
+    if(!selected){fail('synthesis-unavailable');return;}
+    setActiveEngine('device');setState('loading');
+    const utterance=new SpeechSynthesisUtterance(queueRef.current[index]);
+    utterance.lang=localeVoice[locale]||locale;utterance.voice=selected;utterance.rate=rate;utterance.pitch=1;utterance.volume=1;
     utteranceRef.current=utterance;
-    let started=false;
-    utterance.onstart=()=>{started=true;if(watchdogRef.current)clearTimeout(watchdogRef.current);setState('speaking');setMessage(vi?`Đang đọc chậm bằng ${selected?.name||'giọng thiết bị'} · ${rate}×.`:`Reading with ${selected?.name||'device voice'} · ${rate}×.`);};
-    utterance.onend=()=>{if(!activeRef.current)return;indexRef.current+=1;setTimeout(speakDevice,220);};
-    utterance.onerror=(event:any)=>{if(!activeRef.current||event?.error==='canceled'||event?.error==='interrupted')return;fail(event?.error||'synthesis-failed');};
+    utterance.onstart=()=>{if(run===runRef.current){setState('speaking');setMessage(vi?`Đang đọc bằng ${selected.name} · ${rate}×.`:`Reading with ${selected.name} · ${rate}×.`);}};
+    utterance.onend=()=>{if(activeRef.current&&run===runRef.current){indexRef.current=index+1;setTimeout(()=>speakDevice(index+1,run),80);}};
+    utterance.onerror=(event:any)=>{if(run===runRef.current&&event?.error!=='canceled'&&event?.error!=='interrupted')fail(event?.error||'synthesis-unavailable');};
     synth.cancel();synth.resume();synth.speak(utterance);
-    if(watchdogRef.current)clearTimeout(watchdogRef.current);
-    watchdogRef.current=setTimeout(()=>{if(activeRef.current&&!started)fail('synthesis-unavailable');},1800);
   }
 
   function start(){
-    if(!deviceChunks.length&&!internalChunks.length)return;
-    unlockAudio();
     stopAll(false);
-    indexRef.current=0;activeRef.current=true;setState('loading');
-    const wanted=(localeVoice[locale]||locale).toLowerCase().replace('_','-');
-    const base=wanted.split('-')[0];
-    const hasMatchingDeviceVoice=voices.some(v=>v.lang.toLowerCase().replace('_','-').startsWith(base));
-    const choice:Engine=engine==='auto'?(supported&&hasMatchingDeviceVoice?'device':'internal'):engine;
-    queueRef.current=choice==='internal'?internalChunks:deviceChunks;
-    if(choice==='device')speakDevice();else void speakInternal();
+    const choice:Engine=engine==='auto'?'library':engine;
+    queueRef.current=choice==='device'?deviceChunks:libraryChunks;
+    if(!queueRef.current.length)return;
+    activeRef.current=true;indexRef.current=0;setState('loading');setDiag({bytes:0,duration:0});
+    const run=runRef.current;
+    if(choice==='device')speakDevice(0,run);else void playLibrary(0,run);
   }
 
   function togglePause(){
     if(state==='paused'){
-      if(activeEngine==='library'&&libraryContextRef.current){void libraryContextRef.current.resume();}
-      else if(activeEngine==='server'&&audioRef.current){void audioRef.current.play();}
-      else if('speechSynthesis' in window)window.speechSynthesis.resume();
+      if(activeEngine==='library'&&audioRef.current)void audioRef.current.play();
+      else if(activeEngine==='device'&&'speechSynthesis' in window)window.speechSynthesis.resume();
       setState('speaking');return;
     }
-    if(state==='speaking'||state==='loading'){
-      if(activeEngine==='library'&&libraryContextRef.current){void libraryContextRef.current.suspend();}
-      else if(activeEngine==='server'&&audioRef.current)audioRef.current.pause();
-      else if('speechSynthesis' in window)window.speechSynthesis.pause();
+    if(state==='speaking'){
+      if(activeEngine==='library'&&audioRef.current)audioRef.current.pause();
+      else if(activeEngine==='device'&&'speechSynthesis' in window)window.speechSynthesis.pause();
       setState('paused');return;
     }
     start();
   }
-  function restart(){stopAll(false);setTimeout(start,100);}
-  function retry(){setMessage('');start();}
 
+  function restart(){stopAll(false);setTimeout(start,80);}
   const active=state==='loading'||state==='speaking'||state==='paused';
-  const speeds=vi?[.6,.7,.8,.9,1,1.1,1.25,1.5]:[.7,.8,.9,1,1.15,1.25,1.5,1.75];
+  const speeds=[.8,.9,1,1.1,1.2,1.35,1.5,1.75,2];
+
   return <div className="browserReader compactTts">
     <div className="ttsPrimary">
       {!active?<button className="ttsMain" onClick={start}><Play size={17} fill="currentColor"/>{vi?'Nghe':'Listen'}</button>:<button className="ttsMain" onClick={togglePause}>{state==='paused'?<Play size={17}/>:<Pause size={17}/>} {state==='paused'?(vi?'Đọc tiếp':'Resume'):(state==='loading'?(vi?'Đang chuẩn bị…':'Preparing…'):(vi?'Tạm dừng':'Pause'))}</button>}
@@ -333,11 +226,13 @@ export default function BrowserReader({text,locale}:{text:string;locale:string})
       <button className="ttsIcon" onClick={restart} title={vi?'Đọc lại':'Restart'}><RotateCcw size={16}/></button>
     </div>
     <div className="ttsSettings compactSettings">
-      <label><Volume2 size={14}/><span>{vi?'Nguồn':'Engine'}</span><select value={engine} onChange={e=>setEngine(e.target.value as Engine)}><option value="auto">{vi?'Tự động · ưu tiên giọng Việt tốt':'Auto · best voice'}</option><option value="internal">{vi?'Giọng thư viện':'Library voice'}</option><option value="device">{vi?'Giọng thiết bị':'Device voice'}</option></select></label>
-      <label><span>{vi?'Tốc độ':'Speed'}</span><select value={rate} onChange={e=>setRate(Number(e.target.value))}>{speeds.map(v=><option value={v} key={v}>{v}×{vi&&v===.8?' · dễ nghe':''}</option>)}</select></label>
+      <label><Volume2 size={14}/><span>{vi?'Nguồn':'Engine'}</span><select value={engine} onChange={e=>setEngine(e.target.value as Engine)}><option value="auto">{vi?'Tự động · giọng thư viện':'Auto · library voice'}</option><option value="library">{vi?'Giọng thư viện · neural':'Library voice · neural'}</option><option value="device">{vi?'Giọng thiết bị':'Device voice'}</option></select></label>
+      <label><span>{vi?'Tốc độ':'Speed'}</span><select value={rate} onChange={e=>setRate(Number(e.target.value))}>{speeds.map(v=><option value={v} key={v}>{v}×{v===1?(vi?' · chuẩn':' · normal'):''}</option>)}</select></label>
     </div>
-    {engine==='device'&&voices.length>0&&<label className="voicePicker"><span>{vi?'Giọng thiết bị':'Device voice'}</span><select value={voiceUri} onChange={e=>setVoiceUri(e.target.value)}>{voices.slice(0,16).map(v=><option key={v.voiceURI} value={v.voiceURI}>{v.name} · {v.lang}</option>)}</select></label>}
-    {message&&<div className={`ttsStatus ${state==='error'?'ttsStatusError':''}`}>{state==='error'?<AlertCircle size={14}/>:<Volume2 size={14}/>}<span>{message}</span>{state==='error'&&<button onClick={retry}><RefreshCw size={13}/>{vi?'Thử lại':'Retry'}</button>}</div>}
-    <p className="ttsNote">{vi?'Mặc định 0.8× để nghe rõ tiếng Việt. Tự động ưu tiên giọng Việt của máy nếu có; nếu không sẽ dùng giọng thư viện.':'Default pace is tuned for clarity. Auto prefers a matching device voice, otherwise the library voice.'}</p>
+    {engine==='device'&&<label className="voicePicker"><span>{vi?'Giọng thiết bị':'Device voice'}</span><select value={voiceUri} onChange={e=>setVoiceUri(e.target.value)} disabled={!voices.length}>{voices.length?voices.slice(0,16).map(v=><option key={v.voiceURI} value={v.voiceURI}>{v.name} · {v.lang}</option>):<option>{vi?'Không có giọng phù hợp':'No matching voice'}</option>}</select></label>}
+    {state==='loading'&&progress>0&&<div className="ttsStatus"><Volume2 size={14}/><span>{message}</span></div>}
+    {message&&state!=='loading'&&<div className={`ttsStatus ${state==='error'?'ttsStatusError':''}`}>{state==='error'?<AlertCircle size={14}/>:<Volume2 size={14}/>}<span>{message}</span>{state==='error'&&<button onClick={start}><RefreshCw size={13}/>{vi?'Thử lại':'Retry'}</button>}</div>}
+    <p className="ttsNote">{vi?'Giọng thư viện là giọng neural tiếng Việt, chạy ngay trong trình duyệt và không cần Google/Samsung TTS. Lần đầu tải mô hình khoảng 64 MB, sau đó được lưu trên máy.':'The library neural voice runs in-browser and does not require a device TTS engine.'}</p>
+    <span hidden data-testid="tts-diagnostics" data-state={state} data-engine={activeEngine||''} data-audio-bytes={diag.bytes} data-audio-duration={diag.duration.toFixed(3)}/>
   </div>;
 }
