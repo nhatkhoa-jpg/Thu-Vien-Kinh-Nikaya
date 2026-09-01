@@ -3,20 +3,13 @@ import {notFound} from 'next/navigation';
 import Link from 'next/link';
 import {ArrowLeft,Download,ExternalLink,Headphones,Clock,BookOpen,ArrowRight} from 'lucide-react';
 import {dict,isLocale,locales,type Locale} from '@/lib/i18n';
-import {suttas,collectionDisplayCode,suttaDisplayCode,suttaAudio} from '@/lib/data';
+import {suttas,collectionDisplayCode,suttaDisplayCode,suttaAudio,suttaBook} from '@/lib/data';
 import {getSuttaFullText} from '@/lib/sutta-content';
 import AudioPlayer from '@/components/AudioPlayer';
 import ReaderProgress from '@/components/ReaderProgress';
 import YouTubeEmbed from '@/components/YouTubeEmbed';
 
 const baseUrl=process.env.NEXT_PUBLIC_SITE_URL||'https://thu-vien-nikaya-now-khoa-3f1b.vercel.app';
-const collectionDownloads:Record<string,string>={
-  DN:'https://readingfaithfully.org/digha-nikaya-translated-by-bhikkhu-sujato-free-epub-kindle-pdf/',
-  MN:'https://readingfaithfully.org/majjhima-nikaya-translated-by-bhikkhu-sujato-free-epub-kindle-pdf/',
-  SN:'https://readingfaithfully.org/samyutta-nikaya-translated-bhikkhu-sujato-free-epub-kindle-pdf/',
-  AN:'https://readingfaithfully.org/anguttara-nikaya-translated-by-bhikkhu-sujato-free-epub-kindle-pdf/'
-};
-
 export const revalidate=86400;
 
 export async function generateMetadata({params}:{params:Promise<{locale:string;slug:string}>}):Promise<Metadata>{
@@ -32,8 +25,7 @@ export default async function SuttaPage({params}:{params:Promise<{locale:string;
   const locale=raw as Locale;const d=dict(locale);const s=suttas.find(x=>x.slug===slug);if(!s)notFound();
   const vi=locale==='vi';const title=vi?s.vi:s.en;const displayCode=suttaDisplayCode(s,vi);const displayCollection=collectionDisplayCode(s.collection,vi);
   const related=suttas.filter(x=>x.collection===s.collection&&x.slug!==s.slug).slice(0,3);
-  const downloadUrl=collectionDownloads[s.collection]||s.bookUrl;
-  const audio=suttaAudio(s,locale);
+  const audio=suttaAudio(s,locale);const book=suttaBook(s,locale);
   const fullText=await getSuttaFullText(s.canonicalRef,locale);
   const sourceUrl=fullText?.sourceUrl||s.sourceUrl;
 
@@ -57,7 +49,7 @@ export default async function SuttaPage({params}:{params:Promise<{locale:string;
       <aside className="readerSide">
         {audio&&<section className="sideCard primarySide"><div className="sideCardTitle"><span className="sideIcon"><Headphones size={18}/></span><div><small>{vi?'Nghe đúng ngôn ngữ đang chọn':'Matched to selected language'}</small><h3>{audio.label}</h3></div></div><AudioPlayer src={audio.url}/><a className="downloadLink" href={audio.url} target="_blank" rel="noreferrer"><Download size={16}/>{vi?'Mở / tải MP3 tiếng Việt':'Open / download MP3'}</a>{audio.sourceUrl&&<a className="audioSource" href={audio.sourceUrl} target="_blank" rel="noreferrer">{vi?'Nguồn audio':'Audio source'} · {audio.provider}<ExternalLink size={13}/></a>}</section>}
         {!audio&&<section className="sideCard quietCard"><div className="sideCardTitle"><span className="sideIcon"><Headphones size={18}/></span><div><small>Audio</small><h3>{vi?'Chưa có bản tiếng Việt đã kiểm chứng':'No verified audio in this language yet'}</h3></div></div><p>{vi?'Thư viện không phát audio tiếng Anh khi bạn đang ở giao diện tiếng Việt.':'The library does not substitute audio from another language.'}</p></section>}
-        {downloadUrl&&<section className="sideCard"><div className="sideCardTitle"><span className="sideIcon"><Download size={18}/></span><div><small>{vi?'Đọc ngoại tuyến':'Offline reading'}</small><h3>{d.book}</h3></div></div><p>{vi?'Tải PDF/EPUB khi bản tương ứng được phép phân phối.':'Download PDF/EPUB when a licensed edition is available.'}</p><a className="btn btnSoft" href={downloadUrl} target="_blank" rel="noreferrer">{d.downloadBook}<ExternalLink size={15}/></a></section>}
+        {book&&<section className="sideCard"><div className="sideCardTitle"><span className="sideIcon"><Download size={18}/></span><div><small>{vi?'Đọc ngoại tuyến':'Offline reading'}</small><h3>{book.label}</h3></div></div><p>{vi?`Nguồn ${book.provider} · ${book.format}.`:`${book.provider} · ${book.format}.`}</p><a className="btn btnSoft" href={book.url} target="_blank" rel="noreferrer"><Download size={15}/>{vi?'Mở / tải bản tiếng Việt':'Open / download'}</a></section>}
         {s.youtubeId&&<section className="sideCard"><h3>{d.relatedVideo}</h3><YouTubeEmbed videoId={s.youtubeId} title={`${displayCode} ${title}`}/></section>}
         <section className="sideCard sourceCard"><small>{d.sources}</small><p>{fullText?`${fullText.author} · SuttaCentral`:s.licenseShort}</p><a href={sourceUrl} target="_blank" rel="noreferrer">{vi?'Đối chiếu nguồn':'Source'} <ExternalLink size={14}/></a></section>
       </aside>
