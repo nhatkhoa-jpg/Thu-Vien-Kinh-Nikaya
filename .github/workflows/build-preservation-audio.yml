@@ -92,6 +92,7 @@ jobs:
               rm -rf /tmp/existing
               continue
             fi
+            rm -rf /tmp/existing
             src="work/${prefix}.mp3"
             echo "Downloading $SOURCE_TAG/$prefix.mp3"
             gh release download "$SOURCE_TAG" --repo "$GITHUB_REPOSITORY" --pattern "${prefix}.mp3" --dir work
@@ -143,7 +144,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          gh api --paginate "repos/$GITHUB_REPOSITORY/releases/tags/$TARGET_TAG" > /tmp/release.json
+          gh api "repos/$GITHUB_REPOSITORY/releases/tags/$TARGET_TAG" > /tmp/release.json
           RELEASE_ID=$(jq -r '.id' /tmp/release.json)
           gh api --paginate "repos/$GITHUB_REPOSITORY/releases/$RELEASE_ID/assets?per_page=100" > /tmp/assets-pages.json
           jq -s 'add' /tmp/assets-pages.json > /tmp/assets.json || cp /tmp/assets-pages.json /tmp/assets.json
