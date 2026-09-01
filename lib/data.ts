@@ -6,7 +6,9 @@ import type {Locale} from '@/lib/i18n';
 
 export type Collection={code:string;viCode:string;pali:string;vi:string;en:string;count:string;descVi:string;descEn:string;accent:string};
 type CanonicalSutta={id:string;canonicalRef:string;slug:string;code:string;viCode:string;collection:string;pali:string;vi:string;en:string;topics:string[];source:{url:string;provider:string;translator:string;license:string;language:string};media:{bookUrl?:string;mp3Url?:string;youtubeId?:string};summary:{vi:string;en:string};practice:{vi:string;en:string};readMinutes:number;featured?:boolean;contentVersion:string};
-export type AudioAsset={url:string;label:string;provider:string;sourceUrl?:string;download?:boolean};
+export type AudioSource={url:string;provider?:string;sha256?:string};
+export type AudioSegment={id:string;duration?:number;sources:AudioSource[]};
+export type AudioAsset={url?:string;segments?:AudioSegment[];label:string;provider:string;sourceUrl?:string;download?:boolean;downloadUrl?:string;manifestVersion?:string};
 export type BookAsset={url:string;label:string;provider:string;format:string;download?:boolean};
 type AudioCatalog=Record<string,Partial<Record<Locale,AudioAsset>>>;
 type BookCatalog=Record<string,Partial<Record<Locale,BookAsset>>>;
