@@ -6,35 +6,47 @@ const rates=[0.75,1,1.25,1.5,1.75,2];
 
 type AudioSource={url:string;provider?:string};
 export type AudioSegment={id:string;duration?:number;sources:AudioSource[]};
+type PreservationManifest={version?:string;segments?:AudioSegment[]};
 
-export default function AudioPlayer({src,segments,storageKey}:{src?:string;segments?:AudioSegment[];storageKey?:string}){
+export default function AudioPlayer({src,segments,manifestUrl,storageKey}:{src?:string;segments?:AudioSegment[];manifestUrl?:string;storageKey?:string}){
  const ref=useRef<HTMLAudioElement>(null);
  const lastSavedRef=useRef(0);
  const [rate,setRate]=useState(1);
  const [segmentIndex,setSegmentIndex]=useState(0);
  const [sourceIndex,setSourceIndex]=useState(0);
- const playlist=useMemo<AudioSegment[]>(()=>segments?.length?segments:(src?[{id:'legacy-1',sources:[{url:src}]}]:[]),[segments,src]);
+ const [remoteSegments,setRemoteSegments]=useState<AudioSegment[]|null>(null);
+
+ useEffect(()=>{
+   let cancelled=false;
+   setRemoteSegments(null);
+   if(!manifestUrl)return;
+   fetch(manifestUrl,{cache:'force-cache'}).then(r=>{if(!r.ok)throw new Error(String(r.status));return r.json();}).then((m:PreservationManifest)=>{
+     if(cancelled||!Array.isArray(m.segments)||!m.segments.length)return;
+     const valid=m.segments.filter(x=>x&&typeof x.id==='string'&&Array.isArray(x.sources)&&x.sources.some(s=>typeof s?.url==='string'&&s.url));
+     if(valid.length)setRemoteSegments(valid);
+   }).catch(()=>{});
+   return()=>{cancelled=true;};
+ },[manifestUrl]);
+
+ const playlist=useMemo<AudioSegment[]>(()=>remoteSegments?.length?remoteSegments:(segments?.length?segments:(src?[{id:'legacy-1',sources:[{url:src,provider:'Legacy MP3'}]}]:[])),[remoteSegments,segments,src]);
  const segment=playlist[segmentIndex];
  const currentSrc=segment?.sources[sourceIndex]?.url;
- const key=`nikaya:audio:${storageKey||src||playlist.map(x=>x.id).join('|')}`;
+ const key=`nikaya:audio:${storageKey||src||manifestUrl||playlist.map(x=>x.id).join('|')}`;
 
  useEffect(()=>{
    const audio=ref.current;if(!audio)return;
    audio.playbackRate=rate;audio.preservesPitch=true;
  },[rate,currentSrc]);
 
- useEffect(()=>{setSegmentIndex(0);setSourceIndex(0);},[storageKey,src,segments]);
+ useEffect(()=>{setSegmentIndex(0);setSourceIndex(0);},[storageKey,src,segments,manifestUrl]);
+ useEffect(()=>{if(segmentIndex>=playlist.length){setSegmentIndex(0);setSourceIndex(0);}},[playlist.length,segmentIndex]);
 
  function update(v:number){setRate(v);if(ref.current){ref.current.playbackRate=v;ref.current.preservesPitch=true;save(true,{rate:v});}}
  function seek(seconds:number){
    const audio=ref.current;if(!audio)return;
-   if(seconds<0&&audio.currentTime+seconds<0&&segmentIndex>0){
-     setSegmentIndex(i=>Math.max(0,i-1));setSourceIndex(0);return;
-   }
+   if(seconds<0&&audio.currentTime+seconds<0&&segmentIndex>0){setSegmentIndex(i=>Math.max(0,i-1));setSourceIndex(0);return;}
    const max=Number.isFinite(audio.duration)?audio.duration:Infinity;
-   if(seconds>0&&Number.isFinite(audio.duration)&&audio.currentTime+seconds>audio.duration&&segmentIndex<playlist.length-1){
-     setSegmentIndex(i=>Math.min(playlist.length-1,i+1));setSourceIndex(0);return;
-   }
+   if(seconds>0&&Number.isFinite(audio.duration)&&audio.currentTime+seconds>audio.duration&&segmentIndex<playlist.length-1){setSegmentIndex(i=>Math.min(playlist.length-1,i+1));setSourceIndex(0);return;}
    audio.currentTime=Math.min(max,Math.max(0,audio.currentTime+seconds));save(true);
  }
  function save(force=false,override?:{rate?:number}){
@@ -59,6 +71,7 @@ export default function AudioPlayer({src,segments,storageKey}:{src?:string;segme
  function fallbackSource(){
    const sources=segment?.sources||[];
    if(sourceIndex<sources.length-1){setSourceIndex(i=>i+1);return;}
+   if(remoteSegments?.length&&src){setRemoteSegments(null);setSegmentIndex(0);setSourceIndex(0);return;}
    void nextSegment();
  }
  useEffect(()=>{
