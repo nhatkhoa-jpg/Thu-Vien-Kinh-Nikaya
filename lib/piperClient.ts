@@ -1,6 +1,7 @@
 'use client';
 
-export type PiperProgress = {loaded:number; total:number; percent:number};
+export type PiperProgress = {loaded:number; total:number; percent:number; url?:string};
+export type PiperStage = 'importing'|'module-ready'|'session-start'|'model-download'|'session-ready'|'inference-start'|'inference-ready';
 
 const VOICE_BY_LOCALE:Record<string,string>={
   vi:'vi_VN-vais1000-medium',
@@ -14,6 +15,8 @@ const VOICE_BY_LOCALE:Record<string,string>={
 };
 
 let modulePromise:Promise<typeof import('@mintplex-labs/piper-tts-web')>|null=null;
+let sessionPromise:Promise<any>|null=null;
+let sessionVoice='';
 
 function moduleLoader(){
   if(!modulePromise)modulePromise=import('@mintplex-labs/piper-tts-web');
@@ -27,16 +30,35 @@ export function piperVoiceForLocale(locale:string){
 export async function synthesizePiper(
   text:string,
   locale:string,
-  onProgress?:(progress:PiperProgress)=>void
+  onProgress?:(progress:PiperProgress)=>void,
+  onStage?:(stage:PiperStage,detail?:string)=>void
 ):Promise<Blob>{
   const voiceId=piperVoiceForLocale(locale);
   if(!voiceId)throw new Error('piper-language-unavailable');
+  onStage?.('importing');
   const tts=await moduleLoader();
-  const wav=await tts.predict({text:text.normalize('NFC').trim(),voiceId},progress=>{
-    const total=Number(progress.total)||0;
-    const loaded=Number(progress.loaded)||0;
-    onProgress?.({loaded,total,percent:total?Math.max(0,Math.min(100,Math.round(loaded*100/total))):0});
-  });
+  onStage?.('module-ready');
+
+  if(!sessionPromise||sessionVoice!==voiceId){
+    sessionVoice=voiceId;
+    onStage?.('session-start',voiceId);
+    sessionPromise=tts.TtsSession.create({
+      voiceId,
+      progress:(progress:any)=>{
+        const total=Number(progress?.total)||0;
+        const loaded=Number(progress?.loaded)||0;
+        const url=String(progress?.url||'');
+        onStage?.('model-download',url);
+        onProgress?.({loaded,total,percent:total?Math.max(0,Math.min(100,Math.round(loaded*100/total))):0,url});
+      },
+      logger:(line:string)=>console.info('[nikaya-piper]',line)
+    }).catch((error:any)=>{sessionPromise=null;sessionVoice='';throw error;});
+  }
+  const session=await sessionPromise;
+  onStage?.('session-ready');
+  onStage?.('inference-start');
+  const wav=await session.predict(text.normalize('NFC').trim());
+  onStage?.('inference-ready',String(wav?.size||0));
   if(!wav||wav.size<1000)throw new Error('piper-empty-audio');
   return wav;
 }
