@@ -10,7 +10,7 @@
     "test:tts": "playwright test tests/tts.spec.ts"
   },
   "dependencies": {
-    "@mintplex-labs/piper-tts-web": "^1.0.5",
+    "@diffusionstudio/vits-web": "^1.0.3",
     "lucide-react": "^0.468.0",
     "next": "^16.0.0",
     "pdfmake": "^0.2.18",
