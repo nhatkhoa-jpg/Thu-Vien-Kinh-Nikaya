@@ -24,9 +24,9 @@ jobs:
           test "$(wc -l < data/exports/nikaya-knowledge.en.jsonl)" -eq 11
           node -e "const fs=require('fs'); for(const f of fs.readdirSync('data/exports')) for(const l of fs.readFileSync('data/exports/'+f,'utf8').trim().split('\\n')) JSON.parse(l)"
       - run: npm run build
-      - name: Smoke test reader, browser TTS assets and server fallback
+      - name: Smoke test staged neural reader
         run: |
-          npm run start -- -p 3000 > /tmp/nikaya-next.log 2>&1 &
+          TTS_E2E=1 npm run start -- -p 3000 > /tmp/nikaya-next.log 2>&1 &
           SERVER_PID=$!
           trap 'kill $SERVER_PID || true' EXIT
           READY=0
@@ -38,17 +38,12 @@ jobs:
           curl --fail --silent http://127.0.0.1:3000/vi/library/mn-21-kakacupama -o /tmp/mn21.html
           grep -q 'compactEssentials' /tmp/mn21.html
           grep -q 'essentialDisclosure' /tmp/mn21.html
-          grep -q 'V4.10' /tmp/mn21.html
+          grep -q 'V4.11-STAGE' /tmp/mn21.html
+          curl --fail --silent http://127.0.0.1:3000/__test/tts > /dev/null
           curl --fail --silent http://127.0.0.1:3000/en > /dev/null
-          curl --fail --silent http://127.0.0.1:3000/api/tts-assets/espeakng.js -o /tmp/espeakng.js
-          grep -q 'function eSpeakNG' /tmp/espeakng.js
-          curl --fail --silent http://127.0.0.1:3000/api/tts-assets/espeakng.worker.js -o /tmp/espeakng.worker.js
-          test "$(wc -c < /tmp/espeakng.worker.js)" -gt 100000
-          curl --fail --silent http://127.0.0.1:3000/api/tts-assets/espeakng.worker.data -o /tmp/espeakng.worker.data
-          test "$(wc -c < /tmp/espeakng.worker.data)" -gt 1000000
           curl --fail --silent --show-error -X POST http://127.0.0.1:3000/api/tts \
             -H 'Content-Type: application/json' \
-            --data '{"text":"Đây là bài kiểm tra giọng đọc tiếng Việt của thư viện. Đọc chậm, rõ, có ngắt câu.","locale":"vi","rate":0.8}' \
+            --data '{"text":"Đây là bài kiểm tra giọng đọc tiếng Việt dự phòng.","locale":"vi","rate":1}' \
             -o /tmp/nikaya-tts.wav
           test "$(head -c 4 /tmp/nikaya-tts.wav)" = "RIFF"
           test "$(wc -c < /tmp/nikaya-tts.wav)" -gt 1000
