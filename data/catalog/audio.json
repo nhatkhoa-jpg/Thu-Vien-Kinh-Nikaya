@@ -1,0 +1,27 @@
+{
+  "nikaya.mn.21": {
+    "vi": {
+      "url": "https://www.rongmotamhon.net/mainpage/download_pali.php?download_file=pali-55.mp3",
+      "label": "Kinh Ví Dụ Cái Cưa · tiếng Việt",
+      "provider": "Rộng Mở Tâm Hồn",
+      "sourceUrl": "https://nikaya.tamhoc.org/viewbv.kinh-trung-bo-21-kinh-vi-du-cai-cua-kakacupama-sutta-",
+      "download": true
+    },
+    "en": {
+      "url": "https://static1.squarespace.com/static/58384d438419c2f3cb695f5b/t/5c229b65032be478967ea150/1545772021948/MN%2B21%2BThe%2Bsimile%2Bof%2Bthe%2Bsaw.mp3",
+      "label": "The Simile of the Saw · English",
+      "provider": "PaliAudio",
+      "sourceUrl": "https://www.paliaudio.com/",
+      "download": true
+    }
+  },
+  "nikaya.sn.56.11": {
+    "en": {
+      "url": "https://static1.squarespace.com/static/58384d438419c2f3cb695f5b/t/5a2efa1f4192022b9fc5dce6/1513028180495/%5B11%5D%2BTurning%2Bthe%2Bwheel%2Bof%2Btruth%2B-%2BMP3.mp3",
+      "label": "Setting the Dhamma Wheel in Motion · English",
+      "provider": "PaliAudio",
+      "sourceUrl": "https://www.paliaudio.com/",
+      "download": true
+    }
+  }
+}
