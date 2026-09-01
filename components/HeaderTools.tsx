@@ -21,7 +21,7 @@ export default function HeaderTools({locale}:{locale:Locale}){
   },[q]);
   function go(slug:string){setSearchOpen(false);setMenuOpen(false);setQ('');router.push(`/${locale}/library/${slug}`);}
   return <>
-    <button className="headerSearchTrigger" onClick={()=>setSearchOpen(true)} aria-label={vi?'Tìm kiếm toàn thư viện':'Search library'}><Search size={18}/><span>{vi?'Tìm kinh...':'Search...'}</span></button>
+    <button data-release={RELEASE} className="headerSearchTrigger" onClick={()=>setSearchOpen(true)} aria-label={vi?'Tìm kiếm toàn thư viện':'Search library'}><Search size={18}/><span>{vi?'Tìm kinh...':'Search...'}</span></button>
     <button className="mobileMenuButton" onClick={()=>setMenuOpen(true)} aria-label={vi?'Mở menu':'Open menu'}><Menu size={21}/></button>
     {searchOpen&&<div className="commandBackdrop" onMouseDown={()=>setSearchOpen(false)}><section className="commandPalette" onMouseDown={e=>e.stopPropagation()}>
       <div className="commandHead"><Search size={20}/><input autoFocus value={q} onChange={e=>setQ(e.target.value)} placeholder={vi?'Tìm TB 21, tên kinh, Pāli, chủ đề...':'Search code, title, Pāli, topic...'}/><button onClick={()=>setSearchOpen(false)}><X size={20}/></button></div>
