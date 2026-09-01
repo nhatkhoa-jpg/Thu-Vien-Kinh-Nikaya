@@ -11,6 +11,7 @@ type PreservationManifest={version?:string;segments?:AudioSegment[]};
 export default function AudioPlayer({src,segments,manifestUrl,storageKey}:{src?:string;segments?:AudioSegment[];manifestUrl?:string;storageKey?:string}){
  const ref=useRef<HTMLAudioElement>(null);
  const lastSavedRef=useRef(0);
+ const rateRef=useRef(1);
  const [rate,setRate]=useState(1);
  const [segmentIndex,setSegmentIndex]=useState(0);
  const [sourceIndex,setSourceIndex]=useState(0);
@@ -34,6 +35,7 @@ export default function AudioPlayer({src,segments,manifestUrl,storageKey}:{src?:
  const key=`nikaya:audio:${storageKey||src||manifestUrl||playlist.map(x=>x.id).join('|')}`;
 
  useEffect(()=>{
+   rateRef.current=rate;
    const audio=ref.current;if(!audio)return;
    audio.playbackRate=rate;audio.preservesPitch=true;
  },[rate,currentSrc]);
@@ -41,18 +43,30 @@ export default function AudioPlayer({src,segments,manifestUrl,storageKey}:{src?:
  useEffect(()=>{setSegmentIndex(0);setSourceIndex(0);},[storageKey,src,segments,manifestUrl]);
  useEffect(()=>{if(segmentIndex>=playlist.length){setSegmentIndex(0);setSourceIndex(0);}},[playlist.length,segmentIndex]);
 
- function update(v:number){setRate(v);if(ref.current){ref.current.playbackRate=v;ref.current.preservesPitch=true;save(true,{rate:v});}}
+ function persistPosition(nextSegmentIndex:number,time:number,nextRate=rateRef.current){
+   const now=Date.now();lastSavedRef.current=now;
+   try{localStorage.setItem(key,JSON.stringify({segmentIndex:nextSegmentIndex,time,rate:nextRate,updatedAt:now}));}catch{}
+ }
+ function switchSegment(next:number){
+   if(next<0||next>=playlist.length)return;
+   persistPosition(next,0);
+   setSegmentIndex(next);setSourceIndex(0);
+ }
+ function update(v:number){
+   rateRef.current=v;setRate(v);
+   if(ref.current){ref.current.playbackRate=v;ref.current.preservesPitch=true;save(true,{rate:v});}
+ }
  function seek(seconds:number){
    const audio=ref.current;if(!audio)return;
-   if(seconds<0&&audio.currentTime+seconds<0&&segmentIndex>0){setSegmentIndex(i=>Math.max(0,i-1));setSourceIndex(0);return;}
+   if(seconds<0&&audio.currentTime+seconds<0&&segmentIndex>0){switchSegment(segmentIndex-1);return;}
    const max=Number.isFinite(audio.duration)?audio.duration:Infinity;
-   if(seconds>0&&Number.isFinite(audio.duration)&&audio.currentTime+seconds>audio.duration&&segmentIndex<playlist.length-1){setSegmentIndex(i=>Math.min(playlist.length-1,i+1));setSourceIndex(0);return;}
+   if(seconds>0&&Number.isFinite(audio.duration)&&audio.currentTime+seconds>audio.duration&&segmentIndex<playlist.length-1){switchSegment(segmentIndex+1);return;}
    audio.currentTime=Math.min(max,Math.max(0,audio.currentTime+seconds));save(true);
  }
  function save(force=false,override?:{rate?:number}){
    const audio=ref.current;if(!audio||!Number.isFinite(audio.currentTime))return;
    const now=Date.now();if(!force&&now-lastSavedRef.current<2000)return;lastSavedRef.current=now;
-   try{localStorage.setItem(key,JSON.stringify({segmentIndex,time:audio.currentTime,rate:override?.rate??rate,updatedAt:now}));}catch{}
+   try{localStorage.setItem(key,JSON.stringify({segmentIndex,time:audio.currentTime,rate:override?.rate??rateRef.current,updatedAt:now}));}catch{}
  }
  function restore(){
    const audio=ref.current;if(!audio)return;
@@ -61,11 +75,11 @@ export default function AudioPlayer({src,segments,manifestUrl,storageKey}:{src?:
      const savedSegment=Number(value?.segmentIndex);
      if(Number.isInteger(savedSegment)&&savedSegment>=0&&savedSegment<playlist.length&&savedSegment!==segmentIndex){setSegmentIndex(savedSegment);setSourceIndex(0);return;}
      if(value&&Number.isFinite(value.time)&&value.time>4&&(!Number.isFinite(audio.duration)||value.time<audio.duration-8))audio.currentTime=value.time;
-     if(value&&rates.includes(Number(value.rate))){const r=Number(value.rate);setRate(r);audio.playbackRate=r;audio.preservesPitch=true;}
+     if(value&&rates.includes(Number(value.rate))){const r=Number(value.rate);rateRef.current=r;setRate(r);audio.playbackRate=r;audio.preservesPitch=true;}
    }catch{}
  }
  async function nextSegment(){
-   if(segmentIndex<playlist.length-1){save(true);setSegmentIndex(i=>i+1);setSourceIndex(0);return;}
+   if(segmentIndex<playlist.length-1){switchSegment(segmentIndex+1);return;}
    try{localStorage.removeItem(key);}catch{}
  }
  function fallbackSource(){
@@ -76,8 +90,8 @@ export default function AudioPlayer({src,segments,manifestUrl,storageKey}:{src?:
  }
  useEffect(()=>{
    const audio=ref.current;if(!audio||!currentSrc)return;
-   if(segmentIndex>0||sourceIndex>0){audio.load();audio.playbackRate=rate;audio.preservesPitch=true;void audio.play().catch(()=>{});}
- },[segmentIndex,sourceIndex,currentSrc,rate]);
+   if(segmentIndex>0||sourceIndex>0){audio.load();audio.playbackRate=rateRef.current;audio.preservesPitch=true;void audio.play().catch(()=>{});}
+ },[segmentIndex,sourceIndex,currentSrc]);
 
  if(!currentSrc)return null;
  const provider=segment?.sources[sourceIndex]?.provider;
