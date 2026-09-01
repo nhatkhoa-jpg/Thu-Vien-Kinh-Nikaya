@@ -5028,80 +5028,6 @@
     "contentVersion": "2026-09-01.mn-full-v1"
   },
   {
-    "id": "nikaya.dn.16",
-    "canonicalRef": "dn16",
-    "slug": "dn-16-mahaparinibbana",
-    "code": "DN 16",
-    "viCode": "TrB 16",
-    "collection": "DN",
-    "pali": "Mahāparinibbāna Sutta",
-    "vi": "Kinh Đại Bát Niết-bàn",
-    "en": "The Great Passing",
-    "topics": [
-      "cuối đời",
-      "chánh niệm",
-      "tăng đoàn"
-    ],
-    "source": {
-      "url": "https://suttacentral.net/dn16/en/sujato",
-      "provider": "SuttaCentral",
-      "translator": "Bhikkhu Sujato",
-      "license": "CC0",
-      "language": "en"
-    },
-    "media": {
-      "bookUrl": "https://suttacentral.net/edition/dn/en/sujato"
-    },
-    "summary": {
-      "vi": "Tường thuật hành trình cuối đời Đức Phật với nhiều chỉ dẫn quan trọng về thực hành, cộng đồng và sự tự nương tựa.",
-      "en": "The Buddha’s final journey, with important guidance on practice, community, and self-reliance."
-    },
-    "practice": {
-      "vi": "Nên đọc theo chương. Đánh dấu các lời dạy về chánh niệm, giới luật và tinh thần tự mình thắp đuốc lên mà đi.",
-      "en": "Best read chapter by chapter, noting teachings on mindfulness, discipline, and self-reliance."
-    },
-    "readMinutes": 75,
-    "featured": true,
-    "contentVersion": "2026-09-01.1"
-  },
-  {
-    "id": "nikaya.dn.31",
-    "canonicalRef": "dn31",
-    "slug": "dn-31-sigalovada",
-    "code": "DN 31",
-    "viCode": "TrB 31",
-    "collection": "DN",
-    "pali": "Siṅgāla Sutta",
-    "vi": "Kinh Giáo Thọ Thi-ca-la-việt",
-    "en": "Advice to Sigālaka",
-    "topics": [
-      "gia đình",
-      "đạo đức",
-      "đời sống"
-    ],
-    "source": {
-      "url": "https://suttacentral.net/dn31/en/sujato",
-      "provider": "SuttaCentral",
-      "translator": "Bhikkhu Sujato",
-      "license": "CC0",
-      "language": "en"
-    },
-    "media": {
-      "bookUrl": "https://suttacentral.net/edition/dn/en/sujato"
-    },
-    "summary": {
-      "vi": "Những hướng dẫn rất thực tế về quan hệ gia đình, bạn bè, công việc và trách nhiệm xã hội.",
-      "en": "Practical guidance on family, friendship, work, and social responsibilities."
-    },
-    "practice": {
-      "vi": "Rất phù hợp để đọc theo chủ đề đời sống hằng ngày và thảo luận trong gia đình.",
-      "en": "Especially useful for everyday life and family discussion."
-    },
-    "readMinutes": 22,
-    "featured": false,
-    "contentVersion": "2026-09-01.1"
-  },
-  {
     "id": "nikaya.sn.56.11",
     "canonicalRef": "sn56.11",
     "slug": "sn-56-11-dhammacakkappavattana",
@@ -5321,5 +5247,1135 @@
     "readMinutes": 7,
     "featured": false,
     "contentVersion": "2026-09-01.1"
+  },
+  {
+    "id": "nikaya.dn.1",
+    "canonicalRef": "dn1",
+    "slug": "dn-1",
+    "code": "DN 1",
+    "viCode": "TrB 1",
+    "collection": "DN",
+    "pali": "Brahmajāla Sutta",
+    "vi": "Kinh Phạm võng Tụng phẩm thứ nhất Đoạn 1. PTS cs 1~1",
+    "en": "The Divine Net",
+    "topics": [],
+    "source": {
+      "url": "https://suttacentral.net/dn1/vi/minh_chau",
+      "provider": "SuttaCentral",
+      "translator": "Thích Minh Châu",
+      "license": "Xem ghi chú quyền sử dụng tại nguồn",
+      "language": "vi"
+    },
+    "media": {
+      "bookUrl": "https://suttacentral.net/edition/dn/vi/minh_chau"
+    },
+    "summary": {
+      "vi": "Kinh Phạm võng Tụng phẩm thứ nhất Đoạn 1. PTS cs 1~1 — bài số 1 thuộc Trường Bộ. Thư viện cung cấp toàn văn để đọc trực tiếp và MP3 dựng sẵn để nghe trên mọi thiết bị.",
+      "en": "While others may praise or criticize the Buddha, they tend to focus on trivial details. The Buddha presents an analysis of 62 kinds of wrong view, seeing through which one becomes detached from meaningless speculations."
+    },
+    "practice": {
+      "vi": "Đọc chậm toàn văn TrB 1, lưu các đoạn quan trọng và dùng MP3 dựng sẵn để nghe liên tục.",
+      "en": "Read the full discourse slowly, save important passages, and use the prebuilt MP3 for continuous listening."
+    },
+    "readMinutes": 107,
+    "featured": false,
+    "contentVersion": "2026-09-02.dn-full-v1"
+  },
+  {
+    "id": "nikaya.dn.2",
+    "canonicalRef": "dn2",
+    "slug": "dn-2",
+    "code": "DN 2",
+    "viCode": "TrB 2",
+    "collection": "DN",
+    "pali": "Sāmaññaphala Sutta",
+    "vi": "Kinh Sa-môn quả Đoạn 1. PTS cs 1",
+    "en": "The Fruits of the Ascetic Life",
+    "topics": [],
+    "source": {
+      "url": "https://suttacentral.net/dn2/vi/minh_chau",
+      "provider": "SuttaCentral",
+      "translator": "Thích Minh Châu",
+      "license": "Xem ghi chú quyền sử dụng tại nguồn",
+      "language": "vi"
+    },
+    "media": {
+      "bookUrl": "https://suttacentral.net/edition/dn/vi/minh_chau"
+    },
+    "summary": {
+      "vi": "Kinh Sa-môn quả Đoạn 1. PTS cs 1 — bài số 2 thuộc Trường Bộ. Thư viện cung cấp toàn văn để đọc trực tiếp và MP3 dựng sẵn để nghe trên mọi thiết bị.",
+      "en": "The newly crowned King Ajātasattu is disturbed by the violent means by which he achieved the crown. He visits the Buddha to find peace of mind, and asks him about the benefits of spiritual practice. This is one of the greatest literary and spiritual texts of early Buddhism."
+    },
+    "practice": {
+      "vi": "Đọc chậm toàn văn TrB 2, lưu các đoạn quan trọng và dùng MP3 dựng sẵn để nghe liên tục.",
+      "en": "Read the full discourse slowly, save important passages, and use the prebuilt MP3 for continuous listening."
+    },
+    "readMinutes": 88,
+    "featured": false,
+    "contentVersion": "2026-09-02.dn-full-v1"
+  },
+  {
+    "id": "nikaya.dn.3",
+    "canonicalRef": "dn3",
+    "slug": "dn-3",
+    "code": "DN 3",
+    "viCode": "TrB 3",
+    "collection": "DN",
+    "pali": "Ambaṭṭha Sutta",
+    "vi": "Kinh Ambaṭṭha (A-ma-trú) Tụng phẩm thứ nhất Đoạn 1. PTS cs 1~1",
+    "en": "With Ambaṭṭha",
+    "topics": [],
+    "source": {
+      "url": "https://suttacentral.net/dn3/vi/minh_chau",
+      "provider": "SuttaCentral",
+      "translator": "Thích Minh Châu",
+      "license": "Xem ghi chú quyền sử dụng tại nguồn",
+      "language": "vi"
+    },
+    "media": {
+      "bookUrl": "https://suttacentral.net/edition/dn/vi/minh_chau"
+    },
+    "summary": {
+      "vi": "Kinh Ambaṭṭha (A-ma-trú) Tụng phẩm thứ nhất Đoạn 1. PTS cs 1~1 — bài số 3 thuộc Trường Bộ. Thư viện cung cấp toàn văn để đọc trực tiếp và MP3 dựng sẵn để nghe trên mọi thiết bị.",
+      "en": "A young brahmin student attacks the Buddha’s family, but is put in his place."
+    },
+    "practice": {
+      "vi": "Đọc chậm toàn văn TrB 3, lưu các đoạn quan trọng và dùng MP3 dựng sẵn để nghe liên tục.",
+      "en": "Read the full discourse slowly, save important passages, and use the prebuilt MP3 for continuous listening."
+    },
+    "readMinutes": 48,
+    "featured": false,
+    "contentVersion": "2026-09-02.dn-full-v1"
+  },
+  {
+    "id": "nikaya.dn.4",
+    "canonicalRef": "dn4",
+    "slug": "dn-4",
+    "code": "DN 4",
+    "viCode": "TrB 4",
+    "collection": "DN",
+    "pali": "Soṇadaṇḍa Sutta",
+    "vi": "Kinh Soṇadaṇḍa (Chủng Ðức) Đoạn 1. 1",
+    "en": "With Soṇadaṇḍa",
+    "topics": [],
+    "source": {
+      "url": "https://suttacentral.net/dn4/vi/minh_chau",
+      "provider": "SuttaCentral",
+      "translator": "Thích Minh Châu",
+      "license": "Xem ghi chú quyền sử dụng tại nguồn",
+      "language": "vi"
+    },
+    "media": {
+      "bookUrl": "https://suttacentral.net/edition/dn/vi/minh_chau"
+    },
+    "summary": {
+      "vi": "Kinh Soṇadaṇḍa (Chủng Ðức) Đoạn 1. 1 — bài số 4 thuộc Trường Bộ. Thư viện cung cấp toàn văn để đọc trực tiếp và MP3 dựng sẵn để nghe trên mọi thiết bị.",
+      "en": "A reputed brahmin visits the Buddha, despite the reservations of other brahmins. They discuss the true meaning of a brahmin, and the Buddha skillfully draws him around to his own point of view."
+    },
+    "practice": {
+      "vi": "Đọc chậm toàn văn TrB 4, lưu các đoạn quan trọng và dùng MP3 dựng sẵn để nghe liên tục.",
+      "en": "Read the full discourse slowly, save important passages, and use the prebuilt MP3 for continuous listening."
+    },
+    "readMinutes": 35,
+    "featured": false,
+    "contentVersion": "2026-09-02.dn-full-v1"
+  },
+  {
+    "id": "nikaya.dn.5",
+    "canonicalRef": "dn5",
+    "slug": "dn-5",
+    "code": "DN 5",
+    "viCode": "TrB 5",
+    "collection": "DN",
+    "pali": "Kūṭadanta Sutta",
+    "vi": "Kinh Kūṭadanta (Cứu-la-đàn-đầu) Đoạn 1. PTS cs 1",
+    "en": "With Kūṭadanta",
+    "topics": [],
+    "source": {
+      "url": "https://suttacentral.net/dn5/vi/minh_chau",
+      "provider": "SuttaCentral",
+      "translator": "Thích Minh Châu",
+      "license": "Xem ghi chú quyền sử dụng tại nguồn",
+      "language": "vi"
+    },
+    "media": {
+      "bookUrl": "https://suttacentral.net/edition/dn/vi/minh_chau"
+    },
+    "summary": {
+      "vi": "Kinh Kūṭadanta (Cứu-la-đàn-đầu) Đoạn 1. PTS cs 1 — bài số 5 thuộc Trường Bộ. Thư viện cung cấp toàn văn để đọc trực tiếp và MP3 dựng sẵn để nghe trên mọi thiết bị.",
+      "en": "A brahmin wishes to undertake a great sacrifice, and asks for the Buddha’s advice. The Buddha tells a legend of the past, in which a king is persuaded to give up violent sacrifice, and instead to devote his resources to supporting the needy citizens of his realm. However, even such a beneficial and non-violent sacrifice pales in comparison to the spiritual sacrifice of giving up attachments."
+    },
+    "practice": {
+      "vi": "Đọc chậm toàn văn TrB 5, lưu các đoạn quan trọng và dùng MP3 dựng sẵn để nghe liên tục.",
+      "en": "Read the full discourse slowly, save important passages, and use the prebuilt MP3 for continuous listening."
+    },
+    "readMinutes": 49,
+    "featured": false,
+    "contentVersion": "2026-09-02.dn-full-v1"
+  },
+  {
+    "id": "nikaya.dn.6",
+    "canonicalRef": "dn6",
+    "slug": "dn-6",
+    "code": "DN 6",
+    "viCode": "TrB 6",
+    "collection": "DN",
+    "pali": "Mahāli Sutta",
+    "vi": "Kinh Mahāli Đoạn 1. PTS cs 1",
+    "en": "With Mahāli",
+    "topics": [],
+    "source": {
+      "url": "https://suttacentral.net/dn6/vi/minh_chau",
+      "provider": "SuttaCentral",
+      "translator": "Thích Minh Châu",
+      "license": "Xem ghi chú quyền sử dụng tại nguồn",
+      "language": "vi"
+    },
+    "media": {
+      "bookUrl": "https://suttacentral.net/edition/dn/vi/minh_chau"
+    },
+    "summary": {
+      "vi": "Kinh Mahāli Đoạn 1. PTS cs 1 — bài số 6 thuộc Trường Bộ. Thư viện cung cấp toàn văn để đọc trực tiếp và MP3 dựng sẵn để nghe trên mọi thiết bị.",
+      "en": "The Buddha explains to a diverse group of lay people how the results of meditation depend on the manner of development."
+    },
+    "practice": {
+      "vi": "Đọc chậm toàn văn TrB 6, lưu các đoạn quan trọng và dùng MP3 dựng sẵn để nghe liên tục.",
+      "en": "Read the full discourse slowly, save important passages, and use the prebuilt MP3 for continuous listening."
+    },
+    "readMinutes": 17,
+    "featured": false,
+    "contentVersion": "2026-09-02.dn-full-v1"
+  },
+  {
+    "id": "nikaya.dn.7",
+    "canonicalRef": "dn7",
+    "slug": "dn-7",
+    "code": "DN 7",
+    "viCode": "TrB 7",
+    "collection": "DN",
+    "pali": "Jāliya Sutta",
+    "vi": "Kinh Jāliya Đoạn 1. PTS cs 1",
+    "en": "With Jāliya",
+    "topics": [],
+    "source": {
+      "url": "https://suttacentral.net/dn7/vi/minh_chau",
+      "provider": "SuttaCentral",
+      "translator": "Thích Minh Châu",
+      "license": "Xem ghi chú quyền sử dụng tại nguồn",
+      "language": "vi"
+    },
+    "media": {
+      "bookUrl": "https://suttacentral.net/edition/dn/vi/minh_chau"
+    },
+    "summary": {
+      "vi": "Kinh Jāliya Đoạn 1. PTS cs 1 — bài số 7 thuộc Trường Bộ. Thư viện cung cấp toàn văn để đọc trực tiếp và MP3 dựng sẵn để nghe trên mọi thiết bị.",
+      "en": "This discourse is mostly quoted by the Buddha in the previous."
+    },
+    "practice": {
+      "vi": "Đọc chậm toàn văn TrB 7, lưu các đoạn quan trọng và dùng MP3 dựng sẵn để nghe liên tục.",
+      "en": "Read the full discourse slowly, save important passages, and use the prebuilt MP3 for continuous listening."
+    },
+    "readMinutes": 3,
+    "featured": false,
+    "contentVersion": "2026-09-02.dn-full-v1"
+  },
+  {
+    "id": "nikaya.dn.8",
+    "canonicalRef": "dn8",
+    "slug": "dn-8",
+    "code": "DN 8",
+    "viCode": "TrB 8",
+    "collection": "DN",
+    "pali": "Mahāsīhanāda Sutta",
+    "vi": "Kinh Ca-diếp Sư tử hống Đoạn 1. (Kinh nầy còn có tên là Kinh “Ðại sư tử hống” —Mahàsìhanàda Sutta) Đoạn 2. PTS cs 1",
+    "en": "The Longer Discourse on the Lion’s Roar",
+    "topics": [],
+    "source": {
+      "url": "https://suttacentral.net/dn8/vi/minh_chau",
+      "provider": "SuttaCentral",
+      "translator": "Thích Minh Châu",
+      "license": "Xem ghi chú quyền sử dụng tại nguồn",
+      "language": "vi"
+    },
+    "media": {
+      "bookUrl": "https://suttacentral.net/edition/dn/vi/minh_chau"
+    },
+    "summary": {
+      "vi": "Kinh Ca-diếp Sư tử hống Đoạn 1. (Kinh nầy còn có tên là Kinh “Ðại sư tử hống” —Mahàsìhanàda Sutta) Đoạn 2. PTS cs 1 — bài số 8 thuộc Trường Bộ. Thư viện cung cấp toàn văn để đọc trực tiếp và MP3 dựng sẵn để nghe trên mọi thiết bị.",
+      "en": "The Buddha is challenged by a naked ascetic on the topic of spiritual austerities. He points out that it is quite possible to perform all kinds of austere practices without having any inner purity of mind."
+    },
+    "practice": {
+      "vi": "Đọc chậm toàn văn TrB 8, lưu các đoạn quan trọng và dùng MP3 dựng sẵn để nghe liên tục.",
+      "en": "Read the full discourse slowly, save important passages, and use the prebuilt MP3 for continuous listening."
+    },
+    "readMinutes": 38,
+    "featured": false,
+    "contentVersion": "2026-09-02.dn-full-v1"
+  },
+  {
+    "id": "nikaya.dn.9",
+    "canonicalRef": "dn9",
+    "slug": "dn-9",
+    "code": "DN 9",
+    "viCode": "TrB 9",
+    "collection": "DN",
+    "pali": "Poṭṭhapāda Sutta",
+    "vi": "Kinh Poṭṭhapāda (Bố-sá-bà-lâu) Đoạn 1. PTS cs 1",
+    "en": "With Poṭṭhapāda",
+    "topics": [],
+    "source": {
+      "url": "https://suttacentral.net/dn9/vi/minh_chau",
+      "provider": "SuttaCentral",
+      "translator": "Thích Minh Châu",
+      "license": "Xem ghi chú quyền sử dụng tại nguồn",
+      "language": "vi"
+    },
+    "media": {
+      "bookUrl": "https://suttacentral.net/edition/dn/vi/minh_chau"
+    },
+    "summary": {
+      "vi": "Kinh Poṭṭhapāda (Bố-sá-bà-lâu) Đoạn 1. PTS cs 1 — bài số 9 thuộc Trường Bộ. Thư viện cung cấp toàn văn để đọc trực tiếp và MP3 dựng sẵn để nghe trên mọi thiết bị.",
+      "en": "The Buddha discusses with a wanderer the nature of perception and how it evolves through deeper states of meditation. None of these, however, should be identified with a self or soul."
+    },
+    "practice": {
+      "vi": "Đọc chậm toàn văn TrB 9, lưu các đoạn quan trọng và dùng MP3 dựng sẵn để nghe liên tục.",
+      "en": "Read the full discourse slowly, save important passages, and use the prebuilt MP3 for continuous listening."
+    },
+    "readMinutes": 53,
+    "featured": false,
+    "contentVersion": "2026-09-02.dn-full-v1"
+  },
+  {
+    "id": "nikaya.dn.10",
+    "canonicalRef": "dn10",
+    "slug": "dn-10",
+    "code": "DN 10",
+    "viCode": "TrB 10",
+    "collection": "DN",
+    "pali": "Subha Sutta",
+    "vi": "Kinh Subha (Tu-bà) Tụng phẩm I Đoạn 1. PTS cs 1",
+    "en": "With Subha",
+    "topics": [],
+    "source": {
+      "url": "https://suttacentral.net/dn10/vi/minh_chau",
+      "provider": "SuttaCentral",
+      "translator": "Thích Minh Châu",
+      "license": "Xem ghi chú quyền sử dụng tại nguồn",
+      "language": "vi"
+    },
+    "media": {
+      "bookUrl": "https://suttacentral.net/edition/dn/vi/minh_chau"
+    },
+    "summary": {
+      "vi": "Kinh Subha (Tu-bà) Tụng phẩm I Đoạn 1. PTS cs 1 — bài số 10 thuộc Trường Bộ. Thư viện cung cấp toàn văn để đọc trực tiếp và MP3 dựng sẵn để nghe trên mọi thiết bị.",
+      "en": "Shortly after the Buddha’s death, Venerable Ānanda is invited to explain the core teachings."
+    },
+    "practice": {
+      "vi": "Đọc chậm toàn văn TrB 10, lưu các đoạn quan trọng và dùng MP3 dựng sẵn để nghe liên tục.",
+      "en": "Read the full discourse slowly, save important passages, and use the prebuilt MP3 for continuous listening."
+    },
+    "readMinutes": 12,
+    "featured": false,
+    "contentVersion": "2026-09-02.dn-full-v1"
+  },
+  {
+    "id": "nikaya.dn.11",
+    "canonicalRef": "dn11",
+    "slug": "dn-11",
+    "code": "DN 11",
+    "viCode": "TrB 11",
+    "collection": "DN",
+    "pali": "Kevaṭṭa Sutta",
+    "vi": "Kinh Kevaddha (Kiên Cố) Đoạn 1. PTS cs 1",
+    "en": "With Kevaddha",
+    "topics": [],
+    "source": {
+      "url": "https://suttacentral.net/dn11/vi/minh_chau",
+      "provider": "SuttaCentral",
+      "translator": "Thích Minh Châu",
+      "license": "Xem ghi chú quyền sử dụng tại nguồn",
+      "language": "vi"
+    },
+    "media": {
+      "bookUrl": "https://suttacentral.net/edition/dn/vi/minh_chau"
+    },
+    "summary": {
+      "vi": "Kinh Kevaddha (Kiên Cố) Đoạn 1. PTS cs 1 — bài số 11 thuộc Trường Bộ. Thư viện cung cấp toàn văn để đọc trực tiếp và MP3 dựng sẵn để nghe trên mọi thiết bị.",
+      "en": "The Buddha refuses to perform miracles, explaining that this is not the right way to inspire faith. He goes on to tell the story of a monk whose misguided quest for answers led him as far as Brahmā."
+    },
+    "practice": {
+      "vi": "Đọc chậm toàn văn TrB 11, lưu các đoạn quan trọng và dùng MP3 dựng sẵn để nghe liên tục.",
+      "en": "Read the full discourse slowly, save important passages, and use the prebuilt MP3 for continuous listening."
+    },
+    "readMinutes": 25,
+    "featured": false,
+    "contentVersion": "2026-09-02.dn-full-v1"
+  },
+  {
+    "id": "nikaya.dn.12",
+    "canonicalRef": "dn12",
+    "slug": "dn-12",
+    "code": "DN 12",
+    "viCode": "TrB 12",
+    "collection": "DN",
+    "pali": "Lohicca Sutta",
+    "vi": "Kinh Lohicca (Lô-hi-gia) Đoạn 1. PTS cs 1",
+    "en": "With Lohicca",
+    "topics": [],
+    "source": {
+      "url": "https://suttacentral.net/dn12/vi/minh_chau",
+      "provider": "SuttaCentral",
+      "translator": "Thích Minh Châu",
+      "license": "Xem ghi chú quyền sử dụng tại nguồn",
+      "language": "vi"
+    },
+    "media": {
+      "bookUrl": "https://suttacentral.net/edition/dn/vi/minh_chau"
+    },
+    "summary": {
+      "vi": "Kinh Lohicca (Lô-hi-gia) Đoạn 1. PTS cs 1 — bài số 12 thuộc Trường Bộ. Thư viện cung cấp toàn văn để đọc trực tiếp và MP3 dựng sẵn để nghe trên mọi thiết bị.",
+      "en": "A brahmin has fallen into the idea that there is no point in trying to offer spiritual help to others. The Buddha goes to see him, and persuades him of the genuine benefits of spiritual teaching."
+    },
+    "practice": {
+      "vi": "Đọc chậm toàn văn TrB 12, lưu các đoạn quan trọng và dùng MP3 dựng sẵn để nghe liên tục.",
+      "en": "Read the full discourse slowly, save important passages, and use the prebuilt MP3 for continuous listening."
+    },
+    "readMinutes": 21,
+    "featured": false,
+    "contentVersion": "2026-09-02.dn-full-v1"
+  },
+  {
+    "id": "nikaya.dn.13",
+    "canonicalRef": "dn13",
+    "slug": "dn-13",
+    "code": "DN 13",
+    "viCode": "TrB 13",
+    "collection": "DN",
+    "pali": "Tevijja Sutta",
+    "vi": "Kinh Tevijjā (Tam minh) Đoạn 1. PTS cs 1",
+    "en": "The Three Knowledges",
+    "topics": [],
+    "source": {
+      "url": "https://suttacentral.net/dn13/vi/minh_chau",
+      "provider": "SuttaCentral",
+      "translator": "Thích Minh Châu",
+      "license": "Xem ghi chú quyền sử dụng tại nguồn",
+      "language": "vi"
+    },
+    "media": {
+      "bookUrl": "https://suttacentral.net/edition/dn/vi/minh_chau"
+    },
+    "summary": {
+      "vi": "Kinh Tevijjā (Tam minh) Đoạn 1. PTS cs 1 — bài số 13 thuộc Trường Bộ. Thư viện cung cấp toàn văn để đọc trực tiếp và MP3 dựng sẵn để nghe trên mọi thiết bị.",
+      "en": "A number of brahmins are discussing the true path to Brahmā. Contesting the claims to authority based on the Vedas, the Buddha insists that only personal experience can lead to the truth."
+    },
+    "practice": {
+      "vi": "Đọc chậm toàn văn TrB 13, lưu các đoạn quan trọng và dùng MP3 dựng sẵn để nghe liên tục.",
+      "en": "Read the full discourse slowly, save important passages, and use the prebuilt MP3 for continuous listening."
+    },
+    "readMinutes": 37,
+    "featured": false,
+    "contentVersion": "2026-09-02.dn-full-v1"
+  },
+  {
+    "id": "nikaya.dn.14",
+    "canonicalRef": "dn14",
+    "slug": "dn-14",
+    "code": "DN 14",
+    "viCode": "TrB 14",
+    "collection": "DN",
+    "pali": "Mahāpadāna Sutta",
+    "vi": "Kinh Ðại bổn Tụng phẩm I Đoạn 1. PTS cs 1~1",
+    "en": "The Great Discourse on Traces Left Behind",
+    "topics": [],
+    "source": {
+      "url": "https://suttacentral.net/dn14/vi/minh_chau",
+      "provider": "SuttaCentral",
+      "translator": "Thích Minh Châu",
+      "license": "Xem ghi chú quyền sử dụng tại nguồn",
+      "language": "vi"
+    },
+    "media": {
+      "bookUrl": "https://suttacentral.net/edition/dn/vi/minh_chau"
+    },
+    "summary": {
+      "vi": "Kinh Ðại bổn Tụng phẩm I Đoạn 1. PTS cs 1~1 — bài số 14 thuộc Trường Bộ. Thư viện cung cấp toàn văn để đọc trực tiếp và MP3 dựng sẵn để nghe trên mọi thiết bị.",
+      "en": "The Buddha teaches about the six Buddhas of the past, and tells a lengthy account of one of those, Vipassī."
+    },
+    "practice": {
+      "vi": "Đọc chậm toàn văn TrB 14, lưu các đoạn quan trọng và dùng MP3 dựng sẵn để nghe liên tục.",
+      "en": "Read the full discourse slowly, save important passages, and use the prebuilt MP3 for continuous listening."
+    },
+    "readMinutes": 101,
+    "featured": false,
+    "contentVersion": "2026-09-02.dn-full-v1"
+  },
+  {
+    "id": "nikaya.dn.15",
+    "canonicalRef": "dn15",
+    "slug": "dn-15",
+    "code": "DN 15",
+    "viCode": "TrB 15",
+    "collection": "DN",
+    "pali": "Mahānidāna Sutta",
+    "vi": "Kinh Ðại duyên Đoạn 1. PTS cs 1",
+    "en": "The Great Discourse on Causation",
+    "topics": [],
+    "source": {
+      "url": "https://suttacentral.net/dn15/vi/minh_chau",
+      "provider": "SuttaCentral",
+      "translator": "Thích Minh Châu",
+      "license": "Xem ghi chú quyền sử dụng tại nguồn",
+      "language": "vi"
+    },
+    "media": {
+      "bookUrl": "https://suttacentral.net/edition/dn/vi/minh_chau"
+    },
+    "summary": {
+      "vi": "Kinh Ðại duyên Đoạn 1. PTS cs 1 — bài số 15 thuộc Trường Bộ. Thư viện cung cấp toàn văn để đọc trực tiếp và MP3 dựng sẵn để nghe trên mọi thiết bị.",
+      "en": "Rejecting Venerable Ānanda’s claim to easily understand dependent origination, the Buddha presents a complex and demanding analysis, revealing hidden nuances and implications of this central teaching."
+    },
+    "practice": {
+      "vi": "Đọc chậm toàn văn TrB 15, lưu các đoạn quan trọng và dùng MP3 dựng sẵn để nghe liên tục.",
+      "en": "Read the full discourse slowly, save important passages, and use the prebuilt MP3 for continuous listening."
+    },
+    "readMinutes": 32,
+    "featured": false,
+    "contentVersion": "2026-09-02.dn-full-v1"
+  },
+  {
+    "id": "nikaya.dn.16",
+    "canonicalRef": "dn16",
+    "slug": "dn-16-mahaparinibbana",
+    "code": "DN 16",
+    "viCode": "TrB 16",
+    "collection": "DN",
+    "pali": "Mahāparinibbāna Sutta",
+    "vi": "Kinh Đại Bát Niết-bàn",
+    "en": "The Great Passing",
+    "topics": [
+      "cuối đời",
+      "chánh niệm",
+      "tăng đoàn"
+    ],
+    "source": {
+      "url": "https://suttacentral.net/dn16/vi/minh_chau",
+      "provider": "SuttaCentral",
+      "translator": "Thích Minh Châu",
+      "license": "Xem ghi chú quyền sử dụng tại nguồn",
+      "language": "vi"
+    },
+    "media": {
+      "bookUrl": "https://suttacentral.net/edition/dn/vi/minh_chau"
+    },
+    "summary": {
+      "vi": "Tường thuật hành trình cuối đời Đức Phật với nhiều chỉ dẫn quan trọng về thực hành, cộng đồng và sự tự nương tựa.",
+      "en": "The Buddha’s final journey, with important guidance on practice, community, and self-reliance."
+    },
+    "practice": {
+      "vi": "Nên đọc theo chương. Đánh dấu các lời dạy về chánh niệm, giới luật và tinh thần tự mình thắp đuốc lên mà đi.",
+      "en": "Best read chapter by chapter, noting teachings on mindfulness, discipline, and self-reliance."
+    },
+    "readMinutes": 183,
+    "featured": true,
+    "contentVersion": "2026-09-02.dn-full-v1"
+  },
+  {
+    "id": "nikaya.dn.17",
+    "canonicalRef": "dn17",
+    "slug": "dn-17",
+    "code": "DN 17",
+    "viCode": "TrB 17",
+    "collection": "DN",
+    "pali": "Mahāsudassana Sutta",
+    "vi": "Kinh Ðại Thiện Kiến vương Tụng phẩm I Đoạn 1. PTS cs 1~1",
+    "en": "King Mahāsudassana",
+    "topics": [],
+    "source": {
+      "url": "https://suttacentral.net/dn17/vi/minh_chau",
+      "provider": "SuttaCentral",
+      "translator": "Thích Minh Châu",
+      "license": "Xem ghi chú quyền sử dụng tại nguồn",
+      "language": "vi"
+    },
+    "media": {
+      "bookUrl": "https://suttacentral.net/edition/dn/vi/minh_chau"
+    },
+    "summary": {
+      "vi": "Kinh Ðại Thiện Kiến vương Tụng phẩm I Đoạn 1. PTS cs 1~1 — bài số 17 thuộc Trường Bộ. Thư viện cung cấp toàn văn để đọc trực tiếp và MP3 dựng sẵn để nghe trên mọi thiết bị.",
+      "en": "An elaborate story of a past life of the Buddha as a legendary king who renounced all to practice meditation."
+    },
+    "practice": {
+      "vi": "Đọc chậm toàn văn TrB 17, lưu các đoạn quan trọng và dùng MP3 dựng sẵn để nghe liên tục.",
+      "en": "Read the full discourse slowly, save important passages, and use the prebuilt MP3 for continuous listening."
+    },
+    "readMinutes": 54,
+    "featured": false,
+    "contentVersion": "2026-09-02.dn-full-v1"
+  },
+  {
+    "id": "nikaya.dn.18",
+    "canonicalRef": "dn18",
+    "slug": "dn-18",
+    "code": "DN 18",
+    "viCode": "TrB 18",
+    "collection": "DN",
+    "pali": "Janavasabha Sutta",
+    "vi": "Kinh Xa-ni-sa Đoạn 1. PTS cs 1",
+    "en": "With Janavasabha",
+    "topics": [],
+    "source": {
+      "url": "https://suttacentral.net/dn18/vi/minh_chau",
+      "provider": "SuttaCentral",
+      "translator": "Thích Minh Châu",
+      "license": "Xem ghi chú quyền sử dụng tại nguồn",
+      "language": "vi"
+    },
+    "media": {
+      "bookUrl": "https://suttacentral.net/edition/dn/vi/minh_chau"
+    },
+    "summary": {
+      "vi": "Kinh Xa-ni-sa Đoạn 1. PTS cs 1 — bài số 18 thuộc Trường Bộ. Thư viện cung cấp toàn văn để đọc trực tiếp và MP3 dựng sẵn để nghe trên mọi thiết bị.",
+      "en": "Beginning with an account of the fates of disciples who had recently passed away, the scene shifts to a discussion of Dhamma held by the gods."
+    },
+    "practice": {
+      "vi": "Đọc chậm toàn văn TrB 18, lưu các đoạn quan trọng và dùng MP3 dựng sẵn để nghe liên tục.",
+      "en": "Read the full discourse slowly, save important passages, and use the prebuilt MP3 for continuous listening."
+    },
+    "readMinutes": 35,
+    "featured": false,
+    "contentVersion": "2026-09-02.dn-full-v1"
+  },
+  {
+    "id": "nikaya.dn.19",
+    "canonicalRef": "dn19",
+    "slug": "dn-19",
+    "code": "DN 19",
+    "viCode": "TrB 19",
+    "collection": "DN",
+    "pali": "Mahāgovinda Sutta",
+    "vi": "Kinh Ðại Ðiển Tôn Đoạn 1. PTS cs 1",
+    "en": "The Great Steward",
+    "topics": [],
+    "source": {
+      "url": "https://suttacentral.net/dn19/vi/minh_chau",
+      "provider": "SuttaCentral",
+      "translator": "Thích Minh Châu",
+      "license": "Xem ghi chú quyền sử dụng tại nguồn",
+      "language": "vi"
+    },
+    "media": {
+      "bookUrl": "https://suttacentral.net/edition/dn/vi/minh_chau"
+    },
+    "summary": {
+      "vi": "Kinh Ðại Ðiển Tôn Đoạn 1. PTS cs 1 — bài số 19 thuộc Trường Bộ. Thư viện cung cấp toàn văn để đọc trực tiếp và MP3 dựng sẵn để nghe trên mọi thiết bị.",
+      "en": "A minor deity informs the Buddha of the conversations and business of the gods."
+    },
+    "practice": {
+      "vi": "Đọc chậm toàn văn TrB 19, lưu các đoạn quan trọng và dùng MP3 dựng sẵn để nghe liên tục.",
+      "en": "Read the full discourse slowly, save important passages, and use the prebuilt MP3 for continuous listening."
+    },
+    "readMinutes": 58,
+    "featured": false,
+    "contentVersion": "2026-09-02.dn-full-v1"
+  },
+  {
+    "id": "nikaya.dn.20",
+    "canonicalRef": "dn20",
+    "slug": "dn-20",
+    "code": "DN 20",
+    "viCode": "TrB 20",
+    "collection": "DN",
+    "pali": "Mahāsamaya Sutta",
+    "vi": "Kinh Ðại hội Đoạn 1. PTS cs 1",
+    "en": "The Great Congregation",
+    "topics": [],
+    "source": {
+      "url": "https://suttacentral.net/dn20/vi/minh_chau",
+      "provider": "SuttaCentral",
+      "translator": "Thích Minh Châu",
+      "license": "Xem ghi chú quyền sử dụng tại nguồn",
+      "language": "vi"
+    },
+    "media": {
+      "bookUrl": "https://suttacentral.net/edition/dn/vi/minh_chau"
+    },
+    "summary": {
+      "vi": "Kinh Ðại hội Đoạn 1. PTS cs 1 — bài số 20 thuộc Trường Bộ. Thư viện cung cấp toàn văn để đọc trực tiếp và MP3 dựng sẵn để nghe trên mọi thiết bị.",
+      "en": "When deities from all realms gather in homage to the Buddha, he gives a series of verses describing them. These verses, which are commonly chanted in Theravadin countries, give one of the most detailed descriptions of the deities worshiped at the the time of the Buddha."
+    },
+    "practice": {
+      "vi": "Đọc chậm toàn văn TrB 20, lưu các đoạn quan trọng và dùng MP3 dựng sẵn để nghe liên tục.",
+      "en": "Read the full discourse slowly, save important passages, and use the prebuilt MP3 for continuous listening."
+    },
+    "readMinutes": 13,
+    "featured": false,
+    "contentVersion": "2026-09-02.dn-full-v1"
+  },
+  {
+    "id": "nikaya.dn.21",
+    "canonicalRef": "dn21",
+    "slug": "dn-21",
+    "code": "DN 21",
+    "viCode": "TrB 21",
+    "collection": "DN",
+    "pali": "Sakkapañha Sutta",
+    "vi": "Kinh Ðế-thích sở vấn Tụng phẩm I Đoạn 1. PTS cs 1~1",
+    "en": "Sakka’s Questions",
+    "topics": [],
+    "source": {
+      "url": "https://suttacentral.net/dn21/vi/minh_chau",
+      "provider": "SuttaCentral",
+      "translator": "Thích Minh Châu",
+      "license": "Xem ghi chú quyền sử dụng tại nguồn",
+      "language": "vi"
+    },
+    "media": {
+      "bookUrl": "https://suttacentral.net/edition/dn/vi/minh_chau"
+    },
+    "summary": {
+      "vi": "Kinh Ðế-thích sở vấn Tụng phẩm I Đoạn 1. PTS cs 1~1 — bài số 21 thuộc Trường Bộ. Thư viện cung cấp toàn văn để đọc trực tiếp và MP3 dựng sẵn để nghe trên mọi thiết bị.",
+      "en": "After hearing a love song from a god of music, the Buddha engages in a deep discussion with Sakka on the conditioned origin of attachment and suffering."
+    },
+    "practice": {
+      "vi": "Đọc chậm toàn văn TrB 21, lưu các đoạn quan trọng và dùng MP3 dựng sẵn để nghe liên tục.",
+      "en": "Read the full discourse slowly, save important passages, and use the prebuilt MP3 for continuous listening."
+    },
+    "readMinutes": 41,
+    "featured": false,
+    "contentVersion": "2026-09-02.dn-full-v1"
+  },
+  {
+    "id": "nikaya.dn.22",
+    "canonicalRef": "dn22",
+    "slug": "dn-22",
+    "code": "DN 22",
+    "viCode": "TrB 22",
+    "collection": "DN",
+    "pali": "Mahāsatipaṭṭhāna Sutta",
+    "vi": "Trường Bộ Kinh 22",
+    "en": "The Longer Discourse on Mindfulness Meditation",
+    "topics": [],
+    "source": {
+      "url": "https://suttacentral.net/dn22/vi/minh_chau",
+      "provider": "SuttaCentral",
+      "translator": "Thích Minh Châu",
+      "license": "Xem ghi chú quyền sử dụng tại nguồn",
+      "language": "vi"
+    },
+    "media": {
+      "bookUrl": "https://suttacentral.net/edition/dn/vi/minh_chau"
+    },
+    "summary": {
+      "vi": "Trường Bộ Kinh 22 — bài số 22 thuộc Trường Bộ. Thư viện cung cấp toàn văn để đọc trực tiếp và MP3 dựng sẵn để nghe trên mọi thiết bị.",
+      "en": "The Buddha details the seventh factor of the noble eightfold path, mindfulness meditation. This discourse is essentially identical to MN 10, with the addition of an extended section on the four noble truths derived from MN 141."
+    },
+    "practice": {
+      "vi": "Đọc chậm toàn văn TrB 22, lưu các đoạn quan trọng và dùng MP3 dựng sẵn để nghe liên tục.",
+      "en": "Read the full discourse slowly, save important passages, and use the prebuilt MP3 for continuous listening."
+    },
+    "readMinutes": 41,
+    "featured": false,
+    "contentVersion": "2026-09-02.dn-full-v1"
+  },
+  {
+    "id": "nikaya.dn.23",
+    "canonicalRef": "dn23",
+    "slug": "dn-23",
+    "code": "DN 23",
+    "viCode": "TrB 23",
+    "collection": "DN",
+    "pali": "Pāyāsi Sutta",
+    "vi": "Kinh Tệ-túc Đoạn 1. PTS cs 1",
+    "en": "With Pāyāsi",
+    "topics": [],
+    "source": {
+      "url": "https://suttacentral.net/dn23/vi/minh_chau",
+      "provider": "SuttaCentral",
+      "translator": "Thích Minh Châu",
+      "license": "Xem ghi chú quyền sử dụng tại nguồn",
+      "language": "vi"
+    },
+    "media": {
+      "bookUrl": "https://suttacentral.net/edition/dn/vi/minh_chau"
+    },
+    "summary": {
+      "vi": "Kinh Tệ-túc Đoạn 1. PTS cs 1 — bài số 23 thuộc Trường Bộ. Thư viện cung cấp toàn văn để đọc trực tiếp và MP3 dựng sẵn để nghe trên mọi thiết bị.",
+      "en": "This is a long and entertaining debate between a monk and a skeptic, who went to elaborate and bizarre lengths to prove that there is no such thing as an afterlife. The discourse contains a colorful series of parables and examples."
+    },
+    "practice": {
+      "vi": "Đọc chậm toàn văn TrB 23, lưu các đoạn quan trọng và dùng MP3 dựng sẵn để nghe liên tục.",
+      "en": "Read the full discourse slowly, save important passages, and use the prebuilt MP3 for continuous listening."
+    },
+    "readMinutes": 70,
+    "featured": false,
+    "contentVersion": "2026-09-02.dn-full-v1"
+  },
+  {
+    "id": "nikaya.dn.24",
+    "canonicalRef": "dn24",
+    "slug": "dn-24",
+    "code": "DN 24",
+    "viCode": "TrB 24",
+    "collection": "DN",
+    "pali": "Pāthika Sutta",
+    "vi": "Kinh Ba-lê Tụng phẩm I Đoạn 1. PTS cs 1~1",
+    "en": "About Pāṭikaputta",
+    "topics": [],
+    "source": {
+      "url": "https://suttacentral.net/dn24/vi/minh_chau",
+      "provider": "SuttaCentral",
+      "translator": "Thích Minh Châu",
+      "license": "Xem ghi chú quyền sử dụng tại nguồn",
+      "language": "vi"
+    },
+    "media": {
+      "bookUrl": "https://suttacentral.net/edition/dn/vi/minh_chau"
+    },
+    "summary": {
+      "vi": "Kinh Ba-lê Tụng phẩm I Đoạn 1. PTS cs 1~1 — bài số 24 thuộc Trường Bộ. Thư viện cung cấp toàn văn để đọc trực tiếp và MP3 dựng sẵn để nghe trên mọi thiết bị.",
+      "en": "When Sunakkhatta threatens to disrobe, the Buddha is unimpressed. Rejecting showy displays of asceticism or wondrous powers, he demonstrates his pre-eminence."
+    },
+    "practice": {
+      "vi": "Đọc chậm toàn văn TrB 24, lưu các đoạn quan trọng và dùng MP3 dựng sẵn để nghe liên tục.",
+      "en": "Read the full discourse slowly, save important passages, and use the prebuilt MP3 for continuous listening."
+    },
+    "readMinutes": 61,
+    "featured": false,
+    "contentVersion": "2026-09-02.dn-full-v1"
+  },
+  {
+    "id": "nikaya.dn.25",
+    "canonicalRef": "dn25",
+    "slug": "dn-25",
+    "code": "DN 25",
+    "viCode": "TrB 25",
+    "collection": "DN",
+    "pali": "Udumbarika Sutta",
+    "vi": "Kinh Ưu-đàm-bà-la sư tử hống",
+    "en": "The Lion’s Roar at Udumbarikā’s Monastery",
+    "topics": [],
+    "source": {
+      "url": "https://suttacentral.net/dn25/vi/minh_chau",
+      "provider": "SuttaCentral",
+      "translator": "Thích Minh Châu",
+      "license": "Xem ghi chú quyền sử dụng tại nguồn",
+      "language": "vi"
+    },
+    "media": {
+      "bookUrl": "https://suttacentral.net/edition/dn/vi/minh_chau"
+    },
+    "summary": {
+      "vi": "Kinh Ưu-đàm-bà-la sư tử hống — bài số 25 thuộc Trường Bộ. Thư viện cung cấp toàn văn để đọc trực tiếp và MP3 dựng sẵn để nghe trên mọi thiết bị.",
+      "en": "This discourse gives a specially good example of dialog between religions. The Buddha insists that he is not interested to make anyone give up their teacher or practices, but only to help people let go of suffering."
+    },
+    "practice": {
+      "vi": "Đọc chậm toàn văn TrB 25, lưu các đoạn quan trọng và dùng MP3 dựng sẵn để nghe liên tục.",
+      "en": "Read the full discourse slowly, save important passages, and use the prebuilt MP3 for continuous listening."
+    },
+    "readMinutes": 42,
+    "featured": false,
+    "contentVersion": "2026-09-02.dn-full-v1"
+  },
+  {
+    "id": "nikaya.dn.26",
+    "canonicalRef": "dn26",
+    "slug": "dn-26",
+    "code": "DN 26",
+    "viCode": "TrB 26",
+    "collection": "DN",
+    "pali": "Cakkavatti Sutta",
+    "vi": "Kinh Chuyển luân Thánh vương Sư tử hống",
+    "en": "The Wheel-Turning Monarch",
+    "topics": [],
+    "source": {
+      "url": "https://suttacentral.net/dn26/vi/minh_chau",
+      "provider": "SuttaCentral",
+      "translator": "Thích Minh Châu",
+      "license": "Xem ghi chú quyền sử dụng tại nguồn",
+      "language": "vi"
+    },
+    "media": {
+      "bookUrl": "https://suttacentral.net/edition/dn/vi/minh_chau"
+    },
+    "summary": {
+      "vi": "Kinh Chuyển luân Thánh vương Sư tử hống — bài số 26 thuộc Trường Bộ. Thư viện cung cấp toàn văn để đọc trực tiếp và MP3 dựng sẵn để nghe trên mọi thiết bị.",
+      "en": "In illustration of his dictum that one should rely on oneself, the Buddha gives a detailed account of the fall of a kingly lineage of the past, and the subsequent degeneration of society. This process, however, is not over, as the Buddha predicts that eventually society will fall into utter chaos. But far in the future, another Buddha, Metteyya, will arise in a time of peace and plenty."
+    },
+    "practice": {
+      "vi": "Đọc chậm toàn văn TrB 26, lưu các đoạn quan trọng và dùng MP3 dựng sẵn để nghe liên tục.",
+      "en": "Read the full discourse slowly, save important passages, and use the prebuilt MP3 for continuous listening."
+    },
+    "readMinutes": 42,
+    "featured": false,
+    "contentVersion": "2026-09-02.dn-full-v1"
+  },
+  {
+    "id": "nikaya.dn.27",
+    "canonicalRef": "dn27",
+    "slug": "dn-27",
+    "code": "DN 27",
+    "viCode": "TrB 27",
+    "collection": "DN",
+    "pali": "Aggañña Sutta",
+    "vi": "Kinh Khởi thế nhân bổn",
+    "en": "The Origin of the World",
+    "topics": [],
+    "source": {
+      "url": "https://suttacentral.net/dn27/vi/minh_chau",
+      "provider": "SuttaCentral",
+      "translator": "Thích Minh Châu",
+      "license": "Xem ghi chú quyền sử dụng tại nguồn",
+      "language": "vi"
+    },
+    "media": {
+      "bookUrl": "https://suttacentral.net/edition/dn/vi/minh_chau"
+    },
+    "summary": {
+      "vi": "Kinh Khởi thế nhân bổn — bài số 27 thuộc Trường Bộ. Thư viện cung cấp toàn văn để đọc trực tiếp và MP3 dựng sẵn để nghe trên mọi thiết bị.",
+      "en": "In contrast with the brahmin’s self-serving mythologies of the past, the Buddha presents an account of evolution that shows how human choices are an integral part of the ecological balance, and how excessive greed destroys the order of nature."
+    },
+    "practice": {
+      "vi": "Đọc chậm toàn văn TrB 27, lưu các đoạn quan trọng và dùng MP3 dựng sẵn để nghe liên tục.",
+      "en": "Read the full discourse slowly, save important passages, and use the prebuilt MP3 for continuous listening."
+    },
+    "readMinutes": 35,
+    "featured": false,
+    "contentVersion": "2026-09-02.dn-full-v1"
+  },
+  {
+    "id": "nikaya.dn.28",
+    "canonicalRef": "dn28",
+    "slug": "dn-28",
+    "code": "DN 28",
+    "viCode": "TrB 28",
+    "collection": "DN",
+    "pali": "Sampasādanīya Sutta",
+    "vi": "Kinh Tự hoan hỷ",
+    "en": "Inspiring Confidence",
+    "topics": [],
+    "source": {
+      "url": "https://suttacentral.net/dn28/vi/minh_chau",
+      "provider": "SuttaCentral",
+      "translator": "Thích Minh Châu",
+      "license": "Xem ghi chú quyền sử dụng tại nguồn",
+      "language": "vi"
+    },
+    "media": {
+      "bookUrl": "https://suttacentral.net/edition/dn/vi/minh_chau"
+    },
+    "summary": {
+      "vi": "Kinh Tự hoan hỷ — bài số 28 thuộc Trường Bộ. Thư viện cung cấp toàn văn để đọc trực tiếp và MP3 dựng sẵn để nghe trên mọi thiết bị.",
+      "en": "Shortly before he passes away, Venerable Sāriputta visits the Buddha and utters a moving homage to his great teacher."
+    },
+    "practice": {
+      "vi": "Đọc chậm toàn văn TrB 28, lưu các đoạn quan trọng và dùng MP3 dựng sẵn để nghe liên tục.",
+      "en": "Read the full discourse slowly, save important passages, and use the prebuilt MP3 for continuous listening."
+    },
+    "readMinutes": 35,
+    "featured": false,
+    "contentVersion": "2026-09-02.dn-full-v1"
+  },
+  {
+    "id": "nikaya.dn.29",
+    "canonicalRef": "dn29",
+    "slug": "dn-29",
+    "code": "DN 29",
+    "viCode": "TrB 29",
+    "collection": "DN",
+    "pali": "Pāsādika Sutta",
+    "vi": "Kinh Thanh tịnh",
+    "en": "An Impressive Discourse",
+    "topics": [],
+    "source": {
+      "url": "https://suttacentral.net/dn29/vi/minh_chau",
+      "provider": "SuttaCentral",
+      "translator": "Thích Minh Châu",
+      "license": "Xem ghi chú quyền sử dụng tại nguồn",
+      "language": "vi"
+    },
+    "media": {
+      "bookUrl": "https://suttacentral.net/edition/dn/vi/minh_chau"
+    },
+    "summary": {
+      "vi": "Kinh Thanh tịnh — bài số 29 thuộc Trường Bộ. Thư viện cung cấp toàn văn để đọc trực tiếp và MP3 dựng sẵn để nghe trên mọi thiết bị.",
+      "en": "Following the death of Nigaṇṭha Nātaputta, the leader of the Jains, the Buddha emphasizes the stability and maturity of his own community. He encourages the community to come together after his death and recite the teachings in harmony."
+    },
+    "practice": {
+      "vi": "Đọc chậm toàn văn TrB 29, lưu các đoạn quan trọng và dùng MP3 dựng sẵn để nghe liên tục.",
+      "en": "Read the full discourse slowly, save important passages, and use the prebuilt MP3 for continuous listening."
+    },
+    "readMinutes": 50,
+    "featured": false,
+    "contentVersion": "2026-09-02.dn-full-v1"
+  },
+  {
+    "id": "nikaya.dn.30",
+    "canonicalRef": "dn30",
+    "slug": "dn-30",
+    "code": "DN 30",
+    "viCode": "TrB 30",
+    "collection": "DN",
+    "pali": "Lakkhaṇa Sutta",
+    "vi": "Kinh Tướng",
+    "en": "The Marks of a Great Man",
+    "topics": [],
+    "source": {
+      "url": "https://suttacentral.net/dn30/vi/minh_chau",
+      "provider": "SuttaCentral",
+      "translator": "Thích Minh Châu",
+      "license": "Xem ghi chú quyền sử dụng tại nguồn",
+      "language": "vi"
+    },
+    "media": {
+      "bookUrl": "https://suttacentral.net/edition/dn/vi/minh_chau"
+    },
+    "summary": {
+      "vi": "Kinh Tướng — bài số 30 thuộc Trường Bộ. Thư viện cung cấp toàn văn để đọc trực tiếp và MP3 dựng sẵn để nghe trên mọi thiết bị.",
+      "en": "This presents the brahmanical prophecy of the Great Man, and explains the 32 marks in detail. This discourse contains some of the latest and most complex verse forms in the canon."
+    },
+    "practice": {
+      "vi": "Đọc chậm toàn văn TrB 30, lưu các đoạn quan trọng và dùng MP3 dựng sẵn để nghe liên tục.",
+      "en": "Read the full discourse slowly, save important passages, and use the prebuilt MP3 for continuous listening."
+    },
+    "readMinutes": 51,
+    "featured": false,
+    "contentVersion": "2026-09-02.dn-full-v1"
+  },
+  {
+    "id": "nikaya.dn.31",
+    "canonicalRef": "dn31",
+    "slug": "dn-31-sigalovada",
+    "code": "DN 31",
+    "viCode": "TrB 31",
+    "collection": "DN",
+    "pali": "Siṅgāla Sutta",
+    "vi": "Kinh Giáo Thọ Thi-ca-la-việt",
+    "en": "Advice to Sigālaka",
+    "topics": [
+      "gia đình",
+      "đạo đức",
+      "đời sống"
+    ],
+    "source": {
+      "url": "https://suttacentral.net/dn31/vi/minh_chau",
+      "provider": "SuttaCentral",
+      "translator": "Thích Minh Châu",
+      "license": "Xem ghi chú quyền sử dụng tại nguồn",
+      "language": "vi"
+    },
+    "media": {
+      "bookUrl": "https://suttacentral.net/edition/dn/vi/minh_chau"
+    },
+    "summary": {
+      "vi": "Những hướng dẫn rất thực tế về quan hệ gia đình, bạn bè, công việc và trách nhiệm xã hội.",
+      "en": "Practical guidance on family, friendship, work, and social responsibilities."
+    },
+    "practice": {
+      "vi": "Rất phù hợp để đọc theo chủ đề đời sống hằng ngày và thảo luận trong gia đình.",
+      "en": "Especially useful for everyday life and family discussion."
+    },
+    "readMinutes": 22,
+    "featured": false,
+    "contentVersion": "2026-09-02.dn-full-v1"
+  },
+  {
+    "id": "nikaya.dn.32",
+    "canonicalRef": "dn32",
+    "slug": "dn-32",
+    "code": "DN 32",
+    "viCode": "TrB 32",
+    "collection": "DN",
+    "pali": "Āṭānāṭiya Sutta",
+    "vi": "Kinh A-sá-nang-chi",
+    "en": "The Āṭānāṭiya Protection",
+    "topics": [],
+    "source": {
+      "url": "https://suttacentral.net/dn32/vi/minh_chau",
+      "provider": "SuttaCentral",
+      "translator": "Thích Minh Châu",
+      "license": "Xem ghi chú quyền sử dụng tại nguồn",
+      "language": "vi"
+    },
+    "media": {
+      "bookUrl": "https://suttacentral.net/edition/dn/vi/minh_chau"
+    },
+    "summary": {
+      "vi": "Kinh A-sá-nang-chi — bài số 32 thuộc Trường Bộ. Thư viện cung cấp toàn văn để đọc trực tiếp và MP3 dựng sẵn để nghe trên mọi thiết bị.",
+      "en": "Mighty spirits hold a congregation, and warn the Buddha that, since not all spirits are friendly, the mendicants should learn verses of protection."
+    },
+    "practice": {
+      "vi": "Đọc chậm toàn văn TrB 32, lưu các đoạn quan trọng và dùng MP3 dựng sẵn để nghe liên tục.",
+      "en": "Read the full discourse slowly, save important passages, and use the prebuilt MP3 for continuous listening."
+    },
+    "readMinutes": 16,
+    "featured": false,
+    "contentVersion": "2026-09-02.dn-full-v1"
+  },
+  {
+    "id": "nikaya.dn.33",
+    "canonicalRef": "dn33",
+    "slug": "dn-33",
+    "code": "DN 33",
+    "viCode": "TrB 33",
+    "collection": "DN",
+    "pali": "Saṅgīti Sutta",
+    "vi": "Kinh Phúng tụng",
+    "en": "Reciting in Concert",
+    "topics": [],
+    "source": {
+      "url": "https://suttacentral.net/dn33/vi/minh_chau",
+      "provider": "SuttaCentral",
+      "translator": "Thích Minh Châu",
+      "license": "Xem ghi chú quyền sử dụng tại nguồn",
+      "language": "vi"
+    },
+    "media": {
+      "bookUrl": "https://suttacentral.net/edition/dn/vi/minh_chau"
+    },
+    "summary": {
+      "vi": "Kinh Phúng tụng — bài số 33 thuộc Trường Bộ. Thư viện cung cấp toàn văn để đọc trực tiếp và MP3 dựng sẵn để nghe trên mọi thiết bị.",
+      "en": "The Buddha encourages Venerable Sāriputta to teach the mendicants, and he offers an extended listing of Buddhist doctrines arranged in numerical sequence."
+    },
+    "practice": {
+      "vi": "Đọc chậm toàn văn TrB 33, lưu các đoạn quan trọng và dùng MP3 dựng sẵn để nghe liên tục.",
+      "en": "Read the full discourse slowly, save important passages, and use the prebuilt MP3 for continuous listening."
+    },
+    "readMinutes": 116,
+    "featured": false,
+    "contentVersion": "2026-09-02.dn-full-v1"
+  },
+  {
+    "id": "nikaya.dn.34",
+    "canonicalRef": "dn34",
+    "slug": "dn-34",
+    "code": "DN 34",
+    "viCode": "TrB 34",
+    "collection": "DN",
+    "pali": "Dasuttara Sutta",
+    "vi": "Kinh Thập thượng",
+    "en": "Up to Ten",
+    "topics": [],
+    "source": {
+      "url": "https://suttacentral.net/dn34/vi/minh_chau",
+      "provider": "SuttaCentral",
+      "translator": "Thích Minh Châu",
+      "license": "Xem ghi chú quyền sử dụng tại nguồn",
+      "language": "vi"
+    },
+    "media": {
+      "bookUrl": "https://suttacentral.net/edition/dn/vi/minh_chau"
+    },
+    "summary": {
+      "vi": "Kinh Thập thượng — bài số 34 thuộc Trường Bộ. Thư viện cung cấp toàn văn để đọc trực tiếp và MP3 dựng sẵn để nghe trên mọi thiết bị.",
+      "en": "This is similar to the previous, but with a different manner of exposition. These two discourses anticipate some of the methods of the Abhidhamma."
+    },
+    "practice": {
+      "vi": "Đọc chậm toàn văn TrB 34, lưu các đoạn quan trọng và dùng MP3 dựng sẵn để nghe liên tục.",
+      "en": "Read the full discourse slowly, save important passages, and use the prebuilt MP3 for continuous listening."
+    },
+    "readMinutes": 81,
+    "featured": false,
+    "contentVersion": "2026-09-02.dn-full-v1"
   }
 ]
