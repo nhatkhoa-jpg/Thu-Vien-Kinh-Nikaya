@@ -27,33 +27,37 @@ Ví dụ: `TB 21` là mã chính, `MN 21` chỉ là mã quốc tế phụ.
 - Chọn tiếng Việt => nội dung, giọng đọc, PDF mặc định phải là tiếng Việt. English => English. Ngôn ngữ khác áp dụng tương tự.
 - Chỉ mirror/tái phân phối bản dịch khi quyền sử dụng cho phép. Metadata nguồn, tác giả/người dịch, license phải đi cùng dữ liệu.
 
-## 4. Nghe
-Tầng 1 (bắt buộc): **Browser/Device TTS** đọc trực tiếp toàn văn đang hiển thị bằng Web Speech API. Không phụ thuộc file MP3 ngoài.
-Tầng 2 (tùy chọn): MP3 đã kiểm chứng đúng ngôn ngữ. MP3 ngoài chỉ là lựa chọn bổ sung, không phải hạ tầng cốt lõi.
-Player MP3 giữ chỉnh tốc độ 0.75×–2× và tua ±15 giây.
-Trên trang bài kinh, nút Browser TTS, PDF và MP3 phải nằm **ngay dưới tiêu đề/công cụ đọc**, không giấu ở cột phụ phía dưới trên mobile.
+## 4. Nghe — kiến trúc 3 tầng
+1. **Device/Browser TTS** bằng Web Speech API khi thiết bị có voice thật.
+2. **Internal TTS** của chính thư viện bằng `text2wav` + eSpeak-NG trên server, trả WAV cho browser. Đây là fallback bắt buộc khi Chrome/Xiaomi không expose voice; không phụ thuộc MP3 ngoài.
+3. **MP3 bổ sung** đúng ngôn ngữ khi có nguồn đáng tin; chỉ là lựa chọn thêm.
+
+Quy tắc:
+- Auto ưu tiên giọng thiết bị; nếu không có voice hoặc engine fail thì chuyển sang internal TTS.
+- Internal TTS chia toàn văn thành chunk ~210 ký tự, POST `/api/tts`, phát WAV tuần tự bằng `Audio` trong browser.
+- API TTS giới hạn text/chunk, locale/voice cố định theo whitelist và chạy Node runtime.
+- CI phải POST câu tiếng Việt vào `/api/tts`, kiểm tra WAV có header `RIFF` và >1000 bytes; không được coi build xanh nếu TTS runtime chưa tạo âm thanh thật.
+- Player MP3 giữ chỉnh tốc độ 0.75×–2× và tua ±15 giây.
 
 ### Android/Chrome TTS
-- Không được set UI sang “đang đọc” trước khi `SpeechSynthesisUtterance.onstart` thực sự chạy.
-- Không để effect reload voice gọi `speechSynthesis.cancel()` giữa phiên đọc khi Chrome nạp voices trễ.
-- Chia toàn văn thành chunk ngắn (~220 ký tự) để tránh lỗi Chrome Android với utterance dài.
-- Nạp voices nhiều lần sau mount + lắng nghe `voiceschanged`; hỗ trợ cả locale dạng `vi-VN` và Android dạng `vi_VN`.
-- Nếu không có voice/engine, UI phải báo lỗi thật (`synthesis-unavailable`, `language-unavailable`, `voice-unavailable`, `not-allowed`...) và cho Thử lại; không được giả trạng thái “Tạm dừng” khi thực tế không phát tiếng.
-- Nếu Chrome không expose voice nào, vẫn thử system default và hiện fallback hướng dẫn Android Chrome `⋮ -> Nghe trang này` / cấu hình Text-to-speech của hệ thống.
+- Không set UI sang “đang đọc” trước `onstart` khi dùng device voice.
+- Không để voice reload cancel phiên đọc.
+- Nếu Chrome trả `getVoices()=[]`, Auto chuyển thẳng internal TTS thay vì giả trạng thái đang đọc.
+- Nếu device voice fail giữa phiên và mode Auto, chuyển internal TTS.
 
 ## 5. PDF
-- Không dùng PDF bên ngoài làm bản chính trên UI.
-- Website tự sinh PDF từ chính nội dung hiện đang có trong thư viện.
-- PDF phải có bìa/branding, mã Việt, tên kinh, Pāli, tóm lược, toàn văn, nguồn, số trang, màu nhận diện và typography rõ.
-- Hiện dùng `pdfmake` tải động phía client để tránh tăng bundle trang đọc.
-- Text đưa vào PDF phải `normalize('NFC')` và loại zero-width characters để giảm lỗi Unicode.
-- Không dùng italic cho dòng Pāli nếu font nhúng gây thiếu glyph; ưu tiên hiển thị đúng ký tự hơn hiệu ứng chữ nghiêng.
-- Bản PDF hiện dùng body ~13pt, summary ~14.2pt, title ~34pt; mỗi segment có marker riêng, summary card, màu nhận diện, header/footer và nền đọc nhẹ để bớt nhàm chán.
+- PDF chính do website tự sinh từ toàn văn thư viện bằng `pdfmake`.
+- Typography hiện: title ~34pt, summary ~14.2pt, body ~13pt, segment markers, summary card, header/footer, số trang và màu nhận diện.
+- Text normalize NFC, loại zero-width + replacement chars.
+- Do Roboto PDF thiếu một số glyph Pāli Extended, PDF dùng fallback Latin cho các ký tự Pāli dễ vỡ (`ṇ→n`, `ḍ→d`, `ṭ→t`, `ā→a`...). **Web vẫn giữ Pāli chuẩn**; chỉ PDF fallback để không có ô vuông.
+- Không dùng PDF nguồn ngoài làm bản chính.
 
-## 6. Điều hướng và tìm kiếm
-- Header phải có Trang chủ, 5 Đại Tạng, Thư viện, Nghe, tìm kiếm toàn thư viện, chọn ngôn ngữ và menu mobile.
-- Trang bài kinh phải có điều hướng nhanh: Trang chủ, Thư viện, bài trước, bài sau, select nhảy trực tiếp trong cùng bộ.
-- Search phải tìm được mã Việt, mã quốc tế, tên Việt/Anh, Pāli, chủ đề và tóm tắt. Khi corpus lớn, thay bundle client bằng search-index phân mảnh hoặc API/FTS; không thay UX.
+## 6. Reader UX / điều hướng
+- Header: Trang chủ, 5 Đại Tạng, Thư viện, Nghe, global search, ngôn ngữ, mobile menu.
+- Trang bài: Home/Library, trước/sau, jump-to-discourse.
+- Search: mã Việt/quốc tế, tên, Pāli, chủ đề, tóm tắt.
+- **Reader controls phải gọn:** font −/+, line-height, width, dark mode, bookmark/resume là icon mini có tooltip/title; không chiếm một khối lớn trước nội dung.
+- **Nghe / PDF / MP3 là 3 nút mini dạng disclosure** ngay dưới title. Mặc định đóng để người đọc thấy nội dung sớm; bấm mới bung panel chức năng. Desktop dùng tooltip, mobile dùng nhãn ngắn.
 
 ## 7. Responsive UX
 Bắt buộc test ít nhất 4 lớp:
@@ -61,57 +65,53 @@ Bắt buộc test ít nhất 4 lớp:
 - Tablet/DeX 641–1024px
 - Desktop 1025–1499px
 - Wide >= 1500px
-Mobile có bottom dock; không để dock che nội dung/nút quan trọng. Reader ưu tiên typography dài hạn, font size controls, dark mode, save/resume.
-Trên mobile, mọi giá trị `reader-width` lưu trong localStorage **không được phép làm nội dung rộng hơn viewport**; `.readerLayout`, `.readerMain`, `.suttaText`, `.fullTextBody` phải bị khóa `max-width:100%` và không overflow ngang.
+Mobile có bottom dock; không để dock che nội dung/nút quan trọng. `reader-width` lưu trong localStorage không được làm nội dung rộng hơn viewport; reader/full text luôn max-width 100% trên mobile.
 
-## 8. Dữ liệu dùng cho website + RAG/AI
+## 8. Dữ liệu website + RAG/AI
 Nguồn chuẩn metadata: `data/catalog/*.json`.
 Không nhét nội dung quan trọng chỉ trong JSX/HTML.
 Mỗi bài giữ ID ổn định, canonical ref, code quốc tế, viCode, title, Pāli, topics, source, translator/license, version.
 RAG export: `npm run rag:export`.
-Mỗi chunk phải có stable id + `content_hash` + `embedding_cache_key`, để chỉ re-embed đoạn thay đổi.
+Mỗi chunk có stable id + `content_hash` + `embedding_cache_key` để chỉ re-embed đoạn thay đổi.
 Mục tiêu tương thích LangChain, LlamaIndex, OpenWebUI, Chroma, Qdrant, FAISS, Milvus, Weaviate, pgvector và local LLM.
 
 ## 9. YouTube
-YouTube không được biến trang chủ thành feed. Chỉ gắn video thật sự liên quan tại trang bài kinh/chủ đề, dùng lazy-load và `youtube-nocookie`, phục vụ minh họa, SEO và traffic chéo.
+Không biến trang chủ thành feed. Chỉ gắn video thật sự liên quan tại trang bài/chủ đề, lazy-load + `youtube-nocookie`, phục vụ minh họa, SEO và traffic chéo.
 
 ## 10. Vercel / domain — QUY TẮC URL CỐ ĐỊNH
-- **Không được tạo project Vercel mới cho mỗi phiên bản.**
+- **Không tạo project Vercel mới cho mỗi phiên bản.**
 - Project cố định: `nikaya-reader-v4-final`.
-- URL dự án cố định để người dùng bookmark và để trỏ custom domain: `https://nikaya-reader-v4-final-khoa-3f1b.vercel.app`.
-- Các URL có chuỗi ngẫu nhiên kiểu `...-3lqngypw0-...vercel.app` chỉ là deployment URL nội bộ/preview, **không đưa cho người dùng làm địa chỉ chính**.
-- Mọi lần cập nhật phải deploy production vào **cùng project** để alias cố định tự trỏ tới deployment mới nhất.
-- Canonical/SEO dùng duy nhất `lib/site.ts` -> `SITE_URL`, lấy `NEXT_PUBLIC_SITE_URL` nếu có. Khi gắn custom domain chỉ đổi biến môi trường này, không đổi route/app.
+- Stable URL: `https://nikaya-reader-v4-final-khoa-3f1b.vercel.app`.
+- URL có chuỗi random chỉ là deployment URL nội bộ, không đưa cho user làm URL chính.
+- Mọi update deploy production vào cùng project.
+- Canonical/SEO dùng `lib/site.ts` -> `SITE_URL`; khi có custom domain chỉ đổi `NEXT_PUBLIC_SITE_URL`.
 
 ## 11. Tình trạng hiện tại (2026-09-01)
-- UI V2/V3/V4 đã có responsive, reader controls, audio player, i18n, mã Việt, RAG-ready catalog.
-- Các bài test gồm TB 10, TB 21, TB 22 và một số bài ở TrB/TƯB/TCB/TiB.
-- TB 21 là bài kiểm thử chính.
-- Browser TTS + PDF tự sinh + MP3 tiếng Việt dự phòng đã được đưa **ngay dưới tiêu đề** bài kinh.
-- Khung mobile đã khóa width theo viewport; reader toolbar được wrap để không vỡ ngang.
-- URL SEO/canonical/sitemap/robots đã gom về `SITE_URL` cố định.
-- Đã sửa lỗi Android Chrome TTS: voice load trễ không còn cancel phiên đọc; chỉ báo speaking sau `onstart`; chunk đọc ngắn; có watchdog/error state/retry và cảnh báo khi thiết bị không expose TTS voice.
-- Đã redesign PDF: chữ lớn hơn, Unicode NFC, bỏ Pāli italic dễ lỗi glyph, summary card, segment markers, màu/branding/header/footer dễ đọc lâu.
-- **Latest validated code commit:** `4d8f53ad72c8245d2fa91edb8fef6414badf06f6`.
-- GitHub Actions run `33508213740`: npm install, RAG export/validate, Next build, smoke tests đều PASS.
-- Đã gửi production deployment vào đúng project `nikaya-reader-v4-final`: deployment `dpl_Ag6yoeWbc7H9fBeTSUxHGpwwYGg8`; stable alias vẫn là `https://nikaya-reader-v4-final-khoa-3f1b.vercel.app`.
-- Vercel connector hiện vẫn có lỗi read-back 404 sau khi tạo deployment; không được vì lỗi connector này mà tạo project mới. Kiểm tra stable alias/production, sửa trên cùng project.
+- TB 21 là bài test chính; TB 10/TB 22 và bài ở 4 tạng khác dùng kiểm thử navigation/data.
+- Reader controls đã chuyển sang mini toolbar; Nghe/PDF/MP3 đã chuyển sang mini disclosure để nội dung xuất hiện sớm.
+- TTS device trên Xiaomi 15 Ultra không có voice usable; đã bổ sung internal eSpeak-NG fallback tự chủ.
+- API `/api/tts` đã được Next externalize `text2wav` và trace toàn bộ `lib/**/*` + `espeak-ng-data/**/*` để giữ WASM/voice runtime.
+- **Latest validated code commit:** `1a21fd8165ba9e134691c25cf8f25a2723187921`.
+- **GitHub Actions run `33510373644`: PASS toàn bộ**, gồm npm install, RAG validation, Next build, route smoke tests và **internal Vietnamese TTS WAV runtime test**.
+- Production deployment đã gửi vào project cố định: `dpl_JBgykxmbvAvQB6Nzb5ca4SxqPn8n`; stable alias vẫn `https://nikaya-reader-v4-final-khoa-3f1b.vercel.app`.
+- Vercel connector vẫn có bug read-back 404 sau create deployment; không được vì lỗi connector mà tạo project mới.
 
-## 12. Quy trình chuẩn khi tiếp tục dự án
-1. Đọc `PROJECT_STATE.md` và `AGENTS.md`.
-2. Đọc commit/main hiện tại và CI gần nhất.
-3. **Không tạo project/repo/Vercel address mới nếu chưa có lý do đặc biệt.**
-4. Thay đổi dữ liệu ở catalog/corpus trước; UI chỉ đọc dữ liệu đó.
-5. Build + smoke-test mobile reader TB 21 và home `/vi`.
-6. Chỉ deploy commit đã xanh vào project Vercel cố định `nikaya-reader-v4-final`.
-7. Xác minh stable alias; không gửi deployment URL ngẫu nhiên cho người dùng.
-8. Cập nhật mục "Tình trạng hiện tại" trong file này nếu kiến trúc/quy tắc thay đổi.
+## 12. Quy trình chuẩn khi tiếp tục
+1. Đọc `PROJECT_STATE.md` + `AGENTS.md`.
+2. Đọc main + CI mới nhất.
+3. Không tạo repo/project/Vercel URL mới nếu không có lý do đặc biệt.
+4. Thay dữ liệu ở catalog/corpus trước; UI đọc dữ liệu đó.
+5. Build + smoke-test `/vi`, TB 21, `/en` và `/api/tts` WAV.
+6. Chỉ deploy commit xanh vào `nikaya-reader-v4-final`.
+7. Không gửi random deployment URL cho user.
+8. Update file này khi kiến trúc/quy tắc thay đổi.
 
 ## 13. Ưu tiên tiếp theo
-1. Hoàn thiện full-text corpus hợp pháp cho 5 bộ và nhiều ngôn ngữ.
-2. Tạo local mirror/cache cho các bản được phép tái phân phối để giảm phụ thuộc nguồn ngoài.
-3. Full-text search theo segment/chunk, highlight kết quả.
-4. PDF template nâng cấp thêm mục lục, QR/canonical URL, chapter bookmarks.
-5. Browser TTS nâng cấp highlight câu đang đọc và giữ vị trí nghe.
-6. PWA/offline packages theo từng bộ/ngôn ngữ.
-7. Sau đó mới mở rộng YouTube/SEO/AdSense.
+1. Test internal TTS thật trên Xiaomi 15 Ultra; nếu giọng eSpeak quá máy móc, thêm engine local/browser thứ hai nhưng vẫn tự chủ.
+2. Hoàn thiện full-text corpus hợp pháp cho 5 bộ và nhiều ngôn ngữ.
+3. Local mirror/cache cho bản được phép phân phối.
+4. Full-text search segment/chunk + highlight.
+5. PDF mục lục/bookmarks/QR và font Pāli chuyên dụng khi có cách nhúng an toàn.
+6. TTS highlight câu + nhớ vị trí nghe.
+7. PWA/offline theo bộ/ngôn ngữ.
+8. Sau đó mở rộng YouTube/SEO/AdSense.
