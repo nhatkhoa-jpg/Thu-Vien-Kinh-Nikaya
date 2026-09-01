@@ -6,6 +6,8 @@ import {BookOpen,Headphones,Home,Library,Menu,Search,X} from 'lucide-react';
 import {suttas,suttaDisplayCode} from '@/lib/data';
 import type {Locale} from '@/lib/i18n';
 
+const RELEASE='V4.7';
+
 export default function HeaderTools({locale}:{locale:Locale}){
   const vi=locale==='vi';
   const router=useRouter();
@@ -35,6 +37,7 @@ export default function HeaderTools({locale}:{locale:Locale}){
         <Link onClick={()=>setMenuOpen(false)} href={`/${locale}#featured`}><Headphones size={19}/>{vi?'Nghe kinh':'Listen'}</Link>
         <button onClick={()=>{setMenuOpen(false);setSearchOpen(true)}}><Search size={19}/>{vi?'Tìm kiếm toàn thư viện':'Search library'}</button>
       </nav>
+      <small className="buildBadge">{RELEASE}</small>
     </aside></div>}
   </>;
 }
