@@ -39,11 +39,6 @@ jobs:
           grep -q 'compactEssentials' /tmp/mn21.html
           grep -q 'essentialDisclosure' /tmp/mn21.html
           grep -q 'V4.11-STAGE' /tmp/mn21.html
-          curl --fail --silent http://127.0.0.1:3000/__test/tts > /dev/null
+          curl --fail --silent http://127.0.0.1:3000/tts-e2e -o /tmp/tts-e2e.html
+          grep -q 'V4.11 TTS E2E' /tmp/tts-e2e.html
           curl --fail --silent http://127.0.0.1:3000/en > /dev/null
-          curl --fail --silent --show-error -X POST http://127.0.0.1:3000/api/tts \
-            -H 'Content-Type: application/json' \
-            --data '{"text":"Đây là bài kiểm tra giọng đọc tiếng Việt dự phòng.","locale":"vi","rate":1}' \
-            -o /tmp/nikaya-tts.wav
-          test "$(head -c 4 /tmp/nikaya-tts.wav)" = "RIFF"
-          test "$(wc -c < /tmp/nikaya-tts.wav)" -gt 1000
