@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0",
+  "corpus": "nikaya",
+  "default_languages": ["vi", "en"],
+  "chunking": {"strategy":"stable-semantic-sections","target_tokens":700,"max_tokens":950,"overlap_tokens":80,"preserve_source_section_ids":true,"reembed_policy":"only-if-content_hash-changes"},
+  "embedding_cache": {"key_field":"embedding_cache_key","hash_algorithm":"sha256","store_vectors_outside_git":true},
+  "recommended_metadata": ["sutta_id","canonical_ref","collection","code","vi_code","language","section","title","pali_title","topics","source_url","translator","license","content_version","content_hash"]
+}

@@ -15,6 +15,14 @@ jobs:
         with:
           node-version: 22
       - run: npm install
+      - name: Generate and validate AI/RAG exports
+        run: |
+          npm run rag:export
+          test "$(wc -l < data/exports/nikaya-rag.vi.jsonl)" -eq 22
+          test "$(wc -l < data/exports/nikaya-rag.en.jsonl)" -eq 22
+          test "$(wc -l < data/exports/nikaya-knowledge.vi.jsonl)" -eq 11
+          test "$(wc -l < data/exports/nikaya-knowledge.en.jsonl)" -eq 11
+          node -e "const fs=require('fs'); for(const f of fs.readdirSync('data/exports')) for(const l of fs.readFileSync('data/exports/'+f,'utf8').trim().split('\\n')) JSON.parse(l)"
       - run: npm run build
       - name: Smoke test rendered routes
         run: |
@@ -23,15 +31,9 @@ jobs:
           trap 'kill $SERVER_PID || true' EXIT
           READY=0
           for i in {1..30}; do
-            if curl --fail --silent http://127.0.0.1:3000/vi > /dev/null; then
-              READY=1
-              break
-            fi
+            if curl --fail --silent http://127.0.0.1:3000/vi > /dev/null; then READY=1; break; fi
             sleep 1
           done
-          if [ "$READY" -ne 1 ]; then
-            cat /tmp/nikaya-next.log
-            exit 1
-          fi
+          if [ "$READY" -ne 1 ]; then cat /tmp/nikaya-next.log; exit 1; fi
           curl --fail --silent http://127.0.0.1:3000/vi/library/mn-21-kakacupama > /dev/null
           curl --fail --silent http://127.0.0.1:3000/en > /dev/null

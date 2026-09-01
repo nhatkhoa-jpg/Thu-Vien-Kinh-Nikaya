@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/nikaya-sutta.schema.json",
+  "title": "Nikaya canonical discourse record",
+  "type": "object",
+  "required": ["id","canonicalRef","slug","code","viCode","collection","pali","vi","en","topics","source","media","summary","practice","readMinutes","contentVersion"],
+  "properties": {
+    "id": {"type":"string","pattern":"^nikaya\\."},
+    "canonicalRef": {"type":"string","minLength":1},
+    "slug": {"type":"string","minLength":1},
+    "code": {"type":"string","minLength":1,"description":"International/Pali reference, e.g. MN 21"},
+    "viCode": {"type":"string","minLength":1,"description":"Vietnamese display reference, e.g. TB 21"},
+    "collection": {"enum":["DN","MN","SN","AN","KN"]},
+    "pali": {"type":"string"},
+    "vi": {"type":"string"},
+    "en": {"type":"string"},
+    "topics": {"type":"array","items":{"type":"string"},"uniqueItems":true},
+    "source": {"type":"object","required":["url","provider","translator","license","language"],"properties":{"url":{"type":"string","format":"uri"},"provider":{"type":"string"},"translator":{"type":"string"},"license":{"type":"string"},"language":{"type":"string"}}},
+    "media": {"type":"object","properties":{"bookUrl":{"type":"string","format":"uri"},"mp3Url":{"type":"string","format":"uri"},"youtubeId":{"type":"string"}}},
+    "summary": {"type":"object","required":["vi","en"],"properties":{"vi":{"type":"string"},"en":{"type":"string"}}},
+    "practice": {"type":"object","required":["vi","en"],"properties":{"vi":{"type":"string"},"en":{"type":"string"}}},
+    "readMinutes": {"type":"integer","minimum":1},
+    "featured": {"type":"boolean"},
+    "contentVersion": {"type":"string","description":"Bump only when semantic content changes; used to invalidate downstream caches."}
+  },
+  "additionalProperties": false
+}

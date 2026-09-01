@@ -1,0 +1,57 @@
+[
+  {
+    "code": "DN",
+    "viCode": "TrB",
+    "pali": "Dīgha Nikāya",
+    "vi": "Trường Bộ",
+    "en": "Long Discourses",
+    "count": "34 bài kinh",
+    "descVi": "Các bài kinh dài, giàu bối cảnh và hệ thống giáo pháp.",
+    "descEn": "Long-form discourses with broad doctrinal and narrative scope.",
+    "accent": "amber"
+  },
+  {
+    "code": "MN",
+    "viCode": "TB",
+    "pali": "Majjhima Nikāya",
+    "vi": "Trung Bộ",
+    "en": "Middle Discourses",
+    "count": "152 bài kinh",
+    "descVi": "Các bài kinh vừa, rất phù hợp học theo từng chủ đề thực hành.",
+    "descEn": "Middle-length teachings ideal for topic-by-topic practice.",
+    "accent": "emerald"
+  },
+  {
+    "code": "SN",
+    "viCode": "TƯB",
+    "pali": "Saṁyutta Nikāya",
+    "vi": "Tương Ưng Bộ",
+    "en": "Connected Discourses",
+    "count": "56 tương ưng",
+    "descVi": "Các bài kinh được nhóm theo chủ đề, nhân vật và pháp môn liên hệ.",
+    "descEn": "Discourses grouped into connected themes, people and practices.",
+    "accent": "blue"
+  },
+  {
+    "code": "AN",
+    "viCode": "TCB",
+    "pali": "Aṅguttara Nikāya",
+    "vi": "Tăng Chi Bộ",
+    "en": "Numbered Discourses",
+    "count": "11 chương số",
+    "descVi": "Giáo pháp được sắp theo số lượng pháp, dễ học và tra cứu.",
+    "descEn": "Teachings organized by numbered sets for quick study.",
+    "accent": "rose"
+  },
+  {
+    "code": "KN",
+    "viCode": "TiB",
+    "pali": "Khuddaka Nikāya",
+    "vi": "Tiểu Bộ",
+    "en": "Minor Collection",
+    "count": "15+ tập",
+    "descVi": "Nhiều tuyển tập quan trọng như Pháp Cú, Kinh Tập và Udāna.",
+    "descEn": "A diverse collection including Dhammapada, Sutta Nipāta and Udāna.",
+    "accent": "violet"
+  }
+]
