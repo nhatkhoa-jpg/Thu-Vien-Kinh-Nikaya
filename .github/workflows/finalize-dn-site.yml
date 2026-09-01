@@ -1,0 +1,92 @@
+name: Finalize Truong Bo Site After MP3
+
+on:
+  push:
+    branches: [feature/progress-home-dn]
+    paths:
+      - '.github/workflows/finalize-dn-site.yml'
+      - 'scripts/finalize_collection_catalog.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  AUDIO_TAG: dn-vi-audio-v1
+
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/progress-home-dn
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Verify exact DN1-DN34 published MP3 assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          gh api "repos/$GITHUB_REPOSITORY/releases/tags/$AUDIO_TAG" > /tmp/release.json
+          test "$(jq -r .draft /tmp/release.json)" = false
+          jq '.assets' /tmp/release.json > /tmp/assets.json
+          python - <<'PY'
+          import json
+          assets=json.load(open('/tmp/assets.json'))
+          names={a['name'] for a in assets if a['name'].endswith('.mp3')}
+          expected={f'dn{i}.mp3' for i in range(1,35)}
+          assert names==expected, f'DN MP3 mismatch missing={sorted(expected-names)} extra={sorted(names-expected)}'
+          print('DN release verified: 34/34 exact MP3 assets')
+          PY
+      - name: Generate Trường Bộ catalog and audio mappings
+        run: python scripts/finalize_collection_catalog.py --collection dn
+      - name: Install and validate RAG + Next build
+        run: |
+          npm install
+          npm run rag:export
+          npm run build
+      - name: Catalog and MP3-first assertions
+        run: |
+          node <<'NODE'
+          const s=require('./data/catalog/suttas.json');
+          const a=require('./data/catalog/audio.json');
+          const dn=s.filter(x=>x.collection==='DN');
+          if(dn.length!==34) throw new Error(`DN catalog ${dn.length}/34`);
+          for(let i=1;i<=34;i++){
+            const x=dn.find(v=>v.canonicalRef===`dn${i}`);
+            if(!x||x.viCode!==`TrB ${i}`) throw new Error(`bad DN catalog ${i}`);
+            const m=a[`nikaya.dn.${i}`]?.vi;
+            if(!m||!m.url.includes(`/releases/download/dn-vi-audio-v1/dn${i}.mp3`)) throw new Error(`bad DN audio ${i}`);
+          }
+          console.log('DN catalog/audio validated 34/34');
+          NODE
+      - name: Smoke test representative Trường Bộ reader/player/PDF
+        run: |
+          set -euo pipefail
+          npm run start -- -p 3000 >/tmp/nikaya.log 2>&1 &
+          PID=$!; trap 'kill $PID || true' EXIT
+          for i in {1..30}; do curl -fsS http://127.0.0.1:3000/vi >/dev/null && break; sleep 1; done
+          SLUG=$(node -e "const s=require('./data/catalog/suttas.json').find(x=>x.canonicalRef==='dn1'); process.stdout.write(s.slug)")
+          curl -fsS "http://127.0.0.1:3000/vi/library/$SLUG" -o /tmp/dn1.html
+          grep -Fq 'dn1.mp3' /tmp/dn1.html
+          grep -Fq 'TrB 1' /tmp/dn1.html
+          grep -Fq 'primaryMp3Disclosure' /tmp/dn1.html
+          grep -Fq 'PDF' /tmp/dn1.html
+          test "$(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:3000/api/tts)" = 404
+          echo 'DN reader/player/PDF smoke PASS'
+      - name: Commit finalized DN catalog checkpoint
+        run: |
+          set -euo pipefail
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add data/catalog/suttas.json data/catalog/audio.json data/exports
+          if git diff --cached --quiet; then echo 'No catalog changes to commit'; exit 0; fi
+          git commit -m 'data: finalize Trường Bộ 34/34 MP3 catalog'
+          git push origin HEAD:feature/progress-home-dn
