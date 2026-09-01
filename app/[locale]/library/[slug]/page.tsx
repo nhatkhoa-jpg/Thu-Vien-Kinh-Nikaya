@@ -1,7 +1,7 @@
 import type {Metadata} from 'next';
 import {notFound} from 'next/navigation';
 import Link from 'next/link';
-import {ArrowLeft,Download,ExternalLink,Headphones,Clock,BookOpen,ArrowRight,FileText,Volume2} from 'lucide-react';
+import {ArrowLeft,Download,ExternalLink,Headphones,Clock,BookOpen,ArrowRight,FileText,Volume2,ChevronDown} from 'lucide-react';
 import {dict,isLocale,locales,type Locale} from '@/lib/i18n';
 import {suttas,collectionDisplayCode,suttaDisplayCode,suttaAudio} from '@/lib/data';
 import {getSuttaFullText} from '@/lib/sutta-content';
@@ -40,14 +40,14 @@ export default async function SuttaPage({params}:{params:Promise<{locale:string;
     <ReaderQuickJump locale={locale} currentSlug={slug}/>
     <div className="readerLayout">
       <article className="readerMain">
-        <div className="readerTitleMeta"><span className="readerCode dualCode"><strong>{displayCode}</strong>{vi&&<small>{s.code}</small>}</span><span><Clock size={14}/>{s.readMinutes} {d.minutes}</span>{plainText&&<span><Volume2 size={14}/>{vi?'Có đọc bằng thiết bị':'Browser voice'}</span>}</div>
+        <div className="readerTitleMeta"><span className="readerCode dualCode"><strong>{displayCode}</strong>{vi&&<small>{s.code}</small>}</span><span><Clock size={14}/>{s.readMinutes} {d.minutes}</span>{plainText&&<span><Volume2 size={14}/>{vi?'Có đọc tự động':'Speech available'}</span>}</div>
         <h1>{title}</h1><p className="readerPali">{s.pali}</p>
         <ReaderProgress id={`${locale}:${s.slug}`} locale={locale}/>
 
-        <section className="readerEssentials" aria-label={vi?'Công cụ nghe và tải':'Listen and download tools'}>
-          {plainText&&<div className="readerEssentialCard essentialListen" id="listen"><div className="essentialHeading"><span><Volume2 size={18}/></span><div><small>{vi?'Đọc trực tiếp từ toàn văn':'Reads the current full text'}</small><h2>{vi?'Nghe bằng trình duyệt':'Browser / device voice'}</h2></div></div><BrowserReader text={plainText} locale={locale}/></div>}
-          {paragraphs.length>0&&<div className="readerEssentialCard essentialPdf" id="pdf"><div className="essentialHeading"><span><FileText size={18}/></span><div><small>{vi?'Tạo từ nội dung của thư viện':'Generated from library content'}</small><h2>{vi?'Tải PDF của thư viện':'Library PDF'}</h2></div></div><PdfDownloadButton code={displayCode} title={title} pali={s.pali} summary={vi?s.summaryVi:s.summaryEn} paragraphs={paragraphs} sourceLabel={sourceLabel} sourceUrl={sourceUrl} locale={locale}/></div>}
-          {audio&&<div className="readerEssentialCard essentialMp3" id="mp3"><div className="essentialHeading"><span><Headphones size={18}/></span><div><small>{vi?'Nguồn âm thanh dự phòng':'Optional external audio'}</small><h2>{vi?'MP3 tiếng Việt':'MP3'}</h2></div></div><AudioPlayer src={audio.url}/><div className="mp3Links"><a className="downloadLink" href={audio.url} target="_blank" rel="noreferrer"><Download size={16}/>{vi?'Mở / tải MP3':'Open / download MP3'}</a>{audio.sourceUrl&&<a className="audioSource" href={audio.sourceUrl} target="_blank" rel="noreferrer">{vi?'Nguồn MP3':'MP3 source'} · {audio.provider}<ExternalLink size={13}/></a>}</div></div>}
+        <section className="readerEssentials compactEssentials" aria-label={vi?'Nghe và tải':'Listen and download'}>
+          {plainText&&<details className="essentialDisclosure listenDisclosure" id="listen"><summary title={vi?'Nghe toàn văn bằng giọng thiết bị hoặc giọng nội bộ của thư viện':'Listen with device or internal voice'}><span className="miniActionIcon"><Volume2 size={17}/></span><span><strong>{vi?'Nghe':'Listen'}</strong><small>{vi?'Thiết bị + nội bộ':'Device + internal'}</small></span><ChevronDown size={15} className="disclosureChevron"/></summary><div className="disclosureBody"><BrowserReader text={plainText} locale={locale}/></div></details>}
+          {paragraphs.length>0&&<details className="essentialDisclosure pdfDisclosure" id="pdf"><summary title={vi?'Tạo PDF từ chính nội dung bài kinh đang đọc':'Generate a PDF from this text'}><span className="miniActionIcon"><FileText size={17}/></span><span><strong>PDF</strong><small>{vi?'Tự tạo':'Generated'}</small></span><ChevronDown size={15} className="disclosureChevron"/></summary><div className="disclosureBody"><PdfDownloadButton code={displayCode} title={title} pali={s.pali} summary={vi?s.summaryVi:s.summaryEn} paragraphs={paragraphs} sourceLabel={sourceLabel} sourceUrl={sourceUrl} locale={locale}/></div></details>}
+          {audio&&<details className="essentialDisclosure mp3Disclosure" id="mp3"><summary title={vi?'MP3 tiếng Việt từ nguồn bổ sung':'Optional matched-language MP3'}><span className="miniActionIcon"><Headphones size={17}/></span><span><strong>MP3</strong><small>{vi?'Nguồn phụ':'Backup'}</small></span><ChevronDown size={15} className="disclosureChevron"/></summary><div className="disclosureBody"><AudioPlayer src={audio.url}/><div className="mp3Links"><a className="downloadLink" href={audio.url} target="_blank" rel="noreferrer"><Download size={16}/>{vi?'Mở / tải MP3':'Open / download MP3'}</a>{audio.sourceUrl&&<a className="audioSource" href={audio.sourceUrl} target="_blank" rel="noreferrer">{vi?'Nguồn MP3':'MP3 source'} · {audio.provider}<ExternalLink size={13}/></a>}</div></div></details>}
         </section>
 
         <div className="suttaText">
