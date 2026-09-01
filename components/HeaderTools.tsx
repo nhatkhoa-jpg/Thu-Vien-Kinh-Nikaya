@@ -6,7 +6,7 @@ import {BookOpen,Headphones,Home,Library,Menu,Search,X} from 'lucide-react';
 import {suttas,suttaDisplayCode} from '@/lib/data';
 import type {Locale} from '@/lib/i18n';
 
-const RELEASE='V4.9';
+const RELEASE='V4.10';
 
 export default function HeaderTools({locale}:{locale:Locale}){
   const vi=locale==='vi';
