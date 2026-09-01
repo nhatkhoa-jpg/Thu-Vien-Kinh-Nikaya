@@ -144,8 +144,8 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          gh api "repos/$GITHUB_REPOSITORY/releases/tags/$TARGET_TAG" > /tmp/release.json
-          RELEASE_ID=$(jq -r '.id' /tmp/release.json)
+          RELEASE_ID=$(gh release view "$TARGET_TAG" --repo "$GITHUB_REPOSITORY" --json databaseId --jq '.databaseId')
+          test -n "$RELEASE_ID"
           gh api --paginate "repos/$GITHUB_REPOSITORY/releases/$RELEASE_ID/assets?per_page=100" > /tmp/assets-pages.json
           jq -s 'add' /tmp/assets-pages.json > /tmp/assets.json || cp /tmp/assets-pages.json /tmp/assets.json
           python - <<'PY'
