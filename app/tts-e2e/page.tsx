@@ -12,7 +12,7 @@ export default function TtsE2EPage(){
     'Đoạn cuối kiểm tra thao tác dừng và đọc tiếp. Khi người dùng dừng giữa chừng rồi đọc tiếp, âm thanh phải tiếp tục tại vị trí cũ.'
   ].join(' ');
   return <main style={{maxWidth:720,margin:'40px auto',padding:20}}>
-    <h1>V4.11.1 TTS E2E</h1>
+    <h1>V4.11.2 TTS E2E</h1>
     <BrowserReader text={sample} locale="vi" chunkMax={120}/>
   </main>;
 }
