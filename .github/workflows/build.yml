@@ -48,7 +48,10 @@ jobs:
           NODE
       - run: npm run build
       - name: Smoke test reader, home discovery and progress dashboard
+        shell: bash
         run: |
+          set -euo pipefail
+          must_have(){ local file="$1" text="$2" label="$3"; if grep -Fq "$text" "$file"; then echo "PASS: $label"; else echo "FAIL missing: $label [$text]"; exit 1; fi; }
           npm run start -- -p 3000 > /tmp/nikaya-next.log 2>&1 &
           SERVER_PID=$!
           trap 'kill $SERVER_PID || true' EXIT
@@ -58,27 +61,33 @@ jobs:
             sleep 1
           done
           if [ "$READY" -ne 1 ]; then cat /tmp/nikaya-next.log; exit 1; fi
+
           curl --fail --silent http://127.0.0.1:3000/vi -o /tmp/home.html
-          grep -q 'Trường Bộ' /tmp/home.html
-          grep -q 'Trung Bộ' /tmp/home.html
-          grep -q 'Tương Ưng Bộ' /tmp/home.html
-          grep -q 'Tăng Chi Bộ' /tmp/home.html
-          grep -q 'Tiểu Bộ' /tmp/home.html
-          grep -q 'Tiến độ số hóa' /tmp/home.html
+          must_have /tmp/home.html 'Trường Bộ' 'full name Trường Bộ'
+          must_have /tmp/home.html 'Trung Bộ' 'full name Trung Bộ'
+          must_have /tmp/home.html 'Tương Ưng Bộ' 'full name Tương Ưng Bộ'
+          must_have /tmp/home.html 'Tăng Chi Bộ' 'full name Tăng Chi Bộ'
+          must_have /tmp/home.html 'Tiểu Bộ' 'full name Tiểu Bộ'
+          must_have /tmp/home.html 'Tiến độ số hóa' 'progress link'
+
           curl --fail --silent http://127.0.0.1:3000/vi/library/mn-21-kakacupama -o /tmp/mn21.html
-          grep -q 'compactEssentials' /tmp/mn21.html
-          grep -q 'primaryMp3Disclosure' /tmp/mn21.html
-          grep -q 'V5.1-HOME-DN' /tmp/mn21.html
-          grep -q 'mn21.mp3' /tmp/mn21.html
-          grep -q 'Nghe bài kinh' /tmp/mn21.html
-          grep -q 'Bản dịch:' /tmp/mn21.html
-          if grep -q 'Giọng thư viện' /tmp/mn21.html; then echo 'Legacy library TTS leaked into reader'; exit 1; fi
+          must_have /tmp/mn21.html 'compactEssentials' 'compact reader essentials'
+          must_have /tmp/mn21.html 'primaryMp3Disclosure' 'primary prebuilt MP3 disclosure'
+          must_have /tmp/mn21.html 'V5.1-HOME-DN' 'test build marker'
+          must_have /tmp/mn21.html 'mn21.mp3' 'MN21 MP3 URL'
+          must_have /tmp/mn21.html 'Nghe bài kinh' 'listen label'
+          must_have /tmp/mn21.html 'Bản dịch:' 'compact source label'
+          if grep -Fq 'Giọng thư viện' /tmp/mn21.html; then echo 'FAIL: Legacy library TTS leaked into reader'; exit 1; fi
+          echo 'PASS: no legacy library TTS'
+
           curl --fail --silent http://127.0.0.1:3000/vi/tien-do -o /tmp/progress.html
-          grep -q 'TIẾN ĐỘ SỐ HÓA' /tmp/progress.html
-          grep -q 'Trung Bộ' /tmp/progress.html
+          must_have /tmp/progress.html 'TIẾN ĐỘ SỐ HÓA' 'progress page heading'
+          must_have /tmp/progress.html 'Trung Bộ' 'progress page Trung Bộ card'
+
           curl --fail --silent http://127.0.0.1:3000/en > /dev/null
           STATUS=$(curl --silent --output /dev/null --write-out '%{http_code}' http://127.0.0.1:3000/api/tts)
-          test "$STATUS" = "404"
+          if [ "$STATUS" != "404" ]; then echo "FAIL: /api/tts expected 404 got $STATUS"; exit 1; fi
+          echo 'PASS: runtime TTS route absent'
           curl -L --fail --silent --range 0-4095 'https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn21.mp3' -o /tmp/mn21.part
-          test $(stat -c%s /tmp/mn21.part) -gt 1000
+          if [ "$(stat -c%s /tmp/mn21.part)" -le 1000 ]; then echo 'FAIL: MN21 MP3 range fetch too small'; exit 1; fi
           echo 'V5.1 home/progress/MP3 smoke test PASS'
