@@ -37,15 +37,21 @@ Thứ tự V5:
 3. Không re-introduce neural/WASM TTS chạy trong browser hoặc server runtime TTS làm đường nghe chính.
 4. Player MP3 giữ tốc độ 0.75×–2×, tua ±15 giây và lưu vị trí nghe.
 
-### Trung Bộ tiếng Việt — v1
+### Trung Bộ tiếng Việt — v1 — HOÀN TẤT PRODUCTION
 - Release tag: `mn-vi-audio-v1`.
 - Asset bắt buộc chính xác: `mn1.mp3` … `mn152.mp3`.
 - Workflow audio: `.github/workflows/build-mn-audio.yml` (`Build Full Trung Bo MP3`).
 - Workflow finalizer: `.github/workflows/finalize-mn-site.yml` (`Finalize Trung Bo Site After MP3`).
-- Audio run #4 đã PASS và publish release sau khi kiểm tra exact MN1..MN152.
-- Finalizer run #1 đã PASS và commit catalog/audio hoàn chỉnh ở commit `9566e290b1282508a881594101ecc30fa9ebdd8b` với message `feat(mn): complete 152-sutta catalog with prebuilt MP3`.
-- `data/catalog/audio.json` mapping tiếng Việt trỏ đến release `mn-vi-audio-v1` và provider `5 Đại Tạng Kinh Nikāya`.
-- Catalog Trung Bộ đã mở rộng từ demo lên đủ TB 1–TB 152.
+- Audio run #4 PASS và release xác minh exact 152/152.
+- Finalizer #1 PASS; catalog/audio hoàn chỉnh được sinh ở commit `9566e290b1282508a881594101ecc30fa9ebdd8b`.
+- `data/catalog/audio.json` có 152 mapping tiếng Việt trỏ đến `mn-vi-audio-v1`, provider `5 Đại Tạng Kinh Nikāya`.
+- Catalog Trung Bộ đủ TB 1–TB 152.
+- Quality gate staging run `33563043660` PASS: RAG, Next build, reader smoke, `mn21.mp3`, wording MP3-first, `/api/tts` 404 và download range MP3 thật.
+- PR #2 merged vào `main` bằng merge commit `c7c8abf27e1eb533348c3054f475cc9fc06f0b8f`.
+- Production Vercel cho merge commit báo SUCCESS trên project cố định `nikaya-reader-v4-final`.
+- Main quality gate run `33563158405` PASS toàn bộ.
+- Reader production wording: MP3 chính hiển thị `Nghe bài kinh · MP3 dựng sẵn · mọi thiết bị`; device speech chỉ hiện khi có voice phù hợp.
+- Nguồn được rút gọn chuyên nghiệp: `Bản dịch: <dịch giả> · Đối chiếu SuttaCentral`; bỏ card nguồn trùng lặp.
 
 ## 5. PDF
 - PDF chính do website tự sinh từ toàn văn bằng `pdfmake`.
@@ -58,7 +64,7 @@ Thứ tự V5:
 - Search: mã Việt/quốc tế, tên, Pāli, chủ đề, tóm tắt.
 - Reader controls gọn: font, line-height, width, dark, bookmark/resume.
 - MP3 là disclosure nghe chính; PDF riêng; device speech chỉ xuất hiện nếu supported.
-- Trong giai đoạn test hiển thị version rất nhỏ: `V5.0-MN-STAGE`.
+- Trong giai đoạn test vẫn hiển thị version nhỏ `V5.0-MN-STAGE`; chỉ xóa sau khi user xác nhận UI/MP3 production ổn.
 
 ## 7. Responsive UX
 Bắt buộc test ít nhất 4 lớp:
@@ -73,7 +79,7 @@ Mobile bottom dock không được che nội dung/nút quan trọng.
 - Mỗi bài giữ ID ổn định, canonical ref, code quốc tế, viCode, title, Pāli, topics, source, translator/license, version.
 - RAG export: `npm run rag:export`.
 - Mỗi chunk có stable id + `content_hash` + `embedding_cache_key`.
-- Quality gate V5 kiểm tra RAG/Knowledge export theo số catalog hiện tại và kiểm tra đủ 152 mapping MP3 Trung Bộ khi MN đạt 152 bài.
+- Quality gate kiểm tra số catalog/audio thực tế; không hard-code giả định số lượng cho các bộ chưa khám phá canonical refs.
 
 ## 9. Vercel / domain — URL CỐ ĐỊNH
 - Không tạo project Vercel mới cho mỗi phiên bản.
@@ -83,36 +89,39 @@ Mobile bottom dock không được che nội dung/nút quan trọng.
 - URL random chỉ là deployment nội bộ, không đưa làm URL chính.
 
 ## 10. Tình trạng source hiện tại (2026-09-02)
-Branch hoàn thiện Trung Bộ: `feature/mn-prebuilt-mp3`.
-PR: #2 `V5: Hoàn thiện Trung Bộ 152 bài với MP3 dựng sẵn`.
+`main` đã chứa V5 MP3-first cho Trung Bộ.
 
-Đã hoàn tất trên branch:
-- Release MP3 Trung Bộ tiếng Việt đã publish và workflow xác minh exact 152/152.
-- Catalog TB 1–TB 152 + audio mapping được finalizer sinh và commit.
-- RAG export + Next build + MP3-first smoke test đã chạy trong finalizer thành công trước commit catalog.
-- Route `/api/tts` được quality gate V5 kỳ vọng trả 404; browser/server neural TTS không còn là runtime chính.
-- Reader marker kiểm thử: `primaryMp3Disclosure` và `V5.0-MN-STAGE`.
+Hoàn tất:
+- Trung Bộ TB1–TB152: catalog 152/152.
+- MP3 Việt dựng sẵn: 152/152.
+- Release + manifest: PASS.
+- RAG + Next build + reader smoke: PASS staging và main.
+- Vercel production: SUCCESS trên stable project.
+- Browser/server neural TTS runtime đã loại khỏi đường nghe chính; `/api/tts` không còn là runtime.
+- Nguồn/đối chiếu đã rút gọn và bỏ duplicate card.
 
-Việc còn lại trước production:
-1. Chạy quality gate lại trên **HEAD cuối cùng do user/connector commit** để tránh GitHub `action_required` ở commit bot.
-2. Xác minh PR #2 mergeable và các check mới PASS.
-3. Mark PR ready, merge vào `main` khi tất cả gate xanh.
-4. Xác minh Vercel production trên stable URL cố định và player/route chính hoạt động.
-5. Sau khi production xác minh xong, đổi trạng thái V5 Trung Bộ thành hoàn tất và tiếp tục bộ kế tiếp trong phiên/dự án khác.
+Đang tiếp tục theo tác vụ master `Hoàn tất 5 Đại Tạng Nikāya`:
+1. Trường Bộ DN/TrB.
+2. Tương Ưng Bộ SN/TƯB.
+3. Tăng Chi Bộ AN/TCB.
+4. Tiểu Bộ KN/TiB.
+
+Mỗi bộ phải khám phá canonical refs từ nguồn chuẩn, checkpoint bằng release/catalog, render MP3 server-side theo batch và chỉ production khi quality gate xanh.
 
 ## 11. Quy trình chuẩn khi tiếp tục
 1. Đọc `PROJECT_STATE.md`, `AGENTS.md`, `README.md`, `data/README.md`.
-2. Đọc branch/main + GitHub Actions mới nhất.
+2. Đọc `main` + GitHub Actions/release mới nhất.
 3. Không tạo repo/project/Vercel URL mới nếu không có lý do đặc biệt.
 4. Data/catalog trước; UI đọc dữ liệu đó.
 5. Build + RAG + MP3 catalog validation + smoke-test reader.
 6. Chỉ merge vào `main` sau khi HEAD cuối cùng có quality gate xanh.
 7. Vercel Git Integration tự deploy project cố định.
 8. Xác nhận production bằng stable URL; không gửi random deployment URL.
-9. Update file này khi kiến trúc/quy tắc thay đổi.
+9. Update file này khi kiến trúc/quy tắc/trạng thái một bộ thay đổi.
 
-## 12. Ưu tiên tiếp theo sau khi V5 Trung Bộ production PASS
-- Hoàn thiện full-text corpus hợp pháp và audio prebuilt cho các bộ còn lại theo cùng pipeline.
+## 12. Ưu tiên tiếp theo
+- Tiếp tục Trường Bộ theo cùng pipeline MP3-first, sau đó SN → AN → KN.
+- Hoàn thiện full-text corpus hợp pháp cho từng bộ.
 - Nâng chất lượng giọng Việt bằng cách re-render asset server-side; không bắt client tải model.
 - Full-text search segment/chunk + highlight.
 - PDF mục lục/bookmarks/QR và font Pāli chuyên dụng khi có cách nhúng an toàn.
