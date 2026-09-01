@@ -2,7 +2,7 @@ name: Build & Validate
 
 on:
   push:
-    branches: [main]
+    branches: [main, feature/mn-prebuilt-mp3]
   pull_request:
     branches: [main]
 
@@ -45,7 +45,7 @@ jobs:
             }
             console.log('Full MN audio catalog validated: 152/152');
           } else {
-            console.log(`MN staging catalog currently ${mn.length}/152; full-audio gate activates at 152.`);
+            throw new Error(`MN catalog incomplete: ${mn.length}/152`);
           }
           NODE
       - run: npm run build
@@ -64,6 +64,13 @@ jobs:
           grep -q 'compactEssentials' /tmp/mn21.html
           grep -q 'primaryMp3Disclosure' /tmp/mn21.html
           grep -q 'V5.0-MN-STAGE' /tmp/mn21.html
+          grep -q 'mn21.mp3' /tmp/mn21.html
+          grep -q 'Nghe bài kinh' /tmp/mn21.html
+          grep -q 'Bản dịch:' /tmp/mn21.html
+          if grep -q 'Giọng thư viện' /tmp/mn21.html; then echo 'Legacy library TTS leaked into V5 reader'; exit 1; fi
           curl --fail --silent http://127.0.0.1:3000/en > /dev/null
           STATUS=$(curl --silent --output /dev/null --write-out '%{http_code}' http://127.0.0.1:3000/api/tts)
           test "$STATUS" = "404"
+          curl -L --fail --silent --range 0-4095 'https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn21.mp3' -o /tmp/mn21.part
+          test $(stat -c%s /tmp/mn21.part) -gt 1000
+          echo 'V5 MP3-first smoke test PASS'
