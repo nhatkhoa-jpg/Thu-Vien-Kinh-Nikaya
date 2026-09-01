@@ -12,7 +12,7 @@ import BrowserReader from '@/components/BrowserReader';
 import PdfDownloadButton from '@/components/PdfDownloadButton';
 import ReaderQuickJump from '@/components/ReaderQuickJump';
 
-const baseUrl=process.env.NEXT_PUBLIC_SITE_URL||'https://thu-vien-nikaya-now-khoa-3f1b.vercel.app';
+const baseUrl=process.env.NEXT_PUBLIC_SITE_URL||'https://nikaya-reader-v4-final-khoa-3f1b.vercel.app';
 export const revalidate=86400;
 
 export async function generateMetadata({params}:{params:Promise<{locale:string;slug:string}>}):Promise<Metadata>{
@@ -43,6 +43,13 @@ export default async function SuttaPage({params}:{params:Promise<{locale:string;
         <div className="readerTitleMeta"><span className="readerCode dualCode"><strong>{displayCode}</strong>{vi&&<small>{s.code}</small>}</span><span><Clock size={14}/>{s.readMinutes} {d.minutes}</span>{plainText&&<span><Volume2 size={14}/>{vi?'Có đọc bằng thiết bị':'Browser voice'}</span>}</div>
         <h1>{title}</h1><p className="readerPali">{s.pali}</p>
         <ReaderProgress id={`${locale}:${s.slug}`} locale={locale}/>
+
+        <section className="readerEssentials" aria-label={vi?'Công cụ nghe và tải':'Listen and download tools'}>
+          {plainText&&<div className="readerEssentialCard essentialListen" id="listen"><div className="essentialHeading"><span><Volume2 size={18}/></span><div><small>{vi?'Đọc trực tiếp từ toàn văn':'Reads the current full text'}</small><h2>{vi?'Nghe bằng trình duyệt':'Browser / device voice'}</h2></div></div><BrowserReader text={plainText} locale={locale}/></div>}
+          {paragraphs.length>0&&<div className="readerEssentialCard essentialPdf" id="pdf"><div className="essentialHeading"><span><FileText size={18}/></span><div><small>{vi?'Tạo từ nội dung của thư viện':'Generated from library content'}</small><h2>{vi?'Tải PDF của thư viện':'Library PDF'}</h2></div></div><PdfDownloadButton code={displayCode} title={title} pali={s.pali} summary={vi?s.summaryVi:s.summaryEn} paragraphs={paragraphs} sourceLabel={sourceLabel} sourceUrl={sourceUrl} locale={locale}/></div>}
+          {audio&&<div className="readerEssentialCard essentialMp3" id="mp3"><div className="essentialHeading"><span><Headphones size={18}/></span><div><small>{vi?'Nguồn âm thanh dự phòng':'Optional external audio'}</small><h2>{vi?'MP3 tiếng Việt':'MP3'}</h2></div></div><AudioPlayer src={audio.url}/><div className="mp3Links"><a className="downloadLink" href={audio.url} target="_blank" rel="noreferrer"><Download size={16}/>{vi?'Mở / tải MP3':'Open / download MP3'}</a>{audio.sourceUrl&&<a className="audioSource" href={audio.sourceUrl} target="_blank" rel="noreferrer">{vi?'Nguồn MP3':'MP3 source'} · {audio.provider}<ExternalLink size={13}/></a>}</div></div>}
+        </section>
+
         <div className="suttaText">
           <section><span className="textSectionLabel">01 · {d.readerIntro}</span><p>{vi?s.summaryVi:s.summaryEn}</p></section>
           <section><span className="textSectionLabel">02 · {d.readerPractice}</span><p>{vi?s.practiceVi:s.practiceEn}</p></section>
@@ -54,9 +61,6 @@ export default async function SuttaPage({params}:{params:Promise<{locale:string;
         </div>
       </article>
       <aside className="readerSide">
-        {plainText&&<section className="sideCard primarySide browserVoiceCard"><div className="sideCardTitle"><span className="sideIcon"><Volume2 size={18}/></span><div><small>{vi?'Nghe không phụ thuộc MP3':'Independent of MP3 files'}</small><h3>{vi?'Nghe bằng trình duyệt / thiết bị':'Listen with browser voice'}</h3></div></div><BrowserReader text={plainText} locale={locale}/></section>}
-        {paragraphs.length&&<section className="sideCard pdfCard"><div className="sideCardTitle"><span className="sideIcon"><FileText size={18}/></span><div><small>{vi?'Tài liệu của thư viện':'Library document'}</small><h3>{vi?'PDF tự tạo':'Generated PDF'}</h3></div></div><PdfDownloadButton code={displayCode} title={title} pali={s.pali} summary={vi?s.summaryVi:s.summaryEn} paragraphs={paragraphs} sourceLabel={sourceLabel} sourceUrl={sourceUrl} locale={locale}/></section>}
-        {audio&&<section className="sideCard mp3BackupCard"><div className="sideCardTitle"><span className="sideIcon"><Headphones size={18}/></span><div><small>{vi?'MP3 bổ sung':'Optional MP3'}</small><h3>{audio.label}</h3></div></div><AudioPlayer src={audio.url}/><a className="downloadLink" href={audio.url} target="_blank" rel="noreferrer"><Download size={16}/>{vi?'Mở / tải MP3':'Open / download MP3'}</a>{audio.sourceUrl&&<a className="audioSource" href={audio.sourceUrl} target="_blank" rel="noreferrer">{vi?'Nguồn MP3':'MP3 source'} · {audio.provider}<ExternalLink size={13}/></a>}</section>}
         {s.youtubeId&&<section className="sideCard"><h3>{d.relatedVideo}</h3><YouTubeEmbed videoId={s.youtubeId} title={`${displayCode} ${title}`}/></section>}
         <section className="sideCard sourceCard"><small>{d.sources}</small><p>{sourceLabel}</p><a href={sourceUrl} target="_blank" rel="noreferrer">{vi?'Đối chiếu nguồn':'Source'} <ExternalLink size={14}/></a></section>
       </aside>
