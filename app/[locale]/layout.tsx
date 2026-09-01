@@ -2,8 +2,7 @@ import type {Metadata} from 'next';
 import {notFound} from 'next/navigation';
 import Header from '@/components/Header';
 import {dict,isLocale,languageNames,locales,type Locale} from '@/lib/i18n';
-
-const baseUrl=process.env.NEXT_PUBLIC_SITE_URL || 'https://thu-vien-kinh-nikaya-khoa-3f1b.vercel.app';
+import {SITE_URL} from '@/lib/site';
 
 export function generateStaticParams(){return locales.map(locale=>({locale}))}
 
@@ -16,10 +15,10 @@ export async function generateMetadata({params}:{params:Promise<{locale:string}>
     title:d.brand,
     description:d.heroLead,
     alternates:{
-      canonical:`${baseUrl}/${locale}`,
-      languages:Object.fromEntries(locales.map(l=>[l,`${baseUrl}/${l}`]))
+      canonical:`${SITE_URL}/${locale}`,
+      languages:Object.fromEntries(locales.map(l=>[l,`${SITE_URL}/${l}`]))
     },
-    openGraph:{title:d.brand,description:d.heroLead,url:`${baseUrl}/${locale}`,type:'website',locale},
+    openGraph:{title:d.brand,description:d.heroLead,url:`${SITE_URL}/${locale}`,type:'website',locale},
     other:{'content-language':locale}
   };
 }
