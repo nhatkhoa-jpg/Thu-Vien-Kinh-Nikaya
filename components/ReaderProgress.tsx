@@ -41,16 +41,14 @@ export default function ReaderProgress({id,locale}:{id:string;locale:string}){
   function cycleLeading(){setLeading(v=>v<1.8?1.9:v<2?2.1:1.7);}
   function cycleWidth(){setWidth(v=>v<740?780:v<850?920:680);}
 
-  return <div className="readerToolbar" aria-label={vi?'Công cụ đọc':'Reader tools'}>
-    <div className="readerToolGroup">
-      <button onClick={()=>setSize(v=>Math.max(17,v-1))} aria-label={vi?'Giảm cỡ chữ':'Smaller text'}><Minus size={16}/><span>A</span></button>
-      <span className="readerSize">{size}</span>
-      <button onClick={()=>setSize(v=>Math.min(28,v+1))} aria-label={vi?'Tăng cỡ chữ':'Larger text'}><Plus size={16}/><span>A</span></button>
-    </div>
-    <button onClick={cycleLeading} title={vi?'Đổi khoảng dòng':'Change line spacing'}><AlignJustify size={16}/><span>{leading.toFixed(1)}×</span></button>
-    <button onClick={cycleWidth} title={vi?'Đổi bề rộng trang đọc':'Change reading width'}><Maximize2 size={16}/><span>{width<740?(vi?'Hẹp':'Narrow'):width<850?(vi?'Vừa':'Comfort'):(vi?'Rộng':'Wide')}</span></button>
-    <button onClick={()=>setNight(v=>!v)}>{night?<Sun size={16}/>:<Moon size={16}/>}<span>{vi?(night?'Sáng':'Tối'):(night?'Light':'Dark')}</span></button>
-    <button onClick={saveNow}><Bookmark size={16}/><span>{vi?'Lưu vị trí':'Save position'}</span></button>
-    {saved!==null&&<button onClick={resume}><RotateCcw size={16}/><span>{vi?'Đọc tiếp':'Resume'}</span></button>}
+  return <div className="readerToolbar compactReaderToolbar" aria-label={vi?'Công cụ đọc':'Reader tools'}>
+    <button onClick={()=>setSize(v=>Math.max(17,v-1))} title={vi?'Giảm cỡ chữ':'Smaller text'} aria-label={vi?'Giảm cỡ chữ':'Smaller text'}><Minus size={16}/><small>A</small></button>
+    <span className="readerMiniValue" title={vi?'Cỡ chữ hiện tại':'Current text size'}>{size}</span>
+    <button onClick={()=>setSize(v=>Math.min(28,v+1))} title={vi?'Tăng cỡ chữ':'Larger text'} aria-label={vi?'Tăng cỡ chữ':'Larger text'}><Plus size={16}/><small>A</small></button>
+    <button onClick={cycleLeading} title={vi?`Khoảng dòng ${leading.toFixed(1)}×`:`Line spacing ${leading.toFixed(1)}×`} aria-label={vi?'Đổi khoảng dòng':'Change line spacing'}><AlignJustify size={17}/><small>{leading.toFixed(1)}</small></button>
+    <button onClick={cycleWidth} title={vi?'Đổi bề rộng trang đọc':'Change reading width'} aria-label={vi?'Đổi bề rộng trang đọc':'Change reading width'}><Maximize2 size={17}/><small>{width<740?'S':width<850?'M':'L'}</small></button>
+    <button onClick={()=>setNight(v=>!v)} title={vi?(night?'Nền sáng':'Nền tối'):(night?'Light mode':'Dark mode')} aria-label={vi?'Đổi nền đọc':'Toggle reading theme'}>{night?<Sun size={17}/>:<Moon size={17}/>}</button>
+    <button onClick={saveNow} title={vi?'Lưu vị trí đang đọc':'Save reading position'} aria-label={vi?'Lưu vị trí':'Save position'}><Bookmark size={17}/></button>
+    {saved!==null&&<button onClick={resume} title={vi?'Quay lại vị trí đã lưu':'Resume saved position'} aria-label={vi?'Đọc tiếp':'Resume'}><RotateCcw size={17}/></button>}
   </div>;
 }
