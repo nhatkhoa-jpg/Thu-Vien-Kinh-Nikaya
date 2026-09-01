@@ -9,6 +9,18 @@ const nextConfig: NextConfig = {
       './node_modules/text2wav/lib/**/*',
       './node_modules/text2wav/espeak-ng-data/**/*'
     ]
+  },
+  webpack(config,{isServer}){
+    if(!isServer){
+      config.resolve.fallback={
+        ...(config.resolve.fallback||{}),
+        fs:false,
+        path:false,
+        os:false,
+        worker_threads:false
+      };
+    }
+    return config;
   }
 };
 
