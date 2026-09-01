@@ -24,7 +24,7 @@ jobs:
           test "$(wc -l < data/exports/nikaya-knowledge.en.jsonl)" -eq 11
           node -e "const fs=require('fs'); for(const f of fs.readdirSync('data/exports')) for(const l of fs.readFileSync('data/exports/'+f,'utf8').trim().split('\\n')) JSON.parse(l)"
       - run: npm run build
-      - name: Smoke test rendered routes and internal TTS
+      - name: Smoke test compact reader and internal TTS
         run: |
           npm run start -- -p 3000 > /tmp/nikaya-next.log 2>&1 &
           SERVER_PID=$!
@@ -35,7 +35,10 @@ jobs:
             sleep 1
           done
           if [ "$READY" -ne 1 ]; then cat /tmp/nikaya-next.log; exit 1; fi
-          curl --fail --silent http://127.0.0.1:3000/vi/library/mn-21-kakacupama > /dev/null
+          curl --fail --silent http://127.0.0.1:3000/vi/library/mn-21-kakacupama -o /tmp/mn21.html
+          grep -q 'compactEssentials' /tmp/mn21.html
+          grep -q 'essentialDisclosure' /tmp/mn21.html
+          grep -q 'V4.7' /tmp/mn21.html
           curl --fail --silent http://127.0.0.1:3000/en > /dev/null
           curl --fail --silent --show-error -X POST http://127.0.0.1:3000/api/tts \
             -H 'Content-Type: application/json' \
