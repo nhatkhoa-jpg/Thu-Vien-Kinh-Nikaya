@@ -1,63 +1,48 @@
 import type {Metadata} from 'next';
 import {notFound} from 'next/navigation';
 import Link from 'next/link';
-import {ArrowLeft,Download,ExternalLink,Headphones,FileText} from 'lucide-react';
+import {ArrowLeft,Download,ExternalLink,Headphones,Clock,BookOpen,ArrowRight} from 'lucide-react';
 import {dict,isLocale,locales,type Locale} from '@/lib/i18n';
 import {suttas} from '@/lib/data';
 import AudioPlayer from '@/components/AudioPlayer';
 import ReaderProgress from '@/components/ReaderProgress';
 import YouTubeEmbed from '@/components/YouTubeEmbed';
 
-const baseUrl=process.env.NEXT_PUBLIC_SITE_URL || 'https://thu-vien-kinh-nikaya-khoa-3f1b.vercel.app';
-
+const baseUrl=process.env.NEXT_PUBLIC_SITE_URL||'https://thu-vien-nikaya-now-khoa-3f1b.vercel.app';
 export function generateStaticParams(){return suttas.flatMap(s=>locales.map(locale=>({locale,slug:s.slug})))}
 
 export async function generateMetadata({params}:{params:Promise<{locale:string;slug:string}>}):Promise<Metadata>{
   const {locale:raw,slug}=await params;
-  if(!isLocale(raw)) return {};
-  const s=suttas.find(x=>x.slug===slug);
-  if(!s) return {};
-  const locale=raw as Locale;
-  const title=locale==='vi'?`${s.code} · ${s.vi}`:`${s.code} · ${s.en}`;
-  const description=locale==='vi'?s.summaryVi:s.summaryEn;
-  return {
-    title,
-    description,
-    alternates:{
-      canonical:`${baseUrl}/${locale}/library/${slug}`,
-      languages:Object.fromEntries(locales.map(l=>[l,`${baseUrl}/${l}/library/${slug}`]))
-    },
-    openGraph:{title,description,url:`${baseUrl}/${locale}/library/${slug}`,type:'article'}
-  };
+  if(!isLocale(raw))return{};
+  const s=suttas.find(x=>x.slug===slug);if(!s)return{};
+  const locale=raw as Locale;const title=locale==='vi'?`${s.code} · ${s.vi}`:`${s.code} · ${s.en}`;const description=locale==='vi'?s.summaryVi:s.summaryEn;
+  return{title,description,alternates:{canonical:`${baseUrl}/${locale}/library/${slug}`,languages:Object.fromEntries(locales.map(l=>[l,`${baseUrl}/${l}/library/${slug}`]))},openGraph:{title,description,url:`${baseUrl}/${locale}/library/${slug}`,type:'article'}};
 }
 
 export default async function SuttaPage({params}:{params:Promise<{locale:string;slug:string}>}){
-  const {locale:raw,slug}=await params;
-  if(!isLocale(raw))notFound();
-  const locale=raw as Locale;
-  const d=dict(locale);
-  const s=suttas.find(x=>x.slug===slug);
-  if(!s)notFound();
-  const vi=locale==='vi';
-  const title=vi?s.vi:s.en;
-  return <main><div className="shell reader">
-    <article className="readerMain">
-      <Link href={`/${locale}#library`} className="btn"><ArrowLeft size={16}/>{vi?'Trở lại thư viện':'Back to library'}</Link>
-      <div className="eyebrow" style={{marginTop:30}}>{s.code} · {s.collection}</div>
-      <h1>{title}</h1>
-      <p className="lede"><em>{s.pali}</em></p>
-      <ReaderProgress id={`${locale}:${s.slug}`} locale={locale}/>
-      <div className="suttaText">
-        <p>{vi?s.summaryVi:s.summaryEn}</p>
-        <p>{d.textNotice}</p>
-        <p><strong>{vi?'Chủ đề':'Topics'}:</strong> {s.topics.join(' · ')}</p>
-      </div>
-    </article>
-    <aside className="readerSide">
-      <div className="downloadCard"><h3>{d.pdf}</h3><p style={{color:'var(--muted)',fontSize:13}}>{s.pdfUrl?(vi?'Mở hoặc tải bản PDF về thiết bị.':'Open or download the PDF to your device.'):d.unavailable}</p>{s.pdfUrl?<a className="btn btnPrimary" href={s.pdfUrl} target="_blank" rel="noreferrer"><Download size={16}/>{d.pdf}</a>:<span className="btn disabled"><FileText size={16}/>{d.pdf}</span>}</div>
-      <div className="downloadCard"><h3>{d.mp3}</h3><p style={{color:'var(--muted)',fontSize:13}}>{s.mp3Url?(vi?'Nghe ngay, chỉnh tốc độ hoặc mở tệp MP3 để tải.':'Listen, change speed, or open the MP3 file to download.'):d.unavailable}</p>{s.mp3Url?<><AudioPlayer src={s.mp3Url}/><a className="btn btnPrimary" href={s.mp3Url} target="_blank" rel="noreferrer"><Download size={16}/>{d.mp3}</a></>:<span className="btn disabled"><Headphones size={16}/>{d.mp3}</span>}</div>
-      <div className="downloadCard"><h3>{d.relatedVideo}</h3>{s.youtubeId?<YouTubeEmbed videoId={s.youtubeId} title={`${s.code} ${title}`}/>:<p style={{color:'var(--muted)',fontSize:13}}>{vi?'Chưa gắn video. Chỉ cần thêm YouTube ID vào dữ liệu bài kinh là video sẽ hiện ở đây.':'No video attached yet. Add a YouTube ID to this discourse record and the embed appears here.'}</p>}</div>
-      <div className="downloadCard"><h3>{d.sources}</h3><p style={{color:'var(--muted)',fontSize:13}}>{s.licenseNote}</p><a className="btn" href={s.sourceUrl} target="_blank" rel="noreferrer">{d.source}<ExternalLink size={15}/></a></div>
-    </aside>
+  const {locale:raw,slug}=await params;if(!isLocale(raw))notFound();
+  const locale=raw as Locale;const d=dict(locale);const s=suttas.find(x=>x.slug===slug);if(!s)notFound();
+  const vi=locale==='vi';const title=vi?s.vi:s.en;const related=suttas.filter(x=>x.collection===s.collection&&x.slug!==s.slug).slice(0,3);
+  return <main className="readerPage"><div className="shell readerShell">
+    <div className="readerTopline"><Link href={`/${locale}#library`} className="backLink"><ArrowLeft size={17}/>{vi?'Thư viện':'Library'}</Link><span>{s.collection}</span><span>{s.code}</span></div>
+    <div className="readerLayout">
+      <article className="readerMain">
+        <div className="readerTitleMeta"><span className="readerCode">{s.code}</span><span><Clock size={14}/>{s.readMinutes} {d.minutes}</span>{s.mp3Url&&<span><Headphones size={14}/>{vi?'Có audio':'Audio'}</span>}</div>
+        <h1>{title}</h1><p className="readerPali">{s.pali}</p>
+        <ReaderProgress id={`${locale}:${s.slug}`} locale={locale}/>
+        <div className="suttaText">
+          <section><span className="textSectionLabel">01 · {d.readerIntro}</span><p>{vi?s.summaryVi:s.summaryEn}</p></section>
+          <section><span className="textSectionLabel">02 · {d.readerPractice}</span><p>{vi?s.practiceVi:s.practiceEn}</p></section>
+          <section className="sourceReading"><BookOpen size={23}/><div><h2>{vi?'Đọc bản kinh đầy đủ':'Read the complete text'}</h2><p>{vi?'Mở bản văn tại nguồn để đọc toàn văn và đối chiếu Pāli khi cần.':'Open the source edition for the complete text and Pāli references.'}</p><a className="btn btnPrimary" href={s.sourceUrl} target="_blank" rel="noreferrer">{d.openSource}<ExternalLink size={16}/></a></div></section>
+        </div>
+      </article>
+      <aside className="readerSide">
+        {s.mp3Url&&<section className="sideCard primarySide"><div className="sideCardTitle"><span className="sideIcon"><Headphones size={18}/></span><div><small>{d.listenNow}</small><h3>{d.mp3}</h3></div></div><AudioPlayer src={s.mp3Url}/><a className="downloadLink" href={s.mp3Url} target="_blank" rel="noreferrer"><Download size={16}/>{vi?'Mở / tải MP3':'Open / download MP3'}</a></section>}
+        {s.bookUrl&&<section className="sideCard"><div className="sideCardTitle"><span className="sideIcon"><Download size={18}/></span><div><small>{vi?'Đọc ngoại tuyến':'Offline reading'}</small><h3>{d.book}</h3></div></div><p>{vi?'Mở trang ấn bản để chọn PDF, EPUB hoặc định dạng phù hợp.':'Open the edition page to choose PDF, EPUB, or another format.'}</p><a className="btn btnSoft" href={s.bookUrl} target="_blank" rel="noreferrer">{d.downloadBook}<ExternalLink size={15}/></a></section>}
+        {s.youtubeId&&<section className="sideCard"><h3>{d.relatedVideo}</h3><YouTubeEmbed videoId={s.youtubeId} title={`${s.code} ${title}`}/></section>}
+        <section className="sideCard sourceCard"><small>{d.sources}</small><p>{s.licenseShort}</p><a href={s.sourceUrl} target="_blank" rel="noreferrer">SuttaCentral <ExternalLink size={14}/></a></section>
+      </aside>
+    </div>
+    {related.length>0&&<section className="relatedSection"><div className="sectionHead"><div><h2>{vi?'Đọc tiếp trong cùng tạng':'More in this collection'}</h2></div></div><div className="relatedGrid">{related.map(r=><Link href={`/${locale}/library/${r.slug}`} key={r.slug}><span>{r.code}</span><strong>{vi?r.vi:r.en}</strong><ArrowRight size={17}/></Link>)}</div></section>}
   </div></main>;
 }

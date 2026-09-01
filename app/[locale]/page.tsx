@@ -1,13 +1,64 @@
 import Link from 'next/link';
-import {BookOpen, Headphones, Bookmark, Play, ArrowRight} from 'lucide-react';
+import {ArrowRight,BookOpen,Headphones,Download,Bookmark,Clock,Play} from 'lucide-react';
 import {dict,isLocale,type Locale} from '@/lib/i18n';
-import {collections} from '@/lib/data';
+import {collections,suttas} from '@/lib/data';
 import LibraryExplorer from '@/components/LibraryExplorer';
 import {notFound} from 'next/navigation';
-export default async function LocaleHome({params}:{params:Promise<{locale:string}>}){const p=await params;if(!isLocale(p.locale))notFound();const locale=p.locale as Locale;const d=dict(locale);const vi=locale==='vi';return <main>
-<section className="shell hero"><div><div className="eyebrow">{d.heroEyebrow}</div><h1>{d.heroTitle}</h1><p className="lede">{d.heroLead}</p><div className="heroActions"><a className="btn btnPrimary" href="#library"><BookOpen size={18}/>{d.explore}</a><Link className="btn" href={`/${locale}/library/mn-21-kakacupama`}>{d.continue}<ArrowRight size={17}/></Link></div></div><aside className="heroCard"><div className="quote"><p>“Sabbe saṅkhārā aniccā.”</p><small>Dhammapada 277 · “All conditioned things are impermanent.”</small></div><div className="metrics"><div className="metric"><strong>5</strong><span>Nikāyas</span></div><div className="metric"><strong>16</strong><span>UI languages</span></div><div className="metric"><strong>PDF · MP3</strong><span>download-ready</span></div></div></aside></section>
-<section className="section" id="collections"><div className="shell"><div className="sectionHead"><div><h2>{d.collections}</h2><p>{d.collectionsLead}</p></div></div><div className="cards">{collections.map(c=><article className="collection" key={c.code}><span className="code">{c.code}</span><h3>{vi?c.vi:c.en}</h3><p><em>{c.pali}</em><br/>{vi?c.descVi:c.descEn}</p><div className="count">{c.count}</div></article>)}</div></div></section>
-<section className="section" id="listen"><div className="shell"><div className="sectionHead"><div><h2>{d.features}</h2><p>{d.featuresLead}</p></div></div><div className="featureGrid"><div className="feature"><span className="featureIcon"><BookOpen/></span><h3>{d.fRead}</h3><p>{d.fReadD}</p></div><div className="feature"><span className="featureIcon"><Headphones/></span><h3>{d.fAudio}</h3><p>{d.fAudioD}</p></div><div className="feature"><span className="featureIcon"><Bookmark/></span><h3>{d.fProgress}</h3><p>{d.fProgressD}</p></div></div></div></section>
-<section className="section"><div className="shell mediaPanel"><div className="copy"><div className="eyebrow" style={{color:'#e6bd79'}}>{d.videoCta}</div><h2 style={{fontFamily:'Georgia,serif',fontSize:34}}>{d.videoTitle}</h2><p>{d.videoBody}</p><span className="btn" style={{marginTop:8}}><Play size={17}/> YouTube module</span></div><div className="videoMock" aria-label="YouTube integration preview"><span className="play"><Play size={28} fill="currentColor"/></span></div></div></section>
-<section className="section" id="library"><div className="shell"><LibraryExplorer locale={locale} placeholder={d.search}/></div></section>
-<footer><div className="shell">{d.footer}</div></footer></main>}
+
+export default async function LocaleHome({params}:{params:Promise<{locale:string}>}){
+  const p=await params;
+  if(!isLocale(p.locale))notFound();
+  const locale=p.locale as Locale;
+  const d=dict(locale);
+  const vi=locale==='vi';
+  const featured=suttas.filter(s=>s.featured).slice(0,6);
+  return <main className="homePage">
+    <section className="hero shell">
+      <div className="heroCopy">
+        <div className="eyebrow">{d.heroEyebrow}</div>
+        <h1>{d.heroTitle}</h1>
+        <p className="lede">{d.heroLead}</p>
+        <div className="heroActions">
+          <a className="btn btnPrimary" href="#library"><BookOpen size={18}/>{d.explore}</a>
+          <Link className="btn btnGhost" href={`/${locale}/library/mn-21-kakacupama`}>{d.continue}<ArrowRight size={17}/></Link>
+        </div>
+        <div className="quickStrip" aria-label="Library features">
+          <span><BookOpen size={16}/>{d.quickRead}</span>
+          <span><Headphones size={16}/>{d.quickAudio}</span>
+          <span><Download size={16}/>{d.quickDownload}</span>
+          <span><Bookmark size={16}/>{d.quickProgress}</span>
+        </div>
+      </div>
+      <aside className="heroFocus">
+        <div className="heroFocusTop"><span className="focusBadge">MN 21</span><span className="miniMeta"><Clock size={14}/> 18 {d.minutes}</span></div>
+        <div>
+          <p className="kicker">{vi?'Bài đọc gợi ý hôm nay':'Suggested today'}</p>
+          <h2>{vi?'Kinh Ví Dụ Cái Cưa':'The Simile of the Saw'}</h2>
+          <p>{vi?'Kham nhẫn, lời nói khó nghe và cách giữ tâm không sân hận.':'Patience, difficult speech, and keeping a mind free from hate.'}</p>
+        </div>
+        <Link className="focusAction" href={`/${locale}/library/mn-21-kakacupama`}><span className="playCircle"><Play size={18} fill="currentColor"/></span><span><strong>{vi?'Mở bài kinh':'Open discourse'}</strong><small>{vi?'Có audio chỉnh tốc độ':'Audio speed control included'}</small></span><ArrowRight size={18}/></Link>
+      </aside>
+    </section>
+
+    <section className="section shell" id="collections">
+      <div className="sectionHead compactHead"><div><span className="sectionLabel">01</span><h2>{d.collections}</h2><p>{d.collectionsLead}</p></div></div>
+      <div className="collectionGrid">{collections.map(c=><a className={`collectionCard ${c.accent}`} href={`#library`} key={c.code}>
+        <div className="collectionTop"><span className="collectionCode">{c.code}</span><span className="collectionCount">{c.count}</span></div>
+        <div><h3>{vi?c.vi:c.en}</h3><p className="pali">{c.pali}</p><p>{vi?c.descVi:c.descEn}</p></div>
+        <span className="collectionArrow"><ArrowRight size={18}/></span>
+      </a>)}</div>
+    </section>
+
+    <section className="section shell" id="featured">
+      <div className="sectionHead"><div><span className="sectionLabel">02</span><h2>{d.featured}</h2><p>{d.featuredLead}</p></div></div>
+      <div className="featuredRail">{featured.map(s=><Link className="featuredCard" href={`/${locale}/library/${s.slug}`} key={s.slug}>
+        <div className="featuredVisual"><span>{s.code}</span>{s.mp3Url&&<span className="audioDot"><Headphones size={16}/></span>}</div>
+        <div className="featuredBody"><div className="featuredMeta"><span>{s.collection}</span><span>{s.readMinutes} {d.minutes}</span></div><h3>{vi?s.vi:s.en}</h3><p>{s.pali}</p><div className="topicRow">{s.topics.slice(0,2).map(t=><span key={t}>{t}</span>)}</div></div>
+      </Link>)}</div>
+    </section>
+
+    <section className="section librarySection" id="library"><div className="shell"><div className="sectionHead"><div><span className="sectionLabel">03</span><h2>{d.navLibrary}</h2><p>{vi?'Tìm nhanh, lọc theo tạng và mở bài kinh chỉ trong vài chạm.':'Fast search, collection filters, and one-tap access to each discourse.'}</p></div></div><LibraryExplorer locale={locale} placeholder={d.search}/></div></section>
+
+    <footer><div className="shell footerInner"><strong>{d.brand}</strong><span>{d.footer}</span></div></footer>
+  </main>;
+}

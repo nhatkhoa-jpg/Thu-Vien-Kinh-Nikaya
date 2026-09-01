@@ -1,19 +1,31 @@
 'use client';
 import {useMemo,useState} from 'react';
 import Link from 'next/link';
-import {BookOpen,FileDown,Headphones,Search} from 'lucide-react';
+import {BookOpen,Download,Headphones,Search,SlidersHorizontal,Clock,ArrowUpRight} from 'lucide-react';
 import {collections,suttas} from '@/lib/data';
 import type {Locale} from '@/lib/i18n';
 
 export default function LibraryExplorer({locale,placeholder}:{locale:Locale;placeholder:string}){
- const vi=locale==='vi'; const [q,setQ]=useState(''); const [collection,setCollection]=useState('ALL');
+ const vi=locale==='vi';
+ const [q,setQ]=useState('');
+ const [collection,setCollection]=useState('ALL');
+ const [format,setFormat]=useState<'ALL'|'AUDIO'|'BOOK'>('ALL');
  const filtered=useMemo(()=>suttas.filter(s=>{
    const hay=[s.code,s.collection,s.pali,s.vi,s.en,...s.topics].join(' ').toLocaleLowerCase();
-   return (collection==='ALL'||s.collection===collection) && hay.includes(q.trim().toLocaleLowerCase());
- }),[q,collection]);
- return <>
-   <div className="sectionHead"><div><h2>{vi?'Bắt đầu từ các bài kinh tiêu biểu':'Start with selected discourses'}</h2><p>{vi?'Tìm nhanh theo tên, mã kinh, Pāli hoặc chủ đề.':'Search by title, code, Pāli, or topic.'}</p></div><label className="searchBox"><Search size={18}/><input value={q} onChange={e=>setQ(e.target.value)} aria-label="search" placeholder={placeholder}/></label></div>
-   <div className="library"><aside className="filters"><h3>{vi?'Bộ kinh':'Collection'}</h3><div className="chips"><button onClick={()=>setCollection('ALL')} className={`chip ${collection==='ALL'?'activeChip':''}`}>{vi?'Tất cả':'All'}</button>{collections.map(c=><button onClick={()=>setCollection(c.code)} className={`chip ${collection===c.code?'activeChip':''}`} key={c.code}>{c.code}</button>)}</div><h3 style={{marginTop:24}}>{vi?'Gợi ý chủ đề':'Topic ideas'}</h3><div className="chips">{['tứ diệu đế','tâm từ','chánh niệm','nhẫn nhục'].map(t=><button className="chip" key={t} onClick={()=>setQ(t)}>{t}</button>)}</div></aside>
-   <div className="list">{filtered.length?filtered.map(s=><Link href={`/${locale}/library/${s.slug}`} className="item" key={s.slug}><div className="itemCode">{s.code}</div><div><h3>{vi?s.vi:s.en}</h3><p>{s.pali} · {vi?s.summaryVi:s.summaryEn}</p></div><div className="badges"><span className="badge"><BookOpen size={11}/> Read</span>{s.pdfUrl&&<span className="badge"><FileDown size={11}/> PDF</span>}{s.mp3Url&&<span className="badge"><Headphones size={11}/> MP3</span>}</div></Link>):<div className="feature"><h3>{vi?'Không tìm thấy':'No results'}</h3><p>{vi?'Thử tên khác, mã kinh hoặc chủ đề rộng hơn.':'Try another title, code, or broader topic.'}</p></div>}</div></div>
- </>
+   const formatOk=format==='ALL'||(format==='AUDIO'&&!!s.mp3Url)||(format==='BOOK'&&!!s.bookUrl);
+   return (collection==='ALL'||s.collection===collection)&&formatOk&&hay.includes(q.trim().toLocaleLowerCase());
+ }),[q,collection,format]);
+ return <div className="explorer">
+   <div className="libraryToolbar">
+     <label className="searchBox"><Search size={20}/><input value={q} onChange={e=>setQ(e.target.value)} aria-label="search" placeholder={placeholder}/>{q&&<button type="button" onClick={()=>setQ('')}>×</button>}</label>
+     <div className="formatFilter"><SlidersHorizontal size={17}/><button className={format==='ALL'?'activeFilter':''} onClick={()=>setFormat('ALL')}>{vi?'Tất cả':'All'}</button><button className={format==='AUDIO'?'activeFilter':''} onClick={()=>setFormat('AUDIO')}>Audio</button><button className={format==='BOOK'?'activeFilter':''} onClick={()=>setFormat('BOOK')}>PDF</button></div>
+   </div>
+   <div className="collectionChips"><button onClick={()=>setCollection('ALL')} className={collection==='ALL'?'activeChip':''}>{vi?'Tất cả tạng':'All'}</button>{collections.map(c=><button onClick={()=>setCollection(c.code)} className={collection===c.code?'activeChip':''} key={c.code}>{c.code}<span>{vi?c.vi:c.en}</span></button>)}</div>
+   <div className="resultLine"><strong>{filtered.length}</strong> {vi?'bài kinh đang hiển thị':'discourses shown'}</div>
+   <div className="suttaGrid">{filtered.length?filtered.map(s=><Link href={`/${locale}/library/${s.slug}`} className="suttaCard" key={s.slug}>
+      <div className="suttaCode">{s.code}</div>
+      <div className="suttaContent"><div className="suttaMeta"><span>{s.collection}</span><span><Clock size={13}/>{s.readMinutes} {vi?'phút':'min'}</span></div><h3>{vi?s.vi:s.en}</h3><p className="pali">{s.pali}</p><p className="summary">{vi?s.summaryVi:s.summaryEn}</p><div className="topicRow">{s.topics.slice(0,3).map(t=><span key={t}>{t}</span>)}</div></div>
+      <div className="suttaActions"><span title="Read"><BookOpen size={16}/></span>{s.mp3Url&&<span title="Audio"><Headphones size={16}/></span>}{s.bookUrl&&<span title="Download"><Download size={16}/></span>}<ArrowUpRight className="openArrow" size={18}/></div>
+   </Link>):<div className="emptyState"><Search size={26}/><h3>{vi?'Không tìm thấy bài kinh':'No results'}</h3><p>{vi?'Thử mã kinh khác, tên Pāli hoặc chủ đề rộng hơn.':'Try another code, Pāli title, or broader topic.'}</p></div>}</div>
+ </div>
 }
