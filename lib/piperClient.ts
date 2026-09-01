@@ -14,12 +14,10 @@ const VOICE_BY_LOCALE:Record<string,string>={
   ru:'ru_RU-irina-medium'
 };
 
-let modulePromise:Promise<typeof import('@mintplex-labs/piper-tts-web')>|null=null;
-let sessionPromise:Promise<any>|null=null;
-let sessionVoice='';
+let modulePromise:Promise<typeof import('@diffusionstudio/vits-web')>|null=null;
 
 function moduleLoader(){
-  if(!modulePromise)modulePromise=import('@mintplex-labs/piper-tts-web');
+  if(!modulePromise)modulePromise=import('@diffusionstudio/vits-web');
   return modulePromise;
 }
 
@@ -38,26 +36,16 @@ export async function synthesizePiper(
   onStage?.('importing');
   const tts=await moduleLoader();
   onStage?.('module-ready');
-
-  if(!sessionPromise||sessionVoice!==voiceId){
-    sessionVoice=voiceId;
-    onStage?.('session-start',voiceId);
-    sessionPromise=tts.TtsSession.create({
-      voiceId,
-      progress:(progress:any)=>{
-        const total=Number(progress?.total)||0;
-        const loaded=Number(progress?.loaded)||0;
-        const url=String(progress?.url||'');
-        onStage?.('model-download',url);
-        onProgress?.({loaded,total,percent:total?Math.max(0,Math.min(100,Math.round(loaded*100/total))):0,url});
-      },
-      logger:(line:string)=>console.info('[nikaya-piper]',line)
-    }).catch((error:any)=>{sessionPromise=null;sessionVoice='';throw error;});
-  }
-  const session=await sessionPromise;
+  onStage?.('session-start',voiceId);
   onStage?.('session-ready');
   onStage?.('inference-start');
-  const wav=await session.predict(text.normalize('NFC').trim());
+  const wav=await tts.predict({text:text.normalize('NFC').trim(),voiceId:voiceId as any},(progress:any)=>{
+    const total=Number(progress?.total)||0;
+    const loaded=Number(progress?.loaded)||0;
+    const url=String(progress?.url||'');
+    onStage?.('model-download',url);
+    onProgress?.({loaded,total,percent:total?Math.max(0,Math.min(100,Math.round(loaded*100/total))):0,url});
+  });
   onStage?.('inference-ready',String(wav?.size||0));
   if(!wav||wav.size<1000)throw new Error('piper-empty-audio');
   return wav;
