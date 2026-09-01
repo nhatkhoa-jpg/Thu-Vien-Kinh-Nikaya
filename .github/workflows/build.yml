@@ -38,7 +38,7 @@ jobs:
           curl --fail --silent http://127.0.0.1:3000/vi/library/mn-21-kakacupama -o /tmp/mn21.html
           grep -q 'compactEssentials' /tmp/mn21.html
           grep -q 'essentialDisclosure' /tmp/mn21.html
-          grep -q 'V4.11-STAGE' /tmp/mn21.html
+          grep -q 'V4.11.2-STAGE' /tmp/mn21.html
           curl --fail --silent http://127.0.0.1:3000/tts-e2e -o /tmp/tts-e2e.html
-          grep -q 'V4.11.1 TTS E2E' /tmp/tts-e2e.html
+          grep -q 'V4.11.2 TTS E2E' /tmp/tts-e2e.html
           curl --fail --silent http://127.0.0.1:3000/en > /dev/null
