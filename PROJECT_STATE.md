@@ -68,19 +68,21 @@ YouTube không được biến trang chủ thành feed. Chỉ gắn video thật
 - **Không được tạo project Vercel mới cho mỗi phiên bản.**
 - Project cố định: `nikaya-reader-v4-final`.
 - URL dự án cố định để người dùng bookmark và để trỏ custom domain: `https://nikaya-reader-v4-final-khoa-3f1b.vercel.app`.
-- Các URL có chuỗi ngẫu nhiên kiểu `...-mj9xz0fo6-...vercel.app` chỉ là deployment URL nội bộ/preview, **không đưa cho người dùng làm địa chỉ chính**.
+- Các URL có chuỗi ngẫu nhiên kiểu `...-3lqngypw0-...vercel.app` chỉ là deployment URL nội bộ/preview, **không đưa cho người dùng làm địa chỉ chính**.
 - Mọi lần cập nhật phải deploy production vào **cùng project** để alias cố định tự trỏ tới deployment mới nhất.
-- Canonical/SEO dùng biến `NEXT_PUBLIC_SITE_URL`; mặc định phải là URL cố định ở trên cho tới khi gắn custom domain. Khi có domain riêng, chỉ đổi biến này sang domain riêng, không đổi route/app.
+- Canonical/SEO dùng duy nhất `lib/site.ts` -> `SITE_URL`, lấy `NEXT_PUBLIC_SITE_URL` nếu có. Khi gắn custom domain chỉ đổi biến môi trường này, không đổi route/app.
 
 ## 11. Tình trạng hiện tại (2026-09-01)
 - UI V2/V3/V4 đã có responsive, reader controls, audio player, i18n, mã Việt, RAG-ready catalog.
 - Các bài test gồm TB 10, TB 21, TB 22 và một số bài ở TrB/TƯB/TCB/TiB.
 - TB 21 là bài kiểm thử chính.
-- Đã bổ sung Browser TTS, PDF tự sinh, global search/menu, quick jump reader và tối ưu header mobile.
-- Đã đưa Browser TTS + PDF + MP3 lên ngay dưới tiêu đề bài kinh để mobile nhìn thấy ngay.
-- Đã khóa reader theo viewport mobile để ngăn text/card vỡ size ngang.
-- GitHub Actions phải chạy: npm install -> RAG export/validate -> next build -> smoke tests.
-- Stable project alias phải dùng: `https://nikaya-reader-v4-final-khoa-3f1b.vercel.app`.
+- Browser TTS + PDF tự sinh + MP3 tiếng Việt dự phòng đã được đưa **ngay dưới tiêu đề** bài kinh.
+- Khung mobile đã khóa width theo viewport; reader toolbar được wrap để không vỡ ngang.
+- URL SEO/canonical/sitemap/robots đã gom về `SITE_URL` cố định.
+- **Latest validated code commit:** `ac93e21b5701c3b3a380acad017cdf558276be3e`.
+- GitHub Actions run `33506905242`: npm install, RAG export/validate, Next build, smoke tests đều PASS.
+- Đã gửi production deployment vào đúng project `nikaya-reader-v4-final`: deployment `dpl_6PXZFSzBFaharFiEfWcdpkDhDcCs`; stable alias `https://nikaya-reader-v4-final-khoa-3f1b.vercel.app`.
+- Vercel connector hiện vẫn có lỗi read-back 404 sau khi tạo deployment; không được vì lỗi connector này mà tạo project mới. Kiểm tra stable alias/production, sửa trên cùng project.
 
 ## 12. Quy trình chuẩn khi tiếp tục dự án
 1. Đọc `PROJECT_STATE.md` và `AGENTS.md`.
@@ -88,8 +90,8 @@ YouTube không được biến trang chủ thành feed. Chỉ gắn video thật
 3. **Không tạo project/repo/Vercel address mới nếu chưa có lý do đặc biệt.**
 4. Thay đổi dữ liệu ở catalog/corpus trước; UI chỉ đọc dữ liệu đó.
 5. Build + smoke-test mobile reader TB 21 và home `/vi`.
-6. Chỉ deploy commit đã xanh vào project Vercel cố định.
-7. Xác minh stable alias, không gửi deployment URL ngẫu nhiên cho người dùng.
+6. Chỉ deploy commit đã xanh vào project Vercel cố định `nikaya-reader-v4-final`.
+7. Xác minh stable alias; không gửi deployment URL ngẫu nhiên cho người dùng.
 8. Cập nhật mục "Tình trạng hiện tại" trong file này nếu kiến trúc/quy tắc thay đổi.
 
 ## 13. Ưu tiên tiếp theo
