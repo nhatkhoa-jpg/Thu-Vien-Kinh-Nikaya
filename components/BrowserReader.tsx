@@ -40,7 +40,8 @@ function readableError(code:string,vi:boolean){
 
 export default function BrowserReader({text,locale}:{text:string;locale:string}){
   const vi=locale==='vi';
-  const chunks=useMemo(()=>chunkText(text),[text]);
+  const deviceChunks=useMemo(()=>chunkText(text,210),[text]);
+  const internalChunks=useMemo(()=>chunkText(text,400),[text]);
   const [supported,setSupported]=useState(true);
   const [voices,setVoices]=useState<SpeechSynthesisVoice[]>([]);
   const [allVoiceCount,setAllVoiceCount]=useState(0);
@@ -108,6 +109,19 @@ export default function BrowserReader({text,locale}:{text:string;locale:string})
     activeRef.current=false;utteranceRef.current=null;clearAudio();setActiveEngine(null);setState('error');setMessage(readableError(code,vi));
   }
 
+  function unlockAudio(){
+    try{
+      const Ctx=(window.AudioContext||(window as any).webkitAudioContext) as typeof AudioContext|undefined;
+      if(!Ctx)return;
+      const ctx=new Ctx();
+      const osc=ctx.createOscillator();
+      const gain=ctx.createGain();
+      gain.gain.value=.00001;
+      osc.connect(gain);gain.connect(ctx.destination);osc.start();osc.stop(ctx.currentTime+.02);
+      osc.onended=()=>void ctx.close();
+    }catch{}
+  }
+
   async function speakInternal(){
     if(!activeRef.current)return;
     if(indexRef.current>=queueRef.current.length){finish();return;}
@@ -130,18 +144,21 @@ export default function BrowserReader({text,locale}:{text:string;locale:string})
 
   function fallbackToInternal(){
     if(!activeRef.current)return;
-    window.speechSynthesis.cancel();
+    if('speechSynthesis' in window)window.speechSynthesis.cancel();
     utteranceRef.current=null;
-    setMessage(vi?'Giọng hệ thống im lặng — chuyển sang giọng nội bộ…':'Device voice unavailable — switching to internal voice…');
+    queueRef.current=internalChunks;
+    indexRef.current=0;
+    setMessage(vi?'Giọng hệ thống không dùng được — chuyển sang giọng nội bộ…':'Device voice unavailable — switching to internal voice…');
     void speakInternal();
   }
 
   function speakDevice(){
     if(!activeRef.current)return;
+    if(!supported||!('speechSynthesis' in window)){engine==='device'?fail('synthesis-unavailable'):fallbackToInternal();return;}
     if(indexRef.current>=queueRef.current.length){finish();return;}
     const synth=window.speechSynthesis;
     const liveVoices=synth.getVoices();
-    if(!liveVoices.length){fallbackToInternal();return;}
+    if(!liveVoices.length){engine==='device'?fail('synthesis-unavailable'):fallbackToInternal();return;}
     setActiveEngine('device');setState('loading');setMessage(vi?'Đang khởi động giọng thiết bị…':'Starting device voice…');
     const utterance=new SpeechSynthesisUtterance(queueRef.current[indexRef.current]);
     utterance.lang=localeVoice[locale]||locale;utterance.rate=rate;utterance.pitch=1;utterance.volume=1;
@@ -154,26 +171,29 @@ export default function BrowserReader({text,locale}:{text:string;locale:string})
     utterance.onerror=(event:any)=>{if(!activeRef.current||event?.error==='canceled'||event?.error==='interrupted')return;if(engine==='device')fail(event?.error||'synthesis-failed');else fallbackToInternal();};
     synth.cancel();synth.resume();synth.speak(utterance);
     if(watchdogRef.current)clearTimeout(watchdogRef.current);
-    watchdogRef.current=setTimeout(()=>{if(activeRef.current&&!started){engine==='device'?fail('synthesis-unavailable'):fallbackToInternal();}},2300);
+    watchdogRef.current=setTimeout(()=>{if(activeRef.current&&!started){engine==='device'?fail('synthesis-unavailable'):fallbackToInternal();}},1800);
   }
 
   function start(){
-    if(!chunks.length)return;
+    if(!deviceChunks.length&&!internalChunks.length)return;
+    unlockAudio();
     stopAll(false);
-    queueRef.current=chunks;indexRef.current=0;activeRef.current=true;setState('loading');
-    const choice:Engine=engine==='auto'?(supported&&allVoiceCount>0?'device':'internal'):engine;
+    indexRef.current=0;activeRef.current=true;setState('loading');
+    const android=/Android/i.test(navigator.userAgent);
+    const choice:Engine=engine==='auto'?(android?'internal':(supported&&allVoiceCount>0?'device':'internal')):engine;
+    queueRef.current=choice==='internal'?internalChunks:deviceChunks;
     if(choice==='device')speakDevice();else void speakInternal();
   }
 
   function togglePause(){
     if(state==='paused'){
       if(activeEngine==='internal'&&audioRef.current){void audioRef.current.play();}
-      else window.speechSynthesis.resume();
+      else if('speechSynthesis' in window)window.speechSynthesis.resume();
       setState('speaking');return;
     }
     if(state==='speaking'||state==='loading'){
       if(activeEngine==='internal'&&audioRef.current)audioRef.current.pause();
-      else window.speechSynthesis.pause();
+      else if('speechSynthesis' in window)window.speechSynthesis.pause();
       setState('paused');return;
     }
     start();
@@ -184,16 +204,16 @@ export default function BrowserReader({text,locale}:{text:string;locale:string})
   const active=state==='loading'||state==='speaking'||state==='paused';
   return <div className="browserReader compactTts">
     <div className="ttsPrimary">
-      {!active?<button className="ttsMain" onClick={start}><Play size={17} fill="currentColor"/>{vi?'Nghe toàn văn':'Listen'}</button>:<button className="ttsMain" onClick={togglePause}>{state==='paused'?<Play size={17}/>:<Pause size={17}/>} {state==='paused'?(vi?'Đọc tiếp':'Resume'):(state==='loading'?(vi?'Đang chuẩn bị…':'Preparing…'):(vi?'Tạm dừng':'Pause'))}</button>}
+      {!active?<button className="ttsMain" onClick={start}><Play size={17} fill="currentColor"/>{vi?'Nghe':'Listen'}</button>:<button className="ttsMain" onClick={togglePause}>{state==='paused'?<Play size={17}/>:<Pause size={17}/>} {state==='paused'?(vi?'Đọc tiếp':'Resume'):(state==='loading'?(vi?'Đang chuẩn bị…':'Preparing…'):(vi?'Tạm dừng':'Pause'))}</button>}
       <button className="ttsIcon" onClick={()=>stopAll(true)} title={vi?'Dừng':'Stop'}><Square size={16}/></button>
       <button className="ttsIcon" onClick={restart} title={vi?'Đọc lại':'Restart'}><RotateCcw size={16}/></button>
     </div>
     <div className="ttsSettings compactSettings">
-      <label><Volume2 size={14}/><span>{vi?'Nguồn giọng':'Engine'}</span><select value={engine} onChange={e=>setEngine(e.target.value as Engine)}><option value="auto">{vi?'Tự động':'Auto'}</option><option value="device">{vi?'Giọng thiết bị':'Device'}</option><option value="internal">{vi?'Giọng nội bộ':'Internal'}</option></select></label>
+      <label><Volume2 size={14}/><span>{vi?'Nguồn':'Engine'}</span><select value={engine} onChange={e=>setEngine(e.target.value as Engine)}><option value="auto">{vi?'Tự động':'Auto'}</option><option value="internal">{vi?'Giọng thư viện':'Internal'}</option><option value="device">{vi?'Giọng thiết bị':'Device'}</option></select></label>
       <label><span>{vi?'Tốc độ':'Speed'}</span><select value={rate} onChange={e=>setRate(Number(e.target.value))}>{[0.75,0.9,1,1.15,1.25,1.5,1.75,2].map(v=><option value={v} key={v}>{v}×</option>)}</select></label>
     </div>
-    {engine!=='internal'&&voices.length>0&&<label className="voicePicker"><span>{vi?'Giọng thiết bị':'Device voice'}</span><select value={voiceUri} onChange={e=>setVoiceUri(e.target.value)}>{voices.slice(0,16).map(v=><option key={v.voiceURI} value={v.voiceURI}>{v.name} · {v.lang}</option>)}</select></label>}
+    {engine==='device'&&voices.length>0&&<label className="voicePicker"><span>{vi?'Giọng thiết bị':'Device voice'}</span><select value={voiceUri} onChange={e=>setVoiceUri(e.target.value)}>{voices.slice(0,16).map(v=><option key={v.voiceURI} value={v.voiceURI}>{v.name} · {v.lang}</option>)}</select></label>}
     {message&&<div className={`ttsStatus ${state==='error'?'ttsStatusError':''}`}>{state==='error'?<AlertCircle size={14}/>:<Volume2 size={14}/>}<span>{message}</span>{state==='error'&&<button onClick={retry}><RefreshCw size={13}/>{vi?'Thử lại':'Retry'}</button>}</div>}
-    {!supported||allVoiceCount===0?<p className="ttsNote">{vi?'Máy không có giọng hệ thống khả dụng: chế độ Tự động sẽ dùng giọng nội bộ của thư viện, không cần MP3 ngoài.':'No usable device voice: Auto uses the library internal voice without external MP3.'}</p>:<p className="ttsNote">{vi?'Tự động ưu tiên giọng thiết bị; nếu thất bại sẽ chuyển sang giọng nội bộ.':'Auto prefers the device voice and falls back to the internal voice.'}</p>}
+    <p className="ttsNote">{vi?'Trên Android, chế độ Tự động dùng giọng nội bộ của thư viện để tránh lỗi Chrome báo đang đọc nhưng không phát tiếng.':'On Android, Auto uses the library internal voice to avoid silent browser speech.'}</p>
   </div>;
 }
