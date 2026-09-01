@@ -2,7 +2,7 @@
 import {useMemo,useState} from 'react';
 import {useRouter} from 'next/navigation';
 import Link from 'next/link';
-import {Activity,BookOpen,Headphones,Home,Library,Menu,Search,X} from 'lucide-react';
+import {Activity,BookMarked,BookOpen,Headphones,Home,Library,Menu,Search,X} from 'lucide-react';
 import {collections,suttas,suttaDisplayCode} from '@/lib/data';
 import type {Locale} from '@/lib/i18n';
 
@@ -33,6 +33,7 @@ export default function HeaderTools({locale}:{locale:Locale}){
       <nav>
         <Link onClick={()=>setMenuOpen(false)} href={`/${locale}`}><Home size={19}/>{vi?'Trang chủ':'Home'}</Link>
         <Link onClick={()=>setMenuOpen(false)} href={`/${locale}#library`}><BookOpen size={19}/>{vi?'Tìm & tra cứu kinh':'Library search'}</Link>
+        <Link onClick={()=>setMenuOpen(false)} href={`/${locale}/bo-suu-tap`}><BookMarked size={19}/>{vi?'Đoạn kinh đã lưu':'Saved passages'}</Link>
         <Link onClick={()=>setMenuOpen(false)} href={`/${locale}/tien-do`}><Activity size={19}/>{vi?'Tiến độ số hóa':'Digitization progress'}</Link>
         <button onClick={()=>{setMenuOpen(false);setSearchOpen(true)}}><Search size={19}/>{vi?'Tìm kiếm toàn thư viện':'Search library'}</button>
         <div className="drawerCollectionTitle">{vi?'5 bộ kinh':'Collections'}</div>
