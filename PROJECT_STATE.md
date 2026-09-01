@@ -8,7 +8,7 @@ Xây dựng một thư viện kinh Nikāya hiện đại, đa ngôn ngữ, thân
 Repo chính: `nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya`
 Framework: Next.js 16 + React 19 + TypeScript.
 Hosting mục tiêu: Vercel.
-Release marker hiện tại: **V4.7** (hiện nhỏ trong mobile menu để xác nhận production có đúng build hay chưa).
+Release marker hiện tại: **V4.7**.
 
 ## 2. Tên thương hiệu và mã hiển thị Việt
 Tên hiển thị: **5 Đại Tạng Kinh Nikāya**.
@@ -53,10 +53,10 @@ Quy tắc:
 - Header: Trang chủ, 5 Đại Tạng, Thư viện, Nghe, global search, ngôn ngữ, mobile menu.
 - Trang bài: Home/Library, trước/sau, jump-to-discourse.
 - Search: mã Việt/quốc tế, tên, Pāli, chủ đề, tóm tắt.
-- Reader controls bắt buộc rất gọn: font −/+, line-height, width, dark, bookmark/resume là icon ~29–31px có tooltip/title.
+- Reader controls rất gọn: font −/+, line-height, width, dark, bookmark/resume là icon khoảng 29–31px có tooltip/title.
 - Nghe / PDF / MP3 là 3 disclosure mini, mobile cao khoảng 34px; mặc định đóng, bấm mới bung panel.
-- Mobile title giảm về ~29–35px, margins rút gọn để vào bài thấy nội dung sớm.
-- Mobile menu hiện release marker `V4.7` để phân biệt build mới với production stale/cache.
+- Mobile title khoảng 29–35px; margins rút gọn để vào bài thấy nội dung sớm.
+- Header luôn render `data-release="V4.7"`; mobile menu cũng hiện `V4.7`, dùng để xác nhận production đúng build.
 
 ## 7. Responsive UX
 Bắt buộc test ít nhất 4 lớp:
@@ -85,35 +85,34 @@ Không biến trang chủ thành feed. Chỉ gắn video thật sự liên quan 
 - Canonical/SEO dùng `lib/site.ts` -> `SITE_URL`; khi có custom domain chỉ đổi `NEXT_PUBLIC_SITE_URL`.
 
 ### BLOCKER QUAN TRỌNG — production alias đang stale
-- 2026-09-01: Vercel connector `list_projects(team_nvItVeb65CDpWnfRA7KPlYZA)` trả **0 projects**.
+- Vercel connector `list_projects(team_nvItVeb65CDpWnfRA7KPlYZA)` và `list_projects('khoa-3f1b')` đều trả **0 projects**.
 - `get_project('nikaya-reader-v4-final')`, `get_deployment(stable alias)` và get deployment theo các ID vừa tạo đều trả **404 not_found**.
-- Trong khi đó `deploy_to_vercel()` vẫn trả thông báo `Deployment created` và một alias giống project cũ. Vì read-back không thấy deployment/project và điện thoại vẫn hiển thị UI cũ, **không được coi các lệnh deploy này là production thành công**.
-- GitHub commit không có Vercel commit status; Git integration hiện không được xác nhận hoạt động.
-- Cho đến khi Vercel connection nhìn thấy project thật hoặc CI có `VERCEL_TOKEN + VERCEL_ORG_ID + VERCEL_PROJECT_ID`, không được nói với user rằng stable alias đã cập nhật.
-- Khi quyền được sửa, quy trình đúng: build/test -> deploy preview -> verify -> promote cùng project -> verify stable alias -> mới báo user.
+- `deploy_to_vercel()` vẫn trả thông báo `Deployment created`, nhưng vì read-back không thấy deployment/project và Xiaomi vẫn hiển thị UI cũ, **không được coi các lệnh này là production thành công**.
+- GitHub repo chỉ có `.github/workflows/build.yml`; không có Vercel deployment workflow, và GitHub commits không có Vercel deployment status. Git integration hiện không được xác nhận hoạt động.
+- Để deploy chuẩn vào stable alias cần Vercel connection nhìn thấy project thật, hoặc CI có `VERCEL_TOKEN + VERCEL_ORG_ID + VERCEL_PROJECT_ID`.
+- Khi quyền được sửa: build/test -> preview -> verify -> promote cùng project -> verify stable alias -> mới báo user.
 
 ## 11. Tình trạng source hiện tại (2026-09-01)
 - TB 21 là bài test chính; TB 10/TB 22 và bài ở 4 tạng khác dùng kiểm thử navigation/data.
-- Source V4.7 đã có mini toolbar + mini Nghe/PDF/MP3, khác rõ với screenshot production cũ (các khối control lớn).
-- Android Auto TTS đã đổi sang internal TTS ngay lập tức + audio unlock.
-- Internal eSpeak-NG TTS runtime đã từng PASS CI với WAV `RIFF` thật.
-- **Latest source commit sau đợt sửa này:** `9209aa6d8f617bb891a3396adbd29c4d7c67729a` (bao gồm BrowserReader Android fix `16b6d28`, compact CSS `690102f`, release marker).
-- **GitHub Actions run `33512107506`: PASS** toàn bộ build/validation/smoke tests.
-- Production stable alias vẫn phải xem là **STALE/UNVERIFIED** cho tới khi nhìn thấy release marker V4.7 và internal TTS thực sự hoạt động trên URL cố định.
+- Source V4.7 đã có mini toolbar + mini Nghe/PDF/MP3, khác rõ screenshot production cũ có các khối control lớn.
+- Android Auto TTS đi thẳng internal TTS + audio unlock.
+- **Latest validated source commit:** `53b27a3f63061753db418ff714f33ce22c462358`.
+- **GitHub Actions run `33512553369`: PASS toàn bộ**: install, RAG validation, Next build, HTML TB21 chứa `compactEssentials` + `essentialDisclosure` + `V4.7`, `/en` smoke test, và `/api/tts` tạo WAV tiếng Việt có `RIFF` + >1000 bytes.
+- Production stable alias hiện phải xem là **STALE/UNVERIFIED**. Không bảo user refresh/test alias cho đến khi alias được verify thực sự có V4.7.
 
 ## 12. Quy trình chuẩn khi tiếp tục
 1. Đọc `PROJECT_STATE.md` + `AGENTS.md`.
 2. Đọc main + CI mới nhất.
 3. Không tạo repo/project/Vercel URL mới nếu không có lý do đặc biệt.
 4. Thay dữ liệu ở catalog/corpus trước; UI đọc dữ liệu đó.
-5. Build + smoke-test `/vi`, TB 21, `/en` và `/api/tts` WAV.
+5. Build + smoke-test `/vi`, TB 21, `/en`, compact markers và `/api/tts` WAV.
 6. Không gọi Vercel deployment là thành công nếu không read-back/verify được stable alias.
 7. Không gửi random deployment URL cho user.
 8. Update file này khi kiến trúc/quy tắc thay đổi.
 
 ## 13. Ưu tiên tiếp theo
 1. Khôi phục quyền quản lý project Vercel thật hoặc thiết lập CI Vercel chính thức để stable alias luôn theo `main`.
-2. Xác minh V4.7 trên Xiaomi 15 Ultra: menu phải hiện V4.7, controls mini, Auto TTS phải là Internal.
+2. Xác minh V4.7 trên Xiaomi 15 Ultra: controls phải mini; menu phải hiện V4.7; Android Auto phải dùng Internal TTS.
 3. Hoàn thiện full-text corpus hợp pháp cho 5 bộ và nhiều ngôn ngữ.
 4. Local mirror/cache cho bản được phép phân phối.
 5. Full-text search segment/chunk + highlight.
