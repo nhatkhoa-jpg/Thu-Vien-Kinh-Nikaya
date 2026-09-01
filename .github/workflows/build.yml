@@ -2,7 +2,7 @@ name: Build & Validate
 
 on:
   push:
-    branches: [main, feature/mn-prebuilt-mp3, feature/progress-home-dn]
+    branches: [main, feature/mn-prebuilt-mp3, feature/progress-home-dn, feature/preservation-audio-v2]
   pull_request:
     branches: [main]
 
@@ -42,6 +42,13 @@ jobs:
               if(!asset)throw new Error(`missing Vietnamese MP3 mapping ${id}`);
               if(asset.provider!=='5 Đại Tạng Kinh Nikāya')throw new Error(`MN ${i} is not mapped to library prebuilt MP3`);
               if(!asset.url.includes(`/releases/download/mn-vi-audio-v1/mn${i}.mp3`))throw new Error(`bad MP3 URL for MN ${i}`);
+              if(asset.segments){
+                if(!Array.isArray(asset.segments)||!asset.segments.length)throw new Error(`empty segments for MN ${i}`);
+                for(const seg of asset.segments){
+                  if(!seg.id||!Array.isArray(seg.sources)||!seg.sources.length)throw new Error(`bad segment schema for MN ${i}`);
+                  if(!seg.sources.every(s=>s.url))throw new Error(`segment source missing URL for MN ${i}`);
+                }
+              }
             }
             console.log('Full MN audio catalog validated: 152/152');
           } else throw new Error(`MN catalog incomplete: ${mn.length}/152`);
@@ -75,6 +82,7 @@ jobs:
           must_have /tmp/mn21.html 'primaryMp3Disclosure' 'primary prebuilt MP3 disclosure'
           must_have /tmp/mn21.html 'V5.1-HOME-DN' 'test build marker'
           must_have /tmp/mn21.html 'mn21.mp3' 'MN21 MP3 URL'
+          must_have /tmp/mn21.html 'mn21.manifest.json' 'MN21 preservation manifest URL'
           must_have /tmp/mn21.html 'Nghe bài kinh' 'listen label'
           must_have /tmp/mn21.html 'Bản dịch:' 'compact source label'
           if grep -Fq 'Giọng thư viện' /tmp/mn21.html; then echo 'FAIL: Legacy library TTS leaked into reader'; exit 1; fi
@@ -90,4 +98,4 @@ jobs:
           echo 'PASS: runtime TTS route absent'
           curl -L --fail --silent --range 0-4095 'https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn21.mp3' -o /tmp/mn21.part
           if [ "$(stat -c%s /tmp/mn21.part)" -le 1000 ]; then echo 'FAIL: MN21 MP3 range fetch too small'; exit 1; fi
-          echo 'V5.1 home/progress/MP3 smoke test PASS'
+          echo 'V5.1 home/progress/MP3 preservation smoke test PASS'
