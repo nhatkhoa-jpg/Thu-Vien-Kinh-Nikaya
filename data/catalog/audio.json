@@ -1,10 +1,10 @@
 {
   "nikaya.mn.21": {
     "vi": {
-      "url": "https://www.rongmotamhon.net/mainpage/download_pali.php?download_file=pali-55.mp3",
-      "label": "Kinh Ví Dụ Cái Cưa · tiếng Việt",
-      "provider": "Rộng Mở Tâm Hồn",
-      "sourceUrl": "https://nikaya.tamhoc.org/viewbv.kinh-trung-bo-21-kinh-vi-du-cai-cua-kakacupama-sutta-",
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn21.mp3",
+      "label": "TB 21 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn21/vi/minh_chau",
       "download": true
     },
     "en": {
@@ -21,6 +21,1365 @@
       "label": "Setting the Dhamma Wheel in Motion · English",
       "provider": "PaliAudio",
       "sourceUrl": "https://www.paliaudio.com/",
+      "download": true
+    }
+  },
+  "nikaya.mn.1": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn1.mp3",
+      "label": "TB 1 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn1/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.2": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn2.mp3",
+      "label": "TB 2 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn2/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.3": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn3.mp3",
+      "label": "TB 3 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn3/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.4": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn4.mp3",
+      "label": "TB 4 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn4/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.5": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn5.mp3",
+      "label": "TB 5 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn5/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.6": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn6.mp3",
+      "label": "TB 6 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn6/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.7": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn7.mp3",
+      "label": "TB 7 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn7/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.8": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn8.mp3",
+      "label": "TB 8 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn8/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.9": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn9.mp3",
+      "label": "TB 9 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn9/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.10": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn10.mp3",
+      "label": "TB 10 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn10/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.11": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn11.mp3",
+      "label": "TB 11 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn11/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.12": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn12.mp3",
+      "label": "TB 12 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn12/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.13": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn13.mp3",
+      "label": "TB 13 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn13/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.14": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn14.mp3",
+      "label": "TB 14 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn14/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.15": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn15.mp3",
+      "label": "TB 15 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn15/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.16": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn16.mp3",
+      "label": "TB 16 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn16/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.17": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn17.mp3",
+      "label": "TB 17 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn17/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.18": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn18.mp3",
+      "label": "TB 18 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn18/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.19": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn19.mp3",
+      "label": "TB 19 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn19/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.20": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn20.mp3",
+      "label": "TB 20 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn20/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.22": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn22.mp3",
+      "label": "TB 22 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn22/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.23": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn23.mp3",
+      "label": "TB 23 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn23/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.24": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn24.mp3",
+      "label": "TB 24 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn24/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.25": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn25.mp3",
+      "label": "TB 25 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn25/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.26": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn26.mp3",
+      "label": "TB 26 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn26/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.27": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn27.mp3",
+      "label": "TB 27 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn27/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.28": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn28.mp3",
+      "label": "TB 28 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn28/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.29": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn29.mp3",
+      "label": "TB 29 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn29/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.30": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn30.mp3",
+      "label": "TB 30 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn30/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.31": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn31.mp3",
+      "label": "TB 31 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn31/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.32": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn32.mp3",
+      "label": "TB 32 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn32/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.33": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn33.mp3",
+      "label": "TB 33 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn33/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.34": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn34.mp3",
+      "label": "TB 34 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn34/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.35": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn35.mp3",
+      "label": "TB 35 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn35/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.36": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn36.mp3",
+      "label": "TB 36 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn36/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.37": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn37.mp3",
+      "label": "TB 37 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn37/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.38": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn38.mp3",
+      "label": "TB 38 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn38/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.39": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn39.mp3",
+      "label": "TB 39 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn39/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.40": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn40.mp3",
+      "label": "TB 40 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn40/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.41": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn41.mp3",
+      "label": "TB 41 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn41/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.42": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn42.mp3",
+      "label": "TB 42 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn42/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.43": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn43.mp3",
+      "label": "TB 43 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn43/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.44": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn44.mp3",
+      "label": "TB 44 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn44/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.45": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn45.mp3",
+      "label": "TB 45 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn45/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.46": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn46.mp3",
+      "label": "TB 46 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn46/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.47": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn47.mp3",
+      "label": "TB 47 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn47/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.48": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn48.mp3",
+      "label": "TB 48 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn48/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.49": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn49.mp3",
+      "label": "TB 49 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn49/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.50": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn50.mp3",
+      "label": "TB 50 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn50/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.51": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn51.mp3",
+      "label": "TB 51 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn51/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.52": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn52.mp3",
+      "label": "TB 52 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn52/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.53": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn53.mp3",
+      "label": "TB 53 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn53/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.54": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn54.mp3",
+      "label": "TB 54 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn54/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.55": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn55.mp3",
+      "label": "TB 55 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn55/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.56": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn56.mp3",
+      "label": "TB 56 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn56/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.57": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn57.mp3",
+      "label": "TB 57 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn57/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.58": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn58.mp3",
+      "label": "TB 58 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn58/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.59": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn59.mp3",
+      "label": "TB 59 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn59/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.60": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn60.mp3",
+      "label": "TB 60 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn60/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.61": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn61.mp3",
+      "label": "TB 61 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn61/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.62": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn62.mp3",
+      "label": "TB 62 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn62/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.63": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn63.mp3",
+      "label": "TB 63 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn63/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.64": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn64.mp3",
+      "label": "TB 64 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn64/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.65": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn65.mp3",
+      "label": "TB 65 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn65/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.66": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn66.mp3",
+      "label": "TB 66 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn66/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.67": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn67.mp3",
+      "label": "TB 67 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn67/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.68": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn68.mp3",
+      "label": "TB 68 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn68/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.69": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn69.mp3",
+      "label": "TB 69 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn69/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.70": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn70.mp3",
+      "label": "TB 70 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn70/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.71": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn71.mp3",
+      "label": "TB 71 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn71/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.72": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn72.mp3",
+      "label": "TB 72 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn72/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.73": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn73.mp3",
+      "label": "TB 73 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn73/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.74": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn74.mp3",
+      "label": "TB 74 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn74/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.75": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn75.mp3",
+      "label": "TB 75 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn75/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.76": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn76.mp3",
+      "label": "TB 76 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn76/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.77": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn77.mp3",
+      "label": "TB 77 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn77/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.78": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn78.mp3",
+      "label": "TB 78 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn78/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.79": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn79.mp3",
+      "label": "TB 79 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn79/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.80": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn80.mp3",
+      "label": "TB 80 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn80/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.81": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn81.mp3",
+      "label": "TB 81 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn81/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.82": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn82.mp3",
+      "label": "TB 82 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn82/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.83": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn83.mp3",
+      "label": "TB 83 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn83/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.84": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn84.mp3",
+      "label": "TB 84 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn84/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.85": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn85.mp3",
+      "label": "TB 85 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn85/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.86": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn86.mp3",
+      "label": "TB 86 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn86/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.87": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn87.mp3",
+      "label": "TB 87 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn87/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.88": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn88.mp3",
+      "label": "TB 88 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn88/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.89": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn89.mp3",
+      "label": "TB 89 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn89/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.90": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn90.mp3",
+      "label": "TB 90 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn90/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.91": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn91.mp3",
+      "label": "TB 91 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn91/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.92": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn92.mp3",
+      "label": "TB 92 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn92/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.93": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn93.mp3",
+      "label": "TB 93 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn93/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.94": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn94.mp3",
+      "label": "TB 94 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn94/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.95": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn95.mp3",
+      "label": "TB 95 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn95/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.96": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn96.mp3",
+      "label": "TB 96 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn96/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.97": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn97.mp3",
+      "label": "TB 97 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn97/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.98": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn98.mp3",
+      "label": "TB 98 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn98/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.99": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn99.mp3",
+      "label": "TB 99 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn99/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.100": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn100.mp3",
+      "label": "TB 100 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn100/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.101": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn101.mp3",
+      "label": "TB 101 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn101/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.102": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn102.mp3",
+      "label": "TB 102 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn102/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.103": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn103.mp3",
+      "label": "TB 103 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn103/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.104": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn104.mp3",
+      "label": "TB 104 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn104/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.105": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn105.mp3",
+      "label": "TB 105 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn105/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.106": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn106.mp3",
+      "label": "TB 106 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn106/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.107": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn107.mp3",
+      "label": "TB 107 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn107/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.108": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn108.mp3",
+      "label": "TB 108 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn108/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.109": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn109.mp3",
+      "label": "TB 109 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn109/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.110": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn110.mp3",
+      "label": "TB 110 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn110/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.111": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn111.mp3",
+      "label": "TB 111 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn111/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.112": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn112.mp3",
+      "label": "TB 112 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn112/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.113": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn113.mp3",
+      "label": "TB 113 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn113/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.114": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn114.mp3",
+      "label": "TB 114 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn114/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.115": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn115.mp3",
+      "label": "TB 115 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn115/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.116": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn116.mp3",
+      "label": "TB 116 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn116/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.117": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn117.mp3",
+      "label": "TB 117 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn117/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.118": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn118.mp3",
+      "label": "TB 118 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn118/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.119": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn119.mp3",
+      "label": "TB 119 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn119/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.120": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn120.mp3",
+      "label": "TB 120 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn120/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.121": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn121.mp3",
+      "label": "TB 121 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn121/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.122": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn122.mp3",
+      "label": "TB 122 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn122/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.123": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn123.mp3",
+      "label": "TB 123 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn123/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.124": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn124.mp3",
+      "label": "TB 124 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn124/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.125": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn125.mp3",
+      "label": "TB 125 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn125/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.126": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn126.mp3",
+      "label": "TB 126 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn126/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.127": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn127.mp3",
+      "label": "TB 127 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn127/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.128": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn128.mp3",
+      "label": "TB 128 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn128/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.129": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn129.mp3",
+      "label": "TB 129 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn129/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.130": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn130.mp3",
+      "label": "TB 130 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn130/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.131": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn131.mp3",
+      "label": "TB 131 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn131/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.132": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn132.mp3",
+      "label": "TB 132 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn132/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.133": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn133.mp3",
+      "label": "TB 133 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn133/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.134": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn134.mp3",
+      "label": "TB 134 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn134/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.135": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn135.mp3",
+      "label": "TB 135 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn135/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.136": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn136.mp3",
+      "label": "TB 136 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn136/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.137": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn137.mp3",
+      "label": "TB 137 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn137/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.138": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn138.mp3",
+      "label": "TB 138 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn138/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.139": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn139.mp3",
+      "label": "TB 139 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn139/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.140": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn140.mp3",
+      "label": "TB 140 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn140/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.141": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn141.mp3",
+      "label": "TB 141 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn141/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.142": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn142.mp3",
+      "label": "TB 142 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn142/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.143": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn143.mp3",
+      "label": "TB 143 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn143/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.144": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn144.mp3",
+      "label": "TB 144 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn144/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.145": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn145.mp3",
+      "label": "TB 145 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn145/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.146": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn146.mp3",
+      "label": "TB 146 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn146/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.147": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn147.mp3",
+      "label": "TB 147 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn147/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.148": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn148.mp3",
+      "label": "TB 148 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn148/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.149": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn149.mp3",
+      "label": "TB 149 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn149/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.150": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn150.mp3",
+      "label": "TB 150 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn150/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.151": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn151.mp3",
+      "label": "TB 151 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn151/vi/minh_chau",
+      "download": true
+    }
+  },
+  "nikaya.mn.152": {
+    "vi": {
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn152.mp3",
+      "label": "TB 152 · MP3 dựng sẵn tiếng Việt",
+      "provider": "5 Đại Tạng Kinh Nikāya",
+      "sourceUrl": "https://suttacentral.net/mn152/vi/minh_chau",
       "download": true
     }
   }
