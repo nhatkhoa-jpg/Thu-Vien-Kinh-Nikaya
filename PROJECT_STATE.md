@@ -31,6 +31,7 @@ Ví dụ: `TB 21` là mã chính, `MN 21` chỉ là mã quốc tế phụ.
 Tầng 1 (bắt buộc): **Browser/Device TTS** đọc trực tiếp toàn văn đang hiển thị bằng Web Speech API. Không phụ thuộc file MP3 ngoài.
 Tầng 2 (tùy chọn): MP3 đã kiểm chứng đúng ngôn ngữ. MP3 ngoài chỉ là lựa chọn bổ sung, không phải hạ tầng cốt lõi.
 Player MP3 giữ chỉnh tốc độ 0.75×–2× và tua ±15 giây.
+Trên trang bài kinh, nút Browser TTS, PDF và MP3 phải nằm **ngay dưới tiêu đề/công cụ đọc**, không giấu ở cột phụ phía dưới trên mobile.
 
 ## 5. PDF
 - Không dùng PDF bên ngoài làm bản chính trên UI.
@@ -50,6 +51,7 @@ Bắt buộc test ít nhất 4 lớp:
 - Desktop 1025–1499px
 - Wide >= 1500px
 Mobile có bottom dock; không để dock che nội dung/nút quan trọng. Reader ưu tiên typography dài hạn, font size controls, dark mode, save/resume.
+Trên mobile, mọi giá trị `reader-width` lưu trong localStorage **không được phép làm nội dung rộng hơn viewport**; `.readerLayout`, `.readerMain`, `.suttaText`, `.fullTextBody` phải bị khóa `max-width:100%` và không overflow ngang.
 
 ## 8. Dữ liệu dùng cho website + RAG/AI
 Nguồn chuẩn metadata: `data/catalog/*.json`.
@@ -62,26 +64,35 @@ Mục tiêu tương thích LangChain, LlamaIndex, OpenWebUI, Chroma, Qdrant, FAI
 ## 9. YouTube
 YouTube không được biến trang chủ thành feed. Chỉ gắn video thật sự liên quan tại trang bài kinh/chủ đề, dùng lazy-load và `youtube-nocookie`, phục vụ minh họa, SEO và traffic chéo.
 
-## 10. Tình trạng hiện tại (2026-09-01)
+## 10. Vercel / domain — QUY TẮC URL CỐ ĐỊNH
+- **Không được tạo project Vercel mới cho mỗi phiên bản.**
+- Project cố định: `nikaya-reader-v4-final`.
+- URL dự án cố định để người dùng bookmark và để trỏ custom domain: `https://nikaya-reader-v4-final-khoa-3f1b.vercel.app`.
+- Các URL có chuỗi ngẫu nhiên kiểu `...-mj9xz0fo6-...vercel.app` chỉ là deployment URL nội bộ/preview, **không đưa cho người dùng làm địa chỉ chính**.
+- Mọi lần cập nhật phải deploy production vào **cùng project** để alias cố định tự trỏ tới deployment mới nhất.
+- Canonical/SEO dùng biến `NEXT_PUBLIC_SITE_URL`; mặc định phải là URL cố định ở trên cho tới khi gắn custom domain. Khi có domain riêng, chỉ đổi biến này sang domain riêng, không đổi route/app.
+
+## 11. Tình trạng hiện tại (2026-09-01)
 - UI V2/V3/V4 đã có responsive, reader controls, audio player, i18n, mã Việt, RAG-ready catalog.
 - Các bài test gồm TB 10, TB 21, TB 22 và một số bài ở TrB/TƯB/TCB/TiB.
 - TB 21 là bài kiểm thử chính.
 - Đã bổ sung Browser TTS, PDF tự sinh, global search/menu, quick jump reader và tối ưu header mobile.
-- Đã sửa xung đột sticky giữa quick-jump và reader toolbar trên điện thoại.
-- **Latest validated commit:** `946b06be23025254bb0ec37cace4acd63d50f792`.
-- GitHub Actions run `33504008544`: npm install, RAG export/validate, Next build, smoke tests đều PASS.
-- Production deployment mới đã được yêu cầu tại Vercel với project `nikaya-reader-v4-final`, deployment `dpl_Hivg1xMzraXg332vjYe9PwSv1VrG`, URL `https://nikaya-reader-v4-final-mj9xz0fo6-khoa-3f1b.vercel.app`. Vercel connector hiện có lỗi read-back (deployment tạo được nhưng `get_deployment` có thể trả 404), vì vậy phiên mới phải **xác minh URL thực tế trước khi tuyên bố production READY**.
+- Đã đưa Browser TTS + PDF + MP3 lên ngay dưới tiêu đề bài kinh để mobile nhìn thấy ngay.
+- Đã khóa reader theo viewport mobile để ngăn text/card vỡ size ngang.
+- GitHub Actions phải chạy: npm install -> RAG export/validate -> next build -> smoke tests.
+- Stable project alias phải dùng: `https://nikaya-reader-v4-final-khoa-3f1b.vercel.app`.
 
-## 11. Quy trình chuẩn khi tiếp tục dự án
+## 12. Quy trình chuẩn khi tiếp tục dự án
 1. Đọc `PROJECT_STATE.md` và `AGENTS.md`.
 2. Đọc commit/main hiện tại và CI gần nhất.
-3. Không tạo project/repo mới nếu chưa cần.
+3. **Không tạo project/repo/Vercel address mới nếu chưa có lý do đặc biệt.**
 4. Thay đổi dữ liệu ở catalog/corpus trước; UI chỉ đọc dữ liệu đó.
 5. Build + smoke-test mobile reader TB 21 và home `/vi`.
-6. Chỉ deploy commit đã xanh.
-7. Cập nhật mục "Tình trạng hiện tại" trong file này nếu kiến trúc/quy tắc thay đổi.
+6. Chỉ deploy commit đã xanh vào project Vercel cố định.
+7. Xác minh stable alias, không gửi deployment URL ngẫu nhiên cho người dùng.
+8. Cập nhật mục "Tình trạng hiện tại" trong file này nếu kiến trúc/quy tắc thay đổi.
 
-## 12. Ưu tiên tiếp theo
+## 13. Ưu tiên tiếp theo
 1. Hoàn thiện full-text corpus hợp pháp cho 5 bộ và nhiều ngôn ngữ.
 2. Tạo local mirror/cache cho các bản được phép tái phân phối để giảm phụ thuộc nguồn ngoài.
 3. Full-text search theo segment/chunk, highlight kết quả.
