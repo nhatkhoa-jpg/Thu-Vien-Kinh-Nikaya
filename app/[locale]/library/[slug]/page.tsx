@@ -5,6 +5,7 @@ import {ArrowLeft,Download,ExternalLink,Headphones,Clock,BookOpen,ArrowRight,Fil
 import {dict,isLocale,locales,type Locale} from '@/lib/i18n';
 import {suttas,collectionDisplayCode,suttaDisplayCode,suttaAudio} from '@/lib/data';
 import {getSuttaFullText} from '@/lib/sutta-content';
+import {SITE_URL} from '@/lib/site';
 import AudioPlayer from '@/components/AudioPlayer';
 import ReaderProgress from '@/components/ReaderProgress';
 import YouTubeEmbed from '@/components/YouTubeEmbed';
@@ -12,7 +13,6 @@ import BrowserReader from '@/components/BrowserReader';
 import PdfDownloadButton from '@/components/PdfDownloadButton';
 import ReaderQuickJump from '@/components/ReaderQuickJump';
 
-const baseUrl=process.env.NEXT_PUBLIC_SITE_URL||'https://nikaya-reader-v4-final-khoa-3f1b.vercel.app';
 export const revalidate=86400;
 
 export async function generateMetadata({params}:{params:Promise<{locale:string;slug:string}>}):Promise<Metadata>{
@@ -20,7 +20,7 @@ export async function generateMetadata({params}:{params:Promise<{locale:string;s
   if(!isLocale(raw))return{};
   const s=suttas.find(x=>x.slug===slug);if(!s)return{};
   const locale=raw as Locale;const vi=locale==='vi';const code=suttaDisplayCode(s,vi);const title=vi?`${code} · ${s.vi}`:`${code} · ${s.en}`;const description=vi?s.summaryVi:s.summaryEn;
-  return{title,description,alternates:{canonical:`${baseUrl}/${locale}/library/${slug}`,languages:Object.fromEntries(locales.map(l=>[l,`${baseUrl}/${l}/library/${slug}`]))},openGraph:{title,description,url:`${baseUrl}/${locale}/library/${slug}`,type:'article'}};
+  return{title,description,alternates:{canonical:`${SITE_URL}/${locale}/library/${slug}`,languages:Object.fromEntries(locales.map(l=>[l,`${SITE_URL}/${l}/library/${slug}`]))},openGraph:{title,description,url:`${SITE_URL}/${locale}/library/${slug}`,type:'article'}};
 }
 
 export default async function SuttaPage({params}:{params:Promise<{locale:string;slug:string}>}){
