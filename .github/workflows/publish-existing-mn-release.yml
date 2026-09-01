@@ -1,0 +1,103 @@
+name: Publish Existing Trung Bo MP3 Release
+
+on:
+  push:
+    branches: [feature/mn-prebuilt-mp3]
+    paths:
+      - '.github/workflows/publish-existing-mn-release.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  AUDIO_TAG: mn-vi-audio-v1
+
+jobs:
+  publish:
+    name: Verify 152 existing MP3 and publish draft release
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Find draft release by tag
+        id: release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          RELEASE_ID=$(gh api "repos/$GITHUB_REPOSITORY/releases?per_page=100" \
+            | jq -r --arg tag "$AUDIO_TAG" '.[] | select(.tag_name==$tag) | .id' \
+            | head -n1)
+          test -n "$RELEASE_ID"
+          echo "release_id=$RELEASE_ID" >> "$GITHUB_OUTPUT"
+          echo "Found draft release id=$RELEASE_ID"
+
+      - name: Verify exactly MN1..MN152 already exist
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_ID: ${{ steps.release.outputs.release_id }}
+        run: |
+          set -euo pipefail
+          gh api "repos/$GITHUB_REPOSITORY/releases/$RELEASE_ID/assets?per_page=100&page=1" > /tmp/assets1.json
+          gh api "repos/$GITHUB_REPOSITORY/releases/$RELEASE_ID/assets?per_page=100&page=2" > /tmp/assets2.json
+          jq -s 'add' /tmp/assets1.json /tmp/assets2.json > /tmp/assets.json
+          python - <<'PY'
+          import json
+          assets=json.load(open('/tmp/assets.json',encoding='utf-8'))
+          names={a['name'] for a in assets if a['name'].endswith('.mp3')}
+          expected={f'mn{i}.mp3' for i in range(1,153)}
+          missing=sorted(expected-names)
+          extra=sorted(names-expected)
+          print('MP3 assets:',len(names))
+          if missing: print('Missing:',missing)
+          if extra: print('Extra:',extra)
+          assert names==expected, f'expected exact MN1..MN152; got {len(names)} MP3 assets'
+          PY
+
+      - name: Build public audio manifest
+        run: |
+          python - <<'PY'
+          import json, os
+          repo=os.environ['GITHUB_REPOSITORY']
+          tag=os.environ['AUDIO_TAG']
+          items=[]
+          for i in range(1,153):
+              items.append({
+                  'id':f'nikaya.mn.{i}',
+                  'canonicalRef':f'mn{i}',
+                  'viCode':f'TB {i}',
+                  'language':'vi',
+                  'url':f'https://github.com/{repo}/releases/download/{tag}/mn{i}.mp3',
+                  'provider':'5 Đại Tạng Kinh Nikāya',
+                  'voice':'Piper vi_VN-vais1000-medium',
+                  'prebuilt':True,
+              })
+          with open('mn-audio-manifest.json','w',encoding='utf-8') as f:
+              json.dump({'version':'1','collection':'MN','language':'vi','count':152,'items':items},f,ensure_ascii=False,indent=2)
+          PY
+
+      - name: Upload manifest to draft release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_ID: ${{ steps.release.outputs.release_id }}
+        run: |
+          set -euo pipefail
+          EXISTING=$(gh api "repos/$GITHUB_REPOSITORY/releases/$RELEASE_ID/assets?per_page=100" \
+            | jq -r '.[] | select(.name=="mn-audio-manifest.json") | .id' | head -n1 || true)
+          if [ -n "$EXISTING" ]; then
+            gh api -X DELETE "repos/$GITHUB_REPOSITORY/releases/assets/$EXISTING"
+          fi
+          UPLOAD_URL="https://uploads.github.com/repos/$GITHUB_REPOSITORY/releases/$RELEASE_ID/assets?name=mn-audio-manifest.json"
+          gh api --method POST "$UPLOAD_URL" --input mn-audio-manifest.json -H 'Content-Type: application/json' >/dev/null
+
+      - name: Publish the verified draft release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_ID: ${{ steps.release.outputs.release_id }}
+        run: |
+          set -euo pipefail
+          gh api --method PATCH "repos/$GITHUB_REPOSITORY/releases/$RELEASE_ID" -f draft=false >/dev/null
+          gh api "repos/$GITHUB_REPOSITORY/releases/tags/$AUDIO_TAG" --jq '{id,tag_name,draft,assets:(.assets|length)}'
+          echo 'FULL MN AUDIO RELEASE COMPLETE: 152/152' >> "$GITHUB_STEP_SUMMARY"

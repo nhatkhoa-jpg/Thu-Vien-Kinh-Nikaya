@@ -7,7 +7,7 @@ import HeaderTools from './HeaderTools';
 export default function Header({locale}:{locale:Locale}){
   const d=dict(locale);
   return <>
-    <header className="topbar">
+    <header className="topbar" data-release="V5.0-MN-STAGE">
       <div className="shell nav">
         <Link className="logo" href={`/${locale}`} aria-label={d.brand}>
           <span className="logoMark"><BookOpen size={20}/></span>
@@ -25,6 +25,7 @@ export default function Header({locale}:{locale:Locale}){
         </div>
       </div>
     </header>
+    <span className="testVersionBadge" aria-hidden="true">V5.0-MN-STAGE</span>
     <nav className="mobileDock" aria-label="Mobile navigation">
       <Link href={`/${locale}`}><Home size={20}/><span>{d.home}</span></Link>
       <Link href={`/${locale}#collections`}><Library size={20}/><span>{d.navCollections}</span></Link>

@@ -2,7 +2,7 @@ name: Build & Validate
 
 on:
   push:
-    branches: [main]
+    branches: [main, feature/mn-prebuilt-mp3]
   pull_request:
     branches: [main]
 
@@ -15,16 +15,41 @@ jobs:
         with:
           node-version: 22
       - run: npm install
-      - name: Generate and validate AI/RAG exports
+      - name: Generate and validate AI/RAG exports and MP3 catalog
         run: |
           npm run rag:export
-          test "$(wc -l < data/exports/nikaya-rag.vi.jsonl)" -eq 22
-          test "$(wc -l < data/exports/nikaya-rag.en.jsonl)" -eq 22
-          test "$(wc -l < data/exports/nikaya-knowledge.vi.jsonl)" -eq 11
-          test "$(wc -l < data/exports/nikaya-knowledge.en.jsonl)" -eq 11
-          node -e "const fs=require('fs'); for(const f of fs.readdirSync('data/exports')) for(const l of fs.readFileSync('data/exports/'+f,'utf8').trim().split('\\n')) JSON.parse(l)"
+          node <<'NODE'
+          const fs=require('fs');
+          const suttas=require('./data/catalog/suttas.json');
+          const audio=require('./data/catalog/audio.json');
+          const lines=f=>fs.readFileSync(f,'utf8').trim().split('\n').filter(Boolean);
+          const expected=suttas.length;
+          const ragVi=lines('data/exports/nikaya-rag.vi.jsonl');
+          const ragEn=lines('data/exports/nikaya-rag.en.jsonl');
+          const knVi=lines('data/exports/nikaya-knowledge.vi.jsonl');
+          const knEn=lines('data/exports/nikaya-knowledge.en.jsonl');
+          for(const [name,rows] of [['rag.vi',ragVi],['rag.en',ragEn],['knowledge.vi',knVi],['knowledge.en',knEn]]){
+            for(const row of rows)JSON.parse(row);
+            if(!rows.length)throw new Error(`${name} export is empty`);
+          }
+          if(knVi.length!==expected||knEn.length!==expected)throw new Error(`knowledge export mismatch: expected ${expected}`);
+          if(ragVi.length!==expected*2||ragEn.length!==expected*2)throw new Error(`RAG export mismatch: expected ${expected*2}`);
+          const mn=suttas.filter(s=>s.collection==='MN');
+          if(mn.length===152){
+            for(let i=1;i<=152;i++){
+              const id=`nikaya.mn.${i}`;
+              const asset=audio[id]?.vi;
+              if(!asset)throw new Error(`missing Vietnamese MP3 mapping ${id}`);
+              if(asset.provider!=='5 Đại Tạng Kinh Nikāya')throw new Error(`MN ${i} is not mapped to library prebuilt MP3`);
+              if(!asset.url.includes(`/releases/download/mn-vi-audio-v1/mn${i}.mp3`))throw new Error(`bad MP3 URL for MN ${i}`);
+            }
+            console.log('Full MN audio catalog validated: 152/152');
+          } else {
+            throw new Error(`MN catalog incomplete: ${mn.length}/152`);
+          }
+          NODE
       - run: npm run build
-      - name: Smoke test reader, browser TTS assets and server fallback
+      - name: Smoke test reader and MP3-first architecture
         run: |
           npm run start -- -p 3000 > /tmp/nikaya-next.log 2>&1 &
           SERVER_PID=$!
@@ -37,18 +62,15 @@ jobs:
           if [ "$READY" -ne 1 ]; then cat /tmp/nikaya-next.log; exit 1; fi
           curl --fail --silent http://127.0.0.1:3000/vi/library/mn-21-kakacupama -o /tmp/mn21.html
           grep -q 'compactEssentials' /tmp/mn21.html
-          grep -q 'essentialDisclosure' /tmp/mn21.html
-          grep -q 'V4.10' /tmp/mn21.html
+          grep -q 'primaryMp3Disclosure' /tmp/mn21.html
+          grep -q 'V5.0-MN-STAGE' /tmp/mn21.html
+          grep -q 'mn21.mp3' /tmp/mn21.html
+          grep -q 'Nghe bài kinh' /tmp/mn21.html
+          grep -q 'Bản dịch:' /tmp/mn21.html
+          if grep -q 'Giọng thư viện' /tmp/mn21.html; then echo 'Legacy library TTS leaked into V5 reader'; exit 1; fi
           curl --fail --silent http://127.0.0.1:3000/en > /dev/null
-          curl --fail --silent http://127.0.0.1:3000/api/tts-assets/espeakng.js -o /tmp/espeakng.js
-          grep -q 'function eSpeakNG' /tmp/espeakng.js
-          curl --fail --silent http://127.0.0.1:3000/api/tts-assets/espeakng.worker.js -o /tmp/espeakng.worker.js
-          test "$(wc -c < /tmp/espeakng.worker.js)" -gt 100000
-          curl --fail --silent http://127.0.0.1:3000/api/tts-assets/espeakng.worker.data -o /tmp/espeakng.worker.data
-          test "$(wc -c < /tmp/espeakng.worker.data)" -gt 1000000
-          curl --fail --silent --show-error -X POST http://127.0.0.1:3000/api/tts \
-            -H 'Content-Type: application/json' \
-            --data '{"text":"Đây là bài kiểm tra giọng đọc tiếng Việt của thư viện. Đọc chậm, rõ, có ngắt câu.","locale":"vi","rate":0.8}' \
-            -o /tmp/nikaya-tts.wav
-          test "$(head -c 4 /tmp/nikaya-tts.wav)" = "RIFF"
-          test "$(wc -c < /tmp/nikaya-tts.wav)" -gt 1000
+          STATUS=$(curl --silent --output /dev/null --write-out '%{http_code}' http://127.0.0.1:3000/api/tts)
+          test "$STATUS" = "404"
+          curl -L --fail --silent --range 0-4095 'https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn21.mp3' -o /tmp/mn21.part
+          test $(stat -c%s /tmp/mn21.part) -gt 1000
+          echo 'V5 MP3-first smoke test PASS'

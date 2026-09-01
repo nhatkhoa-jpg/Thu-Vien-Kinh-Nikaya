@@ -9,20 +9,22 @@ Before making any change, read `PROJECT_STATE.md`, `README.md`, and `data/README
 - Do not show technical/product-development notes to end users.
 - Do not send readers away from the library for primary reading. Full text belongs in the reader whenever redistribution/serving is permitted.
 - Never substitute a different language for content/audio/PDF without clearly asking the user.
-- **Primary listening architecture: pre-generated MP3.** Generate each discourse once in CI/backend, store it on stable object/release storage, then every browser/device streams the same file. Never run neural/Piper/ONNX TTS in an end user's browser as the primary path.
-- Device/Web Speech TTS is optional secondary convenience only. Render it only when the browser exposes a matching voice for the selected language; otherwise hide it completely instead of showing an error state.
+- **Prebuilt MP3 is the primary listening path.** Generate each scripture audio once, publish it to stable storage/CDN, and stream that same asset to every OS/browser.
+- Device Web Speech is optional secondary playback only. Show it only when the current device exposes a matching language voice; otherwise hide it completely.
+- Do not reintroduce browser neural/WASM TTS or server runtime TTS as the main listening architecture.
 - PDFs presented as the library's PDF must be generated from the library's current content, not linked from third-party PDF files.
 - YouTube is contextual supplementary media, not a homepage feed.
 
 ## Data rules
 - `data/catalog/*.json` is canonical metadata.
 - Preserve stable IDs and content hashes.
-- Provenance/license metadata travels with content, audio manifests, and RAG chunks.
+- Provenance/license metadata travels with content and RAG chunks.
 - Do not hard-code large scripture corpora inside React components.
 - Prefer stable segment IDs and semantic sections over arbitrary character chunks.
+- For Trung Bộ Vietnamese audio, the verified release tag is `mn-vi-audio-v1` and the exact asset set is `mn1.mp3` through `mn152.mp3`.
 
 ## UX rules
-Test phone, tablet/DeX, desktop, and >=1500px wide. Reader must expose obvious home/library navigation, global search, previous/next, quick jump, font controls, dark mode, progress save/resume, pre-generated MP3 playback, generated PDF, and optional device TTS only when supported. MP3 player must support seek, pause/resume, and playback speed.
+Test phone, tablet/DeX, desktop, and >=1500px wide. Reader must expose obvious home/library navigation, global search, previous/next, quick jump, font controls, dark mode, progress save/resume, primary MP3 playback, generated PDF, and device speech only when supported. MP3 player must retain speed controls, ±15-second seek, and resume position.
 
 ## Quality gate
-Do not call work complete until GitHub Actions passes RAG export validation, Next build, route smoke tests, and audio asset verification for the collection being released. Update `PROJECT_STATE.md` whenever architecture or project priorities materially change.
+Do not call work complete until GitHub Actions passes RAG export validation, Next build, MP3 catalog validation, and reader smoke tests. Update `PROJECT_STATE.md` whenever architecture or project priorities materially change.

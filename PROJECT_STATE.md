@@ -3,12 +3,14 @@
 > File này là **bộ nhớ dự án chính thức**. Mọi phiên ChatGPT/Codex mới phải đọc file này trước khi sửa dự án. Không khởi tạo lại kiến trúc nếu chưa đọc.
 
 ## 1. Mục tiêu lâu dài
-Xây dựng một thư viện kinh Nikāya hiện đại, đa ngôn ngữ, thân thiện điện thoại/tablet/DeX/PC/màn hình rộng, có thể tái sử dụng làm mẫu cho các bộ kinh/tôn giáo khác. Người dùng phải đọc, nghe, tìm kiếm, lưu tiến độ và tải tài liệu ngay trên hệ thống, hạn chế tối đa việc bị đẩy sang website khác.
+Xây dựng một thư viện kinh Nikāya hiện đại, đa ngôn ngữ, thân thiện điện thoại/tablet/DeX/PC/màn hình rộng. Người dùng phải đọc, nghe, tìm kiếm, lưu tiến độ và tải tài liệu ngay trên hệ thống, hạn chế tối đa việc bị đẩy sang website khác.
 
 Repo chính: `nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya`
 Framework: Next.js 16 + React 19 + TypeScript.
 Hosting: Vercel.
-Release marker hiện tại: **V4.10**.
+Project cố định: `nikaya-reader-v4-final`.
+Stable URL: `https://nikaya-reader-v4-final-khoa-3f1b.vercel.app`.
+Release marker đang kiểm thử: **V5.0-MN-STAGE**.
 
 ## 2. Tên thương hiệu và mã hiển thị Việt
 Tên hiển thị: **5 Đại Tạng Kinh Nikāya**.
@@ -18,60 +20,45 @@ Mã Việt là mã chính trên giao diện tiếng Việt; mã Pāli/quốc t�
 - TƯB = Tương Ưng Bộ (SN)
 - TCB = Tăng Chi Bộ (AN)
 - TiB = Tiểu Bộ (KN)
-Ví dụ: `TB 21` là mã chính, `MN 21` chỉ là mã quốc tế phụ.
 
 ## 3. Nguyên tắc nội dung
-- Không dùng trang bài kinh chỉ có tóm tắt rồi bắt người đọc sang website khác để đọc nội dung chính.
-- Trang bài kinh ưu tiên **toàn văn ngay trong thư viện** cho ngôn ngữ đang chọn.
+- Trang bài ưu tiên **toàn văn ngay trong thư viện** cho ngôn ngữ đang chọn.
 - Link nguồn chỉ dùng cho provenance/đối chiếu.
 - Không tự fallback sang ngôn ngữ khác khiến người dùng hiểu nhầm.
-- Chọn tiếng Việt => nội dung, giọng đọc, PDF mặc định là tiếng Việt. English => English. Ngôn ngữ khác tương tự.
-- Chỉ mirror/tái phân phối bản dịch khi quyền sử dụng cho phép; metadata nguồn/người dịch/license đi cùng dữ liệu.
+- Metadata nguồn/người dịch/license phải đi cùng dữ liệu.
+- `data/catalog/*.json` là nguồn chuẩn metadata; không hard-code corpus lớn trong React.
 
-## 4. Nghe — kiến trúc V4.10
-Mục tiêu bắt buộc: **máy nào vào website cũng phải có giọng đọc cơ bản của thư viện, không phụ thuộc Samsung/Google/Xiaomi TTS**.
+## 4. Nghe — kiến trúc V5 MP3-first
+Kiến trúc V4.10 dùng browser/server TTS đã bị thay thế.
 
-Thứ tự:
-1. **Giọng thư viện chạy ngay trong trình duyệt bằng eSpeak-NG WebAssembly/Web Worker**.
-2. Nếu browser engine không tải/chạy được, fallback sang **server WAV `/api/tts`** (`text2wav` + eSpeak-NG).
-3. **Giọng thiết bị/Web Speech API** dùng khi thiết bị có voice đúng ngôn ngữ; `Auto` ưu tiên giọng thiết bị phù hợp vì tự nhiên hơn, nếu không có thì dùng giọng thư viện.
-4. **MP3 đúng ngôn ngữ** là lựa chọn bổ sung khi có nguồn đáng tin, không phải hạ tầng nghe chính.
+Thứ tự V5:
+1. **MP3 dựng sẵn một lần là nguồn nghe chính.** Mỗi bài được render trước, lưu ở release/CDN ổn định và mọi thiết bị chỉ stream cùng một file.
+2. **Device Web Speech API là tùy chọn phụ.** Chỉ hiện khi thiết bị hiện tại có voice đúng ngôn ngữ; nếu không có thì ẩn hoàn toàn.
+3. Không re-introduce neural/WASM TTS chạy trong browser hoặc server runtime TTS làm đường nghe chính.
+4. Player MP3 giữ tốc độ 0.75×–2×, tua ±15 giây và lưu vị trí nghe.
 
-### Pacing tiếng Việt V4.10
-- Mặc định UI: **0.8×** (`dễ nghe`).
-- Giọng thư viện: base khoảng **120 WPM**, nên 0.8× ≈ **96 WPM**; minimum 78 WPM.
-- Giọng thiết bị: Web Speech rate thực tế = `UI rate × 0.85`, nên 0.8× tương đương ~0.68 engine rate.
-- Server fallback dùng cùng base 120 WPM cho tiếng Việt.
-- Internal chunks khoảng 230 ký tự; device chunks khoảng 155 ký tự.
-- Nghỉ giữa chunk khoảng **220–240 ms** để câu không dính vào nhau.
-- Tiền xử lý đọc: dấu gạch dài thành nhịp nghỉ; `SC 1` được đọc thành `Đoạn 1`; giảm đọc mã kỹ thuật khó hiểu.
-- Pitch giọng thư viện giảm nhẹ (~44) và device pitch ~0.96 để bớt chói.
-- Thang tốc độ tiếng Việt: 0.6 / 0.7 / 0.8 / 0.9 / 1.0 / 1.1 / 1.25 / 1.5.
-
-Chi tiết engine:
-- Client tải `eSpeakNG` từ các route same-origin `/api/tts-assets/espeakng.js`, `/api/tts-assets/espeakng.worker.js`, `/api/tts-assets/espeakng.worker.data`.
-- Các route proxy bản eSpeakNG browser qua jsDelivr và cache dài; worker/data same-origin để tránh lỗi Worker/CORS Android.
-- Audio phát bằng Web Audio/ScriptProcessor. Pause/resume dùng AudioContext; stop đóng context/node.
-- Lần đầu tải engine có thể tốn vài MB; sau đó browser/Vercel cache.
-- Server `/api/tts` là fallback thứ hai, không phải đường chính.
-- Player MP3 giữ chỉnh tốc độ 0.75×–2× và tua ±15 giây.
+### Trung Bộ tiếng Việt — v1
+- Release tag: `mn-vi-audio-v1`.
+- Asset bắt buộc chính xác: `mn1.mp3` … `mn152.mp3`.
+- Workflow audio: `.github/workflows/build-mn-audio.yml` (`Build Full Trung Bo MP3`).
+- Workflow finalizer: `.github/workflows/finalize-mn-site.yml` (`Finalize Trung Bo Site After MP3`).
+- Audio run #4 đã PASS và publish release sau khi kiểm tra exact MN1..MN152.
+- Finalizer run #1 đã PASS và commit catalog/audio hoàn chỉnh ở commit `9566e290b1282508a881594101ecc30fa9ebdd8b` với message `feat(mn): complete 152-sutta catalog with prebuilt MP3`.
+- `data/catalog/audio.json` mapping tiếng Việt trỏ đến release `mn-vi-audio-v1` và provider `5 Đại Tạng Kinh Nikāya`.
+- Catalog Trung Bộ đã mở rộng từ demo lên đủ TB 1–TB 152.
 
 ## 5. PDF
 - PDF chính do website tự sinh từ toàn văn bằng `pdfmake`.
-- Typography: title ~34pt, summary ~14.2pt, body ~13pt, segment markers, summary card, header/footer, số trang, màu nhận diện.
-- Text normalize NFC, loại zero-width + replacement chars.
-- PDF dùng Latin fallback cho Pāli Extended dễ vỡ (`ṇ→n`, `ḍ→d`, `ṭ→t`, `ā→a`...) để không còn ô vuông; **web vẫn giữ Pāli chuẩn**.
 - Không dùng PDF nguồn ngoài làm bản chính.
+- Web giữ Pāli chuẩn; PDF có fallback glyph khi cần.
 
 ## 6. Reader UX / điều hướng
 - Header: Trang chủ, 5 Đại Tạng, Thư viện, Nghe, global search, ngôn ngữ, mobile menu.
 - Trang bài: Home/Library, trước/sau, jump-to-discourse.
 - Search: mã Việt/quốc tế, tên, Pāli, chủ đề, tóm tắt.
-- Reader controls rất gọn: font −/+, line-height, width, dark, bookmark/resume là icon khoảng 29–31px có tooltip/title.
-- Nghe / PDF / MP3 là 3 disclosure mini, mobile cao khoảng 34px; mặc định đóng, bấm mới bung panel.
-- Mobile title khoảng 29–35px; margins rút gọn để vào bài thấy nội dung sớm.
-- Trong giai đoạn test luôn hiển thị version rất nhỏ ở góc trái: `.testVersionBadge`; mobile đặt ngay trên bottom dock, desktop sát góc trái dưới. Khi release ổn định thì xoá badge.
-- Header luôn render `data-release="V4.10"`; mobile menu cũng hiện V4.10.
+- Reader controls gọn: font, line-height, width, dark, bookmark/resume.
+- MP3 là disclosure nghe chính; PDF riêng; device speech chỉ xuất hiện nếu supported.
+- Trong giai đoạn test hiển thị version rất nhỏ: `V5.0-MN-STAGE`.
 
 ## 7. Responsive UX
 Bắt buộc test ít nhất 4 lớp:
@@ -79,59 +66,55 @@ Bắt buộc test ít nhất 4 lớp:
 - Tablet/DeX 641–1024px
 - Desktop 1025–1499px
 - Wide >= 1500px
-Mobile có bottom dock; không để dock che nội dung/nút quan trọng. `reader-width` trong localStorage không được làm nội dung rộng hơn viewport; reader/full text luôn max-width 100% trên mobile.
+Mobile bottom dock không được che nội dung/nút quan trọng.
 
 ## 8. Dữ liệu website + RAG/AI
-Nguồn chuẩn metadata: `data/catalog/*.json`.
-Không nhét nội dung quan trọng chỉ trong JSX/HTML.
-Mỗi bài giữ ID ổn định, canonical ref, code quốc tế, viCode, title, Pāli, topics, source, translator/license, version.
-RAG export: `npm run rag:export`.
-Mỗi chunk có stable id + `content_hash` + `embedding_cache_key` để chỉ re-embed đoạn thay đổi.
-Mục tiêu tương thích LangChain, LlamaIndex, OpenWebUI, Chroma, Qdrant, FAISS, Milvus, Weaviate, pgvector và local LLM.
+- Nguồn chuẩn: `data/catalog/*.json`.
+- Mỗi bài giữ ID ổn định, canonical ref, code quốc tế, viCode, title, Pāli, topics, source, translator/license, version.
+- RAG export: `npm run rag:export`.
+- Mỗi chunk có stable id + `content_hash` + `embedding_cache_key`.
+- Quality gate V5 kiểm tra RAG/Knowledge export theo số catalog hiện tại và kiểm tra đủ 152 mapping MP3 Trung Bộ khi MN đạt 152 bài.
 
-## 9. YouTube
-Không biến trang chủ thành feed. Chỉ gắn video thật sự liên quan tại trang bài/chủ đề, lazy-load + `youtube-nocookie`, phục vụ minh họa, SEO và traffic chéo.
-
-## 10. Vercel / domain — URL CỐ ĐỊNH
+## 9. Vercel / domain — URL CỐ ĐỊNH
 - Không tạo project Vercel mới cho mỗi phiên bản.
 - Project cố định: `nikaya-reader-v4-final`.
 - Stable URL: `https://nikaya-reader-v4-final-khoa-3f1b.vercel.app`.
-- URL random chỉ là deployment URL nội bộ, không đưa cho user làm URL chính.
-- Canonical/SEO dùng `lib/site.ts` -> `SITE_URL`; khi có custom domain chỉ đổi `NEXT_PUBLIC_SITE_URL`.
-- Vercel Git Integration nối project hiện hữu với repo GitHub, production branch `main`; mọi push lên `main` tự deploy vào cùng project/URL.
+- Vercel Git Integration nối repo GitHub; production branch `main`; push/merge lên `main` tự deploy vào cùng project/URL.
+- URL random chỉ là deployment nội bộ, không đưa làm URL chính.
 
-### Git Integration đã khôi phục
-- 2026-09-01 user reconnect project hiện hữu với repo `nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya` trong Vercel Settings → Git.
-- Commit trigger `d4e801965d987e8ef4558b5c49cdb863a25f26c4` nhận hai GitHub commit status Vercel đều SUCCESS.
-- V4.10 validated commit `1bdc40afa5eacedceb549407f0c1a2ddc51e2c68` nhận `Vercel` + `Vercel Deployments – khoa` SUCCESS, trỏ đúng project `nikaya-reader-v4-final`.
-- Connector ChatGPT ↔ Vercel có thể chưa liệt kê project; không chặn Git auto-deploy.
+## 10. Tình trạng source hiện tại (2026-09-02)
+Branch hoàn thiện Trung Bộ: `feature/mn-prebuilt-mp3`.
+PR: #2 `V5: Hoàn thiện Trung Bộ 152 bài với MP3 dựng sẵn`.
 
-## 11. Tình trạng source hiện tại (2026-09-01)
-- TB 21 là bài test chính; TB 10/TB 22 và bài ở 4 tạng khác dùng kiểm thử navigation/data.
-- V4.10 có mini toolbar + mini Nghe/PDF/MP3 và version badge góc trái.
-- Samsung/Xiaomi đã xác nhận cả giọng thư viện và giọng thiết bị có thể phát tiếng; V4.10 tập trung sửa **tốc độ quá nhanh/khó nghe**.
-- `Auto` giờ ưu tiên voice thiết bị đúng locale nếu có (Samsung), nếu không có thì giọng thư viện (Xiaomi).
-- CI run `33520136885` PASS: install, RAG validation, Next build, reader markers V4.10, English route, browser TTS script/worker/data proxy, và server WAV fallback ở rate 0.8.
-- Vercel deployment status cho validated V4.10 commit SUCCESS trên project cố định.
+Đã hoàn tất trên branch:
+- Release MP3 Trung Bộ tiếng Việt đã publish và workflow xác minh exact 152/152.
+- Catalog TB 1–TB 152 + audio mapping được finalizer sinh và commit.
+- RAG export + Next build + MP3-first smoke test đã chạy trong finalizer thành công trước commit catalog.
+- Route `/api/tts` được quality gate V5 kỳ vọng trả 404; browser/server neural TTS không còn là runtime chính.
+- Reader marker kiểm thử: `primaryMp3Disclosure` và `V5.0-MN-STAGE`.
 
-## 12. Quy trình chuẩn khi tiếp tục
-1. Đọc `PROJECT_STATE.md` + `AGENTS.md`.
-2. Đọc main + CI mới nhất.
+Việc còn lại trước production:
+1. Chạy quality gate lại trên **HEAD cuối cùng do user/connector commit** để tránh GitHub `action_required` ở commit bot.
+2. Xác minh PR #2 mergeable và các check mới PASS.
+3. Mark PR ready, merge vào `main` khi tất cả gate xanh.
+4. Xác minh Vercel production trên stable URL cố định và player/route chính hoạt động.
+5. Sau khi production xác minh xong, đổi trạng thái V5 Trung Bộ thành hoàn tất và tiếp tục bộ kế tiếp trong phiên/dự án khác.
+
+## 11. Quy trình chuẩn khi tiếp tục
+1. Đọc `PROJECT_STATE.md`, `AGENTS.md`, `README.md`, `data/README.md`.
+2. Đọc branch/main + GitHub Actions mới nhất.
 3. Không tạo repo/project/Vercel URL mới nếu không có lý do đặc biệt.
-4. Thay dữ liệu ở catalog/corpus trước; UI đọc dữ liệu đó.
-5. Build + smoke-test `/vi`, TB 21, `/en`, compact markers, browser TTS assets và server fallback.
-6. Chỉ giữ bản đã test trên `main`; Vercel Git Integration tự deploy project cố định.
-7. Xác nhận production bằng version badge trên stable URL; không gửi random deployment URL.
-8. Update file này khi kiến trúc/quy tắc thay đổi.
+4. Data/catalog trước; UI đọc dữ liệu đó.
+5. Build + RAG + MP3 catalog validation + smoke-test reader.
+6. Chỉ merge vào `main` sau khi HEAD cuối cùng có quality gate xanh.
+7. Vercel Git Integration tự deploy project cố định.
+8. Xác nhận production bằng stable URL; không gửi random deployment URL.
+9. Update file này khi kiến trúc/quy tắc thay đổi.
 
-## 13. Ưu tiên tiếp theo
-1. Xác minh V4.10 thực tế trên Xiaomi 15 Ultra và Samsung S25 Ultra: tốc độ mặc định 0.8× phải nghe rõ, không chạy dồn.
-2. Nếu vẫn khó nghe ở giọng thư viện, giảm base WPM thêm và/hoặc thay engine voice tự nhiên hơn nhưng vẫn giữ browser/server fallback.
-3. Nâng chất lượng giọng Việt, thêm lựa chọn nam/nữ nếu nguồn/model phù hợp và chi phí vận hành chấp nhận được.
-4. Hoàn thiện full-text corpus hợp pháp cho 5 bộ và nhiều ngôn ngữ.
-5. Local mirror/cache cho bản được phép phân phối.
-6. Full-text search segment/chunk + highlight.
-7. PDF mục lục/bookmarks/QR và font Pāli chuyên dụng khi có cách nhúng an toàn.
-8. TTS highlight câu + nhớ vị trí nghe.
-9. PWA/offline theo bộ/ngôn ngữ.
-10. Sau đó mở rộng YouTube/SEO/AdSense.
+## 12. Ưu tiên tiếp theo sau khi V5 Trung Bộ production PASS
+- Hoàn thiện full-text corpus hợp pháp và audio prebuilt cho các bộ còn lại theo cùng pipeline.
+- Nâng chất lượng giọng Việt bằng cách re-render asset server-side; không bắt client tải model.
+- Full-text search segment/chunk + highlight.
+- PDF mục lục/bookmarks/QR và font Pāli chuyên dụng khi có cách nhúng an toàn.
+- PWA/offline theo bộ/ngôn ngữ.
+- Sau đó mở rộng YouTube/SEO/AdSense.
