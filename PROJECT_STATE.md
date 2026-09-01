@@ -80,19 +80,18 @@ Không biến trang chủ thành feed. Chỉ gắn video thật sự liên quan 
 
 ## 10. Vercel / domain — QUY TẮC URL CỐ ĐỊNH
 - Không tạo project Vercel mới cho mỗi phiên bản.
-- Project mong muốn: `nikaya-reader-v4-final`.
-- Stable URL mong muốn: `https://nikaya-reader-v4-final-khoa-3f1b.vercel.app`.
+- Project cố định: `nikaya-reader-v4-final`.
+- Stable URL: `https://nikaya-reader-v4-final-khoa-3f1b.vercel.app`.
 - URL random chỉ là deployment URL nội bộ, không đưa cho user làm URL chính.
 - Canonical/SEO dùng `lib/site.ts` -> `SITE_URL`; khi có custom domain chỉ đổi `NEXT_PUBLIC_SITE_URL`.
-- Cách triển khai bền vững ưu tiên: **Vercel Git Integration nối project hiện hữu với repo GitHub này, production branch = `main`**. Khi đó mọi push xanh lên `main` tự deploy vào cùng project/URL, không phụ thuộc connector ChatGPT-Vercel để deploy.
+- Cách triển khai chuẩn: **Vercel Git Integration nối project hiện hữu với repo GitHub này, production branch = `main`**. Mọi push lên `main` tự deploy vào cùng project/URL.
 
-### BLOCKER QUAN TRỌNG — production alias đang stale
-- Vercel connector `list_projects(team_nvItVeb65CDpWnfRA7KPlYZA)` và `list_projects('khoa-3f1b')` đều trả **0 projects**.
-- `get_project('nikaya-reader-v4-final')`, `get_deployment(stable alias)` và get deployment theo các ID vừa tạo đều trả **404 not_found**.
-- `deploy_to_vercel()` vẫn trả thông báo `Deployment created`, nhưng vì read-back không thấy deployment/project và Xiaomi vẫn hiển thị UI cũ, **không được coi các lệnh này là production thành công**.
-- GitHub repo chỉ có `.github/workflows/build.yml`; chưa có Vercel deployment workflow, và GitHub commits chưa xác nhận Vercel deployment status.
-- Giải pháp ưu tiên: reconnect đúng **existing Vercel project** với repo `nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya` qua Vercel Git Integration, branch production `main`; đồng thời reconnect ChatGPT Vercel app với đúng Vercel account/team để có thể đọc project/logs và verify.
-- Khi quyền được sửa: build/test -> Git push main -> Vercel auto production deploy cùng project -> verify stable alias -> mới báo user.
+### Git Integration đã khôi phục
+- 2026-09-01 người dùng đã reconnect project hiện hữu với repo `nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya` trong Vercel Settings → Git.
+- Commit trigger `d4e801965d987e8ef4558b5c49cdb863a25f26c4` nhận hai GitHub commit status từ Vercel đều **SUCCESS**: `Vercel` và `Vercel Deployments – khoa`.
+- Status Vercel trỏ đúng project `nikaya-reader-v4-final`, xác nhận GitHub ↔ Vercel đã hoạt động và push `main` có thể tự deploy production vào project cố định.
+- Connector ChatGPT ↔ Vercel hiện vẫn có thể chưa liệt kê được project; việc này không chặn Git auto-deploy, nhưng cần reconnect app Vercel trong ChatGPT nếu muốn đọc project/logs trực tiếp qua connector.
+- Quy trình từ đây: sửa source → GitHub Actions xanh → push `main` → Vercel auto deploy cùng project → kiểm tra badge version trên stable URL.
 
 ## 11. Tình trạng source hiện tại (2026-09-01)
 - TB 21 là bài test chính; TB 10/TB 22 và bài ở 4 tạng khác dùng kiểm thử navigation/data.
@@ -100,7 +99,7 @@ Không biến trang chủ thành feed. Chỉ gắn video thật sự liên quan 
 - Android Auto TTS đi thẳng internal TTS + audio unlock.
 - Version V4.8 hiện cố định rất nhỏ ở góc trái để phân biệt build trong giai đoạn test.
 - CI bắt buộc kiểm tra HTML TB21 có `compactEssentials`, `essentialDisclosure`, `V4.8` và `/api/tts` sinh WAV tiếng Việt thật.
-- Production stable alias hiện phải xem là **STALE/UNVERIFIED** cho đến khi Git/Vercel connection được sửa và thấy V4.8 trên URL cố định.
+- Git/Vercel auto-deploy đã được xác nhận SUCCESS ở commit trigger nêu trên; kiểm tra cuối trên Xiaomi là nhìn badge `V4.8` và thử TTS nội bộ.
 
 ## 12. Quy trình chuẩn khi tiếp tục
 1. Đọc `PROJECT_STATE.md` + `AGENTS.md`.
@@ -108,19 +107,18 @@ Không biến trang chủ thành feed. Chỉ gắn video thật sự liên quan 
 3. Không tạo repo/project/Vercel URL mới nếu không có lý do đặc biệt.
 4. Thay dữ liệu ở catalog/corpus trước; UI đọc dữ liệu đó.
 5. Build + smoke-test `/vi`, TB 21, `/en`, compact markers và `/api/tts` WAV.
-6. Dùng Git Integration của project cố định để deploy `main`; connector Vercel chủ yếu dùng verify/logs.
-7. Không gọi production thành công nếu chưa verify stable alias có đúng version badge hiện tại.
-8. Không gửi random deployment URL cho user.
+6. Chỉ merge/push bản đã test lên `main`; Vercel Git Integration tự deploy project cố định.
+7. Xác nhận production bằng version badge trên stable URL; không gửi random deployment URL cho user.
+8. Connector Vercel dùng để đọc logs/diagnostics khi có quyền; không dùng tạo project mới.
 9. Update file này khi kiến trúc/quy tắc thay đổi.
 
 ## 13. Ưu tiên tiếp theo
-1. Kết nối lại project Vercel hiện hữu `nikaya-reader-v4-final` với GitHub repo `nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya`, production branch `main`.
-2. Reconnect ChatGPT Vercel app vào đúng Vercel account/team sở hữu project để verify project/deploy/logs.
-3. Xác minh V4.8 trên Xiaomi 15 Ultra: badge góc trái phải hiện V4.8; controls phải mini; Android Auto phải dùng Internal TTS.
-4. Hoàn thiện full-text corpus hợp pháp cho 5 bộ và nhiều ngôn ngữ.
-5. Local mirror/cache cho bản được phép phân phối.
-6. Full-text search segment/chunk + highlight.
-7. PDF mục lục/bookmarks/QR và font Pāli chuyên dụng khi có cách nhúng an toàn.
-8. TTS highlight câu + nhớ vị trí nghe.
-9. PWA/offline theo bộ/ngôn ngữ.
-10. Sau đó mở rộng YouTube/SEO/AdSense.
+1. Xác minh V4.8 trên Xiaomi 15 Ultra: badge góc trái phải hiện V4.8; controls phải mini; Android Auto phải dùng Internal TTS.
+2. Nếu cần đọc deployment/logs trực tiếp trong ChatGPT, reconnect app Vercel trong ChatGPT vào đúng team `khoa-3f1b`.
+3. Hoàn thiện full-text corpus hợp pháp cho 5 bộ và nhiều ngôn ngữ.
+4. Local mirror/cache cho bản được phép phân phối.
+5. Full-text search segment/chunk + highlight.
+6. PDF mục lục/bookmarks/QR và font Pāli chuyên dụng khi có cách nhúng an toàn.
+7. TTS highlight câu + nhớ vị trí nghe.
+8. PWA/offline theo bộ/ngôn ngữ.
+9. Sau đó mở rộng YouTube/SEO/AdSense.
