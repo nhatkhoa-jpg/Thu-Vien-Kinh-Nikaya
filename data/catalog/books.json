@@ -1,0 +1,45 @@
+{
+  "MN": {
+    "vi": {
+      "url": "https://nigioikhatsi.net/kinhsach-pdf/KinhPali_KinhTrungBo_ThichMinhChau.pdf",
+      "label": "Kinh Trung Bộ · PDF tiếng Việt",
+      "provider": "Ni Giới Khất Sĩ",
+      "format": "PDF",
+      "download": true
+    },
+    "en": {
+      "url": "https://readingfaithfully.org/majjhima-nikaya-translated-by-bhikkhu-sujato-free-epub-kindle-pdf/",
+      "label": "Majjhima Nikāya · English ebook",
+      "provider": "Reading Faithfully",
+      "format": "PDF/EPUB",
+      "download": true
+    }
+  },
+  "DN": {
+    "en": {
+      "url": "https://readingfaithfully.org/digha-nikaya-translated-by-bhikkhu-sujato-free-epub-kindle-pdf/",
+      "label": "Dīgha Nikāya · English ebook",
+      "provider": "Reading Faithfully",
+      "format": "PDF/EPUB",
+      "download": true
+    }
+  },
+  "SN": {
+    "en": {
+      "url": "https://readingfaithfully.org/samyutta-nikaya-translated-bhikkhu-sujato-free-epub-kindle-pdf/",
+      "label": "Saṁyutta Nikāya · English ebook",
+      "provider": "Reading Faithfully",
+      "format": "PDF/EPUB",
+      "download": true
+    }
+  },
+  "AN": {
+    "en": {
+      "url": "https://readingfaithfully.org/anguttara-nikaya-translated-by-bhikkhu-sujato-free-epub-kindle-pdf/",
+      "label": "Aṅguttara Nikāya · English ebook",
+      "provider": "Reading Faithfully",
+      "format": "PDF/EPUB",
+      "download": true
+    }
+  }
+}
