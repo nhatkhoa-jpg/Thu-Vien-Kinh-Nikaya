@@ -63,11 +63,14 @@ Mục tiêu tương thích LangChain, LlamaIndex, OpenWebUI, Chroma, Qdrant, FAI
 YouTube không được biến trang chủ thành feed. Chỉ gắn video thật sự liên quan tại trang bài kinh/chủ đề, dùng lazy-load và `youtube-nocookie`, phục vụ minh họa, SEO và traffic chéo.
 
 ## 10. Tình trạng hiện tại (2026-09-01)
-- UI V2/V3 đã có responsive, reader controls, audio player, i18n, mã Việt, RAG-ready catalog.
+- UI V2/V3/V4 đã có responsive, reader controls, audio player, i18n, mã Việt, RAG-ready catalog.
 - Các bài test gồm TB 10, TB 21, TB 22 và một số bài ở TrB/TƯB/TCB/TiB.
 - TB 21 là bài kiểm thử chính.
-- Đã bổ sung Browser TTS, PDF tự sinh, global search/menu, quick jump reader trong source mới.
-- GitHub Actions phải chạy: npm install -> RAG export/validate -> next build -> smoke tests.
+- Đã bổ sung Browser TTS, PDF tự sinh, global search/menu, quick jump reader và tối ưu header mobile.
+- Đã sửa xung đột sticky giữa quick-jump và reader toolbar trên điện thoại.
+- **Latest validated commit:** `946b06be23025254bb0ec37cace4acd63d50f792`.
+- GitHub Actions run `33504008544`: npm install, RAG export/validate, Next build, smoke tests đều PASS.
+- Production deployment mới đã được yêu cầu tại Vercel với project `nikaya-reader-v4-final`, deployment `dpl_Hivg1xMzraXg332vjYe9PwSv1VrG`, URL `https://nikaya-reader-v4-final-mj9xz0fo6-khoa-3f1b.vercel.app`. Vercel connector hiện có lỗi read-back (deployment tạo được nhưng `get_deployment` có thể trả 404), vì vậy phiên mới phải **xác minh URL thực tế trước khi tuyên bố production READY**.
 
 ## 11. Quy trình chuẩn khi tiếp tục dự án
 1. Đọc `PROJECT_STATE.md` và `AGENTS.md`.
