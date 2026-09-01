@@ -1,0 +1,88 @@
+name: Finalize Trung Bo Site After MP3
+
+on:
+  push:
+    branches: [feature/mn-prebuilt-mp3]
+    paths:
+      - '.github/workflows/finalize-mn-site.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mn-site-finalizer-v1
+  cancel-in-progress: false
+
+env:
+  AUDIO_TAG: mn-vi-audio-v1
+
+jobs:
+  wait-and-finalize:
+    name: Wait for 152 MP3 then build full MN catalog
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/mn-prebuilt-mp3
+          fetch-depth: 0
+      - name: Wait until audio release is complete
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          READY=0
+          for attempt in $(seq 1 170); do
+            if RELEASE_ID=$(gh api "repos/$GITHUB_REPOSITORY/releases/tags/$AUDIO_TAG" --jq '.id' 2>/dev/null); then
+              COUNT=$(gh api --paginate "repos/$GITHUB_REPOSITORY/releases/$RELEASE_ID/assets?per_page=100" --jq '.[].name' 2>/dev/null | grep -E '^mn[0-9]+\.mp3$' | sort -u | wc -l | tr -d ' ')
+              DRAFT=$(gh api "repos/$GITHUB_REPOSITORY/releases/tags/$AUDIO_TAG" --jq '.draft')
+              echo "Audio progress: $COUNT/152 · draft=$DRAFT"
+              if [ "$COUNT" -eq 152 ] && [ "$DRAFT" = "false" ]; then READY=1; break; fi
+            else
+              echo 'Audio release not created yet.'
+            fi
+            sleep 120
+          done
+          if [ "$READY" -ne 1 ]; then echo 'Timed out waiting for complete MN audio release'; exit 1; fi
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Refresh branch before catalog generation
+        run: |
+          git fetch origin feature/mn-prebuilt-mp3
+          git reset --hard origin/feature/mn-prebuilt-mp3
+      - name: Generate complete MN 1..152 catalog and audio mappings
+        run: |
+          python scripts/finalize_mn_catalog.py
+          python - <<'PY'
+          import json
+          s=json.load(open('data/catalog/suttas.json',encoding='utf-8'))
+          a=json.load(open('data/catalog/audio.json',encoding='utf-8'))
+          mn=[x for x in s if x.get('collection')=='MN']
+          assert len(mn)==152, len(mn)
+          assert len({x['canonicalRef'] for x in mn})==152
+          assert all(f'nikaya.mn.{i}' in a and 'vi' in a[f'nikaya.mn.{i}'] for i in range(1,153))
+          print('Catalog validation OK: 152/152')
+          PY
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Build and validate website with full MN catalog
+        run: |
+          npm install
+          npm run rag:export
+          npm run build
+      - name: Commit completed MN catalog to staging branch
+        run: |
+          git config user.name 'nikaya-audio-bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add data/catalog/suttas.json data/catalog/audio.json data/exports || true
+          if git diff --cached --quiet; then
+            echo 'Catalog already up to date.'
+          else
+            git commit -m 'feat(mn): complete 152-sutta catalog with prebuilt MP3'
+            git push origin HEAD:feature/mn-prebuilt-mp3
+          fi
+          echo 'FULL TRUNG BO STAGING DATA COMPLETE: 152/152' >> "$GITHUB_STEP_SUMMARY"
