@@ -28,10 +28,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Install Piper and FFmpeg
+      - name: Install Piper, Vietnamese voice and FFmpeg
         run: |
           python -m pip install --upgrade pip
           pip install piper-tts==1.7.0
+          python -m piper.download_voices "$PIPER_VOICE"
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg
       - name: Render and validate Vietnamese sample
@@ -84,10 +85,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Install Piper and FFmpeg
+      - name: Install Piper, Vietnamese voice and FFmpeg
         run: |
           python -m pip install --upgrade pip
           pip install piper-tts==1.7.0
+          python -m piper.download_voices "$PIPER_VOICE"
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg
       - name: Calculate shard range
