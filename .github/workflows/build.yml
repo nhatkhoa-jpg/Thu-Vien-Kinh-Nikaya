@@ -2,7 +2,7 @@ name: Build & Validate
 
 on:
   push:
-    branches: [main, feature/mn-prebuilt-mp3]
+    branches: [main, feature/mn-prebuilt-mp3, feature/progress-home-dn]
   pull_request:
     branches: [main]
 
@@ -44,12 +44,10 @@ jobs:
               if(!asset.url.includes(`/releases/download/mn-vi-audio-v1/mn${i}.mp3`))throw new Error(`bad MP3 URL for MN ${i}`);
             }
             console.log('Full MN audio catalog validated: 152/152');
-          } else {
-            throw new Error(`MN catalog incomplete: ${mn.length}/152`);
-          }
+          } else throw new Error(`MN catalog incomplete: ${mn.length}/152`);
           NODE
       - run: npm run build
-      - name: Smoke test reader and MP3-first architecture
+      - name: Smoke test reader, home discovery and progress dashboard
         run: |
           npm run start -- -p 3000 > /tmp/nikaya-next.log 2>&1 &
           SERVER_PID=$!
@@ -60,17 +58,27 @@ jobs:
             sleep 1
           done
           if [ "$READY" -ne 1 ]; then cat /tmp/nikaya-next.log; exit 1; fi
+          curl --fail --silent http://127.0.0.1:3000/vi -o /tmp/home.html
+          grep -q 'Trường Bộ' /tmp/home.html
+          grep -q 'Trung Bộ' /tmp/home.html
+          grep -q 'Tương Ưng Bộ' /tmp/home.html
+          grep -q 'Tăng Chi Bộ' /tmp/home.html
+          grep -q 'Tiểu Bộ' /tmp/home.html
+          grep -q 'Tiến độ số hóa' /tmp/home.html
           curl --fail --silent http://127.0.0.1:3000/vi/library/mn-21-kakacupama -o /tmp/mn21.html
           grep -q 'compactEssentials' /tmp/mn21.html
           grep -q 'primaryMp3Disclosure' /tmp/mn21.html
-          grep -q 'V5.0-MN-STAGE' /tmp/mn21.html
+          grep -q 'V5.1-HOME-DN' /tmp/mn21.html
           grep -q 'mn21.mp3' /tmp/mn21.html
           grep -q 'Nghe bài kinh' /tmp/mn21.html
           grep -q 'Bản dịch:' /tmp/mn21.html
-          if grep -q 'Giọng thư viện' /tmp/mn21.html; then echo 'Legacy library TTS leaked into V5 reader'; exit 1; fi
+          if grep -q 'Giọng thư viện' /tmp/mn21.html; then echo 'Legacy library TTS leaked into reader'; exit 1; fi
+          curl --fail --silent http://127.0.0.1:3000/vi/tien-do -o /tmp/progress.html
+          grep -q 'TIẾN ĐỘ SỐ HÓA' /tmp/progress.html
+          grep -q 'Trung Bộ' /tmp/progress.html
           curl --fail --silent http://127.0.0.1:3000/en > /dev/null
           STATUS=$(curl --silent --output /dev/null --write-out '%{http_code}' http://127.0.0.1:3000/api/tts)
           test "$STATUS" = "404"
           curl -L --fail --silent --range 0-4095 'https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn21.mp3' -o /tmp/mn21.part
           test $(stat -c%s /tmp/mn21.part) -gt 1000
-          echo 'V5 MP3-first smoke test PASS'
+          echo 'V5.1 home/progress/MP3 smoke test PASS'
