@@ -1,0 +1,164 @@
+name: Build Full Truong Bo MP3
+
+on:
+  push:
+    branches: [feature/progress-home-dn]
+    paths:
+      - '.github/workflows/build-dn-audio.yml'
+      - 'scripts/build_collection_audio.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dn-vi-audio-v1
+  cancel-in-progress: false
+
+env:
+  AUDIO_TAG: dn-vi-audio-v1
+  PIPER_VOICE: vi_VN-vais1000-medium
+
+jobs:
+  init-release:
+    runs-on: ubuntu-latest
+    outputs:
+      release_id: ${{ steps.release.outputs.release_id }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create or find checkpoint release
+        id: release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          RELEASE_ID=$(gh api "repos/$GITHUB_REPOSITORY/releases?per_page=100" | jq -r --arg tag "$AUDIO_TAG" '.[] | select(.tag_name==$tag) | .id' | head -n1)
+          if [ -z "$RELEASE_ID" ]; then
+            gh release create "$AUDIO_TAG" --draft --target "$GITHUB_SHA" --title "Trường Bộ tiếng Việt · MP3 dựng sẵn v1" --notes "Checkpoint MP3 Trường Bộ DN1–DN34. Các batch có thể tiếp tục từ asset đã upload."
+            RELEASE_ID=$(gh api "repos/$GITHUB_REPOSITORY/releases?per_page=100" | jq -r --arg tag "$AUDIO_TAG" '.[] | select(.tag_name==$tag) | .id' | head -n1)
+          fi
+          test -n "$RELEASE_ID"
+          echo "release_id=$RELEASE_ID" >> "$GITHUB_OUTPUT"
+          echo "Release checkpoint: $RELEASE_ID" >> "$GITHUB_STEP_SUMMARY"
+
+  render:
+    needs: init-release
+    strategy:
+      fail-fast: false
+      matrix:
+        shard:
+          - { start: 1, end: 6 }
+          - { start: 7, end: 12 }
+          - { start: 13, end: 18 }
+          - { start: 19, end: 24 }
+          - { start: 25, end: 29 }
+          - { start: 30, end: 34 }
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    name: DN${{ matrix.shard.start }}–DN${{ matrix.shard.end }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Piper voice and FFmpeg
+        run: |
+          python -m pip install --upgrade pip
+          pip install piper-tts==1.7.0
+          python -m piper.download_voices "$PIPER_VOICE"
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+      - name: Check already published checkpoint assets
+        id: missing
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_ID: ${{ needs.init-release.outputs.release_id }}
+          START: ${{ matrix.shard.start }}
+          END: ${{ matrix.shard.end }}
+        run: |
+          set -euo pipefail
+          gh api "repos/$GITHUB_REPOSITORY/releases/$RELEASE_ID/assets?per_page=100" > /tmp/assets.json
+          python - <<'PY' > /tmp/missing.txt
+          import json,os
+          names={x['name'] for x in json.load(open('/tmp/assets.json'))}
+          start,end=int(os.environ['START']),int(os.environ['END'])
+          print(' '.join(str(i) for i in range(start,end+1) if f'dn{i}.mp3' not in names))
+          PY
+          MISSING=$(cat /tmp/missing.txt)
+          echo "numbers=$MISSING" >> "$GITHUB_OUTPUT"
+          if [ -z "$MISSING" ]; then echo 'All files in this shard already exist.'; else echo "Missing DN: $MISSING"; fi
+      - name: Render missing files one by one
+        if: steps.missing.outputs.numbers != ''
+        env:
+          NUMBERS: ${{ steps.missing.outputs.numbers }}
+        run: |
+          set -euo pipefail
+          mkdir -p dist/dn-audio
+          for i in $NUMBERS; do
+            python scripts/build_collection_audio.py --collection dn --start "$i" --end "$i" --out dist/dn-audio
+          done
+      - name: Validate and upload checkpoint assets
+        if: steps.missing.outputs.numbers != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NUMBERS: ${{ steps.missing.outputs.numbers }}
+        run: |
+          set -euo pipefail
+          for i in $NUMBERS; do
+            f="dist/dn-audio/dn${i}.mp3"
+            test -f "$f"
+            test "$(wc -c < "$f")" -gt 100000
+            D=$(ffprobe -v error -show_entries format=duration -of default=nw=1:nk=1 "$f")
+            python - "$f" "$D" <<'PY'
+          import sys
+          assert float(sys.argv[2]) > 20, (sys.argv[1], sys.argv[2])
+          PY
+            gh release upload "$AUDIO_TAG" "$f" --clobber
+            meta="dist/dn-audio/dn${i}.json"
+            [ ! -f "$meta" ] || gh release upload "$AUDIO_TAG" "$meta" --clobber
+          done
+      - name: Shard summary
+        run: echo "DN${{ matrix.shard.start }}–DN${{ matrix.shard.end }} checkpoint complete" >> "$GITHUB_STEP_SUMMARY"
+
+  verify-and-publish:
+    needs: [init-release, render]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify exact DN1–DN34 MP3 set
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_ID: ${{ needs.init-release.outputs.release_id }}
+        run: |
+          set -euo pipefail
+          gh api "repos/$GITHUB_REPOSITORY/releases/$RELEASE_ID/assets?per_page=100" > /tmp/assets.json
+          python - <<'PY'
+          import json
+          assets=json.load(open('/tmp/assets.json'))
+          names={a['name'] for a in assets if a['name'].endswith('.mp3')}
+          expected={f'dn{i}.mp3' for i in range(1,35)}
+          missing=sorted(expected-names)
+          extra=sorted(names-expected)
+          print('MP3 assets:',len(names))
+          if missing: print('Missing:',missing)
+          if extra: print('Extra:',extra)
+          assert names==expected, f'expected exact DN1..DN34; got {len(names)} MP3 assets'
+          PY
+      - name: Build public audio manifest
+        run: |
+          python - <<'PY'
+          import json,os
+          repo=os.environ['GITHUB_REPOSITORY']; tag=os.environ['AUDIO_TAG']
+          items=[{'id':f'nikaya.dn.{i}','canonicalRef':f'dn{i}','viCode':f'TrB {i}','language':'vi','url':f'https://github.com/{repo}/releases/download/{tag}/dn{i}.mp3','provider':'5 Đại Tạng Kinh Nikāya','voice':'Piper vi_VN-vais1000-medium','prebuilt':True} for i in range(1,35)]
+          json.dump({'version':'1','collection':'DN','language':'vi','count':34,'items':items},open('dn-audio-manifest.json','w',encoding='utf-8'),ensure_ascii=False,indent=2)
+          PY
+      - name: Publish verified release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_ID: ${{ needs.init-release.outputs.release_id }}
+        run: |
+          set -euo pipefail
+          gh release upload "$AUDIO_TAG" dn-audio-manifest.json --clobber
+          gh api --method PATCH "repos/$GITHUB_REPOSITORY/releases/$RELEASE_ID" -f draft=false >/dev/null
+          echo 'FULL DN AUDIO RELEASE COMPLETE: 34/34' >> "$GITHUB_STEP_SUMMARY"
