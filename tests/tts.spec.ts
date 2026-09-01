@@ -1,6 +1,6 @@
 import {test,expect} from '@playwright/test';
 
-test('library Vietnamese voice generates and plays decodable neural audio',async({page,browserName})=>{
+test('library Vietnamese voice generates, stops and resumes without rerender',async({page,browserName})=>{
   const consoleErrors:string[]=[];
   page.on('console',msg=>{if(msg.type()==='error')consoleErrors.push(msg.text());});
   page.on('pageerror',error=>consoleErrors.push(error.message));
@@ -15,9 +15,16 @@ test('library Vietnamese voice generates and plays decodable neural audio',async
   expect(duration,`${browserName}: generated speech duration`).toBeGreaterThan(4);
   expect(duration,`${browserName}: generated speech duration`).toBeLessThan(30);
 
-  // Playback may already be finished on fast runners, so active engine can be empty.
-  // A real failure must still move the reader into explicit error state.
-  await expect.poll(async()=>await diag.getAttribute('data-state'),{timeout:30_000}).not.toBe('error');
+  await expect.poll(async()=>await diag.getAttribute('data-state'),{timeout:30_000}).toBe('speaking');
+  const bytesBeforeStop=Number(await diag.getAttribute('data-audio-bytes'));
+
+  await page.getByTitle('Dừng').click();
+  await expect.poll(async()=>await diag.getAttribute('data-state')).toBe('paused');
+  await expect(page.getByRole('button',{name:'Đọc tiếp'})).toBeVisible();
+
+  await page.getByRole('button',{name:'Đọc tiếp'}).click();
+  await expect.poll(async()=>await diag.getAttribute('data-state'),{timeout:30_000}).toBe('speaking');
+  expect(Number(await diag.getAttribute('data-audio-bytes'))).toBe(bytesBeforeStop);
 
   // WebKit in Playwright currently lacks OPFS (navigator.storage.getDirectory).
   // vits-web catches this and continues without persistent model cache; audio is still generated.
