@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import {BookOpen, Search, Headphones, Home, Library, Bookmark} from 'lucide-react';
+import {BookOpen, Search, Headphones, Home, Library} from 'lucide-react';
 import {dict,type Locale} from '@/lib/i18n';
 import LanguageSelect from './LanguageSelect';
 
@@ -28,7 +28,6 @@ export default function Header({locale}:{locale:Locale}){
       <Link href={`/${locale}#collections`}><Library size={20}/><span>{d.navCollections}</span></Link>
       <Link href={`/${locale}#featured`}><Headphones size={20}/><span>{d.navListen}</span></Link>
       <Link href={`/${locale}#library`}><Search size={20}/><span>{d.searchShort}</span></Link>
-      <Link href={`/${locale}#library`}><Bookmark size={20}/><span>{d.saved}</span></Link>
     </nav>
   </>;
 }
