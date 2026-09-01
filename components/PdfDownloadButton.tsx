@@ -4,7 +4,12 @@ import {Download,FileText,LoaderCircle} from 'lucide-react';
 
 type Props={code:string;title:string;pali:string;summary:string;paragraphs:string[];sourceLabel:string;sourceUrl:string;locale:string};
 
-function clean(value:string){return (value||'').normalize('NFC').replace(/[\u200B-\u200D\uFEFF]/g,'').replace(/\s+/g,' ').trim();}
+const paliFallback:Record<string,string>={
+  'ā':'a','Ā':'A','ī':'i','Ī':'I','ū':'u','Ū':'U','ṅ':'n','Ṅ':'N','ñ':'n','Ñ':'N','ṭ':'t','Ṭ':'T','ḍ':'d','Ḍ':'D','ṇ':'n','Ṇ':'N','ḷ':'l','Ḷ':'L','ṃ':'m','Ṃ':'M','ṁ':'m','Ṁ':'M'
+};
+function clean(value:string){
+  return (value||'').normalize('NFC').replace(/[\u200B-\u200D\uFEFF]/g,'').replace(/\uFFFD/g,'').replace(/[āĀīĪūŪṅṄñÑṭṬḍḌṇṆḷḶṃṂṁṀ]/g,ch=>paliFallback[ch]||ch).replace(/\s+/g,' ').trim();
+}
 function segmentNode(raw:string,index:number){
   const value=clean(raw);
   const match=value.match(/^SC\s+(\d+(?:\.\d+)?)\s+(.*)$/i);
@@ -33,8 +38,8 @@ export default function PdfDownloadButton({code,title,pali,summary,paragraphs,so
           {type:'rect',x:0,y:0,w:595,h:842,color:page===1?'#FBF8F1':'#FFFDF9'},
           ...(page===1?[{type:'rect',x:0,y:0,w:595,h:18,color:'#14523F'},{type:'rect',x:0,y:18,w:595,h:5,color:'#D5AC58'}]:[])
         ]}),
-        header:(current:number)=>current===1?null:{margin:[46,26,46,0],columns:[{text:'5 ĐẠI TẠNG KINH NIKĀYA',fontSize:9,bold:true,color:'#14523F',characterSpacing:1.1},{text:`${code} · ${pdfTitle}`,fontSize:8.5,color:'#707873',alignment:'right'}]},
-        footer:(current:number,total:number)=>({margin:[46,18,46,0],columns:[{text:vi?'Thư viện 5 Đại Tạng Kinh Nikāya':'Five Nikāya Library',fontSize:8.5,color:'#7B817D'},{text:`${current} / ${total}`,fontSize:8.5,color:'#7B817D',alignment:'right'}]}),
+        header:(current:number)=>current===1?null:{margin:[46,26,46,0],columns:[{text:'5 DAI TANG KINH NIKAYA',fontSize:9,bold:true,color:'#14523F',characterSpacing:1.1},{text:`${code} · ${pdfTitle}`,fontSize:8.5,color:'#707873',alignment:'right'}]},
+        footer:(current:number,total:number)=>({margin:[46,18,46,0],columns:[{text:vi?'Thu vien 5 Dai Tang Kinh Nikaya':'Five Nikaya Library',fontSize:8.5,color:'#7B817D'},{text:`${current} / ${total}`,fontSize:8.5,color:'#7B817D',alignment:'right'}]}),
         content:[
           {text:'5 ĐẠI TẠNG KINH NIKĀYA',style:'brand',margin:[0,4,0,24]},
           {table:{widths:['auto'],body:[[{text:code,style:'code'}]]},layout:{fillColor:()=> '#F1D79D',hLineWidth:()=>0,vLineWidth:()=>0,paddingLeft:()=>11,paddingRight:()=>11,paddingTop:()=>7,paddingBottom:()=>7},margin:[0,0,0,18]},
@@ -64,5 +69,5 @@ export default function PdfDownloadButton({code,title,pali,summary,paragraphs,so
       pdfMake.createPdf(doc).download(`${safe||'kinh-nikaya'}.pdf`);
     }finally{setBusy(false);}
   }
-  return <button className="pdfDownloadButton" onClick={download} disabled={!paragraphs.length||busy}>{busy?<LoaderCircle className="spin" size={18}/>:<Download size={18}/>}<span><strong>{locale==='vi'?'Tạo & tải PDF':'Create & download PDF'}</strong><small>{locale==='vi'?'Bản đọc chữ lớn, trình bày lại từ nội dung của thư viện':'Large-print reading edition generated from library content'}</small></span><FileText size={20}/></button>;
+  return <button className="pdfDownloadButton" onClick={download} disabled={!paragraphs.length||busy}>{busy?<LoaderCircle className="spin" size={18}/>:<Download size={18}/>}<span><strong>{locale==='vi'?'Tạo & tải PDF':'Create & download PDF'}</strong><small>{locale==='vi'?'Bản đọc chữ lớn; Pāli dùng fallback Latin nếu font PDF thiếu ký tự':'Large-print edition with safe Pali glyph fallback'}</small></span><FileText size={20}/></button>;
 }
