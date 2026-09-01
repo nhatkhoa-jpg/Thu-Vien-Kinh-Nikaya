@@ -24,7 +24,7 @@ jobs:
           test "$(wc -l < data/exports/nikaya-knowledge.en.jsonl)" -eq 11
           node -e "const fs=require('fs'); for(const f of fs.readdirSync('data/exports')) for(const l of fs.readFileSync('data/exports/'+f,'utf8').trim().split('\\n')) JSON.parse(l)"
       - run: npm run build
-      - name: Smoke test rendered routes
+      - name: Smoke test rendered routes and internal TTS
         run: |
           npm run start -- -p 3000 > /tmp/nikaya-next.log 2>&1 &
           SERVER_PID=$!
@@ -37,3 +37,9 @@ jobs:
           if [ "$READY" -ne 1 ]; then cat /tmp/nikaya-next.log; exit 1; fi
           curl --fail --silent http://127.0.0.1:3000/vi/library/mn-21-kakacupama > /dev/null
           curl --fail --silent http://127.0.0.1:3000/en > /dev/null
+          curl --fail --silent --show-error -X POST http://127.0.0.1:3000/api/tts \
+            -H 'Content-Type: application/json' \
+            --data '{"text":"Đây là bài kiểm tra giọng đọc tiếng Việt của thư viện.","locale":"vi","rate":1}' \
+            -o /tmp/nikaya-tts.wav
+          test "$(head -c 4 /tmp/nikaya-tts.wav)" = "RIFF"
+          test "$(wc -c < /tmp/nikaya-tts.wav)" -gt 1000
