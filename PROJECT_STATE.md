@@ -33,11 +33,22 @@ Tầng 2 (tùy chọn): MP3 đã kiểm chứng đúng ngôn ngữ. MP3 ngoài c
 Player MP3 giữ chỉnh tốc độ 0.75×–2× và tua ±15 giây.
 Trên trang bài kinh, nút Browser TTS, PDF và MP3 phải nằm **ngay dưới tiêu đề/công cụ đọc**, không giấu ở cột phụ phía dưới trên mobile.
 
+### Android/Chrome TTS
+- Không được set UI sang “đang đọc” trước khi `SpeechSynthesisUtterance.onstart` thực sự chạy.
+- Không để effect reload voice gọi `speechSynthesis.cancel()` giữa phiên đọc khi Chrome nạp voices trễ.
+- Chia toàn văn thành chunk ngắn (~220 ký tự) để tránh lỗi Chrome Android với utterance dài.
+- Nạp voices nhiều lần sau mount + lắng nghe `voiceschanged`; hỗ trợ cả locale dạng `vi-VN` và Android dạng `vi_VN`.
+- Nếu không có voice/engine, UI phải báo lỗi thật (`synthesis-unavailable`, `language-unavailable`, `voice-unavailable`, `not-allowed`...) và cho Thử lại; không được giả trạng thái “Tạm dừng” khi thực tế không phát tiếng.
+- Nếu Chrome không expose voice nào, vẫn thử system default và hiện fallback hướng dẫn Android Chrome `⋮ -> Nghe trang này` / cấu hình Text-to-speech của hệ thống.
+
 ## 5. PDF
 - Không dùng PDF bên ngoài làm bản chính trên UI.
 - Website tự sinh PDF từ chính nội dung hiện đang có trong thư viện.
 - PDF phải có bìa/branding, mã Việt, tên kinh, Pāli, tóm lược, toàn văn, nguồn, số trang, màu nhận diện và typography rõ.
 - Hiện dùng `pdfmake` tải động phía client để tránh tăng bundle trang đọc.
+- Text đưa vào PDF phải `normalize('NFC')` và loại zero-width characters để giảm lỗi Unicode.
+- Không dùng italic cho dòng Pāli nếu font nhúng gây thiếu glyph; ưu tiên hiển thị đúng ký tự hơn hiệu ứng chữ nghiêng.
+- Bản PDF hiện dùng body ~13pt, summary ~14.2pt, title ~34pt; mỗi segment có marker riêng, summary card, màu nhận diện, header/footer và nền đọc nhẹ để bớt nhàm chán.
 
 ## 6. Điều hướng và tìm kiếm
 - Header phải có Trang chủ, 5 Đại Tạng, Thư viện, Nghe, tìm kiếm toàn thư viện, chọn ngôn ngữ và menu mobile.
@@ -79,9 +90,11 @@ YouTube không được biến trang chủ thành feed. Chỉ gắn video thật
 - Browser TTS + PDF tự sinh + MP3 tiếng Việt dự phòng đã được đưa **ngay dưới tiêu đề** bài kinh.
 - Khung mobile đã khóa width theo viewport; reader toolbar được wrap để không vỡ ngang.
 - URL SEO/canonical/sitemap/robots đã gom về `SITE_URL` cố định.
-- **Latest validated code commit:** `ac93e21b5701c3b3a380acad017cdf558276be3e`.
-- GitHub Actions run `33506905242`: npm install, RAG export/validate, Next build, smoke tests đều PASS.
-- Đã gửi production deployment vào đúng project `nikaya-reader-v4-final`: deployment `dpl_6PXZFSzBFaharFiEfWcdpkDhDcCs`; stable alias `https://nikaya-reader-v4-final-khoa-3f1b.vercel.app`.
+- Đã sửa lỗi Android Chrome TTS: voice load trễ không còn cancel phiên đọc; chỉ báo speaking sau `onstart`; chunk đọc ngắn; có watchdog/error state/retry và cảnh báo khi thiết bị không expose TTS voice.
+- Đã redesign PDF: chữ lớn hơn, Unicode NFC, bỏ Pāli italic dễ lỗi glyph, summary card, segment markers, màu/branding/header/footer dễ đọc lâu.
+- **Latest validated code commit:** `4d8f53ad72c8245d2fa91edb8fef6414badf06f6`.
+- GitHub Actions run `33508213740`: npm install, RAG export/validate, Next build, smoke tests đều PASS.
+- Đã gửi production deployment vào đúng project `nikaya-reader-v4-final`: deployment `dpl_Ag6yoeWbc7H9fBeTSUxHGpwwYGg8`; stable alias vẫn là `https://nikaya-reader-v4-final-khoa-3f1b.vercel.app`.
 - Vercel connector hiện vẫn có lỗi read-back 404 sau khi tạo deployment; không được vì lỗi connector này mà tạo project mới. Kiểm tra stable alias/production, sửa trên cùng project.
 
 ## 12. Quy trình chuẩn khi tiếp tục dự án
