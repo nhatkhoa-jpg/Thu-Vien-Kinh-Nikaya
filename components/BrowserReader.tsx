@@ -68,6 +68,7 @@ export default function BrowserReader({text,locale,chunkMax=420}:{text:string;lo
   const [state,setState]=useState<ReaderState>('idle');
   const [message,setMessage]=useState('');
   const [progress,setProgress]=useState(0);
+  const [lastError,setLastError]=useState('');
   const [diag,setDiag]=useState({bytes:0,duration:0,completedChunks:0,synthesisCount:0,currentChunk:0});
   const queueRef=useRef<string[]>([]);
   const indexRef=useRef(0);
@@ -101,7 +102,17 @@ export default function BrowserReader({text,locale,chunkMax=420}:{text:string;lo
   },[rate]);
 
   function clearAudio(){
-    if(audioRef.current){audioRef.current.pause();audioRef.current.src='';audioRef.current=null;}
+    const audio=audioRef.current;
+    if(audio){
+      // Important: clearing src can fire an error event in Android Chrome/Firefox.
+      // Detach handlers first so disposal of the OLD chunk cannot kill the NEW chunk.
+      audio.onplay=null;
+      audio.onended=null;
+      audio.onerror=null;
+      audio.pause();
+      audio.removeAttribute('src');
+      audioRef.current=null;
+    }
     if(audioUrlRef.current){URL.revokeObjectURL(audioUrlRef.current);audioUrlRef.current='';}
   }
 
@@ -134,8 +145,8 @@ export default function BrowserReader({text,locale,chunkMax=420}:{text:string;lo
     activeRef.current=false;prefetchRef.current=null;clearAudio();setActiveEngine(null);setState('idle');setMessage(vi?'Đã đọc xong.':'Finished.');
   }
 
-  function fail(code:string){
-    activeRef.current=false;prefetchRef.current=null;clearAudio();setActiveEngine(null);setState('error');setMessage(readableError(code,vi));
+  function fail(code:string,detail=''){
+    activeRef.current=false;prefetchRef.current=null;setLastError(detail||code);clearAudio();setActiveEngine(null);setState('error');setMessage(readableError(code,vi));
   }
 
   function renderLibraryChunk(index:number,run:number,showProgress:boolean){
@@ -153,7 +164,6 @@ export default function BrowserReader({text,locale,chunkMax=420}:{text:string;lo
       const result=await prefetchRef.current.promise;
       prefetchRef.current=null;
       if(result.blob)return result.blob;
-      // Prefetch may fail on a memory-constrained mobile browser. Retry once in a fresh worker.
       return renderLibraryChunk(index,run,true);
     }
     return renderLibraryChunk(index,run,true);
@@ -191,11 +201,17 @@ export default function BrowserReader({text,locale,chunkMax=420}:{text:string;lo
         setDiag(current=>({...current,completedChunks:current.completedChunks+1,currentChunk:index+1}));
         void playLibrary(index+1,run);
       };
-      audio.onerror=()=>{if(run===runRef.current)fail('library-tts-failed');};
+      audio.onerror=()=>{
+        if(run===runRef.current){
+          const code=audio.error?.code||0;
+          fail('library-tts-failed',`audio-error:${code}:chunk:${index}`);
+        }
+      };
       await audio.play();
     }catch(error:any){
-      console.error('piper-library-tts-failed',error);
-      if(run===runRef.current)fail(piperVoiceForLocale(locale)?'library-tts-failed':'library-language-unavailable');
+      const detail=String(error?.message||error||'unknown-library-error');
+      console.error('piper-library-tts-failed',detail);
+      if(run===runRef.current)fail(piperVoiceForLocale(locale)?'library-tts-failed':'library-language-unavailable',detail);
     }
   }
 
@@ -213,7 +229,7 @@ export default function BrowserReader({text,locale,chunkMax=420}:{text:string;lo
     utteranceRef.current=utterance;
     utterance.onstart=()=>{if(run===runRef.current){setState('speaking');setMessage(vi?`Đang đọc bằng ${selected.name} · ${rate}×.`:`Reading with ${selected.name} · ${rate}×.`);}};
     utterance.onend=()=>{if(activeRef.current&&run===runRef.current){indexRef.current=index+1;setDiag(current=>({...current,completedChunks:current.completedChunks+1,currentChunk:index+1}));setTimeout(()=>speakDevice(index+1,run),80);}};
-    utterance.onerror=(event:any)=>{if(run===runRef.current&&event?.error!=='canceled'&&event?.error!=='interrupted')fail(event?.error||'synthesis-unavailable');};
+    utterance.onerror=(event:any)=>{if(run===runRef.current&&event?.error!=='canceled'&&event?.error!=='interrupted')fail(event?.error||'synthesis-unavailable',String(event?.error||'device-error'));};
     synth.cancel();synth.resume();synth.speak(utterance);
   }
 
@@ -222,7 +238,7 @@ export default function BrowserReader({text,locale,chunkMax=420}:{text:string;lo
     const choice:Engine=engine==='auto'?'library':engine;
     queueRef.current=choice==='device'?deviceChunks:libraryChunks;
     if(!queueRef.current.length)return;
-    activeRef.current=true;indexRef.current=0;synthesisCountRef.current=0;
+    activeRef.current=true;indexRef.current=0;synthesisCountRef.current=0;setLastError('');
     setState('loading');setDiag({bytes:0,duration:0,completedChunks:0,synthesisCount:0,currentChunk:0});
     const run=runRef.current;
     if(choice==='device')speakDevice(0,run);else void playLibrary(0,run);
@@ -260,6 +276,6 @@ export default function BrowserReader({text,locale,chunkMax=420}:{text:string;lo
     {state==='loading'&&progress>0&&<div className="ttsStatus"><Volume2 size={14}/><span>{message}</span></div>}
     {message&&state!=='loading'&&<div className={`ttsStatus ${state==='error'?'ttsStatusError':''}`}>{state==='error'?<AlertCircle size={14}/>:<Volume2 size={14}/>}<span>{message}</span>{state==='error'&&<button onClick={start}><RefreshCw size={13}/>{vi?'Thử lại':'Retry'}</button>}</div>}
     <p className="ttsNote">{vi?'Giọng thư viện là giọng neural tiếng Việt, chạy ngay trong trình duyệt và không cần Google/Samsung TTS. Lần đầu tải mô hình khoảng 64 MB, sau đó được lưu trên máy.':'The library neural voice runs in-browser and does not require a device TTS engine.'}</p>
-    <span hidden data-testid="tts-diagnostics" data-state={state} data-engine={activeEngine||''} data-audio-bytes={diag.bytes} data-audio-duration={diag.duration.toFixed(3)} data-completed-chunks={diag.completedChunks} data-synthesis-count={diag.synthesisCount} data-current-chunk={diag.currentChunk}/>
+    <span hidden data-testid="tts-diagnostics" data-state={state} data-engine={activeEngine||''} data-audio-bytes={diag.bytes} data-audio-duration={diag.duration.toFixed(3)} data-completed-chunks={diag.completedChunks} data-synthesis-count={diag.synthesisCount} data-current-chunk={diag.currentChunk} data-last-error={lastError}/>
   </div>;
 }
