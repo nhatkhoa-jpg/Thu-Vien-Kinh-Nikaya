@@ -38,7 +38,7 @@ jobs:
           curl --fail --silent http://127.0.0.1:3000/vi/library/mn-21-kakacupama -o /tmp/mn21.html
           grep -q 'compactEssentials' /tmp/mn21.html
           grep -q 'essentialDisclosure' /tmp/mn21.html
-          grep -q 'V4.7' /tmp/mn21.html
+          grep -q 'V4.8' /tmp/mn21.html
           curl --fail --silent http://127.0.0.1:3000/en > /dev/null
           curl --fail --silent --show-error -X POST http://127.0.0.1:3000/api/tts \
             -H 'Content-Type: application/json' \
