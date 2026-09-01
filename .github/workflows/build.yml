@@ -16,3 +16,22 @@ jobs:
           node-version: 22
       - run: npm install
       - run: npm run build
+      - name: Smoke test rendered routes
+        run: |
+          npm run start -- -p 3000 > /tmp/nikaya-next.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill $SERVER_PID || true' EXIT
+          READY=0
+          for i in {1..30}; do
+            if curl --fail --silent http://127.0.0.1:3000/vi > /dev/null; then
+              READY=1
+              break
+            fi
+            sleep 1
+          done
+          if [ "$READY" -ne 1 ]; then
+            cat /tmp/nikaya-next.log
+            exit 1
+          fi
+          curl --fail --silent http://127.0.0.1:3000/vi/library/mn-21-kakacupama > /dev/null
+          curl --fail --silent http://127.0.0.1:3000/en > /dev/null
