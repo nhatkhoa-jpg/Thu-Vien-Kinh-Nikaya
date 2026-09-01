@@ -6,7 +6,7 @@ import {BookOpen,Headphones,Home,Library,Menu,Search,X} from 'lucide-react';
 import {suttas,suttaDisplayCode} from '@/lib/data';
 import type {Locale} from '@/lib/i18n';
 
-const RELEASE='V4.7';
+const RELEASE='V4.8';
 
 export default function HeaderTools({locale}:{locale:Locale}){
   const vi=locale==='vi';
@@ -21,6 +21,7 @@ export default function HeaderTools({locale}:{locale:Locale}){
   },[q]);
   function go(slug:string){setSearchOpen(false);setMenuOpen(false);setQ('');router.push(`/${locale}/library/${slug}`);}
   return <>
+    <span className="testVersionBadge" aria-label={`Test build ${RELEASE}`}>{RELEASE}</span>
     <button data-release={RELEASE} className="headerSearchTrigger" onClick={()=>setSearchOpen(true)} aria-label={vi?'Tìm kiếm toàn thư viện':'Search library'}><Search size={18}/><span>{vi?'Tìm kinh...':'Search...'}</span></button>
     <button className="mobileMenuButton" onClick={()=>setMenuOpen(true)} aria-label={vi?'Mở menu':'Open menu'}><Menu size={21}/></button>
     {searchOpen&&<div className="commandBackdrop" onMouseDown={()=>setSearchOpen(false)}><section className="commandPalette" onMouseDown={e=>e.stopPropagation()}>
