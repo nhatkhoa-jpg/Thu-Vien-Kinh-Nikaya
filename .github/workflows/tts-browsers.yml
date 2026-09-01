@@ -1,0 +1,31 @@
+name: TTS Cross Browser
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'components/BrowserReader.tsx'
+      - 'lib/piperClient.ts'
+      - 'app/__test/tts/**'
+      - 'tests/tts.spec.ts'
+      - 'playwright.config.ts'
+      - 'package.json'
+      - '.github/workflows/tts-browsers.yml'
+
+jobs:
+  tts-browser:
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, firefox, webkit]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install
+      - run: npm run build
+      - run: npx playwright install --with-deps ${{ matrix.browser }}
+      - name: Generate and decode Vietnamese neural speech in ${{ matrix.browser }}
+        run: npx playwright test tests/tts.spec.ts --project=${{ matrix.browser }}
