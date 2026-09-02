@@ -1,0 +1,163 @@
+name: Build Preservation Audio V2
+
+on:
+  push:
+    branches: [feature/preservation-audio-v2]
+    paths:
+      - '.github/workflows/build-preservation-audio.yml'
+  workflow_dispatch:
+    inputs:
+      collection:
+        description: 'Collection to segment (mn or dn)'
+        required: true
+        default: 'mn'
+        type: choice
+        options: [mn, dn]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: preservation-audio-v2-${{ github.event.inputs.collection || 'mn' }}
+  cancel-in-progress: false
+
+env:
+  COLLECTION: ${{ github.event.inputs.collection || 'mn' }}
+  SEGMENT_SECONDS: '600'
+
+jobs:
+  init:
+    runs-on: ubuntu-latest
+    outputs:
+      source_tag: ${{ steps.meta.outputs.source_tag }}
+      target_tag: ${{ steps.meta.outputs.target_tag }}
+      count: ${{ steps.meta.outputs.count }}
+    steps:
+      - id: meta
+        shell: bash
+        run: |
+          set -euo pipefail
+          case "$COLLECTION" in
+            mn) SOURCE_TAG='mn-vi-audio-v1'; TARGET_TAG='mn-vi-segments-v2'; COUNT=152 ;;
+            dn) SOURCE_TAG='dn-vi-audio-v1'; TARGET_TAG='dn-vi-segments-v2'; COUNT=34 ;;
+            *) echo "Unsupported collection: $COLLECTION"; exit 1 ;;
+          esac
+          echo "source_tag=$SOURCE_TAG" >> "$GITHUB_OUTPUT"
+          echo "target_tag=$TARGET_TAG" >> "$GITHUB_OUTPUT"
+          echo "count=$COUNT" >> "$GITHUB_OUTPUT"
+      - name: Create or reuse target release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TARGET_TAG: ${{ steps.meta.outputs.target_tag }}
+        run: |
+          set -euo pipefail
+          if ! gh release view "$TARGET_TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release create "$TARGET_TAG" --repo "$GITHUB_REPOSITORY" --draft --target "$GITHUB_SHA" \
+              --title "Preservation segmented audio V2 · ${COLLECTION^^}" \
+              --notes "10-minute MP3 segments, SHA-256 manifests, resumable checkpoint release. Legacy full MP3 remains untouched."
+          fi
+
+  segment:
+    needs: init
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      max-parallel: 8
+      matrix:
+        shard: [0,1,2,3,4,5,6,7]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install FFmpeg
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+      - name: Segment assigned discourses and build manifests
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_TAG: ${{ needs.init.outputs.source_tag }}
+          TARGET_TAG: ${{ needs.init.outputs.target_tag }}
+          COUNT: ${{ needs.init.outputs.count }}
+          SHARD: ${{ matrix.shard }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p work out
+          for i in $(seq 1 "$COUNT"); do
+            if [ $(( (i-1) % 8 )) -ne "$SHARD" ]; then continue; fi
+            prefix="${COLLECTION}${i}"
+            manifest="${prefix}.manifest.json"
+            if gh release download "$TARGET_TAG" --repo "$GITHUB_REPOSITORY" --pattern "$manifest" --dir /tmp/existing >/dev/null 2>&1; then
+              echo "Checkpoint exists: $manifest"
+              rm -rf /tmp/existing
+              continue
+            fi
+            rm -rf /tmp/existing
+            src="work/${prefix}.mp3"
+            echo "Downloading $SOURCE_TAG/$prefix.mp3"
+            gh release download "$SOURCE_TAG" --repo "$GITHUB_REPOSITORY" --pattern "${prefix}.mp3" --dir work
+            test -s "$src"
+            rm -rf "out/$prefix" && mkdir -p "out/$prefix"
+            ffmpeg -hide_banner -loglevel error -y -i "$src" -map 0:a:0 -c copy \
+              -f segment -segment_time "$SEGMENT_SECONDS" -reset_timestamps 1 \
+              "out/$prefix/${prefix}-s%03d.mp3"
+            python - "$prefix" "$TARGET_TAG" "out/$prefix" <<'PY'
+          import hashlib,json,os,subprocess,sys
+          prefix,tag,outdir=sys.argv[1:]
+          repo=os.environ['GITHUB_REPOSITORY']
+          files=sorted(f for f in os.listdir(outdir) if f.endswith('.mp3'))
+          assert files, prefix
+          segments=[]
+          for idx,name in enumerate(files,1):
+              path=os.path.join(outdir,name)
+              h=hashlib.sha256(open(path,'rb').read()).hexdigest()
+              duration=float(subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','default=nw=1:nk=1',path],text=True).strip())
+              url=f'https://github.com/{repo}/releases/download/{tag}/{name}'
+              segments.append({'id':f'{prefix}-s{idx:03d}','duration':round(duration,3),'sha256':h,'bytes':os.path.getsize(path),'sources':[{'url':url,'provider':'GitHub Release','sha256':h}]})
+          manifest={
+              'version':'2.0',
+              'canonicalRef':prefix,
+              'language':'vi',
+              'segmentSecondsTarget':int(os.environ.get('SEGMENT_SECONDS','600')),
+              'segmentCount':len(segments),
+              'segments':segments,
+              'legacyFullMp3':f'https://github.com/{repo}/releases/download/{os.environ["SOURCE_TAG"]}/{prefix}.mp3',
+              'mirrorPolicy':'Each segment may contain multiple independent sources; player falls back in listed order.'
+          }
+          with open(f'{prefix}.manifest.json','w',encoding='utf-8') as f: json.dump(manifest,f,ensure_ascii=False,indent=2)
+          PY
+            for f in out/$prefix/*.mp3; do gh release upload "$TARGET_TAG" "$f" --repo "$GITHUB_REPOSITORY" --clobber; done
+            gh release upload "$TARGET_TAG" "$manifest" --repo "$GITHUB_REPOSITORY" --clobber
+            rm -f "$src" "$manifest"
+            rm -rf "out/$prefix"
+          done
+
+  verify:
+    needs: [init, segment]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify every discourse has a manifest and publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TARGET_TAG: ${{ needs.init.outputs.target_tag }}
+          COUNT: ${{ needs.init.outputs.count }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          RELEASE_ID=$(gh release view "$TARGET_TAG" --repo "$GITHUB_REPOSITORY" --json databaseId --jq '.databaseId')
+          test -n "$RELEASE_ID"
+          gh api --paginate "repos/$GITHUB_REPOSITORY/releases/$RELEASE_ID/assets?per_page=100" > /tmp/assets-pages.json
+          jq -s 'add' /tmp/assets-pages.json > /tmp/assets.json || cp /tmp/assets-pages.json /tmp/assets.json
+          python - <<'PY'
+          import json,os
+          raw=json.load(open('/tmp/assets.json'))
+          assets=raw if isinstance(raw,list) else []
+          names={x['name'] for x in assets}
+          c=os.environ['COLLECTION']; count=int(os.environ['COUNT'])
+          missing=[f'{c}{i}.manifest.json' for i in range(1,count+1) if f'{c}{i}.manifest.json' not in names]
+          print('assets:',len(names),'missing manifests:',len(missing))
+          if missing: print('first missing:',missing[:20])
+          assert not missing, f'{len(missing)} manifests missing'
+          PY
+          gh api --method PATCH "repos/$GITHUB_REPOSITORY/releases/$RELEASE_ID" -f draft=false >/dev/null
+          echo "PRESERVATION AUDIO V2 COMPLETE: $COLLECTION $COUNT/$COUNT manifests" >> "$GITHUB_STEP_SUMMARY"
