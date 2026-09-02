@@ -3,11 +3,8 @@ name: Materialize DN Corpus
 on:
   push:
     branches: [feature/dn-corpus-data-first]
-    paths:
-      - 'scripts/materialize_dn_corpus.py'
-      - 'lib/sutta-content.ts'
-      - 'data/content/dn.vi.json'
-      - '.github/workflows/materialize-dn-corpus.yml'
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -74,6 +71,7 @@ jobs:
           done
           echo 'PASS DN reader smoke: dn1/dn16/dn34 full text + PDF surface'
       - name: Commit materialized corpus and generated exports
+        if: github.event_name != 'pull_request'
         shell: bash
         run: |
           set -euo pipefail
