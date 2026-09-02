@@ -25,8 +25,8 @@
     "wavenet": {
       "freeTierCharacters": 4000000,
       "projectSafetyLimitCharacters": 3600000,
-      "usedCharacters": 567,
-      "remainingProjectSafeCharacters": 3599433,
+      "usedCharacters": 10424,
+      "remainingProjectSafeCharacters": 3589576,
       "status": "SAFE"
     }
   },
@@ -66,6 +66,18 @@
       ],
       "model": "neural2",
       "workflowRun": "33584098571",
+      "result": "success"
+    },
+    {
+      "date": "2026-09-02",
+      "purpose": "progressive final-quality scripture audio",
+      "canonicalRef": "mn3",
+      "charactersPerVoice": 9857,
+      "voices": [
+        "vi-VN-Wavenet-A"
+      ],
+      "model": "wavenet",
+      "workflowRun": "33587130793",
       "result": "success"
     }
   ]
