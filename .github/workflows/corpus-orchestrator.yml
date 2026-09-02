@@ -18,8 +18,10 @@ on:
         required: true
         default: false
         type: boolean
+  # Scheduled autopilot deliberately advances SN only. Other collections stay
+  # under explicit Work/manual control until their integration state is merged.
   schedule:
-    - cron: "17 */6 * * *"
+    - cron: "17 * * * *"
 
 permissions:
   contents: write
@@ -44,25 +46,56 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Preflight pending full-text work
+        id: preflight
+        shell: bash
+        run: |
+          set -euo pipefail
+          pending=$(python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          collection = os.environ["COLLECTION"]
+          path = Path("data/status/corpus-status.json")
+          if not path.exists():
+              print(1)
+              raise SystemExit
+          data = json.loads(path.read_text(encoding="utf-8"))
+          row = next((item for item in data.get("collections", []) if item.get("collection") == collection), None)
+          print(int(row.get("pendingFullTextCount", 1)) if row else 1)
+          PY
+          )
+          echo "pending=$pending" >> "$GITHUB_OUTPUT"
+          if [ "$pending" = "0" ]; then
+            echo "needs_work=false" >> "$GITHUB_OUTPUT"
+            echo "$COLLECTION has zero pending full-text records; exiting cheaply."
+          else
+            echo "needs_work=true" >> "$GITHUB_OUTPUT"
+            echo "$COLLECTION pending full-text records: $pending"
+          fi
       - name: Materialize one resumable batch
+        if: steps.preflight.outputs.needs_work == 'true'
         run: python scripts/materialize_fulltext.py --collection "$COLLECTION" --batch-size "$BATCH_SIZE" --workers 12
       - name: Refresh and validate machine-readable status
+        if: steps.preflight.outputs.needs_work == 'true'
         run: |
           python scripts/update_corpus_status.py
           python scripts/validate_corpus.py --collection "$COLLECTION"
       - uses: actions/setup-node@v4
-        if: env.PUBLISH == 'true'
+        if: steps.preflight.outputs.needs_work == 'true' && env.PUBLISH == 'true'
         with:
           node-version: "22"
           cache: npm
       - name: Milestone-only derived exports and production build
-        if: env.PUBLISH == 'true'
+        if: steps.preflight.outputs.needs_work == 'true' && env.PUBLISH == 'true'
         run: |
           python scripts/generate_content_registry.py
           npm install
           npm run rag:export
           npm run build
       - name: Commit successful checkpoint
+        if: steps.preflight.outputs.needs_work == 'true'
         run: |
           if git diff --quiet; then
             echo "No new verified corpus records."
