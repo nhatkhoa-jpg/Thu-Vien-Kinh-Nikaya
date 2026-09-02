@@ -7,6 +7,8 @@
     "build": "next build",
     "start": "next start",
     "rag:export": "node scripts/export-rag.mjs",
+    "media:export": "node scripts/export-local-media-pack.mjs",
+    "media:pdf": "node scripts/render-collection-pdf.mjs",
     "dev:vinext": "vinext dev --port 3001",
     "build:vinext": "vinext build",
     "start:vinext": "wrangler dev --config dist/server/wrangler.json",
