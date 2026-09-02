@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import {Activity,ArrowRight,BookOpen,Headphones,Download,Bookmark,Clock,Play,ShieldCheck,Sparkles} from 'lucide-react';
+import {Activity,ArrowRight,BookOpen,Headphones,Download,Clock,Play,ShieldCheck,Sparkles,Scale,TableProperties} from 'lucide-react';
 import {dict,isLocale,type Locale} from '@/lib/i18n';
 import {collections,suttas,collectionDisplayCode,suttaDisplayCode,suttaAudio} from '@/lib/data';
 import LibraryExplorer from '@/components/LibraryExplorer';
@@ -44,6 +44,11 @@ export default async function LocaleHome({params,searchParams}:{params:Promise<{
       <a href="#library"><span className="startIcon"><BookOpen size={20}/></span><span><strong>{vi?'Đọc & tra cứu':'Read & search'}</strong><small>{vi?'Tìm theo mã, tên Việt, Pāli hoặc chủ đề':'Search by code, title, Pāli or topic'}</small></span><ArrowRight size={17}/></a>
       <a href="#featured"><span className="startIcon"><Headphones size={20}/></span><span><strong>{vi?'Nghe kinh':'Listen'}</strong><small>{vi?'Phát audio, chỉnh tốc độ, nghe trên điện thoại':'Play audio and change speed'}</small></span><ArrowRight size={17}/></a>
       <Link href={`/${locale}/tien-do`}><span className="startIcon"><Activity size={20}/></span><span><strong>{vi?'Về dự án':'Project progress'}</strong><small>{vi?'Xem thư viện đang hoàn thiện đến đâu':'See what is available now'}</small></span><ArrowRight size={17}/></Link>
+    </section>
+
+    <section className="shell canonPromo" aria-label={vi?'Mở rộng Tam Tạng Pāli':'Pāli Canon expansion'}>
+      <div className="canonPromoCopy"><p className="kicker">{vi?'ĐANG MỞ RỘNG THƯ VIỆN':'LIBRARY EXPANSION'}</p><h2>{vi?'Từ 5 bộ Nikāya đến Tam Tạng Pāli đầy đủ':'From the five Nikāyas to the wider Pāli Canon'}</h2><p>{vi?'Luật Tạng và 7 bộ Vi Diệu Pháp đã được đưa vào cấu trúc thư viện; toàn văn sẽ lần lượt được nhập khi nguồn và quyền sử dụng được xác minh.':'Vinaya and the seven Abhidhamma books are now part of the library structure, with full text added progressively from verified sources.'}</p><Link href={`/${locale}/tam-tang`}>{vi?'Khám phá Tam Tạng Pāli':'Explore the Pāli Canon'} <ArrowRight size={16}/></Link></div>
+      <div className="canonPromoTiles"><div><BookOpen size={21}/><span><strong>{vi?'Kinh Tạng':'Sutta'}</strong><small>5 Nikāya</small></span></div><div><Scale size={21}/><span><strong>{vi?'Luật Tạng':'Vinaya'}</strong><small>{vi?'5 phần chính':'core divisions'}</small></span></div><div><TableProperties size={21}/><span><strong>{vi?'Vi Diệu Pháp':'Abhidhamma'}</strong><small>{vi?'7 bộ luận':'7 books'}</small></span></div></div>
     </section>
 
     <section className="section shell" id="collections"><div className="sectionHead compactHead"><div><span className="sectionLabel">01</span><h2>{vi?'Khám phá 5 bộ kinh Nikāya':'Five Nikāya collections'}</h2><p>{vi?'Mỗi bộ có cấu trúc, chủ đề và nhịp đọc khác nhau. Chọn một bộ để đi thẳng vào thư viện.':'Choose a collection to filter the library.'}</p></div></div>
