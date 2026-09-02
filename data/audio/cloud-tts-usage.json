@@ -18,8 +18,8 @@
     "neural2": {
       "freeTierCharacters": 1000000,
       "projectSafetyLimitCharacters": 900000,
-      "usedCharacters": 567,
-      "remainingProjectSafeCharacters": 899433,
+      "usedCharacters": 13759,
+      "remainingProjectSafeCharacters": 886241,
       "status": "SAFE"
     },
     "wavenet": {
@@ -54,6 +54,18 @@
       ],
       "model": "chirp3-hd",
       "workflowRun": "33579192174",
+      "result": "success"
+    },
+    {
+      "date": "2026-09-02",
+      "purpose": "progressive final-quality scripture audio",
+      "canonicalRef": "mn2",
+      "charactersPerVoice": 13192,
+      "voices": [
+        "vi-VN-Neural2-A"
+      ],
+      "model": "neural2",
+      "workflowRun": "33584098571",
       "result": "success"
     }
   ]
