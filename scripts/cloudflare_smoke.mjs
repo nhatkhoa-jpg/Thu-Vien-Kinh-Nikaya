@@ -7,11 +7,29 @@ const catalog=JSON.parse(readFileSync(new URL('../data/catalog/suttas.json',impo
 const byRef=ref=>{const row=catalog.find(x=>x.canonicalRef===ref);if(!row)throw new Error(`Missing smoke canonicalRef=${ref}`);return row;};
 const range=catalog.find(x=>x.collection==='SN'&&x.canonicalRef.includes('-'));
 if(!range)throw new Error('Missing canonical range smoke fixture');
+const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 
 async function http(path,expected=200){
-  const response=await fetch(`${base}${path}`,{redirect:'follow'});
-  if(response.status!==expected)throw new Error(`${path}: expected ${expected}, got ${response.status}`);
-  return response.text();
+  let lastError;
+  for(let attempt=1;attempt<=24;attempt++){
+    try{
+      const response=await fetch(`${base}${path}`,{redirect:'follow'});
+      if(response.status===expected)return response.text();
+      if((response.status>=500||response.status===429)&&attempt<24){
+        lastError=new Error(`${path}: transient HTTP ${response.status}`);
+        console.log(`Waiting for workers.dev propagation: ${path} returned ${response.status} (attempt ${attempt}/24)`);
+        await sleep(5000);
+        continue;
+      }
+      throw new Error(`${path}: expected ${expected}, got ${response.status}`);
+    }catch(error){
+      lastError=error;
+      if(attempt>=24)break;
+      console.log(`Waiting for workers.dev TLS/DNS propagation: ${path} network error (attempt ${attempt}/24)`);
+      await sleep(5000);
+    }
+  }
+  throw new Error(`${path}: preview did not become reachable after retry window`,{cause:lastError});
 }
 
 for(const locale of ['vi','en','th','my','si','km','lo','zh'])await http(`/${locale}`);
