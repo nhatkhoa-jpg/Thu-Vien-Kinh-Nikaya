@@ -30,8 +30,15 @@ jobs:
       - name: AUTH ONLY — Cloudflare API
         run: |
           set -euo pipefail
+          test -n "${CLOUDFLARE_API_TOKEN:-}" || { echo "AUTH: FAIL — CLOUDFLARE_API_TOKEN is unavailable to this workflow"; exit 1; }
+          test -n "${CLOUDFLARE_ACCOUNT_ID:-}" || { echo "AUTH: FAIL — CLOUDFLARE_ACCOUNT_ID is unavailable to this workflow"; exit 1; }
           if npx wrangler whoami > /tmp/cloudflare-auth.log 2>&1; then
-            echo "AUTH: PASS — Cloudflare API authentication OK"
+            grep -Eq 'API Token|OAuth Token' /tmp/cloudflare-auth.log || {
+              echo "AUTH: FAIL — wrangler did not confirm token authentication"
+              sed -E 's/[0-9a-fA-F]{32}/[REDACTED_ACCOUNT_ID]/g' /tmp/cloudflare-auth.log
+              exit 1
+            }
+            echo "AUTH: PASS — Cloudflare API token authentication OK"
           else
             echo "AUTH: FAIL"
             sed -E 's/[0-9a-fA-F]{32}/[REDACTED_ACCOUNT_ID]/g' /tmp/cloudflare-auth.log
