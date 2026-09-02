@@ -1,0 +1,146 @@
+name: Probe SN Suttaplex metadata
+
+on:
+  push:
+    branches:
+      - feature/sn-canonical-discovery
+    paths:
+      - '.github/workflows/probe-sn-suttaplex.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/sn-canonical-discovery
+          fetch-depth: 0
+
+      - name: Fetch SN Suttaplex in Vietnamese
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fsSL --retry 5 --retry-delay 2 \
+            'https://suttacentral.net/api/suttaplex/sn?language=vi' \
+            -o /tmp/sn-suttaplex.json
+          test -s /tmp/sn-suttaplex.json
+          wc -c /tmp/sn-suttaplex.json
+
+      - name: Extract leaf metadata and coverage
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import datetime as dt
+          import json
+          import re
+          from pathlib import Path
+
+          canonical = json.loads(Path('data/catalog/discovery-sn.json').read_text(encoding='utf-8'))
+          canonical_refs = [x['canonicalRef'] for x in canonical['items']]
+          canonical_set = set(canonical_refs)
+          leaf_re = re.compile(r'^sn\d+\.\d+(?:-\d+)?$')
+          raw = json.loads(Path('/tmp/sn-suttaplex.json').read_text(encoding='utf-8'))
+
+          found = {}
+          def walk(node):
+              if isinstance(node, list):
+                  for x in node:
+                      walk(x)
+                  return
+              if not isinstance(node, dict):
+                  return
+              uid = node.get('uid')
+              if isinstance(uid, str) and leaf_re.fullmatch(uid):
+                  # Prefer richer duplicate if any.
+                  if uid not in found or len(node) > len(found[uid]):
+                      found[uid] = node
+              for value in node.values():
+                  if isinstance(value, (list, dict)):
+                      walk(value)
+          walk(raw)
+
+          items = []
+          vi_count = 0
+          minh_chau_count = 0
+          exact_count = 0
+          for uid in canonical_refs:
+              rec = found.get(uid) or {}
+              translations = rec.get('translations') if isinstance(rec.get('translations'), list) else []
+              vi_trans = [t for t in translations if isinstance(t, dict) and t.get('lang') == 'vi']
+              minh = next((t for t in vi_trans if t.get('author_uid') == 'minh_chau'), None)
+              vi_count += int(bool(vi_trans))
+              minh_chau_count += int(minh is not None)
+              exact_count += int(uid in found)
+              selected = minh or (vi_trans[0] if vi_trans else None)
+              items.append({
+                  'canonicalRef': uid,
+                  'acronym': rec.get('acronym'),
+                  'originalTitle': rec.get('original_title'),
+                  'translatedTitle': rec.get('translated_title'),
+                  'hasSuttaplexRecord': uid in found,
+                  'viTranslations': [{
+                      'authorUid': t.get('author_uid'),
+                      'author': t.get('author'),
+                      'title': t.get('title'),
+                      'segmented': t.get('segmented'),
+                  } for t in vi_trans],
+                  'preferredVi': ({
+                      'authorUid': selected.get('author_uid'),
+                      'author': selected.get('author'),
+                      'title': selected.get('title'),
+                      'segmented': selected.get('segmented'),
+                  } if selected else None),
+              })
+
+          extra = sorted(set(found) - canonical_set)
+          missing = [uid for uid in canonical_refs if uid not in found]
+          generated = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
+          top = {
+              'type': type(raw).__name__,
+              'length': len(raw) if hasattr(raw, '__len__') else None,
+              'keys': sorted(raw.keys())[:100] if isinstance(raw, dict) else None,
+          }
+          report = {
+              'collection': 'SN',
+              'endpoint': 'https://suttacentral.net/api/suttaplex/sn?language=vi',
+              'generatedAt': generated,
+              'responseShape': top,
+              'canonicalLeafCount': len(canonical_refs),
+              'matchedCanonicalRecords': exact_count,
+              'missingCanonicalRecords': len(missing),
+              'recordsWithAnyViTranslation': vi_count,
+              'recordsWithMinhChauTranslation': minh_chau_count,
+              'extraLeafRecords': len(extra),
+              'firstMissing': missing[:30],
+              'firstExtra': extra[:30],
+          }
+          output = {
+              'collection': 'SN',
+              'endpoint': report['endpoint'],
+              'generatedAt': generated,
+              'coverage': report,
+              'items': items,
+          }
+          Path('data/catalog/discovery-sn-suttaplex.json').write_text(json.dumps(output, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          Path('data/catalog/discovery-sn-suttaplex-report.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          print(json.dumps(report, ensure_ascii=False, indent=2))
+          PY
+
+      - name: Commit metadata discovery outputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -z "$(git status --porcelain -- data/catalog/discovery-sn-suttaplex.json data/catalog/discovery-sn-suttaplex-report.json)" ]; then
+            echo 'Metadata discovery outputs unchanged.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/catalog/discovery-sn-suttaplex.json data/catalog/discovery-sn-suttaplex-report.json
+          git commit -m 'data: probe SN Suttaplex metadata coverage'
+          git push origin HEAD:feature/sn-canonical-discovery
