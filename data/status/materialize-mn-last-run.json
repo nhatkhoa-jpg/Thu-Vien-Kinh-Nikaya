@@ -1,0 +1,11 @@
+{
+  "collection": "MN",
+  "catalogCount": 152,
+  "verifiedBefore": 0,
+  "selected": 152,
+  "materializedThisRun": 152,
+  "missingVietnameseThisRun": [],
+  "failures": {},
+  "remainingAfterRun": 0,
+  "lastRunAt": "2026-09-02T04:49:37+00:00"
+}
