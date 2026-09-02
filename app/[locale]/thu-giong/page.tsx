@@ -1,9 +1,17 @@
+import usage from '@/data/audio/cloud-tts-usage.json';
+
 const base='https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/cloud-tts-vi-test-v1';
 const voices=[
   {name:'Chirp 3 HD · Aoede',desc:'Ưu tiên chất lượng tự nhiên cao',file:'chirp3-hd-aoede.mp3'},
   {name:'Neural2 · A',desc:'Giọng neural cân bằng',file:'neural2-a.mp3'},
   {name:'WaveNet · A',desc:'Quota miễn phí lớn, phù hợp render số lượng nhiều',file:'wavenet-a.mp3'},
 ];
+const quotaRows=[
+  {label:'Chirp 3 HD',...usage.models['chirp3-hd']},
+  {label:'Neural2',...usage.models.neural2},
+  {label:'WaveNet',...usage.models.wavenet},
+];
+const nf=new Intl.NumberFormat('vi-VN');
 
 export default async function VoiceTestPage(){
   return <main style={{maxWidth:880,margin:'0 auto',padding:'28px 18px 64px'}}>
@@ -12,6 +20,23 @@ export default async function VoiceTestPage(){
       <h1 style={{fontSize:'clamp(28px,6vw,44px)',lineHeight:1.08,margin:'0 0 12px'}}>So sánh 3 giọng Google tiếng Việt</h1>
       <p style={{fontSize:17,lineHeight:1.65,opacity:.78,maxWidth:720}}>Cùng một đoạn văn được đọc bằng ba dòng giọng khác nhau. Bấm Play từng mẫu và chọn giọng nghe tự nhiên, phát âm rõ, ngắt câu hợp lý nhất.</p>
     </section>
+
+    <section style={{margin:'0 0 24px',padding:18,border:'1px solid rgba(127,127,127,.28)',borderRadius:18}}>
+      <h2 style={{fontSize:22,margin:'0 0 6px'}}>Quota miễn phí an toàn · {usage.month}</h2>
+      <p style={{margin:'0 0 14px',opacity:.72,lineHeight:1.6}}>Pipeline tự dừng ở 90% free tier để tránh vượt hạn mức. Số dưới đây là ledger do dự án tự đếm trước khi gửi TTS.</p>
+      <div style={{display:'grid',gap:12}}>
+        {quotaRows.map(q=>{
+          const pct=Math.min(100,(q.usedCharacters/q.projectSafetyLimitCharacters)*100);
+          return <div key={q.label} style={{padding:14,borderRadius:14,background:'rgba(127,127,127,.07)'}}>
+            <div style={{display:'flex',justifyContent:'space-between',gap:10,flexWrap:'wrap',fontWeight:800}}><span>{q.label}</span><span>{q.status}</span></div>
+            <div style={{fontSize:14,marginTop:7,opacity:.75}}>{nf.format(q.usedCharacters)} / {nf.format(q.projectSafetyLimitCharacters)} ký tự an toàn · còn {nf.format(q.remainingProjectSafeCharacters)}</div>
+            <div style={{height:8,borderRadius:999,background:'rgba(127,127,127,.18)',marginTop:9,overflow:'hidden'}}><div style={{height:'100%',width:`${pct}%`,minWidth:q.usedCharacters?2:0,background:'currentColor',opacity:.6}} /></div>
+          </div>
+        })}
+      </div>
+      <p style={{fontSize:12,opacity:.58,lineHeight:1.55,margin:'12px 0 0'}}>Lưu ý: ledger là chốt an toàn phía dự án; số liệu Google Cloud có thể cập nhật trễ nên pipeline luôn giữ 10% dự phòng.</p>
+    </section>
+
     <div style={{display:'grid',gap:16}}>
       {voices.map((v,i)=><article key={v.file} style={{border:'1px solid rgba(127,127,127,.28)',borderRadius:18,padding:18,background:'rgba(127,127,127,.06)'}}>
         <div style={{display:'flex',gap:12,alignItems:'baseline',flexWrap:'wrap',marginBottom:10}}>
