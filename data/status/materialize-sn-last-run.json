@@ -1,11 +1,15 @@
 {
   "collection": "SN",
   "catalogCount": 1819,
-  "verifiedBefore": 0,
-  "selected": 120,
-  "materializedThisRun": 120,
-  "missingVietnameseThisRun": [],
-  "failures": {},
-  "remainingAfterRun": 1699,
-  "lastRunAt": "2026-09-02T02:43:08+00:00"
+  "verifiedBefore": 120,
+  "selected": 240,
+  "materializedThisRun": 238,
+  "missingVietnameseThisRun": [
+    "sn3.15"
+  ],
+  "failures": {
+    "sn12.15": "source request failed after 5 attempts: https://suttacentral.net/api/suttas/sn12.15/minh_chau?lang=vi: HTTP Error 502: Bad Gateway"
+  },
+  "remainingAfterRun": 1460,
+  "lastRunAt": "2026-09-02T03:11:30+00:00"
 }

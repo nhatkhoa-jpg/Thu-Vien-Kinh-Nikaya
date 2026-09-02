@@ -1,0 +1,195 @@
+{
+  "sn14.1": {
+    "canonicalRef": "sn14.1",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn14.1/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:11:30+00:00",
+    "materializedAt": "2026-09-02T03:11:30+00:00",
+    "contentHash": "c3d43590cefe847201fb03c1254c4ca1c538448967a2250d7a4a68f2e05ccb62",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 14: Tương Ưng Giới"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Sai Biệt"
+      },
+      {
+        "id": "p3",
+        "text": "14.1. Giới"
+      },
+      {
+        "id": "p4",
+        "text": "Phần Một: Nội Giới Năm Kinh"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 1 … Trú ở Sāvatthi."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 2 —Này các Tỷ-kheo, Ta sẽ giảng cho các Ông giới sai biệt. Hãy nghe và khéo suy nghiệm, Ta sẽ giảng."
+      },
+      {
+        "id": "p7",
+        "text": "—Thưa vâng, bạch Thế Tôn."
+      },
+      {
+        "id": "p8",
+        "text": "Các Tỷ-kheo ấy vâng đáp Thế Tôn."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 3 Thế Tôn nói như sau:"
+      },
+      {
+        "id": "p10",
+        "text": "—Và này các Tỷ-kheo, thế nào là giới sai biệt?"
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 4 Nhãn giới, sắc giới, nhãn thức giới; nhĩ giới, thanh giới, nhĩ thức giới; tỷ giới, hương giới, tỷ thức giới; thiệt giới, vị giới, thiệt thức giới; thân giới, xúc giới, thân thức giới; ý giới, pháp giới, ý thức giới."
+      },
+      {
+        "id": "p12",
+        "text": "Này các Tỷ-kheo, đây gọi là giới sai biệt."
+      },
+      {
+        "id": "p13",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn14.2": {
+    "canonicalRef": "sn14.2",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn14.2/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:11:29+00:00",
+    "materializedAt": "2026-09-02T03:11:29+00:00",
+    "contentHash": "a21c8af00f504af80eb2b88fcd5a7c81db40bf1c1bec2cc25048c8d9f5db15af",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 14: Tương Ưng Giới"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Sai Biệt"
+      },
+      {
+        "id": "p3",
+        "text": "14.2. Xúc"
+      },
+      {
+        "id": "p4",
+        "text": "Phần Một: Nội Giới Năm Kinh"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 1 … Trú ở Sāvatthi."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 2 —Này các Tỷ-kheo, do duyên giới sai biệt, xúc sai biệt sanh khởi."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 3 Và này các Tỷ-kheo, thế nào là giới sai biệt?"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 4 Nhãn giới, nhĩ giới, tỷ giới, thiệt giới, thân giới, ý giới; này các Tỷ-kheo, đây gọi là giới sai biệt."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 5 Và này các Tỷ-kheo, thế nào là do duyên giới sai biệt, xúc sai biệt sanh khởi?"
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 6 Này các Tỷ-kheo, do duyên nhãn giới, nhãn xúc sanh khởi. Do duyên nhĩ giới … do duyên tỷ giới … do duyên thiệt giới … do duyên thân giới … do duyên ý giới, ý xúc sanh khởi."
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 7 Như vậy, này các Tỷ-kheo, do duyên giới sai biệt, xúc sai biệt sanh khởi."
+      },
+      {
+        "id": "p12",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn14.3": {
+    "canonicalRef": "sn14.3",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn14.3/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:11:30+00:00",
+    "materializedAt": "2026-09-02T03:11:30+00:00",
+    "contentHash": "bcfaad8e9b07ca6491fce2fbc2a096e5d1d9a3d48e9064400737a9506c8aaceb",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 14: Tương Ưng Giới"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Sai Biệt"
+      },
+      {
+        "id": "p3",
+        "text": "14.3. Và Không Phải Như Vậy"
+      },
+      {
+        "id": "p4",
+        "text": "Phần Một: Nội Giới Năm Kinh"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 1 … Trú ở Sāvatthi."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 2 —Này các Tỷ-kheo, do duyên giới sai biệt, xúc sai biệt sanh khởi; không phải do duyên xúc sai biệt, giới sai biệt sanh khởi."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 3 Và này các Tỷ-kheo, thế nào là giới sai biệt?"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 4 Nhãn giới … ý giới; này các Tỷ-kheo, đây gọi là giới sai biệt."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 5 Và này các Tỷ-kheo, như thế nào do duyên giới sai biệt, xúc sai biệt sanh khởi; không phải do duyên xúc sai biệt, giới sai biệt sanh khởi?"
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 6 Này các Tỷ-kheo, do duyên nhãn giới, nhãn xúc sanh khởi; không phải do duyên nhãn xúc, nhãn giới sanh khởi … Do duyên ý giới, ý xúc sanh khởi; không phải do duyên ý xúc, ý giới sanh khởi."
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 7 Cũng vậy, này các Tỷ-kheo, do duyên giới sai biệt, xúc sai biệt sanh khởi; không phải do duyên xúc sai biệt, giới sai biệt sanh khởi."
+      },
+      {
+        "id": "p12",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  }
+}

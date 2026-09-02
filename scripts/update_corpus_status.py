@@ -37,6 +37,8 @@ def content_refs(collection: str) -> set[str]:
 def main() -> None:
     catalog = load(DATA / "catalog/suttas.json")
     audio = load(DATA / "catalog/audio.json")
+    missing_path = DATA / "status/missing-vietnamese.json"
+    missing_registry = load(missing_path) if missing_path.exists() else {}
     verified_at = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
     rows = []
     for collection in ("DN", "MN", "SN", "AN", "KN"):
@@ -45,18 +47,20 @@ def main() -> None:
         canonical_count = load(discovery).get("canonicalLeafCount") if discovery.exists() else len(catalog_rows)
         full_refs = content_refs(collection)
         known_refs = {x["canonicalRef"] for x in catalog_rows}
+        verified_missing = set(missing_registry.get(collection, [])) & known_refs
         vi_audio = sum(bool((audio.get(x["id"]) or {}).get("vi")) for x in catalog_rows)
-        missing = max(0, canonical_count - len(full_refs))
+        pending = max(0, canonical_count - len(full_refs & known_refs) - len(verified_missing))
         rows.append({
             "collection": collection,
             "canonicalCount": canonical_count,
             "catalogCount": len(catalog_rows),
             "vietnameseFullTextCount": len(full_refs & known_refs),
-            "missingVietnameseCount": missing,
+            "missingVietnameseCount": len(verified_missing),
+            "pendingFullTextCount": pending,
             "audioCount": vi_audio,
             "source": "SuttaCentral canonical tree + repository materialized corpus",
             "lastVerifiedAt": verified_at,
-            "status": "complete" if canonical_count == len(catalog_rows) == len(full_refs & known_refs) else "in_progress",
+            "status": "complete" if canonical_count == len(catalog_rows) and pending == 0 else "in_progress",
         })
     target = DATA / "status/corpus-status.json"
     target.parent.mkdir(parents=True, exist_ok=True)

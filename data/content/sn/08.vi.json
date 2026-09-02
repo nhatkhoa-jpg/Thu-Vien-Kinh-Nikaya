@@ -1,0 +1,758 @@
+{
+  "sn8.1": {
+    "canonicalRef": "sn8.1",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn8.1/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:08:27+00:00",
+    "materializedAt": "2026-09-02T03:08:27+00:00",
+    "contentHash": "1b4716d6050ff67cbd22a5d8ef1334d4a58a47e28bb1588cf918607f795fc04e",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 8: Tương Ưng Trưởng Lão Vangìsa"
+      },
+      {
+        "id": "p2",
+        "text": "8.1. Xuất Ly"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Như vầy tôi nghe."
+      },
+      {
+        "id": "p4",
+        "text": "Một thời Tôn giả Vangìa trú ở Āḷavi, tại ngôi đền ở Aggālava, cùng với Tôn giả Nigrodha Kappa, là vị giáo thọ sư."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Lúc bấy giờ, Tôn giả Vangìsa là tân Tỷ-kheo, xuất gia chưa bao lâu, được ở lại để coi ngôi tịnh xá."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Rồi một số đông phụ nữ, sau khi trang điểm, đi đến khu vườn để xem tịnh xá."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Tôn giả Vangìsa thấy các phụ nữ ấy, tâm sanh bất mãn, bị lòng dục quấy phá."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 Rồi Tôn giả Vangìsa suy nghĩ: “Thật bất lợi cho ta! Thật không lợi cho ta! Thật bất hạnh cho ta! Thật không may cho ta! Vì rằng tâm sanh bất mãn nơi ta, và ta bị lòng dục quấy phá. Làm thế nào ngay hiện tại có người khác có thể đoạn trừ bất mãn nơi ta và làm khởi lên thỏa mãn cho ta? Hay là ta tự mình đoạn trừ bất mãn nơi ta và làm cho thỏa mãn khởi lên cho ta?”"
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 6 Rồi Tôn giả Vangìsa sau khi tự mình đoạn trừ bất mãn và làm cho thỏa mãn khởi lên, liền ngay trong lúc ấy, nói lên những bài kệ này:"
+      },
+      {
+        "id": "p10",
+        "text": "Với ta đã xuất gia,\n\nBỏ nhà, sống không nhà,\n\nTâm tư nay chạy loạn,\n\nKhởi lên từ đen tối.\n\nCon nhà bậc thượng lưu,\n\nThiện xảo trong cung pháp,\n\nNgàn người bắn tứ phía,\n\nVẫn không bỏ chạy loạn.\n\nNếu phụ nữ có đến,\n\nDầu nhiều hơn, đông hơn,\n\nSẽ không não loạn ta,\n\nVì ta trú Chánh pháp,\n\nChính ta từng được nghe,\n\nPhật, dòng họ mặt trời,\n\nThuyết giảng Niết-bàn đạo,\n\nỞ đây ta ưa thích.\n\nNếu ta trú như vậy,\n\nÁc ma, Ông có đến,\n\nSở hành ta là vậy,\n\nÔng đâu thấy đường ta,"
+      },
+      {
+        "id": "p11",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn8.10": {
+    "canonicalRef": "sn8.10",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn8.10/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:08:43+00:00",
+    "materializedAt": "2026-09-02T03:08:43+00:00",
+    "contentHash": "da07effaf33044c1684c72231390d3fd6ee9b611fef112140f28e6c0a18ae2ff",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 8: Tương Ưng Trưởng Lão Vangìsa"
+      },
+      {
+        "id": "p2",
+        "text": "8.10. Moggallāna: Mục-kiền-liên"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Một thời Thế Tôn trú ở Rājagaha, trên sườn núi Isigili, tại núi Hắc Sơn, cùng với đại chúng Tỷ-kheo Tăng khoảng năm trăm vị, tất cả là bậc A-la-hán. Tôn giả Mahà Moggallāna với tâm của mình biết được tâm các vị ấy đã được giải thoát, không có sanh y."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Rồi Tôn giả Vangìsa suy nghĩ: “Thế Tôn nay trú ở Rājagaha, trên sườn núi Isigili, tại Hắc Sơn cùng với đại chúng Tỷ-kheo khoảng năm trăm vị, tất cả là bậc A-la-hán. Tôn giả Mahà Moggallāna với tâm của mình được biết tâm các vị ấy đã được giải thoát, không có sanh y. Vậy ta hãy trước mặt Thế Tôn nói lên những bài kệ thích ứng tán thán Tôn giả Mahà Moggallāna”."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Rồi Tôn giả Vangìsa từ chỗ ngồi đứng dậy, đắp thượng y vào một bên vai, chắp tay hướng về Thế Tôn và bạch Thế Tôn:"
+      },
+      {
+        "id": "p6",
+        "text": "—Bạch Thế Tôn, một vấn đề đến với con. Bạch Thiện Thệ, một vấn đề đến với con."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Thế Tôn đáp:"
+      },
+      {
+        "id": "p8",
+        "text": "—Này Vangìsa, hãy nói lên vấn đề ấy!"
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 5 Rồi Tôn giả Vangìsa trước mặt Thế Tôn, nói lên những bài kệ thích ứng tán thán Tôn giả Mahà Moggallàana:"
+      },
+      {
+        "id": "p10",
+        "text": "Cao trên sườn đồi núi,\n\nNhững vị chứng Ba minh,\n\nNhững vị đoạn tử thần,\n\nCác đệ tử hầu hạ,\n\nBậc Thánh giả, Mâu-ni,\n\nÐã vượt qua đau khổ.\n\nÐại thần lực Mục-liên,\n\nQuán tâm các vị ấy,\n\nBiết họ được giải thoát,\n\nKhông còn có sanh y.\n\nNhư vậy họ hầu hạ,\n\nMâu-ni Gotama,\n\nNgài vượt qua đau khổ,\n\nMọi sở hành đầy đủ,\n\nMọi đức tánh vẹn toàn."
+      },
+      {
+        "id": "p11",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn8.11": {
+    "canonicalRef": "sn8.11",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn8.11/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:08:45+00:00",
+    "materializedAt": "2026-09-02T03:08:45+00:00",
+    "contentHash": "f59723c9a4b9ba9b4c7a6340b82b3f5942b51d58161ffd60263baa6ead2ba208",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 8: Tương Ưng Trưởng Lão Vangìsa"
+      },
+      {
+        "id": "p2",
+        "text": "8.11. Gaggarà"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Một thời Thế Tôn ở Campà, trên bờ hồ Gaggarà với đại chúng Tỷ-kheo khoảng năm trăm vị, với bảy trăm nam cư sĩ, với bảy trăm nữ cư sĩ và vài ngàn chư Thiên. Giữa đại chúng ấy, Thế Tôn chói sáng vượt bậc về quang sắc và danh xưng."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Rồi Tôn giả Vangìsa suy nghĩ: “Nay Thế Tôn trú ở Campà, trên bờ hồ Gaggarà với đại chúng Tỷ-kheo khoảng năm trăm vị, với bảy trăm nam cư sĩ, với bảy trăm nữ cư sĩ và vài ngàn chư Thiên. Giữa đại chúng ấy, Thế Tôn chói sáng vượt bậc về quang sắc và danh xưng. Vậy trước mặt Thế Tôn, ta hãy nói lên những bài kệ tán thán thích ứng”."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Rồi Tôn giả Vangìsa từ chỗ ngồi đứng dậy, đắp thượng y vào một bên vai, chắp tay hướng về Thế Tôn và bạch:"
+      },
+      {
+        "id": "p6",
+        "text": "—Bạch Thế Tôn, một vấn đề đến với con. Bạch Thiện Thệ, một vấn đề đến với con."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Thế Tôn đáp:"
+      },
+      {
+        "id": "p8",
+        "text": "—Này Vangìsa, hãy nói lên vấn đề ấy!"
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 5 Rồi Tôn giả Vangìsa trước mặt Thế Tôn nói lên những bài kệ thích ứng tán thán:"
+      },
+      {
+        "id": "p10",
+        "text": "Như mặt trăng giữa trời,\n\nMây mù được quét sạch,\n\nChói sáng như mặt trời,\n\nThanh tịnh, không cấu uế.\n\nCũng vậy Ngài thật là\n\nÐại Mâu-ni Hiền Thánh,\n\nDanh xưng Ngài sáng chói,\n\nVượt qua mọi thế giới."
+      },
+      {
+        "id": "p11",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn8.12": {
+    "canonicalRef": "sn8.12",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn8.12/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:08:51+00:00",
+    "materializedAt": "2026-09-02T03:08:51+00:00",
+    "contentHash": "f37f86f5de2ec35d7457a816570c3dd7d61a99f68561a2789a684172fb128619",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 8: Tương Ưng Trưởng Lão Vangìsa"
+      },
+      {
+        "id": "p2",
+        "text": "8.12. Vangìsa"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Một thời Thế Tôn trú ở Sāvatthi, Jetavana tại vườn ông Anāthapiṇḍika (Cấp Cô Ðộc)."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Lúc bấy giờ Tôn giả Vangìsa, chứng quả A-la-hán không bao lâu, thọ hưởng giải thoát lạc, ngay trong lúc ấy, nói lên những bài kệ này:"
+      },
+      {
+        "id": "p5",
+        "text": "Thuở trước ta mê thơ,\n\nBộ hành khắp mọi nơi,\n\nTừ làng này, thành này,\n\nQua làng khác, thành khác,\n\nTa thấy bậc Chánh Giác,\n\nTín thành ta sanh khởi.\n\nNgài thuyết pháp cho ta,\n\nVề uẩn, xứ và giới,\n\nSau khi nghe Chánh pháp,\n\nTa bỏ nhà xuất gia.\n\nVì hạnh phúc số đông,\n\nVì thấy đạo hành đạo,\n\nCho Tỷ-kheo Tăng-Ni,\n\nBậc Mâu-ni giác ngộ,\n\nNgài đã chấp nhận con,\n\nÐược thành đạo với Ngài,\n\nCon chứng đạt Ba minh,\n\nHành trì theo Phật dạy.\n\nCon biết được đời trước,\n\nChứng thiên nhãn thanh tịnh,\n\nBa minh, thần thông lực,\n\nChứng đạt tha tâm thông."
+      },
+      {
+        "id": "p6",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn8.2": {
+    "canonicalRef": "sn8.2",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn8.2/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:08:26+00:00",
+    "materializedAt": "2026-09-02T03:08:26+00:00",
+    "contentHash": "a47175b0c03121c4474067b87dfc8f580e03dc60ff982da46e50722901e68123",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 8: Tương Ưng Trưởng Lão Vangìsa"
+      },
+      {
+        "id": "p2",
+        "text": "8.2. Bất lạc: Arati"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Một thời…, …"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Tôn giả Vangìsa trú ở Āḷavi, tại ngôi đền ở Aggàvi cùng với giáo thọ sư Tôn giả Nigrodha Kappa."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Lúc bấy giờ, Tôn giả Nigrodha Kappa sau buổi ăn, trên con đường khất thực trở về, đi vào tịnh xá và không ra khỏi tịnh xá cho đến chiều hay ngày mai."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 Lúc bấy giờ Tôn giả Vangìsa tâm sanh bất mãn, bị lòng dục quấy phá."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 5 Rồi Tôn giả Vangìsa suy nghĩ: “Thật bất lợi cho ta! Thật bất lợi cho ta! Thật không lợi cho ta! Thật bất hạnh cho ta! Thật không may cho ta! Vì rằng tâm sanh bất mãn nơi ta, và ta bị lòng dục quấy phá. Làm thế nào ngay hiện tại có người khác có thể đoạn trừ bất mãn nơi ta và làm khởi lên thỏa mãn cho ta? Hay là ta tự mình đoạn trừ bất mãn nơi ta và làm cho thỏa mãn khởi lên cho ta?”"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 6 Rồi Tôn giả Vangìsa sau khi tự mình đoạn trừ bất mãn và làm thỏa mãn khởi lên, liền ngay trong lúc ấy nói lên bài kệ này:"
+      },
+      {
+        "id": "p9",
+        "text": "Ta bỏ lạc, bất lạc,\n\nMọi tâm tư gia sự,\n\nKhông tạo một chỗ nào,\n\nThành cơ sở tham dục.\n\nAi thoát khỏi rừng tham,\n\nThoát ly mọi tham dục,\n\nLy tham không đắm trước,\n\nXứng danh chơn Tỷ-kheo.\n\nPhàm địa giới, không giới,\n\nCả sắc giới trong đời,\n\nMọi vật đều biến hoại,\n\nMọi sự đều vô thường.\n\nAi hiểu biết như vậy,\n\nSở hành sẽ chân chính.\n\nChúng sanh thường chấp trước,\n\nÐối với các sanh y,\n\nÐối vật họ thấy, nghe\n\nHọ ngửi, nếm, xúc chạm.\n\nỞ đây, ai đoạn dục,\n\nTâm tư không nhiễm ô,\n\nKhông mắc dính chỗ này,\n\nVị ấy danh Mâu-ni.\n\nÐối với sáu mươi pháp,\n\nThuộc vọng tưởng phi pháp,\n\nPhàm phu thường chấp trước,\n\nChấp thủ và tham đắm.\n\nTỷ-kheo không phiền não,\n\nKhông nói lời ác ngữ,\n\nSáng suốt, tâm thường định,\n\nKhông dối trá, thận trọng,\n\nThoát ly mọi tham ái.\n\nVị Mâu-ni chứng đạt,\n\nCảnh Niết-bàn tịch tịnh,\n\nChờ đón thời mệnh chung,\n\nVới tâm tư vắng lặng,\n\nThanh thoát nhập Niết-bàn."
+      },
+      {
+        "id": "p10",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn8.3": {
+    "canonicalRef": "sn8.3",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn8.3/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:08:27+00:00",
+    "materializedAt": "2026-09-02T03:08:27+00:00",
+    "contentHash": "08c6251768a42d1ca3e75cd5269b6500daddb1afe1c13c732d402b2f6e5cae15",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 8: Tương Ưng Trưởng Lão Vangìsa"
+      },
+      {
+        "id": "p2",
+        "text": "8.3. Khinh Miệt Kẻ Ôn Hòa: Pesalā Atìmannanà"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Một thời Tôn giả Vangìsa trú ở Āḷavi, tại đền Aggàlavi, cùng với giáo thọ sư là Tôn giả Nigrodha Kappa."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Lúc bấy giờ, Tôn giả Vangìsa thường hay khinh miệt các vị Tỷ—kheo ôn hòa khác vì khả năng biệt tài của mình."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Rồi Tôn giả Vangìsa suy nghĩ: “Thật bất lợi cho ta! Thật không lợi cho ta! Thật bất hạnh cho ta! Thật không may cho ta! Vì rằng ta khinh miệt các vị Tỷ-kheo ôn hòa khác vì khả năng biện tài của ta”."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 Rồi Tôn giả Vangìsa, tự hối trách mình, liền ngay khi ấy, nói lên những bài kệ này:"
+      },
+      {
+        "id": "p7",
+        "text": "Ðệ tử Gotama,\n\nHãy từ bỏ kiêu mạn,\n\nVà cũng tự bỏ luôn,\n\nCon đường đến kiêu mạn.\n\nNếu hoàn toàn đắm say,\n\nTrong con đường kiêu mạn,\n\nSẽ tự mình hối trách,\n\nTrong thời gian lâu dài.\n\nNhững ai khinh khi người,\n\nVới khinh khi kiêu mạn,\n\nÐi con đường kiêu mạn,\n\nSẽ đọa lạc địa ngục.\n\nNhững người ấy sầu khổ,\n\nTrong thời gian lâu dài,\n\nDo kiêu mạn dắt dẫn,\n\nPhải sanh vào địa ngục.\n\nTỷ-kheo không bao giờ\n\nPhải sầu muộn buồn thảm,\n\nThắng lợi trên chánh đạo,\n\nSở hành được chân chánh,\n\nVị ấy được thọ hưởng,\n\nDanh dự và an lạc,\n\nChơn thực được danh xưng,\n\nLà bậc hưởng Pháp lạc.\n\nDo vậy ở đời này,\n\nKhông thô lậu, tinh tấn\n\nÐoạn trừ mọi triền cái,\n\nSống thanh tịnh trong sạch,\n\nVà đoạn tận kiêu mạn,\n\nHoàn toàn, không dư thừa,\n\nChấm dứt mọi phiền não,\n\nVới trí tuệ quang minh,\n\nNgài được xem là bậc\n\nSống tịch tịnh an lạc."
+      },
+      {
+        "id": "p8",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn8.4": {
+    "canonicalRef": "sn8.4",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn8.4/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:08:27+00:00",
+    "materializedAt": "2026-09-02T03:08:27+00:00",
+    "contentHash": "81dc080fc0f5855c65bddba592a18a0256f67ca9fdb7bf4e14ade3f4aa5964e9",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 8: Tương Ưng Trưởng Lão Vangìsa"
+      },
+      {
+        "id": "p2",
+        "text": "8.4. Ānanda"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Một thời Tôn giả Ānanda trú ở Sāvatthi, Jetavana, tại tịnh xá ông Anàthapinkika (Cấp Cô Ðộc)."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Rồi Tôn giả Ānanda vào buổi sáng đắp y, cầm y bát, đi vào Sāvatthi để khất thực với Tôn giả Vangìsa là Sa-môn thị giả."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Lúc bây giờ Tôn giả Vangìsa tâm sanh bất mãn, bị lòng dục quấy phá."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 Rồi Tôn giả Vangìsa nói lên bài kệ với Tôn giả Ānanda:"
+      },
+      {
+        "id": "p7",
+        "text": "Dục ái đốt cháy tôi,\n\nTâm tôi bị thiêu cháy.\n\nThật là điều tốt lành,\n\nÐệ tử Gotama,\n\nVì lòng từ thương tưởng,\n\nNói pháp tiêu lửa hừng.\nVi-n 5 (Ānanda):\nChính vì điên đảo tưởng,\n\nTâm Ông bị thiêu đốt,\n\nHãy từ bỏ tịnh tướng,\n\nHệ lụy đến tham dục,\n\nNhìn các hành vô thường,\n\nKhổ đau, không phải ngã,\n\nDập tắt đại tham dục,\n\nChớ để bị cháy dài;\n\nHãy tu tâm bất tịnh,\n\nNhứt tâm, khéo định tĩnh,\n\nTu tập thân niệm trú,\n\nHành nhiều hạnh yểm ly;\n\nHãy tập hạnh vô tướng,\n\nÐoạn diệt mạn tùy miên,\n\nNhờ quán sâu kiêu mạn,\n\nHạnh Ông được an tịnh."
+      },
+      {
+        "id": "p8",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn8.5": {
+    "canonicalRef": "sn8.5",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn8.5/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:08:44+00:00",
+    "materializedAt": "2026-09-02T03:08:44+00:00",
+    "contentHash": "f3fe44222b7f4aff32137580feedde4862b45b1af3a53b281a2f1c0561499c27",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 8: Tương Ưng Trưởng Lão Vangìsa"
+      },
+      {
+        "id": "p2",
+        "text": "8.5. Khéo Nói"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Tại Sāvatthi, Jetavana."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Tại đấy, Thế Tôn gọi các Tỷ-kheo:"
+      },
+      {
+        "id": "p5",
+        "text": "—Này các Tỷ-kheo."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 —Thưa vâng, Thế Tôn."
+      },
+      {
+        "id": "p7",
+        "text": "Các Tỷ-kheo ấy vâng đáp Thế Tôn."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 4 Thế Tôn nói như sau:"
+      },
+      {
+        "id": "p9",
+        "text": "—Ðầy đủ bốn đức tánh, này các Tỷ-kheo, lời nói được xem là thiện thuyết, không phải ác thuyết, vô tội và không bị người có trí chỉ trích. Thế nào là bốn?"
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 5 Ở đây, này các Tỷ-kheo, Tỷ-kheo nói lời thiện thuyết, không nói lời ác thuyết, nói lời đúng pháp, không nói lời phi pháp, nói lời ái ngữ, không nói lời ác ngữ, nói lời chơn ngữ, không nói lời phi chơn. Ðầy đủ bốn đức tính này, này các Tỷ-kheo, lời nói được xem là thiện thuyết, không phải ác thuyết, vô tội và không bị người có trí chỉ trích."
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 6 Thế Tôn nói như vậy. Sau khi nói như vậy, bậc Thiện Thệ, Ðạo Sư lại nói thêm:"
+      },
+      {
+        "id": "p12",
+        "text": "Bậc Thiện Nhơn dạy rằng:\n\nThứ nhất là thiện thuyết,\n\nThứ hai nói đúng pháp,\n\nChớ nói lời phi pháp,\n\nThứ ba nói ái ngữ,\n\nChớ nói lời ác ngữ,\n\nThứ tư, nói chơn thực,\n\nChớ nói lời phi chơn."
+      },
+      {
+        "id": "p13",
+        "text": "Vi-n 7 Rồi Tôn giả Vangìsa từ chỗ ngồi đứng dậy, đắp thượng y vào một bên vai, chắp tay hướng về Thế Tôn và bạch Thế Tôn:"
+      },
+      {
+        "id": "p14",
+        "text": "—Thế Tôn, hãy soi sáng cho con! Thiện Thệ, hãy soi sáng cho con!"
+      },
+      {
+        "id": "p15",
+        "text": "Vi-n 8 Thế Tôn nói:"
+      },
+      {
+        "id": "p16",
+        "text": "—Này Vangìsa, mong rằng Ông được soi sáng!"
+      },
+      {
+        "id": "p17",
+        "text": "Vi-n 9 Rồi Tôn giả Vangìsa trước mặt Thế Tôn, nói lên những bài kệ tán thán thích đáng:"
+      },
+      {
+        "id": "p18",
+        "text": "Ai nói lên lời gì,\n\nLời ấy không khổ mình,\n\nLại không làm hại người,\n\nLời ấy là thiện thuyết.\n\nAi nói lời ái ngữ,\n\nLời nói khiến hoan hỷ,\n\nLời nói không ác độc,\n\nLời ấy là ái ngữ.\n\nCác lời nói chơn thật,\n\nLà lời nói bất tử,\n\nNhư vậy là thường pháp,\n\nTừ thuở thật ngàn xưa.\n\nBậc Thiện Nhân được xem,\n\nAn trú trên chơn thực,\n\nTrên nghĩa và trên pháp,\n\nLời đồn là như vậy.\n\nLời đức Phật nói lên,\n\nÐạt an ổn Niết-bàn,\n\nChấm dứt mọi khổ đau,\n\nThật lời nói tối thượng."
+      },
+      {
+        "id": "p19",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn8.6": {
+    "canonicalRef": "sn8.6",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn8.6/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:08:44+00:00",
+    "materializedAt": "2026-09-02T03:08:44+00:00",
+    "contentHash": "da2daed5b52bb7b88bfe5d818a4ac643220c40e04ec10fb4e9e234c5064d3059",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 8: Tương Ưng Trưởng Lão Vangìsa"
+      },
+      {
+        "id": "p2",
+        "text": "8.6. Sāriputta (Xá-lợi-phất)"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Một thời Tôn giả Sāriputta trú ở Sāvatthi, Jetavana, tại vườn ông Anāthapiṇḍika."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Lúc bấy giờ, Tôn giả Sāriputta với bài pháp thoại đang tuyên thuyết, khích lệ, làm cho phấn khởi, làm cho hoan hỷ các Tỷ-kheo, với lời nói lịch sự, thông suốt, không có phều phào, với ý nghĩa rõ ràng minh bạch. Và các vị Tỷ-kheo ấy chú ý, chú tâm, tập trung tâm lực, lắng tai nghe pháp."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Rồi Tôn giả Vangìsa suy nghĩ: “Tôn giả Sāriputta với bài pháp thoại đang tuyên thuyết, khích lệ, làm cho phấn khởi, làm cho hoan hỷ các Tỷ-kheo, với lời nói lịch sự, thông suốt, không có phều phào, với ý nghĩa rõ ràng minh bạch. Và các vị Tỷ-kheo ấy chú ý, chú tâm, tập trung tâm lực, lắng tai nghe pháp. Vậy trước mặt Tôn giả Sāriputta, ta hãy nói lên những bài kệ tán thán thích đáng”."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 Rồi Tôn giả Vangìsa từ chỗ ngồi đứng dậy, đắp thượng y vào một bên vai, chắp tay hướng về Tôn giả Sāriputta và nói với Tôn giả Sāriputta:"
+      },
+      {
+        "id": "p7",
+        "text": "—Hiền giả Sāriputta, một vấn đề đến với tôi. Hiền giả Sāriputta, một vấn đề đến với tôi."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 —Mong rằng Hiền giả Vangìsa nói lên vấn đề ấy!"
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 6 Rồi Tôn giả Vangìsa, trước mặt Tôn giả Sāriputta, nói lên những lời kệ tán thán thích đáng:"
+      },
+      {
+        "id": "p10",
+        "text": "Trí tuệ thâm, trí giải,\n\nThiện xảo đạo, phi đạo,\n\nNgài Sāriputta,\n\nLà bậc Ðại trí tuệ.\n\nChính Ngài đang thuyết pháp,\n\nCho các vị Tỷ-kheo.\n\nNgài giảng cách tóm tắt,\n\nNgài cũng thuyết rộng rãi.\n\nNhư âm thanh vi diệu,\n\nCủa loại chim Sàli,\n\nLời Ngài giảng tuôn trào,\n\nTiếng Ngài nghe ngọt lịm.\n\nVới giọng điệu ái luyến,\n\nÊm tai, và mỹ diệu,\n\nChúng lắng tai nghe pháp,\n\nTâm phấn khởi hoan hỷ,\n\nNày các vị Tỷ-kheo."
+      },
+      {
+        "id": "p11",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn8.7": {
+    "canonicalRef": "sn8.7",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn8.7/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:08:43+00:00",
+    "materializedAt": "2026-09-02T03:08:43+00:00",
+    "contentHash": "808df4028a9e1ca7bd531671253414bcae5f34ada2b886d252b9baaab0ca3430",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 8: Tương Ưng Trưởng Lão Vangìsa"
+      },
+      {
+        "id": "p2",
+        "text": "8.7. Tự Tứ"
+      },
+      {
+        "id": "p3",
+        "text": "S.i,190Vi-n 1 Một thời Thế Tôn ở Sāvatthi, Pubbārāma (Ðông Viên), Migāra—màtu pàsàda (Lộc Mẫu giảng đường), cùng với đại chúng Tỷ-kheo khoảng năm trăm vị, tất cả đều chứng quả A-la-hán."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Lúc bấy giờ, Thế Tôn, nhân ngày trăng tròn Bố-tát Tự tứ, Ngài ngồi giữa trời, xung quanh chúng Tỷ-kheo đoanh vây."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Rồi Thế Tôn, sau khi nhìn quanh chúng Tỷ-kheo im lặng, liền bảo các Tỷ-kheo:"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 —Này các Tỷ-kheo, nay Ta mời các Ông nói lên, các Ông có điều gì chỉ trích Ta hay không, về thân hay về lời nói?"
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 5 Ðược nghe như vậy, Tôn giả Sāriputta từ chỗ ngồi đứng dậy, đắp thượng y vào một bên vai, chắp tay vái chào Thế Tôn và bạch Thế Tôn:"
+      },
+      {
+        "id": "p8",
+        "text": "—Bạch Thế Tôn, chúng con không có chỉ trích gì Thế Tôn về thân hay về lời nói. Bạch Thế Tôn, con đường chưa sanh khởi, Thế Tôn làm cho sanh khởi; con đường chưa được rõ biết, Thế Tôn làm cho rõ biết; con đường chưa được thuyết giảng, Thế Tôn thuyết giảng. Thế Tôn biết đạo, hiểu đạo, thiện xảo về đạo; và bạch Thế Tôn, các đệ tử nay là những vị sống hành đạo, và sẽ thành tựu (những pháp ấy) về sau. Và bạch Thế Tôn, con xin mời Thế Tôn nói lên, Thế Tôn có điều gì chỉ trích con hay không, về thân hay về lời nói?"
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 6 —Này Sāriputta, Ta không có gì chỉ trích Ông về thân, hay về lời nói. Này Sāriputta, Ông là bậc Ðại trí. Này Sāriputta, Ông là bậc Quảng trí. Này Sāriputta, Ông là bậc Tốc trí. Này Sāriputta, Ông là bậc Tiệp trí. Này Sāriputta, Ông là bậc Nhuệ trí. Này Sāriputta, Ông là bậc Thể nhập trí. Này Sāriputta, ví như trưởng tử, con vua Chuyển luân vương, chơn chánh vận chuyển bánh xe đã được vua cha vận chuyển. Cũng vậy, này Sāriputta, Ông chơn chánh chuyển vận pháp luân vô thượng đã được Ta chuyển vận."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 7 —Bạch Thế Tôn, nếu Thế Tôn không có gì chỉ trích con về thân hay về lời nói, vậy bạch Thế Tôn, đối với khoảng năm trăm Tỷ-kheo này, Thế Tôn có gì chỉ trích hay không, về thân hay về lời nói?"
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 8 —Này Sāriputta, đối với khoảng năm trăm Tỷ-kheo này, Ta không có gì chỉ trích về thân hay về lời nói. Này Sāriputta, trong khoảng năm trăm Tỷ-kheo này, sáu mươi Tỷ-kheo là bậc Tam minh, sáu mươi Tỷ—kheo là bậc chứng được sáu Thắng trí, sáu mươi Tỷ-kheo là bậc Câu giải thoát, và các vị còn lại là bậc Tuệ giải thoát."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 9 Rồi Tôn giả Vangìsa từ chỗ ngồi đứng dậy, đắp thượng y vào một bên vai, chắp tay vái chào Thế Tôn và bạch Thế Tôn:"
+      },
+      {
+        "id": "p13",
+        "text": "Vi-n 10 —Bạch Thế Tôn, một vấn đề đến với con. Bạch Thiện Thệ, một vấn đề đến với con."
+      },
+      {
+        "id": "p14",
+        "text": "Vi-n 11 Thế Tôn nói:"
+      },
+      {
+        "id": "p15",
+        "text": "—Này Vangìsa, hãy nói lên vấn đề ấy!"
+      },
+      {
+        "id": "p16",
+        "text": "Vi-n 12 Rồi Tôn giả Vangìsa trước mặt Thế Tôn nói lên những bài kệ tán thán thích ứng:"
+      },
+      {
+        "id": "p17",
+        "text": "Nay ngày rằm thanh tịnh,\n\nNăm trăm Tỷ-kheo họp,\n\nBậc Thánh cắt kiết phược,\n\nVô phiền, đoạn tái sanh.\n\nNhư vua Chuyển luân vương,\n\nÐại thần hầu xung quanh,\n\nDu hành khắp bốn phương,\n\nÐất này đến hải biên.\n\nNhư vậy, các đệ tử,\n\nÐã chứng được Tam minh,\n\nSát hại được tử thần,\n\nNhững vị này hầu hạ,\n\nBậc thắng trận chiến trường,\n\nChủ lữ hành vô thượng.\n\nTất cả con Thế Tôn,\n\nKhông ai là vô dụng,\n\nXin chí thành đảnh lễ,\n\nBậc nhổ tên khát ái,\n\nXin tâm thành cung kính,\n\nBậc dòng họ mặt trời."
+      },
+      {
+        "id": "p18",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn8.8": {
+    "canonicalRef": "sn8.8",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn8.8/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:08:44+00:00",
+    "materializedAt": "2026-09-02T03:08:44+00:00",
+    "contentHash": "3be1e35c2ba09b5b6e3348d4d615d4f386675afbbe3d46fed9259f8842dc6760",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 8: Tương Ưng Trưởng Lão Vangìsa"
+      },
+      {
+        "id": "p2",
+        "text": "8.8. Một Ngàn và Nhiều Hơn"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Một thời Thế Tôn ở Sāvatthi, Jetavana, tại vườn ông Anāthapiṇḍika (Cấp Cô Ðộc) cùng đại chúng Tỷ-kheo 1.250 vị."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Lúc bấy giờ Thế Tôn với bài pháp thoại liên hệ đến Niết-bàn, thuyết giảng cho các Tỷ-kheo, khích lệ, làm cho phấn khởi, làm cho hoan hỷ. Và những Tỷ-kheo ấy chú tâm, chú ý, tập trung tất cả tâm tư, lắng tai nghe pháp."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Rồi Tôn giả Vangìsa suy nghĩ: “Nay Thế Tôn với bài pháp thoại liên hệ đến Niết-bàn, đang thuyết giảng cho các Tỷ-kheo, khích lệ, làm cho phấn khởi, làm cho hoan hỷ. Và những Tỷ-kheo ấy chú tâm, chú ý, tập trung tất cả tâm tư, lắng tai nghe pháp. Vậy trước mặt Thế Tôn, ta hãy nói lên những bài kệ tán thán thích ứng.”"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 Rồi Tôn giả Vangìsa, từ chỗ ngồi đứng dậy, đắp thượng y vào một bên vai, chắp tay hướng về Thế Tôn và bạch Thế Tôn:"
+      },
+      {
+        "id": "p7",
+        "text": "—Bạch Thế Tôn, một vấn đề đến với con. Bạch Thiện Thệ, một vấn đề đến với con."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 Thế Tôn đáp:"
+      },
+      {
+        "id": "p9",
+        "text": "—Này Vangìsa, hãy nói lên vấn đề ấy!"
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 6 Rồi Tôn giả Vangìsa, trước mặt Thế Tôn, nói lên những bài kệ tán thán thích ứng:"
+      },
+      {
+        "id": "p11",
+        "text": "Hơn một ngàn Tỷ-kheo,\n\nHầu hạ bậc Thiện Thệ,\n\nNgài thuyết pháp vô cấu,\n\nNiết-bàn, không sợ hãi.\n\nHọ nghe pháp vô cấu,\n\nBậc Chánh Giác thuyết giảng.\n\nThượng thủ chúng Tỷ-kheo,\n\nBậc Chánh Giác chói sáng.\n\nBạch Thế Tôn, Thiện Thệ,\n\nNgài thật bậc Long Tượng,\n\nBậc Ẩn Sĩ thứ bảy,\n\nTrong các vị Ẩn Sĩ.\n\nNgài trở thành mây lớn,\n\nMưa móc ban đệ tử.\n\nCon từ nghỉ trưa đến,\n\nMuốn yết kiến Ðạo Sư.\n\nÔi bậc Ðại Anh hùng!\n\nCon là đệ tử Ngài,\n\nCon tên Vangìsa,\n\nÐảnh lễ dưới chân Ngài."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 7 —Này Vangìsa, những bài kệ này của Ông, có phải Ông suy nghĩ từ trước hay được khởi lên tại chỗ?"
+      },
+      {
+        "id": "p13",
+        "text": "Vi-n 8 —Bạch Thế Tôn, những bài kệ này của con không phải suy nghĩ từ trước, chính được khởi lên tại chỗ."
+      },
+      {
+        "id": "p14",
+        "text": "Vi-n 9 —Vậy này Vangìsa, hãy cho nhiều bài kệ nữa, không suy nghĩ từ trước, được khởi lên tại chỗ."
+      },
+      {
+        "id": "p15",
+        "text": "Vi-n 10 —Thưa vâng bạch Thế Tôn."
+      },
+      {
+        "id": "p16",
+        "text": "Tôn giả Vangìsa vâng đáp Thế Tôn và nói lên những bài kệ tán thán Thế Tôn; những bài kệ chưa được suy nghĩ từ trước:"
+      },
+      {
+        "id": "p17",
+        "text": "Thắng ác ma, tà đạo,\n\nNgài sống chướng ngại đoạn.\n\nHãy thấy bậc Giải Thoát,\n\nThoát ly mọi hệ phược,\n\nPhân tích thành từng phần,\n\nHắc, bạch pháp phân minh.\n\nNgài nói lên con đường,\n\nNhiều pháp môn khác biệt,\n\nMục đích giúp mọi người,\n\nVượt qua dòng bộc lưu,\n\nChính trên pháp bất tử,\n\nÐược Ngài thường tuyên thuyết.\n\nChúng con bậc pháp kiến,\n\nVững trú không thối chuyển,\n\nBậc tạo dựng quang minh,\n\nNgài thâm nhập các pháp,\n\nThấy được chỗ vượt qua,\n\nTất cả mọi kiến xứ.\n\nSau khi biết và chứng,\n\nNgài thuyết tối thượng xứ,\n\nPháp như vậy khéo giảng.\n\nAi có thể phóng dật,\n\nKhi được biết pháp ấy,\n\nPháp khéo giảng như vậy?\n\nDo vậy trong giáo pháp,\n\nÐức Thế Tôn, Thiện Thệ.\n\nLuôn luôn không phóng dật,\n\nHãy đảnh lễ, tu học."
+      },
+      {
+        "id": "p18",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn8.9": {
+    "canonicalRef": "sn8.9",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn8.9/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:08:44+00:00",
+    "materializedAt": "2026-09-02T03:08:44+00:00",
+    "contentHash": "e3fcf234343c5c4e612cb6d1a7394541ac6065cc4ca8889a147325acd190c17f",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 8: Tương Ưng Trưởng Lão Vangìsa"
+      },
+      {
+        "id": "p2",
+        "text": "8.9. Koṇḍañño: Kiều-trần-như"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Một thời Thế Tôn trú ở Rājagaha (Vương Xá), tại Veluvana (Trúc Lâm), chỗ nuôi dưỡng các con sóc."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Rồi Tôn giả Annàsi Koṇḍañño, sau một thời gian khá dài, đi đến Thế Tôn; sau khi đến, cúi đầu đảnh lễ chân Thế Tôn, miệng hôn, tay xoa bóp chân Thế Tôn và nói lên tên của mình:"
+      },
+      {
+        "id": "p5",
+        "text": "—Bạch Thế Tôn, con là Koṇḍañño. Bạch Thiện Thệ, con là Koṇḍañño."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Rồi Tôn giả Vangìsa suy nghĩ: “Tôn giả Annàsi Koṇḍañño này, sau một thời gian khá dài, đi đến Thế Tôn; sau khi đến, cúi đầu đảnh lễ chân Thế Tôn, miệng hôn, tay xoa bóp chân Thế Tôn và nói lên tên của mình: ‘Bạch Thế Tôn, con là Koṇḍañño. Bạch Thiện Thệ, con là Koṇḍañño’. Vậy ta hãy ở trước mặt Thế Tôn, nói lên những bài kệ thích ứng tán thán Tôn giả Annàsi Koṇḍañño”."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Rồi Tôn giả Vangìsa từ chỗ ngồi đứng dậy, đắp thượng y về một bên vai, chắp tay hướng về Thế Tôn và bạch Thế Tôn:"
+      },
+      {
+        "id": "p8",
+        "text": "—Bạch Thế Tôn, một vấn đề đến với con. Bạch Thiện Thệ, một vấn đề đến với con."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 5 Thế Tôn đáp:"
+      },
+      {
+        "id": "p10",
+        "text": "—Này Vangìsa, hãy nói lên vấn đề ấy!"
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 6 Rồi Tôn giả Vangìsa, trước mặt Thế Tôn, nói lên những bài kệ thích ứng tán thán Tôn giả Koṇḍañño:"
+      },
+      {
+        "id": "p12",
+        "text": "Sau đức Phật hiện tại,\n\nTrưởng lão được chánh giác,\n\nChính là Koṇḍañño,\n\nNhiệt tâm và tinh cần,\n\nChứng được an lạc trú,\n\nSống viễn ly liên tục,\n\nThực hành lời Sư dạy.\n\nÐệ tử chứng được gì,\n\nTất cả Ngài chứng được,\n\nNhờ tu học tinh tấn,\n\nÐại uy lực Ba minh,\n\nThiện xảo tâm tư người.\n\nPhật tử Koṇḍañño,\n\nÐảnh lễ chân Ðạo Sư."
+      },
+      {
+        "id": "p13",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  }
+}

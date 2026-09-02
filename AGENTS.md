@@ -1,7 +1,9 @@
 # AGENTS.md
 
 ## Mandatory startup
-Before making any change, read `PROJECT_STATE.md`, `README.md`, and `data/README.md`.
+Before making any change, read `docs/WORK_DIRECTIVE.md`, `docs/CURRENT_STATE.md`,
+`PROJECT_STATE.md`, `README.md`, and `data/README.md`. Trust current `main`, CI,
+and machine-readable status over stale prose.
 
 ## Product rules
 - The Vietnamese product name is `5 Đại Tạng Kinh Nikāya`.

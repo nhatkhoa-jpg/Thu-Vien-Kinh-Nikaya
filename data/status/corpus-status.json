@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastVerifiedAt": "2026-09-02T02:43:42+00:00",
+  "lastVerifiedAt": "2026-09-02T03:12:56+00:00",
   "collections": [
     {
       "collection": "DN",
@@ -8,9 +8,10 @@
       "catalogCount": 34,
       "vietnameseFullTextCount": 34,
       "missingVietnameseCount": 0,
+      "pendingFullTextCount": 0,
       "audioCount": 34,
       "source": "SuttaCentral canonical tree + repository materialized corpus",
-      "lastVerifiedAt": "2026-09-02T02:43:42+00:00",
+      "lastVerifiedAt": "2026-09-02T03:12:56+00:00",
       "status": "complete"
     },
     {
@@ -18,21 +19,23 @@
       "canonicalCount": 152,
       "catalogCount": 152,
       "vietnameseFullTextCount": 0,
-      "missingVietnameseCount": 152,
+      "missingVietnameseCount": 0,
+      "pendingFullTextCount": 152,
       "audioCount": 152,
       "source": "SuttaCentral canonical tree + repository materialized corpus",
-      "lastVerifiedAt": "2026-09-02T02:43:42+00:00",
+      "lastVerifiedAt": "2026-09-02T03:12:56+00:00",
       "status": "in_progress"
     },
     {
       "collection": "SN",
       "canonicalCount": 1819,
       "catalogCount": 1819,
-      "vietnameseFullTextCount": 120,
-      "missingVietnameseCount": 1699,
+      "vietnameseFullTextCount": 358,
+      "missingVietnameseCount": 1,
+      "pendingFullTextCount": 1460,
       "audioCount": 0,
       "source": "SuttaCentral canonical tree + repository materialized corpus",
-      "lastVerifiedAt": "2026-09-02T02:43:42+00:00",
+      "lastVerifiedAt": "2026-09-02T03:12:56+00:00",
       "status": "in_progress"
     },
     {
@@ -40,10 +43,11 @@
       "canonicalCount": 1408,
       "catalogCount": 2,
       "vietnameseFullTextCount": 0,
-      "missingVietnameseCount": 1408,
+      "missingVietnameseCount": 0,
+      "pendingFullTextCount": 1408,
       "audioCount": 0,
       "source": "SuttaCentral canonical tree + repository materialized corpus",
-      "lastVerifiedAt": "2026-09-02T02:43:42+00:00",
+      "lastVerifiedAt": "2026-09-02T03:12:56+00:00",
       "status": "in_progress"
     },
     {
@@ -51,10 +55,11 @@
       "canonicalCount": 2,
       "catalogCount": 2,
       "vietnameseFullTextCount": 0,
-      "missingVietnameseCount": 2,
+      "missingVietnameseCount": 0,
+      "pendingFullTextCount": 2,
       "audioCount": 0,
       "source": "SuttaCentral canonical tree + repository materialized corpus",
-      "lastVerifiedAt": "2026-09-02T02:43:42+00:00",
+      "lastVerifiedAt": "2026-09-02T03:12:56+00:00",
       "status": "in_progress"
     }
   ]

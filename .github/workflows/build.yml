@@ -3,6 +3,9 @@ name: Build & Validate
 on:
   push:
     branches: [main, feature/mn-prebuilt-mp3, feature/progress-home-dn, feature/preservation-audio-v2]
+    paths-ignore:
+      - "data/content/**"
+      - "data/status/**"
   pull_request:
     branches: [main]
 

@@ -1,0 +1,714 @@
+{
+  "sn10.1": {
+    "canonicalRef": "sn10.1",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn10.1/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:09:05+00:00",
+    "materializedAt": "2026-09-02T03:09:05+00:00",
+    "contentHash": "abbb8e7f25a76af3c234eef3b0be6a81006129ef78369418c9a5f038b3f44608",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 10: Tương Ưng Dạ Xoa"
+      },
+      {
+        "id": "p2",
+        "text": "10.1. Indaka"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Một thời Thế Tôn trú ở Rājagaha (Vương Xá), núi Indakuuta, tại trú xứ của Dạ-xoa Indaka."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Rồi Dạ-xoa Indaka đi đến Thế Tôn, sau khi đến nói lên những bài kệ với Thế Tôn:"
+      },
+      {
+        "id": "p5",
+        "text": "Chư Phật, Ngài dạy rằng,\n\nSắc không phải sinh mạng,\n\nVậy sao sinh mạng này,\n\nLại có trong thân này?\n\nTừ đâu xương thịt đến,\n\nTrong thân thể hiện tại?\n\nLàm sao sinh mạng này,\n\nGá dính trong thai tạng?\nVi-n 3 (Thế Tôn):\nTrước tiên, Kalala,\n\nRồi từ Kalala,\n\nAbbuda có mặt.\n\nRồi từ Abbuda,\n\nPesì (thịt mềm) được sanh ra.\n\nPesì sinh Ghana (thịt cứng),\n\nRồi đến Pasàkha (chi tiết),\n\nTóc, lông và các móng,\n\nTiếp tục được sanh ra.\n\nNhững gì người mẹ ăn,\n\nÐồ ăn, đồ uống nào,\n\nCon người trong bụng mẹ,\n\nỞ đấy, lấy nuôi dưỡng."
+      },
+      {
+        "id": "p6",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn10.10": {
+    "canonicalRef": "sn10.10",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn10.10/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:09:05+00:00",
+    "materializedAt": "2026-09-02T03:09:05+00:00",
+    "contentHash": "c12e668d8b9f929516fea525c3afc5f6b0845054f7942c734d45645a0483cfbf",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 10: Tương Ưng Dạ Xoa"
+      },
+      {
+        "id": "p2",
+        "text": "10.10. Sukkà"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Một thời Thế Tôn ở Rājagaha, tại Veluvana, chỗ nuôi dưỡng các con sóc."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Lúc bấy giờ, một người cư sĩ đang cúng dường đồ ăn cho Tỷ-kheo-ni Sukkà."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Rồi một Dạ-xoa, khởi lòng tịnh tín đối với Tỷ-kheo-ni Sukkà, liền đi từ đường xe này đến đường xe khác, đi từ ngã ba này ba khác ở Rājagaha, ngay lúc ấy nói lên bài kệ này:"
+      },
+      {
+        "id": "p6",
+        "text": "Cư sĩ có trí này,\n\nChắc hưởng nhiều công đức,\n\nÐã cúng dường món ăn,\n\nDâng cúng lên Sukkà,\n\nMột vị đã giải thoát,\n\nTất cả mọi triền phược."
+      },
+      {
+        "id": "p7",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn10.11": {
+    "canonicalRef": "sn10.11",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn10.11/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:09:09+00:00",
+    "materializedAt": "2026-09-02T03:09:09+00:00",
+    "contentHash": "0ea6ddb7759f77ffb23ee368b72635f190918036f983220cbfa17102997c632a",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 10: Tương Ưng Dạ Xoa"
+      },
+      {
+        "id": "p2",
+        "text": "10.11. Cirà hay Virà"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Như vầy tôi nghe."
+      },
+      {
+        "id": "p4",
+        "text": "Một thời Thế Tôn trú ở Ràagaha (Vương Xá), tại Veluvana (Trúc Lâm), chỗ nuôi dưỡng các con sóc."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Lúc bấy giờ, một cư sĩ dâng y cúng dường Tỷ-kheo-ni Cirà."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Rồi một Dạ-xoa, khởi lòng tịnh tín đối với Tỷ-kheo-ni Cirà, liền đi từ đường xe này đến đường xe khác, từ ngã ba này đến ngã ba khác tại thành Vương Xá, ngay lúc ấy nói lên bài kệ này:"
+      },
+      {
+        "id": "p7",
+        "text": "Cư sĩ có trí này,\n\nChắc hưởng nhiều công đức,\n\nÐã cúng dường tấm y,\n\nDâng cúng lên Cirà,\n\nMột vị đã giải thoát,\n\nTất cả mọi khổ ách."
+      },
+      {
+        "id": "p8",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn10.12": {
+    "canonicalRef": "sn10.12",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn10.12/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:09:10+00:00",
+    "materializedAt": "2026-09-02T03:09:10+00:00",
+    "contentHash": "e217da5ec6821ed826ac3f90c60e3b9aef23be5d56861f5209b5e203c78ac87b",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 10: Tương Ưng Dạ Xoa"
+      },
+      {
+        "id": "p2",
+        "text": "10.12. Alava"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Như vầy tôi nghe."
+      },
+      {
+        "id": "p4",
+        "text": "Một thời Thế Tôn trú ở Āḷavi, tại trú xứ của Dạ-xoa Alavakka."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Rồi Dạ-xoa Āḷavaka nói với Thế Tôn:"
+      },
+      {
+        "id": "p6",
+        "text": "—Này Sa-môn, hãy đi ra!"
+      },
+      {
+        "id": "p7",
+        "text": "—Lành thay, Hiền giả."
+      },
+      {
+        "id": "p8",
+        "text": "Thế Tôn nói và đi ra."
+      },
+      {
+        "id": "p9",
+        "text": "—Này Sa-môn, hãy đi vào."
+      },
+      {
+        "id": "p10",
+        "text": "—Lành thay, Hiền giả."
+      },
+      {
+        "id": "p11",
+        "text": "Thế Tôn nói và đi vào."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 3 Lần thứ hai, Dạ-xoa Āḷavaka nói với Thế Tôn:"
+      },
+      {
+        "id": "p13",
+        "text": "—Này Sa-môn, hãy đi ra."
+      },
+      {
+        "id": "p14",
+        "text": "—Lành thay, Hiền giả."
+      },
+      {
+        "id": "p15",
+        "text": "Thế Tôn nói và đi ra."
+      },
+      {
+        "id": "p16",
+        "text": "—Này Sa-môn, hãy đi vào."
+      },
+      {
+        "id": "p17",
+        "text": "—Lành thay, Hiền giả."
+      },
+      {
+        "id": "p18",
+        "text": "Thế Tôn nói và đi vào."
+      },
+      {
+        "id": "p19",
+        "text": "Vi-n 4 Lần thứ ba, Dạ-xoa Āḷavika nói với Thế Tôn:"
+      },
+      {
+        "id": "p20",
+        "text": "—Này Sa-môn, hãy đi ra."
+      },
+      {
+        "id": "p21",
+        "text": "—Lành thay, Hiền giả."
+      },
+      {
+        "id": "p22",
+        "text": "Thế Tôn nói và đi ra."
+      },
+      {
+        "id": "p23",
+        "text": "—Này Sa-môn, hãy đi vào."
+      },
+      {
+        "id": "p24",
+        "text": "—Lành thay, Hiền giả."
+      },
+      {
+        "id": "p25",
+        "text": "Thế Tôn nói và đi vào."
+      },
+      {
+        "id": "p26",
+        "text": "Vi-n 5 Lần thứ tư, Dạ-xoa Āḷavika nói với Thế Tôn:"
+      },
+      {
+        "id": "p27",
+        "text": "—Này Sa-môn, hãy đi ra."
+      },
+      {
+        "id": "p28",
+        "text": "Vi-n 6 —Này Hiền giả, Ta không đi ra. Hãy làm gì Ông nghĩ là phải làm."
+      },
+      {
+        "id": "p29",
+        "text": "Vi-n 7 —Này Sa-môn, ta sẽ hỏi Ông một câu hỏi. Nếu Ông không trả lời ta được, ta sẽ làm tâm Ông điên loạn, hay ta làm Ông bể tim, hay nắm lấy chân, ta sẽ quăng Ông qua bờ bên kia sông Hằng."
+      },
+      {
+        "id": "p30",
+        "text": "Vi-n 8 —Này Hiền giả, Ta không thấy một ai, ở thế giới chư Thiên, Ma giới hay Phạm thiên giới, với chúng Sa-môn, Bà-la-môn, với chư Thiên và loài Người có thể làm tâm Ta điên loạn, hay làm bể tim Ta hay nắm lấy chân, quăng Ta qua bờ bên kia sông Hằng. Tuy vậy, này Hiền giả, hãy hỏi đi như Ông muốn."
+      },
+      {
+        "id": "p31",
+        "text": "Vi-n 9 (Dạ-xoa):\nCái gì đối người đời,\n\nLà tài sản tối thượng?\n\nCái gì khéo hành trì,\n\nÐem lại chơn an lạc?\n\nCái gì giữa các vị,\n\nLà vị ngọt tối thượng?\n\nPhải sống như thế nào,\n\nÐược gọi sống tối thượng?\nVi-n 10 (Thế Tôn):\nLòng tin đối người đời,\n\nLà tài sản tối thượng.\n\nChánh pháp khéo hành trì,\n\nÐem lại chơn an lạc.\n\nChân lý giữa các vị,\n\nLà vị ngọt tối thượng.\n\nPhải sống với trí tuệ,\n\nÐược gọi sống tối thượng.\nVi-n 11 (Dạ-xoa):\nLàm sao vượt bộc lưu?\n\nLàm sao vượt biển lớn?\n\nLàm sao siêu khổ não?\n\nLàm sao được thanh tịnh?\nVi-n 12 (Thế Tôn):\nVới tín, vượt bộc lưu.\n\nKhông phóng dật, vượt biển.\n\nTinh tấn, siêu khổ não.\n\nVới Trí, được thanh tịnh.\nVi-n 13 (Dạ-xoa):\nLàm sao được trí tuệ?\n\nLàm sao được tài sản?\n\nLàm sao đạt danh xưng?\n\nLàm sao kết bạn hữu?\n\nÐời này qua đời khác,\n\nLàm sao không sầu khổ?\nVi-n 14 (Thế Tôn):\nAi tin tưởng Chánh pháp\n\nCủa bậc A-la-hán,\n\nPháp ấy khiến đạt được,\n\nNiết-bàn (chơn an lạc),\n\nKhéo học, không phóng dật,\n\nMinh nhãn khéo phân biệt,\n\nNhờ hành trì như vậy,\n\nVị ấy được trí tuệ.\n\nLàm gì khéo thích hợp,\n\nGánh vác các trách nhiệm,\n\nPhấn chấn, thích hoạt động,\n\nNhư vậy được tài sản,\n\nChơn thật đạt danh xưng,\n\nBố thí kết bạn hữu,\n\nÐời này qua đời khác,\n\nNhư vậy không sầu khổ.\n\nTín nam gia chủ nào,\n\nTìm cầu bốn pháp này,\n\nChơn thực và chế ngự,\n\nKiên trì và xả thí,\n\nVị ấy sau khi chết,\n\nKhông còn phải sầu khổ.\n\nÐời này qua đời khác,\n\nSau chết, không sầu khổ.\n\nTa muốn Ông đến hỏi,\n\nSa-môn, Bà-la-môn,\n\nCó những pháp nào khác,\n\nTốt hơn bốn pháp này:\n\nChơn thực và chế ngự,\n\nXả thí và kham nhẫn.\nVi-n 15 (Dạ-xoa):\nLàm sao nay ta hỏi,\n\nSa-môn, Bà-la-môn,\n\nKhi nay ta được biết,\n\nNguyên nhân của đời sau.\n\nPhật đến Āḷavi,\n\nThật lợi ích cho ta.\n\nNay ta được biết rõ,\n\nCho gì được quả lớn.\n\nNên ta sẽ bộ hành,\n\nLàng này qua làng khác,\n\nThành này qua thành khác,\n\nÐảnh lễ Phật Chánh Giác,\n\nCùng đảnh lễ Chánh pháp,\n\nCác vị chứng Pháp tánh."
+      },
+      {
+        "id": "p32",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn10.2": {
+    "canonicalRef": "sn10.2",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn10.2/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:09:04+00:00",
+    "materializedAt": "2026-09-02T03:09:04+00:00",
+    "contentHash": "a91ea89fb6850617c51736be655c21909343069d0e69366208ea515a78aedcb7",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 10: Tương Ưng Dạ Xoa"
+      },
+      {
+        "id": "p2",
+        "text": "10.2. Sakka"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Một thời, Thế Tôn trú ở Rājagaha (Vương Xá) trên núi Gijjhakuuta (Linh Thứu)."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Rồi Dạ-xoa tên Sakka đi đến Thế Tôn, sau khi đến nói lên những bài kệ với Thế Tôn:"
+      },
+      {
+        "id": "p5",
+        "text": "Thật không tốt lành gì,\n\nMột Sa-môn như Ngài,\n\nÐã đoạn mọi triền phược,\n\nÐã sống chơn giải thoát,\n\nLại tiếp tục giảng dạy,\n\nNhững kẻ khác tu học.\nVi-n 3 (Thế Tôn):\nNày Dạ-xoa Sakka,\n\nDầu vì lý do gì,\n\nLoài Người sống chung nhau,\n\nKhông một lý do nào,\n\nXứng đáng bậc trí tuệ,\n\nVới lòng từ lân mẫn,\n\nNếu với tâm tín thành,\n\nGiảng dạy những người khác,\n\nDo vậy không hệ lụy,\n\nVì lòng từ lân mẫn."
+      },
+      {
+        "id": "p6",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn10.3": {
+    "canonicalRef": "sn10.3",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn10.3/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:09:04+00:00",
+    "materializedAt": "2026-09-02T03:09:04+00:00",
+    "contentHash": "e712f35952b99846635b7ec6451b0ade2e0c68ca0dc63ccbb9ac5a7e81a941ac",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 10: Tương Ưng Dạ Xoa"
+      },
+      {
+        "id": "p2",
+        "text": "10.3. Suciloma"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Một thời Thế Tôn ở Gayà, trên hòn đá Tankita tại trú xứ của Dạ-xoa Suciloma."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Lúc bấy giờ, Dạ-xoa Khara và Dạ-xoa Suciloma đi ngang qua, không xa Thế Tôn bao nhiêu."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Rồi Dạ-xoa Khara nói với Dạ-xoa Suciloma:"
+      },
+      {
+        "id": "p6",
+        "text": "—Ðây là một Sa-môn."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 —Ðây không phải Sa-môn. Ðây là Sa-môn giả. Hay ít nhất cho đến khi ta biết được Sa-môn hay Sa-môn giả."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 Rồi Dạ-xoa Suciloma đi đến Thế Tôn, sau khi đến liền nghiêng thân về phía Thế Tôn."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 6 Thế Tôn liền tránh né thân của mình."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 7 Dạ-xoa Suciloma nói với Thế Tôn: —Có phải Sa-môn sợ ta?"
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 8 —Này Hiền giả, Ta không sợ Ông. Nhưng xúc chạm với Ông là điều đáng ghét (pàpaka)."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 9 —Này Sa-môn, ta sẽ hỏi Ông một câu. Nếu Ông không trả lời ta được, ta sẽ làm tâm Ông điên loạn, hay ta làm Ông bể tim, hay nắm lấy chân, ta sẽ quăng Ông qua bờ bên kia sông Hằng."
+      },
+      {
+        "id": "p13",
+        "text": "Vi-n 10 —Này Hiền giả, ở thế giới chư Thiên, Ma giới hay Phạm thiên giới, với chúng Sa-môn, Bà-la-môn, với chư Thiên và loài Người, Ta không thấy một ai có thể làm tâm Ta điên loạn, hay làm bể tim Ta, hay nắm lấy chân Ta, quăng Ta qua bờ bên kia. Tuy vậy, này Hiền giả, hãy hỏi đi như Ông muốn."
+      },
+      {
+        "id": "p14",
+        "text": "Vi-n 11 (Dạ-xoa):\nTham dục và sân hận,\n\nDo nhân gì sanh khởi?\n\nBất mãn và thỏa mãn,\n\nSợ hãi từ đâu sanh?\n\nTừ đâu được khởi lên,\n\nCác tư tưởng, tư duy,\n\nNhư quạ được bầy trẻ,\n\nThả bay rồi kéo lại?\nVi-n 12 (Thế Tôn):\nTham dục và sân hận,\n\nDo nhân này sanh khởi,\n\nBất mãn và thỏa mãn,\n\nSợ hãi từ đây sanh.\n\nTừ đây được khởi lên,\n\nCác tư tưởng, tư duy,\n\nNhư quạ được bầy trẻ,\n\nThả bay rồi kéo lại.\n\nChính do tham ái sanh,\n\nChính do tự ngã sanh.\n\nNhư cây nigroda (cây bàng),\n\nDo từ thân cây sanh.\n\nPhàm phu bám ác dục,\n\nNhư cây leo khắp rừng.\n\nNhững ai hiểu biết được,\n\nDo nhân ấy sanh khởi,\n\nHọ diệt trừ nhân ấy.\n\nHãy nghe, này Dạ-xoa,\n\nHọ vượt bộc lưu này,\n\nBộc lưu thật khó vượt,\n\nTừ trước chưa vượt qua,\n\nKhông còn phải tái sanh."
+      },
+      {
+        "id": "p15",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn10.4": {
+    "canonicalRef": "sn10.4",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn10.4/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:09:05+00:00",
+    "materializedAt": "2026-09-02T03:09:05+00:00",
+    "contentHash": "b9e2d67fce1c476b4ad3955cc70f2139314ff842bb7e19c904e74d206a6498bb",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 10: Tương Ưng Dạ Xoa"
+      },
+      {
+        "id": "p2",
+        "text": "10.4. Manibhadda"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Một thời Thế Tôn trú giữa dân chúng Magadha, tại điện thờ Manimàlaka, tại một trú xứ của Dạ-xoa Manibhadda."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Rồi Dạ-xoa Manibhadda đi đến Thế Tôn, sau khi đến, nói lên bài kệ này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p5",
+        "text": "Lành thay, thường chánh niệm,\n\nNhờ niệm, lạc tăng trưởng.\n\nCó niệm, mai đẹp hơn,\n\nHận thù được giải thoát.\nVi-n 3 (Thế Tôn):\nLành thay, thường chánh niệm,\n\nNhờ niệm, lạc tăng trưởng,\n\nCó niệm, mai đẹp hơn,\n\nHận thù chưa giải thoát.\n\nVới ai trọn ngày đêm,\n\nTâm ý lạc, bất hại,\n\nTừ tâm mọi hữu tình,\n\nVị ấy không thù hận."
+      },
+      {
+        "id": "p6",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn10.5": {
+    "canonicalRef": "sn10.5",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn10.5/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:09:05+00:00",
+    "materializedAt": "2026-09-02T03:09:05+00:00",
+    "contentHash": "378b2a63f88953572621b70876c5bacb8b7cee95fe7d6fe19801fa8ddaf516fd",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 10: Tương Ưng Dạ Xoa"
+      },
+      {
+        "id": "p2",
+        "text": "10.5. Sanu"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Một thời Thế Tôn trú ở Sāvatthi, Jetavana, tại vườn ông Anāthapiṇḍika."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Lúc bấy giờ, Sānu, con một nữ cư sĩ bị Dạ-xoa ám ảnh."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Nữ cư sĩ ấy than khóc, ngay lúc ấy nói lên bài kệ này:"
+      },
+      {
+        "id": "p6",
+        "text": "Con ta là La-hán,\n\nÐối với ta là vậy,\n\nVà chính ta được nghe,\n\nVị La-hán nói vậy.\n\nNay ta thấy Sānu,\n\nBị Dạ-xoa ám ảnh.\n\nNgày mười bốn, mười lăm,\n\nVà ngày tám nửa tháng,\n\nCả ngày lễ đặc biệt,\n\nKhéo tu tám trai giới,\n\nTuân trì lễ Bố-tát.\n\nVà chính ta được nghe,\n\nVị La-hán nói vậy,\n\nNay ta thấy Sānu,\n\nBị Dạ-xoa ám ảnh.\n\nNgày mười bốn, mười lăm,\n\nVà ngày tám nửa tháng,\n\nCả ngày lễ đặc biệt,\n\nKhéo tu tám trai giới,\n\nTuân trì lễ Bố-tát.\n\nNhững ai sống Phạm hạnh,\n\nDạ-xoa không ám ảnh,\n\nVà chính ta được nghe,\n\nVị La-hán nói vậy.\n\nNgười nói với Sānu,\n\nCó trí và sáng suốt,\n\nÐây là lời Dạ-xoa,\n\nChớ có làm điều ác,\n\nCông khai hay bí mật.\n\nNếu người làm điều ác,\n\nSẽ làm hay đang làm,\n\nÔng không thoát khổ đau,\n\nDầu có đứng lên chạy,\n\nChạy một mạch, chạy dài."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 (Sānu được khỏi ám ảnh):"
+      },
+      {
+        "id": "p8",
+        "text": "Này mẹ, người ta khóc,\n\nLà khóc cho người chết,\n\nHay khóc cho người sống,\n\nNhưng không được thấy mặt?\n\nNày mẹ, chúng thấy con,\n\nHiện có mặt đang sống.\n\nVậy sao mẹ khóc con,\n\nNày người mẹ thân yêu?\nVi-n 5 (Bà mẹ):\nNgười ta khóc cho con,\n\nLà khóc cho con chết,\n\nHay khóc cho con sống,\n\nNhưng không được thấy mặt.\n\nAi đã bỏ dục vọng,\n\nLại trở lui đời này,\n\nNày con, người ta khóc,\n\nLà khóc cho người ấy,\n\nVì người ấy được xem,\n\nCòn sống cũng như chết.\n\nNay con được kéo ra,\n\nKhỏi than hừng đỏ rực,\n\nCon còn muốn rơi vào,\n\nÐống than hồng ấy chăng?\n\nNay con được thoát ra,\n\nKhỏi địa ngục đau khổ,\n\nCon còn muốn rơi vào,\n\nCõi địa ngục ấy chăng?\n\nHãy dong ruổi đời con,\n\nTa chúc con hạnh phúc,\n\nHãy sống như thế nào,\n\nKhông làm ai bực phiền.\n\nÐồ vật thoát lửa cháy,\n\nCon muốn đốt lại chăng?"
+      },
+      {
+        "id": "p9",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn10.6": {
+    "canonicalRef": "sn10.6",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn10.6/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:09:05+00:00",
+    "materializedAt": "2026-09-02T03:09:05+00:00",
+    "contentHash": "4ddd3c3b7fb63e0bc62ca24b80240d085718fcb07589a9699a3cde5da411d12f",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 10: Tương Ưng Dạ Xoa"
+      },
+      {
+        "id": "p2",
+        "text": "10.6. Piyankara"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Một thời Tôn giả Anuruddha trú ở Sāvatthi, Jetavana, tại vườn ông Anāthapiṇḍika."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Lúc bấy giờ Tôn giả Anuruddha thức dậy khi đêm vừa mới sáng, đang tụng đọc pháp cú."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Một nữ Dạ-xoa, mẹ của Piyankara dỗ cho con nín như sau:"
+      },
+      {
+        "id": "p6",
+        "text": "Này Piyankara,\n\nChớ có sanh tiếng động,\n\nVị Tỷ-kheo đang tụng,\n\nNhững lời về pháp cú.\n\nNếu chúng ta biết được,\n\nHọc được pháp cú này,\n\nRồi như pháp hành trì,\n\nChúng ta được lợi ích.\n\nKhông sát hại sanh vật,\n\nKhông cố ý nói láo,\n\nTự học tập giới luật,\n\nChúng ta thoát ngạ quỷ."
+      },
+      {
+        "id": "p7",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn10.7": {
+    "canonicalRef": "sn10.7",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn10.7/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:09:05+00:00",
+    "materializedAt": "2026-09-02T03:09:05+00:00",
+    "contentHash": "64e6dd190302e087a8029fdf0bbad94145b32c994a23ab8b546efe86baa7e734",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 10: Tương Ưng Dạ Xoa"
+      },
+      {
+        "id": "p2",
+        "text": "10.7. Punabbasu"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Một thời Thế Tôn trú ở Sāvatthi, Jetavana, tại vườn ông Anāthapiṇḍika."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Lúc bấy giờ, Thế Tôn đang thuyết pháp cho chúng Tỷ-kheo về vấn đề liên hệ đến Niết-bàn, tuyên thuyết, khích lệ, làm cho phấn khởi, làm cho hoan hỷ. Và các Tỷ-kheo ấy chú tâm, chú ý, tập trung mọi tâm tư, lóng tai nghe pháp."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Rồi một nữ Dạ-xoa, mẹ Punabbasu dỗ con nín như sau:"
+      },
+      {
+        "id": "p6",
+        "text": "Hãy gìn giữ im lặng,\n\nNày Uttarika!\n\nHãy gìn giữ im lặng,\n\nNày Punabbasu!\n\nÐể mẹ được nghe pháp.\n\nÐạo Sư, tối thượng Phật,\n\nThế Tôn giảng Niết-bàn,\n\nThoát ly mọi triền phược,\n\nMẹ đối với pháp ấy,\n\nThật cực kỳ ái lạc.\n\nÐời ái lạc con mình,\n\nÐời ái lạc chồng mình,\n\nNhưng đối với đạo pháp,\n\nMẹ ái lạc nhiều hơn.\n\nCon hay chồng dầu thân,\n\nKhông cứu ta thoát khổ,\n\nKhông như nghe diệu pháp,\n\nChúng sanh được thoát khổ.\n\nTrong đau khổ đời sau,\n\nDính liền già và chết,\n\nChánh pháp Ngài giác ngộ,\n\nGiải thoát khỏi già chết.\n\nMẹ muốn nghe pháp ấy\n\nHãy nín đi con ơi!\n\nNày Punabbasu.\nVi-n 4 (Punabbasu):\nThưa mẹ, con không nói,\n\nUttarà nín lặng.\n\nMẹ hãy lắng nghe pháp,\n\nNghe pháp được an lạc.\n\nVì không biết diệu pháp,\n\nChúng ta trôi sanh tử.\n\nGiữa Nhân, Thiên mù quáng,\n\nNgài đem cho ánh sáng,\n\nGiác ngộ, thân tối hậu,\n\nBậc Pháp nhãn thuyết pháp.\nVi-n 5 (Bà mẹ):\nHữu trí thay, con ta!\n\nCon ta sanh ẵm ngực.\n\nNay con ta ái lạc,\n\nTịnh pháp Vô thượng Phật.\n\nNày Punabbasu!\n\nHãy sống chơn an lạc,\n\nNay ta được sống lại,\n\nThấy được chơn Thánh đế,\n\nNày con Uttara!\n\nHãy nghe theo lời ta."
+      },
+      {
+        "id": "p7",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn10.8": {
+    "canonicalRef": "sn10.8",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn10.8/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:09:04+00:00",
+    "materializedAt": "2026-09-02T03:09:04+00:00",
+    "contentHash": "ce27b3ea80d454ac9ac124c6313629142ca966833aaa274313742bdf43260993",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 10: Tương Ưng Dạ Xoa"
+      },
+      {
+        "id": "p2",
+        "text": "10.8. Sudatta."
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Một thời Thế Tôn ở Rājagaha (Vương Xá), tại rừng Sìta."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Lúc bấy giờ cư sĩ Anāthapiṇḍika (Cấp Cô Ðộc) đã đến Rājagaha để làm một vài công việc."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Cư sĩ Anāthapiṇḍika được nghe đức Phật đã ra đời và muốn đến yết kiến Thế Tôn."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 Rồi cư sĩ Anāthapiṇḍika suy nghĩ: “Nay không phải thời để yết kiến Thế Tôn. Ngày mai mới phải thời ta đến yết kiến Thế Tôn”. Như vậy với ý nghĩ đi yết kiến đức Phật, ông Anāthapiṇḍika nằm ngủ. Trong đêm, ông ấy thức dậy ba lần, tưởng rằng trời đã sáng."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 5 Rồi cư sĩ Anāthapiṇḍika đi đến cửa Sìvatthika (nghĩa địa), và có những phi nhân mở cửa."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 6 Và khi ông ra khỏi thành phố, ánh sáng biến mất và bóng tối hiện ra. Ông sợ hãi, hoảng hốt, lông tóc dựng ngược và muốn đi trở về."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 7 Rồi Dạ-xoa Sìvaka ẩn hình, lên tiếng như sau:"
+      },
+      {
+        "id": "p10",
+        "text": "Trăm voi và trăm ngựa,\n\nTrăm xe do ngựa kéo,\n\nCả trăm ngàn thiếu nữ,\n\nÐược trang sức bông tai,\n\nKhông bằng phần mười sáu,\n\nMột bước đi tới này.\n\nCư sĩ, hãy tiến tới!\n\nCư sĩ, hãy tiến tới!\n\nTiến tới, tốt đẹp hơn,\n\nChớ có lui, thối bước!"
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 8 Rồi với Anāthapiṇḍika, tối tăm biến mất, ánh sáng hiện ra. Và sợ hãi, hốt hoảng, lông tóc dựng ngược đã khởi lên được dịu hẳn xuống."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 9 Lần thứ hai … (như trên) …"
+      },
+      {
+        "id": "p13",
+        "text": "Vi-n 10 Lần thứ ba, với Anāthapiṇḍika, ánh sáng biến mất, bóng tối hiện ra. Và sợ hãi, hoảng hốt, lông tóc dựng ngược khởi lên. Và Anāthapiṇḍika muốn trở lui. Lần thứ ba, Dạ-xoa Sìvaka ẩn hình lên tiếng như sau:"
+      },
+      {
+        "id": "p14",
+        "text": "Trăm voi và trăm ngựa,\n\nTrăm xe do ngựa kéo,\n\nCả trăm ngàn thiếu nữ,\n\nÐược trang sức bông tai,\n\nKhông bằng phần mười sáu,\n\nMột bước đi tới này.\n\nCư sĩ, hãy tiến tới!\n\nCư sĩ, hãy tiến tới!\n\nTiến tới, tốt đẹp hơn,\n\nChớ có lui, thối bước!"
+      },
+      {
+        "id": "p15",
+        "text": "Vi-n 11 Rồi với Anāthapiṇḍika, bóng tối biến mất, ánh sáng hiện ra và sợ hãi, hoảng hốt, lông tóc dựng ngược đã khởi lên được dịu bớt."
+      },
+      {
+        "id": "p16",
+        "text": "Vi-n 12 Rồi Anāthapiṇḍika đi đến rừng Sìta, đi đến Thế Tôn."
+      },
+      {
+        "id": "p17",
+        "text": "Vi-n 13 Lúc bấy giờ Thế Tôn thức dậy vào lúc đêm vừa mãn và đang đi kinh hành ngoài trời."
+      },
+      {
+        "id": "p18",
+        "text": "Vi-n 14 Thế Tôn thấy Anāthapiṇḍika từ xa đi đến, khi thấy vậy, từ chỗ kinh hành đi xuống, và ngồi trên chỗ đã soạn sẵn. Sau khi ngồi, Thế Tôn nói với cư sĩ Anāthapiṇḍika:"
+      },
+      {
+        "id": "p19",
+        "text": "—Hãy đến đây, Sudatta!"
+      },
+      {
+        "id": "p20",
+        "text": "Vi-n 15 Rồi cư sĩ Anāthapiṇḍika nghĩ: “Thế Tôn kêu tên ta”, rồi cúi đầu đảnh lễ chân Thế Tôn và bạch Thế Tôn:"
+      },
+      {
+        "id": "p21",
+        "text": "—Bạch Thế Tôn, Thế Tôn ngủ có an lạc chăng?"
+      },
+      {
+        "id": "p22",
+        "text": "(Thế Tôn):\nBà-la-môn tịch tịnh,\n\nLuôn luôn sống an lạc,\n\nKhông đèo bồng dục vọng,\n\nThanh lương, không sanh y,\n\nMọi ái trước đoạn diệt,\n\nTâm khổ não điều phục,\n\nTịch tịnh, sống an lạc,\n\nTâm tư đạt hòa bình."
+      },
+      {
+        "id": "p23",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn10.9": {
+    "canonicalRef": "sn10.9",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn10.9/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:09:04+00:00",
+    "materializedAt": "2026-09-02T03:09:04+00:00",
+    "contentHash": "99ec7caa25cb4dc962ce8e44405b46437722ed0512616405d82e80c71c8e572f",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 10: Tương Ưng Dạ Xoa"
+      },
+      {
+        "id": "p2",
+        "text": "10.9. Sukkà"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Một thời Thế Tôn trú ở Rājagaha (Vương Xá), tại Veluvana (Trúc Lâm), chỗ nuôi dưỡng các con sóc."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Lúc bấy giờ, Tỷ-kheo-ni Sukkà, có đại chúng đoanh vây, đang thuyết pháp."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Rồi một Dạ-xoa có lòng tịnh tín đối với Tỷ-kheo-ni Sukkà, đi từ đường xe này đến đường xe khác, đi từ ngã tư này đến ngã tư khác ở Rājagaha, và ngay lúc ấy, nói lên những bài kệ này:"
+      },
+      {
+        "id": "p6",
+        "text": "Này người Vương Xá thành,\n\nCác Người đã làm gì,\n\nMà nay lại nằm dài,\n\nNhư say vì rượu ngọt.\n\nKhông hầu hạ Sukkà,\n\nÐang thuyết pháp bất tử?\n\nPháp ấy không trở lui,\n\nCam lồ không lưng vơi.\n\nTa nghĩ người trí tuệ\n\nUống nước (cam lồ) ấy,\n\nChẳng khác một đám mưa,\n\nÐối với kẻ lữ hành."
+      },
+      {
+        "id": "p7",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  }
+}
