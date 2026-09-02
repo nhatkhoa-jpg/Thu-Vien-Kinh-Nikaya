@@ -1,6 +1,7 @@
 'use client';
 import {useEffect,useMemo,useRef,useState} from 'react';
 import {RotateCcw,RotateCw} from 'lucide-react';
+import {sendAnalyticsEvent} from '@/lib/analytics';
 
 const rates=[0.75,1,1.25,1.5,1.75,2];
 
@@ -8,14 +9,20 @@ type AudioSource={url:string;provider?:string};
 export type AudioSegment={id:string;duration?:number;sources:AudioSource[]};
 type PreservationManifest={version?:string;segments?:AudioSegment[]};
 
-export default function AudioPlayer({src,segments,manifestUrl,storageKey}:{src?:string;segments?:AudioSegment[];manifestUrl?:string;storageKey?:string}){
+export default function AudioPlayer({src,segments,manifestUrl,storageKey,analyticsRef,locale}:{src?:string;segments?:AudioSegment[];manifestUrl?:string;storageKey?:string;analyticsRef?:string;locale?:string}){
  const ref=useRef<HTMLAudioElement>(null);
  const lastSavedRef=useRef(0);
  const rateRef=useRef(1);
+ const playReported=useRef(false);
+ const listen30Reported=useRef(false);
  const [rate,setRate]=useState(1);
  const [segmentIndex,setSegmentIndex]=useState(0);
  const [sourceIndex,setSourceIndex]=useState(0);
  const [remoteSegments,setRemoteSegments]=useState<AudioSegment[]|null>(null);
+
+ useEffect(()=>{
+   playReported.current=false;listen30Reported.current=false;
+ },[analyticsRef,storageKey]);
 
  useEffect(()=>{
    let cancelled=false;
@@ -43,6 +50,17 @@ export default function AudioPlayer({src,segments,manifestUrl,storageKey}:{src?:
  useEffect(()=>{setSegmentIndex(0);setSourceIndex(0);},[storageKey,src,segments,manifestUrl]);
  useEffect(()=>{if(segmentIndex>=playlist.length){setSegmentIndex(0);setSourceIndex(0);}},[playlist.length,segmentIndex]);
 
+ function report(event:'play'|'listen30'|'complete'){
+   if(analyticsRef)sendAnalyticsEvent(event,analyticsRef,locale);
+ }
+ function onPlay(){if(!playReported.current){playReported.current=true;report('play');}}
+ function onProgress(){
+   save(false);
+   const audio=ref.current;if(!audio||listen30Reported.current)return;
+   let seconds=audio.currentTime;
+   for(let i=0;i<segmentIndex;i++)seconds+=Number(playlist[i]?.duration||0);
+   if(seconds>=30){listen30Reported.current=true;report('listen30');}
+ }
  function persistPosition(nextSegmentIndex:number,time:number,nextRate=rateRef.current){
    const now=Date.now();lastSavedRef.current=now;
    try{localStorage.setItem(key,JSON.stringify({segmentIndex:nextSegmentIndex,time,rate:nextRate,updatedAt:now}));}catch{}
@@ -78,15 +96,16 @@ export default function AudioPlayer({src,segments,manifestUrl,storageKey}:{src?:
      if(value&&rates.includes(Number(value.rate))){const r=Number(value.rate);rateRef.current=r;setRate(r);audio.playbackRate=r;audio.preservesPitch=true;}
    }catch{}
  }
- async function nextSegment(){
+ async function nextSegment(completed=true){
    if(segmentIndex<playlist.length-1){switchSegment(segmentIndex+1);return;}
+   if(completed)report('complete');
    try{localStorage.removeItem(key);}catch{}
  }
  function fallbackSource(){
    const sources=segment?.sources||[];
    if(sourceIndex<sources.length-1){setSourceIndex(i=>i+1);return;}
    if(remoteSegments?.length&&src){setRemoteSegments(null);setSegmentIndex(0);setSourceIndex(0);return;}
-   void nextSegment();
+   void nextSegment(false);
  }
  useEffect(()=>{
    const audio=ref.current;if(!audio||!currentSrc)return;
@@ -96,7 +115,7 @@ export default function AudioPlayer({src,segments,manifestUrl,storageKey}:{src?:
  if(!currentSrc)return null;
  const provider=segment?.sources[sourceIndex]?.provider;
  return <div className="audioPlayer" data-segment={`${segmentIndex+1}/${playlist.length}`}>
-   <audio ref={ref} controls preload="metadata" src={currentSrc} onLoadedMetadata={restore} onTimeUpdate={()=>save(false)} onPause={()=>save(true)} onEnded={()=>void nextSegment()} onError={fallbackSource}/>
+   <audio ref={ref} controls preload="metadata" src={currentSrc} onLoadedMetadata={restore} onPlay={onPlay} onTimeUpdate={onProgress} onPause={()=>save(true)} onEnded={()=>void nextSegment(true)} onError={fallbackSource}/>
    <div className="audioTools">
      <button onClick={()=>seek(-15)} aria-label="Back 15 seconds"><RotateCcw size={16}/><span>15s</span></button>
      <div className="rateGroup" aria-label="Playback speed">{rates.map(v=><button key={v} className={rate===v?'activeRate':''} onClick={()=>update(v)}>{v}×</button>)}</div>

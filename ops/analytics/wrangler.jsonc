@@ -1,0 +1,15 @@
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "thu-vien-kinh-nikaya-analytics",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-09-02",
+  "workers_dev": true,
+  "durable_objects": {
+    "bindings": [
+      { "name": "STATS", "class_name": "StatsDO" }
+    ]
+  },
+  "migrations": [
+    { "tag": "v1", "new_sqlite_classes": ["StatsDO"] }
+  ]
+}
