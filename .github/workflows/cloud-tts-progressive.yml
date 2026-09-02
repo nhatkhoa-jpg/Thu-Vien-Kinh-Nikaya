@@ -1,21 +1,23 @@
-name: Progressive Google Cloud TTS
+name: Featured Google Cloud TTS
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '17 */6 * * *'
 
 permissions:
   contents: write
 
 concurrency:
-  group: progressive-google-cloud-tts
+  group: featured-google-cloud-tts
   cancel-in-progress: false
 
 env:
-  RELEASE_TAG: mn-vi-cloud-audio-v1
+  RELEASE_TAG: featured-vi-cloud-audio-v1
   GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
 
 jobs:
-  render-one:
+  render-one-featured:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
@@ -28,44 +30,43 @@ jobs:
           test -n "$GOOGLE_TTS_API_KEY"
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg jq
-      - name: Create or reuse cloud audio release
+      - name: Create or reuse featured audio release
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
           if ! gh release view "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
             gh release create "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" \
-              --title 'Trung Bộ · Google Cloud TTS final-quality v1' \
-              --notes 'Manual-only cloud rendering. Each discourse has MP3 + JSON receipt with provider, model, voice, character count, duration and hashes. Piper release remains untouched as fallback.'
+              --title 'Bài kinh nổi bật · Google Cloud TTS HD' \
+              --notes 'Google Cloud TTS quality samples for the homepage featured discourses. Quota-guarded; existing local/preservation audio remains fallback.'
           fi
-      - name: Select next missing discourse and a safe free-tier model
+      - name: Select next homepage discourse and safe model
         id: pick
         env:
           GH_TOKEN: ${{ github.token }}
         shell: bash
         run: |
           set -euo pipefail
-          gh api --paginate "repos/$GITHUB_REPOSITORY/releases/tags/$RELEASE_TAG" > /tmp/release.json
+          gh api "repos/$GITHUB_REPOSITORY/releases/tags/$RELEASE_TAG" > /tmp/release.json
           jq -r '.assets[].name' /tmp/release.json 2>/dev/null | sort -u > /tmp/assets.txt || true
           python3 - <<'PY'
-          import importlib.util,json,os,pathlib
+          import importlib.util,json,pathlib
           spec=importlib.util.spec_from_file_location('cloud','scripts/build_cloud_tts_one.py'); m=importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
-          usage=json.load(open('data/audio/cloud-tts-usage.json',encoding='utf-8'))
+          catalog=json.load(open('data/catalog/suttas.json',encoding='utf-8'))
+          featured=[str(s.get('canonicalRef','')).lower() for s in catalog if s.get('featured')][:6]
+          refs=[]
+          for r in ['mn21',*featured]:
+              if r and r not in refs: refs.append(r)
           assets=set(pathlib.Path('/tmp/assets.txt').read_text().splitlines()) if pathlib.Path('/tmp/assets.txt').exists() else set()
-          refs=[f'mn{i}' for i in range(1,153)]
           missing=[r for r in refs if f'{r}.mp3' not in assets or f'{r}.json' not in assets]
           if not missing:
-              open('/tmp/pick.env','w').write('done=true\n'); raise SystemExit
+              open('/tmp/pick.env','w').write('done=true\nreason=homepage-featured-complete\n'); raise SystemExit
           ref=missing[0]
           text,_,_=m.fetch_text(ref); needed=sum(len(x) for x in m.chunks(text))
-          models=usage['models']; completed=(152-len(missing))
-          weighted=['chirp3-hd','neural2','wavenet','wavenet','wavenet','wavenet']
-          preferred=weighted[completed%len(weighted)]
-          order=[preferred]+[x for x in weighted if x!=preferred]
-          seen=[]; order=[x for x in order if not (x in seen or seen.append(x))]
+          usage=json.load(open('data/audio/cloud-tts-usage.json',encoding='utf-8'))
           chosen=None
-          for model in order:
-              q=models[model]
+          for model in ['chirp3-hd','neural2','wavenet']:
+              q=usage['models'][model]
               if q['usedCharacters']+needed <= q['projectSafetyLimitCharacters']:
                   chosen=model; break
           if chosen is None:
@@ -73,17 +74,16 @@ jobs:
           open('/tmp/pick.env','w').write(f'done=false\nref={ref}\nmodel={chosen}\nneeded={needed}\n')
           PY
           cat /tmp/pick.env >> "$GITHUB_OUTPUT"
-      - name: Stop cleanly when complete or monthly safe quota is exhausted
+      - name: Stop cleanly when complete or quota is exhausted
         if: steps.pick.outputs.done == 'true'
-        run: |
-          echo "No render this run: ${{ steps.pick.outputs.reason || 'MN cloud audio already complete' }}" >> "$GITHUB_STEP_SUMMARY"
-      - name: Render one discourse
+        run: echo "No render: ${{ steps.pick.outputs.reason }}" >> "$GITHUB_STEP_SUMMARY"
+      - name: Render one featured discourse
         if: steps.pick.outputs.done != 'true'
         run: |
           set -euo pipefail
           rm -rf dist/cloud-one
           python3 scripts/build_cloud_tts_one.py --ref '${{ steps.pick.outputs.ref }}' --model '${{ steps.pick.outputs.model }}' --out dist/cloud-one
-      - name: Validate and upload checkpoint immediately
+      - name: Validate and upload featured audio
         if: steps.pick.outputs.done != 'true'
         env:
           GH_TOKEN: ${{ github.token }}
@@ -98,7 +98,7 @@ jobs:
           assert float(sys.argv[1])>20
           PY
           gh release upload "$RELEASE_TAG" "dist/cloud-one/$REF.mp3" "dist/cloud-one/$REF.json" --repo "$GITHUB_REPOSITORY" --clobber
-      - name: Update project-side usage ledger
+      - name: Publish catalog entry and quota ledger
         if: steps.pick.outputs.done != 'true'
         env:
           REF: ${{ steps.pick.outputs.ref }}
@@ -107,22 +107,26 @@ jobs:
           set -euo pipefail
           python3 - <<'PY'
           import datetime,json,os
+          ref=os.environ['REF']; model=os.environ['MODEL']
+          meta=json.load(open(f'dist/cloud-one/{ref}.json',encoding='utf-8'))
+          url=f'https://github.com/{os.environ["GITHUB_REPOSITORY"]}/releases/download/{os.environ["RELEASE_TAG"]}/{ref}.mp3'
+          cp='data/audio/cloud-featured.json'; featured=json.load(open(cp,encoding='utf-8'))
+          featured[ref]={'url':url,'downloadUrl':url,'provider':'Google Cloud Text-to-Speech','model':meta['model'],'voice':meta['voice'],'sourceUrl':meta['textSource']}
+          json.dump(featured,open(cp,'w',encoding='utf-8'),ensure_ascii=False,indent=2,sort_keys=True)
           p='data/audio/cloud-tts-usage.json'; u=json.load(open(p,encoding='utf-8'))
-          meta=json.load(open(f'dist/cloud-one/{os.environ["REF"]}.json',encoding='utf-8'))
-          chars=int(meta['characters']); q=u['models'][os.environ['MODEL']]
+          chars=int(meta['characters']); q=u['models'][model]
           q['usedCharacters']+=chars
           q['remainingProjectSafeCharacters']=max(0,q['projectSafetyLimitCharacters']-q['usedCharacters'])
           q['status']='SAFE' if q['remainingProjectSafeCharacters']>0 else 'STOPPED'
-          u['events'].append({'date':datetime.date.today().isoformat(),'purpose':'manual final-quality scripture audio','canonicalRef':os.environ['REF'],'charactersPerVoice':chars,'voices':[meta['voice']],'model':os.environ['MODEL'],'workflowRun':os.environ.get('GITHUB_RUN_ID'),'result':'success'})
+          u['events'].append({'date':datetime.date.today().isoformat(),'purpose':'homepage featured scripture audio','canonicalRef':ref,'charactersPerVoice':chars,'voices':[meta['voice']],'model':model,'workflowRun':os.environ.get('GITHUB_RUN_ID'),'result':'success'})
           json.dump(u,open(p,'w',encoding='utf-8'),ensure_ascii=False,indent=2)
           PY
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/audio/cloud-tts-usage.json
-          git commit -m "audio: record cloud TTS usage for ${{ steps.pick.outputs.ref }}" || exit 0
+          git add data/audio/cloud-featured.json data/audio/cloud-tts-usage.json
+          git commit -m "audio: publish Google TTS featured ${{ steps.pick.outputs.ref }}" || exit 0
           git pull --rebase origin main
           git push origin HEAD:main
       - name: Summary
         if: steps.pick.outputs.done != 'true'
-        run: |
-          echo "Rendered ${{ steps.pick.outputs.ref }} with ${{ steps.pick.outputs.model }}; planned chars ${{ steps.pick.outputs.needed }}." >> "$GITHUB_STEP_SUMMARY"
+        run: echo "Rendered homepage ${{ steps.pick.outputs.ref }} with ${{ steps.pick.outputs.model }} (${{ steps.pick.outputs.needed }} chars)." >> "$GITHUB_STEP_SUMMARY"
