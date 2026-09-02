@@ -26,7 +26,6 @@ jobs:
           set -euo pipefail
           python3 - <<'PY'
           import json
-          import re
           from pathlib import Path
 
           data=json.loads(Path('data/catalog/discovery-sn-suttaplex.json').read_text(encoding='utf-8'))
@@ -69,3 +68,5 @@ jobs:
           git add data/catalog/discovery-sn-metadata-analysis.json
           git commit -m 'data: analyze SN metadata gaps'
           git push origin HEAD:feature/sn-canonical-discovery
+
+# trigger analysis run
