@@ -1,0 +1,67 @@
+name: Work - Materialize MN Full Text
+
+on:
+  push:
+    branches: [work/mn-fulltext]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: corpus-writer-work-mn-fulltext
+  cancel-in-progress: false
+
+jobs:
+  materialize-mn:
+    if: github.event_name == 'workflow_dispatch' || !contains(github.event.head_commit.message, '[skip work-mn]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: work/mn-fulltext
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Materialize MN with checkpoint-aware retries
+        run: |
+          set -euo pipefail
+          for attempt in 1 2 3; do
+            python scripts/materialize_fulltext.py --collection MN --batch-size 200 --workers 12
+            failures=$(python -c "import json; print(len(json.load(open('data/status/materialize-mn-last-run.json', encoding='utf-8')).get('failures', {})))")
+            remaining=$(python -c "import json; print(json.load(open('data/status/materialize-mn-last-run.json', encoding='utf-8')).get('remainingAfterRun', 0))")
+            if [ "$failures" = "0" ] && [ "$remaining" = "0" ]; then
+              break
+            fi
+            echo "MN retry $attempt completed; failures=$failures remaining=$remaining"
+          done
+      - name: Validate corpus and refresh derived reader data
+        run: |
+          python scripts/update_corpus_status.py
+          python scripts/validate_corpus.py --collection MN
+          python scripts/generate_content_registry.py
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - name: Validate RAG and production reader build
+        run: |
+          npm ci
+          npm run rag:export
+          npm run build
+      - name: Commit verified MN checkpoint to Work branch
+        run: |
+          set -euo pipefail
+          if git diff --quiet; then
+            echo "No new MN corpus records."
+            exit 0
+          fi
+          git config user.name "nikaya-corpus-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/content/mn.vi.json data/status/corpus-status.json \
+            data/status/materialize-mn-last-run.json data/status/missing-vietnamese.json \
+            data/exports lib/materialized-content.generated.ts
+          git commit -m "corpus: materialize verified MN full text [skip work-mn]"
+          git push origin HEAD:work/mn-fulltext
