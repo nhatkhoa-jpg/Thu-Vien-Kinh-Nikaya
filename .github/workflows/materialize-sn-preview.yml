@@ -1,0 +1,62 @@
+name: Materialize SN catalog preview
+
+on:
+  push:
+    branches:
+      - feature/sn-canonical-discovery
+    paths:
+      - 'scripts/materialize_sn_catalog.py'
+      - '.github/workflows/materialize-sn-preview.yml'
+      - 'data/catalog/discovery-sn*.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/sn-canonical-discovery
+          fetch-depth: 0
+      - name: Generate deterministic preview
+        run: python3 scripts/materialize_sn_catalog.py
+      - name: Validate preview invariants
+        run: |
+          python3 - <<'PY'
+          import json,re
+          from pathlib import Path
+          rows=json.loads(Path('data/catalog/sn-materialization-preview.json').read_text())
+          report=json.loads(Path('data/catalog/sn-materialization-report.json').read_text())
+          assert len(rows)==1819
+          assert report['materializedSnCount']==1819
+          assert report['minhChauVietnameseRecords']==1805
+          assert report['missingMinhChauVietnameseRecords']==14
+          assert report['rangeCanonicalRefsPreserved']==134
+          assert len({x['canonicalRef'] for x in rows})==1819
+          assert len({x['id'] for x in rows})==1819
+          assert len({x['slug'] for x in rows})==1819
+          assert all(x['collection']=='SN' for x in rows)
+          assert all(x['viCode'].startswith('TƯB ') for x in rows)
+          assert all(x['pali'] and x['en'] for x in rows)
+          missing=[x for x in rows if x['source']['language']=='pli']
+          assert len(missing)==14
+          assert all('chưa có bản Việt Thích Minh Châu' in x['vi'] for x in missing)
+          old={x['canonicalRef']:x for x in rows if x['canonicalRef'] in {'sn56.11','sn22.59'}}
+          assert old['sn56.11']['slug']=='sn-56-11-dhammacakkappavattana'
+          assert old['sn22.59']['slug']=='sn-22-59-anattalakkhana'
+          assert old['sn56.11']['topics'] and old['sn22.59']['topics']
+          print('SN PREVIEW VALID:',len(rows),'records')
+          PY
+      - name: Commit preview outputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -z "$(git status --porcelain -- data/catalog/sn-materialization-preview.json data/catalog/sn-materialization-report.json)" ]; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/catalog/sn-materialization-preview.json data/catalog/sn-materialization-report.json
+          git commit -m 'data: generate validated SN catalog preview'
+          git push origin HEAD:feature/sn-canonical-discovery
