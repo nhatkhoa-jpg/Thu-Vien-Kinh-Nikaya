@@ -4,7 +4,7 @@
     "language": "en",
     "endpoint": "https://suttacentral.net/api/suttaplex/an?language=en",
     "endpointSha256": "452ed2f82dfe86b2abae9bc87ae3ff66ad0efdb56ebacbf48cdde2c9060fbf74",
-    "generatedAt": "2026-09-02T04:52:57+00:00",
+    "generatedAt": "2026-09-02T04:58:08+00:00",
     "canonicalLeafCount": 1408,
     "matchedCanonicalRecords": 1408,
     "preferredTranslationCount": 1408,

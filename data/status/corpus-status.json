@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastVerifiedAt": "2026-09-02T04:54:36+00:00",
+  "lastVerifiedAt": "2026-09-02T05:10:12+00:00",
   "collections": [
     {
       "collection": "DN",
@@ -11,7 +11,7 @@
       "pendingFullTextCount": 0,
       "audioCount": 34,
       "source": "SuttaCentral canonical tree + repository materialized corpus",
-      "lastVerifiedAt": "2026-09-02T04:54:36+00:00",
+      "lastVerifiedAt": "2026-09-02T05:10:12+00:00",
       "status": "complete"
     },
     {
@@ -23,7 +23,7 @@
       "pendingFullTextCount": 152,
       "audioCount": 152,
       "source": "SuttaCentral canonical tree + repository materialized corpus",
-      "lastVerifiedAt": "2026-09-02T04:54:36+00:00",
+      "lastVerifiedAt": "2026-09-02T05:10:12+00:00",
       "status": "in_progress"
     },
     {
@@ -35,20 +35,20 @@
       "pendingFullTextCount": 1460,
       "audioCount": 0,
       "source": "SuttaCentral canonical tree + repository materialized corpus",
-      "lastVerifiedAt": "2026-09-02T04:54:36+00:00",
+      "lastVerifiedAt": "2026-09-02T05:10:12+00:00",
       "status": "in_progress"
     },
     {
       "collection": "AN",
       "canonicalCount": 1408,
       "catalogCount": 1408,
-      "vietnameseFullTextCount": 0,
-      "missingVietnameseCount": 0,
-      "pendingFullTextCount": 1408,
+      "vietnameseFullTextCount": 1395,
+      "missingVietnameseCount": 13,
+      "pendingFullTextCount": 0,
       "audioCount": 0,
       "source": "SuttaCentral canonical tree + repository materialized corpus",
-      "lastVerifiedAt": "2026-09-02T04:54:36+00:00",
-      "status": "in_progress"
+      "lastVerifiedAt": "2026-09-02T05:10:12+00:00",
+      "status": "complete"
     },
     {
       "collection": "KN",
@@ -59,7 +59,7 @@
       "pendingFullTextCount": 2,
       "audioCount": 0,
       "source": "SuttaCentral canonical tree + repository materialized corpus",
-      "lastVerifiedAt": "2026-09-02T04:54:36+00:00",
+      "lastVerifiedAt": "2026-09-02T05:10:12+00:00",
       "status": "in_progress"
     }
   ]

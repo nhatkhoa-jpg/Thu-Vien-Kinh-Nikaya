@@ -1,8 +1,10 @@
 {
-  "SN": [
-    "sn3.15"
-  ],
-  "AN": [
+  "collection": "AN",
+  "catalogCount": 1408,
+  "verifiedBefore": 0,
+  "selected": 1408,
+  "materializedThisRun": 1395,
+  "missingVietnameseThisRun": [
     "an11.118-165",
     "an11.166-213",
     "an11.214-261",
@@ -16,5 +18,8 @@
     "an11.70-117",
     "an11.992-1151",
     "an9.113-432"
-  ]
+  ],
+  "failures": {},
+  "remainingAfterRun": 0,
+  "lastRunAt": "2026-09-02T05:10:12+00:00"
 }
