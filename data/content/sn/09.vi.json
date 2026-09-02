@@ -1,0 +1,696 @@
+{
+  "sn9.1": {
+    "canonicalRef": "sn9.1",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn9.1/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:08:43+00:00",
+    "materializedAt": "2026-09-02T03:08:43+00:00",
+    "contentHash": "004823e9254df1c1866a560fcbc60472d6febd924151b6c34a6b58d0ffea216b",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 9: Tương Ưng Rừng"
+      },
+      {
+        "id": "p2",
+        "text": "9.1. Viễn Ly"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Như vầy tôi nghe."
+      },
+      {
+        "id": "p4",
+        "text": "Một thời, một Tỷ-kheo trú giữa dân chúng Kosala, tại một khu rừng."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Lúc bấy giờ Tỷ-kheo ấy, trong lúc đi nghỉ ban ngày, khởi lên những tư tưởng ác, bất thiện, liên hệ đến gia đình."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Rồi một vị Thiên trú ở khu rừng ấy, thương xót Tỷ-kheo ấy, muốn hạnh phúc, muốn cảnh giác, liền đi đến Tỷ-kheo ấy."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Sau khi đến, vị Thiện ấy nói lên những bài kệ với vị Tỷ-kheo này:"
+      },
+      {
+        "id": "p8",
+        "text": "Ông ước muốn viễn ly,\n\nÐã sống trong rừng núi,\n\nNay tâm Ông vọng động,\n\nDong duổi theo ngoại giới.\n\nÔng đối mặt với Ông,\n\nHãy chế ngự lòng dục,\n\nNhờ vậy, Ông hạnh phúc,\n\nThoát ly được tham ái.\n\nHãy từ bỏ bất mãn,\n\nSống an trú chánh niệm,\n\nÔng thành người hiền thiện,\n\nÐược chúng tôi tán thán.\n\nTrừ bụi trần địa ngục,\n\nThật rất khó vượt qua,\n\nÔng chớ vận chuyển theo,\n\nCác bụi trần dục vọng,\n\nNhư chim, thân dính bụi,\n\nRung thân khiến bụi rơi.\n\nCũng vậy vị Tỷ-kheo,\n\nTinh cần, trú chánh niệm,\n\nVùng vẫy khiến rơi rớt,\n\nNhững bụi đời dính thân."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 5 Tỷ-kheo ấy được vị Thiên cảnh giác, tâm hết sức xúc động."
+      },
+      {
+        "id": "p10",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn9.10": {
+    "canonicalRef": "sn9.10",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn9.10/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:08:52+00:00",
+    "materializedAt": "2026-09-02T03:08:52+00:00",
+    "contentHash": "25cd7a4aede7ac7a93f5648e6a612d1aa466bc8b364fa5669430099bf991b888",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 9: Tương Ưng Rừng"
+      },
+      {
+        "id": "p2",
+        "text": "9.10. Tụng Học Kinh Ðiển hay Pháp"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Một thời, một Tỷ-kheo sống giữa dân chúng Kosala, tại một khu rừng."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Lúc bấy giờ, Tỷ-kheo ấy trước kia siêng năng tụng kinh rất nhiều, sau một thời gian, trở thành thụ động, im lặng, an phận."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Rồi một vị Thiên trú ở khu rừng ấy không được nghe pháp từ Tỷ-kheo ấy, liền đi đến vị ấy."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 Sau khi đến, vị Thiên ấy nói lên những bài kệ cho Tỷ-kheo ấy:"
+      },
+      {
+        "id": "p7",
+        "text": "Này Tỷ-kheo, sao Ông\n\nSống chung các Tỷ-kheo,\n\nLại không chịu tụng đọc,\n\nCác kinh điển pháp cú?\n\nAi nghe thuyết Chánh pháp,\n\nTâm sanh được tịnh tín.\n\nVà ngay đời hiện tại,\n\nÐược mọi người tán thán.\nVi-n 5 (Vị Tỷ-kheo):\nTrước kia đối pháp cú,\n\nTa tha thiết tìm hiểu,\n\nCho đến khi chứng được,\n\nQuả vị bậc ly dục;\n\nTừ khi chứng ly dục,\n\nMọi thấy, nghe, xúc cảm,\n\nNhờ trí tuệ hiểu biết,\n\nÐều được bỏ một bên.\n\nChính các bậc Hiền thiện,\n\nGiảng dạy là như vậy."
+      },
+      {
+        "id": "p8",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn9.11": {
+    "canonicalRef": "sn9.11",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn9.11/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:08:45+00:00",
+    "materializedAt": "2026-09-02T03:08:45+00:00",
+    "contentHash": "20c70b6b99e7dbd81dded45659dcd73e985275c3efb6837aec558cfab842d637",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 9: Tương Ưng Rừng"
+      },
+      {
+        "id": "p2",
+        "text": "9.11. Bất Chánh Tư Duy"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Một thời, một Tỷ-kheo trú ở giữa dân chúng Kosala tại một khu rừng."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Lúc bấy giờ, Tỷ-kheo ấy, khi đang nghỉ ban ngày, khởi lên những tư duy ác, bất thiện, như dục tư duy, sân tư duy, hại tư duy."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Rồi vị Thiên trú ở khu rừng ấy, vì lòng thương xót Tỷ-kheo, muốn lợi ích, muốn cảnh giác, liền đi đến Tỷ-kheo ấy."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 Sau khi đến, vị Thiên ấy nói lên những bài kệ cho Tỷ-kheo:"
+      },
+      {
+        "id": "p7",
+        "text": "Ông tác ý bất chánh,\n\nNên say đắm tư duy.\n\nHãy từ bỏ bất chánh,\n\nHãy tư duy chơn chánh,\n\nNương tựa Phật, Pháp, Tăng,\n\nGiữ giới, không thối chuyển,\n\nÔng chắc chắn chứng đạt,\n\nHân hoan và hỷ lạc.\n\nVới hân hoan sung mãn,\n\nÔng chấm dứt khổ đau."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 Rồi Tỷ-kheo ấy, được vị Thiên ấy cảnh giác, tâm hết sức xúc động."
+      },
+      {
+        "id": "p9",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn9.12": {
+    "canonicalRef": "sn9.12",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn9.12/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:08:51+00:00",
+    "materializedAt": "2026-09-02T03:08:51+00:00",
+    "contentHash": "9775a895d4a9362bb5cefe6581127babcf77c35693cb215aebb693a6e4d8e326",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 9: Tương Ưng Rừng"
+      },
+      {
+        "id": "p2",
+        "text": "9.12. Giữa Trưa hay Tiếng Ðộng"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Một thời, một Tỷ-kheo trú ở giữa dân chúng Kosala, tại một khu rừng."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Rồi một vị Thiên trú ở khu rừng ấy đi đến Tỷ-kheo."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Sau khi đến, nói lên những bài kệ này trước mặt Tỷ-kheo:"
+      },
+      {
+        "id": "p6",
+        "text": "Nay chính giờ giữa trưa,\n\nChim chóc đậu im lặng,\n\nRừng lớn vang tiếng động,\n\nKhiến ta run, hoảng sợ.\nVi-n 4 (Vị Tỷ-kheo):\nNay chính giờ giữa trưa,\n\nChim chóc đậu im lặng,\n\nRừng lớn vang tiếng động,\n\nHoan hỷ đến với ta."
+      },
+      {
+        "id": "p7",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn9.13": {
+    "canonicalRef": "sn9.13",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn9.13/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:09:04+00:00",
+    "materializedAt": "2026-09-02T03:09:04+00:00",
+    "contentHash": "151cb791f3991572e40ec8fd8ed2dbf7e506ee74af881ef71f6612acb46a7b07",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 9: Tương Ưng Rừng"
+      },
+      {
+        "id": "p2",
+        "text": "9.13. Không Chế Ngự Căn hay Nhiều Tỷ Kheo"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Một thời, rất nhiều Tỷ-kheo trú ở giữa dân chúng Kosala, tại một khu rừng nọ, cống cao, ngạo mạn, ồn ào, lắm miệng, lắm lời, thất niệm, không tỉnh giác, không định tĩnh, tâm tán loạn, các căn không chế ngự."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Rồi một vị Thiên trú ở khu rừng ấy, vì lòng thương xót các Tỷ-kheo, muốn hạnh phúc, muốn cảnh giác, liền đi đến các Tỷ-kheo."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Sau khi đến, vị Thiên ấy nói lên những bài kệ với các Tỷ-kheo:"
+      },
+      {
+        "id": "p6",
+        "text": "Xưa sống thật an lạc,\n\nChúng đệ tử Cù-đàm,\n\nKhông tham tìm món ăn,\n\nKhông tham tìm chỗ trú,\n\nBiết đời là vô thường,\n\nHọ chấm dứt khổ đau.\n\nNay tự làm ác hạnh,\n\nNhư thôn trưởng trong làng,\n\nHọ ăn, ăn ngã gục,\n\nThèm khát vật nhà người.\n\nCon vái chào chúng Tăng,\n\nÐảnh lễ một vài vị,\n\nVất vưởng, không hướng dẫn.\n\nHọ sống như ngạ quỉ.\n\nNhững ai sống phóng dật,\n\nVì họ, con nói lên,\n\nNhững ai không phóng dật,\n\nChân thành con đảnh lễ."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Các Tỷ-kheo ấy, được vị Thiên ấy cảnh giác, tâm hết sức xúc động."
+      },
+      {
+        "id": "p8",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn9.14": {
+    "canonicalRef": "sn9.14",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn9.14/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:09:05+00:00",
+    "materializedAt": "2026-09-02T03:09:05+00:00",
+    "contentHash": "80427713be28a6a23a2df5a3fb3737147d313df47b223983a74a536edc159bf8",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 9: Tương Ưng Rừng"
+      },
+      {
+        "id": "p2",
+        "text": "9.14. Sen Hồng hay Sen Trắng"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Một thời, một Tỷ-kheo trú giữa dân chúng Kosala, tại một khu rừng."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Lúc bấy giờ, Tỷ-kheo ấy ăn xong, trên con đường đi khất thực trở về, đi xuống hồ nước và ngửi bông sen hồng."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Rồi một vị Thiên trú ở khu rừng ấy, thương xót Tỷ-kheo, muốn hạnh phúc, muốn cảnh giác, liền đi đến Tỷ-kheo."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 Sau khi đến, vị Thiên ấy liền nói lên những bài kệ với Tỷ-kheo:"
+      },
+      {
+        "id": "p7",
+        "text": "Hoa này từ nước sanh,\n\nKhông cho, Ông ngửi trộm.\n\nNhư vậy một loại trộm,\n\nTa gọi Ông trộm hương,\n\nNày thân hữu của ta.\nVi-n 5 (Vị Tỷ-kheo):\nKhông lấy đi, không bẻ,\n\nÐứng xa, ta ngửi hoa,\n\nVậy do hình tướng gì,\n\nÐược gọi là “trộm hương”?\n\nAi đào rễ củ sen,\n\nĂn dùng các loại sen.\n\nDo các hành động ấy,\n\nSao không gọi trộm hương?\nVi-n 6 (Vị Thiên):\nNgười ty tiện độc ác,\n\nNhư vải nhớp vú em,\n\nVới hạng người như vậy,\n\nLời ta không liên hệ.\n\nNhưng chính thật cho Ông,\n\nChính lời ta tương ưng\n\nVới người không cấu uế,\n\nThường hướng cầu thanh tịnh.\n\nVới kẻ ác nhìn thấy,\n\nNhỏ như đầu sợi lông,\n\nVị ấy xem thật lớn,\n\nNhư đầu mây trên trời.\nVi-n 7 (Vị Tỷ-kheo):\nThật sự này Dạ-xoa,\n\nÔng biết ta, thương ta,\n\nHãy nói lại với ta,\n\nKhi thấy ta như vậy.\nVi-n 8 (Vị Thiên):\nTa không tùy thuộc Ông,\n\nÔng cũng không làm bậy,\n\nNày Tỷ-kheo nên biết,\n\nÔng có thể sanh Thiên."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 9 Vị Tỷ-kheo ấy được vị Thiên ấy cảnh giác, tâm hết sức xúc động."
+      },
+      {
+        "id": "p9",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn9.2": {
+    "canonicalRef": "sn9.2",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn9.2/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:08:44+00:00",
+    "materializedAt": "2026-09-02T03:08:44+00:00",
+    "contentHash": "a62ae963ba3b1670a67a039c3b16addd1315110c36155b422755d035c2d7d149",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 9: Tương Ưng Rừng"
+      },
+      {
+        "id": "p2",
+        "text": "9.2. Săn Sóc, Hầu Hạ"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Một thời, một Tỷ-kheo trú giữa dân chúng Kosala, tại một khu rừng."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Lúc bấy giờ, Tỷ-kheo ấy đang ngủ ngày."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Rồi một vị Thiên trú ở khu rừng ấy, thương xót Tỷ-kheo ấy, muốn hạnh phúc, muốn cảnh giác, liền đi đến Tỷ-kheo ấy."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 Sau khi đến, vị ấy nói lên những bài kệ cho Tỷ-kheo ấy:"
+      },
+      {
+        "id": "p7",
+        "text": "Tỷ-kheo, hãy thức dậy,\n\nSao Ông hãy còn nằm?\n\nÔng được lợi ích gì,\n\nTrong giấc ngủ của ông?\n\nKẻ bịnh, kẻ trúng tên,\n\nBị đánh sao ngủ được?\n\nVì lòng tin, xuất gia,\n\nBỏ nhà, sống không nhà,\n\nTín ấy cần phát triển,\n\nChớ để ngủ chinh phục.\nVi-n 5 (Vị Tỷ-kheo):\nCác dục là vô thường,\n\nChỉ kẻ ngu say đắm,\n\nÐã giải thoát triền phược,\n\nKhông còn bị ái trước.\n\nHạnh xuất gia như vậy,\n\nSao để dục nhiệt não?\n\nÐã nhiếp phục dục ái,\n\nVượt thoát lưới vô minh,\n\nVới chánh trí thanh tịnh,\n\nHạnh xuất gia như vậy,\n\nSao để dục nhiệt não?\n\nVới minh phá vô minh,\n\nÐoạn diệt các lậu hoặc,\n\nKhông sầu, không ưu não,\n\nHạnh xuất gia như vậy,\n\nSao để dục nhiệt não?\n\nTinh tấn và nhiệt tâm,\n\nThường dõng mãnh cầu tiến,\n\nHướng vọng đến Niết-bàn,\n\nHạnh xuất gia như vậy,\n\nSao để dục nhiệt não?"
+      },
+      {
+        "id": "p8",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn9.3": {
+    "canonicalRef": "sn9.3",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn9.3/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:08:51+00:00",
+    "materializedAt": "2026-09-02T03:08:51+00:00",
+    "contentHash": "240f70efcf0801b05fa764c41239f4c91675a25958c7597332e88f69402c25d8",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 9: Tương Ưng Rừng"
+      },
+      {
+        "id": "p2",
+        "text": "9.3. Kassapagotta: Thợ Săn:"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Một thời, Tôn giả Kassapagotta trú giữa dân chúng Kosala, tại một khu rừng."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Lúc bấy giờ, Tôn giả Kassapagotta, trong khi nghỉ ban ngày, khuyên dạy một người thợ săn."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Một vị Thiên trú ở khu rừng ấy, thương xót Tỷ-kheo ấy, muốn hạnh phúc, muốn cảnh giác, liền đi đến Tỷ-kheo ấy."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 Sau khi đến, vị ấy nói lên những bài kệ với Tôn giả Kassapagotta:"
+      },
+      {
+        "id": "p7",
+        "text": "Trên sườn núi cheo leo,\n\nNgười thợ săn đang trèo,\n\nLà hạng người thiếu trí,\n\nKhông sáng suốt, ngu si,\n\nTỷ-kheo có khuyên dạy,\n\nThật uổng phí thời gian.\n\nTa nghĩ làm như vậy,\n\nTự tỏ thiếu trí tuệ.\n\nCó nghe cũng không hiểu,\n\nCó nhìn cũng không thấy,\n\nDầu cho có thuyết pháp,\n\nKẻ ngu không thấy đích.\n\nTôn giả Kassapa,\n\nNếu Ông có cầm tay\n\nCho đến mười bó đuốc,\n\nNgười ấy không thấy được,\n\nCác sắc pháp đối diện,\n\nVì người ấy không mắt."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 Tôn giả Kassapagotta được vị Thiên ấy cảnh giác, tâm hết sức xúc động."
+      },
+      {
+        "id": "p9",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn9.4": {
+    "canonicalRef": "sn9.4",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn9.4/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:08:50+00:00",
+    "materializedAt": "2026-09-02T03:08:50+00:00",
+    "contentHash": "69649942fcc991012a5c7deddeccb4241c3d016f0478b8c12883f7c01ce54603",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 9: Tương Ưng Rừng"
+      },
+      {
+        "id": "p2",
+        "text": "9.4. Ða Số hay Du Hành"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Một thời, nhiều Tỷ-kheo trú giữa dân chúng Kosala tại một khu rừng."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Các Tỷ-kheo ấy an cư mùa mưa xong, sau ba tháng, bắt đầu đi du hành."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Một vị Thiên trú ở khu rừng ấy, không thấy các Tỷ-kheo ấy, liền than van, ưu buồn, ngay lúc ấy nói lên bài kệ này:"
+      },
+      {
+        "id": "p6",
+        "text": "Hôm nay tâm của ta,\n\nCảm thấy không vui vẻ,\n\nKhi thấy nhiều chỗ ngồi,\n\nTrống không, không có người.\n\nNhững bậc Ða văn ấy,\n\nThuyết pháp thật mỹ diệu.\n\nÐệ tử Gotama,\n\nHiện nay đang ở đâu?"
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Khi nghe nói vậy, một vị Thiên khác nói lên những bài kệ cho vị Thiên ấy:"
+      },
+      {
+        "id": "p8",
+        "text": "Họ đi Magadha,\n\nHọ đi Kosala,\n\nVà một số vị ấy,\n\nÐi đến đất Vajjà.\n\nNhư nai thoát bẫy sập,\n\nChạy nhảy khắp bốn phương.\n\nTỷ-kheo không nhà cửa,\n\nSống giải thoát như vậy."
+      },
+      {
+        "id": "p9",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn9.5": {
+    "canonicalRef": "sn9.5",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn9.5/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:08:51+00:00",
+    "materializedAt": "2026-09-02T03:08:51+00:00",
+    "contentHash": "1ba6ec3b4ee5c3c25f26853724d483c7b0f37a5479b7d7b71d4b2829e6bdb091",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 9: Tương Ưng Rừng"
+      },
+      {
+        "id": "p2",
+        "text": "9.5. Ānanda"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Một thời, Tôn giả Ānanda trú giữa dân chúng Kosala, tại một khu rừng."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Lúc bấy giờ, Tôn giả Ānanda sống quá bận rộn bởi nhiều liên hệ với cư sĩ."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Rồi một vị Thiên trú ở khu rừng ấy thương xót Tôn giả Ānanda, muốn hạnh phúc, muốn cảnh giác, liền đi đến Tôn giả Ānanda. Sau khi đến, vị ấy nói lên những bài kệ với Tôn giả Ānanda:"
+      },
+      {
+        "id": "p6",
+        "text": "Ông đã quyết lựa chọn,\n\nÐời sống dưới gốc cây,\n\nTâm Ông quyết nhập một\n\nVới mục đích Niết-bàn.\n\nCù-đàm, hãy Thiền tư,\n\nVà sống, chớ phóng dật,\n\nÐối với Ông, ích gì,\n\nTạp thoại, vô vị ấy?"
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Tôn giả Ānanda, được vị Thiên ấy cảnh giác, tâm hết sức xúc động."
+      },
+      {
+        "id": "p8",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn9.6": {
+    "canonicalRef": "sn9.6",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn9.6/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:08:51+00:00",
+    "materializedAt": "2026-09-02T03:08:51+00:00",
+    "contentHash": "ef52aa17c434b3fcb7e0236109f5920deca85c91496aba113545bcd7a173cd7e",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 9: Tương Ưng Rừng"
+      },
+      {
+        "id": "p2",
+        "text": "9.6. Anuruddha."
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Một thời Tôn giả Anuruddha trú ở giữa dân chúng Kosala, tại một khu rừng."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Rồi một Thiên nữ ở chúng Tāvatiṁsa, tên là Jàlinii, đời trước là vợ của Tôn giả Anuruddha, đi đến Tôn giả Anuruddha."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Sau khi đến, vị ấy nói lên bài kệ với Tôn giả Anuruddha:"
+      },
+      {
+        "id": "p6",
+        "text": "Hãy hướng tâm tư Ông,\n\nVào đời trước của Ông,\n\nGiữa Tam thập tam thiên,\n\nMọi ái dục thành tựu,\n\nVà Ông được chói sáng,\n\nGiữa Thiên nữ đoanh vây.\nVi-n 4 (Anuruddha):\nBất hạnh thay Thiên nữ,\n\nHọ kiên trú thân kiến,\n\nCũng bất hạnh, họ sanh,\n\nBị Thiên nữ chinh phục.\nVi-n 5 (Jàlinii):\nHọ chưa biết hạnh phúc,\n\nChưa thấy Dandana,\n\nTrú xứ các Thiền nhơn,\n\nDanh xưng giới Tam thập.\nVi-n 6 (Anuruddha):\n\nKẻ ngu, Bà không biết,\n\nLời nói bậc La-hán,\n\nMọi hành là vô thường,\n\nPhải chịu luật sanh diệt,\n\nChúng sanh rồi chúng diệt,\n\nNhiếp chúng là an lạc.\n\nHiện nay đối với ta,\n\nKhông còn chỗ trú xứ,\n\nTrên cảnh giới chư Thiên,\n\nÔi này Jàlinì!\n\nÐường sanh tử đứt đoạn,\n\nNay tái sanh không còn."
+      },
+      {
+        "id": "p7",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn9.7": {
+    "canonicalRef": "sn9.7",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn9.7/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:08:45+00:00",
+    "materializedAt": "2026-09-02T03:08:45+00:00",
+    "contentHash": "16b2337e131884dafb78548231fea4c2e6e7248c99fffee759559a90042a2c7f",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 9: Tương Ưng Rừng"
+      },
+      {
+        "id": "p2",
+        "text": "9.7. Nàgadatta"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Một thời Tôn giả Nàgadatta trú giữa dân chúng Kosala, tại một khu rừng."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Lúc bấy giờ, Tôn giả Nàgadatta đi vào làng quá sớm và trở về quá chiều."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Rồi một vị Thiên trú ở khu rừng ấy, thương xót Tôn giả Nàgadatta, muốn lợi ích, muốn cảnh giác, liền đi đến Tôn giả Nàgadatta."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 Sau khi đến, vị ấy nói lên những bài kệ với Tôn giả Nàgadatta:"
+      },
+      {
+        "id": "p7",
+        "text": "Này Nàgadatta,\n\nHãy vào làng đúng thời,\n\nVà khi từ làng về,\n\nHãy về cho thật sớm.\n\nÔng sống quá liên hệ,\n\nVới các hàng cư sĩ,\n\nBị vấn vương quá nhiều,\n\nNhững cảm thọ khổ lạc.\n\nTa sợ kẻ bạt mạng,\n\nNàgadatta này,\n\nLại bị trói, bị buộc,\n\nTrong gia đình thế sự.\n\nChớ để mình rơi vào,\n\nCường lực của tử thần,\n\nLàm sao tránh né được,\n\nKhỏi Ác ma chi phối!"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 Tôn giả Nàgadatta được vị Thiên ấy cảnh giác, tâm hết sức xúc động."
+      },
+      {
+        "id": "p9",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn9.8": {
+    "canonicalRef": "sn9.8",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn9.8/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:08:45+00:00",
+    "materializedAt": "2026-09-02T03:08:45+00:00",
+    "contentHash": "c2e85f1eab7dd0c7e35c9eba38198de5a158ca0749dce1e26067db14078e9612",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 9: Tương Ưng Rừng"
+      },
+      {
+        "id": "p2",
+        "text": "9.8. Gia Phụ hay Say Ðắm"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Một thời, một Tỷ-kheo trú ở giữa dân chúng Kosala, tại một khu rừng."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Lúc bấy giờ, Tỷ-kheo ấy sống thân mật quá đáng đối với một gia đình."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Rồi một vị Thiên trú ở khu rừng ấy, vì thương xót Tỷ-kheo ấy, muốn hạnh phúc, muốn cảnh giác vị ấy, biến hình thành gia phụ của gia đình ấy và đi đến Tỷ-kheo ấy."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 Sau khi đến, vị ấy nói lên những bài kệ với Tỷ-kheo ấy:"
+      },
+      {
+        "id": "p7",
+        "text": "Trên bờ sông, cửa chợ,\n\nTại trạm nghỉ, lộ trình,\n\nDân chúng thường tập hợp,\n\nTranh luận liền khởi lên.\n\nGiữa ta và giữa Ông,\n\nCó gì là sai khác?\nVi-n 5 (Vị Tỷ-kheo):\nNhiều tiếng qua tiếng lại,\n\nBậc khổ hạnh kham nhẫn,\n\nChớ cảm thấy bực phiền,\n\nChớ phát sinh nhiễm trước.\n\nAi bị tiếng rối loạn,\n\nNhư nai trong rừng rú,\n\nÐược gọi là khinh tâm,\n\nKhó tu hành thành tựu."
+      },
+      {
+        "id": "p8",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn9.9": {
+    "canonicalRef": "sn9.9",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn9.9/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:08:51+00:00",
+    "materializedAt": "2026-09-02T03:08:51+00:00",
+    "contentHash": "8836d143c024599b6ed6ae8c8d720ae4db422e9142382956faa23aaba7b1f140",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 9: Tương Ưng Rừng"
+      },
+      {
+        "id": "p2",
+        "text": "9.9. Vajjiputta: Bạt-kỳ Tử hay Tỳ-xá-lỵ"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Một thời, một Tỷ-kheo Vajjiputtaka trú ở Vesālī tại một khu rừng."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Lúc bấy giờ một cuộc lễ được tổ chức suốt đêm ở Vesālī."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Tỷ-kheo ấy được nghe tiếng nhạc khí, tiếng cồng v.v … đánh lên, tiếng ồn ào khởi lên, liền than thở, nói lên ngay lúc ấy những bài kệ này:"
+      },
+      {
+        "id": "p6",
+        "text": "Chúng ta sống một mình,\n\nTrong khu rừng cô độc,\n\nNhư khúc gỗ lột vỏ,\n\nLăn lóc trong rừng sâu,\n\nTrong đêm tối hân hoan,\n\nNhư hiện tại đêm nay,\n\nAi sống đời bất hạnh,\n\nNhư chúng ta hiện sống?"
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Rồi một vị Thiên trú ở khu rừng ấy, có lòng thương xót Tỷ-kheo ấy, muốn hạnh phúc, muốn cảnh giác liền đi đến Tỷ-kheo ấy."
+      },
+      {
+        "id": "p8",
+        "text": "Sau khi đến, vị ấy nói lên những bài kệ:"
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 5"
+      },
+      {
+        "id": "p10",
+        "text": "Ông sống chỉ một mình,\n\nTrong khu rừng cô độc,\n\nNhư khúc gỗ lột vỏ,\n\nLăn lóc trong rừng sâu.\n\nRất nhiều người thèm muốn,\n\nÐời sống như ông vậy,\n\nNhư kẻ đọa địa ngục,\n\nThèm muốn sanh thiên giới."
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 6 Rồi Tỷ-kheo ấy được vị Thiên ấy cảnh giác, tâm hết sức xúc động."
+      },
+      {
+        "id": "p12",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  }
+}

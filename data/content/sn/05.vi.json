@@ -1,0 +1,644 @@
+{
+  "sn5.1": {
+    "canonicalRef": "sn5.1",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn5.1/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:07:32+00:00",
+    "materializedAt": "2026-09-02T03:07:32+00:00",
+    "contentHash": "7f7d1e7faa3091e76185ec6869aced391fcd6155d8ffa3027cb9159307dbb983",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 5: Tương Ưng Tỷ Kheo Ni"
+      },
+      {
+        "id": "p2",
+        "text": "5.1. Alavikhà"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Như vầy tôi nghe."
+      },
+      {
+        "id": "p4",
+        "text": "Một thời Thế Tôn ở Sāvatthi, Jetavana, tại vườn ông Anāthapiṇḍika."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Tỷ-kheo-ni Alavikà, vào buổi sáng đắp y, cầm y bát, đi vào Sāvatthi để khất thực. Khất thực ở Sāvatthi xong, sau buổi ăn, trên con đường khất thực trở về, Tỷ-kheo-ni đi đến rừng Andha để tìm sự yên tĩnh viễn ly."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Ác ma muốn làm Tỷ-kheo-ni Alavikà run sợ, hoảng sợ, lông tóc dựng ngược, muốn nàng từ bỏ yên tĩnh viễn ly, nên đi đến Tỷ-kheo-ni Alavikà và nói lên bài kệ:"
+      },
+      {
+        "id": "p7",
+        "text": "Ðời không có xuất ly,\n\nSống viễn ly làm gì?\n\nHãy trọn hưởng dục lạc,\n\nChớ hối hận về sau."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 4 Tỷ-kheo-ni Alavikà suy nghĩ: “Ai đã nói lên bài kệ này? Người hay không phải người?”"
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 5 Tỷ-kheo-ni Alavikà suy nghĩ: “Chính Ác ma muốn làm ta run sợ, hoảng sợ, lông tóc dựng ngược, muốn làm ta từ bỏ yên tĩnh viễn ly nên đã nói lên bài kệ đó”."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 6 Tỷ-kheo-ni Alavikà biết được: “Ðấy là Ác ma”, liền nói lên bài kệ:"
+      },
+      {
+        "id": "p11",
+        "text": "Ở đời có xuất ly,\n\nNhờ trí tuệ, ta chứng.\n\nNày Bà con phóng dật,\n\nBiết sao được pháp ấy?\n\nÁi dục như kiếm thương,\n\nÐài chém đầu các uẩn.\n\nÐiều Ông gọi dục lạc,\n\nTa gọi là bất lạc."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 7 Ác ma biết được: “Tỷ-kheo-ni Alavikà đã biết ta”, nên buồn khổ, thất vọng, liền biến mất tại chỗ ấy."
+      },
+      {
+        "id": "p13",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn5.10": {
+    "canonicalRef": "sn5.10",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn5.10/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:07:33+00:00",
+    "materializedAt": "2026-09-02T03:07:33+00:00",
+    "contentHash": "03c5d307e46ca969765e817c25e29adb93263ec41e61986da89b69cd63827518",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 5: Tương Ưng Tỷ Kheo Ni"
+      },
+      {
+        "id": "p2",
+        "text": "5.10. Vajirà"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Ở tại Sāvatthi."
+      },
+      {
+        "id": "p4",
+        "text": "Tỷ-kheo-ni Vajirà vào buổi sáng đắp y, cầm y bát, đi vào Sāvatthi để khất thực. Khất thực xong, sau bữa ăn, trên con đường khất thực trở về, Tỷ-kheo-ni Vajirà đi đến rừng Andha để nghỉ ban ngày, đi sâu vào rừng Andha và ngồi dưới một gốc cây để nghỉ ban ngày."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Rồi Ác ma muốn làm Tỷ-kheo-ni Vajirà run sợ, hoảng sợ, lông tóc dựng ngược, muốn khiến nàng từ bỏ Thiền định, liền đi đến, nói lên bài kệ với Tỷ-kheo-ni Vajirà:"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3"
+      },
+      {
+        "id": "p7",
+        "text": "Do ai, hữu tình này,\n\nÐược sanh, được tạo tác?\n\nNgười tạo hữu tình này,\n\nHiện nay ở tại đâu?\n\nTừ đâu hữu tình sanh?\n\nÐi đâu hữu tình diệt?"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 4 Rồi Tỷ-kheo-ni Vajirà suy nghĩ: “Ai đã nói lên bài kệ này? Người hay không phải người?”"
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 5 Rồi Tỷ-kheo-ni Vajirà lại suy nghĩ: “Chính là Ác ma muốn làm ta run sợ, hoảng sợ, lông tóc dựng ngược, muốn khiến ta từ bỏ Thiền định, nên đã nói lên bài kệ này”."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 6 Rồi Tỷ-kheo-ni Vajirà biết được: “Ðây là Ác ma”, liền trả lời Ác ma với bài kệ:"
+      },
+      {
+        "id": "p11",
+        "text": "Sao Ông lại nói hoài,\n\nÐến hai chữ chúng sanh?\n\nPhải chăng, này Ác ma,\n\nÔng rơi vào tà kiến?\n\nÐây quy tụ các hành,\n\nChúng sanh được hình thành,\n\nNhư bộ phận quy tụ,\n\nTên xe được nói lên.\n\nCũng vậy, uẩn quy tụ,\n\nThông tục gọi chúng sanh.\n\nChỉ có khổ được sanh,\n\nKhổ tồn tại, khổ diệt,\n\nNgoài khổ, không gì sanh,\n\nNgoài khổ không gì diệt."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 7 Rồi Ác ma biết được: “Tỷ-kheo-ni Vajirà đã biết ta”, nên buồn khổ, thất vọng, liền biến mất tại chỗ ấy."
+      },
+      {
+        "id": "p13",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn5.2": {
+    "canonicalRef": "sn5.2",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn5.2/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:07:33+00:00",
+    "materializedAt": "2026-09-02T03:07:33+00:00",
+    "contentHash": "465ec1773a1c1b370d602ff477a68dce28c71f835eb402e363a5f38e9b753528",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 5: Tương Ưng Tỷ Kheo Ni"
+      },
+      {
+        "id": "p2",
+        "text": "5.2. Somà"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Nhân duyên ở Sāvatthi."
+      },
+      {
+        "id": "p4",
+        "text": "Rồi Tỷ-kheo-ni Somà vào buổi sáng đắp y, cầm y bát, đi vào Sāvatthi để khất thực."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Khất thực ở Sāvatthi xong, sau bữa ăn, trên con đường khất thực trở về, Tỷ-kheo-ni đi đến rừng Andha để nghỉ ban ngày. Sau khi đi sâu vào rừng, nàng ngồi dưới một gốc cây để nghỉ ban ngày."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Ác ma muốn làm Tỷ-kheo-ni Somà run sợ, hoảng sợ, lông tóc dựng ngược, muốn nàng từ bỏ Thiền định, liền đi đến Tỷ-kheo-ni Somà; sau khi đến, nói lên bài kệ với Tỷ-kheo-ni Somà:"
+      },
+      {
+        "id": "p7",
+        "text": "Ðịa vị khó chứng đạt,\n\nChỉ Thánh nhân chứng đạt,\n\nTrí nữ nhân hai ngón,\n\nSao hy vọng chứng đạt?"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 4 Tỷ-kheo-ni Somà suy nghĩ: “Ai đã nói bài kệ này? Người hay không phải người?”"
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 5 Tỷ-kheo-ni Somà suy nghĩ: “Ðây là Ác ma muốn làm cho ta run sợ, hoảng sợ, lông tóc dựng ngược, muốn ta từ bỏ Thiền định, nên đã nói lên bài kệ đó”."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 6 Tỷ-kheo-ni Somà biết được: “Ðây là Ác ma”, liền nói lên bài kệ với Ác ma:"
+      },
+      {
+        "id": "p11",
+        "text": "Nữ tánh chướng ngại gì,\n\nKhi tâm khéo Thiền định,\n\nKhi trí tuệ triển khai,\n\nChánh quán pháp vi diệu?\n\nAi tự mình tìm hỏi:\n\n“Ta, nữ nhân, nam nhân,\n\nHay ta là ai khác?”\n\nXứng nói chuyện Ác ma,\n\nÁc ma thật cân xứng."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 7 Ác ma biết được: “Tỷ-kheo-ni Somà đã biết ta”, nên buồn khổ, thất vọng, liền biến mất tại chỗ ấy."
+      },
+      {
+        "id": "p13",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn5.3": {
+    "canonicalRef": "sn5.3",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn5.3/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:07:33+00:00",
+    "materializedAt": "2026-09-02T03:07:33+00:00",
+    "contentHash": "baaa9e69ed939ef8179f28baf51f4111cac9059434f3a3681205779429669a8c",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 5: Tương Ưng Tỷ Kheo Ni"
+      },
+      {
+        "id": "p2",
+        "text": "5.3. Gotamì"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Nhân duyên ở Sāvatthi."
+      },
+      {
+        "id": "p4",
+        "text": "Tỷ-kheo-ni Kisà Gotamì, vào buổi sáng đắp y, cầm y bát đi vào Sāvatthi để khất thực."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Khất thực ở Sāvatthi xong, sau bữa ăn, trên con đường đi khất thực trở về, Tỷ-kheo-ni Kisà Gotamì đi đến rừng Andha để nghỉ ban ngày; sau khi đi sâu vào rừng Andha, đến ngồi dưới một gốc cây để nghỉ ban ngày."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Ác ma muốn làm cho Tỷ-kheo-ni Kisà Gotamì run sợ, hoảng sợ, lông tóc dựng ngược, muốn khiến nàng từ bỏ Thiền định, liền đi đến Tỷ-kheo-ni Kisà Gotamì; sau khi đi đến, liền nói lên bài kệ với Tỷ-kheo-ni Kisà Gotamì:"
+      },
+      {
+        "id": "p7",
+        "text": "Sao nàng như mất con,\n\nMột mình, mặt ứa lệ.\n\nHay một mình vào rừng,\n\nÐể tìm đàn ông nào?"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 4 Tỷ-kheo-ni Kisà Gotamì suy nghĩ: “Ai đã nói lên bài kệ này? Người hay không phải người?”"
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 5 Tỷ-kheo-ni Kisà Gotamì suy nghĩ: “Ðây là Ác ma muốn làm ta run sợ, hoảng sợ, lông tóc dựng ngược, muốn khiến ta từ bỏ Thiền định nên đã nói lên bài kệ đó”."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 6 Tỷ-kheo-ni Kisà Gotamì biết được: “Ðây là Ác ma”, liền nói lên bài kệ với Ác ma:"
+      },
+      {
+        "id": "p11",
+        "text": "Con hại, đã qua rồi,\n\nÐàn ông đã chấm dứt,\n\nTa không sầu, không khóc,\n\nTa sợ gì các Ông?\n\nKhắp nơi hỷ, ái đoạn,\n\nKhối mê ám nát tan,\n\nChiến thắng quân thần chết,\n\nVô lậu, ta an trú."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 7 Ác ma biết được: “Tỷ-kheo-ni Kisà Gotamì đã biết ta” nên buồn khổ, thất vọng, liền biến mất tại chỗ ấy."
+      },
+      {
+        "id": "p13",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn5.4": {
+    "canonicalRef": "sn5.4",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn5.4/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:07:33+00:00",
+    "materializedAt": "2026-09-02T03:07:33+00:00",
+    "contentHash": "81169dddc548af9673f4f01ebd59b424a16db1c44e163629dea10d46032c111e",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 5: Tương Ưng Tỷ Kheo Ni"
+      },
+      {
+        "id": "p2",
+        "text": "5.4. Vijayà"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Nhân duyên ở Sāvatthi."
+      },
+      {
+        "id": "p4",
+        "text": "Tỷ-kheo-ni Vijayà vào buổi sáng đắp y … và ngồi xuống dưới một gốc cây để nghỉ ban ngày."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Ác Ma muốn làm cho Tỳ-kheo-ni Vijayà sợ hãi … muốn khiến nàng từ bỏ Thiền định, liền đi đến Tỳ-kheo-ni Vijayà; sau khi đến, nói lên bài kệ với Tỳ-kheo-ni Vijayà:"
+      },
+      {
+        "id": "p6",
+        "text": "Nàng vừa trẻ, vừa đẹp,\n\nTa vừa trẻ, vừa xuân,\n\nVới cung đàn năm điệu,\n\nNàng cùng ta vui hưởng."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 3 Tỷ-kheo-ni Vijayà suy nghĩ: ” Ai đã nói lên bài kệ này? Người hay không phải người?”"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 4 Tỷ-kheo-ni Vijayà suy nghĩ: ” Ðây là Ác ma … nói lên bài kệ đó.”"
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 5 Tỷ-kheo-ni Vijayà suy nghĩ: “Ðây là Ác ma”, liền nói lên bài kệ với Ác ma:"
+      },
+      {
+        "id": "p10",
+        "text": "Sắc, tiếng, vị, hương, xúc,\n\nLàm cho ý đam mê,\n\nTa nhường lại Ác ma,\n\nTa đâu có cần chúng.\n\nVới thân bất tịnh này,\n\nDễ hư hoại mong manh,\n\nTa bực phiền, tủi hổ,\n\nDục ái được đoạn tận.\n\nHọ sanh hưởng sắc giới,\n\nChúng vọng vô sắc giới,\n\nThiền chứng an tịnh ấy,\n\nMọi nơi, mê ám diệt."
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 6 Ác ma biết được: “Tỷ-kheo-ni Aijayà đã biết ta”, buồn khổ, thất vọng, liền biến mất tại chỗ ấy."
+      },
+      {
+        "id": "p12",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn5.5": {
+    "canonicalRef": "sn5.5",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn5.5/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:07:32+00:00",
+    "materializedAt": "2026-09-02T03:07:32+00:00",
+    "contentHash": "2b8ab756e13497b1a4050320cb3621a7f148a60c3047860425716127b984bbb6",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 5: Tương Ưng Tỷ Kheo Ni"
+      },
+      {
+        "id": "p2",
+        "text": "5.5. Uppalavannà"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Nhân duyên Sāvatthi."
+      },
+      {
+        "id": "p4",
+        "text": "Rồi Tỷ-kheo-ni Uppalavannà vào buổi sáng đắp y … và đứng dưới gốc cây tala có trổ hoa."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Ác ma muốn làm cho Tỷ-kheo-ni Uppalavannà run sợ, hoảng sợ, lông tóc dựng ngược, muốn khiến nàng từ bỏ Thiền định, liền đi đến Tỷ-kheo-ni Uppalavannà."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Sau khi đến, Ác ma nói lên bài kệ này với Tỷ-kheo-ni Uppalavannà:"
+      },
+      {
+        "id": "p7",
+        "text": "Này nàng Tỷ-kheo-ni,\n\nDưới gốc cây tala,\n\nÐang nở nụ trăm hoa,\n\nNàng đến đứng một mình,\n\nNhan sắc Nàng tuyệt đẹp,\n\nKhông ai dám sánh bằng!\n\nTại đây Nàng đã đến,\n\nTrong tư thế như vậy,\n\nNàng ngu dại kia ơi,\n\nKhông sợ cám dỗ sao?"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 4 Tỷ-kheo-ni Uppalavannà suy nghĩ: “Ai đã nói lên bài kệ này? Người hay là không phải người?”"
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 5 Tỷ-kheo-ni Uppalavannà suy nghĩ: “Ðây là Ác ma … đã nói lên bài kệ đó.”"
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 6 Tỷ-kheo-ni Uppalavannà biết được: “Ðây là Ác ma”, liền trả lời với bài kệ:"
+      },
+      {
+        "id": "p11",
+        "text": "Trăm ngàn người cám dỗ,\n\nCó đến đây như Ông,\n\nMảy lông ta không động,\n\nTa không gì sợ hãi.\n\nÁc ma, ta không sợ,\n\nTa đứng đây một mình,\n\nTa có thể biến mất,\n\nHay vào bụng các Ông.\n\nTa đứng giữa hàng mi,\n\nÔng không thấy ta được.\n\nVới tâm khéo khiếp phục,\n\nThần túc khéo tu trì,\n\nTa thoát mọi trói buộc,\n\nTa đâu có sợ Ông?\n\nNày Hiền giả Ác ma!"
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 7 Ác ma biết được: “Tỷ-kheo-ni Uppalavannà đã biết ta”, buồn khổ, thất vọng, liền biến mất tại chỗ ấy."
+      },
+      {
+        "id": "p13",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn5.6": {
+    "canonicalRef": "sn5.6",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn5.6/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:07:33+00:00",
+    "materializedAt": "2026-09-02T03:07:33+00:00",
+    "contentHash": "42a848dea5a0bb9d47530b729ccf0b013ef6fde2405a48e4ec8167837159f3fd",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 5: Tương Ưng Tỷ Kheo Ni"
+      },
+      {
+        "id": "p2",
+        "text": "5.6. Càlà"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Nhân duyên ở Sāvatthi."
+      },
+      {
+        "id": "p4",
+        "text": "Tỷ-kheo-ni Càlà vào buổi sáng đắp y … ngồi dưới một gốc cây để nghỉ ban ngày."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Ác ma đi đến Tỷ-kheo-ni Càlà; sau khi đến, nói với Tỷ-kheo-ni Càlà:"
+      },
+      {
+        "id": "p6",
+        "text": "—Này Tỷ-kheo-ni, Nàng không vui thích gì?"
+      },
+      {
+        "id": "p7",
+        "text": "—Này Hiền giả, ta không vui thích sanh."
+      },
+      {
+        "id": "p8",
+        "text": "—Sao Nàng không vui thích sanh?"
+      },
+      {
+        "id": "p9",
+        "text": "—Khi đã sanh, phải thọ hưởng các dục."
+      },
+      {
+        "id": "p10",
+        "text": "—Này Tỷ-kheo-ni, ai dạy cho nàng: “Chớ có vui thích sanh”?"
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 3 (Càlà):\nSanh ra rồi phải chết,\n\nÐã sanh thấy khổ đau,\n\nKiết sử trói gia hại,\n\nDo vậy không thích sanh.\n\nÐức Phật thuyết giảng pháp,\n\nKhiến vượt khỏi tái sanh,\n\nÐoạn trừ mọi khổ não,\n\nGiúp ta trú chân thật.\n\nChúng sanh hướng sắc giới,\n\nHọ vọng vô sắc giới,\n\nNếu không biết đoạn diệt,\n\nHọ đi đến tái sanh."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 4 Ác ma biết được: “Tỷ-kheo-ni Càlà đã biết ta”, buồn khổ, thất vọng, liền biến mất tại chỗ ấy."
+      },
+      {
+        "id": "p13",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn5.7": {
+    "canonicalRef": "sn5.7",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn5.7/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:07:33+00:00",
+    "materializedAt": "2026-09-02T03:07:33+00:00",
+    "contentHash": "c92acd7aa11fd8e90e851bacaa98275c5ff0738b3dcd83e806deaf0fac877ab3",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 5: Tương Ưng Tỷ Kheo Ni"
+      },
+      {
+        "id": "p2",
+        "text": "5.7. Upacàlà"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Ở tại Sāvatthi."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Rồi Tỷ-kheo-ni Upacàlà, vào buổi sáng, đắp y … và ngồi xuống một gốc cây để nghỉ ban ngày … nói với Tỷ-kheo-ni Upacàlà:"
+      },
+      {
+        "id": "p5",
+        "text": "—Này Tỷ-kheo-ni, Nàng muốn tái sanh tại chỗ nào?"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 —Ta không muốn tái sanh tại một chỗ nào cả, này Hiền giả."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4"
+      },
+      {
+        "id": "p8",
+        "text": "Chư Thiên Ba mươi ba,\n\nDạ-ma, Ðâu-suất thiên,\n\nChư vị Hóa lạc thiên,\n\nTha hóa Tự tại thiên,\n\nNàng hãy hướng tâm này,\n\nÐến cảnh giới chư Thiên,\n\nRồi Nàng được tái sanh,\n\nHưởng an lạc cảnh ấy.\nVi-n 5\nChư Thiên Ba mươi ba,\n\nDạ-ma, Ðâu-suất thiên,\n\nChư vị Hóa Lạc thiên,\n\nTha hóa, Tự tại thiên,\n\nVì ái dục trói buộc,\n\nLại bị ma chinh phục.\n\nToàn thế giới cháy đỏ,\n\nToàn thế giới hỏa thiêu,\n\nToàn thế giới bùng cháy,\n\nToàn thế giới rung động.\n\nKhông rung, không dao động,\n\nKhông hệ lụy, phàm phu,\n\nChỗ nào ma không đến,\n\nChỗ ấy ta vui thích."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 6 Rồi Ác ma biết được … biến mất tại chỗ ấy."
+      },
+      {
+        "id": "p10",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn5.8": {
+    "canonicalRef": "sn5.8",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn5.8/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:07:33+00:00",
+    "materializedAt": "2026-09-02T03:07:33+00:00",
+    "contentHash": "a5c86e092d28bc8b2c5e330c05446192f4821eb77012340b92c22a6d94976e75",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 5: Tương Ưng Tỷ Kheo Ni"
+      },
+      {
+        "id": "p2",
+        "text": "5.8. Sisupacàlà"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Tại Sāvatthi."
+      },
+      {
+        "id": "p4",
+        "text": "Tỷ-kheo-ni Sisupacàlà vào buổi sáng đắp y … rồi ngồi xuống một gốc cây để nghỉ ban ngày."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Rồi Ác ma đi đến Tỷ-kheo-ni Sisupacàlà; sau khi đến, nói với Tỷ-kheo-ni Sisupacàlà:"
+      },
+      {
+        "id": "p6",
+        "text": "—Này Tỷ-kheo-ni, Nàng thích thú tà giáo của ai không?"
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 3 —Này Hiền giả, ta không thích thú tà giáo của ai cả."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 4"
+      },
+      {
+        "id": "p9",
+        "text": "Vì ai Nàng trọc đầu,\n\nHiện tướng nữ Sa-môn?\n\nNàng không thích tà giáo,\n\nVậy nàng tu cho ai,\n\nNày kẻ Ngu muội kia?\nVi-n 5 (Sisupacàlà):\nNhững kẻ tin tà kiến,\n\nThuộc ngoại đạo tà giáo.\n\nTa không thích pháp họ,\n\nTa không giỏi pháp họ!\n\nCó dòng họ Thích-ca.\n\nÐản sanh Phật vô tỷ,\n\nNgài chinh phục tất cả,\n\nNgài đại phá chúng ma,\n\nTại mọi chỗ, mọi nơi,\n\nKhông ai chiến thắng Ngài.\n\nNgài giải thoát hoàn toàn,\n\nKhông bị gì triền phược.\n\nBậc Pháp nhãn thấy khắp;\n\nTất cả nghiệp đoạn diệt,\n\nGiải thoát, diệt sanh y.\n\nThế Tôn, Ðạo Sư ta,\n\nTa thích giáo pháp Ngài."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 6 Rồi Ác ma biết được … liền biến mất tại chỗ ấy."
+      },
+      {
+        "id": "p11",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn5.9": {
+    "canonicalRef": "sn5.9",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn5.9/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T03:07:33+00:00",
+    "materializedAt": "2026-09-02T03:07:33+00:00",
+    "contentHash": "16d261626eef89f2c2bf3568039cf504732fbe8cb983d62fbb6ef469dba60269",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 5: Tương Ưng Tỷ Kheo Ni"
+      },
+      {
+        "id": "p2",
+        "text": "5.9. Selà"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Ở tại Sāvatthi."
+      },
+      {
+        "id": "p4",
+        "text": "Tỷ-kheo-ni Selà vào buổi sáng đắp y … ngồi dưới một gốc cây để nghỉ ban ngày."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Rồi Ác ma muốn làm Tỷ-kheo-ni Selà run sợ … nói lên bài kệ với Tỷ-kheo-ni Selà:"
+      },
+      {
+        "id": "p6",
+        "text": "Bởi vì bong bóng này,\n\nÐược tạo tác làm ra,\n\nAi là người sáng tạo,\n\nBong bóng như huyễn này?\n\nTừ đâu bong bóng sanh?\n\nÐi đâu bong bóng diệt?"
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 3 Rồi Tỷ-kheo-ni Selà suy nghĩ: “Ai đã nói lên bài kệ này? Người hay không phải người?”"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 4 Rồi Tỷ-kheo-ni Selà suy nghĩ: ” Ðây là Ác ma, muốn làm ta run sợ, hoảng sợ, lông tóc dựng ngược, muốn khiến ta từ bỏ Thiền định, nên đã nói lên bài kệ ấy”."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 5 Rồi Tỷ-kheo-ni Selà được biết: “Ðây là Ác ma”, nên trả lời Ác ma với bài kệ:"
+      },
+      {
+        "id": "p10",
+        "text": "Bong bóng như huyễn này,\n\nKhông phải tự ngã làm,\n\nSự vật bạc phước này,\n\nKhông phải người khác làm.\n\nDo nhân duyên quy tụ,\n\nSự vật được hình thành,\n\nDo nhân duyên tán ly,\n\nSự vật bị tiêu diệt.\n\nHột giống gieo vào ruộng,\n\nÐược nẩy mầm, sinh lộc,\n\nKhi nhiễm thấm cả hai,\n\nVị đất và khí ướt.\n\nCũng vậy uẩn và giới,\n\nCùng với sáu xứ này,\n\nDo nhân duyên quy tụ,\n\nChúng sẽ được hình thành,\n\nDo nhân duyên tán ly,\n\nChúng bị hoại, tiêu diệt."
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 6 Rồi Ác ma biết được: “Tỷ-kheo-ni Selà đã biết ta”, nên buồn khổ, thất vọng, liền biến mất tại chỗ ấy."
+      },
+      {
+        "id": "p12",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  }
+}
