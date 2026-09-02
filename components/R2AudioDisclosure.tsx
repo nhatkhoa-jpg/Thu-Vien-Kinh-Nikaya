@@ -38,7 +38,7 @@ export default function R2AudioDisclosure({sources,storageKey,sourceUrl,vi}:Prop
         <a className="downloadLink" href={selected.src} target="_blank" rel="noreferrer"><Download size={16}/>{vi?'Mở / tải MP3':'Open / download MP3'}</a>
         {sourceUrl&&<a className="audioSource" href={sourceUrl} target="_blank" rel="noreferrer">{vi?'Văn bản đối chiếu':'Text source'}<ExternalLink size={13}/></a>}
       </div>
-      {!bestAvailable&&<p className="audioFallbackNote">{vi?'Bản giọng đọc chất lượng cao đang được bổ sung. Hiện thư viện dùng MP3 dự phòng đã xác minh; bạn vẫn có thể chọn chức năng đọc bằng trình duyệt bên cạnh.':'Higher-quality narration is still being added. A verified backup MP3 is playing; browser reading remains available as another option.'}</p>}
+      {!bestAvailable&&<p className="audioFallbackNote">{vi?'Giọng đọc chất lượng cao đang được bổ sung. Bản MP3 hiện tại vẫn nghe bình thường; bạn cũng có thể dùng chức năng đọc bằng trình duyệt.':'Higher-quality narration is still being added. The current MP3 remains available, and browser reading is another option.'}</p>}
     </div>
   </details>;
 }
