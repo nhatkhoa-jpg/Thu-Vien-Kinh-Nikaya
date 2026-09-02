@@ -1,0 +1,61 @@
+name: Work Lane Guard
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  lane-guard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Enforce branch ownership boundaries
+        shell: bash
+        env:
+          HEAD_REF: ${{ github.head_ref }}
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          set -euo pipefail
+          git fetch origin "$BASE_REF" --depth=1
+          mapfile -t changed < <(git diff --name-only "origin/$BASE_REF...HEAD")
+          printf 'Lane=%s changed_files=%s\n' "$HEAD_REF" "${#changed[@]}"
+
+          fail_matches() {
+            local pattern="$1"
+            local label="$2"
+            local failed=0
+            for path in "${changed[@]}"; do
+              if [[ "$path" =~ $pattern ]]; then
+                echo "FORBIDDEN [$label]: $path"
+                failed=1
+              fi
+            done
+            if [ "$failed" -ne 0 ]; then
+              echo "Lane guard refused this PR. Move the change to the owning lane or coordinate an explicit integration PR."
+              exit 1
+            fi
+          }
+
+          case "$HEAD_REF" in
+            ops/chatgpt-*)
+              # Chat-side operations must never author scripture/corpus truth or
+              # overwrite derived corpus artifacts owned by Work/integration.
+              fail_matches '^data/(content|catalog|exports)/|^lib/materialized-content\.generated\.ts$' 'corpus-owned'
+              ;;
+            work/*)
+              # Work owns corpus/features, but production hosting and storage
+              # controls stay in the ops lane to avoid credential/deploy races.
+              fail_matches '^\.github/workflows/cloudflare-.*\.yml$|^\.github/workflows/r2-.*\.yml$|^vercel\.json$|^wrangler\.(jsonc|toml)$|^open-next\.config\.(js|mjs|ts)$|^docs/R2_STORAGE\.md$|^scripts/r2_.*\.py$' 'ops-owned'
+              ;;
+            *)
+              echo 'Unclassified branch: guard is informational only.'
+              ;;
+          esac
+
+          echo 'Lane guard PASS'
