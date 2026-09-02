@@ -1,0 +1,536 @@
+{
+  "sn46.1": {
+    "canonicalRef": "sn46.1",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn46.1/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T13:26:11+00:00",
+    "materializedAt": "2026-09-02T13:26:11+00:00",
+    "contentHash": "23ec8eef76d431a4a048477bb610a1f103898f45c3b7d2bc81347d55e03780a4",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 46: Tương Ưng Giác Chi"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Núi"
+      },
+      {
+        "id": "p3",
+        "text": "46.1. Tuyết Sơn"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-2. Nhân duyên ở Sāvatthi …"
+      },
+      {
+        "id": "p5",
+        "text": "Thế Tôn nói như sau:"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 —Y cứ vào vua núi Tuyết sơn, này các Tỷ-kheo, các loài rắn lớn tăng trưởng tự thân, thâu hoạch sức mạnh. Ở đấy, khi chúng tăng trưởng tự thân, thâu hoạch sức mạnh, chúng đi xuống các hồ nhỏ. Sau khi xuống các hồ nhỏ, chúng đi xuống các hồ lớn. Sau khi đi xuống các hồ lớn, chúng đi xuống các sông nhỏ. Sau khi đi xuống các sông nhỏ, chúng đi xuống các sông lớn. Sau khi đi xuống các sông lớn, chúng đi ra biển, ra đại dương. Tại đấy, thân của chúng được to lớn và quảng đại hơn."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Cũng vậy, này các Tỷ-kheo, Tỷ-kheo y cứ vào giới, an trú vào giới, tu tập bảy giác chi, làm cho sung mãn bảy giác chi, đạt được sự to lớn, sự quảng đại trong các pháp. Và này các Tỷ-kheo, thế nào là Tỷ-kheo y cứ vào giới, an trú vào giới, tu tập bảy giác chi, làm cho sung mãn bảy giác chi, đạt được sự to lớn, sự quảng đại trong các pháp?"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 Ở đây, này các Tỷ-kheo, Tỷ-kheo tu tập niệm giác chi liên hệ đến viễn ly, liên hệ đến ly tham, liên hệ đến đoạn diệt, hướng đến từ bỏ. Tỷ-kheo tu tập trạch pháp giác chi … tu tập tinh tấn giác chi … tu tập hỷ giác chi … tu tập khinh an giác chi … tu tập định giác chi … tu tập xả giác chi liên hệ đến viễn ly, liên hệ đến ly tham, liên hệ đến đoạn diệt, hướng đến từ bỏ."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 6 Cũng vậy, này các Tỷ-kheo, Tỷ-kheo y cứ vào giới, an trú vào giới, tu tập bảy giác chi, làm cho sung mãn bảy giác chi, đạt được sự to lớn, sự quảng đại trong các pháp."
+      },
+      {
+        "id": "p10",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn46.2": {
+    "canonicalRef": "sn46.2",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn46.2/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T13:26:11+00:00",
+    "materializedAt": "2026-09-02T13:26:11+00:00",
+    "contentHash": "632daee3772ff9cc6cec5a23cd292865d9364b14aaad347d35ce924c383c1260",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 46: Tương Ưng Giác Chi"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Núi"
+      },
+      {
+        "id": "p3",
+        "text": "46.2. Thân"
+      },
+      {
+        "id": "p4",
+        "text": "I"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 1-2. Tại Sāvatthi …"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 —Ví như, này các Tỷ-kheo, cái thân này y cứ món ăn, duyên món ăn được an trú; không có món ăn thì không an trú. Cũng vậy, này các Tỷ-kheo, năm triền cái y cứ món ăn, duyên món ăn được an trú; không có món ăn thì không an trú."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Và này các Tỷ-kheo, món ăn nào đối với dục tham (kàmacchanda) chưa sanh được sanh khởi; hay đối với dục tham đã sanh được tăng trưởng, quảng đại? Này các Tỷ-kheo, có tịnh tướng (subhanimittam), ở đây, nếu phi như lý tác ý được làm cho sung mãn, thời tịnh tướng này là món ăn khiến cho dục tham chưa sanh được sanh khởi; hay đối với dục tham đã sanh khiến cho tăng trưởng, quảng đại."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 Và này các Tỷ-kheo, món ăn nào đối với sân chưa sanh làm cho sanh khởi; hay đối với sân đã sanh khiến được tăng trưởng, quảng đại? Này các Tỷ-kheo, có đối ngại tướng (patighanimittam). Ở đây, nếu phi như lý tác ý được làm cho sung mãn, thời đối ngại tướng này là món ăn khiến cho sân chưa sanh được sanh khởi; hay đối với sân đã sanh khiến cho tăng trưởng, quảng đại."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 6 Này các Tỷ-kheo, món ăn nào đối với hôn trầm thụy miên chưa sanh làm cho sanh khởi; hay đối với hôn trầm thụy miên đã sanh khiến cho tăng trưởng, quảng đại? Này các Tỷ-kheo, có sự không hân hoan, biếng nhác (tandi), uể oải (vijambhità), ăn quá no, tâm rụt rè (linàttam). Ở đây, nếu phi như lý tác ý được làm cho sung mãn, thời chính là món ăn khiến cho hôn trầm thụy miên chưa sanh được sanh khởi; hay đối với hôn trầm thụy miên đã sanh khiến cho tăng trưởng, quảng đại."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 7 Và này các Tỷ-kheo, món ăn nào đối với trạo hối chưa sanh làm cho sanh khởi; hay đối với trạo hối đã sanh khiến cho tăng trưởng, quảng đại? Này các Tỷ-kheo, có tâm không được tịnh chỉ. Ở đây, nếu phi như lý tác ý được làm cho sung mãn, thời chính là món ăn khiến cho trạo hối chưa sanh được sanh khởi; hay đối với trạo hối đã sanh khiến cho tăng trưởng, quảng đại."
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 8 Và này các Tỷ-kheo, món ăn nào đối với nghi chưa sanh làm cho sanh khởi; hay đối với nghi đã sanh khiến cho tăng trưởng, quảng đại? Này các Tỷ-kheo, có những pháp làm trú xứ cho nghi hoặc. Ở đây, nếu phi như lý tác ý được làm cho sung mãn, thời chính các pháp này là món ăn khiến cho nghi hoặc chưa sanh được sanh khởi; hay đối với nghi hoặc đã sanh khiến cho tăng trưởng, quảng đại."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 9 Ví như, này các Tỷ-kheo, cái thân này y cứ món ăn, duyên món ăn mà được an trú; không có món ăn thì không an trú. Cũng vậy, này các Tỷ-kheo, năm triền cái y cứ món ăn, duyên món ăn mà được an trú; không có món ăn thì không an trú."
+      },
+      {
+        "id": "p13",
+        "text": "II"
+      },
+      {
+        "id": "p14",
+        "text": "Vi-n 10 Ví như, này các Tỷ-kheo, cái thân này y cứ món ăn, duyên món ăn mà được an trú; không có món ăn thì không an trú. Cũng vậy, này các Tỷ-kheo, bảy giác chi này y cứ món ăn, duyên món ăn mà được an trú; không có món ăn thì không an trú."
+      },
+      {
+        "id": "p15",
+        "text": "Vi-n 11 Và này các Tỷ-kheo, món ăn nào đối với niệm giác chi chưa sanh làm cho sanh khởi; hay đối với niệm giác chi đã sanh khởi được tu tập, làm cho viên mãn? Có các pháp, này các Tỷ-kheo, làm trú xứ cho niệm giác chi. Ở đây, nếu như lý tác ý được làm cho sung mãn, thời đây là món ăn khiến cho niệm giác chi chưa sanh được sanh khởi; hay đối với niệm giác chi đã sanh khởi khiến cho được tu tập, làm cho viên mãn."
+      },
+      {
+        "id": "p16",
+        "text": "Vi-n 12 Và này các Tỷ-kheo, món ăn nào đối với trạch pháp giác chi chưa sanh làm cho sanh khởi; hay đối với trạch pháp giác chi đã sanh được tu tập và làm cho viên mãn? Này các Tỷ-kheo, có các thiện pháp và bất thiện pháp, có các pháp đáng chỉ trích và không đáng chỉ trích, có các pháp liệt và thắng, có các pháp đen và trắng (kanhàsukkasa-ppatibhàgà). Ở đây, nếu như lý tác ý được làm cho sung mãn, thời đây là món ăn khiến cho trạch pháp giác chi chưa sanh khởi được sanh khởi; hay đối với trạch pháp giác chi đã sanh khởi khiến cho được tu tập, làm cho viên mãn."
+      },
+      {
+        "id": "p17",
+        "text": "Vi-n 13 Và này các Tỷ-kheo, món ăn nào đối với tinh tấn giác chi chưa sanh làm cho sanh khởi; hay đối với tinh tấn giác chi đã sanh khởi được tu tập và làm cho viên mãn? Này các Tỷ-kheo, có phát cần giới (àrambhadhàtu), tinh cần giới (mikkamadhàtu), cần dõng giới (parakkamadhàtu). Ở đây, nếu như lý tác ý được làm cho sung mãn, thời đây là món ăn khiến cho tinh tấn giác chi chưa sanh được sanh khởi; hay đối với tinh tấn giác chi đã sanh khởi khiến cho được tu tập, làm cho viên mãn."
+      },
+      {
+        "id": "p18",
+        "text": "Vi-n 14 Và này các Tỷ-kheo, món ăn nào đối với hỷ giác chi chưa sanh khiến cho sanh khởi; hay đối với hỷ giác chi đã sanh khởi được tu tập, làm cho viên mãn? Này các Tỷ-kheo, có những pháp làm trú xứ cho hỷ giác chi. Ở đây, nếu như lý tác ý được làm cho viên mãn, thời đây là món ăn khiến cho hỷ giác chi chưa sanh được sanh khởi; hay đối với hỷ giác chi đã sanh khởi khiến cho được tu tập, làm cho viên mãn."
+      },
+      {
+        "id": "p19",
+        "text": "Vi-n 15 Và này các Tỷ-kheo, món ăn nào đối với khinh an giác chi chưa sanh khiến cho sanh khởi; hay đối với khinh an giác chi đã sanh khởi được tu tập, làm cho viên mãn? Này các Tỷ-kheo, có thân khinh an, tâm khinh an. Ở đây, nếu như lý tác ý được làm cho sung mãn, thời đây là món ăn khiến cho khinh an giác chi chưa sanh được sanh khởi; hay đối với khinh an giác chi đã sanh khiến cho được tu tập, làm cho viên mãn."
+      },
+      {
+        "id": "p20",
+        "text": "Vi-n 16 Và này các Tỷ-kheo, món ăn nào đối với định giác chi chưa sanh khiến cho sanh khởi; hay đối với định giác chi đã sanh được tu tập, làm cho viên mãn? Này các Tỷ-kheo, có tịnh chỉ tướng, bất loạn tướng. Ở đây, nếu như lý tác ý được làm cho viên mãn, thời đây là món ăn khiến cho định giác chi chưa sanh được sanh khởi; hay đối với định giác chi đã sanh khiến cho được tu tập, làm cho viên mãn."
+      },
+      {
+        "id": "p21",
+        "text": "Vi-n 17 Và này các Tỷ-kheo, món ăn nào đối với xả giác chi chưa sanh khiến cho sanh khởi; hay đối với xả giác chi đã sanh được tu tập, làm cho viên mãn? Này các Tỷ-kheo, có các pháp làm trú xứ cho xả giác chi. Ở đây, nếu như lý tác ý được làm cho viên mãn, thời đây là món ăn khiến cho xả giác chi chưa sanh được sanh khởi; hay đối với xả giác chi đã sanh khiến cho được tu tập, làm cho viên mãn."
+      },
+      {
+        "id": "p22",
+        "text": "Ví như, này các Tỷ-kheo, cái thân này y cứ món ăn, duyên món ăn được an trú; không có món ăn thì không an trú. Cũng vậy, này các Tỷ-kheo, bảy giác chi này y cứ món ăn, duyên món ăn mà được an trú; không có món ăn thì không an trú."
+      },
+      {
+        "id": "p23",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn46.3": {
+    "canonicalRef": "sn46.3",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn46.3/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T13:26:12+00:00",
+    "materializedAt": "2026-09-02T13:26:12+00:00",
+    "contentHash": "68ced145f4f7477bc89ed1fd562b50f9ad40ee7bcc0ab2b1bbe8d55dce8b5a54",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 46: Tương Ưng Giác Chi"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Núi"
+      },
+      {
+        "id": "p3",
+        "text": "46.3. Giới"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Này các Tỷ-kheo, những Tỷ-kheo nào cụ túc giới, cụ túc định, cụ túc tuệ, cụ túc giải thoát, cụ túc giải thoát tri kiến, Ta nói rằng ai thấy các Tỷ-kheo ấy thì có rất nhiều lợi ích."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Ai nghe các Tỷ-kheo ấy, này các Tỷ-kheo, Ta nói rằng có rất nhiều lợi ích. Ai yết kiến các Tỷ-kheo ấy, này các Tỷ-kheo, Ta nói rằng có rất nhiều lợi ích. Ai thân cận các Tỷ-kheo ấy, này các Tỷ-kheo, Ta nói rằng có rất nhiều lợi ích. Ai nhớ nghĩ đến các Tỷ-kheo ấy, này các Tỷ-kheo, Ta nói rằng có rất nhiều lợi ích. Ai tùy thuận các Tỷ-kheo ấy xuất gia, này các Tỷ-kheo, Ta nói rằng có rất nhiều lợi ích."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Vì sao? Này các Tỷ-kheo, khi nghe pháp từ các Tỷ-kheo như vậy, vị nào sống viễn ly (vupakattho), được hai sự viễn ly: viễn ly về thân và viễn ly về tâm. Vị sống viễn ly như vậy thì sẽ tùy niệm (anussarati) pháp ấy, tùy tầm pháp ấy."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 Này các Tỷ-kheo, trong khi Tỷ-kheo sống viễn ly như vậy, tùy niệm, tùy tầm pháp ấy; trong lúc ấy, niệm giác chi bắt đầu phát khởi trong Tỷ-kheo ấy. Trong khi Tỷ-kheo tu tập niệm giác chi; trong khi ấy, nhờ tu tập, niệm giác chi đi đến viên mãn. Vị ấy trú với chánh niệm như vậy, với trí tuệ quyết trạch, tư sát, thành tựu quán sát pháp ấy."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 6 Trong khi, này các Tỷ-kheo, Tỷ-kheo sống chánh niệm như vậy, với trí tuệ quyết trạch, tư sát và đi đến quán sát pháp ấy; trong khi ấy, này các Tỷ-kheo, trạch pháp giác chi bắt đầu phát khởi trong Tỷ-kheo ấy. Trong khi Tỷ-kheo tu tập trạch pháp giác chi; trong khi ấy, nhờ tu tập, trạch pháp giác chi đi đến viên mãn. Trong khi vị ấy với trí tuệ quyết trạch, tư sát và thành tựu quán sát pháp ấy, thời tinh tấn, không thụ động (asallinam) bắt đầu phát khởi nơi vị ấy."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 7 Trong khi, này các Tỷ-kheo, Tỷ-kheo với trí tuệ quyết trạch, tư sát và thành tựu quán sát pháp ấy, thời tinh tấn, không thụ động bắt đầu phát khởi trong Tỷ-kheo ấy. Trong khi Tỷ-kheo tu tập tinh tấn giác chi; trong khi ấy, nhờ tu tập, tinh tấn giác chi đi đến viên mãn. Với vị tinh cần, tinh tấn, hỷ không liên hệ đến vật chất (piti niràmisà) khởi lên."
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 8 Trong khi, này các Tỷ-kheo, Tỷ-kheo tinh cần, tinh tấn, hỷ không liên hệ đến vật chất khởi lên; trong khi ấy, hỷ giác chi bắt đầu phát khởi trong Tỷ-kheo ấy. Trong khi Tỷ-kheo tu tập hỷ giác chi; trong khi ấy, nhờ tu tập, hỷ giác chi đi đến viên mãn. Với vị có ý hoan hỷ, thân được khinh an, tâm được khinh an."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 9 Trong khi, này các Tỷ-kheo, Tỷ-kheo với ý hoan hỷ, thân được khinh an, tâm được khinh an; trong khi ấy, khinh an giác chi bắt đầu phát khởi trong Tỷ-kheo ấy. Trong khi Tỷ-kheo tu tập khinh an giác chi; trong khi ấy, nhờ tu tập, khinh an giác chi đi đến viên mãn. Với vị có thân khinh an, lạc hiện hữu. Với vị có lạc, tâm được định tĩnh."
+      },
+      {
+        "id": "p13",
+        "text": "Vi-n 10 Trong khi, này các Tỷ-kheo, Tỷ-kheo có thân khinh an, được an lạc, tâm được định tĩnh; trong khi ấy, này các Tỷ-kheo, định giác chi bắt đầu phát khởi trong Tỷ-kheo ấy. Trong khi Tỷ-kheo tu tập định giác chi; trong khi ấy, định giác chi nhờ tu tập, đi đến viên mãn. Vị ấy với tâm định tĩnh như vậy, khéo trú xả nhìn (sự vật) (sàdhukam ajjhupekkhità)."
+      },
+      {
+        "id": "p14",
+        "text": "Vi-n 11 Trong khi, này các Tỷ-kheo, Tỷ-kheo với tâm định tĩnh, khéo trú xả nhìn (sự vật) như vậy; trong khi ấy, này các Tỷ-kheo, xả giác chi bắt đầu phát khởi trong Tỷ-kheo ấy. Trong khi Tỷ-kheo tu tập xả giác chi; trong khi ấy, xả giác chi nhờ tu tập, đi đến viên mãn."
+      },
+      {
+        "id": "p15",
+        "text": "Vi-n 12 Này các Tỷ-kheo, bảy giác chi được tu tập như vậy, được làm cho sung mãn như vậy, thời bảy quả, bảy lợi ích được chờ đợi. Thế nào là bảy quả, bảy lợi ích?"
+      },
+      {
+        "id": "p16",
+        "text": "Vi-n 13 Ngay trong hiện tại, lập tức (patihacca) thành tựu được chánh trí; nếu ngay trong hiện tại, lập tức không thành tựu được chánh trí, thời khi lâm chung, thành tựu được chánh trí."
+      },
+      {
+        "id": "p17",
+        "text": "Vi-n 14 Nếu ngay trong hiện tại, lập tức không thành tựu được chánh trí; nếu khi lâm chung, không thành tựu được chánh trí, thời sau khi đoạn tận năm hạ phần kiết sử, chứng được Trung gian Bát-niết-bàn (antaràparinibbàyi)."
+      },
+      {
+        "id": "p18",
+        "text": "Vi-n 15 Nếu ngay trong hiện tại, lập tức không thành tựu được chánh trí; nếu khi lâm chung, không thành tựu được chánh trí; nếu sau khi đoạn tận năm hạ phần kiết sử, không chứng được Trung gian bát Niết-bàn, thời sau khi đoạn tận năm hạ phần kiết sử, chứng được Tổn hại (upahacca) Bát-niết-bàn."
+      },
+      {
+        "id": "p19",
+        "text": "Vi-n 16 Nếu ngay trong hiện tại, lập tức không chứng được chánh trí; nếu khi lâm chung, không chứng được chánh trí; nếu sau khi đoạn tận năm hạ phần kiết sử, không chứng được Trung gian Bát-niết-bàn; nếu sau khi đoạn tận năm hạ phần kiết sử, không chứng được Tổn hại Bát-niết-bàn, thời sau khi đoạn tận năm hạ phầm kiết sử, chứng được Vô hành Bát-niết-bàn (asankhàraparinibbàyi)"
+      },
+      {
+        "id": "p20",
+        "text": "Vi-n 17 Nếu ngay trong hiện tại, lập tức không thành tựu chánh trí; nếu khi lâm chung, không chứng được chánh trí; nếu sau khi đoạn tận năm hạ phần kiết sử, không chứng được Trung gian Bát-niết-bàn; nếu sau khi đoạn diệt được năm hạ phần kiết sử, không chứng được Tổn hại Bát-niết-bàn; nếu sau khi đoạn tận năm hạ phần kiết sử, không chứng được Vô hành Bát-niết-hàn; thời sau khi đoạn tận năm hạ phần kiết sử, chứng được Hữu hành Bát-niết-bàn."
+      },
+      {
+        "id": "p21",
+        "text": "Vi-n 18 Nếu ngay trong hiện tại, lập tức không thành tựu chánh trí; nếu khi lâm chung, không chứng được chánh trí; nếu sau khi đoạn tận năm hạ phần kiết sử, không chứng được Trung gian Bát-niết-bàn; nếu sau khi đoạn diệt năm hạ phần kiết sử, không chứng được Tổn hại bát Bát-niết-bàn; nếu sau khi đoạn tận năm hạ phần kiết sử, không chứng được Vô hành Bát-niết-bàn; nếu sau khi đoạn tận năm hạ phần kiết sử, không chứng được Hữu hành Bát-niết-bàn; thời sau khi đoạn tận năm hạ phần kiết sử, vị ấy là bậc thượng lưu (uddhamsoto), đạt được Sắc cứu cánh thiên."
+      },
+      {
+        "id": "p22",
+        "text": "Vi-n 19 Này các Tỷ-kheo, do tu tập bảy giác chi như vậy, do làm cho sung mãn như vậy nên được chờ đợi bảy quả này, bảy lợi ích này."
+      },
+      {
+        "id": "p23",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn46.4": {
+    "canonicalRef": "sn46.4",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn46.4/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T13:26:12+00:00",
+    "materializedAt": "2026-09-02T13:26:12+00:00",
+    "contentHash": "75e34e79caf426348e843ba9c431aaa81d565217fd65a13798f770963c8734f8",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 46: Tương Ưng Giác Chi"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Núi"
+      },
+      {
+        "id": "p3",
+        "text": "46.4. Chuyển (Vatta)"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Một thời, Tôn giả Sāriputta trú ở Sāvatthi, tại Thắng Lâm, vườn ông Anāthapiṇḍika."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Tại đây, Tôn giả Sāriputta gọi các Tỷ-kheo:"
+      },
+      {
+        "id": "p6",
+        "text": "—Chư Hiền giả Tỷ-kheo."
+      },
+      {
+        "id": "p7",
+        "text": "—Thưa Hiền giả."
+      },
+      {
+        "id": "p8",
+        "text": "Các Tỷ-kheo ấy vâng đáp Tôn giả Sāriputta. Tôn giả Sāriputta nói như sau:"
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 3 —Này chư Hiền, có bảy giác chi này. Thế nào là bảy? Niệm giác chi, trạch pháp giác chi, tinh tấn giác chi, hỷ giác chi, khinh an giác chi, định giác chi, xả giác chi. Này chư Hiền, đó là bảy giác chi này."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 4 Ðối với bảy giác chi này, này chư Hiền, đối với giác chi nào ta muốn an trú vào buổi sáng, trong giác chi ấy, ta an trú vào buổi sáng. Ðối với giác chi nào ta muốn an trú vào buổi trưa, trong giác chi ấy, ta an trú vào buổi trưa. Ðối với giác chi nào ta muốn an trú vào buổi chiều, trong giác chi ấy, ta an trú vào buổi chiều."
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 5 Nếu là niệm giác chi hiện hữu trong ta, này chư Hiền, ta rõ biết được giác chi ấy là vô lượng trong ta, giác chi ấy là khéo phát khởi trong ta, và giác chi ấy an trú trong ta, ta rõ biết là có an trú. Nếu giác chi ấy từ bỏ ta, ta rõ biết giác chi ấy từ bỏ ta vì nhân duyên này."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 6-10. … (như trên, với các giác chi khác) …"
+      },
+      {
+        "id": "p13",
+        "text": "Vi-n 11 Nếu là xả giác chi hiện hữu trong ta, này chư Hiền, ta rõ biết được giác chi ấy là vô lượng trong ta, giác chi ấy là khéo phát khởi trong ta, và giác chi ấy an trú trong ta, ta rõ biết là có an trú. Nếu giác chi ấy từ bỏ ta, ta rõ biết giác chi ấy từ bỏ ta vì nhân duyên này."
+      },
+      {
+        "id": "p14",
+        "text": "Vi-n 12 Ví như, này chư Hiền, hòm áo của vua hay vị đại thần của vua đầy những loại áo có màu sắc sai biệt. Nếu vị ấy muốn mặc loại áo nào vào buổi sáng, vị ấy mặc loại ấy vào buổi sáng. Nếu muốn mặc loại áo nào vào buổi trưa, vị ấy mặc loại áo ấy vào buổi trưa. Nếu muốn mặc loại áo nào vào buổi chiều, vị ấy mặc loại áo ấy vào buổi chiều."
+      },
+      {
+        "id": "p15",
+        "text": "Vi-n 13 Cũng vậy, này chư Hiền, đối với bảy giác chi này, đối với giác chi nào ta muốn an trú vào buổi sáng, trong giác chi ấy ta an trú vào buổi sáng. Ðối với giác chi nào ta muốn an trú vào buổi trưa, trong giác chi ấy ta an trú vào buổi trưa. Ðối với giác chi nào ta muốn an trú vào buổi chiều, ta an trú giác chi ấy vào buổi chiều."
+      },
+      {
+        "id": "p16",
+        "text": "Vi-n 14 Nếu là niệm giác chi hiện hữu trong ta, này chư Hiền, ta rõ biết … (như trên đoạn số 5)"
+      },
+      {
+        "id": "p17",
+        "text": "Vi-n 15-19. … (như trên đoạn số 6–10)"
+      },
+      {
+        "id": "p18",
+        "text": "Vi-n 20 Nếu là xả giác chi … (như trên đoạn số11)"
+      },
+      {
+        "id": "p19",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn46.5": {
+    "canonicalRef": "sn46.5",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn46.5/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T13:26:12+00:00",
+    "materializedAt": "2026-09-02T13:26:12+00:00",
+    "contentHash": "0c17c79c7377fba81a8ebd71ad6a40a82315f457a85c479305857d10c5c2c9cc",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 46: Tương Ưng Giác Chi"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Núi"
+      },
+      {
+        "id": "p3",
+        "text": "46.5. Vị Tỷ-Kheo"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Rồi một Tỷ-kheo đi đến Thế Tôn, sau khi đến … ngồi xuống một bên, Tỷ-kheo ấy bạch Thế Tôn:"
+      },
+      {
+        "id": "p6",
+        "text": ": “Giác chi, giác chi”, bạch Thế Tôn, được gọi là như vậy. Cho đến như thế nào, bạch Thế Tôn, được gọi là giác chi?"
+      },
+      {
+        "id": "p7",
+        "text": "—Này Tỷ-kheo, chúng đưa đến giác ngộ, do vậy, chúng được gọi là các giác chi."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 3 Ở đây, này các Tỷ-kheo, Tỷ-kheo tu tập niệm giác chi liên hệ đến viễn ly, liên hệ đến ly tham, liên hệ đến đoạn diệt, hướng đến từ bỏ … tu tập xả giác chi liên hệ đến viễn ly, liên hệ đến ly tham, liên hệ đến đoạn diệt, hướng đến từ bỏ."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 4 Do vị ấy tu tập bảy giác chi này, tâm được giải thoát khỏi dục lậu, tâm được giải thoát khỏi hữu lậu, tâm được giải thoát khỏi vô minh lậu. Trong sự giải thoát, trí khởi lên: “Ta đã được giải thoát”. Vị ấy biết rõ: “Sanh đã tận, Phạm hạnh đã thành, những việc nên làm đã làm, không còn trở lui trạng thái này nữa”."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 5 Chúng đưa đến giác ngộ, này Tỷ-kheo, nên chúng được gọi là giác chi."
+      },
+      {
+        "id": "p11",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn46.6": {
+    "canonicalRef": "sn46.6",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn46.6/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T13:26:12+00:00",
+    "materializedAt": "2026-09-02T13:26:12+00:00",
+    "contentHash": "9119d8dc9748f853a6c398b01edc8c00060a114de45f316f9a35bbc6bfe5ed7a",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 46: Tương Ưng Giác Chi"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Núi"
+      },
+      {
+        "id": "p3",
+        "text": "46.6. Kundaliya (Người đeo vòng tai)"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Một thời Thế Tôn trú ở Sāketa, tại rừng Ancana, vườn Lộc Uyển."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Rồi du sĩ Kundaliya đi đến Thế Tôn; sau khi đến, nói lên với Thế Tôn những lời chào đón hỏi thăm, sau khi nói lên những lời chào đón hỏi thăm thân hữu liền ngồi xuống một bên. Ngồi một bên, du sĩ Kundaliya bạch Thế Tôn:"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 —Thưa Tôn giả Gotama, tôi sống gần khu vườn, giao du với hội chúng. Sau khi ăn buổi sáng xong, thưa Tôn giả Gotama, như sau là sở hành (àcàra) của tôi. Tôi bộ hành, tôi du hành, từ khóm vườn này qua khóm vườn khác, từ khu vườn này qua khu vườn khác. Tại đấy, tôi thấy một số Sa-môn, Bà-la-môn luận bàn về lợi ích thoát ly các tranh luận (itivàdapamokkànisamsam) và lợi ích cật vấn (upàrambhànisamsam). Còn Tôn giả Gotama sống có lợi ích gì?"
+      },
+      {
+        "id": "p7",
+        "text": "—Này Kundaliya, Như Lai có quả lợi ích của minh và giải thoát (vịjjàvimuttiphalà—nisamsam)."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 4 —Nhưng thưa Tôn giả Gotama, những pháp nào được tu tập, được làm cho sung mãn khiến cho minh và giải thoát được viên mãn?"
+      },
+      {
+        "id": "p9",
+        "text": "—Này Kundaliya, bảy giác chi được tu tập, được làm cho sung mãn, khiến cho minh và giải thoát được viên mãn."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 5 —Nhưng thưa Tôn giả Gotama, những pháp nào được tu tập, được làm cho sung mãn, khiến cho bảy giác chi được viên mãn?"
+      },
+      {
+        "id": "p11",
+        "text": "—Này Kundaliya, bốn niệm xứ được tu tập, được làm cho sung mãn, khiến cho bảy giác chi được viên mãn."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 6 —Nhưng thưa Tôn giả Gotama, những pháp nào được tu tập, được làm cho sung mãn, khiến cho bốn niệm xứ được viên mãn?"
+      },
+      {
+        "id": "p13",
+        "text": "—Này Kundaliya, ba thiện hành (sucaritàni) được tu tập, được làm cho sung mãn, khiến cho bốn niệm xứ được viên mãn."
+      },
+      {
+        "id": "p14",
+        "text": "Vi-n 7 —Nhưng thưa Tôn giả Gotama, những pháp nào được tu tập, được làm cho sung mãn, khiến cho ba thiện hành được viên mãn?"
+      },
+      {
+        "id": "p15",
+        "text": "—Này Kundaliya, hộ trì căn được tu tập, được làm cho sung mãn, khiến cho ba thiện hành được viên mãn. Nhưng này Kundaliya, hộ trì căn tu tập như thế nào, làm cho sung mãn như thế nào, khiến cho ba thiện hành được viên mãn?"
+      },
+      {
+        "id": "p16",
+        "text": "Vi-n 8 Ở đây, này Kundaliya, Tỷ-kheo khi mắt thấy sắc khả ý không có tham trước, không có hoan hỷ, không để tham dục (ràga) khởi lên. Thân của vị ấy được an trú, tâm an trú, nội phần khéo an trú, khéo giải thoát. Và khi mắt thấy sắc không khả ý, không có tuyệt vọng (manku), tâm không có dao động, ý không có chán nản (àdìnamànaso), tâm không có tức tối (avyàpannàcetaso). Thân của vị ấy được an trú, tâm được an trú, nội phần khéo an trú, khéo giải thoát."
+      },
+      {
+        "id": "p17",
+        "text": "Vi-n 9-12. Lại nữa, này Kundaliya, Tỷ-kheo khi tai nghe tiếng … mũi ngửi hương … lưỡi nếm vị … thân cảm xúc …"
+      },
+      {
+        "id": "p18",
+        "text": "Vi-n 13 Lại nữa, này Kundaliya, Tỷ-kheo khi ý biết pháp khả ý, không tham trước, không có hoan hỷ, không để tham dục khởi lên. Thân của vị ấy được an trú, tâm an trú, nội phần khéo an trú, khéo giải thoát. Và Tỷ-kheo khi ý biết pháp không khả ý, không có tuyệt vọng, tâm không có dao động, ý không có chán nản, tâm không có tức tối. Thân của vị ấy được an trú, tâm được an trú, nội phần khéo an trú, khéo giải thoát."
+      },
+      {
+        "id": "p19",
+        "text": "Vi-n 14 Này Kundaliya, khi nào Tỷ-kheo, mắt thấy sắc, đối với sắc khả ý hay không khả ý, thân được an trú, tâm được an trú, nội phần được khéo an trú, khéo giải thoát … khi tai nghe tiếng … khi mũi ngửi hương … khi lưỡi nếm vị … khi thân cảm xúc … khi ý biết pháp, đối với các pháp khả ý hay không khả ý, thân được an trú, tâm được an trú, nội phần được khéo an trú, khéo giải thoát. Này Kundaliya, hộ trì căn được tu tập như vậy, được làm cho sung mãn như vậy, khiến cho ba thiện hành được viên mãn."
+      },
+      {
+        "id": "p20",
+        "text": "Vi-n 15 Và này Kundaliya, ba thiện hành được tu tập như thế nào, làm cho sung mãn như thế nào, khiến cho bốn niệm xứ được viên mãn? Ở đây, này Kundaliya, Tỷ-kheo đoạn tận thân ác hành, tu tập thân thiện hành; đoạn tận khẩu ác hành, tu tập khẩu thiện hành; đoạn tận ý ác hành, tu tập ý thiện hành. Này Kundaliya, ba thiện hành được tu tập như vậy, được làm cho sung mãn như vậy, khiến cho bốn niệm xứ được viên mãn."
+      },
+      {
+        "id": "p21",
+        "text": "Vi-n 16 Và này Kundaliya, bốn niệm xứ được tu tập như thế nào, làm cho sung mãn như thế nào, khiến cho bảy giác chi được viên mãn? Ở đây, này Kundaliya, Tỷ-kheo sống quán thân trên thân, nhiệt tâm, tỉnh giác, chánh niệm, nhiếp phục tham ưu ở đời, quán thọ trên các thọ … quán tâm trên các tâm … quán pháp trên các pháp, nhiệt tâm, tỉnh giác, chánh niệm, nhiếp phục tham ưu ở đời. Này Kundaliya, bốn niệm xứ được tu tập như vậy, được làm cho sung mãn như vậy khiến cho bảy giác chi được viên mãn."
+      },
+      {
+        "id": "p22",
+        "text": "Vi-n 17 Và này Kundaliya, bảy giác chi được tu tập như thế nào, được làm cho sung mãn như thế nào, khiến cho minh và giải thoát được viên mãn? Ở đây, này Kundaliya, Tỷ-kheo tu tập niệm giác chi liên hệ đến viễn ly, liên hệ đến ly tham, liên hệ đến đoạn diệt, hướng đến từ bỏ … tu tập xả giác chi liên hệ đến viễn ly, liên hệ đến ly tham, liên hệ đến đoạn diệt, hướng đến từ bỏ. Này Kundaliya, bảy giác chi được tu tập như vậy, được làm cho sung mãn như vậy, khiến cho minh và giải thoát được viên mãn."
+      },
+      {
+        "id": "p23",
+        "text": "Vi-n 18 Khi được nói vậy, du sĩ Kundaliya bạch Thế Tôn:"
+      },
+      {
+        "id": "p24",
+        "text": "—Thật vi diệu thay, Tôn giả Gotama … từ nay cho đến trọn đời con xin quy ngưỡng."
+      },
+      {
+        "id": "p25",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  }
+}
