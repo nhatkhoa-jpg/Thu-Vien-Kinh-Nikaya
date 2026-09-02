@@ -1,0 +1,88 @@
+name: Cloudflare Auth and Real Preview
+
+on:
+  push:
+    branches: [deploy/cloudflare-preview]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cloudflare-cutover
+  cancel-in-progress: false
+
+jobs:
+  auth-only:
+    if: github.event_name == 'workflow_dispatch' || !contains(github.event.head_commit.message, '[skip cloudflare]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+      - name: AUTH ONLY — Cloudflare API
+        run: |
+          set -euo pipefail
+          if npx wrangler whoami > /tmp/cloudflare-auth.log 2>&1; then
+            echo "AUTH: PASS — Cloudflare API authentication OK"
+          else
+            echo "AUTH: FAIL"
+            sed -E 's/[0-9a-fA-F]{32}/[REDACTED_ACCOUNT_ID]/g' /tmp/cloudflare-auth.log
+            exit 1
+          fi
+
+  deploy-preview-and-smoke:
+    needs: auth-only
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+      - run: npm run build:vinext
+      - name: Verify Worker free-tier bundle
+        run: |
+          npx wrangler deploy --dry-run --config dist/server/wrangler.json 2>&1 | tee /tmp/wrangler-dry-run.log
+          grep -F -- "--dry-run: exiting now" /tmp/wrangler-dry-run.log
+      - name: Deploy isolated preview Worker
+        id: preview
+        run: |
+          set -euo pipefail
+          npm run deploy:preview 2>&1 | tee /tmp/cloudflare-preview-deploy.log
+          URL=$(grep -Eo 'https://[A-Za-z0-9.-]+\.workers\.dev' /tmp/cloudflare-preview-deploy.log | tail -1)
+          test -n "$URL" || { echo "Cloudflare deploy completed without a workers.dev URL"; exit 1; }
+          echo "url=$URL" >> "$GITHUB_OUTPUT"
+      - name: Install browser for real preview smoke test
+        run: npx playwright install --with-deps chromium
+      - name: Smoke-test deployed preview
+        run: node scripts/cloudflare_smoke.mjs "${{ steps.preview.outputs.url }}"
+      - name: Record verified preview state
+        env:
+          PREVIEW_URL: ${{ steps.preview.outputs.url }}
+        run: |
+          node scripts/record_cloudflare_preview.mjs
+          git config user.name "nikaya-hosting-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/status/hosting-status.json docs/CURRENT_STATE.md
+          git commit -m "hosting: record verified Cloudflare preview [skip cloudflare]"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cloudflare-preview-report
+          path: data/status/hosting-status.json
+          retention-days: 14
