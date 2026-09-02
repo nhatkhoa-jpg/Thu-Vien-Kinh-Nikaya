@@ -1,0 +1,1426 @@
+{
+  "sn54.1": {
+    "canonicalRef": "sn54.1",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn54.1/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T16:26:07+00:00",
+    "materializedAt": "2026-09-02T16:26:07+00:00",
+    "contentHash": "3ce2cb3f118541b70b41d7e15e258ccf2c735580f141ce80b28ba6be842ca492",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 54: Tương Ưng Hơi Thở Vô, Hơi Thở Ra"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Một Pháp"
+      },
+      {
+        "id": "p3",
+        "text": "54.1. Một Pháp"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Tại Sāvatthi …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Ở đây … nói như sau:"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 —Có một pháp, này các Tỷ-kheo, được tu tập, được làm cho sung mãn thời có quả lớn, có lợi ích lớn. Thế nào là một pháp? Niệm hơi thở vô, hơi thở ra. Và này các Tỷ-kheo, niệm hơi thở vô, hơi thở ra, tu tập như thế nào, làm cho sung mãn như thế nào thời có quả lớn, có lợi ích lớn?"
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Ở đây, này các Tỷ-kheo, Tỷ-kheo đi đến rừng, hay đi đến gốc cây, hay đi đến chỗ nhà trống, ngồi kiết-già, lưng thẳng, đặt niệm trước mặt; vị ấy chánh niệm thở vô, chánh niệm thở ra."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 Thở vô dài, vị ấy rõ biết: “Tôi thở vô dài”. Thở ra dài, vị ấy rõ biết: “Tôi thở ra dài”. Thở vô ngắn, vị ấy rõ biết: “Tôi thở vô ngắn”. Thở ra ngắn, vị ấy rõ biết: “Tôi thở ra ngắn”."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 6 “Cảm giác toàn thân, tôi sẽ thở vô”, vị ấy tập. “Cảm giác toàn thân, tôi sẽ thở ra”, vị ấy tập. “An tịnh thân hành, tôi sẽ thở vô”, vị ấy tập. “An tịnh thân hành, tôi sẽ thở ra”, vị ấy tập."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 7 “Cảm giác hỷ thọ, tôi sẽ thở vô”, vị ấy tập. “Cảm giác hỷ thọ, tôi sẽ thở ra”, vị ấy tập. “Cảm giác lạc thọ, tôi sẽ thở vô”, vị ấy tập. “Cảm giác lạc thọ, tôi sẽ thở ra”, vị ấy tập."
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 8 “Cảm giác tâm hành, tôi sẽ thở vô”, vị ấy tập. “Cảm giác tâm hành, tôi sẽ thở ra”, vị ấy tập. “An tịnh tâm hành, tôi sẽ thở vô”, vị ấy tập. “An tịnh tâm hành, tôi sẽ thở ra”, vị ấy tập. “Cảm giác về tâm, tôi sẽ thở vô”, vị ấy tập. “Cảm giác về tâm, tôi sẽ thở ra”, vị ấy tập."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 9 “Với tâm hân hoan, tôi sẽ thở vô”, vị ấy tập. “Với tâm hân hoan, tôi sẽ thở ra”, vị ấy tập. “Với tâm định tĩnh, tôi sẽ thở vô”, vị ấy tập. “Với tâm định tĩnh, tôi sẽ thở ra”, vị ấy tập. “Với tâm giải thoát, tôi sẽ thở vô”, vị ấy tập. “Với tâm giải thoát, tôi sẽ thở ra”, vị ấy tập."
+      },
+      {
+        "id": "p13",
+        "text": "Vi-n 10 “Quán vô thường, tôi sẽ thở vô”, vị ấy tập. “Quán vô thường, tôi sẽ thở ra”, vị ấy tập. “Quán ly tham, tôi sẽ thở vô”, vị ấy tập. “Quán ly tham, tôi sẽ thở ra”, vị ấy tập. “Quán đoạn diệt, tôi sẽ thở vô”, vị ấy tập. “Quán đoạn diệt, tôi sẽ thở ra”, vị ấy tập. “Quán từ bỏ, tôi sẽ thở vô”, vị ấy tập. “Quán từ bỏ, tôi sẽ thở ra”, vị ấy tập."
+      },
+      {
+        "id": "p14",
+        "text": "Vi-n 11 Tu tập như vậy, này các Tỷ-kheo, làm cho sung mãn như vậy, niệm hơi thở vô, hơi thở ra thời có quả lớn, có lợi ích lớn."
+      },
+      {
+        "id": "p15",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn54.10": {
+    "canonicalRef": "sn54.10",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn54.10/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T16:26:08+00:00",
+    "materializedAt": "2026-09-02T16:26:08+00:00",
+    "contentHash": "a3519d228a6dd853fe18e19397e4badf636ef5a0d613ad54635956f691a7b358",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 54: Tương Ưng Hơi Thở Vô, Hơi Thở Ra"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Một Pháp"
+      },
+      {
+        "id": "p3",
+        "text": "54.10. Kimbila"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Như vầy tôi nghe."
+      },
+      {
+        "id": "p5",
+        "text": "Một thời Thế Tôn trú ở Kimbila, tại Veluvana."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 2 Ở đấy, Thế Tôn gọi Tôn giả Kimbila:"
+      },
+      {
+        "id": "p7",
+        "text": "—Tu tập như thế nào, này Kimbila, làm cho sung mãn như thế nào, định niệm hơi thở vô, hơi thở ra được quả lớn, được lợi ích lớn?"
+      },
+      {
+        "id": "p8",
+        "text": "Khi được nói vậy, Tôn giả Kimbila im lặng."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 3 Lần thứ hai, Thế Tôn …"
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 4 Lần thứ ba, Thế Tôn bảo Tôn giả Kimbila:"
+      },
+      {
+        "id": "p11",
+        "text": "—Tu tập như thế nào, này Kimbila, làm cho sung mãn như thế nào, định niệm hơi thở vô, hơi thở ra thời được quả lớn, được lợi ích lớn?"
+      },
+      {
+        "id": "p12",
+        "text": "Lần thứ ba, Tôn giả Kimbila im lặng."
+      },
+      {
+        "id": "p13",
+        "text": "Vi-n 5 Ðược nói vậy, Tôn giả Ānanda bạch Thế Tôn:"
+      },
+      {
+        "id": "p14",
+        "text": "—Nay đã đến thời, bạch Thế Tôn. Nay đã đến thời, bạch Thiện Thệ. Mong Thế Tôn giảng dạy pháp tu tập định niệm hơi thở vô, hơi thở ra! Sau khi nghe Thế Tôn dạy, các Tỷ-kheo sẽ thọ trì."
+      },
+      {
+        "id": "p15",
+        "text": "—Vậy này Ānanda, hãy nghe và khéo tác ý, Ta sẽ giảng."
+      },
+      {
+        "id": "p16",
+        "text": "—Thưa vâng, bạch Thế Tôn."
+      },
+      {
+        "id": "p17",
+        "text": "Tôn giả Ānanda vâng đáp Thế Tôn."
+      },
+      {
+        "id": "p18",
+        "text": "Vi-n 6 Thế Tôn nói như sau:"
+      },
+      {
+        "id": "p19",
+        "text": "—Ðịnh niệm hơi thở vô, hơi thở ra, này Ānanda, tu tập như thế nào, làm cho sung mãn như thế nào thời có quả lớn, có lợi ích lớn?"
+      },
+      {
+        "id": "p20",
+        "text": "Vi-n 7-13. Ở đây, này Ānanda, Tỷ-kheo đi đến khu rừng, hay đi đến gốc cây, hay đi đến căn nhà trống … “Quán từ bỏ, tôi sẽ thở vô”, vị ấy tập. “Quán từ bỏ, tôi sẽ thở ra”, vị ấy tập."
+      },
+      {
+        "id": "p21",
+        "text": "Vi-n 14 Tu tập như vậy, này Ānanda, làm cho sung mãn như vậy, định niệm hơi thở vô, hơi thở ra thời có quả lớn, có lợi ích lớn."
+      },
+      {
+        "id": "p22",
+        "text": "Vi-n 15 Lúc nào, này Ānanda, Tỷ-kheo thở vô dài, vị ấy rõ biết: “Tôi thở vô dài”. Hay khi Tỷ-kheo thở ra dài, vị ấy rõ biết: “Tôi thở ra dài”. Hay khi Tỷ-kheo thở vô ngắn, vị ấy rõ biết: “Tôi thở vô ngắn”. Hay khi Tỷ-kheo thở ra ngắn, vị ấy rõ biết: “Tôi thở ra ngắn”. “Cảm giác toàn thân, tôi sẽ thở vô”, vị ấy tập. “Cảm giác toàn thân, tôi sẽ thở ra”, vị ấy tập. “An tịnh thân hành, tôi sẽ thở vô”, vị ấy tập. “An tịnh thân hành, tôi sẽ thở ra”, vị ấy tập. Này Ānanda, sống quán thân trên thân, Tỷ-kheo trú như vậy, nhiệt tâm, tỉnh giác, chánh niệm, nhiếp phục tham ưu ở đời. Vì sao?"
+      },
+      {
+        "id": "p23",
+        "text": "Vi-n 16 Này Ānanda, Ta tuyên bố rằng, tùy thuộc về thân, tức là hơi thở vô, hơi thở ra. Do vậy, này Ānanda, quán thân trên thân, Tỷ-kheo trú như vậy, nhiệt tâm, tỉnh giác, chánh niệm, nhiếp phục tham ưu ở đời."
+      },
+      {
+        "id": "p24",
+        "text": "Vi-n 17 Trong khi, này Ānanda, Tỷ-kheo: “Cảm giác hỷ thọ, tôi sẽ thở vô”, vị ấy tập. “Cảm giác hỷ thọ, tôi sẽ thở ra”, vị ấy tập. “Cảm giác lạc thọ, tôi sẽ thở vô”, vị ấy tập. “Cảm giác lạc thọ, tôi sẽ thở ra”, vị ấy tập. “Cảm giác tâm hành, tôi sẽ thở vô”, vị ấy tập. “Cảm giác tâm hành, tôi sẽ thở ra”, vị ấy tập. “An tịnh tâm hành, tôi sẽ thở vô”, vị ấy tập. “An tịnh tâm hành, tôi sẽ thở ra”, vị ấy tập. Trong khi quán thọ trên các cảm thọ, Tỷ-kheo trú như vậy, nhiệt tâm, tỉnh giác, chánh niệm, nhiếp phục tham ưu ở đời. Vì sao?"
+      },
+      {
+        "id": "p25",
+        "text": "Vi-n 18 Này Ānanda, Ta tuyên bố rằng, tùy thuộc về thọ, tức là hơi thở vô, hơi thở ra, được khéo tác ý. Do vậy, này Ānanda, quán thọ trên các cảm thọ, Tỷ-kheo trú như vậy, nhiệt tâm, tỉnh giác, chánh niệm, nhiếp phục tham ưu ở đời."
+      },
+      {
+        "id": "p26",
+        "text": "Vi-n 19 Trong khi, này Ānanda, Tỷ-kheo: “Cảm giác về tâm, tôi sẽ thở vô”, vị ấy tập. “Cảm giác về tâm, tôi sẽ thở ra”, vị ấy tập. “Với tâm hân hoan, tôi sẽ thở vô”, vị ấy tập. “Với tâm hân hoan, tôi sẽ thở ra”, vị ấy tập. “Với tâm định tĩnh, tôi sẽ thở vô”, vị ấy tập. “Với tâm định tĩnh, tôi sẽ thở ra”, vị ấy tập. “Với tâm giải thoát, tôi sẽ thở vô”, vị ấy tập. “Với tâm giải thoát, tôi sẽ thở ra”, vị ấy tập. Trong khi quán tâm trên tâm, Tỷ-kheo trú như vậy, nhiệt tâm, tỉnh giác, nhiếp phục tham ưu ở đời. Vì sao?"
+      },
+      {
+        "id": "p27",
+        "text": "Vi-n 20 Này Ānanda, Ta tuyên bố rằng sự tu tập chánh niệm hơi thở vô, hơi thở ra không phải cho người thất niệm và không tỉnh giác. Do vậy, này Ānanda, quán tâm trên tâm, Tỷ-kheo trong khi ấy, trú nhiệt tâm, tỉnh giác, chánh niệm, nhiếp phục tham ưu ở đời."
+      },
+      {
+        "id": "p28",
+        "text": "Vi-n 21 Trong khi Tỷ-kheo, này Ānanda, “Quán vô thường, tôi sẽ thở vô”, vị ấy tập. “Quán vô thường, tôi sẽ thở ra”, vị ấy tập. “Quán ly tham, tôi sẽ thở vô”, vị ấy tập. “Quán ly tham, tôi sẽ thở ra”, vị ấy tập. “Quán đoạn diệt, tôi sẽ thở vô”, vị ấy tập. “Quán đoạn diệt, tôi sẽ thở ra”, vị ấy tập. “Quán từ bỏ, tôi sẽ thở vô”, vị ấy tập. “Quán từ bỏ, tôi sẽ thở ra”, vị ấy tập. Trong khi quán pháp trên các pháp, này Ānanda, Tỷ-kheo trú như vậy, nhiệt tâm, tỉnh giác, chánh niệm, nhiếp phục tham ưu ở đời, đoạn tận các tham ưu; sau khi thấy với trí tuệ, vị ấy khéo trú xả. Do vậy, này Ānanda, quán pháp trên các pháp, Tỷ-kheo trú như vậy, nhiệt tâm, tỉnh giác, chánh niệm, nhiếp phục tham ưu ở đời."
+      },
+      {
+        "id": "p29",
+        "text": "Vi-n 22 Ví như, này Ānanda, một đống rác bụi lớn ở ngã tư đường, nếu từ phương Ðông, một cái xe (sakatam hay ràtha) đi đến và làm cho đống rác bụi ấy giảm bớt đi; nếu từ phương Tây…; nếu từ phương Bắc…; nếu từ phương Nam, một cái xe đi đến và làm cho đống rác bụi ấy giảm bớt đi. Cũng vậy, này Ānanda, Tỷ-kheo trong khi trú, quán thân trên thân, làm cho giảm bớt đi các ác, bất thiện pháp, khi trú, quán thọ trên các cảm thọ … khi trú, quán tâm trên tâm … khi trú, quán pháp trên các pháp … làm cho giảm bớt đi các ác, bất thiện pháp."
+      },
+      {
+        "id": "p30",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn54.11": {
+    "canonicalRef": "sn54.11",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn54.11/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T16:26:08+00:00",
+    "materializedAt": "2026-09-02T16:26:08+00:00",
+    "contentHash": "4af61f4d3bd92f5a0a129e28f4f2d7e95b668a6b3c3d8462e0ba803d75a424dd",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 54: Tương Ưng Hơi Thở Vô, Hơi Thở Ra"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Thứ Hai"
+      },
+      {
+        "id": "p3",
+        "text": "54.11. Icchànangala"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Một thời, Thế Tôn trú ở Icchànangala, tại khóm rừng ở Icchànangala."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Tại đấy, Thế Tôn bảo các Tỷ-kheo:"
+      },
+      {
+        "id": "p6",
+        "text": "—Ta muốn sống độc cư Thiền tịnh trong ba tháng, không tiếp một ai, trừ một người đem đồ ăn lại."
+      },
+      {
+        "id": "p7",
+        "text": "—Thưa vâng, bạch Thế Tôn."
+      },
+      {
+        "id": "p8",
+        "text": "Các Tỷ-kheo ấy vâng đáp Thế Tôn. Như vậy, không một ai đến viếng Thế Tôn, trừ một người đem đồ ăn lại."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 3 Rồi Thế Tôn, sau khi ba tháng ấy đã mãn, từ chỗ Thiền tịnh độc cư đứng dậy, gọi các Tỷ-kheo:"
+      },
+      {
+        "id": "p10",
+        "text": "—Này các Tỷ-kheo, nếu các du sĩ ngoại đạo đến hỏi các Ông: “Với sự an trú nào, này chư Hiền, Sa-môn Gotama an trú nhiều trong mùa mưa?” Ðược hỏi vậy, này các Tỷ-kheo, các Ông hãy trả lời cho cho các du sĩ ngoại đạo ấy như sau: “Với định niệm hơi thở vô, hơi thở ra, này chư Hiền, Thế Tôn an trú nhiều trong các mùa mưa”."
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 4 Ở đây, này các Tỷ-kheo, chánh niệm Ta thở vô, chánh niệm Ta thở ra."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 5-10. Hay thở vô dài, Ta rõ biết: “Ta thở vô dài”. Hay thở ra dài, Ta rõ biết: “Ta thở ra dài”. Hay thở vô ngắn, Ta rõ biết: “Ta thở vô ngắn”. Hay thở ra ngắn, Ta rõ biết: “Ta thở ra ngắn” … “Quán từ bỏ, Ta thở vô”, Ta rõ biết như vậy. “Quán từ bỏ, Ta thở ra”, Ta rõ biết như vậy."
+      },
+      {
+        "id": "p13",
+        "text": "Vi-n 11 Này các Tỷ-kheo, ai muốn nói một cách chơn chánh, đây là Thánh trú, đây là Phạm trú, đây là Như Lai trú; người ấy nói một cách chơn chánh, phải nói định niệm hơi thở vô, hơi thở ra là Thánh trú, là Phạm trú, là Như Lai trú."
+      },
+      {
+        "id": "p14",
+        "text": "Vi-n 12 Này các Tỷ-kheo, những Tỷ-kheo nào là bậc hữu học, tâm chưa thành tựu, đang sống cần cầu vô thượng an ổn khỏi các khổ ách; những vị ấy tu tập, làm cho sung mãn định niệm hơi thở vô, hơi thở ra, sẽ đưa đến đoạn tận các lậu hoặc. Và này các Tỷ-kheo, những Tỷ-kheo nào là bậc A-la-hán, đoạn tận các lậu hoặc, tu hành thành mãn, những việc nên làm đã làm, đã đặt gánh nặng xuống, đã thành đạt lý tưởng, đã tận trừ hữu kiết sử, chánh trí, giải thoát; những vị ấy tu tập, làm cho sung mãn định niệm hơi thở vô, hơi thở ra, ngay trong hiện tại, đưa đến lạc trú, chánh niệm tỉnh giác."
+      },
+      {
+        "id": "p15",
+        "text": "Vi-n 13 Này các Tỷ-kheo, ai muốn nói một cách chơn chánh, đây là Thánh trú, đây là Phạm trú, đây là Như Lai trú; người ấy nói một cách chơn chánh, phải nói định niệm hơi thở vô, hơi thở ra là Thánh trú, là Phạm trú, là Như Lai trú."
+      },
+      {
+        "id": "p16",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn54.12": {
+    "canonicalRef": "sn54.12",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn54.12/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T16:26:08+00:00",
+    "materializedAt": "2026-09-02T16:26:08+00:00",
+    "contentHash": "1b1bc899e6c585e68dabc569f21b0dd116ebf35005b23aa1f39805a7753abed7",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 54: Tương Ưng Hơi Thở Vô, Hơi Thở Ra"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Thứ Hai"
+      },
+      {
+        "id": "p3",
+        "text": "54.12. Nghi Ngờ"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Một thời Tôn giả Lomasavangìsa trú giữa dân chúng Sakka, tại Kapilavatthu, trong khu vườn Nigrodha."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Lúc bấy giờ Thích tử Mahānāma đi đến Tôn giả Lomasavangiisa; sau khi đến, đảnh lễ Tôn giả Lomasavangiisa rồi ngồi xuống một bên. Ngồi một bên, Thích tử Mahānāma thưa với Tôn giả Lomasavangìsa:"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 —Thưa Tôn giả, hữu học trú với Như Lai trú là một, hay hữu học trú là khác, Như Lai trú là khác?"
+      },
+      {
+        "id": "p7",
+        "text": "—Này Hiền giả Mahānāma, hữu học trú không phải là một với Như Lai trú. Này Hiền giả Mahānāma, hữu học trú là khác, Như Lai trú là khác."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 4 Này Hiền giả Mahānāma, những Tỷ-kheo nào là bậc hữu học, tâm chưa thành tựu, đang sống cần cầu vô thượng an ổn khỏi các khổ ách; sau khi đoạn tận năm triền cái, những vị ấy trú. Thế nào là năm? Ðoạn tận dục tham triền cái, các vị ấy trú. Ðoạn tận sân triền cái … Ðoạn tận hôn trầm thụy miên triền cái … Ðoạn tận trạo hối triền cái … Ðoạn tận nghi hoặc triền cái, các vị ấy trú. Này Hiền giả Mahānāma, những Tỷ-kheo nào là bậc hữu học, trú với tâm chưa thành tựu, đang sống cần cầu vô thượng an ổn khỏi các khổ ách; sau khi đoạn tận năm triền cái này, những vị ấy trú."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 5 Và này Hiền giả Mahānāma, những Tỷ-kheo nào là bậc A-la-hán, đã đoạn tận các lậu hoặc, đã tu hành thành mãn, những việc nên làm đã làm, đã đặt gánh nặng xuống, đã thành đạt lý tưởng, đã tận trừ hữu kiết sử, chánh trí, giải thoát; những vị ấy đoạn tận năm triền cái, chặt đứt tận gốc rễ, làm cho như thân cây ta-la, làm cho không thể tái sanh, làm cho không thể khởi lên. Thế nào là năm? Dục tham triền cái được đoạn tận, được chặt đứt từ gốc rễ, được làm cho như thân cây ta-la, được làm cho không thể tái sanh, được làm cho không thể khởi lên; sân triền cái được đoạn tận … hôn trầm thụy miên triền cái được đoạn tận … trạo hối triền cái được đoạn tận … nghi hoặc triền cái được đoạn tận, được chặt đứt từ gốc rễ, được làm cho như thân cây ta-la, được làm cho không thể tái sanh, được làm cho không thể khởi lên. Này Hiền giả Mahānāma, Tỷ-kheo là bậc A-la-hán, đã đoạn tận các lậu hoặc, đã tu hành thành mãn, những việc nên làm đã làm, đã đặt gánh nặng xuống, đã thành đạt lý tưởng, đã tận trừ hữu kiết sử, chánh trí, giải thoát; những vị ấy đã đoạn tận năm triền cái này, đã chặt đứt từ gốc rễ, đã làm cho như thân cây ta-la, đã làm cho không thể tái sanh, đã làm cho không thể khởi lên."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 6 Như vậy, với pháp môn này, này Hiền giả Mahānāma, Hiền giả cần phải hiểu rằng hữu học trú là khác, Như Lai trú là khác."
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 7 1. —Một thời, thưa Hiền giả Mahānāma, Thế Tôn trú ở Icchànangala, tại khu rừng Icchànangala."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 8 2. Rồi này Mahānāma, Thế Tôn bảo các Tỷ-kheo:"
+      },
+      {
+        "id": "p13",
+        "text": "Vi-n 9 3. Rồi Thế Tôn …"
+      },
+      {
+        "id": "p14",
+        "text": "Vi-n 10 4. “Ở đây, này các Tỷ-kheo, Ta …"
+      },
+      {
+        "id": "p15",
+        "text": "Vi-n 11-16. 5–10. Thở vô dài …"
+      },
+      {
+        "id": "p16",
+        "text": "Vi-n 17 11. Ai muốn nói một cách chơn chánh, đây là Thánh trú …"
+      },
+      {
+        "id": "p17",
+        "text": "Vi-n 18 12. Những ai là những Tỷ-kheo hữu học …"
+      },
+      {
+        "id": "p18",
+        "text": "Vi-n 19 13. Ai muốn nói một cách chơn chánh.”."
+      },
+      {
+        "id": "p19",
+        "text": "Vi-n 20 Với pháp môn này, này Hiền giả Mahānāma, cần phải hiểu như sau: Hữu học trú là khác, Như Lai trú là khác."
+      },
+      {
+        "id": "p20",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn54.13": {
+    "canonicalRef": "sn54.13",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn54.13/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T16:26:08+00:00",
+    "materializedAt": "2026-09-02T16:26:08+00:00",
+    "contentHash": "6127fd79fa109b0ee4721e8a187e231359291dea3c0653a1054de3f8bc882ec7",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 54: Tương Ưng Hơi Thở Vô, Hơi Thở Ra"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Thứ Hai"
+      },
+      {
+        "id": "p3",
+        "text": "54.13. Ānanda (1)"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-2. Sāvatthi …"
+      },
+      {
+        "id": "p5",
+        "text": "Rồi Tôn giả Ānanda đi đến Thế Tôn … Ngồi xuống một bên, Tôn giả Ānanda bạch Thế Tôn:"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 —Bạch Thế Tôn, có một pháp nào được tu tập, được làm cho sung mãn, làm cho viên mãn bốn pháp? Bốn pháp được tu tập, được làm cho sung mãn, làm cho viên mãn bảy pháp? Bảy pháp được tu tập, được làm cho sung mãn, làm cho viên mãn hai pháp?"
+      },
+      {
+        "id": "p7",
+        "text": "—Này Ānanda, có một pháp được tu tập, được làm cho sung mãn, làm cho viên mãn bốn pháp. Bốn pháp được tu tập, được làm cho sung mãn, làm cho viên mãn bảy pháp. Bảy pháp được tu tập, được làm cho sung mãn, làm cho viên mãn hai pháp."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 4 —Một pháp ấy là gì, bạch Thế Tôn, được tu tập, được làm cho sung mãn, làm cho viên mãn bốn pháp? Bốn pháp được tu tập, được làm cho sung mãn, làm cho viên mãn bảy pháp? Bảy pháp được tu tập được làm cho sung mãn, làm cho viên mãn hai pháp?"
+      },
+      {
+        "id": "p9",
+        "text": "—Này Ānanda, định niệm hơi thở vô, hơi thở ra được tu tập, được làm cho sung mãn, làm cho viên mãn bốn niệm xứ. Bốn niệm xứ được tu tập, được làm cho sung mãn, làm cho viên mãn bảy giác chi. Bảy giác chi được tu tập, được làm cho sung mãn, làm cho viên mãn minh và giải thoát."
+      },
+      {
+        "id": "p10",
+        "text": "I"
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 5 Ðịnh niệm hơi thở vô, hơi thở ra tu tập như thế nào, làm cho sung mãn như thế nào, làm cho viên mãn bốn niệm xứ?"
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 6-12. Ở đây, này Ānanda, Tỷ-kheo đi đến khu rừng, hay đi đến gốc cây, hay đi đến căn nhà trống … “Quán từ bỏ, tôi sẽ thở ra”, vị ấy tập."
+      },
+      {
+        "id": "p13",
+        "text": "Vi-n 13-14. Lúc nào, này Ānanda, Tỷ-kheo thở vô dài, vị ấy rõ biết: “Tôi thở vô dài.”. Này Ānanda, sống quán thân trên thân, Tỷ-kheo trong khi ấy trú nhứt tâm, tỉnh giác, chánh niệm, nhiếp phục tham ưu ở đời. Vì sao? (xem 10, đoạn số 15–16) …"
+      },
+      {
+        "id": "p14",
+        "text": "Vi-n 15-16. Trong khi, này Ānanda, Tỷ-kheo “Cảm giác hỷ thọ, tôi sẽ thở vô”, vị ấy tập … tham ưu ở đời. (xem 10, đoạn số 17–18)"
+      },
+      {
+        "id": "p15",
+        "text": "Vi-n 17-18. Trong khi, này Ānanda, Tỷ-kheo “Cảm giác về tâm, tôi sẽ thở vô”, vị ấy tập … tham ưu ở đời. (xem 10, đoạn số 19–20)"
+      },
+      {
+        "id": "p16",
+        "text": "Vi-n 19 Trong khi, này Ānanda, Tỷ-kheo “Quán vô thường, tôi sẽ thở ra”, vị ấy tập … nhiếp phục tham ưu ở đời. (xem 10, đoạn số 21)"
+      },
+      {
+        "id": "p17",
+        "text": "Vi-n 20 Ðịnh niệm hơi thở vô, hơi thở ra, này Ānanda, được tu tập như vậy, được làm cho sung mãn như vậy, làm viên mãn bốn niệm xứ."
+      },
+      {
+        "id": "p18",
+        "text": "II"
+      },
+      {
+        "id": "p19",
+        "text": "Vi-n 21 Tu tập như thế nào, này Ānanda, làm cho sung mãn như thế nào, bốn niệm xứ làm cho viên mãn bảy giác chi?"
+      },
+      {
+        "id": "p20",
+        "text": "Vi-n 22 Trong khi, này Ānanda, Tỷ-kheo trú, quán thân trên thân, niệm được an trú; khi ấy, này Ānanda, Tỷ-kheo có niệm, không phải thất niệm. Trong khi, này Ānanda, Tỷ-kheo an trú niệm, không phải thất niệm, thời niệm giác chi, đối với Tỷ-kheo ấy được thành tựu. Trong khi, này Ānanda, Tỷ-kheo tu tập niệm giác chi, niệm giác chi được Tỷ-kheo tu tập đi đến viên mãn. Vị ấy trú chánh niệm như vậy, với trí tuệ quyết trạch, tư sát, thành tựu quán pháp ấy."
+      },
+      {
+        "id": "p21",
+        "text": "Vi-n 23 Trong khi, này Ānanda, Tỷ-kheo sống chánh niệm như vậy, với trí tuệ quyết trạch, tư sát và đi đến quán sát ấy; khi ấy, này Ānanda, trạch pháp giác chi bắt đầu phát khởi trong Tỷ-kheo ấy. Trong khi Tỷ-kheo tu tập trạch pháp giác chi; khi ấy, nhờ tu tập, trạch pháp giác chi đi đến viên mãn. Trong khi vị ấy với trí tuệ, quyết trạch, tư sát và thành tựu quán sát pháp ấy, thời tinh tấn, không thụ động bắt đầu phát khởi nơi vị ấy."
+      },
+      {
+        "id": "p22",
+        "text": "Vi-n 24 Trong khi, này Ānanda, Tỷ-kheo với trí tuệ quyết trạch, tư sát và thành tựu quán sát pháp ấy, thời tinh tấn, không thụ động phát khởi trong Tỷ-kheo ấy. Trong khi Tỷ-kheo tu tập tinh tấn giác chi; khi ấy, nhờ tu tập, tinh tấn giác chi đi đến viên mãn. Với vị có tinh cần, có tinh tấn, hỷ không liên hệ đến vật chất khởi lên."
+      },
+      {
+        "id": "p23",
+        "text": "Vi-n 25 Trong khi, này Ānanda, Tỷ-kheo tinh cần, tinh tấn, hỷ không liên hệ đến vật chất khởi lên; khi ấy, hỷ giác chi bắt đầu phát khởi trong Tỷ-kheo ấy. Trong khi Tỷ-kheo tu tập hỷ giác chi; khi ấy, nhờ tu tập, hỷ giác chi đi đến viên mãn. Với vị có ý hoan hỷ, thân được khinh an, tâm được khinh an."
+      },
+      {
+        "id": "p24",
+        "text": "Vi-n 26 Trong khi, này Ānanda, Tỷ-kheo với ý hoan hỷ, thân được khinh an, tâm được khinh an; khi ấy, khinh an giác chi bắt đầu phát khởi trong Tỷ-kheo ấy. Trong khi Tỷ-kheo tu tập khinh an giác chi; khi ấy, nhờ tu tập, khinh an giác chi đi đến viên mãn. Với vị có thân khinh an, lạc hiện hữu. Với vị có lạc, tâm được định tĩnh."
+      },
+      {
+        "id": "p25",
+        "text": "Vi-n 27 Trong khi, này Ānanda, Tỷ-kheo có tâm khinh an, được an lạc, tâm được định tĩnh; khi ấy, này các Tỷ-kheo, định giác chi bắt đầu phát khởi trong Tỷ-kheo ấy. Trong khi, Tỷ-kheo tu tập định giác chi; khi ấy, định giác chi, nhờ tu tập, đi đến viên mãn. Vị ấy với tâm định tĩnh như vậy, khéo trú xả nhìn sự vật."
+      },
+      {
+        "id": "p26",
+        "text": "Vi-n 29 Trong khi, này Ānanda, Tỷ-kheo với tâm định tĩnh khéo trú xả nhìn sự vật như vậy; khi ấy, này Ānanda, xả giác chi bắt đầu phát khởi trong Tỷ-kheo ấy. Trong khi Tỷ-kheo tu tập xả giác chi; khi ấy, xả giác chi, nhờ tu tập, đi đến viên mãn."
+      },
+      {
+        "id": "p27",
+        "text": "Vi-n 29-31. Trong khi, này Ānanda, Tỷ-kheo trú, quán thọ trên các cảm thọ … quán tâm trên tâm … quán pháp trên các pháp … (như trên, từ đoạn số 22–28)"
+      },
+      {
+        "id": "p28",
+        "text": "Vi-n 32 Tu tập như vậy, này Ānanda, làm cho sung mãn như vậy, bốn niệm xứ làm viên mãn bảy giác chi."
+      },
+      {
+        "id": "p29",
+        "text": "III"
+      },
+      {
+        "id": "p30",
+        "text": "Vi-n 33 Tu tập như thế nào, làm cho sung mãn như thế nào, bảy giác chi làm viên mãn minh và giải thoát?"
+      },
+      {
+        "id": "p31",
+        "text": "Vi-n 34 Ở đây, này Ānanda, Tỷ-kheo tu tập niệm giác chi liên hệ đến viễn ly, liên hệ đến ly tham, liên hệ đến đoạn diệt, hướng đến từ bỏ … tu tập xả giác chi liên hệ đến viễn ly, liên hệ đến ly tham, liên hệ đến đoạn diệt, hướng đến từ bỏ."
+      },
+      {
+        "id": "p32",
+        "text": "Vi-n 35 Tu tập như vậy, làm cho sung mãn như vậy, bảy giác chi làm viên mãn minh và giải thoát."
+      },
+      {
+        "id": "p33",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh and Aminah Borg-Luck"
+      }
+    ]
+  },
+  "sn54.14": {
+    "canonicalRef": "sn54.14",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn54.14/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T16:26:08+00:00",
+    "materializedAt": "2026-09-02T16:26:08+00:00",
+    "contentHash": "bf3b4996f2eb357349b62bebac7ce2d1c361639ab45809f296a750064f7896a0",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 54: Tương Ưng Hơi Thở Vô, Hơi Thở Ra"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Thứ Hai"
+      },
+      {
+        "id": "p3",
+        "text": "54.14. Ānanda (2)"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Rồi Tôn giả Ānanda đi đến Thế Tôn … Thế Tôn nói với Tôn giả Ānanda:"
+      },
+      {
+        "id": "p6",
+        "text": "(Rồi Thế Tôn hỏi câu hỏi giống như trước và Ānanda trả lời)."
+      },
+      {
+        "id": "p7",
+        "text": "“Ðối với chúng con, các pháp lấy Thế Tôn làm căn bản.”."
+      },
+      {
+        "id": "p8",
+        "text": "(Rồi Thế Tôn lập lại toàn bộ như kinh trước, từ đoạn số 3–35)"
+      },
+      {
+        "id": "p9",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn54.15": {
+    "canonicalRef": "sn54.15",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn54.15/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T16:26:08+00:00",
+    "materializedAt": "2026-09-02T16:26:08+00:00",
+    "contentHash": "c98e0d20e677c34072e8c0ca9c8ffaf6739e5217de8aae0f385e70f7d1524a8b",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 54: Tương Ưng Hơi Thở Vô, Hơi Thở Ra"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Thứ Hai"
+      },
+      {
+        "id": "p3",
+        "text": "54.15. Tỷ-Kheo (1)"
+      },
+      {
+        "id": "p4",
+        "text": "(Ở đây, các Tỷ-kheo hỏi cùng một câu hỏi ấy và được Thế Tôn trả lời toàn bộ đúng như kinh trước, từ đoạn số 3–35)"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn54.16": {
+    "canonicalRef": "sn54.16",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn54.16/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T16:26:08+00:00",
+    "materializedAt": "2026-09-02T16:26:08+00:00",
+    "contentHash": "3a86d64210b9995ae0f7a3a4d28609cb3d24e2036d17d6de5e22c629bea9f5c8",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 54: Tương Ưng Hơi Thở Vô, Hơi Thở Ra"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Thứ Hai"
+      },
+      {
+        "id": "p3",
+        "text": "54.16. Tỷ-Kheo (2)"
+      },
+      {
+        "id": "p4",
+        "text": "(Ở đây, Thế Tôn hỏi các Tỷ-kheo cùng một câu hỏi, các Tỷ-kheo trả lời các pháp lấy Thế Tôn làm căn bản…, rồi Thế Tôn trả lời toàn bộ đúng như kinh trước)."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn54.17": {
+    "canonicalRef": "sn54.17",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn54.17/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T16:26:08+00:00",
+    "materializedAt": "2026-09-02T16:26:08+00:00",
+    "contentHash": "57ebbda0b8961eb7bbf2405267b9567cadda881db5bbcab4fa51d799d17a72d2",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 54: Tương Ưng Hơi Thở Vô, Hơi Thở Ra"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Thứ Hai"
+      },
+      {
+        "id": "p3",
+        "text": "54.17. Kiết Sử"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Ðịnh niệm hơi thở vô, hơi thở ra, này các Tỷ-kheo, được tu tập, được làm cho sung mãn, đưa đến đoạn tận các kiết sử."
+      },
+      {
+        "id": "p6",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn54.18": {
+    "canonicalRef": "sn54.18",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn54.18/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T16:26:08+00:00",
+    "materializedAt": "2026-09-02T16:26:08+00:00",
+    "contentHash": "922bbd91f0ebff2affc4a538e107c13baf1c81721ea5e52685afbbbdd00f85de",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 54: Tương Ưng Hơi Thở Vô, Hơi Thở Ra"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Thứ Hai"
+      },
+      {
+        "id": "p3",
+        "text": "54.18. Tùy Miên"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 … đưa đến nhổ sạch các tùy miên."
+      },
+      {
+        "id": "p6",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn54.19": {
+    "canonicalRef": "sn54.19",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn54.19/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T16:26:08+00:00",
+    "materializedAt": "2026-09-02T16:26:08+00:00",
+    "contentHash": "aa81292ee2750b49bfad0202bd122483e98b8b0cabde8f6f3a6c9f76b51180b2",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 54: Tương Ưng Hơi Thở Vô, Hơi Thở Ra"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Thứ Hai"
+      },
+      {
+        "id": "p3",
+        "text": "54.19. Con Ðường"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 … đưa đến liễu tri con đường (ba kinh trên được giải thích như kinh kế tiếp)."
+      },
+      {
+        "id": "p6",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn54.2": {
+    "canonicalRef": "sn54.2",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn54.2/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T16:26:07+00:00",
+    "materializedAt": "2026-09-02T16:26:07+00:00",
+    "contentHash": "08e1acbb1c137b2852bf2a0a2ffcabd36a7f22722843ba527b1cb56c1c0ee2f4",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 54: Tương Ưng Hơi Thở Vô, Hơi Thở Ra"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Một Pháp"
+      },
+      {
+        "id": "p3",
+        "text": "54.2. Giác Chi"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-2. Tại Sāvatthi … Tại đấy … nói như sau:"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 —Niệm hơi thở vô, hơi thở ra, này các Tỷ-kheo, được tu tập, được làm cho sung mãn thời có quả lớn, có lợi ích lớn. Và này các Tỷ-kheo, tu tập như thế nào, làm cho sung mãn như thế nào, niệm hơi thở vô, hơi thở ra thời có quả lớn, có lợi ích lớn?"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 Ở đây, này các Tỷ-kheo, Tỷ-kheo tu tập niệm giác chi câu hữu với niệm hơi thở vô, hơi thở ra, liên hệ đến viễn ly, liên hệ đến ly tham, liên hệ đến đoạn diệt, hướng đến từ bỏ; tu tập trạch pháp giác chi …; tu tập tinh tấn giác chi …; tu tập hỷ giác chi …; tu tập khinh an giác chi…; tu tập niệm giác chi…; tu tập định giác chi…; tu tập xả giác chi câu hữu với niệm hơi thở vô, hơi thở ra, liên hệ đến viễn ly, liên hệ đến ly tham, liên hệ đến đoạn diệt, hướng đến từ bỏ."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 5 Tu tập như vậy, này các Tỷ-kheo, làm cho sung mãn như vậy, niệm hơi thở vô, hơi thở ra thời có quả lớn, có lợi ích lớn."
+      },
+      {
+        "id": "p8",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn54.20": {
+    "canonicalRef": "sn54.20",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn54.20/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T16:26:08+00:00",
+    "materializedAt": "2026-09-02T16:26:08+00:00",
+    "contentHash": "1e381f05ba0586406b45ace0f236b4b0e01eef46ed21038b9692643a23b38c63",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 54: Tương Ưng Hơi Thở Vô, Hơi Thở Ra"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Thứ Hai"
+      },
+      {
+        "id": "p3",
+        "text": "54.20. Ðoạn Tận Các Lậu Hoặc"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 … đưa đến đoạn tận các lậu hoặc."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 —Này các Tỷ-kheo, tu tập như thế nào, làm cho sung mãn như thế nào, định niệm hơi thở vô, hơi thở ra đưa đến đoạn tận các kiết sử … đưa đến nhổ sạch các tùy miên … đưa đến liễu tri con đường … đưa đến đoạn tận các lậu hoặc?"
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4-10. Ở đây, này các Tỷ-kheo, Tỷ-kheo đi đến khu rừng, hay đi đến gốc cây, hay đi đến căn nhà trống … “Quán từ bỏ, tôi sẽ thở ra”, vị ấy tập."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 11 Tu tập như vậy, làm cho sung mãn như vậy, định niệm hơi thở vô, hơi thở ra đưa đến đoạn tận các kiết sử … nhổ sạch các tùy miên … liễu tri con đường … đoạn tận các lậu hoặc."
+      },
+      {
+        "id": "p9",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn54.3": {
+    "canonicalRef": "sn54.3",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn54.3/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T16:26:07+00:00",
+    "materializedAt": "2026-09-02T16:26:07+00:00",
+    "contentHash": "5b4bed1e84d58ec18cc97180e6911961d12166e5afd370f8706c996a589c652f",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 54: Tương Ưng Hơi Thở Vô, Hơi Thở Ra"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Một Pháp"
+      },
+      {
+        "id": "p3",
+        "text": "54.3. Thanh Tịnh"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-2. Sāvatthi … Ở đấy … thuyết như sau:"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 —Niệm hơi thở vô, hơi thở ra, này các Tỷ-kheo, được tu tập, được làm cho sung mãn thời có quả lớn, có lợi ích lớn. Tu tập như thế nào, này các Tỷ-kheo, làm cho sung mãn như thế nào, niệm hơi thở vô, hơi thở ra thời có quả lớn, có lợi ích lớn?"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 Ở đây, này các Tỷ-kheo, Tỷ-kheo đi đến khu rừng, hay đi đến gốc cây, hay đi đến căn nhà trống, ngồi kiết-già, lưng thẳng, đặt niệm trước mặt; vị ấy chánh niệm hơi thở vô, chánh niệm hơi thở ra."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 5-10. … như kinh 1, từ đoạn 5 đến đoạn 10 …"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 11 —Tu tập như vậy, này các Tỷ-kheo, làm cho sung mãn như vậy, niệm hơi thở vô, hơi thở ra thời có quả lớn, thời có lợi ích lớn."
+      },
+      {
+        "id": "p9",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn54.4": {
+    "canonicalRef": "sn54.4",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn54.4/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T16:26:07+00:00",
+    "materializedAt": "2026-09-02T16:26:07+00:00",
+    "contentHash": "86aff45dd94eeb4e03240d821b19227a36e0a4bc34abd15749d452a00355080d",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 54: Tương Ưng Hơi Thở Vô, Hơi Thở Ra"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Một Pháp"
+      },
+      {
+        "id": "p3",
+        "text": "54.4. Quả"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-2. …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 —Niệm hơi thở vô, hơi thở ra, này các Tỷ-kheo, được tu tập, được làm cho sung mãn thời có quả lớn, có lợi ích lớn. Tu tập như thế nào, này các Tỷ-kheo, làm cho sung mãn như thế nào, niệm hơi thở vô, hơi thở ra có quả lớn, có lợi ích lớn?"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4-10. Ở đây, này các Tỷ-kheo, Tỷ-kheo đi đến khu rừng, hay đi đến gốc cây, hay đi đến căn nhà trống, ngồi kiết-già … “Quán từ bỏ, tôi sẽ thở vô”, vị ấy tập. “Quán từ bỏ, tôi sẽ thở ra”, vị ấy tập."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 11 Tu tập như vậy, này các Tỷ-kheo, làm cho sung mãn như vậy, niệm hơi thở vô, hơi thở ra thời có quả lớn, có lợi ích lớn."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 12 Niệm hơi thở vô, hơi thở ra được tu tập như vậy, này các Tỷ-kheo, được làm cho sung mãn như vậy, được chờ đợi một trong hai quả sau: Ngay trong hiện tại, được Chánh trí; nếu có dư y, chứng quả Bất lai."
+      },
+      {
+        "id": "p9",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn54.5": {
+    "canonicalRef": "sn54.5",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn54.5/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T16:26:08+00:00",
+    "materializedAt": "2026-09-02T16:26:08+00:00",
+    "contentHash": "ff19f34dbdfef498af769eda438429fad3ed8f28ca12a8fdc281857219f51973",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 54: Tương Ưng Hơi Thở Vô, Hơi Thở Ra"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Một Pháp"
+      },
+      {
+        "id": "p3",
+        "text": "54.5. Quả (2)"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-2. …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 —Niệm hơi thở vô, hơi thở ra, này các Tỷ-kheo, được tu tập, được làm cho sung mãn thời có quả lớn, có lợi ích lớn. Tu tập như thế nào, làm cho sung mãn như thế nào, niệm hơi thở vô, hơi thở ra thời có quả lớn, có lợi ích lớn?"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4-10. Ở đây, này các Tỷ-kheo, Tỷ-kheo đi đến khu rừng, hay đi đến gốc cây, hay đi đến căn nhà trống, ngồi … “Quán từ bỏ, tôi sẽ thở ra”, vị ấy tập."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 11 Tu tập như vậy, này các Tỷ-kheo, làm cho sung mãn như vậy, niệm hơi thở vô, hơi thở ra thời có quả lớn, có lợi ích lớn."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 12 Tu tập như vậy, này các Tỷ-kheo, làm cho sung mãn như vậy, niệm hơi thở vô, hơi thở ra thời được chờ đợi bảy quả, bảy lợi ích. Thế nào là bảy quả, bảy lợi ích?"
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 13 Ngay trong hiện tại, lập tức thành tựu Chánh trí. Nếu ngay trong hiện tại không lập tức thành tựu Chánh trí, thời khi mệnh chung, thành tựu Chánh trí. Nếu khi mệnh chung không thành tựu Chánh trí, thời sau khi đoạn diệt năm hạ phần kiết sử, được Trung gian Bát-niết-bàn, được Tổn hại Bát-niết-bàn, được Vô hành Bát-niết-bàn, được Hữu hành Bát-niết-bàn, được Thượng lưu, đạt đến Sắc cứu cánh thiên."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 14 Tu tập như vậy, này các Tỷ-kheo, làm cho sung mãn như vậy, niệm hơi thở vô, hơi thở ra thời được chờ đợi bảy quả, bảy lợi ích này."
+      },
+      {
+        "id": "p11",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn54.6": {
+    "canonicalRef": "sn54.6",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn54.6/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T16:26:08+00:00",
+    "materializedAt": "2026-09-02T16:26:08+00:00",
+    "contentHash": "989b00e6c5029b84555f365086d2ecdcbb7117da96c932c75674bc66b62aa690",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 54: Tương Ưng Hơi Thở Vô, Hơi Thở Ra"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Một Pháp"
+      },
+      {
+        "id": "p3",
+        "text": "54.6. Ariṭṭha"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-2. Tại Sāvatthi. Tại đấy, Thế Tôn … nói như sau:"
+      },
+      {
+        "id": "p5",
+        "text": "—Này các Tỷ-kheo, các Ông hãy tu tập niệm hơi thở vô, hơi thở ra."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Khi được nói vậy, Tôn giả Ariṭṭha bạch Thế Tôn:"
+      },
+      {
+        "id": "p7",
+        "text": "—Bạch Thế Tôn, con có tu tập niệm hơi thở vô, hơi thở ra."
+      },
+      {
+        "id": "p8",
+        "text": "—Này Ariṭṭha, Ông tu tập niệm hơi thở vô, hơi thở ra như thế nào?"
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 4 —Bạch Thế Tôn, đối với các dục (kàma) quá khứ, con đoạn trừ dục tham (kàmacchanda). Ðối với dục tương lai, con từ bỏ dục tham. Ðối ngại tưởng (pàtighasanna), đối với nội ngoại pháp, được khéo nhiếp phục nơi con. Chánh niệm, con thở vô. Chánh niệm, con thở ra. Như vậy, bạch Thế Tôn, con tu tập niệm hơi thở vô, hơi thở ra."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 5 —Ðây cũng là niệm hơi thở vô, hơi thở ra, này Ariṭṭha, nhưng Ta tuyên bố là không phải. Này Ariṭṭha, Ta sẽ nói cho Ông như thế nào là niệm hơi thở vô, hơi thở ra, được phát triển, được làm cho viên mãn. Hãy nghe và khéo tác ý, Ta sẽ nói."
+      },
+      {
+        "id": "p11",
+        "text": "—Thưa vâng, bạch Thế Tôn."
+      },
+      {
+        "id": "p12",
+        "text": "Tôn giả Ariṭṭha vâng đáp Thế Tôn."
+      },
+      {
+        "id": "p13",
+        "text": "Vi-n 6 Thế Tôn nói như sau:"
+      },
+      {
+        "id": "p14",
+        "text": "—Này Ariṭṭha, niệm hơi thở vô, hơi thở ra được phát triển, làm cho viên mãn như thế nào?"
+      },
+      {
+        "id": "p15",
+        "text": "Vi-n 7-13. Ở đây, này Ariṭṭha, Tỷ-kheo đi đến khu rừng, hay đi đến gốc cây, hay đi đến căn nhà trống, ngồi kiết-già: … “Quán từ bỏ, tôi sẽ thở vô”, vị ấy tập. “Quán từ bỏ, tôi sẽ thở ra”, vị ấy tập."
+      },
+      {
+        "id": "p16",
+        "text": "Vi-n 14 Như vậy, này Ariṭṭha, niệm hơi thở vô, hơi thở ra được phát triển, được làm cho sung mãn."
+      },
+      {
+        "id": "p17",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn54.7": {
+    "canonicalRef": "sn54.7",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn54.7/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T16:26:08+00:00",
+    "materializedAt": "2026-09-02T16:26:08+00:00",
+    "contentHash": "57f86beacb4dc7851b0a9083cd70fa2218a7c0d237e5b218ca877d4100424c80",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 54: Tương Ưng Hơi Thở Vô, Hơi Thở Ra"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Một Pháp"
+      },
+      {
+        "id": "p3",
+        "text": "54.7. Kappina"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-2. Tại Sāvatthi …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Lúc bấy giờ Tôn giả Mahà Kappina đang ngồi kiết-già, không xa bao nhiêu, thân thẳng, để niệm trước mặt."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 Thế Tôn thấy Tôn giả Mahà Kappina ngồi kiết-già, không xa bao nhiêu, thân thẳng, để niệm trước mặt. Thấy vậy, Ngài liền gọi các Tỷ-kheo:"
+      },
+      {
+        "id": "p7",
+        "text": "—Này các Tỷ-kheo, các Ông có thấy Tỷ-kheo ấy, thân có rung động hay có dao động không?"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 —Bạch Thế Tôn, chúng con thấy vị Tôn giả ấy ngồi giữa Tăng chúng hay ngồi một mình, độc cư; chúng con không thấy vị Tôn giả ấy thân bị rung động hay dao động."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 6 —Ðối với một vị có Thiền định như vậy, này các Tỷ-kheo, nhờ tu tập, nhờ làm cho sung mãn, nên thân vị ấy không rung động hay dao động, nên tâm vị ấy không rung động hay dao động. Ðối với vị Tỷ-kheo ấy, được định như vậy, không có khó khăn, không có gian nan, không có mệt nhọc."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 7 Và này các Tỷ-kheo, vị ấy tu tập, làm cho sung mãn định nào mà thân không rung động, không dao động, hay tâm không rung động, không dao động? Này các Tỷ-kheo, do vị ấy tu tập, làm cho sung mãn định niệm hơi thở vô, hơi thở ra, nên thân không rung động, không dao động, hoặc tâm không rung động hay không dao động."
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 8 Và này các Tỷ-kheo, định niệm hơi thở vô, hơi thở ra tu tập như thế nào, làm cho sung mãn như thế nào mà thân không rung động hay không dao động, hoặc tâm không rung động hay không dao động?"
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 9-15. Ở đây, này các Tỷ-kheo, vị ấy đi đến khu rừng, hay đi đến gốc cây, hay đi đến căn nhà trống, ngồi-kiết già … “Quán từ bỏ, tôi sẽ thở vô”, vị ấy tập, “Quán từ bỏ, tôi sẽ thở ra”, vị ấy tập."
+      },
+      {
+        "id": "p13",
+        "text": "Vi-n 16 Nhờ tu tập như vậy, định niệm hơi thở vô, hơi thở ra, này các Tỷ-kheo, nhờ làm cho sung mãn như vậy nên thân không bị rung động hay không dao động, hoặc tâm không rung động hay không dao động."
+      },
+      {
+        "id": "p14",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn54.8": {
+    "canonicalRef": "sn54.8",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn54.8/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T16:26:08+00:00",
+    "materializedAt": "2026-09-02T16:26:08+00:00",
+    "contentHash": "72fe6fd61cdeee26958eb1bff52973a86a04f475267abfe09b3e93a2affb2cea",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 54: Tương Ưng Hơi Thở Vô, Hơi Thở Ra"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Một Pháp"
+      },
+      {
+        "id": "p3",
+        "text": "54.8. Ngọn Ðèn"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-2. Sāvatthi … nói như sau:"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 —Ðịnh niệm hơi thở vô, hơi thở ra, này các Tỷ-kheo, được tu tập, được làm cho sung mãn thời có quả lớn, có lợi ích lớn. Và này các Tỷ-kheo, tu tập định niệm hơi thở vô, hơi thở ra như thế nào, làm cho sung mãn như thế nào thời có quả lớn, có lợi ích lớn?"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4-10. Ở đây, này các Tỷ-kheo, Tỷ-kheo đi đến khu rừng, hay đi đến gốc cây, hay đi đến căn nhà trống … “Quán từ bỏ, tôi sẽ thở vô”, vị ấy tập. “Quán từ bỏ, tôi sẽ thở ra”, vị ấy tập."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 11 Ðịnh niệm hơi thở vô, hơi thở ra, này các Tỷ-kheo, tu tập như vậy, làm cho sung mãn như vậy thời có quả lớn, có lợi ích lớn."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 12 Này các Tỷ-kheo, Ta trước khi giác ngộ, chưa chứng Chánh Ðẳng Giác, khi còn là Bồ-tát, Ta trú nhiều với trú này. Này các Tỷ-kheo, do Ta trú nhiều với trú này, thân Ta và con mắt không có mệt nhọc; và tâm Ta được giải thoát khỏi các lậu hoặc, không có chấp thủ."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 13 Do vậy, này các Tỷ-kheo, nếu Tỷ-kheo ước muốn rằng: “Mong rằng thân và mắt khỏi bị mệt mỏi, và mong rằng tâm tôi được giải thoát khỏi các lậu hoặc, không có chấp thủ”, thời định niệm hơi thở vô và hơi thở ra này cần phải khéo tác ý."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 14 Do vậy, này các Tỷ-kheo, nếu Tỷ-kheo ước muốn rằng: “Mong rằng các niệm, các tư duy của ta được đoạn tận”, thời định niệm hơi thở vô, hơi thở ra này phải được khéo tác ý."
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 15 Do vậy, này các Tỷ-kheo, nếu Tỷ-kheo ước muốn rằng: “Mong rằng ta sẽ trú với tưởng nhàm chán đối với các pháp không nhàm chán”, thời định niệm hơi thở vô, hơi thở ra này cần phải được khéo tác ý."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 16 Do vậy, này các Tỷ-kheo, nếu Tỷ-kheo ước muốn rằng: “Mong rằng ta sẽ trú với tưởng không nhàm chán đối với các pháp nhàm chán”, thời định niệm hơi thở vô, hơi thở ra này cần phải được khéo tác ý."
+      },
+      {
+        "id": "p13",
+        "text": "Vi-n 17 Do vậy, này các Tỷ-kheo, nếu Tỷ-kheo ước muốn rằng: “Tôi sẽ trú với tưởng nhàm chán đối với các pháp không nhàm chán và nhàm chán”, thời định niệm …"
+      },
+      {
+        "id": "p14",
+        "text": "Vi-n 18 Do vậy, này các Tỷ-kheo, nếu Tỷ-kheo ước muốn rằng: “Tôi sẽ trú với tưởng không nhàm chán đối với các pháp nhàm chán và không nhàm chán”, thời định niệm …"
+      },
+      {
+        "id": "p15",
+        "text": "Vi-n 19 Do vậy, này các Tỷ-kheo, nếu Tỷ-kheo ước muốn rằng: “Mong rằng sau khi từ bỏ cả hai không nhàm chán và nhàm chán, tôi sẽ trú xả, chánh niệm, tỉnh giác”, thời định niệm …"
+      },
+      {
+        "id": "p16",
+        "text": "Vi-n 20 Do vậy, này các Tỷ-kheo, nếu Tỷ-kheo ước muốn rằng: “Mong rằng ly dục, ly pháp bất thiện, tôi sẽ chứng đạt và an trú Thiền thứ nhất, một trạng thái hỷ lạc do ly dục sanh, có tầm, có tứ”, thời định niệm …"
+      },
+      {
+        "id": "p17",
+        "text": "Vi-n 21 Do vậy, này các Tỷ-kheo, nếu Tỷ-kheo ước muốn rằng: “Mong rằng làm cho tịnh chỉ tầm và tứ, tôi sẽ chứng đạt và an trú Thiền thứ hai, một trạng thái hỷ lạc do định sanh, không tầm, không tứ, nội tĩnh, nhất tâm”, thời định niệm …"
+      },
+      {
+        "id": "p18",
+        "text": "Vi-n 22 Do vậy, này các Tỷ-kheo, nếu Tỷ-kheo ước muốn rằng: “Mong rằng ly hỷ trú xả, chánh niệm tỉnh giác, thân cảm sự lạc thọ mà các bậc Thánh gọi là xả niệm lạc trú, tôi sẽ chứng đạt và an trú Thiền thứ ba”, thời định niệm …"
+      },
+      {
+        "id": "p19",
+        "text": "Vi-n 23 Do vậy, này các Tỷ-kheo, nếu Tỷ-kheo ước muốn rằng: “Mong rằng đoạn lạc, đoạn khổ, chấm dứt hỷ ưu đã cảm thọ trước, tôi chứng đạt và an trú Thiền thứ tư, không khổ, không lạc, xả niệm thanh tịnh”, thời định niệm …"
+      },
+      {
+        "id": "p20",
+        "text": "Vi-n 24 Do vậy, này các Tỷ-kheo, nếu Tỷ-kheo ước muốn rằng: “Vượt qua sắc tưởng một cách hoàn toàn, chấm dứt đối ngại tưởng, không tác ý các tưởng sai biệt, nghĩ rằng: “Hư không là vô biên”, chứng đạt và an trú Không vô biên xứ”, thời định niệm …"
+      },
+      {
+        "id": "p21",
+        "text": "Vi-n 25 Do vậy, này các Tỷ-kheo, nếu Tỷ-kheo ước muốn rằng: “Vượt qua Không vô biên xứ một cách hoàn toàn, nghĩ rằng: “Thức là vô biên”, tôi có thể chứng đạt và an trú Thức vô biên xứ”, thời định niệm …"
+      },
+      {
+        "id": "p22",
+        "text": "Vi-n 26 Do vậy, này các Tỷ-kheo, nếu Tỷ-kheo ước muốn rằng: “Vượt qua Thức vô biên xứ một cách hoàn toàn, nghĩ rằng: ‘Không có vật gì', tôi sẽ chứng đạt và an trú Vô sở hữu xứ”, thời định niệm …"
+      },
+      {
+        "id": "p23",
+        "text": "Vi-n 27 Do vậy, này các Tỷ-kheo, nếu Tỷ-kheo ước muốn rằng: “Vượt qua Vô sở hữu xứ một cách hoàn toàn, tôi sẽ chứng đạt và an trú Phi tưởng phi phi tưởng xứ”, thời định niệm hơi thở vô, hơi thở ra này cần phải được khéo tác ý."
+      },
+      {
+        "id": "p24",
+        "text": "Vi-n 28 Do vậy, này các Tỷ-kheo, nếu Tỷ-kheo ước muốn rằng: “Vượt qua Phi tưởng phi phi tưởng xứ một cách hoàn toàn, tôi sẽ chứng đạt và an trú Diệt thọ tưởng định”, thời định niệm hơi thở vô, hơi thở ra này cần phải được khéo tác ý."
+      },
+      {
+        "id": "p25",
+        "text": "Vi-n 29 Trong khi tu tập định niệm hơi thở vô, hơi thở ra như vậy, này các Tỷ-kheo, trong khi làm cho sung mãn như vậy, vị ấy cảm giác lạc thọ. Vị ấy rõ biết: “Thọ ấy là vô thường”. Vị ấy rõ biết: “Không có chấp trước thọ ấy”. Vị ấy rõ biết: “Không có hoan duyệt thọ ấy”. Nếu vị ấy cảm giác khổ thọ, vị ấy rõ biết: “Thọ ấy là vô thường”. Vị ấy rõ biết: “Không có chấp trước thọ ấy”. Vị ấy rõ biết: “Không có hoan duyệt thọ ấy”. Nếu vị ấy cảm giác bất khổ bất lạc thọ. Vị ấy rõ biết: “Thọ ấy là vô thường”. Vị ấy rõ biết: “Không có chấp trước thọ ấy”. Vị ấy rõ biết: “Không có hoan duyệt thọ ấy”."
+      },
+      {
+        "id": "p26",
+        "text": "Vi-n 30 Nếu vị ấy cảm giác lạc thọ, thọ ấy được cảm thọ không bị trói buộc. Nếu vị ấy cảm giác khổ thọ, thọ ấy được cảm thọ không bị trói buộc. Nếu vị ấy cảm giác bất khổ bất lạc thọ, thọ ấy được cảm thọ không bị trói buộc. Khi vị ấy đang cảm giác một cảm thọ tận cùng sức chịu đựng của thân, vị ấy rõ biết: “Tôi cảm giác một cảm thọ tận cùng sức chịu đựng của thân”. Khi vị ấy cảm giác một cảm thọ tận cùng sức chịu đựng của sinh mạng, vị ấy rõ biết: “Tôi cảm giác một cảm thọ tận cùng sức chịu đựng của sinh mạng”. Khi thân hoại mạng chung, vị ấy rõ biết: “Ở đây, tất cả mọi cảm thọ đều không có gì được hân hoan, và sẽ trở thành mát lạnh”."
+      },
+      {
+        "id": "p27",
+        "text": "Vi-n 31 Ví như, này các Tỷ-kheo, do duyên dầu, duyên tim, một cây đèn dầu được cháy sáng. Nếu dầu và tim của ngọn đèn ấy đi đến tiêu diệt, nhiên liệu không được mang đến, thời ngọn đèn sẽ tắt. Cũng vậy, này các Tỷ-kheo, khi Tỷ-kheo cảm giác một cảm thọ tận cùng sức chịu đựng của thân, vị ấy rõ biết: “Tôi cảm giác một cảm thọ tận cùng sức chịu đựng của thân”. Khi Tỷ-kheo cảm giác một cảm thọ tận cùng sức chịu đựng của sinh mạng, vị ấy rõ biết: “Tôi cảm giác một cảm thọ tận cùng sức chịu đựng của sinh mạng”. Khi thân hoại mạng chung, vị ấy rõ biết: “Ở đây, tất cả những gì được cảm thọ đều không có gì được hân hoan, và sẽ trở thành mát lạnh”."
+      },
+      {
+        "id": "p28",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn54.9": {
+    "canonicalRef": "sn54.9",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn54.9/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T16:26:08+00:00",
+    "materializedAt": "2026-09-02T16:26:08+00:00",
+    "contentHash": "f2947998f32318b317a8dd799259d066b0dfbd7401ee36e4524e377019fd41f3",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 54: Tương Ưng Hơi Thở Vô, Hơi Thở Ra"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Một Pháp"
+      },
+      {
+        "id": "p3",
+        "text": "54.9. Vesālī"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Như vầy tôi nghe."
+      },
+      {
+        "id": "p5",
+        "text": "Một thời, Thế Tôn ở giữa dân chúng Vesālī, tại Ðại Lâm, ngôi nhà có nóc nhọn."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 2 Lúc bấy giờ Thế Tôn dùng nhiều phương tiện giảng về bất tịnh, nêu rõ về bất tịnh, tán thán sự tu tập bất tịnh."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 3 Rồi Thế Tôn nói với các Tỷ-kheo:"
+      },
+      {
+        "id": "p8",
+        "text": "—Ta muốn sống Thiền tịnh một mình trong nửa tháng, không gặp một ai, trừ người đem đồ ăn cho Ta."
+      },
+      {
+        "id": "p9",
+        "text": "—Thưa vâng, bạch Thế Tôn."
+      },
+      {
+        "id": "p10",
+        "text": "Các Tỷ-kheo ấy vâng đáp Thế Tôn, không cho một ai đến thăm Thế Tôn, trừ một người đem đồ ăn."
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 4 Rồi các Tỷ-kheo ấy được nghe Thế Tôn dùng nhiều pháp môn nói về bất tịnh, nêu rõ về bất tịnh, nói lời tán thán sự tu tập bất tịnh, nên sống chuyên chú tu tập bất tịnh dưới nhiều hình thức sai biệt. Họ tủi hổ với thân này, tàm quý và nhàm chán, tầm cầu đem lại con dao. Mười Tỷ-kheo một ngày đem lại con dao … Hai mươi … Ba mươi Tỷ-kheo trong một ngày đem lại con dao."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 5 Rồi Thế Tôn sau nửa tháng, từ Thiền tịnh đứng dậy và bảo Tôn giả Ānanda:"
+      },
+      {
+        "id": "p13",
+        "text": "—Này Ānanda, vì sao chúng Tỷ-kheo giảm thiểu như vậy?"
+      },
+      {
+        "id": "p14",
+        "text": "Vi-n 6 —Bạch Thế Tôn, vì Thế Tôn dùng nhiều pháp môn thuyết cho các Tỷ-kheo về bất tịnh, nêu rõ về bất tịnh, tán thán sự tu tập bất tịnh, nên các vị ấy sống chuyên chú tu tập bất tịnh dưới nhiều hình thức sai biệt. Họ tủi hổ với thân nầy, tàm quý và nhàm chán, tầm cầu đem lại con dao. Mười Tỷ-kheo trong một ngày đem lại con dao … Hai mươi … Ba mươi Tỷ-kheo trong một ngày đem lại con dao. Lành thay, bạch Thế Tôn, nếu Thế Tôn thuyết cho pháp môn khác, nhờ vậy chúng Tỷ-kheo được an trú vào chánh trí."
+      },
+      {
+        "id": "p15",
+        "text": "Vi-n 7 —Vậy này Ānanda, hãy tập họp tại giảng đường tất cả các Tỷ-kheo trú xung quanh Vesālī."
+      },
+      {
+        "id": "p16",
+        "text": "—Thưa vâng, bạch Thế Tôn."
+      },
+      {
+        "id": "p17",
+        "text": "Tôn giả Ānanda vâng đáp Thế Tôn và mời tất cả Tỷ-kheo trú xung quanh Vesālī tập họp tại giảng đường, rồi Tôn giả Ānanda đi đến Thế Tôn; sau khi đến, bạch Thế Tôn:"
+      },
+      {
+        "id": "p18",
+        "text": "—Bạch Thế Tôn, chúng Tỷ-kheo đã tập họp. Nay Thế Tôn hãy làm những gì Thế Tôn nghĩ là phải thời."
+      },
+      {
+        "id": "p19",
+        "text": "Vi-n 8 Rồi Thế Tôn đi đến giảng đường; sau khi đến, ngồi xuống trên chỗ đã soạn sẵn. Thế Tôn bảo các Tỷ-kheo:"
+      },
+      {
+        "id": "p20",
+        "text": "Vi-n 9 —Này các Tỷ-kheo, định niệm hơi thở vô, hơi thở ra này được tu tập, được làm cho sung mãn là tịch tịnh, thù diệu, thuần nhất (asecanako), lạc trú, làm cho các ác, bất thiện pháp đã sanh biến mất, tịnh chỉ lập tức (thànaso)."
+      },
+      {
+        "id": "p21",
+        "text": "Vi-n 10 Ví như, này các Tỷ-kheo, trong cuối mùa hạ, bụi nhớp bay lên và một đám mưa lớn trái mùa lập tức làm chúng biến mất, tịnh chỉ. Cũng vậy, này các Tỷ-kheo, định niệm hơi thở vô, hơi thở ra được tu tập, được làm cho sung mãn là tịch tịnh, thù diệu, thuần nhất, lạc trú, làm cho các ác, bất thiện pháp đã sanh biến mất, tịnh chỉ lập tức."
+      },
+      {
+        "id": "p22",
+        "text": "Vi-n 11 Và này các Tỷ-kheo, định niệm hơi thở vô, hơi thở ra, được tu tập như thế nào, được làm cho sung mãn như thế nào là tịch tịnh, thù diệu, thuần nhất, lạc trú, làm cho các ác, bất thiện pháp đã sanh được biến mất và tịnh chỉ lập tức?"
+      },
+      {
+        "id": "p23",
+        "text": "Vi-n 12-18. Ở đây, này các Tỷ-kheo, Tỷ-kheo đi đến khu rừng, hay đi đến gốc cây, hay đi đến căn nhà trống, ngồi kiết-già … “Quán từ bỏ, tôi sẽ thở vô”, vị ấy tập. “Quán từ bỏ, tôi sẽ thở ra”, vị ấy tập."
+      },
+      {
+        "id": "p24",
+        "text": "Vi-n 19 Này các Tỷ-kheo, định niệm hơi thở vô, hơi thở ra tu tập như vậy, làm cho sung mãn như vậy là tịch tịnh, thù diệu, thuần nhất, lạc trú, và các ác, bất thiện pháp đã sanh được biến mất và tịnh chỉ lập tức."
+      },
+      {
+        "id": "p25",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  }
+}

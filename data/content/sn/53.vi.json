@@ -1,0 +1,237 @@
+{
+  "sn53.1-12": {
+    "canonicalRef": "sn53.1-12",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn53.1-12/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T16:26:07+00:00",
+    "materializedAt": "2026-09-02T16:26:07+00:00",
+    "contentHash": "1aeefe9b6679dffbf5be15d1a149c1c544f6e8285ac1ada83f219d24d042f827",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 53: Tương Ưng Thiền"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Sông Hằng Rộng Thuyết"
+      },
+      {
+        "id": "p3",
+        "text": "53.1–12"
+      },
+      {
+        "id": "p4",
+        "text": "53.1. Thanh Tịnh Thứ Nhất"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 1-2. Tại Sāvatthi …"
+      },
+      {
+        "id": "p6",
+        "text": "—Này các Tỷ-kheo, có bốn Thiền này. Thế nào là bốn?"
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 3 Ở đây, này các Tỷ-kheo, Tỷ-kheo ly dục, ly các pháp bất thiện, chứng đạt và an trú Thiền thứ nhất, một trạng thái hỷ lạc do ly dục sanh, có tầm, có tứ."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 4 Làm tịnh chỉ tầm và tứ, chứng đạt và an trú Thiền thứ hai, một trạng thái hỷ lạc do định sanh, không tầm, không tứ, nội tĩnh, nhứt tâm."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 5 Ly hỷ, trú xả, chánh niệm, tỉnh giác, thân cảm sự lạc thọ mà các bậc Thánh gọi là xả niệm lạc trú, chứng đạt và an trú Thiền thứ ba."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 6 Ðoạn lạc, đoạn khổ, chấm dứt hỷ ưu đã cảm thọ từ trước, chứng và trú Thiền thứ tư, không khổ, không lạc, xả niệm thanh tịnh."
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 7 Những pháp này, này các Tỷ-kheo, là bốn Thiền."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 8 Ví như, này các Tỷ-kheo, sông Hằng thiên về phương Ðông, hướng về phương Ðông, xuôi về phương Ðông; cũng vậy, này các Tỷ-kheo, Tỷ-kheo tu tập bốn Thiền, làm cho sung mãn bốn Thiền, thiên về Niết-bàn, hướng về Niết-bàn, xuôi về Niết-bàn. Và này các Tỷ-kheo, Tỷ-kheo tu tập bốn Thiền như thế nào … xuôi về Niết-bàn?"
+      },
+      {
+        "id": "p13",
+        "text": "Vi-n 9 Ở đây, này các Tỷ-kheo, Tỷ-kheo ly dục, ly bất thiện pháp, chứng đạt và an trú Thiền thứ nhất, một trạng thái hỷ lạc do ly dục sanh, có tầm, có tứ. Làm tịnh chỉ tầm và tứ … nội tĩnh, nhất tâm … Thiền thứ ba … Thiền thứ tư. Như vậy, này các Tỷ-kheo, Tỷ-kheo tu tập bốn Thiền, làm cho sung mãn bốn Thiền, thiên về Niết-bàn, hướng về Niết-bàn, xuôi về Niết-bàn."
+      },
+      {
+        "id": "p14",
+        "text": "53.2–12"
+      },
+      {
+        "id": "p15",
+        "text": "Như Sông Hằng Rộng Thuyết."
+      },
+      {
+        "id": "p16",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn53.13-22": {
+    "canonicalRef": "sn53.13-22",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn53.13-22/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T16:26:07+00:00",
+    "materializedAt": "2026-09-02T16:26:07+00:00",
+    "contentHash": "ef61e005319a25c7f17e95e700f01de692848d657d59dc0883b3c67c29007a0e",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 53: Tương Ưng Thiền"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Không Phóng Dật"
+      },
+      {
+        "id": "p3",
+        "text": "53.13–22"
+      },
+      {
+        "id": "p4",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn53.23-34": {
+    "canonicalRef": "sn53.23-34",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn53.23-34/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T16:26:06+00:00",
+    "materializedAt": "2026-09-02T16:26:06+00:00",
+    "contentHash": "40e4a26513f01db84d90f19cef3dbac5637c86fc3a96c17e73752d11740a843d",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 53: Tương Ưng Thiền"
+      },
+      {
+        "id": "p2",
+        "text": "III: Phẩm Làm Việc Cần"
+      },
+      {
+        "id": "p3",
+        "text": "53.23–34"
+      },
+      {
+        "id": "p4",
+        "text": "Sức Mạnh"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn53.35-44": {
+    "canonicalRef": "sn53.35-44",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn53.35-44/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T16:26:07+00:00",
+    "materializedAt": "2026-09-02T16:26:07+00:00",
+    "contentHash": "c040e305e1fbf7fcba43e61599dcf6a3bd7851136b543a2942b65fa02e0510ac",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 53: Tương Ưng Thiền"
+      },
+      {
+        "id": "p2",
+        "text": "IV: Phẩm Tầm Cầu"
+      },
+      {
+        "id": "p3",
+        "text": "53.35–44"
+      },
+      {
+        "id": "p4",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn53.45-54": {
+    "canonicalRef": "sn53.45-54",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn53.45-54/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T16:26:07+00:00",
+    "materializedAt": "2026-09-02T16:26:07+00:00",
+    "contentHash": "db91cc7ce79886ecae430334bb112fe9827f04b87518bb651d00934ae26df2a9",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 53: Tương Ưng Thiền"
+      },
+      {
+        "id": "p2",
+        "text": "V: Phẩm Bộc Lưu"
+      },
+      {
+        "id": "p3",
+        "text": "53.45–54"
+      },
+      {
+        "id": "p4",
+        "text": "53.45"
+      },
+      {
+        "id": "p5",
+        "text": "53.46–53"
+      },
+      {
+        "id": "p6",
+        "text": "53.54. Thượng Phần Kiết Sử"
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 1 .."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 2 —Này các Tỷ-kheo, có năm thượng phần kiết sử này. Thế nào là năm? Sắc tham, vô sắc tham, mạn, trạo cử, vô minh. Những pháp này, này các Tỷ-kheo, là năm thượng phần kiết sử. Này các Tỷ-kheo, để thắng tri, liễu tri, đoạn diệt, đoạn tận năm thượng phần kiết sử này, bốn Thiền cần phải tu tập. Thế nào là bốn?"
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 3-6. Ở đây, này các Tỷ-kheo, Tỷ-kheo ly dục, ly pháp bất thiện, chứng đạt và an trú Thiền thứ nhất, một trạng thái hỷ lạc do ly dục sanh, có tầm, có tứ … Thiền thứ hai … Thiền thứ ba … Thiền thứ tư."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 7 Ðể thắng tri, liễu tri, đoạn diệt, đoạn tận năm thượng phần kiết sử này, này các Tỷ-kheo, bốn Thiền cần phải tu tập."
+      },
+      {
+        "id": "p11",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  }
+}
