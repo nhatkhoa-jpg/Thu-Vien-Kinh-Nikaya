@@ -97,6 +97,237 @@
       }
     ]
   },
+  "sn56.102": {
+    "canonicalRef": "sn56.102",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn56.102/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T18:28:13+00:00",
+    "materializedAt": "2026-09-02T18:28:13+00:00",
+    "contentHash": "12439148ddc63cc3f7534d70519fc2da8a15737caacb0c98591d9b99070c1662",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 56: Tương Ưng Sự Thật"
+      },
+      {
+        "id": "p2",
+        "text": "XI: Phẩm Năm Sanh Thú"
+      },
+      {
+        "id": "p3",
+        "text": "56.102. Năm Sanh Thú"
+      },
+      {
+        "id": "p4",
+        "text": "Sanh Thú"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 1 …"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 2 Rồi Thế Tôn lấy lên một ít đất trên đầu móng tay và bảo các Tỷ-kheo:"
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 3 —Các Ông nghĩ thế nào, này các Tỷ-kheo, cái nào là nhiều hơn, một ít đất Ta lấy trên đầu móng tay, hay quả đất lớn này?"
+      },
+      {
+        "id": "p8",
+        "text": "—Cái này là nhiều hơn, bạch Thế Tôn, tức là quả đất. Và ít hơn là một ít đất mà Thế Tôn lấy trên đầu móng tay, không thể ước tính được, không thể so sánh được, không thể thành một phần nhỏ được, nếu đem so sánh quả đất lớn với một ít đất mà Thế Tôn lấy trên đầu móng tay."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 4 —Cũng vậy, này các Tỷ-kheo, ít hơn là các chúng sanh sau khi chết từ thân người, được tái sanh làm người lại. Và nhiều hơn là các chúng sanh sau khi chết từ thân người, phải tái sanh trong địa ngục."
+      },
+      {
+        "id": "p10",
+        "text": "…"
+      },
+      {
+        "id": "p11",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn56.103": {
+    "canonicalRef": "sn56.103",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn56.103/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T18:28:13+00:00",
+    "materializedAt": "2026-09-02T18:28:13+00:00",
+    "contentHash": "c3161c815c72fd53732f59664fae45cb2686e75e66531736b8e63a1f059a032c",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 56: Tương Ưng Sự Thật"
+      },
+      {
+        "id": "p2",
+        "text": "XI: Phẩm Năm Sanh Thú"
+      },
+      {
+        "id": "p3",
+        "text": "56.103"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-2-3. …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 4 —Cũng vậy, này các Tỷ-kheo, ít hơn là các chúng sanh sau khi chết từ thân người, được tái sanh làm người lại. Và nhiều hơn là các chúng sanh sau khi chết từ thân người, phải tái sanh trong loài bàng sanh."
+      },
+      {
+        "id": "p6",
+        "text": "…"
+      },
+      {
+        "id": "p7",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn56.104": {
+    "canonicalRef": "sn56.104",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn56.104/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T18:28:12+00:00",
+    "materializedAt": "2026-09-02T18:28:12+00:00",
+    "contentHash": "31c3bb843fffc317e2d4a613c565abe58e116821492e4c13200cfebeaa7aa777",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 56: Tương Ưng Sự Thật"
+      },
+      {
+        "id": "p2",
+        "text": "XI: Phẩm Năm Sanh Thú"
+      },
+      {
+        "id": "p3",
+        "text": "56.104. Năm Sanh Thú"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-2-3. …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 4 —Cũng vậy, này các Tỷ-kheo, ít hơn là các chúng sanh sau khi chết từ thân người, được tái sanh làm người lại. Và nhiều hơn là các chúng sanh sau khi chết từ thân người, phải tái sanh vào cõi ngạ quỷ."
+      },
+      {
+        "id": "p6",
+        "text": "…"
+      },
+      {
+        "id": "p7",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn56.105-107": {
+    "canonicalRef": "sn56.105-107",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn56.105-107/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T18:28:12+00:00",
+    "materializedAt": "2026-09-02T18:28:12+00:00",
+    "contentHash": "f8bef8f1b29fa605a47355dd0024409fd523fc0286d06c0d1dde539cefa5f773",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 56: Tương Ưng Sự Thật"
+      },
+      {
+        "id": "p2",
+        "text": "XI: Phẩm Năm Sanh Thú"
+      },
+      {
+        "id": "p3",
+        "text": "56.105–107. Năm Sanh Thú"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-2-3. …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 4 —Cũng vậy, này các Tỷ-kheo, ít hơn là các chúng sanh sau khi chết từ thân người, được tái sanh giữa chư Thiên. Và nhiều hơn là các chúng sanh sau khi chết từ thân người, phải tái sanh vào địa ngục … phải tái sanh vào loài bàng sanh … phải tái sanh vào cõi ngạ quỷ."
+      },
+      {
+        "id": "p6",
+        "text": "…"
+      },
+      {
+        "id": "p7",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn56.108-110": {
+    "canonicalRef": "sn56.108-110",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn56.108-110/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T18:28:12+00:00",
+    "materializedAt": "2026-09-02T18:28:12+00:00",
+    "contentHash": "07ebffdd54a429db6bd639840a23c44d35efe8ac462b0d4963afb9428d1fd342",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 56: Tương Ưng Sự Thật"
+      },
+      {
+        "id": "p2",
+        "text": "XI: Phẩm Năm Sanh Thú"
+      },
+      {
+        "id": "p3",
+        "text": "56.108–110. Năm Sanh Thú"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-2-3. …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 4 —Cũng vậy, này các Tỷ-kheo, ít hơn là các chúng sanh sau khi chết từ thân chư Thiên, được tái sanh giữa chư Thiên. Còn nhiều hơn là các chúng sanh sau khi chết từ thân chư Thiên, phải tái sanh trong địa ngục … phải tái sanh trong loài bàng sanh … phải tái sanh trong cõi ngạ quỷ."
+      },
+      {
+        "id": "p6",
+        "text": "…"
+      },
+      {
+        "id": "p7",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
   "sn56.11": {
     "canonicalRef": "sn56.11",
     "collection": "SN",
@@ -220,6 +451,135 @@
       }
     ]
   },
+  "sn56.111-113": {
+    "canonicalRef": "sn56.111-113",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn56.111-113/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T18:28:13+00:00",
+    "materializedAt": "2026-09-02T18:28:13+00:00",
+    "contentHash": "a8b1c99f3c69b0304535e741eca665b60abaac95719152f00799856bcdfc3eeb",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 56: Tương Ưng Sự Thật"
+      },
+      {
+        "id": "p2",
+        "text": "XI: Phẩm Năm Sanh Thú"
+      },
+      {
+        "id": "p3",
+        "text": "56.111–113. Năm Sanh Thú"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-2-3. …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 4 Cũng vậy, này các Tỷ-kheo, ít hơn là các chúng sanh sau khi chết từ thân chư Thiên, được tái sanh làm người. Và nhiều hơn là các chúng sanh sau khi chết từ thân chư Thiên, phải tái sanh trong địa ngục … phải tái sanh trong loài bàng sanh … phải tái sanh trong cõi ngạ quỷ."
+      },
+      {
+        "id": "p6",
+        "text": "…"
+      },
+      {
+        "id": "p7",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn56.114-116": {
+    "canonicalRef": "sn56.114-116",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn56.114-116/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T18:28:13+00:00",
+    "materializedAt": "2026-09-02T18:28:13+00:00",
+    "contentHash": "8ce9a16f0df39b54a14d704998ca86aa3fa34b1a83c2718a2b78689fb1889f2c",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 56: Tương Ưng Sự Thật"
+      },
+      {
+        "id": "p2",
+        "text": "XI: Phẩm Năm Sanh Thú"
+      },
+      {
+        "id": "p3",
+        "text": "56.114–116. Năm Sanh Thú"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-2-3. …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 4 —Cũng vậy, này các Tỷ-kheo, ít hơn là các chúng sanh sau khi chết từ cõi địa ngục, được tái sanh làm người. Và nhiều hơn là các chúng sanh sau khi chết từ cõi địa ngục, bị tái sanh ở cõi địa ngục … bị tái sanh ở loài bàng sanh … bị tái sanh ở cõi ngạ quỷ."
+      },
+      {
+        "id": "p6",
+        "text": "…"
+      },
+      {
+        "id": "p7",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn56.117-119": {
+    "canonicalRef": "sn56.117-119",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn56.117-119/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T18:28:13+00:00",
+    "materializedAt": "2026-09-02T18:28:13+00:00",
+    "contentHash": "4f77bfd50acbbad275d042155190cf1ead0dd76cc2c053a2b34c82bcb0ff07b3",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 56: Tương Ưng Sự Thật"
+      },
+      {
+        "id": "p2",
+        "text": "XI: Phẩm Năm Sanh Thú"
+      },
+      {
+        "id": "p3",
+        "text": "56.117–119. Năm Sanh Thú"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-2-3. …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 4 —Cũng vậy, này các Tỷ-kheo, ít hơn là các chúng sanh sau khi chết từ cõi địa ngục, được tái sanh làm chư Thiên. Và nhiều hơn là các chúng sanh sau khi chết từ cõi địa ngục, bị tái sanh ở cõi địa ngục … bị tái sanh ở loài bàng sanh … bị tái sanh ở cõi ngạ quỷ."
+      },
+      {
+        "id": "p6",
+        "text": "…"
+      },
+      {
+        "id": "p7",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
   "sn56.12": {
     "canonicalRef": "sn56.12",
     "collection": "SN",
@@ -267,6 +627,198 @@
       },
       {
         "id": "p9",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn56.120-122": {
+    "canonicalRef": "sn56.120-122",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn56.120-122/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T18:28:13+00:00",
+    "materializedAt": "2026-09-02T18:28:13+00:00",
+    "contentHash": "8048d8ff75c04f1f1f1c8337d85b9187c2c188c5fbf8a123f12f51984bce58b5",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 56: Tương Ưng Sự Thật"
+      },
+      {
+        "id": "p2",
+        "text": "XI: Phẩm Năm Sanh Thú"
+      },
+      {
+        "id": "p3",
+        "text": "56.120–122. Năm Sanh Thú"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-2-3. …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 4 —Cũng vậy, này các Tỷ-kheo, ít hơn là các chúng sanh sau khi chết từ các loài bàng sanh, được tái sanh làm người. Và nhiều hơn là các chúng sanh sau khi chết từ các loài bàng sanh, bị tái sanh trong cõi địa ngục … bị tái sanh trong loài bàng sanh … bị tái sanh trong cõi ngạ quỷ."
+      },
+      {
+        "id": "p6",
+        "text": "…"
+      },
+      {
+        "id": "p7",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn56.123-125": {
+    "canonicalRef": "sn56.123-125",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn56.123-125/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T18:28:13+00:00",
+    "materializedAt": "2026-09-02T18:28:13+00:00",
+    "contentHash": "089d4007dde4e51e457914b6bef0674302e02f8d1a61221380dd4d0ae11c68af",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 56: Tương Ưng Sự Thật"
+      },
+      {
+        "id": "p2",
+        "text": "XI: Phẩm Năm Sanh Thú"
+      },
+      {
+        "id": "p3",
+        "text": "56.123–125. Năm Sanh Thú"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-2-3. …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 4 —Cũng vậy, này các Tỷ-kheo, ít hơn là các chúng sanh, sau khi chết từ các loài bàng sanh, được tái sanh giữa chư Thiên. Và nhiều hơn là chúng sanh, sau khi chết từ các loài bàng sanh, bị tái sanh trong cõi địa ngục … bị tái sanh trong loài bàng sanh … bị tái sanh trong cõi ngạ quỷ."
+      },
+      {
+        "id": "p6",
+        "text": "…"
+      },
+      {
+        "id": "p7",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn56.126-128": {
+    "canonicalRef": "sn56.126-128",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn56.126-128/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T18:28:13+00:00",
+    "materializedAt": "2026-09-02T18:28:13+00:00",
+    "contentHash": "89281225401ca7c079b052522f36bb4dd4a5616c762a583659972f3c021f4d1b",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 56: Tương Ưng Sự Thật"
+      },
+      {
+        "id": "p2",
+        "text": "XI: Phẩm Năm Sanh Thú"
+      },
+      {
+        "id": "p3",
+        "text": "56.126–128. Năm Sanh Thú"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-2-3. …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 4 —Cũng vậy, này các Tỷ-kheo, ít hơn là các chúng sanh, sau khi chết từ cõi ngạ quỷ, được tái sanh làm người. Và nhiều hơn là các chúng sanh, sau khi chết từ cõi ngạ quỷ, bị tái sanh ở cõi địa ngục … bị tái sanh trong loài bàng sanh … bị tái sanh ở cõi ngạ quỷ."
+      },
+      {
+        "id": "p6",
+        "text": "…"
+      },
+      {
+        "id": "p7",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn56.129-130": {
+    "canonicalRef": "sn56.129-130",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn56.129-130/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T18:28:13+00:00",
+    "materializedAt": "2026-09-02T18:28:13+00:00",
+    "contentHash": "ff797e3f717c11b99e07e67c129aed2ed7bb3f3f17beb9f396818eff36fa22c4",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 56: Tương Ưng Sự Thật"
+      },
+      {
+        "id": "p2",
+        "text": "XI: Phẩm Năm Sanh Thú"
+      },
+      {
+        "id": "p3",
+        "text": "56.129–130"
+      },
+      {
+        "id": "p4",
+        "text": "56.129. Năm Sanh Thú"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 1-2-3. …"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 —Cũng vậy, này các Tỷ-kheo, ít hơn là các chúng sanh sau khi chết từ cõi ngạ quỷ, được tái sanh làm chư Thiên. Và nhiều hơn là các chúng sanh sau khi chết từ cõi ngạ quỷ, bị tái sanh ở địa ngục."
+      },
+      {
+        "id": "p7",
+        "text": "…"
+      },
+      {
+        "id": "p8",
+        "text": "56.130. Năm Sanh Thú"
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 5-6-7. …"
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 8 —Cũng vậy, này các Tỷ-kheo, ít hơn là các chúng sanh sau khi chết từ cõi ngạ quỷ, được tái sanh làm chư Thiên. Và nhiều hơn là các chúng sanh sau khi chết từ cõi ngạ quỷ, bị tái sanh ở loài bàng sanh."
+      },
+      {
+        "id": "p11",
+        "text": "…"
+      },
+      {
+        "id": "p12",
         "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
       }
     ]
@@ -326,6 +878,57 @@
       },
       {
         "id": "p11",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn56.131": {
+    "canonicalRef": "sn56.131",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn56.131/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T18:28:13+00:00",
+    "materializedAt": "2026-09-02T18:28:13+00:00",
+    "contentHash": "43bab36b7734715c8476fa23832ee650761821ad8b63f71e48a371e4789490c2",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 56: Tương Ưng Sự Thật"
+      },
+      {
+        "id": "p2",
+        "text": "XI: Phẩm Năm Sanh Thú"
+      },
+      {
+        "id": "p3",
+        "text": "56.131. Năm Sanh Thú"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-2-3. …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 4 —Cũng vậy, này các Tỷ-kheo, ít hơn là các chúng sanh sau khi chết từ cõi ngạ quỷ, được tái sanh làm chư Thiên. Còn nhiều hơn là các chúng sanh sau khi chết từ cõi ngạ quỷ, bị tái sanh ở cõi ngạ quỷ. Vì sao? Này các Tỷ-kheo, vì không thấy bốn Thánh đế. Thế nào là bốn?"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 5 Thánh đế về Khổ … Thánh đế về Con Ðường đưa đến Khổ diệt."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 6 Do vậy, này các Tỷ-kheo, một cố gắng cần phải làm để rõ biết: “Ðây là Khổ”. Một cố gắng cần phải làm để rõ biết: “Ðây là Khổ tập”. Một cố gắng cần phải làm rõ biết: “Ðây là khổ diệt”. Một cố gắng phải làm để rõ biết: “Ðây là Con Ðường đưa đến Khổ diệt”."
+      },
+      {
+        "id": "p8",
+        "text": "—Hết Tương Ưng Bộ —"
+      },
+      {
+        "id": "p9",
         "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
       }
     ]
@@ -4638,6 +5241,311 @@
       },
       {
         "id": "p9",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn56.90": {
+    "canonicalRef": "sn56.90",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn56.90/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T18:28:12+00:00",
+    "materializedAt": "2026-09-02T18:28:12+00:00",
+    "contentHash": "c3161a70507b4f7a8ea702fb3a97924abd1ae1d52e165d2cdbfaef34cb31bb7c",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 56: Tương Ưng Sự Thật"
+      },
+      {
+        "id": "p2",
+        "text": "IX: Phẩm Lúa Gạo Sống Rộng Thuyết"
+      },
+      {
+        "id": "p3",
+        "text": "56.90. Voi"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-2-3. …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 4 —Cũng vậy, này các Tỷ-kheo, ít hơn là các chúng sanh từ bỏ nhận voi, bò, ngựa, ngựa cái. Và nhiều hơn là các chúng sanh không từ bỏ nhận voi, bò, ngựa, ngựa cái."
+      },
+      {
+        "id": "p6",
+        "text": "…"
+      },
+      {
+        "id": "p7",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn56.91": {
+    "canonicalRef": "sn56.91",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn56.91/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T18:28:12+00:00",
+    "materializedAt": "2026-09-02T18:28:12+00:00",
+    "contentHash": "a1567b59a3d32c9774f56f8dc7eac0227d3336c466b663c7f7ff305b02ecbeb5",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 56: Tương Ưng Sự Thật"
+      },
+      {
+        "id": "p2",
+        "text": "X: Phẩm Chúng Sanh Nhiều Hơn"
+      },
+      {
+        "id": "p3",
+        "text": "56.91. Ruộng"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-2-3. …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 4 —Cũng vậy, này các Tỷ-kheo, ít hơn là các chúng sanh từ bỏ nhận lấy ruộng đất. Và nhiều hơn là các chúng sanh không từ bỏ nhận lấy ruộng đất."
+      },
+      {
+        "id": "p6",
+        "text": "…"
+      },
+      {
+        "id": "p7",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn56.92": {
+    "canonicalRef": "sn56.92",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn56.92/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T18:28:12+00:00",
+    "materializedAt": "2026-09-02T18:28:12+00:00",
+    "contentHash": "d9df747bb51c356dc4873a9b28f41a4eddccd84f41adf309273cef911dcdc471",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 56: Tương Ưng Sự Thật"
+      },
+      {
+        "id": "p2",
+        "text": "X: Phẩm Chúng Sanh Nhiều Hơn"
+      },
+      {
+        "id": "p3",
+        "text": "56.92. Mua Bán"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-2-3. …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 4 —Cũng vậy, này các Tỷ-kheo, ít hơn là các chúng sanh từ bỏ mua bán. Và nhiều hơn là các chúng sanh không từ bỏ mua bán."
+      },
+      {
+        "id": "p6",
+        "text": "…"
+      },
+      {
+        "id": "p7",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn56.93": {
+    "canonicalRef": "sn56.93",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn56.93/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T18:28:12+00:00",
+    "materializedAt": "2026-09-02T18:28:12+00:00",
+    "contentHash": "21e3b109710ab301ab177304339307f63f848665e3a4f218f80f449b6a00af41",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 56: Tương Ưng Sự Thật"
+      },
+      {
+        "id": "p2",
+        "text": "X: Phẩm Chúng Sanh Nhiều Hơn"
+      },
+      {
+        "id": "p3",
+        "text": "56.93. Ðưa Tin Tức"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-2-3. …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 4 —Cũng vậy, này các Tỷ-kheo, ít hơn là các chúng sanh từ bỏ không phái người môi giới hay tự mình làm môi giới. Và nhiều hơn là các chúng sanh không từ bỏ phái người làm môi giới, hay tự mình làm môi giới."
+      },
+      {
+        "id": "p6",
+        "text": "…"
+      },
+      {
+        "id": "p7",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn56.94": {
+    "canonicalRef": "sn56.94",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn56.94/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T18:28:12+00:00",
+    "materializedAt": "2026-09-02T18:28:12+00:00",
+    "contentHash": "1fb07feac4da5f906b15e47fafc392c7528022917bd610d238676d466864e705",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 56: Tương Ưng Sự Thật"
+      },
+      {
+        "id": "p2",
+        "text": "X: Phẩm Chúng Sanh Nhiều Hơn"
+      },
+      {
+        "id": "p3",
+        "text": "56.94. Cân Lường"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-2-3. …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 4 —Cũng vậy, này các Tỷ-kheo, ít hơn là các chúng sanh từ bỏ các sự gian lận bằng cân, tiền bạc, đo lường. Và nhiều hơn là các chúng sanh không từ bỏ các sự gian lận bằng cân, tiền bạc, đo lường."
+      },
+      {
+        "id": "p6",
+        "text": "…"
+      },
+      {
+        "id": "p7",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn56.95": {
+    "canonicalRef": "sn56.95",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn56.95/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T18:28:12+00:00",
+    "materializedAt": "2026-09-02T18:28:12+00:00",
+    "contentHash": "cc499f4a55cdc21d2b17417d572fa6d73d6ae2a37bd901a5e4999cc6280f6440",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 56: Tương Ưng Sự Thật"
+      },
+      {
+        "id": "p2",
+        "text": "X: Phẩm Chúng Sanh Nhiều Hơn"
+      },
+      {
+        "id": "p3",
+        "text": "56.95. Hối Lộ"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-2-3. …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 4 —Cũng vậy, này các Tỷ-kheo, ít hơn là các chúng sanh từ bỏ hối lộ, gian trá, lừa đảo. Và nhiều hơn là các chúng sanh không từ bỏ hối lộ, gian trá, lừa đảo."
+      },
+      {
+        "id": "p6",
+        "text": "…"
+      },
+      {
+        "id": "p7",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn56.96-101": {
+    "canonicalRef": "sn56.96-101",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn56.96-101/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T18:28:13+00:00",
+    "materializedAt": "2026-09-02T18:28:13+00:00",
+    "contentHash": "d6aaa7bb5d2a8593b71b89b5819421555b5e9e954eb040ff65c613c370c2fef6",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 56: Tương Ưng Sự Thật"
+      },
+      {
+        "id": "p2",
+        "text": "X: Phẩm Chúng Sanh Nhiều Hơn"
+      },
+      {
+        "id": "p3",
+        "text": "56.96–101. Sát Hại, Trộm Cắp, Cướp Phá"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-2-3. …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 4 —Cũng vậy, này các Tỷ-kheo, ít hơn là các chúng sanh từ bỏ làm thương tổn, sát hại, câu thúc, bức đoạt, trộm cắp, cướp phá. Và nhiều hơn là các chúng sanh không từ bỏ làm thương tổn, sát hại, câu thúc, bức đoạt, trộm cắp, cướp phá. Vì sao? Này các Tỷ-kheo, vì không thấy bốn Thánh đế. Thế nào là bốn?"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 5 Thánh đế về Khổ … Thánh đế về Con Ðường đưa đến Khổ diệt."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 6 Do vậy, này các Tỷ-kheo, một cố gắng cần phải làm để rõ biết: “Ðây là Khổ” … một cố gắng cần phải làm để rõ biết: “Ðây là Con Ðường đưa đến Khổ diệt”."
+      },
+      {
+        "id": "p8",
         "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
       }
     ]
