@@ -2,6 +2,11 @@ name: Internet Archive Smoke
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/internet-archive-smoke.yml'
+      - 'scripts/ia_smoke.py'
 
 permissions:
   contents: read
