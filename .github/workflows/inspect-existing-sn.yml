@@ -1,0 +1,41 @@
+name: Inspect existing SN catalog
+
+on:
+  push:
+    branches:
+      - feature/sn-canonical-discovery
+    paths:
+      - '.github/workflows/inspect-existing-sn.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/sn-canonical-discovery
+          fetch-depth: 0
+      - name: Extract existing SN records
+        run: |
+          node <<'NODE'
+          const fs=require('fs');
+          const suttas=require('./data/catalog/suttas.json');
+          const rows=suttas.filter(x=>x.collection==='SN');
+          const report={total:suttas.length,counts:Object.fromEntries(['DN','MN','SN','AN','KN'].map(c=>[c,suttas.filter(x=>x.collection===c).length])),sn:rows};
+          fs.writeFileSync('data/catalog/discovery-existing-sn.json',JSON.stringify(report,null,2)+'\n');
+          console.log(JSON.stringify({total:report.total,counts:report.counts,snCount:rows.length,sn:rows},null,2));
+          NODE
+      - name: Commit report
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -z "$(git status --porcelain -- data/catalog/discovery-existing-sn.json)" ]; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/catalog/discovery-existing-sn.json
+          git commit -m 'data: inspect existing SN catalog records'
+          git push origin HEAD:feature/sn-canonical-discovery
