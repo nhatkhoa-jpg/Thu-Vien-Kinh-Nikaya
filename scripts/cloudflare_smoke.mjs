@@ -73,6 +73,11 @@ if(await cards.count()<1||await cards.count()>60)throw new Error('Collection fil
 
 const mn=byRef('mn21');
 await page.goto(`${base}/vi/library/${mn.slug}`,{waitUntil:'networkidle'});
+const scriptureText=await page.locator('.fullTextSection').innerText();
+if(scriptureText!==scriptureText.normalize('NFC'))throw new Error('MN21 reader contains decomposed Unicode after rendering');
+if(/\s[\u0300-\u036f]/u.test(scriptureText))throw new Error('MN21 reader contains whitespace before a combining mark');
+if(/[\u200B\u200C\u200D\u2060\uFEFF\u00AD]/u.test(scriptureText))throw new Error('MN21 reader contains invisible formatting characters');
+if(!scriptureText.includes('Mong rằng'))throw new Error('MN21 Vietnamese grapheme smoke phrase missing');
 await page.locator('details.primaryMp3Disclosure summary').click();
 if(!await page.locator('audio').isVisible())throw new Error('MP3 player missing');
 if(await page.locator('.rateGroup button').count()!==6)throw new Error('Playback speeds missing');
@@ -84,4 +89,4 @@ if(!await page.getByRole('button',{name:'Lưu vị trí'}).count())throw new Err
 const hydrationErrors=consoleErrors.filter(x=>/hydration|uncaught|typeerror|referenceerror/i.test(x));
 await browser.close();
 if(hydrationErrors.length)throw new Error(`Browser errors: ${hydrationErrors.join(' | ')}`);
-console.log(JSON.stringify({base,locales:8,readers:['dn1','mn21','sn1.1',range.canonicalRef],mobile:true,status:'PASS'}));
+console.log(JSON.stringify({base,locales:8,readers:['dn1','mn21','sn1.1',range.canonicalRef],unicodeNfc:true,mobile:true,status:'PASS'}));

@@ -10,8 +10,26 @@ const localeMap:Partial<Record<Locale,string>>={ja:'jpn'};
 const preferredAuthors:Partial<Record<Locale,string>>={vi:'minh_chau',en:'sujato'};
 const apiBase='https://suttacentral.net/api';
 
-function clean(value:string){
+/**
+ * Normalize scripture text at the reader boundary so the same corpus renders
+ * consistently on Windows, Android, iOS and generated PDF/audio surfaces.
+ *
+ * Some upstream Vietnamese text contains decomposed combining marks (NFD).
+ * Windows serif font fallback can visually separate those marks from their
+ * base letters even when mobile browsers appear fine. NFC composes those
+ * graphemes. We also remove invisible formatting characters and repair only
+ * whitespace that sits immediately before a Unicode combining mark.
+ */
+export function normalizeScriptureText(value:string){
   return value
+    .replace(/[\u200B\u200C\u200D\u2060\uFEFF]/g,'')
+    .replace(/\u00AD/g,'')
+    .replace(/\s+([\u0300-\u036f])/gu,'$1')
+    .normalize('NFC');
+}
+
+function clean(value:string){
+  return normalizeScriptureText(value
     .replace(/<br\s*\/?>/gi,'\n')
     .replace(/<[^>]+>/g,' ')
     .replace(/&nbsp;/g,' ')
@@ -21,7 +39,13 @@ function clean(value:string){
     .replace(/&lt;/g,'<')
     .replace(/&gt;/g,'>')
     .replace(/\s+/g,' ')
-    .trim();
+    .trim());
+}
+
+function normalizeSegments(segments:FullTextSegment[]){
+  return segments
+    .map(segment=>({...segment,text:normalizeScriptureText(String(segment.text??'')).trim()}))
+    .filter(segment=>segment.text.length>0);
 }
 
 async function fetchJson(url:string){
@@ -44,7 +68,7 @@ function extractSegments(data:any):FullTextSegment[]{
 export async function getSuttaFullText(uid:string,locale:Locale):Promise<FullTextResult|null>{
   if(locale==='vi'&&materializedCorpusVi[uid]?.segments?.length){
     const x=materializedCorpusVi[uid];
-    return {language:x.language,author:x.author,authorUid:x.authorUid,sourceUrl:x.sourceUrl,segments:x.segments};
+    return {language:x.language,author:x.author,authorUid:x.authorUid,sourceUrl:x.sourceUrl,segments:normalizeSegments(x.segments)};
   }
   const language=localeMap[locale]||locale;
   try{
@@ -65,6 +89,6 @@ export async function getSuttaFullText(uid:string,locale:Locale):Promise<FullTex
       segments=extractSegments(payload);
     }
     if(!segments.length)return null;
-    return {language,author:chosen.author||chosen.author_short||authorUid,authorUid,sourceUrl:`https://suttacentral.net/${uid}/${language}/${authorUid}`,segments};
+    return {language,author:chosen.author||chosen.author_short||authorUid,authorUid,sourceUrl:`https://suttacentral.net/${uid}/${language}/${authorUid}`,segments:normalizeSegments(segments)};
   }catch{return null;}
 }
