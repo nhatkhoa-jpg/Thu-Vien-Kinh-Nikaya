@@ -1,0 +1,75 @@
+name: Probe SN Suttaplex English metadata
+
+on:
+  push:
+    branches:
+      - feature/sn-canonical-discovery
+    paths:
+      - '.github/workflows/probe-sn-suttaplex-en.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/sn-canonical-discovery
+          fetch-depth: 0
+      - name: Fetch English SN Suttaplex and map canonical leaves
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fsSL --retry 5 --retry-delay 2 'https://suttacentral.net/api/suttaplex/sn?language=en' -o /tmp/sn-en.json
+          python3 - <<'PY'
+          import json,re
+          from pathlib import Path
+          canonical=json.loads(Path('data/catalog/discovery-sn.json').read_text(encoding='utf-8'))
+          refs=[x['canonicalRef'] for x in canonical['items']]
+          wanted=set(refs); pat=re.compile(r'^sn\d+\.\d+(?:-\d+)?$')
+          raw=json.loads(Path('/tmp/sn-en.json').read_text(encoding='utf-8'))
+          found={}
+          def walk(x):
+              if isinstance(x,list):
+                  for y in x: walk(y)
+              elif isinstance(x,dict):
+                  uid=x.get('uid')
+                  if isinstance(uid,str) and pat.fullmatch(uid) and uid in wanted:
+                      if uid not in found or len(x)>len(found[uid]): found[uid]=x
+                  for y in x.values():
+                      if isinstance(y,(list,dict)): walk(y)
+          walk(raw)
+          items=[]
+          for uid in refs:
+              r=found.get(uid,{})
+              translations=r.get('translations') if isinstance(r.get('translations'),list) else []
+              en=[t for t in translations if isinstance(t,dict) and t.get('lang')=='en']
+              sujato=next((t for t in en if t.get('author_uid')=='sujato'),None)
+              selected=sujato or (en[0] if en else None)
+              items.append({
+                  'canonicalRef':uid,
+                  'translatedTitle':r.get('translated_title'),
+                  'preferredEn':({'authorUid':selected.get('author_uid'),'author':selected.get('author'),'title':selected.get('title')} if selected else None)
+              })
+          report={
+              'collection':'SN','canonicalLeafCount':len(refs),'matched':sum(uid in found for uid in refs),
+              'preferredEnCount':sum(x['preferredEn'] is not None for x in items),
+              'englishTitleCount':sum(bool((x.get('preferredEn') or {}).get('title') or x.get('translatedTitle')) for x in items)
+          }
+          Path('data/catalog/discovery-sn-suttaplex-en.json').write_text(json.dumps({'coverage':report,'items':items},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          Path('data/catalog/discovery-sn-suttaplex-en-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print(json.dumps(report,indent=2))
+          PY
+      - name: Commit English metadata
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -z "$(git status --porcelain -- data/catalog/discovery-sn-suttaplex-en.json data/catalog/discovery-sn-suttaplex-en-report.json)" ]; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/catalog/discovery-sn-suttaplex-en.json data/catalog/discovery-sn-suttaplex-en-report.json
+          git commit -m 'data: probe SN English metadata coverage'
+          git push origin HEAD:feature/sn-canonical-discovery
