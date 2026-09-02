@@ -96,16 +96,16 @@ export default function AudioPlayer({src,segments,manifestUrl,storageKey,analyti
      if(value&&rates.includes(Number(value.rate))){const r=Number(value.rate);rateRef.current=r;setRate(r);audio.playbackRate=r;audio.preservesPitch=true;}
    }catch{}
  }
- async function nextSegment(){
+ async function nextSegment(completed=true){
    if(segmentIndex<playlist.length-1){switchSegment(segmentIndex+1);return;}
-   report('complete');
+   if(completed)report('complete');
    try{localStorage.removeItem(key);}catch{}
  }
  function fallbackSource(){
    const sources=segment?.sources||[];
    if(sourceIndex<sources.length-1){setSourceIndex(i=>i+1);return;}
    if(remoteSegments?.length&&src){setRemoteSegments(null);setSegmentIndex(0);setSourceIndex(0);return;}
-   void nextSegment();
+   void nextSegment(false);
  }
  useEffect(()=>{
    const audio=ref.current;if(!audio||!currentSrc)return;
@@ -115,7 +115,7 @@ export default function AudioPlayer({src,segments,manifestUrl,storageKey,analyti
  if(!currentSrc)return null;
  const provider=segment?.sources[sourceIndex]?.provider;
  return <div className="audioPlayer" data-segment={`${segmentIndex+1}/${playlist.length}`}>
-   <audio ref={ref} controls preload="metadata" src={currentSrc} onLoadedMetadata={restore} onPlay={onPlay} onTimeUpdate={onProgress} onPause={()=>save(true)} onEnded={()=>void nextSegment()} onError={fallbackSource}/>
+   <audio ref={ref} controls preload="metadata" src={currentSrc} onLoadedMetadata={restore} onPlay={onPlay} onTimeUpdate={onProgress} onPause={()=>save(true)} onEnded={()=>void nextSegment(true)} onError={fallbackSource}/>
    <div className="audioTools">
      <button onClick={()=>seek(-15)} aria-label="Back 15 seconds"><RotateCcw size={16}/><span>15s</span></button>
      <div className="rateGroup" aria-label="Playback speed">{rates.map(v=><button key={v} className={rate===v?'activeRate':''} onClick={()=>update(v)}>{v}×</button>)}</div>
