@@ -1,0 +1,111 @@
+name: Google Cloud TTS Vietnamese Benchmark
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/cloud-tts-test.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: google-cloud-tts-vi-benchmark
+  cancel-in-progress: false
+
+jobs:
+  benchmark:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      RELEASE_TAG: cloud-tts-vi-test-v1
+      GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
+    steps:
+      - name: Validate secret
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "$GOOGLE_TTS_API_KEY" || { echo 'Missing GOOGLE_TTS_API_KEY'; exit 1; }
+
+      - name: Install audio tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg jq
+
+      - name: Render the same Vietnamese sample with 3 Google voices
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p out
+
+          cat > /tmp/sample.txt <<'EOF'
+          Này các Tỷ-kheo, có hai cực đoan mà người xuất gia không nên thực hành. Một là đắm mình trong dục lạc, thấp kém và không đưa đến lợi ích. Hai là tự hành khổ mình, đau khổ và cũng không đưa đến lợi ích. Từ bỏ hai cực đoan ấy, Như Lai đã chứng ngộ con đường Trung đạo, con đường đưa đến an tịnh, thắng trí, giác ngộ và Niết-bàn. Người học Pháp cần nghe với tâm tỉnh thức, hiểu đúng ý nghĩa, rồi đem điều đã hiểu vào đời sống hằng ngày. Khi thân được lắng dịu, lời nói được chánh niệm và tâm không chạy theo tham sân si, người ấy đang từng bước đi trên con đường tu tập.
+          EOF
+
+          python3 - <<'PY'
+          import json, pathlib
+          text=pathlib.Path('/tmp/sample.txt').read_text(encoding='utf-8').strip()
+          voices=[
+            ('chirp3-hd-aoede','vi-VN-Chirp3-HD-Aoede'),
+            ('neural2-a','vi-VN-Neural2-A'),
+            ('wavenet-a','vi-VN-Wavenet-A'),
+          ]
+          for slug,voice in voices:
+              payload={
+                'input': {'text': text},
+                'voice': {'languageCode':'vi-VN','name':voice},
+                'audioConfig': {'audioEncoding':'MP3','speakingRate':0.92,'pitch':-1.0}
+              }
+              pathlib.Path(f'/tmp/{slug}.json').write_text(json.dumps(payload,ensure_ascii=False),encoding='utf-8')
+          PY
+
+          for slug in chirp3-hd-aoede neural2-a wavenet-a; do
+            echo "Rendering $slug"
+            HTTP=$(curl -sS -o "/tmp/${slug}-response.json" -w '%{http_code}' \
+              -X POST "https://texttospeech.googleapis.com/v1/text:synthesize?key=${GOOGLE_TTS_API_KEY}" \
+              -H 'Content-Type: application/json; charset=utf-8' \
+              --data-binary "@/tmp/${slug}.json")
+            if [ "$HTTP" != "200" ]; then
+              echo "Google TTS failed for $slug (HTTP $HTTP)"
+              jq '{error: .error}' "/tmp/${slug}-response.json" || cat "/tmp/${slug}-response.json"
+              exit 1
+            fi
+            jq -r '.audioContent' "/tmp/${slug}-response.json" | base64 --decode > "out/${slug}.mp3"
+            test -s "out/${slug}.mp3"
+            ffprobe -v error -show_entries format=duration,size -of json "out/${slug}.mp3" > "out/${slug}.probe.json"
+            sha256sum "out/${slug}.mp3" > "out/${slug}.sha256"
+          done
+
+          cp /tmp/sample.txt out/sample.txt
+          python3 - <<'PY'
+          import hashlib,json,pathlib,subprocess
+          names={
+            'chirp3-hd-aoede':'vi-VN-Chirp3-HD-Aoede',
+            'neural2-a':'vi-VN-Neural2-A',
+            'wavenet-a':'vi-VN-Wavenet-A',
+          }
+          rows=[]
+          for slug,voice in names.items():
+              p=pathlib.Path('out')/f'{slug}.mp3'
+              probe=json.loads((pathlib.Path('out')/f'{slug}.probe.json').read_text())['format']
+              rows.append({'file':p.name,'voice':voice,'provider':'Google Cloud Text-to-Speech','language':'vi-VN','speakingRate':0.92,'pitch':-1.0,'bytes':p.stat().st_size,'durationSeconds':round(float(probe['duration']),3),'sha256':hashlib.sha256(p.read_bytes()).hexdigest()})
+          pathlib.Path('out/manifest.json').write_text(json.dumps({'version':'1.0','purpose':'Vietnamese scripture voice benchmark','sampleFile':'sample.txt','voices':rows},ensure_ascii=False,indent=2),encoding='utf-8')
+          PY
+
+      - name: Publish benchmark MP3 files to GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if ! gh release view "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release create "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" \
+              --title 'Google Cloud TTS Vietnamese benchmark' \
+              --notes 'Same Vietnamese scripture-style sample rendered with Chirp 3 HD Aoede, Neural2-A and WaveNet-A. Test only; not production audio.'
+          fi
+          gh release upload "$RELEASE_TAG" out/chirp3-hd-aoede.mp3 out/neural2-a.mp3 out/wavenet-a.mp3 out/manifest.json out/sample.txt --repo "$GITHUB_REPOSITORY" --clobber
+          echo '### Google Cloud TTS benchmark ready' >> "$GITHUB_STEP_SUMMARY"
+          echo '- Chirp 3 HD: vi-VN-Chirp3-HD-Aoede' >> "$GITHUB_STEP_SUMMARY"
+          echo '- Neural2: vi-VN-Neural2-A' >> "$GITHUB_STEP_SUMMARY"
+          echo '- WaveNet: vi-VN-Wavenet-A' >> "$GITHUB_STEP_SUMMARY"
