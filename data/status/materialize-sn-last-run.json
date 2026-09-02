@@ -1,15 +1,11 @@
 {
   "collection": "SN",
   "catalogCount": 1819,
-  "verifiedBefore": 838,
+  "verifiedBefore": 955,
   "selected": 120,
-  "materializedThisRun": 117,
-  "missingVietnameseThisRun": [
-    "sn35.57",
-    "sn35.59",
-    "sn35.82"
-  ],
+  "materializedThisRun": 120,
+  "missingVietnameseThisRun": [],
   "failures": {},
-  "remainingAfterRun": 860,
-  "lastRunAt": "2026-09-02T10:26:00+00:00"
+  "remainingAfterRun": 740,
+  "lastRunAt": "2026-09-02T11:24:30+00:00"
 }
