@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Render one materialized Vietnamese scripture with Gemini TTS in GitHub Actions.
 
-This script is intentionally cloud-only. It reads source-backed corpus already committed
-under data/content, never calls a local PC, and never rewrites scripture text.
+This is an independent cloud lane. It reads source-backed corpus already committed
+under data/content, never rewrites scripture text, and publishes Gemini narration
+under a dedicated R2 prefix so local/PC narration remains available as fallback.
 """
 from __future__ import annotations
 
@@ -39,10 +40,7 @@ def ref_sort_key(ref: str):
 def load_materialized() -> dict[str, dict]:
     corpus: dict[str, dict] = {}
     for path in sorted(Path("data/content").rglob("*.vi.json")):
-        try:
-            payload = json.loads(path.read_text(encoding="utf-8"))
-        except Exception as exc:
-            raise RuntimeError(f"Cannot parse {path}: {exc}") from exc
+        payload = json.loads(path.read_text(encoding="utf-8"))
         if not isinstance(payload, dict):
             continue
         for key, value in payload.items():
@@ -76,10 +74,7 @@ def chunks(text: str, max_chars: int = 3500) -> list[str]:
         if len(paragraph) > max_chars:
             parts = [x.strip() for x in re.split(r"(?<=[.!?…])\s+", paragraph) if x.strip()]
         for part in parts:
-            if len(part) > max_chars:
-                pieces = [part[i:i + max_chars] for i in range(0, len(part), max_chars)]
-            else:
-                pieces = [part]
+            pieces = [part[i:i + max_chars] for i in range(0, len(part), max_chars)] if len(part) > max_chars else [part]
             for piece in pieces:
                 candidate = f"{cur}\n\n{piece}".strip() if cur else piece
                 if cur and len(candidate) > max_chars:
@@ -115,11 +110,7 @@ def is_quota_error(exc: Exception) -> bool:
 
 
 def render(ref: str, entry: dict, out_dir: Path) -> dict:
-    try:
-        from google import genai
-    except Exception as exc:
-        raise RuntimeError("google-genai is required") from exc
-
+    from google import genai
     key = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
     if not key:
         raise RuntimeError("Missing GEMINI_API_KEY/GOOGLE_API_KEY")
@@ -141,9 +132,7 @@ def render(ref: str, entry: dict, out_dir: Path) -> dict:
                 model=MODEL,
                 input=prompt,
                 response_format={"type": "audio"},
-                generation_config={
-                    "speech_config": [{"voice": voice, "language": "vi-VN"}]
-                },
+                generation_config={"speech_config": [{"voice": voice, "language": "vi-VN"}]},
             )
         except Exception as exc:
             if is_quota_error(exc):
@@ -177,7 +166,7 @@ def render(ref: str, entry: dict, out_dir: Path) -> dict:
     audio_sha = hashlib.sha256(mp3_path.read_bytes()).hexdigest()
     text_sha = hashlib.sha256(text.encode("utf-8")).hexdigest()
     receipt = {
-        "version": "1.0",
+        "version": "1.1",
         "canonicalRef": ref,
         "collection": ref_collection(ref),
         "language": "vi",
@@ -193,6 +182,7 @@ def render(ref: str, entry: dict, out_dir: Path) -> dict:
         "chunkCount": len(pieces),
         "normalizedTextCharacters": len(text),
         "policy": "verbatim-source-backed-scripture",
+        "r2Tier": "preferred",
     }
     (out_dir / f"{ref}.json").write_text(json.dumps(receipt, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps(receipt, ensure_ascii=False))
@@ -201,7 +191,7 @@ def render(ref: str, entry: dict, out_dir: Path) -> dict:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--ref", default="", help="Exact canonical ref, otherwise choose next missing")
+    ap.add_argument("--ref", default="", help="Exact canonical ref, otherwise choose next missing Gemini narration")
     ap.add_argument("--existing-file", default="", help="R2 object keys, one per line")
     ap.add_argument("--out", default="dist/gemini-online")
     args = ap.parse_args()
@@ -221,8 +211,8 @@ def main() -> int:
         ref = ""
         for candidate in sorted(corpus, key=ref_sort_key):
             c = ref_collection(candidate).lower()
-            key = f"audio/{c}/{candidate}.mp3".lower()
-            if key not in existing:
+            preferred_key = f"audio/gemini/{c}/{candidate}.mp3".lower()
+            if preferred_key not in existing:
                 ref = candidate
                 break
         if not ref:
