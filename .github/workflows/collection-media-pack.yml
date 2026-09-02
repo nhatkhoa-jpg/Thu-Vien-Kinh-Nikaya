@@ -1,0 +1,67 @@
+name: Collection Media Pack
+
+on:
+  workflow_dispatch:
+    inputs:
+      collection:
+        description: Nikaya collection to package
+        required: true
+        default: DN
+        type: choice
+        options: [DN, MN, SN, AN, KN]
+  pull_request:
+    branches: [main]
+    paths:
+      - 'scripts/export-local-media-pack.mjs'
+      - 'scripts/render-collection-pdf.mjs'
+      - 'scripts/local-media-factory.ps1'
+      - '.github/workflows/collection-media-pack.yml'
+      - 'package.json'
+
+permissions:
+  contents: read
+
+jobs:
+  validate-pack:
+    runs-on: ubuntu-latest
+    env:
+      COLLECTION: ${{ github.event_name == 'workflow_dispatch' && inputs.collection || 'DN' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Export body-only TTS pack
+        run: npm run media:export -- --collection "$COLLECTION" --out /tmp/local-media
+      - name: Validate body-only policy and manifest
+        run: |
+          node <<'NODE'
+          const fs=require('fs');const path=require('path');
+          const c=process.env.COLLECTION.toLowerCase();const base=path.join('/tmp/local-media',c);
+          const m=JSON.parse(fs.readFileSync(path.join(base,'manifest.json'),'utf8'));
+          if(!m.readyCount)throw new Error('No full-text items were exported');
+          if(m.readyCount+m.missingCount!==m.catalogCount)throw new Error('Manifest counts do not reconcile');
+          const banned=['Prepared for SuttaCentral','source_provider','source_url','translator:','license:','GitHub Actions','checkpoint'];
+          for(const item of m.items.filter(x=>x.status==='ready')){
+            const text=fs.readFileSync(path.join(base,item.textFile),'utf8');
+            for(const token of banned)if(text.includes(token))throw new Error(`${item.canonicalRef} contains banned non-scripture token: ${token}`);
+            if(!text.trim())throw new Error(`${item.canonicalRef} is empty`);
+          }
+          console.log(`PASS ${m.collection}: ${m.readyCount}/${m.catalogCount} body-only TTS files, ${m.totalChars} chars`);
+          NODE
+      - name: Install Chromium for PDF
+        if: github.event_name == 'workflow_dispatch'
+        run: npx playwright install --with-deps chromium
+      - name: Render whole-collection PDF
+        if: github.event_name == 'workflow_dispatch'
+        run: npm run media:pdf -- --collection "$COLLECTION" --pack /tmp/local-media
+      - name: Upload package artifact
+        if: github.event_name == 'workflow_dispatch'
+        uses: actions/upload-artifact@v4
+        with:
+          name: nikaya-${{ env.COLLECTION }}-local-media-pack
+          path: /tmp/local-media/
+          if-no-files-found: error
+          retention-days: 7
