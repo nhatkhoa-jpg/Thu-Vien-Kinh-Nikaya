@@ -75,6 +75,7 @@ jobs:
         run: |
           set -euo pipefail
           must_have(){ local file="$1" text="$2" label="$3"; if grep -Fq "$text" "$file"; then echo "PASS: $label"; else echo "FAIL missing: $label [$text]"; exit 1; fi; }
+          must_not_have(){ local file="$1" text="$2" label="$3"; if grep -Fq "$text" "$file"; then echo "FAIL present: $label [$text]"; exit 1; else echo "PASS: $label"; fi; }
           npm run start -- -p 3000 > /tmp/nikaya-next.log 2>&1 &
           SERVER_PID=$!
           trap 'kill $SERVER_PID || true' EXIT
@@ -99,7 +100,7 @@ jobs:
           curl --fail --silent "$MN21_URL" -o /tmp/mn21.html || { echo "FAIL reader canonicalRef=mn21 URL=${MN21_URL}"; exit 1; }
           must_have /tmp/mn21.html 'compactEssentials' 'compact reader essentials'
           must_have /tmp/mn21.html 'primaryMp3Disclosure' 'primary prebuilt MP3 disclosure'
-          must_have /tmp/mn21.html 'V5.1-HOME-DN' 'test build marker'
+          must_not_have /tmp/mn21.html 'V5.1-HOME-DN' 'public reader has no internal build marker'
           must_have /tmp/mn21.html 'mn21.mp3' 'MN21 MP3 URL'
           must_have /tmp/mn21.html 'mn21.manifest.json' 'MN21 preservation manifest URL'
           must_have /tmp/mn21.html 'Nghe bài kinh' 'listen label'
