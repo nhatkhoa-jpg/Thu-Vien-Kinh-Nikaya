@@ -24,7 +24,21 @@ function loadCorpus(dir){
 loadCorpus(contentDir);
 
 const normalize=text=>String(text??'').replace(/\r/g,'').replace(/[ \t]+/g,' ').replace(/\n{3,}/g,'\n\n').trim();
-const bodyOf=record=>(record?.segments||[]).map(s=>normalize(s.text)).filter(Boolean).join('\n\n');
+function isProvenanceSegment(segment){
+  const id=String(segment?.id??'').toLowerCase();
+  const text=normalize(segment?.text);
+  const lower=text.toLowerCase();
+  if(!text)return true;
+  if(/(?:^|[-_.])(source|meta|metadata|provenance|credit|credits|license|translator)(?:$|[-_.])/.test(id))return true;
+  if(lower.includes('prepared for suttacentral'))return true;
+  if(lower.includes('suttacentral')&&(lower.includes('dịch')||lower.includes('translation')||lower.includes('prepared')||lower.includes('copyright')))return true;
+  if(lower.includes('thích minh châu')&&(
+    lower.includes('dịch sang việt ngữ')||lower.includes('phát hành')||lower.includes('tái bản')||lower.includes('ấn hành')||lower.includes('đại tạng kinh việt nam')
+  ))return true;
+  if((lower.includes('nhà xuất bản')||lower.includes('xuất bản năm')||lower.includes('bản dịch này'))&&(lower.includes('dịch giả')||lower.includes('phát hành')||lower.includes('tái bản')))return true;
+  return false;
+}
+const bodyOf=record=>(record?.segments||[]).filter(s=>!isProvenanceSegment(s)).map(s=>normalize(s.text)).filter(Boolean).join('\n\n');
 const sha=text=>createHash('sha256').update(text,'utf8').digest('hex');
 const safe=s=>String(s).toLowerCase().replace(/[^a-z0-9._-]+/g,'-').replace(/^-+|-+$/g,'');
 
@@ -34,9 +48,12 @@ const base=join(outRoot,collection.toLowerCase());
 const ttsDir=join(base,'tts');const mp3Dir=join(base,'mp3');
 mkdirSync(ttsDir,{recursive:true});mkdirSync(mp3Dir,{recursive:true});
 
-const manifest=[];const combined=[];const ffconcat=['ffconcat version 1.0'];let missing=0,totalChars=0;
+const manifest=[];const combined=[];const ffconcat=['ffconcat version 1.0'];let missing=0,totalChars=0,removedSegments=0;
 for(const s of rows){
   const record=materialized[s.canonicalRef];
+  const allSegments=record?.segments||[];
+  const removed=allSegments.filter(isProvenanceSegment).length;
+  removedSegments+=removed;
   const body=bodyOf(record);
   const fileStem=safe(s.canonicalRef||s.code||s.id);
   if(!body){
@@ -49,13 +66,13 @@ for(const s of rows){
   combined.push(body);
   ffconcat.push(`file '${mp3Rel.replaceAll("'","'\\''")}'`);
   totalChars+=body.length;
-  manifest.push({id:s.id,canonicalRef:s.canonicalRef,code:s.code,viCode:s.viCode,title:s.vi,pali:s.pali,status:'ready',textFile:txtRel,mp3File:mp3Rel,chars:body.length,sha256:sha(body)});
+  manifest.push({id:s.id,canonicalRef:s.canonicalRef,code:s.code,viCode:s.viCode,title:s.vi,pali:s.pali,status:'ready',textFile:txtRel,mp3File:mp3Rel,chars:body.length,sha256:sha(body),removedNonScriptureSegments:removed});
 }
 
 // Body-only by design: no translator/source/license/debug/provenance is fed to TTS.
 writeFileSync(join(base,`${collection.toLowerCase()}.body-only.txt`),combined.join('\n\n\n')+'\n','utf8');
 writeFileSync(join(base,'concat.ffconcat'),ffconcat.join('\n')+'\n','utf8');
-writeFileSync(join(base,'manifest.json'),JSON.stringify({schemaVersion:1,collection,generatedAt:new Date().toISOString(),catalogCount:rows.length,readyCount:manifest.length-missing,missingCount:missing,totalChars,ttsPolicy:'body-only; excludes source, translator, license, provenance, summaries, practice notes and UI text',items:manifest},null,2)+'\n','utf8');
+writeFileSync(join(base,'manifest.json'),JSON.stringify({schemaVersion:1,collection,generatedAt:new Date().toISOString(),catalogCount:rows.length,readyCount:manifest.length-missing,missingCount:missing,totalChars,removedNonScriptureSegments:removedSegments,ttsPolicy:'body-only; excludes source, translator, license, provenance, summaries, practice notes and UI text',items:manifest},null,2)+'\n','utf8');
 writeFileSync(join(base,'README.txt'),[
   `${collection} local media pack`,
   '',
@@ -66,10 +83,11 @@ writeFileSync(join(base,'README.txt'),[
   '',
   `Render ready: ${manifest.length-missing}/${rows.length}`,
   `Missing full text: ${missing}`,
+  `Removed non-scripture/provenance segments: ${removedSegments}`,
   `Total TTS characters: ${totalChars}`,
   '',
   `After rendering: ffmpeg -f concat -safe 0 -i concat.ffconcat -c copy ${collection.toLowerCase()}-complete.mp3`,
 ].join('\n')+'\n','utf8');
 
-console.log(JSON.stringify({collection,catalogCount:rows.length,readyCount:manifest.length-missing,missingCount:missing,totalChars,out:base}));
+console.log(JSON.stringify({collection,catalogCount:rows.length,readyCount:manifest.length-missing,missingCount:missing,removedNonScriptureSegments:removedSegments,totalChars,out:base}));
 if(manifest.length-missing===0)process.exitCode=2;
