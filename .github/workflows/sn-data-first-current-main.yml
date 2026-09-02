@@ -106,28 +106,39 @@ jobs:
           done
           if [ "$READY" -ne 1 ]; then cat /tmp/nikaya-dn-sn-current-main.log; exit 1; fi
 
+          fetch_page(){
+            local url="$1" out="$2" code
+            code=$(curl --silent --show-error --output "$out" --write-out '%{http_code}' "$url" || true)
+            echo "HTTP $code $url"
+            if [ "$code" != "200" ]; then
+              echo "FAIL page: $url"
+              tail -120 /tmp/nikaya-dn-sn-current-main.log || true
+              exit 1
+            fi
+          }
+
           for slug in dn-1 dn-16 dn-34; do
-            curl --fail --silent "http://127.0.0.1:3000/vi/library/$slug" -o "/tmp/$slug.html"
+            fetch_page "http://127.0.0.1:3000/vi/library/$slug" "/tmp/$slug.html"
             grep -Fq 'TOÀN VĂN BÀI KINH' "/tmp/$slug.html"
             grep -Fq 'PDF' "/tmp/$slug.html"
           done
 
-          curl --fail --silent 'http://127.0.0.1:3000/vi?collection=SN' -o /tmp/home-sn.html
+          fetch_page 'http://127.0.0.1:3000/vi?collection=SN' /tmp/home-sn.html
           grep -Fq 'Tương Ưng Bộ' /tmp/home-sn.html
 
-          curl --fail --silent http://127.0.0.1:3000/vi/library/sn-1-1 -o /tmp/sn11.html
+          fetch_page http://127.0.0.1:3000/vi/library/sn-1-1 /tmp/sn11.html
           grep -Fq 'TƯB 1.1' /tmp/sn11.html
           grep -Fq 'Bộc Lưu' /tmp/sn11.html
           if grep -Fq '>0 phút<' /tmp/sn11.html; then echo 'FAIL: 0-minute label leaked'; exit 1; fi
 
-          curl --fail --silent http://127.0.0.1:3000/vi/library/sn-3-15 -o /tmp/sn315.html
+          fetch_page http://127.0.0.1:3000/vi/library/sn-3-15 /tmp/sn315.html
           grep -Fq 'chưa có bản Việt Thích Minh Châu' /tmp/sn315.html
           grep -Fq 'không tự chuyển sang bản dịch khác' /tmp/sn315.html
 
-          curl --fail --silent http://127.0.0.1:3000/vi/library/sn-22-59-anattalakkhana -o /tmp/sn2259.html
+          fetch_page http://127.0.0.1:3000/vi/library/sn-22-59-anattalakkhana /tmp/sn2259.html
           grep -Fq 'Kinh Vô Ngã Tướng' /tmp/sn2259.html
 
-          curl --fail --silent http://127.0.0.1:3000/vi/library/mn-21-kakacupama >/dev/null
+          fetch_page http://127.0.0.1:3000/vi/library/mn-21-kakacupama /tmp/mn21.html
           echo 'DN + SN DATA-FIRST CURRENT MAIN SMOKE PASS'
 
       - name: Commit verified DN + SN corpus checkpoint
