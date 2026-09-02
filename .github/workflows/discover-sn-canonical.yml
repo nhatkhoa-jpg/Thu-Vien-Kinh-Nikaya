@@ -140,7 +140,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          if git diff --quiet -- data/catalog/discovery-sn.json data/catalog/discovery-sn-report.json; then
+          if [ -z "$(git status --porcelain -- data/catalog/discovery-sn.json data/catalog/discovery-sn-report.json)" ]; then
             echo 'Discovery outputs unchanged.'
             exit 0
           fi
@@ -150,4 +150,4 @@ jobs:
           git commit -m 'data: discover authoritative SN canonical refs'
           git push origin HEAD:feature/sn-canonical-discovery
 
-# trigger discovery run
+# commit newly generated discovery files correctly
