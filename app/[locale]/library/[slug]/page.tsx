@@ -13,6 +13,7 @@ import BrowserReader from '@/components/BrowserReader';
 import PdfDownloadButton from '@/components/PdfDownloadButton';
 import ReaderQuickJump from '@/components/ReaderQuickJump';
 import PassageCollector from '@/components/PassageCollector';
+import PageViewTracker from '@/components/PageViewTracker';
 
 export const revalidate=86400;
 
@@ -35,7 +36,7 @@ export default async function SuttaPage({params}:{params:Promise<{locale:string;
   const measuredMinutes=plainText?Math.max(1,Math.ceil(plainText.split(/\s+/).filter(Boolean).length/200)):null;const readMinutes=s.readMinutes>0?s.readMinutes:measuredMinutes;const estimated=s.readMinutes<=0&&readMinutes!==null;
   const practiceNumber=hasSummary?'02':'01';const fullTextNumber=hasSummary&&hasPractice?'03':hasSummary||hasPractice?'02':'01';
 
-  return <main className="readerPage"><div className="shell readerShell">
+  return <main className="readerPage"><PageViewTracker refId={s.canonicalRef} locale={locale}/><div className="shell readerShell">
     <div className="readerTopline"><Link href={`/${locale}#library`} className="backLink"><ArrowLeft size={17}/>{vi?'Thư viện':'Library'}</Link><span>{displayCollection}</span><span>{displayCode}{vi&&<small className="intlRef"> · {s.code}</small>}</span></div>
     <ReaderQuickJump locale={locale} currentSlug={slug}/>
     <div className="readerLayout">
@@ -44,7 +45,7 @@ export default async function SuttaPage({params}:{params:Promise<{locale:string;
         <h1>{title}</h1><p className="readerPali">{s.pali}</p><ReaderProgress id={`${locale}:${s.slug}`} locale={locale}/>
 
         <section className="readerEssentials compactEssentials" aria-label={vi?'Nghe và tải':'Listen and download'}>
-          {audio&&<details className="essentialDisclosure mp3Disclosure primaryMp3Disclosure" id="mp3"><summary title={vi?'Nghe MP3 dựng sẵn, dùng trên mọi thiết bị':'Play the prebuilt MP3 on any device'}><span className="miniActionIcon"><Headphones size={17}/></span><span><strong>{vi?'Nghe bài kinh':'Listen'}</strong><small>{vi?(audio.provider==='5 Đại Tạng Kinh Nikāya'?'MP3 dựng sẵn · mọi thiết bị':'MP3'):'Prebuilt MP3 · all devices'}</small></span><ChevronDown size={15} className="disclosureChevron"/></summary><div className="disclosureBody"><AudioPlayer src={audio.url} segments={audio.segments} manifestUrl={audio.manifestUrl} storageKey={`${locale}:${s.slug}`}/><div className="mp3Links"><a className="downloadLink" href={audio.downloadUrl||audio.url} target="_blank" rel="noreferrer"><Download size={16}/>{vi?'Mở / tải MP3':'Open / download MP3'}</a>{audio.sourceUrl&&<a className="audioSource" href={audio.sourceUrl} target="_blank" rel="noreferrer">{vi?'Văn bản đối chiếu':'Text source'}<ExternalLink size={13}/></a>}</div></div></details>}
+          {audio&&<details className="essentialDisclosure mp3Disclosure primaryMp3Disclosure" id="mp3"><summary title={vi?'Nghe MP3 dựng sẵn, dùng trên mọi thiết bị':'Play the prebuilt MP3 on any device'}><span className="miniActionIcon"><Headphones size={17}/></span><span><strong>{vi?'Nghe bài kinh':'Listen'}</strong><small>{vi?(audio.provider==='5 Đại Tạng Kinh Nikāya'?'MP3 dựng sẵn · mọi thiết bị':'MP3'):'Prebuilt MP3 · all devices'}</small></span><ChevronDown size={15} className="disclosureChevron"/></summary><div className="disclosureBody"><AudioPlayer src={audio.url} segments={audio.segments} manifestUrl={audio.manifestUrl} storageKey={`${locale}:${s.slug}`} analyticsRef={s.canonicalRef} locale={locale}/><div className="mp3Links"><a className="downloadLink" href={audio.downloadUrl||audio.url} target="_blank" rel="noreferrer"><Download size={16}/>{vi?'Mở / tải MP3':'Open / download MP3'}</a>{audio.sourceUrl&&<a className="audioSource" href={audio.sourceUrl} target="_blank" rel="noreferrer">{vi?'Văn bản đối chiếu':'Text source'}<ExternalLink size={13}/></a>}</div></div></details>}
           {plainText&&<BrowserReader text={plainText} locale={locale}/>} 
           {paragraphs.length>0&&<details className="essentialDisclosure pdfDisclosure" id="pdf"><summary title={vi?'Tạo PDF từ chính nội dung bài kinh đang đọc':'Generate a PDF from this text'}><span className="miniActionIcon"><FileText size={17}/></span><span><strong>PDF</strong><small>{vi?'Tự tạo':'Generated'}</small></span><ChevronDown size={15} className="disclosureChevron"/></summary><div className="disclosureBody"><PdfDownloadButton code={displayCode} title={title} pali={s.pali} summary={summary} paragraphs={paragraphs} sourceLabel={sourceLabel} sourceUrl={sourceUrl} locale={locale}/></div></details>}
         </section>
