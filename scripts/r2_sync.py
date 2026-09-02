@@ -72,6 +72,7 @@ def main() -> int:
     parser.add_argument("--bucket", default=os.environ.get("R2_BUCKET_NAME", "nikaya-media"))
     parser.add_argument("--max-total-gib", type=float, default=9.0, help="hard safety ceiling; default 9 GiB")
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--delete-verified-local", action="store_true", help="delete local files only after R2 checksum/size verification succeeds")
     args = parser.parse_args()
 
     source = args.source.resolve()
@@ -110,30 +111,37 @@ def main() -> int:
             f"REFUSED: projected R2 usage {projected / GIB:.2f} GiB exceeds safety ceiling {args.max_total_gib:.2f} GiB"
         )
 
-    uploads = skips = 0
+    uploads = skips = deleted = 0
     for action, path, key, digest, size, _old_size in plan:
+        verified = False
         if action == "skip":
             skips += 1
             print(f"SKIP {key} sha256={digest[:12]} size={size}")
-            continue
-        uploads += 1
-        print(f"{'DRY-RUN ' if args.dry_run else ''}UPLOAD {key} sha256={digest[:12]} size={size}")
-        if args.dry_run:
-            continue
-        s3.upload_file(
-            str(path),
-            args.bucket,
-            key,
-            ExtraArgs={
-                "ContentType": content_type(path),
-                "Metadata": {"sha256": digest, "managed-by": "nikaya-r2-sync"},
-            },
-        )
-        verify = s3.head_object(Bucket=args.bucket, Key=key)
-        if verify.get("Metadata", {}).get("sha256") != digest or int(verify.get("ContentLength", -1)) != size:
-            raise RuntimeError(f"post-upload verification failed: {key}")
+            verified = True
+        else:
+            uploads += 1
+            print(f"{'DRY-RUN ' if args.dry_run else ''}UPLOAD {key} sha256={digest[:12]} size={size}")
+            if not args.dry_run:
+                s3.upload_file(
+                    str(path),
+                    args.bucket,
+                    key,
+                    ExtraArgs={
+                        "ContentType": content_type(path),
+                        "Metadata": {"sha256": digest, "managed-by": "nikaya-r2-sync"},
+                    },
+                )
+                verify = s3.head_object(Bucket=args.bucket, Key=key)
+                if verify.get("Metadata", {}).get("sha256") != digest or int(verify.get("ContentLength", -1)) != size:
+                    raise RuntimeError(f"post-upload verification failed: {key}")
+                verified = True
 
-    print(f"R2 sync PASS uploads={uploads} skips={skips} dry_run={args.dry_run}")
+        if args.delete_verified_local and verified and not args.dry_run:
+            path.unlink()
+            deleted += 1
+            print(f"DELETE-LOCAL {path}")
+
+    print(f"R2 sync PASS uploads={uploads} skips={skips} deleted={deleted} dry_run={args.dry_run}")
     return 0
 
 
