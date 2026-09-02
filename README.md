@@ -1,8 +1,8 @@
 # 5 Đại Tạng Kinh Nikāya
 
-Modern multilingual Next.js library for the Five Nikāya collections. Built for long-form reading, **prebuilt MP3-first listening**, generated PDFs, optional device speech, source-aware content rights, RAG/Knowledge exports, and contextual YouTube embeds.
+Modern multilingual Next.js library for the Five Nikāya collections, now expanding toward a broader **Theravāda Pāli Canon** library with Vinaya and Abhidhamma discovery. Built for long-form reading, **prebuilt MP3-first listening**, generated PDFs, optional device speech, source-aware content rights, RAG/Knowledge exports, and contextual YouTube embeds.
 
-> **Bắt đầu ở `PROJECT_STATE.md`.** Đây là bộ nhớ dự án chuẩn dùng để tiếp tục công việc ở tab ChatGPT/Codex mới mà không dựng lại từ đầu. Coding agents cũng phải đọc `AGENTS.md`.
+> **Bắt đầu ở `PROJECT_STATE.md`.** Đây là bộ nhớ dự án chuẩn dùng để tiếp tục công việc ở tab ChatGPT/Codex mới mà không dựng lại từ đầu. Coding agents cũng phải đọc `AGENTS.md` và `docs/THERAVADA_SCOPE.md`.
 
 ## Stable website address
 **https://nikaya-reader-v4-final-khoa-3f1b.vercel.app**
@@ -30,7 +30,12 @@ This is the permanent Vercel project alias used for bookmarks and future custom-
 TrB = Trường Bộ (DN), TB = Trung Bộ (MN), TƯB = Tương Ưng Bộ (SN), TCB = Tăng Chi Bộ (AN), TiB = Tiểu Bộ (KN). Vietnamese codes are primary in the Vietnamese UI; international codes are secondary references.
 
 ## Languages
-16 UI locales: Vietnamese, English, Chinese, Hindi, Spanish, Arabic, French, Bengali, Portuguese, Russian, Indonesian, Urdu, German, Japanese, Korean, and Thai.
+Focused public UI locales: Vietnamese, Thai, Burmese, Sinhala, Khmer, Lao, English, and Chinese (`vi/th/my/si/km/lo/en/zh`). Other locales remain deferred/noindex and are not shown in the public selector unless real audience demand, source-backed coverage, and QA justify enabling them.
+
+When a public locale does not yet have a source-backed scripture translation, the product may offer English as a clearly labelled temporary fallback. It must never silently pretend that English is the selected-language translation.
+
+## Theravāda canon expansion
+The five Nikāyas remain the primary reading corpus. The library also catalogs the Theravāda Vinaya Piṭaka and the seven canonical books of the Abhidhamma Piṭaka, plus important Khuddaka works, in `data/catalog/theravada-canon.json`. Full text is materialized only after provenance and redistribution rights are verified. See `docs/THERAVADA_SCOPE.md`.
 
 ## Data / RAG
 Canonical metadata lives in `data/catalog/*.json`. Run `npm run rag:export` for JSONL RAG/Knowledge exports with stable IDs and content hashes. See `data/README.md`.
