@@ -35,15 +35,6 @@ def md5_file(path: Path) -> str:
     return h.hexdigest()
 
 
-def archive_name(key: str) -> str:
-    """Keep collection identity in the archive filename (audio/dn/dn1.mp3 -> dn-dn1.mp3)."""
-    clean = key.strip("/")
-    parts = clean.split("/")
-    if len(parts) >= 3 and parts[0] == "audio":
-        return f"{parts[-2]}-{parts[-1]}"
-    return clean.replace("/", "-")
-
-
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--prefix", default="audio/")
@@ -93,7 +84,7 @@ def main() -> int:
     with tempfile.TemporaryDirectory(prefix="nikaya-ia-") as td:
         root = Path(td)
         for key, size in sorted(objects):
-            name = archive_name(key)
+            name = Path(key).name
             local = root / name
             print(f"R2 -> local: {key} ({size} bytes)")
             r2.download_file(bucket, key, str(local))
