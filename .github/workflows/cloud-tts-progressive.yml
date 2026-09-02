@@ -1,13 +1,6 @@
 name: Progressive Google Cloud TTS
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/cloud-tts-progressive.yml'
-      - 'scripts/build_cloud_tts_one.py'
-  schedule:
-    - cron: '17 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -43,7 +36,7 @@ jobs:
           if ! gh release view "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
             gh release create "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" \
               --title 'Trung Bộ · Google Cloud TTS final-quality v1' \
-              --notes 'Progressive monthly free-tier rendering. Each discourse has MP3 + JSON receipt with provider, model, voice, character count, duration and hashes. Piper release remains untouched as fallback.'
+              --notes 'Manual-only cloud rendering. Each discourse has MP3 + JSON receipt with provider, model, voice, character count, duration and hashes. Piper release remains untouched as fallback.'
           fi
       - name: Select next missing discourse and a safe free-tier model
         id: pick
@@ -120,7 +113,7 @@ jobs:
           q['usedCharacters']+=chars
           q['remainingProjectSafeCharacters']=max(0,q['projectSafetyLimitCharacters']-q['usedCharacters'])
           q['status']='SAFE' if q['remainingProjectSafeCharacters']>0 else 'STOPPED'
-          u['events'].append({'date':datetime.date.today().isoformat(),'purpose':'progressive final-quality scripture audio','canonicalRef':os.environ['REF'],'charactersPerVoice':chars,'voices':[meta['voice']],'model':os.environ['MODEL'],'workflowRun':os.environ.get('GITHUB_RUN_ID'),'result':'success'})
+          u['events'].append({'date':datetime.date.today().isoformat(),'purpose':'manual final-quality scripture audio','canonicalRef':os.environ['REF'],'charactersPerVoice':chars,'voices':[meta['voice']],'model':os.environ['MODEL'],'workflowRun':os.environ.get('GITHUB_RUN_ID'),'result':'success'})
           json.dump(u,open(p,'w',encoding='utf-8'),ensure_ascii=False,indent=2)
           PY
           git config user.name 'github-actions[bot]'
