@@ -2453,6 +2453,252 @@
       }
     ]
   },
+  "sn55.44": {
+    "canonicalRef": "sn55.44",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn55.44/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T17:23:07+00:00",
+    "materializedAt": "2026-09-02T17:23:07+00:00",
+    "contentHash": "841edf18d3282283413a6c38ecf17e52a368d694d36d174293d971c51987e516",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 55: Tương Ưng Dự Lưu"
+      },
+      {
+        "id": "p2",
+        "text": "V: Phẩm Phước Ðức"
+      },
+      {
+        "id": "p3",
+        "text": "55.44. Rất Giàu Hay Giàu (1)"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Thành tựu bốn pháp, này các Tỷ-kheo, vị Thánh đệ tử được gọi là giàu, rất giàu, có tài sản lớn, có danh xưng lớn. Thế nào là bốn?"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 … (như các kinh trước, nói về tịnh tín bất động đối với ba ngôi báu và các giới) …"
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Thành tựu bốn pháp này, này các Tỷ-kheo, vị Thánh đệ tử được gọi là giàu, rất giàu, có tài sản lớn, có danh xưng lớn."
+      },
+      {
+        "id": "p8",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn55.45": {
+    "canonicalRef": "sn55.45",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn55.45/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T17:23:07+00:00",
+    "materializedAt": "2026-09-02T17:23:07+00:00",
+    "contentHash": "c502c81d0baf2266c6f033ec8ce92cba9d50b344deea91dc3fe0fa888f19a28a",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 55: Tương Ưng Dự Lưu"
+      },
+      {
+        "id": "p2",
+        "text": "V: Phẩm Phước Ðức"
+      },
+      {
+        "id": "p3",
+        "text": "55.45. Rất Giàu Hay Giàu (2)"
+      },
+      {
+        "id": "p4",
+        "text": "… (giống như kinh trước) …"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn55.46": {
+    "canonicalRef": "sn55.46",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn55.46/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T17:23:07+00:00",
+    "materializedAt": "2026-09-02T17:23:07+00:00",
+    "contentHash": "0e5cffe004d8e3be40e8045dac429dfc64c7452d15e7f60a432dc01143831b21",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 55: Tương Ưng Dự Lưu"
+      },
+      {
+        "id": "p2",
+        "text": "V: Phẩm Phước Ðức"
+      },
+      {
+        "id": "p3",
+        "text": "55.46. Tỷ-Kheo Hay Thanh Tịnh"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Thành tựu bốn pháp, này các Tỷ-kheo, vị Thánh đệ tử là bậc Dự lưu, không còn bị thối đọa, quyết chắc chứng quả giác ngộ. Thế nào là bốn?"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 … (như các kinh trước, nói về tịnh tín đối với ba ngôi báu và các giới) …"
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Thành tựu bốn pháp này, này các Tỷ-kheo, vị Thánh đệ tử là bậc Dự lưu, không còn bị thối đọa, quyết chắc chứng quả giác ngộ."
+      },
+      {
+        "id": "p8",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn55.47": {
+    "canonicalRef": "sn55.47",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn55.47/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T17:23:07+00:00",
+    "materializedAt": "2026-09-02T17:23:07+00:00",
+    "contentHash": "9bf3651503a35c2fb7da5f87893235989ee5351841fd029788a8cd289be53e22",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 55: Tương Ưng Dự Lưu"
+      },
+      {
+        "id": "p2",
+        "text": "V: Phẩm Phước Ðức"
+      },
+      {
+        "id": "p3",
+        "text": "55.47. Nandiya"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Nhân duyên ở Kapilavatthu."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Thế Tôn nói với họ Thích Nandiya đang ngồi một bên: “Thành tựu bốn pháp này, này Nandiya, vị Thánh đệ tử là bậc Dự lưu … giác ngộ. Thế nào là bốn?”."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 … (thành tựu tịnh tín đối với Ba Ngôi Báu và các giới) …"
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 … (như đoạn số 4, kinh trước) …"
+      },
+      {
+        "id": "p8",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn55.48": {
+    "canonicalRef": "sn55.48",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn55.48/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T17:23:07+00:00",
+    "materializedAt": "2026-09-02T17:23:07+00:00",
+    "contentHash": "f7aabfb219ecab000656a89c5785c54d4203a39103ec92e8b6f722baa5db4fe6",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 55: Tương Ưng Dự Lưu"
+      },
+      {
+        "id": "p2",
+        "text": "V: Phẩm Phước Ðức"
+      },
+      {
+        "id": "p3",
+        "text": "55.48. Bhaddiya"
+      },
+      {
+        "id": "p4",
+        "text": "… (như kinh trước, chỉ khác, đây là họ Thích Bhaddiya ) …"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn55.49": {
+    "canonicalRef": "sn55.49",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn55.49/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T17:23:07+00:00",
+    "materializedAt": "2026-09-02T17:23:07+00:00",
+    "contentHash": "4517a9b118fc720eac0fc7dce2d5ce46320b2f0abde9415b81de3514adfb5b39",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 55: Tương Ưng Dự Lưu"
+      },
+      {
+        "id": "p2",
+        "text": "V: Phẩm Phước Ðức"
+      },
+      {
+        "id": "p3",
+        "text": "55.49. Mahānāma"
+      },
+      {
+        "id": "p4",
+        "text": "… (như kinh trước, chỉ khác, đây là họ Thích Mahānāma ) …"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
   "sn55.5": {
     "canonicalRef": "sn55.5",
     "collection": "SN",
@@ -2524,6 +2770,532 @@
       },
       {
         "id": "p15",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn55.50": {
+    "canonicalRef": "sn55.50",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn55.50/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T17:23:07+00:00",
+    "materializedAt": "2026-09-02T17:23:07+00:00",
+    "contentHash": "dea3bbff8b9f3cd3d822eedd77957862a84ce4be467e2647050dd502ef8a4cbc",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 55: Tương Ưng Dự Lưu"
+      },
+      {
+        "id": "p2",
+        "text": "V: Phẩm Phước Ðức"
+      },
+      {
+        "id": "p3",
+        "text": "55.50. Phần"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Có bốn Dự lưu phần này, này các Tỷ-kheo. Thế nào là bốn?"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Thân cận bậc Chân nhân, nghe diệu pháp, như lý tác ý, thực hành pháp và tùy pháp."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Những pháp này, này các Tỷ-kheo, là bốn Dự lưu phần."
+      },
+      {
+        "id": "p8",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn55.51": {
+    "canonicalRef": "sn55.51",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn55.51/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T17:23:07+00:00",
+    "materializedAt": "2026-09-02T17:23:07+00:00",
+    "contentHash": "408958be80a184f7675bd9bb70ace11dfa5a5bda3e7c8a61ceaa86081bf5cda8",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 55: Tương Ưng Dự Lưu"
+      },
+      {
+        "id": "p2",
+        "text": "VI: Phẩm Với Trí Tuệ"
+      },
+      {
+        "id": "p3",
+        "text": "55.51. Với Bài Kệ"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Thành tựu bốn pháp, này các Tỷ-kheo, vị Thánh đệ tử là bậc Dự lưu, không còn bị thối đọa, quyết chắc chứng quả giác ngộ. Thế nào là bốn?"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 … (Như các kinh trước, tịnh tín Ba Ngôi báu và thành tựu các giới) … Này các Tỷ-kheo, thành tựu bốn pháp này, vị Thánh đệ tử là bậc Dự lưu … giác ngộ."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Thế Tôn nói như vậy …"
+      },
+      {
+        "id": "p8",
+        "text": "Với ai tin Như Lai,\n\nBất động, khéo an trú,\n\nVới ai giới thiện lành,\n\nBậc Thánh kính, tán thán.\n\nVới ai tịnh tín Tăng,\n\nVới tri kiến chánh trực,\n\nÐược nói: không phải nghèo,\n\nSống vậy không vô ích.\n\nDo vậy, bậc Hiền minh,\n\nCần tu tập tín giới,\n\nThấy rõ được Chánh pháp,\n\nKhông quên lời Phật dạy."
+      },
+      {
+        "id": "p9",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn55.52": {
+    "canonicalRef": "sn55.52",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn55.52/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T17:23:07+00:00",
+    "materializedAt": "2026-09-02T17:23:07+00:00",
+    "contentHash": "a45814dd80b69b09cdb279ec103e18b7c1422774e7d4db946257f6ca33062a5b",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 55: Tương Ưng Dự Lưu"
+      },
+      {
+        "id": "p2",
+        "text": "VI: Phẩm Với Trí Tuệ"
+      },
+      {
+        "id": "p3",
+        "text": "55.52. An Cư Mùa Mưa"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Một thời, Thế Tôn trú ở Sāvatthi, Jetavana, tại khu vườn ông Anāthapiṇḍika."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Lúc bấy giờ, một Tỷ-kheo, sau khi an cư mùa mưa ở Sāvatthi xong, đi đến Kapilavatthu vì một vài công việc."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Các họ Thích ở Kapilavatthu được nghe một Tỷ-kheo, sau khi an cư mùa mưa xong ở Sāvatthi, đã đến Kapilavatthu."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Rồi các họ Thích ở Kapilavatthu đi đến Tỷ-kheo ấy; sau khi đến, đảnh lễ Tỷ-kheo ấy rồi ngồi xuống một bên. Các họ Thích ở Kapilavatthu thưa với Tỷ-kheo ấy:"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 —Thưa Tôn giả, Thế Tôn có sức khỏe không, có khỏe mạnh không?"
+      },
+      {
+        "id": "p9",
+        "text": "—Này chư Hiền, Thế Tôn có sức khỏe, có khỏe mạnh."
+      },
+      {
+        "id": "p10",
+        "text": "—Thưa Tôn giả, Tôn giả Sāriputta và Tôn giả Moggallāna có sức khỏe không, có khỏe mạnh không?"
+      },
+      {
+        "id": "p11",
+        "text": "—Này chư Hiền, Tôn giả Sāriputta và Tôn giả Moggallāna có sức khỏe, có khỏe mạnh."
+      },
+      {
+        "id": "p12",
+        "text": "—Thưa Tôn giả, chúng Tỷ-kheo có sức khỏe không, có khỏe mạnh không?"
+      },
+      {
+        "id": "p13",
+        "text": "—Này chư Hiền, chúng Tỷ-kheo có sức khỏe, có khỏe mạnh."
+      },
+      {
+        "id": "p14",
+        "text": "Vi-n 6 —Thưa Tôn giả, trong dịp an cư này, Tôn giả có tự thân nghe, tự thân lãnh thọ gì từ Thế Tôn?"
+      },
+      {
+        "id": "p15",
+        "text": "—Này chư Hiền, tôi có tự thân nghe, tự thân lãnh thọ từ Thế Tôn như sau: “Thật là ít, này các Tỷ-kheo, là các Tỷ-kheo, sau khi đoạn diệt các lậu hoặc, ngay trong hiện tại, tự mình với thắng trí chứng ngộ, chứng đạt và an trú vô lậu tâm giải thoát, tuệ giải thoát. Và nhiều hơn là các Tỷ-kheo, sau khi đoạn diệt năm hạ phần kiết sử, được hóa sanh, từ đấy nhập Niết-bàn, không còn trở lại đời này nữa”."
+      },
+      {
+        "id": "p16",
+        "text": "Vi-n 7 Lại nữa, này chư Hiền, tôi tự thân nghe, tự thân lãnh thọ từ Thế Tôn như sau: “Thật là ít, này các Tỷ-kheo, là những Tỷ-kheo, sau khi đoạn diệt năm hạ phần kiết sử, được hóa sanh, từ đấy nhập Niết-bàn, không còn trở lại đời này nữa. Và nhiều hơn là những Tỷ-kheo, sau khi đoạn diệt ba kiết sử, làm cho muội lược tham, sân, si là bậc Nhất lai, chỉ một lần trở lui đời này nữa để chấm dứt khổ đau”."
+      },
+      {
+        "id": "p17",
+        "text": "Vi-n 8 Lại nữa, này chư Hiền, tôi tự thân nghe, tự thân lãnh thọ từ Thế Tôn như sau: “Thật là ít, này các Tỷ-kheo, là những Tỷ-kheo, sau khi đoạn diệt ba kiết sử, làm cho muội lược tham, sân, si, thành bậc Nhất lai, chỉ một lần trở lui đời này nữa để chấm dứt khổ đau. Và nhiều hơn là những Tỷ-kheo, sau khi đoạn diệt ba kiết sử, thành bậc Dự lưu, không còn phải thối đọa, quyết chắc chứng quả giác ngộ”."
+      },
+      {
+        "id": "p18",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn55.53": {
+    "canonicalRef": "sn55.53",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn55.53/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T17:23:07+00:00",
+    "materializedAt": "2026-09-02T17:23:07+00:00",
+    "contentHash": "ce2e520cf4b890e899538afd49208248b65e42e54203b54a466e06820ae5eddf",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 55: Tương Ưng Dự Lưu"
+      },
+      {
+        "id": "p2",
+        "text": "VI: Phẩm Với Trí Tuệ"
+      },
+      {
+        "id": "p3",
+        "text": "55.53. Dhammadinna"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Một thời, Thế Tôn trú ở Bārānasī, tại Isipatana, ở vườn nai."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Rồi cư sĩ Dhammadinna với năm trăm cư sĩ đi đến Thế Tôn, sau khi đến, đảnh lễ Thế Tôn rồi ngồi xuống một bên. Ngồi một bên, cư sĩ Dhammadinna bạch Thế Tôn:"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 —Bạch Thế Tôn, Thế Tôn hãy giảng dạy cho chúng con. Thế Tôn hãy giáo giới cho chúng con! Nhờ vậy chúng con được hạnh phúc, an lạc lâu dài."
+      },
+      {
+        "id": "p7",
+        "text": "—Nếu vậy, này Dhammadinna, các Ông cần phải học tập như sau: Các kinh điển nào do Như Lai thuyết giảng thâm sâu, nghĩa lý thâm sâu, siêu thế, liên hệ đến nghĩa không, cần phải thường thường được tìm đến và an trú (học hỏi). Như vậy, này Dhammadinna, các Ông cần phải học tập."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 4 —Bạch Thế Tôn, thật không dễ gì cho chúng con, phải sống trong những ngôi nhà đầy những trẻ con, sử dụng hương chiên-đàn từ Kāsi, đeo các vòng hoa, hương và phấn sáp, thọ dụng vàng và bạc, đối với các kinh điển do Thế Tôn thuyết giảng thâm sâu, với ý nghĩa thâm sâu, siêu thế, liên hệ đến nghĩa không, có thể thường thường tìm đến những kinh điển ấy và học hỏi. Bạch Thế Tôn, chúng con là những người an trú trên năm học pháp, Thế Tôn hãy giảng cho chúng con các pháp khác!"
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 5 —Do vậy, này Dhammadinna, các Ông hãy học tập như sau: “Chúng ta sẽ thành tựu lòng tịnh tín bất động đối với đức Phật: “Ðây là bậc Ứng Cúng … Phật, Thế Tôn” … đối với Pháp … đối với chúng Tăng … thành tựu các giới được các bậc Thánh ái kính … đưa đến Thiền định. Như vậy, này Dhammadinna, các Ông cần phải học tập."
+      },
+      {
+        "id": "p10",
+        "text": "—Bạch Thế Tôn, bốn Dự lưu phần này được Thế Tôn thuyết giảng, các pháp ấy có mặt ở nơi chúng con. Chúng con thực hiện các pháp ấy."
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 6 Bạch Thế Tôn, chúng con thành tựu lòng tịnh tín bất động đối với đức Phật: “Ðây là bậc Ứng Cúng, … Phật, Thế Tôn” … đối với Pháp … đối với chúng Tăng … chúng con thành tựu các giới được các bậc Thánh ái kính … đưa đến Thiền định."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 7 —Lợi đắc thay cho Ông, này Dhammadinna! Thật khéo lợi đắc thay cho Ông, này Dhammadinna! Này Dhammadinna, Ông đã tuyên bố về Dự lưu quả."
+      },
+      {
+        "id": "p13",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn55.54": {
+    "canonicalRef": "sn55.54",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn55.54/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T17:23:08+00:00",
+    "materializedAt": "2026-09-02T17:23:08+00:00",
+    "contentHash": "c591be684f063687817a16f14325c7aa1aa18134213c567411307972eed122cd",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 55: Tương Ưng Dự Lưu"
+      },
+      {
+        "id": "p2",
+        "text": "VI: Phẩm Với Trí Tuệ"
+      },
+      {
+        "id": "p3",
+        "text": "55.54. Bị Bệnh"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Một thời, Thế Tôn trú ở giữa dân chúng họ Thích, tại Kapilavatthu, khu vườn các cây bàng."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Lúc bấy giờ, nhiều Tỷ-kheo đang làm y cho Thế Tôn, nghĩ rằng khi y làm xong, Thế Tôn sau ba tháng sẽ đi du hành."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Họ Thích Mahānāma được nghe: “Nhiều Tỷ-kheo đang làm y cho Thế Tôn và họ nghĩ rằng: “Khi y làm xong, Thế Tôn sau ba tháng sẽ đi du hành” ”. Rồi họ Thích Mahānāma đi đến Thế Tôn; sau khi đến, đảnh lễ Thế Tôn rồi ngồi xuống một bên. Ngồi một bên, họ Thích Mahānāma bạch Thế Tôn:"
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 —Bạch Thế Tôn, con được nghe nhiều Tỷ-kheo đang làm y cho Thế Tôn và họ nghĩ rằng: “Sau khi y làm xong, Thế Tôn sau ba tháng sẽ ra đi du hành”. Chúng con chưa được tự thân nghe từ Thế Tôn, tự thân lãnh thọ từ Thế Tôn điều này. Bạch Thế Tôn, một cư sĩ có trí bị bệnh, đau đớn, bị trọng bệnh, cần phải được một cư sĩ có trí giáo giới như thế nào?"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 —Này Mahānāma, một cư sĩ có trí bị bệnh, đau đớn, bị trọng bệnh, cần phải được an ủi với bốn pháp an ủi như sau (assàsaniya dhamma): Tôn giả hãy yên tâm, với lòng tịnh tín bất động của Tôn giả đối với đức Phật: “Ðây là bậc Ứng Cúng … Phật, Thế Tôn”. Tôn giả hãy yên tâm, với lòng tịnh tín bất động của Tôn giả đối với Pháp … Tôn giả hãy yên tâm, với lòng tịnh tín bất động của của Tôn giả đối với chúng Tăng … Tôn giả hãy yên tâm, với các giới của Tôn giả được các bậc Thánh ái kính … đưa đến Thiền định."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 6 Một cư sĩ có trí bị bệnh, đau đớn, bị trọng bệnh, này Mahānāma, phải được một cư sĩ có trí giáo giới với bốn pháp an ủi này. Cần phải nói như vậy."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 7 Tôn giả ấy có lòng thương nhớ cha mẹ. Nếu vị ấy nói: “Tôi còn có lòng thương nhớ cha mẹ”, thời nên nói với vị ấy như sau: “Thưa Tôn giả, Tôn giả thế nào cũng phải chết. Dầu Tôn giả có lòng thương nhớ cha mẹ, Tôn giả cũng sẽ chết. Dầu Tôn giả không có lòng thương nhớ cha mẹ, Tôn giả cũng sẽ chết. Vậy tốt hơn là Tôn giả hãy từ bỏ lòng thương nhớ đối với cha mẹ của Tôn giả”."
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 8 Nếu vị ấy nói như sau: “Lòng thương nhớ của tôi đối với cha mẹ, lòng thương nhớ ấy đã được đoạn tận”, vị ấy cần phải được nói như sau: “Tôn giả có lòng thương nhớ vợ con hay không?” Nếu vị ấy nói: “Tôi có lòng thương nhớ vợ con”, thời vị ấy cần phải được nói như sau: “Tôn giả thế nào cũng chết. Dầu Tôn giả có lòng thương nhớ vợ con, Tôn giả cũng sẽ chết. Dầu Tôn giả không có lòng thương nhớ vợ con, Tôn giả cũng sẽ chết. Vậy tốt hơn là Tôn giả hãy từ bỏ lòng thương nhớ đối với vợ con của Tôn giả”."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 9 Nếu vị ấy nói như sau: “Lòng thương nhớ của tôi đối với vợ con, lòng thương nhớ ấy đã được đoạn tận”, vị ấy cần phải được nói như sau: “Tôn giả có lòng thương tiếc năm dục công đức của loài Người không?” Nếu vị ấy nói như sau: “Tôi có lòng thương nhớ năm dục công đức của loài Người”, vị ấy cần phải được nói như sau: “Các Thiên dục đối với nhân dục, còn hấp dẫn hơn, còn thù diệu hơn. Vậy tốt hơn Tôn giả hãy từ bỏ tâm khỏi các nhân dục, và hướng tâm đến Tứ đại thiên vương thiên”."
+      },
+      {
+        "id": "p13",
+        "text": "Vi-n 10 Nếu vị ấy nói như sau: “Tâm tôi đã từ bỏ nhân dục và hướng đến Tứ đại thiên vương thiên”, vị ấy cần được nói như sau: “Chư Thiên ở cõi Ba mươi ba còn hấp dẫn hơn, còn thù diệu hơn Tứ đại thiên vương thiên. Tốt hơn Tôn giả hãy từ bỏ tâm khỏi Tứ đại thiên vương thiên và hướng tâm đến chư Thiên ở cõi trời Ba mươi ba”."
+      },
+      {
+        "id": "p14",
+        "text": "Vi-n 11-16. Nếu vị ấy nói như sau: “Tâm tôi đã từ bỏ Tứ đại thiên vương thiên và hướng đến chư Thiên ở cõi trời Ba mươi ba”, vị ấy cần được nói như sau: “Chư Thiên Yamà, chư Thiên Tusità, chư Thiên Hóa lạc thiên, chư Thiên Tha hóa tự tại thiên còn hấp dẫn hơn, còn thù diệu hơn chư Thiên ở cõi trời Ba mươi ba”."
+      },
+      {
+        "id": "p15",
+        "text": "Vi-n 17 … “Chư Thiên ở Phạm thế còn hấp dẫn hơn, còn thù diệu hơn chư Thiên ở Tha hóa tự tại thiên. Tốt hơn Tôn giả từ bỏ tâm khỏi chư Thiên Tha hóa tự tại thiên và hướng tâm đến Phạm thế, Phạm thiên giới”."
+      },
+      {
+        "id": "p16",
+        "text": "Vi-n 18 Nếu vị ấy nói như sau: “Tâm tôi đã từ bỏ chư Thiên Tha hóa tự tại thiên và hướng tâm về chư Thiên ở Phạm thế”, thời vị ấy cần phải được nói như sau: “Này Tôn giả, Phạm thiên giới là vô thường, không thường hằng, bị thân kiến giới hạn. Tốt hơn là Tôn giả hãy từ bỏ tâm khỏi Phạm thế và hướng tâm đến đoạn diệt thân kiến (Sakkāya)”."
+      },
+      {
+        "id": "p17",
+        "text": "Vi-n 19 Nếu vị ấy nói như sau: “Tâm tôi đã từ bỏ Phạm thế và hướng đến đoạn diệt thân kiến”; vị cư sĩ nói như vậy, này Mahànàama, và với Tỷ-kheo có tâm giải thoát khỏi các lậu hoặc, Ta nói rằng không có gì sai biệt, tức là về phương diện giải thoát."
+      },
+      {
+        "id": "p18",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn55.55": {
+    "canonicalRef": "sn55.55",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn55.55/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T17:23:08+00:00",
+    "materializedAt": "2026-09-02T17:23:08+00:00",
+    "contentHash": "5d2e9eea5b07c26d2b51d0c3cf968633581db98e5a2d50e8e01fdcd657b93b72",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 55: Tương Ưng Dự Lưu"
+      },
+      {
+        "id": "p2",
+        "text": "VI: Phẩm Với Trí Tuệ"
+      },
+      {
+        "id": "p3",
+        "text": "55.55. Bốn Quả (1)"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Có bốn pháp, này các Tỷ-kheo, được tu tập, được làm cho sung mãn đưa đến chứng ngộ quả Dự lưu. Thế nào là bốn?"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Thân cận với bậc Chân nhân, nghe diệu pháp, như lý tác ý, thực hiện pháp và tùy pháp."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Bốn pháp này, này các Tỷ-kheo, được tu tập, được làm cho sung mãn, đưa đến chứng ngộ quả Dự lưu."
+      },
+      {
+        "id": "p8",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn55.56": {
+    "canonicalRef": "sn55.56",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn55.56/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T17:23:08+00:00",
+    "materializedAt": "2026-09-02T17:23:08+00:00",
+    "contentHash": "d898ec573eb7ab95b4c5021b7aaf51320de3a3f38b1893455c47abdba7f145ff",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 55: Tương Ưng Dự Lưu"
+      },
+      {
+        "id": "p2",
+        "text": "VI: Phẩm Với Trí Tuệ"
+      },
+      {
+        "id": "p3",
+        "text": "55.56. Bốn Quả (2)"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 … (như kinh trên, chỉ khác, đây đưa đến chứng ngộ quả Nhất lai )."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn55.57": {
+    "canonicalRef": "sn55.57",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn55.57/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T17:23:08+00:00",
+    "materializedAt": "2026-09-02T17:23:08+00:00",
+    "contentHash": "9a8a7f904f6071f80f4f47a345039519713ca671aca79078421a17721f63e2be",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 55: Tương Ưng Dự Lưu"
+      },
+      {
+        "id": "p2",
+        "text": "VI: Phẩm Với Trí Tuệ"
+      },
+      {
+        "id": "p3",
+        "text": "55.57. Bốn Quả (3)"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 3 … (như kinh trên, chỉ khác, đây đưa đến quả Nhất lai )"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn55.58": {
+    "canonicalRef": "sn55.58",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn55.58/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T17:23:08+00:00",
+    "materializedAt": "2026-09-02T17:23:08+00:00",
+    "contentHash": "171d5da5325ab355caf0d58aeca67fb91aac858eff7f334eed2d2038f9258baf",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 55: Tương Ưng Dự Lưu"
+      },
+      {
+        "id": "p2",
+        "text": "VI: Phẩm Với Trí Tuệ"
+      },
+      {
+        "id": "p3",
+        "text": "55.58. Bốn Quả (4)"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 4 … (như kinh trên, chỉ khác, đây đưa đến quả A-la-hán)"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn55.59": {
+    "canonicalRef": "sn55.59",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn55.59/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T17:23:08+00:00",
+    "materializedAt": "2026-09-02T17:23:08+00:00",
+    "contentHash": "d6f3b09b4155e3cdc240d09a6032fe2a318b1dccd91740f7a3047dc53baed800",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 55: Tương Ưng Dự Lưu"
+      },
+      {
+        "id": "p2",
+        "text": "VI: Phẩm Với Trí Tuệ"
+      },
+      {
+        "id": "p3",
+        "text": "55.59. Lợi Ðắc"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 … đưa đến lợi đắc trí tuệ …"
+      },
+      {
+        "id": "p5",
         "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
       }
     ]
@@ -2679,6 +3451,356 @@
       }
     ]
   },
+  "sn55.60": {
+    "canonicalRef": "sn55.60",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn55.60/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T17:23:08+00:00",
+    "materializedAt": "2026-09-02T17:23:08+00:00",
+    "contentHash": "a77d6f01e2633e6b89b8487775eb17839f637a5787a1e988331a8a70c0bda809",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 55: Tương Ưng Dự Lưu"
+      },
+      {
+        "id": "p2",
+        "text": "VI: Phẩm Với Trí Tuệ"
+      },
+      {
+        "id": "p3",
+        "text": "55.60. Tăng Trưởng"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 … đưa đến tăng trưởng trí tuệ …"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn55.61": {
+    "canonicalRef": "sn55.61",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn55.61/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T17:23:08+00:00",
+    "materializedAt": "2026-09-02T17:23:08+00:00",
+    "contentHash": "ccae2774f2b3cb59120c1cc776ed3f26ad73c174622376a1859f5faf09c97388",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 55: Tương Ưng Dự Lưu"
+      },
+      {
+        "id": "p2",
+        "text": "VI: Phẩm Với Trí Tuệ"
+      },
+      {
+        "id": "p3",
+        "text": "55.61. Quảng Ðại"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 … đưa đến quảng đại trí tuệ …"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn55.62": {
+    "canonicalRef": "sn55.62",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn55.62/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T17:23:08+00:00",
+    "materializedAt": "2026-09-02T17:23:08+00:00",
+    "contentHash": "24a3cad2600d0dbf5bd1923c98b9f13936109c14052e33836d0d8507fc11fef6",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 55: Tương Ưng Dự Lưu"
+      },
+      {
+        "id": "p2",
+        "text": "VII: Phẩm Ðại Trí Tuệ"
+      },
+      {
+        "id": "p3",
+        "text": "55.62. Ðại"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 4 … đưa đến đại trí tuệ …"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn55.63": {
+    "canonicalRef": "sn55.63",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn55.63/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T17:23:08+00:00",
+    "materializedAt": "2026-09-02T17:23:08+00:00",
+    "contentHash": "9143df67389fadd2c862839b2c609e95ae6c6d01e9fec7fbae20df2830b8bcce",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 55: Tương Ưng Dự Lưu"
+      },
+      {
+        "id": "p2",
+        "text": "VII: Phẩm Ðại Trí Tuệ"
+      },
+      {
+        "id": "p3",
+        "text": "55.63. Quảng Ðại (Puthu)"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 4 … đưa đến quảng đại trí tuệ …"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn55.64": {
+    "canonicalRef": "sn55.64",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn55.64/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T17:23:08+00:00",
+    "materializedAt": "2026-09-02T17:23:08+00:00",
+    "contentHash": "34388d563d9ccdd8806e6cf2136284a726b1a11d75d75f8bb5021baf581e1b4c",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 55: Tương Ưng Dự Lưu"
+      },
+      {
+        "id": "p2",
+        "text": "VII: Phẩm Ðại Trí Tuệ"
+      },
+      {
+        "id": "p3",
+        "text": "55.64. Tăng Trưởng (Vipula)"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 4 … đưa đến tăng trưởng trí tuệ …"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn55.65": {
+    "canonicalRef": "sn55.65",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn55.65/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T17:23:09+00:00",
+    "materializedAt": "2026-09-02T17:23:09+00:00",
+    "contentHash": "25e1e105bcd3a5b492af183112aa3733077291b1ec9a440024d6bb747b421005",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 55: Tương Ưng Dự Lưu"
+      },
+      {
+        "id": "p2",
+        "text": "VII: Phẩm Ðại Trí Tuệ"
+      },
+      {
+        "id": "p3",
+        "text": "55.65. Thâm Sâu"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 4 … đưa đến trí tuệ thâm sâu …"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn55.66": {
+    "canonicalRef": "sn55.66",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn55.66/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T17:23:08+00:00",
+    "materializedAt": "2026-09-02T17:23:08+00:00",
+    "contentHash": "90699593938605fc42d68a776715cc43c47ba4b11c8b1752e5dc1af9e3f8ef33",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 55: Tương Ưng Dự Lưu"
+      },
+      {
+        "id": "p2",
+        "text": "VII: Phẩm Ðại Trí Tuệ"
+      },
+      {
+        "id": "p3",
+        "text": "55.66. Không Có Ngang Bằng (Asamatta)"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 4 … đưa đến trí tuệ không có ngang bằng …"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn55.67": {
+    "canonicalRef": "sn55.67",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn55.67/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T17:23:08+00:00",
+    "materializedAt": "2026-09-02T17:23:08+00:00",
+    "contentHash": "88701dc628ed329292c88eb9a2eadfe2da804c902955924a8f94d929629eb8a9",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 55: Tương Ưng Dự Lưu"
+      },
+      {
+        "id": "p2",
+        "text": "VII: Phẩm Ðại Trí Tuệ"
+      },
+      {
+        "id": "p3",
+        "text": "55.67. Sung Mãn (Bhuuri)"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 4 … đưa đến trí tuệ sung mãn …"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn55.68": {
+    "canonicalRef": "sn55.68",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn55.68/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T17:23:08+00:00",
+    "materializedAt": "2026-09-02T17:23:08+00:00",
+    "contentHash": "0532630e96990345c17c04f48a70207fbba19d53cb77bf4672ea611fd22be8fb",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 55: Tương Ưng Dự Lưu"
+      },
+      {
+        "id": "p2",
+        "text": "VII: Phẩm Ðại Trí Tuệ"
+      },
+      {
+        "id": "p3",
+        "text": "55.68. Nhiều"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 4 … đưa đến trí tuệ sung túc …"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn55.69": {
+    "canonicalRef": "sn55.69",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn55.69/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T17:23:09+00:00",
+    "materializedAt": "2026-09-02T17:23:09+00:00",
+    "contentHash": "a6d3d056dfcf7e2cad80fc4bbea3fe26284019301cd7e38773fb30dc25b515a0",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 55: Tương Ưng Dự Lưu"
+      },
+      {
+        "id": "p2",
+        "text": "VII: Phẩm Ðại Trí Tuệ"
+      },
+      {
+        "id": "p3",
+        "text": "55.69. Nhanh Lẹ (Sìgha)"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 4 … đưa đến trí tuệ nhanh nhẹn …"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
   "sn55.7": {
     "canonicalRef": "sn55.7",
     "collection": "SN",
@@ -2802,6 +3924,181 @@
       },
       {
         "id": "p28",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn55.70": {
+    "canonicalRef": "sn55.70",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn55.70/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T17:23:09+00:00",
+    "materializedAt": "2026-09-02T17:23:09+00:00",
+    "contentHash": "57e038966bd3f456aa9efc251e1e0d4dceed9b20ee44db266094ff79f1c9ebc1",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 55: Tương Ưng Dự Lưu"
+      },
+      {
+        "id": "p2",
+        "text": "VII: Phẩm Ðại Trí Tuệ"
+      },
+      {
+        "id": "p3",
+        "text": "55.70. Khinh An"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 4 … đưa đến trí tuệ khinh an …"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn55.71": {
+    "canonicalRef": "sn55.71",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn55.71/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T17:23:09+00:00",
+    "materializedAt": "2026-09-02T17:23:09+00:00",
+    "contentHash": "1005dd98d3500b6ed73a85de9b1ff5707b2261ecfe804e40d58ac426a0f081f5",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 55: Tương Ưng Dự Lưu"
+      },
+      {
+        "id": "p2",
+        "text": "VII: Phẩm Ðại Trí Tuệ"
+      },
+      {
+        "id": "p3",
+        "text": "55.71. Hoan Hỷ (Hàsa)"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 4 … đưa đến trí tuệ hoan hỷ …"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn55.72": {
+    "canonicalRef": "sn55.72",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn55.72/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T17:23:09+00:00",
+    "materializedAt": "2026-09-02T17:23:09+00:00",
+    "contentHash": "9b8596b7d831fa639925bfaadc626054cf675f2b0e8afbb29bdc69831009b017",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 55: Tương Ưng Dự Lưu"
+      },
+      {
+        "id": "p2",
+        "text": "VII: Phẩm Ðại Trí Tuệ"
+      },
+      {
+        "id": "p3",
+        "text": "55.72. Tốc Hành"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 4 … đưa đến trí tuệ tốc hành …"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn55.73": {
+    "canonicalRef": "sn55.73",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn55.73/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T17:23:09+00:00",
+    "materializedAt": "2026-09-02T17:23:09+00:00",
+    "contentHash": "632d02278ddd28430eaa0612d63e18ceb76859fa36172e4ecd70815756bd7b8f",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 55: Tương Ưng Dự Lưu"
+      },
+      {
+        "id": "p2",
+        "text": "VII: Phẩm Ðại Trí Tuệ"
+      },
+      {
+        "id": "p3",
+        "text": "55.73. Sắc Bén"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 4 … đưa đến trí tuệ sắc bén …"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn55.74": {
+    "canonicalRef": "sn55.74",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn55.74/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T17:23:09+00:00",
+    "materializedAt": "2026-09-02T17:23:09+00:00",
+    "contentHash": "4cebb35ebc0a59f56f4b60dfedb18b204914c4d18b0e26d3e8344653fada5a4c",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 55: Tương Ưng Dự Lưu"
+      },
+      {
+        "id": "p2",
+        "text": "VII: Phẩm Ðại Trí Tuệ"
+      },
+      {
+        "id": "p3",
+        "text": "55.74. Thể Nhập (Nibbedhika)"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 4 … đưa đến trí tuệ thể nhập. Thế nào là bốn? (như trên) …"
+      },
+      {
+        "id": "p5",
         "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
       }
     ]
