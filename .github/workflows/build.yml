@@ -24,16 +24,20 @@ jobs:
           const audio=require('./data/catalog/audio.json');
           const lines=f=>fs.readFileSync(f,'utf8').trim().split('\n').filter(Boolean);
           const expected=suttas.length;
-          const ragVi=lines('data/exports/nikaya-rag.vi.jsonl');
-          const ragEn=lines('data/exports/nikaya-rag.en.jsonl');
-          const knVi=lines('data/exports/nikaya-knowledge.vi.jsonl');
-          const knEn=lines('data/exports/nikaya-knowledge.en.jsonl');
+          const ragVi=lines('data/exports/nikaya-rag.vi.jsonl').map(JSON.parse);
+          const ragEn=lines('data/exports/nikaya-rag.en.jsonl').map(JSON.parse);
+          const knVi=lines('data/exports/nikaya-knowledge.vi.jsonl').map(JSON.parse);
+          const knEn=lines('data/exports/nikaya-knowledge.en.jsonl').map(JSON.parse);
           for(const [name,rows] of [['rag.vi',ragVi],['rag.en',ragEn],['knowledge.vi',knVi],['knowledge.en',knEn]]){
-            for(const row of rows)JSON.parse(row);
             if(!rows.length)throw new Error(`${name} export is empty`);
+            if(rows.some(r=>!String(r.text||'').trim()))throw new Error(`${name} contains empty text`);
           }
           if(knVi.length!==expected||knEn.length!==expected)throw new Error(`knowledge export mismatch: expected ${expected}`);
-          if(ragVi.length!==expected*2||ragEn.length!==expected*2)throw new Error(`RAG export mismatch: expected ${expected*2}`);
+          for(const [name,rows] of [['rag.vi',ragVi],['rag.en',ragEn]]){
+            const covered=new Set(rows.map(r=>r.sutta_id));
+            if(covered.size!==expected)throw new Error(`${name} coverage mismatch: ${covered.size}/${expected}`);
+            for(const s of suttas)if(!covered.has(s.id))throw new Error(`${name} missing ${s.id}`);
+          }
           const mn=suttas.filter(s=>s.collection==='MN');
           if(mn.length===152){
             for(let i=1;i<=152;i++){
@@ -52,6 +56,12 @@ jobs:
             }
             console.log('Full MN audio catalog validated: 152/152');
           } else throw new Error(`MN catalog incomplete: ${mn.length}/152`);
+          const sn=suttas.filter(s=>s.collection==='SN');
+          if(sn.length!==1819)throw new Error(`SN catalog incomplete: ${sn.length}/1819`);
+          if(sn.filter(s=>s.canonicalRef.includes('-')).length!==134)throw new Error('SN range canonical count mismatch');
+          if(sn.filter(s=>s.source?.language==='vi'&&s.source?.translator==='Thích Minh Châu').length!==1805)throw new Error('SN Minh Chau source coverage mismatch');
+          if(sn.filter(s=>s.source?.language==='pli').length!==14)throw new Error('SN missing-Vietnamese source count mismatch');
+          console.log('Full SN canonical catalog validated: 1819/1819');
           NODE
       - run: npm run build
       - name: Smoke test reader, home discovery and progress dashboard
@@ -88,6 +98,15 @@ jobs:
           if grep -Fq 'Giọng thư viện' /tmp/mn21.html; then echo 'FAIL: Legacy library TTS leaked into reader'; exit 1; fi
           echo 'PASS: no legacy library TTS'
 
+          curl --fail --silent http://127.0.0.1:3000/vi/library/sn-1-1 -o /tmp/sn11.html
+          must_have /tmp/sn11.html 'TƯB 1.1' 'SN Vietnamese display code'
+          must_have /tmp/sn11.html 'Bộc Lưu' 'SN Vietnamese title'
+          curl --fail --silent http://127.0.0.1:3000/vi/library/sn-3-15 -o /tmp/sn315.html
+          must_have /tmp/sn315.html 'chưa có bản Việt Thích Minh Châu' 'transparent missing Vietnamese marker'
+          must_have /tmp/sn315.html 'Thư viện không tự chuyển sang bản dịch khác' 'no silent translation fallback'
+          curl --fail --silent http://127.0.0.1:3000/vi/library/sn-22-59-anattalakkhana -o /tmp/sn2259.html
+          must_have /tmp/sn2259.html 'Kinh Vô Ngã Tướng' 'preserved editorial SN seed'
+
           curl --fail --silent http://127.0.0.1:3000/vi/tien-do -o /tmp/progress.html
           must_have /tmp/progress.html 'TIẾN ĐỘ SỐ HÓA' 'progress page heading'
           must_have /tmp/progress.html 'Trung Bộ' 'progress page Trung Bộ card'
@@ -98,4 +117,4 @@ jobs:
           echo 'PASS: runtime TTS route absent'
           curl -L --fail --silent --range 0-4095 'https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn21.mp3' -o /tmp/mn21.part
           if [ "$(stat -c%s /tmp/mn21.part)" -le 1000 ]; then echo 'FAIL: MN21 MP3 range fetch too small'; exit 1; fi
-          echo 'V5.1 home/progress/MP3 preservation smoke test PASS'
+          echo 'V5.2 SN canonical materialization smoke test PASS'
