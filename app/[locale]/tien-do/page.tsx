@@ -1,61 +1,56 @@
 import Link from 'next/link';
-import {Activity,CheckCircle2,Clock3,ExternalLink,Headphones,LoaderCircle} from 'lucide-react';
+import {BookOpen,CheckCircle2,Headphones,Search,ShieldCheck,Sparkles} from 'lucide-react';
 import {isLocale,type Locale} from '@/lib/i18n';
 import {notFound} from 'next/navigation';
+import {collections,suttas,suttaAudio} from '@/lib/data';
 
-export const dynamic='force-dynamic';
+export const revalidate=3600;
 
-const repo='nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya';
-const api=`https://api.github.com/repos/${repo}`;
-
-type Run={id:number;name:string;display_title:string;status:string;conclusion:string|null;html_url:string;created_at:string;updated_at:string;head_branch:string};
-type ReleaseAsset={name:string};
-
-type CollectionProgress={code:string;vi:string;en:string;tag:string;target:number|null};
-const specs:CollectionProgress[]=[
-  {code:'MN',vi:'Trung Bộ',en:'Middle Discourses',tag:'mn-vi-audio-v1',target:152},
-  {code:'DN',vi:'Trường Bộ',en:'Long Discourses',tag:'dn-vi-audio-v1',target:34},
-  {code:'SN',vi:'Tương Ưng Bộ',en:'Connected Discourses',tag:'sn-vi-audio-v1',target:null},
-  {code:'AN',vi:'Tăng Chi Bộ',en:'Numbered Discourses',tag:'an-vi-audio-v1',target:null},
-  {code:'KN',vi:'Tiểu Bộ',en:'Minor Collection',tag:'kn-vi-audio-v1',target:null},
-];
-
-async function gh<T>(path:string):Promise<T|null>{
-  try{
-    const r=await fetch(`${api}${path}`,{headers:{Accept:'application/vnd.github+json','User-Agent':'Nikaya-Progress/1.0'},cache:'no-store'});
-    if(!r.ok)return null;
-    return await r.json() as T;
-  }catch{return null;}
-}
-
-async function mp3Count(tag:string){
-  const release=await gh<{id:number}>(`/releases/tags/${tag}`);
-  if(!release)return 0;
-  let count=0;
-  for(let page=1;page<=4;page++){
-    const assets=await gh<ReleaseAsset[]>(`/releases/${release.id}/assets?per_page=100&page=${page}`);
-    if(!assets?.length)break;
-    count+=assets.filter(a=>a.name.endsWith('.mp3')).length;
-    if(assets.length<100)break;
-  }
-  return count;
-}
+const publicStatus:Record<string,{noteVi:string;noteEn:string;state:'ready'|'growing'}>={
+  DN:{state:'ready',noteVi:'Đã có danh mục, toàn văn tiếng Việt và audio để đọc/nghe trực tuyến.',noteEn:'Catalog, Vietnamese full text and audio are available online.'},
+  MN:{state:'ready',noteVi:'Đủ 152 bài trong danh mục, có audio; toàn văn tiếng Việt đang được chuẩn hóa để hiển thị đồng nhất.',noteEn:'All 152 discourses are cataloged with audio; Vietnamese full text is being normalized for consistent display.'},
+  SN:{state:'growing',noteVi:'Đã xác định đầy đủ cấu trúc 56 Tương ưng; toàn văn đang được bổ sung liên tục.',noteEn:'The full 56-saṁyutta structure is mapped and full text is being added continuously.'},
+  AN:{state:'growing',noteVi:'Đã xác định 1.408 mục kinh theo cấu trúc chuẩn; nội dung tiếng Việt đang được tích hợp.',noteEn:'1,408 canonical entries have been mapped; Vietnamese content is being integrated.'},
+  KN:{state:'growing',noteVi:'Đang chuẩn hóa cấu trúc nhiều tập của Tiểu Bộ để tránh gộp hoặc tách sai.',noteEn:'The multi-work Minor Collection structure is being normalized carefully.'},
+};
 
 export default async function ProgressPage({params}:{params:Promise<{locale:string}>}){
   const {locale:raw}=await params;if(!isLocale(raw))notFound();const locale=raw as Locale;const vi=locale==='vi';
-  const runsData=await gh<{workflow_runs:Run[]}>(`/actions/runs?per_page=12`);
-  const runs=runsData?.workflow_runs||[];
-  const active=runs.filter(r=>r.status==='queued'||r.status==='in_progress');
-  const counts=await Promise.all(specs.map(s=>mp3Count(s.tag)));
-  const latest=runs[0];
+  const audioReady=suttas.filter(s=>Boolean(suttaAudio(s,locale))).length;
+  const catalogReady=suttas.length;
+
   return <main className="progressPage"><div className="shell progressShell">
-    <div className="progressHero"><div><span className="eyebrow">{vi?'TIẾN ĐỘ SỐ HÓA':'DIGITIZATION PROGRESS'}</span><h1>{vi?'5 Đại Tạng Kinh Nikāya':'Five Nikāya Collections'}</h1><p>{vi?'Trang này đọc trực tiếp trạng thái GitHub. Nếu có batch đang chạy, bạn sẽ thấy ngay ở đây.':'This page reads the live GitHub build status.'}</p></div><a className="btn btnGhost" href={`https://github.com/${repo}/actions`} target="_blank" rel="noreferrer"><Activity size={17}/>{vi?'Mở GitHub Actions':'Open GitHub Actions'}<ExternalLink size={14}/></a></div>
+    <section className="progressHero" style={{alignItems:'stretch'}}>
+      <div style={{maxWidth:820}}>
+        <span className="eyebrow">{vi?'THƯ VIỆN ĐANG ĐƯỢC HOÀN THIỆN':'LIBRARY IN PROGRESS'}</span>
+        <h1>{vi?'Một thư viện Nikāya để đọc, nghe và tra cứu lâu dài':'A Nikāya library built for reading, listening and long-term reference'}</h1>
+        <p>{vi?'Mục tiêu là đưa năm bộ kinh Nikāya vào một nơi dễ sử dụng trên điện thoại và máy tính, có nguồn đối chiếu rõ ràng, đọc trực tuyến, nghe audio và tải tài liệu khi cần. Nội dung được bổ sung từng bước; phần chưa chắc chắn sẽ không được tự ý bịa hoặc gắn nhãn là hoàn tất.':'The goal is to bring the five Nikāya collections into one reliable place with clear sources, online reading, audio and downloads. Content is added in verified stages; uncertain material is never presented as complete.'}</p>
+        <div style={{display:'flex',gap:10,flexWrap:'wrap',marginTop:20}}>
+          <Link className="btn btnPrimary" href={`/${locale}#library`}><Search size={17}/>{vi?'Tìm bài kinh':'Search the library'}</Link>
+          <Link className="btn btnGhost" href={`/${locale}/thu-giong`}><Headphones size={17}/>{vi?'Nghe thử giọng đọc':'Try the narration'}</Link>
+        </div>
+      </div>
+      <div style={{minWidth:260,display:'grid',gridTemplateColumns:'1fr 1fr',gap:10,alignContent:'center'}}>
+        <div style={{padding:18,border:'1px solid var(--line)',borderRadius:18,background:'var(--surface)'}}><strong style={{fontSize:28,display:'block'}}>{catalogReady.toLocaleString('vi-VN')}</strong><span style={{fontSize:12,color:'var(--muted)'}}>{vi?'mục kinh trong thư viện':'catalog entries'}</span></div>
+        <div style={{padding:18,border:'1px solid var(--line)',borderRadius:18,background:'var(--surface)'}}><strong style={{fontSize:28,display:'block'}}>{audioReady.toLocaleString('vi-VN')}</strong><span style={{fontSize:12,color:'var(--muted)'}}>{vi?'bài hiện có audio':'entries with audio'}</span></div>
+      </div>
+    </section>
 
-    <section className={`liveWork ${active.length?'isRunning':'isIdle'}`}><div className="liveIcon">{active.length?<LoaderCircle className="spin" size={22}/>:<Clock3 size={22}/>}</div><div><strong>{active.length?(vi?'Đang có công việc chạy thật':'Work is running now'):(vi?'Hiện không có job GitHub đang chạy':'No GitHub job is running right now')}</strong><p>{active.length?active.map(r=>r.name).join(' · '):(vi?'Tác vụ tự động sẽ tiếp tục từ checkpoint; khi một workflow bắt đầu, trạng thái sẽ đổi ngay.':'Automation will resume from the latest checkpoint.')}</p></div></section>
+    <section className="section" style={{paddingTop:20}}>
+      <div className="sectionHead"><div><span className="sectionLabel">01</span><h2>{vi?'Tiến độ theo từng bộ kinh':'Progress by collection'}</h2><p>{vi?'Chỉ hiển thị thông tin hữu ích cho người đọc; trạng thái kỹ thuật nội bộ đã được ẩn.':'Only reader-facing information is shown; internal technical status is intentionally hidden.'}</p></div></div>
+      <div className="collectionGrid">{collections.map(c=>{const st=publicStatus[c.code];return <article className={`collectionCard ${c.accent}`} key={c.code} style={{minHeight:290}}><div className="collectionTop"><span className="collectionCode">{vi?c.viCode:c.code}</span><span className="collectionCount">{c.count}</span></div><div><h3>{vi?c.vi:c.en}</h3><p className="pali">{c.pali}</p><p>{st?.[vi?'noteVi':'noteEn']}</p></div><div style={{marginTop:'auto',paddingTop:18,display:'flex',alignItems:'center',gap:7,fontSize:11,fontWeight:800,color:st?.state==='ready'?'var(--brand)':'var(--gold)'}}>{st?.state==='ready'?<CheckCircle2 size={16}/>:<Sparkles size={16}/>}<span>{st?.state==='ready'?(vi?'Đã có thể sử dụng':'Available now'):(vi?'Đang tiếp tục bổ sung':'Growing continuously')}</span></div></article>})}</div>
+    </section>
 
-    <div className="progressGrid">{specs.map((s,i)=>{const count=counts[i];const done=s.target!==null&&count>=s.target;const pct=s.target?Math.min(100,Math.round(count/s.target*100)):0;return <article className="progressCard" key={s.code}><div className="progressCardTop"><span className="progressCode">{s.code}</span>{done?<CheckCircle2 size={20}/>:<Headphones size={20}/>}</div><h2>{vi?s.vi:s.en}</h2><strong className="progressNumber">{s.target!==null?`${count}/${s.target} MP3`:(count?`${count} MP3`:(vi?'Đang chuẩn bị':'Preparing'))}</strong>{s.target!==null&&<div className="progressBar" aria-label={`${pct}%`}><span style={{width:`${pct}%`}}/></div>}<small>{done?(vi?'Hoàn tất MP3':'MP3 complete'):(count?(vi?'Đang dựng MP3':'Rendering MP3'):(vi?'Chưa có release MP3':'No MP3 release yet'))}</small></article>})}</div>
+    <section className="section" style={{paddingTop:14}}>
+      <div className="sectionHead"><div><span className="sectionLabel">02</span><h2>{vi?'Bạn có thể làm gì ngay bây giờ?':'What can you do right now?'}</h2></div></div>
+      <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(220px,1fr))',gap:12}}>
+        {[{icon:<BookOpen size={20}/>,t:vi?'Đọc toàn văn':'Read full text',d:vi?'Mở bài kinh trực tiếp trên web, chữ lớn và dễ đọc trên điện thoại.':'Open discourses directly in a mobile-friendly reader.'},{icon:<Headphones size={20}/>,t:vi?'Nghe audio':'Listen to audio',d:vi?'Nghe MP3, đổi tốc độ và tiếp tục từ vị trí đã nghe trước đó.':'Play MP3, change speed and resume where you left off.'},{icon:<Search size={20}/>,t:vi?'Tìm và lọc':'Search and filter',d:vi?'Tìm theo mã kinh, tên Việt, Pāli, bộ kinh hoặc chủ đề.':'Search by reference, title, Pāli, collection or topic.'},{icon:<ShieldCheck size={20}/>,t:vi?'Đối chiếu nguồn':'Verify sources',d:vi?'Các bài có nguồn được ghi rõ để người đọc có thể kiểm tra lại khi cần.':'Source information is shown so readers can verify material when needed.'}].map(x=><article key={x.t} style={{padding:20,border:'1px solid var(--line)',borderRadius:20,background:'var(--surface)'}}><div style={{width:42,height:42,borderRadius:13,display:'grid',placeItems:'center',background:'var(--surface-2)',color:'var(--brand)',marginBottom:14}}>{x.icon}</div><h3 style={{margin:'0 0 7px',fontSize:18}}>{x.t}</h3><p style={{margin:0,color:'var(--muted)',lineHeight:1.6,fontSize:13}}>{x.d}</p></article>)}</div>
+    </section>
 
-    <section className="recentRuns"><div className="sectionHead"><div><h2>{vi?'Hoạt động gần đây':'Recent activity'}</h2><p>{vi?'Các workflow mới nhất của dự án.':'Latest project workflows.'}</p></div></div><div className="runList">{runs.slice(0,8).map(r=><a href={r.html_url} target="_blank" rel="noreferrer" key={r.id}><span className={`runDot ${r.status}`}/><span><strong>{r.name}</strong><small>{r.display_title} · {r.head_branch}</small></span><em>{r.status==='completed'?(r.conclusion||'done'):r.status}</em></a>)}</div>{latest&&<p className="progressUpdated">{vi?'GitHub cập nhật gần nhất':'Latest GitHub update'}: {new Date(latest.updated_at).toLocaleString(vi?'vi-VN':'en-US',{timeZone:'Asia/Ho_Chi_Minh'})}</p>}</section>
+    <section style={{margin:'18px 0 38px',padding:24,border:'1px solid #d7ded9',borderRadius:22,background:'#f2f7f4'}}>
+      <div style={{display:'flex',gap:12,alignItems:'flex-start'}}><ShieldCheck size={23} style={{flex:'0 0 auto',marginTop:2,color:'var(--brand)'}}/><div><strong style={{fontSize:17}}>{vi?'Nguyên tắc của thư viện':'Library principle'}</strong><p style={{margin:'7px 0 0',lineHeight:1.7,color:'var(--muted)'}}>{vi?'Ưu tiên bản kinh có nguồn rõ ràng và giữ nguyên cấu trúc kinh điển. Phần nào chưa có bản Việt đáng tin cậy sẽ được ghi là chưa có, thay vì dùng AI tạo nội dung rồi trình bày như kinh văn gốc.':'The library prioritizes traceable sources and canonical structure. When a trustworthy translation is unavailable, it is marked as unavailable rather than generated and presented as scripture.'}</p></div></div>
+    </section>
+
     <Link className="backProgress" href={`/${locale}`}>{vi?'← Về trang chủ':'← Back home'}</Link>
   </div></main>;
 }
