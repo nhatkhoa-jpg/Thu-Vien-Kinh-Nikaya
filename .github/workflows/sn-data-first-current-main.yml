@@ -117,10 +117,12 @@ jobs:
             fi
           }
 
-          for slug in dn-1 dn-16 dn-34; do
-            fetch_page "http://127.0.0.1:3000/vi/library/$slug" "/tmp/$slug.html"
-            grep -Fq 'TOÀN VĂN BÀI KINH' "/tmp/$slug.html"
-            grep -Fq 'PDF' "/tmp/$slug.html"
+          for uid in dn1 dn16 dn34; do
+            slug=$(node -e "const rows=require('./data/catalog/suttas.json');const s=rows.find(x=>x.canonicalRef===process.argv[1]);if(!s)process.exit(2);process.stdout.write(s.slug)" "$uid")
+            echo "DN smoke $uid -> $slug"
+            fetch_page "http://127.0.0.1:3000/vi/library/$slug" "/tmp/$uid.html"
+            grep -Fq 'TOÀN VĂN BÀI KINH' "/tmp/$uid.html"
+            grep -Fq 'PDF' "/tmp/$uid.html"
           done
 
           fetch_page 'http://127.0.0.1:3000/vi?collection=SN' /tmp/home-sn.html
