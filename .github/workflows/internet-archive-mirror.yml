@@ -1,0 +1,86 @@
+name: Internet Archive Preservation Mirror
+
+on:
+  workflow_dispatch:
+    inputs:
+      collection:
+        description: Nikaya collection to prepare/mirror
+        required: true
+        default: DN
+        type: choice
+        options: [DN, MN, SN, AN, KN]
+      publish_content:
+        description: Upload scripture-bearing PDF/MP3 assets (requires verified redistribution rights)
+        required: true
+        default: false
+        type: boolean
+      rights_confirmation:
+        description: Type YES_I_HAVE_VERIFIED_REDISTRIBUTION_RIGHTS only after rights are verified
+        required: false
+        default: ''
+        type: string
+  pull_request:
+    branches: [main]
+    paths:
+      - 'scripts/ia_mirror.py'
+      - '.github/workflows/internet-archive-mirror.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: internet-archive-mirror-${{ github.event_name == 'workflow_dispatch' && inputs.collection || 'DN-test' }}
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    env:
+      COLLECTION: ${{ github.event_name == 'workflow_dispatch' && inputs.collection || 'DN' }}
+      IA_ACCESS_KEY: ${{ github.event_name == 'workflow_dispatch' && secrets.IA_ACCESS_KEY || '' }}
+      IA_SECRET_KEY: ${{ github.event_name == 'workflow_dispatch' && secrets.IA_SECRET_KEY || '' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - name: Export body-only media pack
+        run: npm run media:export -- --collection "$COLLECTION" --out /tmp/local-media
+      - name: Validate mirror plan without secrets on pull requests
+        if: github.event_name == 'pull_request'
+        run: |
+          python scripts/ia_mirror.py --collection DN --pack /tmp/local-media --identifier nikaya-vietnamese-dn --dry-run
+          test -f /tmp/local-media/dn/PRESERVATION-MANIFEST.json
+          test -f /tmp/local-media/dn/SHA256SUMS
+          ! grep -R -F 'Prepared for SuttaCentral' /tmp/local-media/dn/tts
+      - name: Validate Internet Archive credentials
+        if: github.event_name == 'workflow_dispatch'
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "$IA_ACCESS_KEY" || { echo 'IA_ACCESS_KEY missing'; exit 1; }
+          test -n "$IA_SECRET_KEY" || { echo 'IA_SECRET_KEY missing'; exit 1; }
+          echo 'PASS: Internet Archive credentials are available.'
+      - name: Install Internet Archive client
+        if: github.event_name == 'workflow_dispatch'
+        run: python -m pip install --disable-pip-version-check internetarchive
+      - name: Prepare PDF only when public content was explicitly requested
+        if: github.event_name == 'workflow_dispatch' && inputs.publish_content
+        run: |
+          npx playwright install --with-deps chromium
+          npm run media:pdf -- --collection "$COLLECTION" --pack /tmp/local-media
+      - name: Mirror preservation metadata only
+        if: github.event_name == 'workflow_dispatch' && !inputs.publish_content
+        run: |
+          python scripts/ia_mirror.py --collection "$COLLECTION" --pack /tmp/local-media --identifier "nikaya-vietnamese-$(echo "$COLLECTION" | tr '[:upper:]' '[:lower:]')"
+      - name: Mirror verified public content
+        if: github.event_name == 'workflow_dispatch' && inputs.publish_content
+        env:
+          RIGHTS_CONFIRMATION: ${{ inputs.rights_confirmation }}
+        run: |
+          python scripts/ia_mirror.py --collection "$COLLECTION" --pack /tmp/local-media --identifier "nikaya-vietnamese-$(echo "$COLLECTION" | tr '[:upper:]' '[:lower:]')" --publish-content --rights-confirmation "$RIGHTS_CONFIRMATION"
