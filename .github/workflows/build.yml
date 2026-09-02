@@ -99,12 +99,14 @@ jobs:
           echo "Smoke reader canonicalRef=mn21 URL=${MN21_URL}"
           curl --fail --silent "$MN21_URL" -o /tmp/mn21.html || { echo "FAIL reader canonicalRef=mn21 URL=${MN21_URL}"; exit 1; }
           must_have /tmp/mn21.html 'compactEssentials' 'compact reader essentials'
-          must_have /tmp/mn21.html 'primaryMp3Disclosure' 'primary prebuilt MP3 disclosure'
           must_not_have /tmp/mn21.html 'V5.1-HOME-DN' 'public reader has no internal build marker'
-          must_have /tmp/mn21.html 'mn21.mp3' 'MN21 MP3 URL'
+          must_have /tmp/mn21.html '/media/audio/gemini/mn/mn21.mp3' 'preferred Gemini audio candidate'
+          must_have /tmp/mn21.html 'mn21.mp3' 'MN21 fallback MP3 candidate'
           must_have /tmp/mn21.html 'mn21.manifest.json' 'MN21 preservation manifest URL'
-          must_have /tmp/mn21.html 'Nghe bài kinh' 'listen label'
           must_have /tmp/mn21.html 'Bản dịch:' 'compact source label'
+          must_have components/R2AudioDisclosure.tsx "method:'HEAD'" 'runtime audio availability probing'
+          must_have components/R2AudioDisclosure.tsx "provider==='gemini'" 'Gemini quality preference'
+          must_have components/BrowserReader.tsx 'speechSynthesis' 'browser speech fallback implementation'
           if grep -Fq 'Giọng thư viện' /tmp/mn21.html; then echo 'FAIL: Legacy library TTS leaked into reader'; exit 1; fi
           echo 'PASS: no legacy library TTS'
 
@@ -120,4 +122,4 @@ jobs:
           echo 'PASS: runtime TTS route absent'
           curl -L --fail --silent --range 0-4095 'https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn21.mp3' -o /tmp/mn21.part
           if [ "$(stat -c%s /tmp/mn21.part)" -le 1000 ]; then echo 'FAIL: MN21 MP3 range fetch too small'; exit 1; fi
-          echo 'V5.1 public home/progress/MP3 preservation smoke test PASS'
+          echo 'V5.1 public home/progress/hybrid-audio preservation smoke test PASS'
