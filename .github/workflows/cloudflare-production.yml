@@ -1,0 +1,35 @@
+name: Cloudflare Production Deploy
+
+on:
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: Corpus milestone or approved production release
+        required: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cloudflare-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment: cloudflare-production
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+      - run: npm run build:vinext
+      - name: Deploy only after an explicit milestone dispatch
+        run: npm run deploy:vinext
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
