@@ -7,16 +7,16 @@ This policy applies to the Theravāda library and reusable scripture-library pro
 The website must always prefer the best verified narration available, while preserving resilient fallbacks:
 
 1. **Preferred:** Gemini 3.1 Flash TTS generated online by GitHub Actions and stored at `audio/gemini/<collection>/<canonicalRef>.mp3`.
-2. **Backup MP3:** trusted PC/local narration already published at the legacy path `audio/<collection>/<canonicalRef>.mp3` (currently VieNeu/local production and any verified legacy audio).
+2. **Backup MP3:** trusted PC/local narration already published at `audio/<collection>/<canonicalRef>.mp3`, plus any existing verified catalog MP3.
 3. **Last-resort option:** browser speech synthesis from the exact source-backed text already displayed on the scripture page.
 
-A higher-quality cloud asset must never overwrite or delete a valid local MP3. The two lanes are independent and can improve coverage in parallel.
+A higher-quality cloud asset must never overwrite or delete a valid local MP3. The two production lanes are independent and can improve coverage in parallel.
 
 ## GitHub online lane
 
 `materialized source-backed corpus in GitHub -> GitHub Actions -> Gemini 3.1 Flash TTS -> technical validation -> Cloudflare R2 preferred prefix -> remote verification -> Archive.org mirror -> website discovers audio`
 
-The GitHub lane does not depend on the Windows PC. The Windows/PC TTS lane may continue independently and publish backup audio.
+The GitHub lane does not depend on the Windows PC. The Windows/PC TTS lane continues independently and publishes backup audio.
 
 ## Free-tier behaviour
 
@@ -46,14 +46,15 @@ The GitHub lane does not depend on the Windows PC. The Windows/PC TTS lane may c
 
 For each Vietnamese scripture page the client probes sources in priority order:
 
-`Gemini preferred -> local/legacy MP3 -> browser reader`
+`Gemini preferred -> local/legacy/catalog MP3 -> browser reader`
 
-Only a verified available MP3 is shown. Browser reading remains an optional control whenever text is available, even when an MP3 exists.
+Only an available MP3 is selected. Browser reading remains an optional control whenever text is available, even when a better MP3 exists.
 
 ## Storage and publishing
 
 - Preferred Gemini: `audio/gemini/<collection>/<canonicalRef>.mp3`.
 - Local/PC backup: `audio/<collection>/<canonicalRef>.mp3`.
+- Existing catalog MP3 remains a valid lower-priority fallback.
 - Verify byte size and SHA-256 metadata after cloud upload.
 - Keep only small receipts in GitHub Actions artifacts; never commit large MP3 files to Git history.
 - Trigger Archive.org mirror after verified R2 publication.
