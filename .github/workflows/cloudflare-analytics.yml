@@ -1,0 +1,47 @@
+name: Cloudflare Analytics Worker
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'ops/analytics/**'
+      - '.github/workflows/cloudflare-analytics.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cloudflare-analytics-worker
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: cloudflare-production
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Validate Cloudflare auth
+        run: npx wrangler whoami
+      - name: Deploy private counter service
+        run: npx wrangler deploy --config ops/analytics/wrangler.jsonc
+      - name: Health check
+        run: |
+          set -euo pipefail
+          url='https://thu-vien-kinh-nikaya-analytics.nhatkhoa-nikaya.workers.dev/health'
+          for i in {1..24}; do
+            if curl -fsS "$url" | grep -q '"ok":true'; then
+              echo "Analytics worker healthy: $url" >> "$GITHUB_STEP_SUMMARY"
+              exit 0
+            fi
+            sleep 5
+          done
+          exit 1
