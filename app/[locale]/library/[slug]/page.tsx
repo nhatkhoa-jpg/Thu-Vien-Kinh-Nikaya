@@ -2,7 +2,7 @@ import type {Metadata} from 'next';
 import {notFound} from 'next/navigation';
 import Link from 'next/link';
 import {ArrowLeft,Download,ExternalLink,Headphones,Clock,ArrowRight,FileText,ChevronDown} from 'lucide-react';
-import {dict,isLocale,locales,type Locale} from '@/lib/i18n';
+import {dict,isDeferredLocale,isLocale,scriptureLocales,type Locale} from '@/lib/i18n';
 import {suttas,collectionDisplayCode,suttaDisplayCode,suttaAudio} from '@/lib/data';
 import {getSuttaFullText} from '@/lib/sutta-content';
 import {SITE_URL} from '@/lib/site';
@@ -19,7 +19,8 @@ export const revalidate=86400;
 export async function generateMetadata({params}:{params:Promise<{locale:string;slug:string}>}):Promise<Metadata>{
   const {locale:raw,slug}=await params;if(!isLocale(raw))return{};
   const s=suttas.find(x=>x.slug===slug);if(!s)return{};const locale=raw as Locale;const vi=locale==='vi';const code=suttaDisplayCode(s,vi);const displayTitle=vi?s.vi:s.en;const title=`${code} · ${displayTitle}`;const summary=vi?s.summaryVi:s.summaryEn;const description=summary||`${code} · ${displayTitle} · ${collectionDisplayCode(s.collection,vi)}`;
-  return{title,description,alternates:{canonical:`${SITE_URL}/${locale}/library/${slug}`,languages:Object.fromEntries(locales.map(l=>[l,`${SITE_URL}/${l}/library/${slug}`]))},openGraph:{title,description,url:`${SITE_URL}/${locale}/library/${slug}`,type:'article'}};
+  const deferred=isDeferredLocale(locale);const canonicalLocale=deferred?'en':locale;
+  return{title,description,robots:deferred?{index:false,follow:true}:undefined,alternates:{canonical:`${SITE_URL}/${canonicalLocale}/library/${slug}`,languages:Object.fromEntries(scriptureLocales.map(l=>[l,`${SITE_URL}/${l}/library/${slug}`]))},openGraph:{title,description,url:`${SITE_URL}/${canonicalLocale}/library/${slug}`,type:'article'}};
 }
 
 export default async function SuttaPage({params}:{params:Promise<{locale:string;slug:string}>}){
