@@ -1,15 +1,16 @@
 {
   "schemaVersion": 1,
-  "lastVerifiedAt": "2026-09-02T02:55:00Z",
+  "lastVerifiedAt": "2026-09-02T04:28:59.037Z",
   "hosting": {
     "currentPrimary": "vercel",
     "plannedPrimary": "cloudflare-workers",
     "secondary": "vercel",
-    "phase": "adapter-configured-preview-pending",
+    "phase": "preview-verified-production-pending",
+    "cloudflarePreview": "https://thu-vien-kinh-nikaya-preview.nhatkhoa-nikaya.workers.dev",
     "cloudflareDeployment": null,
     "cloudflareBuild": "pass",
-    "cloudflareDryRun": "pass",
-    "vercelStatus": "rate-limited-no-retry",
+    "cloudflareSmoke": "pass",
+    "vercelStatus": "backup-rate-limited-no-retry",
     "cutoverAllowed": false
   }
 }
