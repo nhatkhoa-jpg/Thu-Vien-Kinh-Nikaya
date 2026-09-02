@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "lastVerifiedAt": "2026-09-02T02:55:00Z",
+  "hosting": {
+    "currentPrimary": "vercel",
+    "plannedPrimary": "cloudflare-workers",
+    "secondary": "vercel",
+    "phase": "adapter-configured-preview-pending",
+    "cloudflareDeployment": null,
+    "cloudflareBuild": "pass",
+    "cloudflareDryRun": "pass",
+    "vercelStatus": "rate-limited-no-retry",
+    "cutoverAllowed": false
+  }
+}
