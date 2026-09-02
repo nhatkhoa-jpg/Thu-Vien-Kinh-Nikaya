@@ -1,11 +1,11 @@
 {
   "collection": "SN",
   "catalogCount": 1819,
-  "verifiedBefore": 1185,
+  "verifiedBefore": 1305,
   "selected": 120,
   "materializedThisRun": 120,
   "missingVietnameseThisRun": [],
   "failures": {},
-  "remainingAfterRun": 500,
-  "lastRunAt": "2026-09-02T13:26:12+00:00"
+  "remainingAfterRun": 380,
+  "lastRunAt": "2026-09-02T14:25:23+00:00"
 }
