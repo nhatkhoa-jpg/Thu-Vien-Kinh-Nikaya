@@ -1,0 +1,87 @@
+{
+  "total": 160,
+  "counts": {
+    "DN": 2,
+    "MN": 152,
+    "SN": 2,
+    "AN": 2,
+    "KN": 2
+  },
+  "sn": [
+    {
+      "id": "nikaya.sn.56.11",
+      "canonicalRef": "sn56.11",
+      "slug": "sn-56-11-dhammacakkappavattana",
+      "code": "SN 56.11",
+      "viCode": "TƯB 56.11",
+      "collection": "SN",
+      "pali": "Dhammacakkappavattana Sutta",
+      "vi": "Kinh Chuyển Pháp Luân",
+      "en": "Setting the Dhamma Wheel in Motion",
+      "topics": [
+        "tứ diệu đế",
+        "trung đạo",
+        "bát chánh đạo"
+      ],
+      "source": {
+        "url": "https://suttacentral.net/sn56.11/en/sujato",
+        "provider": "SuttaCentral",
+        "translator": "Bhikkhu Sujato",
+        "license": "CC0",
+        "language": "en"
+      },
+      "media": {
+        "bookUrl": "https://suttacentral.net/edition/sn/en/sujato",
+        "mp3Url": "https://static1.squarespace.com/static/58384d438419c2f3cb695f5b/t/5a2efa1f4192022b9fc5dce6/1513028180495/%5B11%5D%2BTurning%2Bthe%2Bwheel%2Bof%2Btruth%2B-%2BMP3.mp3"
+      },
+      "summary": {
+        "vi": "Bài pháp đầu tiên trình bày Trung đạo, Bốn sự thật cao quý và con đường thực hành.",
+        "en": "The first teaching on the Middle Way, Four Noble Truths, and the path of practice."
+      },
+      "practice": {
+        "vi": "Đây là điểm bắt đầu rất tốt cho người mới. Có thể nghe audio trước rồi đọc lại phần Tứ Diệu Đế.",
+        "en": "An excellent starting point. Listen first, then revisit the Four Noble Truths in the text."
+      },
+      "readMinutes": 12,
+      "featured": true,
+      "contentVersion": "2026-09-01.1"
+    },
+    {
+      "id": "nikaya.sn.22.59",
+      "canonicalRef": "sn22.59",
+      "slug": "sn-22-59-anattalakkhana",
+      "code": "SN 22.59",
+      "viCode": "TƯB 22.59",
+      "collection": "SN",
+      "pali": "Anattalakkhaṇa Sutta",
+      "vi": "Kinh Vô Ngã Tướng",
+      "en": "The Characteristic of Not-Self",
+      "topics": [
+        "vô ngã",
+        "năm uẩn",
+        "tuệ quán"
+      ],
+      "source": {
+        "url": "https://suttacentral.net/sn22.59/en/sujato",
+        "provider": "SuttaCentral",
+        "translator": "Bhikkhu Sujato",
+        "license": "CC0",
+        "language": "en"
+      },
+      "media": {
+        "bookUrl": "https://suttacentral.net/edition/sn/en/sujato"
+      },
+      "summary": {
+        "vi": "Bài kinh trọng yếu về việc quán năm uẩn là vô thường, khổ và không phải tự ngã.",
+        "en": "A key discourse on seeing the five aggregates as impermanent, stressful, and not-self."
+      },
+      "practice": {
+        "vi": "Đọc chậm từng uẩn và liên hệ trực tiếp với kinh nghiệm thân tâm hiện tại.",
+        "en": "Take one aggregate at a time and relate it to present-moment experience."
+      },
+      "readMinutes": 10,
+      "featured": false,
+      "contentVersion": "2026-09-01.1"
+    }
+  ]
+}
