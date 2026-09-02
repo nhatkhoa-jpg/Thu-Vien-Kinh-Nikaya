@@ -109,8 +109,10 @@ jobs:
           echo 'PASS: no legacy library TTS'
 
           curl --fail --silent http://127.0.0.1:3000/vi/tien-do -o /tmp/progress.html
-          must_have /tmp/progress.html 'TIẾN ĐỘ SỐ HÓA' 'progress page heading'
+          must_have /tmp/progress.html 'DỰ ÁN 5 ĐẠI TẠNG KINH' 'public progress page heading'
           must_have /tmp/progress.html 'Trung Bộ' 'progress page Trung Bộ card'
+          must_not_have /tmp/progress.html 'GitHub Actions' 'public progress page hides internal workflows'
+          must_not_have /tmp/progress.html 'head_branch' 'public progress page hides branch internals'
 
           curl --fail --silent http://127.0.0.1:3000/en > /dev/null
           STATUS=$(curl --silent --output /dev/null --write-out '%{http_code}' http://127.0.0.1:3000/api/tts)
@@ -118,4 +120,4 @@ jobs:
           echo 'PASS: runtime TTS route absent'
           curl -L --fail --silent --range 0-4095 'https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn21.mp3' -o /tmp/mn21.part
           if [ "$(stat -c%s /tmp/mn21.part)" -le 1000 ]; then echo 'FAIL: MN21 MP3 range fetch too small'; exit 1; fi
-          echo 'V5.1 home/progress/MP3 preservation smoke test PASS'
+          echo 'V5.1 public home/progress/MP3 preservation smoke test PASS'
