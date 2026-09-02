@@ -1,7 +1,7 @@
 import type {Metadata} from 'next';
 import {notFound} from 'next/navigation';
 import Header from '@/components/Header';
-import {dict,isLocale,languageNames,locales,type Locale} from '@/lib/i18n';
+import {dict,isDeferredLocale,isLocale,languageNames,locales,type Locale} from '@/lib/i18n';
 import {SITE_URL} from '@/lib/site';
 
 export function generateStaticParams(){return locales.map(locale=>({locale}))}
@@ -11,6 +11,7 @@ export async function generateMetadata({params}:{params:Promise<{locale:string}>
   if(!isLocale(raw)) return {};
   const locale=raw as Locale;
   const d=dict(locale);
+  if(isDeferredLocale(locale))return {title:d.brand,description:d.heroLead,robots:{index:false,follow:true},alternates:{canonical:`${SITE_URL}/en`}};
   return {
     title:d.brand,
     description:d.heroLead,
