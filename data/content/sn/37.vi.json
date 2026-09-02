@@ -1,0 +1,1168 @@
+{
+  "sn37.1": {
+    "canonicalRef": "sn37.1",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn37.1/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:55+00:00",
+    "materializedAt": "2026-09-02T12:30:55+00:00",
+    "contentHash": "60bf253cbaf08318060c21d3c5b65b5e5723b3dc3f53fb06db8397df2baccc92",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 37: Tương Ưng Nữ Nhân"
+      },
+      {
+        "id": "p2",
+        "text": "Phần Một—Phẩm Trung Lược"
+      },
+      {
+        "id": "p3",
+        "text": "37.1. Khả Ý Và Không Khả Ý (1)"
+      },
+      {
+        "id": "p4",
+        "text": "S.iv,238Vi-n 1 …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Này các Tỷ-kheo, đầy đủ năm đức tánh, người nữ nhân hoàn toàn không khả ý đối với người đàn ông. Thế nào là năm? Không có nhan sắc, không có tài sản, không có giới hạnh, lười biếng, không sinh con. Này các Tỷ-kheo, đầy đủ năm đức tánh này, một nữ nhân hoàn toàn không khả ý đối với người đàn ông."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Và này các Tỷ-kheo, đầy đủ năm đức tánh này, một nữ nhân hoàn toàn khả ý đối với người đàn ông. Thế nào là năm? Có nhan sắc, có tài sản, có giới hạnh, lanh lợi, không biếng nhác, có sanh con. Ðầy đủ năm đức tánh này, này các Tỷ-kheo, một nữ nhân hoàn toàn khả ý đối với người đàn ông."
+      },
+      {
+        "id": "p7",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn37.10": {
+    "canonicalRef": "sn37.10",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn37.10/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:56+00:00",
+    "materializedAt": "2026-09-02T12:30:56+00:00",
+    "contentHash": "426bd2f2f969dc88817415698fa087fff5f2fc968032a9058899386553e94ee8",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 37: Tương Ưng Nữ Nhân"
+      },
+      {
+        "id": "p2",
+        "text": "Phần Một—Phẩm Trung Lược"
+      },
+      {
+        "id": "p3",
+        "text": "37.10. Ác Giới"
+      },
+      {
+        "id": "p4",
+        "text": "S.iv,242… (như kinh trên, chỉ thế ác giới vào pháp thứ tư) …"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn37.11": {
+    "canonicalRef": "sn37.11",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn37.11/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:56+00:00",
+    "materializedAt": "2026-09-02T12:30:56+00:00",
+    "contentHash": "8fa657b551e9410cd47a1c619c539bdc7a144158e6ed4605986657cf635767ee",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 37: Tương Ưng Nữ Nhân"
+      },
+      {
+        "id": "p2",
+        "text": "Phần Một—Phẩm Trung Lược"
+      },
+      {
+        "id": "p3",
+        "text": "37.11. Ít Nghe"
+      },
+      {
+        "id": "p4",
+        "text": "S.iv,242… (như kinh trên, chỉ thế ít nghe vào pháp thứ tư) …"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn37.12": {
+    "canonicalRef": "sn37.12",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn37.12/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:56+00:00",
+    "materializedAt": "2026-09-02T12:30:56+00:00",
+    "contentHash": "f9d516f191f018400437bd979fa86b5226d5f4e53d9615fddab0cb2152d95b9b",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 37: Tương Ưng Nữ Nhân"
+      },
+      {
+        "id": "p2",
+        "text": "Phần Một—Phẩm Trung Lược"
+      },
+      {
+        "id": "p3",
+        "text": "37.12. Biếng Nhác (Kusīta)"
+      },
+      {
+        "id": "p4",
+        "text": "S.iv,242… (như kinh trên, chỉ thế biếng nhác vào pháp thứ tư) …"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn37.13": {
+    "canonicalRef": "sn37.13",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn37.13/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:56+00:00",
+    "materializedAt": "2026-09-02T12:30:56+00:00",
+    "contentHash": "7a3f7459c213e9bd8162f14ea4b87843f639977c7842fc12f04b031e58d9bb9a",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 37: Tương Ưng Nữ Nhân"
+      },
+      {
+        "id": "p2",
+        "text": "Phần Một—Phẩm Trung Lược"
+      },
+      {
+        "id": "p3",
+        "text": "37.13. Thất Niệm (Mutthassati)"
+      },
+      {
+        "id": "p4",
+        "text": "S.iv,242… (như kinh trên, chỉ thế thất niệm vào pháp thứ tư) …"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn37.14": {
+    "canonicalRef": "sn37.14",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn37.14/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:56+00:00",
+    "materializedAt": "2026-09-02T12:30:56+00:00",
+    "contentHash": "26922b49223217341f73a9080229674498fc95d6c0b4922d078306612aa3a3a6",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 37: Tương Ưng Nữ Nhân"
+      },
+      {
+        "id": "p2",
+        "text": "Phần Một—Phẩm Trung Lược"
+      },
+      {
+        "id": "p3",
+        "text": "37.14. Năm Cấm (Pancaveram)"
+      },
+      {
+        "id": "p4",
+        "text": "S.iv,243Vi-n 1-2-3. …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 4 —Ðầy đủ năm pháp, này Anuruddha, người đàn bà, sau khi thân hoại mạng chung, sanh vào cõi dữ, ác thú, đọa xứ, địa ngục. Thế nào là năm?"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 5 Ðó là sát sanh, là lấy của không cho, là tà hạnh trong các dục, là nói láo, là say đắm rượu men, rượu nấu."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 6 Ðầy đủ năm pháp này, này Anuruddha, người đàn bà sau khi thân hoại mạng chung, sanh vào cõi dữ, ác thú, đọa xứ, địa ngục."
+      },
+      {
+        "id": "p8",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn37.15": {
+    "canonicalRef": "sn37.15",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn37.15/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:56+00:00",
+    "materializedAt": "2026-09-02T12:30:56+00:00",
+    "contentHash": "668a90f934d274a8688c56ef5851668384afe26128f2de378945fc1fa778b910",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 37: Tương Ưng Nữ Nhân"
+      },
+      {
+        "id": "p2",
+        "text": "Phần Hai—Phẩm Trung Lược"
+      },
+      {
+        "id": "p3",
+        "text": "37.15. Không Phẫn Nộ"
+      },
+      {
+        "id": "p4",
+        "text": "(Anuruddha II. Phần trắng)"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 1 …"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 2 Rồi Tôn giả Anuruddha đi đến Thế Tôn …"
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 3 Ngồi một bên, Tôn giả Anuruddha bạch Thế Tôn:"
+      },
+      {
+        "id": "p8",
+        "text": "—Ở đây, bạch Thế Tôn, với thiên nhãn thanh tịnh siêu nhân, con thấy người đàn bà, sau khi thân hoại mạng chung, được sanh vào thiện thú, thiên giới, thế giới nầy. Ðầy đủ bao nhiêu pháp, bạch Thế Tôn, người đàn bà, sau khi thân hoại mạng chung, được sanh lên thiện thú, thiên giới, thế giới này?"
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 1-2-3. …"
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 4 —Ðầy đủ năm pháp, này Anuruddha, người đàn bà, sau khi thân hoại mạng chung, được sanh lên thiện thú, thiên giới, thế giới này. Thế nào là năm?"
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 5 Có lòng tin, có lòng tàm, có lòng quý, không phẫn nộ, có trí tuệ."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 6 Ðầy đủ năm pháp này, này Anuruddha, một người đàn bà, sau khi thân hoại mạng chung, được sanh lên thiện thú, thiên giới, cõi đời này."
+      },
+      {
+        "id": "p13",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn37.16": {
+    "canonicalRef": "sn37.16",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn37.16/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:56+00:00",
+    "materializedAt": "2026-09-02T12:30:56+00:00",
+    "contentHash": "fb353cb4e520b3058524037f59f5087f5e4a4804dd272981b265607b8a5be233",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 37: Tương Ưng Nữ Nhân"
+      },
+      {
+        "id": "p2",
+        "text": "Phần Hai—Phẩm Trung Lược"
+      },
+      {
+        "id": "p3",
+        "text": "37.16–24"
+      },
+      {
+        "id": "p4",
+        "text": "S.iv,245(Các đoạn này trái với đoạn 6–14 trước, như không có hận, không tật đố, không xan tham, không phạm dâm, không ác giới, không ít nghe, không biếng nhác, không thất niệm, không có năm cấm)"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn37.2": {
+    "canonicalRef": "sn37.2",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn37.2/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:55+00:00",
+    "materializedAt": "2026-09-02T12:30:55+00:00",
+    "contentHash": "6e61b6ce7f9c02ac1e7f6ce0f1942be170fc0ef65a2bd198089fa5cde1609b8d",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 37: Tương Ưng Nữ Nhân"
+      },
+      {
+        "id": "p2",
+        "text": "Phần Một—Phẩm Trung Lược"
+      },
+      {
+        "id": "p3",
+        "text": "37.2. Khả Ý, Không Khả Ý (2)"
+      },
+      {
+        "id": "p4",
+        "text": "S.iv,238Vi-n 1 …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Này các Tỷ-kheo, đầy đủ năm đức tánh này, một người đàn ông hoàn toàn không khả ý đối với nữ nhân. Thế nào là năm? Không có nhan sắc, không có tài sản, không có giới hạnh, lười biếng, không có khả năng sanh con. Này các Tỷ-kheo, đầy đủ năm đức tánh này, một người đàn ông hoàn toàn không khả ý đối với nữ nhân."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Này các Tỷ-kheo, đầy đủ năm đức tánh này, một người đàn ông hoàn toàn khả ý đối với nữ nhân. Thế nào là năm? Có nhan sắc, có tài sản, có giới hạnh, lanh lợi, không biếng nhác, có khả năng sanh con. Này các Tỷ-kheo, đầy đủ năm đức tánh này, một người đàn ông hoàn toàn khả ý đối với nữ nhân."
+      },
+      {
+        "id": "p7",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn37.25": {
+    "canonicalRef": "sn37.25",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn37.25/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:56+00:00",
+    "materializedAt": "2026-09-02T12:30:56+00:00",
+    "contentHash": "1ee36909d2bd7d7c73968ee1ccd93025b6f8db04764d75fb41853707b4cca8f9",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 37: Tương Ưng Nữ Nhân"
+      },
+      {
+        "id": "p2",
+        "text": "Phần Ba—Phẩm Các"
+      },
+      {
+        "id": "p3",
+        "text": "37.25. Không Sợ Hãi (Visàradà)"
+      },
+      {
+        "id": "p4",
+        "text": "Sức Mạnh"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 1 …"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 2 —Này các Tỷ-kheo, người đàn bà có năm sức mạnh này. Thế nào là năm? Sức mạnh sắc đẹp, sức mạnh tài sản, sức mạnh bà con, sức mạnh con trai, sức mạnh giới hạnh. Này các Tỷ-kheo, người đàn bà có đầy đủ năm sức mạnh này."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 3 Ðầy đủ năm sức mạnh này, này các Tỷ-kheo, người đàn bà sống ở nhà không có sợ hãi."
+      },
+      {
+        "id": "p8",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn37.26": {
+    "canonicalRef": "sn37.26",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn37.26/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:56+00:00",
+    "materializedAt": "2026-09-02T12:30:56+00:00",
+    "contentHash": "91dbb22d7d254ae937c10162d41d0252324151b5fadc346336cfad614ff7936e",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 37: Tương Ưng Nữ Nhân"
+      },
+      {
+        "id": "p2",
+        "text": "Phần Ba—Phẩm Các"
+      },
+      {
+        "id": "p3",
+        "text": "37.26. Ức Chế (Pasaykà)"
+      },
+      {
+        "id": "p4",
+        "text": "S.iv,246… (Giống như kinh trước, chỉ khác đoạn kết luận: ” Ðầy đủ năm sức mạnh này, này các Tỷ-kheo, người đàn bà sống ở nhà, ức chế người chồng ” ) …"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn37.27": {
+    "canonicalRef": "sn37.27",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn37.27/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:56+00:00",
+    "materializedAt": "2026-09-02T12:30:56+00:00",
+    "contentHash": "3f84bde12561f7ef3cfaac01ee8fb58131b23b20f6b53be7dbd288cc33bf76a0",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 37: Tương Ưng Nữ Nhân"
+      },
+      {
+        "id": "p2",
+        "text": "Phần Ba—Phẩm Các"
+      },
+      {
+        "id": "p3",
+        "text": "37.27. Chinh Phục (Abhibhùyya)"
+      },
+      {
+        "id": "p4",
+        "text": "S.iv,246… (Giống như Kinh trước, chỉ khác đoạn kết luận: ” Ðầy đủ năm sức mạnh này, này các Tỷ-kheo, người đàn bà sống ở nhà tiếp tục (vattati) chinh phục người chồng ” ) …"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn37.28": {
+    "canonicalRef": "sn37.28",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn37.28/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:56+00:00",
+    "materializedAt": "2026-09-02T12:30:56+00:00",
+    "contentHash": "852fb215f919b8e9ba1171aa01f02adfb188b2b3e4689621628f27e81443dbce",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 37: Tương Ưng Nữ Nhân"
+      },
+      {
+        "id": "p2",
+        "text": "Phần Ba—Phẩm Các"
+      },
+      {
+        "id": "p3",
+        "text": "37.28. Một"
+      },
+      {
+        "id": "p4",
+        "text": "S.iv,246Vi-n 1 …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Do đầy đủ một sức mạnh, này các Tỷ-kheo, người đàn ông tiếp tục chinh phục người đàn bà. Thế nào là một sức mạnh? Sức mạnh của người làm chủ (isariyabalena)."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Người đàn bà đã bị chinh phục bởi sức mạnh của người làm chủ, này các Tỷ-kheo, thời sức mạnh nhan sắc không che chở được, sức mạnh tài sản không che chở được, sức mạnh bà con không che chở được, sức mạnh con trai không che chở được, sức mạnh giới hạnh không che chở được."
+      },
+      {
+        "id": "p7",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn37.29": {
+    "canonicalRef": "sn37.29",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn37.29/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:56+00:00",
+    "materializedAt": "2026-09-02T12:30:56+00:00",
+    "contentHash": "54cba317bb486ab535ad5cb1f5a4c3f08c27b7870ed93a689f2731cf63b77384",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 37: Tương Ưng Nữ Nhân"
+      },
+      {
+        "id": "p2",
+        "text": "Phần Ba—Phẩm Các"
+      },
+      {
+        "id": "p3",
+        "text": "37.29. Bộ Phận"
+      },
+      {
+        "id": "p4",
+        "text": "S.iv,247Vi-n 1 …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Này các Tỷ-kheo, người đàn bà có năm sức mạnh này: sức mạnh nhan sắc, sức mạnh tài sản, sức mạnh bà con, sức mạnh con trai, sức mạnh giới hạnh."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Người đàn bà đầy đủ sức mạnh nhan sắc, này các Tỷ-kheo, nhưng không có sức mạnh tài sản, như vậy người đàn bà ấy không đầy đủ bộ phận ấy. Và này các Tỷ-kheo, người đàn bà đầy đủ sức mạnh nhan sắc và sức mạnh tài sản, như vậy đàn bà đầy đủ bộ phận ấy."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Này các Tỷ-kheo, người đàn bà đầy đủ sức mạnh nhan sắc và sức mạnh tài sản, nhưng không có sức mạnh bà con, như vậy người đàn bà ấy không đầy đủ bộ phận ấy. Và này các Tỷ-kheo, người đàn bà đầy đủ sức mạnh nhan sắc, sức mạnh tài sản và sức mạnh bà con, như vậy người đàn bà ấy đầy đủ bộ phận ấy."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 Và này các Tỷ-kheo, người đàn bà đầy đủ sức mạnh nhan sắc, sức mạnh tài sản, sức mạnh bà con, nhưng không có sức mạnh con trai, như vậy người đàn bà ấy không đầy đủ bộ phận ấy. Và này các Tỷ-kheo, người đàn bà đầy đủ sức mạnh nhan sắc, sức mạnh tài sản, sức mạnh bà con và sức mạnh con trai, như vậy người đàn bà ấy đầy đủ bộ phận ấy."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 6 Và này các Tỷ-kheo, người đàn bà đầy đủ sức mạnh nhan sắc, sức mạnh tài sản, sức mạnh bà con, sức mạnh con trai, nhưng không có sức mạnh giới hạnh, như vậy người đàn bà ấy không đầy đủ bộ phận ấy. Và này các Tỷ-kheo, người đàn bà đầy đủ sức mạnh nhan sắc, sức mạnh tài sản, sức mạnh con trai, sức mạnh bà con và sức mạnh giới hạnh, như vậy người đàn bà ấy đầy đủ bộ phận ấy."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 7 Này các Tỷ-kheo, đây là năm sức mạnh của người đàn bà."
+      },
+      {
+        "id": "p11",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn37.3": {
+    "canonicalRef": "sn37.3",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn37.3/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:55+00:00",
+    "materializedAt": "2026-09-02T12:30:55+00:00",
+    "contentHash": "410f9367e2edc2bd02d42a94bb6848e190c0bcc9b2cc3a82c6819ed6cff2b9bd",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 37: Tương Ưng Nữ Nhân"
+      },
+      {
+        "id": "p2",
+        "text": "Phần Một—Phẩm Trung Lược"
+      },
+      {
+        "id": "p3",
+        "text": "37.3. Ðặc Thù (Avenika)"
+      },
+      {
+        "id": "p4",
+        "text": "S.iv,239Vi-n 1 …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Này các Tỷ-kheo, có năm đau khổ riêng biệt mà người đàn bà phải gánh chịu, khác biệt với đàn ông. Thế nào là năm?"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Ở đây, này các Tỷ-kheo, người đàn bà lúc trẻ tuổi đi đến nhà chồng, không có bà con. Ðây là đau khổ riêng biệt thứ nhất, này các Tỷ-kheo, người đàn bà phải gánh chịu điều đó khác biệt với đàn ông."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Lại nữa, này các Tỷ-kheo, người đàn bà có kinh nguyệt. Ðây là đau khổ riêng biệt thứ hai, này các Tỷ-kheo, người đàn bà phải gánh chịu, khác biệt với đàn ông."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 Lại nữa, này các Tỷ-kheo, người đàn bà phải mang thai. Ðây là sự đau khổ riêng biệt thứ ba, này các Tỷ-kheo, người đàn bà phải gánh chịu, khác biệt với đàn ông."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 6 Lại nữa, này các Tỷ-kheo, một người đàn bà phải sanh con. Ðây là đau khổ riêng biệt thứ tư, này các Tỷ-kheo, người đàn bà phải gánh chịu, khác biệt với đàn ông."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 7 Lại nữa, này các Tỷ-kheo, người đàn bà hầu hạ đàn ông. Ðây là đau khổ riêng biệt thứ năm, này các Tỷ-kheo, người đàn bà phải gánh chịu, khác biệt với đàn ông."
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 8 Này các Tỷ-kheo, đây là năm đau khổ riêng biệt, này các Tỷ-kheo, người đàn bà phải gánh chịu, khác biệt với đàn ông."
+      },
+      {
+        "id": "p12",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn37.30": {
+    "canonicalRef": "sn37.30",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn37.30/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:56+00:00",
+    "materializedAt": "2026-09-02T12:30:56+00:00",
+    "contentHash": "bc6bcde2aa11ce856252ec7b3f4850b53e40787097418a00a347b0c318581e41",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 37: Tương Ưng Nữ Nhân"
+      },
+      {
+        "id": "p2",
+        "text": "Phần Ba—Phẩm Các"
+      },
+      {
+        "id": "p3",
+        "text": "37.30. Họ Ðuổi Ði"
+      },
+      {
+        "id": "p4",
+        "text": "S.iv,247Vi-n 1 …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Này các Tỷ-kheo, người đàn bà có năm sức mạnh này. Thế nào là năm? Sức mạnh nhan sắc, sức mạnh tài sản, sức mạnh bà con, sức mạnh con trai, sức mạnh giới hạnh."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Này các Tỷ-kheo, người đàn bà đầy đủ sức mạnh nhan sắc, nhưng không có sức mạnh giới hạnh, thời họ đuổi người đàn bà ấy, không cho ở trong gia đình. Và này các Tỷ-kheo, người đàn bà đầy đủ sức mạnh nhan sắc và sức mạnh tài sản, nhưng không có sức mạnh giới hạnh, thời họ đuổi người đàn bà ấy, không cho ở trong gia đình. Và này các Tỷ-kheo, người đàn bà đầy đủ sức mạnh nhan sắc, sức mạnh tài sản, sức mạnh bà con, nhưng không có sức mạnh giới hạnh, thời họ đuổi người đàn bà ấy, không cho ở trong gia đình. Và này các Tỷ-kheo, nếu người đàn bà đầy đủ sức mạnh nhan sắc, sức mạnh tài sản, sức mạnh bà con, sức mạnh con trai, nhưng không có sức mạnh giới hạnh, thời họ đuổi người đàn bà ấy, không cho ở trong gia đình."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Này các Tỷ-kheo, người đàn bà đầy đủ sức mạnh giới hạnh, nhưng không có sức mạnh nhan sắc, thời họ để người đàn bà ấy ở trong gia đình, không có đuổi đi. Và này các Tỷ-kheo, người đàn bà có sức mạnh giới hạnh, nhưng không có sức mạnh tài sản, thời họ để người đàn bà ấy ở trong gia đình, không có đuổi đi. Này các Tỷ-kheo, người đàn bà đầy đủ sức mạnh giới hạnh, nhưng không có sức mạnh bà con, họ để người đàn bà ấy ở trong gia đình, không có đuổi đi. Này các Tỷ-kheo, người đàn bà đầy đủ sức mạnh giới hạnh, nhưng không có sức mạnh con trai, thời họ để người đàn bà ấy ở trong gia đình, không có đuổi đi."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 Này các Tỷ-kheo, đây là năm sức mạnh của người đàn bà."
+      },
+      {
+        "id": "p9",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn37.31": {
+    "canonicalRef": "sn37.31",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn37.31/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:56+00:00",
+    "materializedAt": "2026-09-02T12:30:56+00:00",
+    "contentHash": "4e649f376caab01c48fb7f664b1e6608a6ace7e9aa5877b69c1d48f1427315f1",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 37: Tương Ưng Nữ Nhân"
+      },
+      {
+        "id": "p2",
+        "text": "Phần Ba—Phẩm Các"
+      },
+      {
+        "id": "p3",
+        "text": "37.31. Nhân"
+      },
+      {
+        "id": "p4",
+        "text": "S.iv,248Vi-n 1 …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Này các Tỷ-kheo, có năm sức mạnh này của người đàn bà. Thế nào là năm? Sức mạnh nhan sắc, sức mạnh tài sản, sức mạnh bà con, sức mạnh con trai, sức mạnh giới hạnh."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Này các Tỷ-kheo, người đàn bà không do nhân nhan sắc, không do nhân tài sản, không do nhân bà con hay không do nhân con trai, sau khi thân hoại mạng chung, được sanh thiện thú, thiên giới, cõi đời này."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Này các Tỷ-kheo, người đàn bà do nhân giới hạnh, sau khi thân hoại mạng chung, được sanh thiện thú, thiên giới, cõi đời này."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 Này các Tỷ-kheo, đây là năm sức mạnh của người đàn bà."
+      },
+      {
+        "id": "p9",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn37.32": {
+    "canonicalRef": "sn37.32",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn37.32/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:56+00:00",
+    "materializedAt": "2026-09-02T12:30:56+00:00",
+    "contentHash": "501bff2d263ff4e2112807db12cc7de566b87201d7f79c181f58c86ce96c13de",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 37: Tương Ưng Nữ Nhân"
+      },
+      {
+        "id": "p2",
+        "text": "Phần Ba—Phẩm Các"
+      },
+      {
+        "id": "p3",
+        "text": "37.32. Sự Kiện (Thànam)"
+      },
+      {
+        "id": "p4",
+        "text": "S.iv,249Vi-n 1 …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Này các Tỷ-kheo, có năm sự kiện này thật khó cho người đàn bà không làm các công đức có thể thực hiện được. Thế nào là năm?"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 “Mong rằng tôi được sanh trong một gia đình thích đáng!” Này các Tỷ-kheo, đây là sự kiện thứ nhất thật khó cho người đàn bà không làm các công đức có thể thực hiện được. “Mong rằng sau khi được sanh vào một gia đình thích đáng, tôi được đi đến (làm vợ) một gia đình thích đáng!” Này các Tỷ-kheo, đây là sự kiện thứ hai thật khó cho người đàn bà không làm các công đức có thể thực hiện được. “Sau khi được sanh vào một gia đình thích đáng, sau khi được đi đến (làm vợ) một gia đình thích đáng, mong rằng tôi được sống trong một gia đình không có người vợ địch thủ!” Này các Tỷ-kheo, đây là sự kiện thứ ba thật khó cho người đàn bà không làm các công đức có thể thực hiện được. “Sau khi được sanh vào một gia đình thích đáng, sau khi được đi đến (làm vợ) một gia đình thích đáng, sau khi được sống trong một gia đình không có người vợ địch thủ, mong rằng tôi sẽ sanh được người con trai!” Này các Tỷ-kheo, đây là sự kiện thứ tư thật khó cho người đàn bà không làm các công đức có thể thực hiện được. “Sau khi được sanh vào một gia đình thích đáng, sau khi được đi đến (làm vợ) một gia đình thích đáng, sau khi được ở trong một gia đình không có người vợ địch thủ, sau khi sanh được người con trai, mong rằng tôi chinh phục được chồng tôi!” Này các Tỷ-kheo, đây là sự kiện thứ năm thật khó cho người đàn bà không làm các công đức có thể thực hiện được."
+      },
+      {
+        "id": "p7",
+        "text": "Này các Tỷ-kheo, năm sự kiện này thật khó cho người đàn bà không làm các công đức có thể thực hiện được."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 4 Có năm sự kiện này, này các Tỷ-kheo, thật dễ cho người đàn bà có làm các công đức có thể thực hiện được. Thế nào là năm?"
+      },
+      {
+        "id": "p9",
+        "text": "“Mong rằng tôi được sanh vào một gia đình thích đáng!” Này các Tỷ-kheo, đây là sự kiện thứ nhất thật dễ cho người đàn bà làm các công đức có thể thực hiện được. “Sau khi được sanh vào một gia đình thích đáng, mong rằng tôi được đi đến (làm vợ) một gia đình thích đáng!” Này các Tỷ-kheo, đây là sự kiện thứ hai thật dễ cho người đàn bà có làm các công đức có thể thực hiện được. “Sau khi được vào một gia đình thích đáng, sau khi được đi đến (làm vợ) một gia đình thích đáng, mong rằng tôi được sống trong một gia đình không có người vợ địch thủ!” Này các Tỷ-kheo, đây là sự kiện thứ ba thật dễ cho người đàn bà có làm các công đức có thể thực hiện được. “Sau khi được sanh vào một gia đình thích đáng, sau khi được đi đến (làm vợ) một gia đình thích đáng, sau khi được sống trong một gia đình không có người vợ địch thủ, mong rằng tôi được sanh con trai!” Này các Tỷ-kheo, đây là sự kiện thứ tư thật dễ cho người đàn bà có làm các công đức có thể thực hiện được. “Sau khi được sanh vào một gia đình thích đáng, sau khi được đi đến (làm vợ) một gia đình thích đáng, sau khi được ở trong một gia đình không có người vợ địch thủ, sau khi được sanh con trai, mong rằng tôi chinh phục được người chồng!” Này các Tỷ-kheo, đây là sự kiện thứ năm thật dễ cho người đàn bà có làm các công đức có thể thực hiện được."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 5 Năm sự kiện này, này các Tỷ-kheo, thật dễ cho người đàn bà có làm các công đức có thể thực hiện được."
+      },
+      {
+        "id": "p11",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn37.33": {
+    "canonicalRef": "sn37.33",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn37.33/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:56+00:00",
+    "materializedAt": "2026-09-02T12:30:56+00:00",
+    "contentHash": "5952eea32ac8d33c4e5b29bc7fc88ff8fc4586d955189511ab111545c18a86d6",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 37: Tương Ưng Nữ Nhân"
+      },
+      {
+        "id": "p2",
+        "text": "Phần Ba—Phẩm Các"
+      },
+      {
+        "id": "p3",
+        "text": "37.33. Không Sợ Hãi"
+      },
+      {
+        "id": "p4",
+        "text": "S.iv,250Vi-n 1 …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Ðầy đủ năm pháp, này các Tỷ-kheo, người đàn bà sống ở trong nhà không sợ hãi. Thế nào là năm?"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Gìn giữ không đoạt sanh mạng, gìn giữ không lấy của không cho, gìn giữ không có tà hạnh trong các dục, gìn giữ không có nói láo, gìn giữ không có say đắm rượu men, rượu nấu."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Ðầy đủ năm pháp này, này các Tỷ-kheo, người đàn bà sống ở trong nhà không có sợ hãi."
+      },
+      {
+        "id": "p8",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn37.34": {
+    "canonicalRef": "sn37.34",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn37.34/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:56+00:00",
+    "materializedAt": "2026-09-02T12:30:56+00:00",
+    "contentHash": "55c8daee87f89f87f995a0cd5e36820f32f47ea11e3027356bc357c5e2b58f82",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 37: Tương Ưng Nữ Nhân"
+      },
+      {
+        "id": "p2",
+        "text": "Phần Ba—Phẩm Các"
+      },
+      {
+        "id": "p3",
+        "text": "37.34. Tăng Truởng"
+      },
+      {
+        "id": "p4",
+        "text": "S.iv,250Vi-n 1 …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Ðược tăng trưởng với năm sự tăng trưởng, này các Tỷ-kheo, một nữ Thánh đệ tử, được tăng trưởng trong Thánh tăng trưởng, nắm giữ được những lõi cây (căn bản, tinh vi), nắm giữ được những tốt đẹp nhất về thân. Thế nào là năm?"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Tăng trưởng về lòng tin, tăng trưởng về giới hạnh, tăng trưởng về nghe nhiều (sutena), tăng trưởng về thí xả, tăng trưởng về trí tuệ. Này các Tỷ-kheo, được tăng trưởng với năm sự tăng trưởng này, này các Tỷ-kheo, một nữ Thánh đệ tử được tăng trưởng trong Thánh tăng trưởng, nắm giữ được những lõi cây (căn bản, tinh vi), nắm giữ được những điểm tốt đẹp nhất về thân."
+      },
+      {
+        "id": "p7",
+        "text": "Ðời này, ai tăng trưởng,\n\nLòng tin và giới hạnh,\n\nVới trí tuệ, thí xả,\n\nVới nghe nhiều, cả hai;\n\nVị nữ cư sĩ ấy,\n\nVới giới hạnh như vậy,\n\nNắm giữ được lõi cây,\n\nCho tự mình ở đời."
+      },
+      {
+        "id": "p8",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn37.4": {
+    "canonicalRef": "sn37.4",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn37.4/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:55+00:00",
+    "materializedAt": "2026-09-02T12:30:55+00:00",
+    "contentHash": "3e81625303310ffa20a9a0d01c3a64c603d220c4b013b6e2cb01fe4c2b3ddf2c",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 37: Tương Ưng Nữ Nhân"
+      },
+      {
+        "id": "p2",
+        "text": "Phần Một—Phẩm Trung Lược"
+      },
+      {
+        "id": "p3",
+        "text": "37.4. Ba Sự Việc"
+      },
+      {
+        "id": "p4",
+        "text": "S.iv,240Vi-n 1~1 …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2~2 —Ðầy đủ ba pháp này, này các Tỷ-kheo, người đàn bà phần lớn sau khi thân hoại mạng chung, sanh vào cõi dữ, ác thú, đọa xứ, địa ngục. Thế nào là ba?"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3~3 —Ở đây, này các Tỷ-kheo, người đàn bà, vào buổi sáng, ở nhà với tâm bị xan tham ám ảnh, vào buổi trưa, ở nhà với tâm bị tật đố ám ảnh, vào buổi chiều, ở nhà với tâm bị dục tham (kàmaràgam) ám ảnh."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4~4 Này các Tỷ-kheo, đầy đủ ba pháp này, người đàn bà phần lớn sau khi thân hoại mạng chung, sanh vào cõi dữ, ác thú, đọa xứ, địa ngục."
+      },
+      {
+        "id": "p8",
+        "text": "(Anuruddha I. Phần đen)"
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 1~5 …"
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 2~6 Rồi Tôn giả Anuruddha đi đến Thế Tôn …"
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 3~7 Ngồi xuống một bên, Tôn giả Anuruddha bạch Thế Tôn:"
+      },
+      {
+        "id": "p12",
+        "text": "—Ở đây, bạch Thế Tôn, với thiên nhãn thanh tịnh siêu nhân, con thấy người đàn bà, sau khi thân hoại mạng chung, sanh vào cõi dữ, ác thú, đọa xứ, địa ngục. Bạch Thế Tôn, nữ nhân, do đầy đủ những pháp gì, sau khi thân hoại mạng chung sanh vào cõi dữ, ác thú, đọa xứ, địa ngục?"
+      },
+      {
+        "id": "p13",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn37.5": {
+    "canonicalRef": "sn37.5",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn37.5/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:55+00:00",
+    "materializedAt": "2026-09-02T12:30:55+00:00",
+    "contentHash": "e43ad30cbeca1fe86ba256a017b5823822431f4833e50edcd0051ba465fb1157",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 37: Tương Ưng Nữ Nhân"
+      },
+      {
+        "id": "p2",
+        "text": "Phần Một—Phẩm Trung Lược"
+      },
+      {
+        "id": "p3",
+        "text": "37.5. Phẫn Nộ"
+      },
+      {
+        "id": "p4",
+        "text": "S.iv,240Vi-n 1-2-3. …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 4 —Ðầy đủ năm pháp, này Anuruddha, người đàn bà, sau khi thân hoại mạng chung, sanh vào cõi dữ, ác thú, đọa xứ, địa ngục. Thế nào là năm?"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 5 Ðó là bất tín, là vô tàm, là vô quý, là phẫn nộ, là ác tuệ."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 6 Ðầy đủ năm pháp này, này Anuruddha, người đàn bà, sau khi thân hoại mạng chung, sanh vào cõi dữ, ác thú, đọa xứ, địa ngục."
+      },
+      {
+        "id": "p8",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn37.6": {
+    "canonicalRef": "sn37.6",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn37.6/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:55+00:00",
+    "materializedAt": "2026-09-02T12:30:55+00:00",
+    "contentHash": "cd82b977aca874c5b6b315dbe9393096460073f85fd52910d1232ddfd6dda826",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 37: Tương Ưng Nữ Nhân"
+      },
+      {
+        "id": "p2",
+        "text": "Phần Một—Phẩm Trung Lược"
+      },
+      {
+        "id": "p3",
+        "text": "37.6. Có Hận (Upanàhi)"
+      },
+      {
+        "id": "p4",
+        "text": "S.iv,241… (như kinh trên, chỉ thế có hận vào pháp thứ tư) …"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn37.7": {
+    "canonicalRef": "sn37.7",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn37.7/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:55+00:00",
+    "materializedAt": "2026-09-02T12:30:55+00:00",
+    "contentHash": "c8478cf9c3c0ec6b12e0b19b97677ba454e447a30b609e760f0efb3dc785c2d6",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 37: Tương Ưng Nữ Nhân"
+      },
+      {
+        "id": "p2",
+        "text": "Phần Một—Phẩm Trung Lược"
+      },
+      {
+        "id": "p3",
+        "text": "37.7. Tật Ðố (Issukii)"
+      },
+      {
+        "id": "p4",
+        "text": "S.iv,241… (như kinh trên, chỉ thế có tật đố vào pháp thứ tư) …"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn37.8": {
+    "canonicalRef": "sn37.8",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn37.8/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:55+00:00",
+    "materializedAt": "2026-09-02T12:30:55+00:00",
+    "contentHash": "12403708826e272fef05cbd2acde9053bfd1965aeeb34a4c7c0516292d0f67c8",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 37: Tương Ưng Nữ Nhân"
+      },
+      {
+        "id": "p2",
+        "text": "Phần Một—Phẩm Trung Lược"
+      },
+      {
+        "id": "p3",
+        "text": "37.8. Do Xan Tham (Macharena)"
+      },
+      {
+        "id": "p4",
+        "text": "S.iv,241… (như kinh trên, chỉ thế xan tham vào pháp thứ tư) …"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn37.9": {
+    "canonicalRef": "sn37.9",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn37.9/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:55+00:00",
+    "materializedAt": "2026-09-02T12:30:55+00:00",
+    "contentHash": "fded7598eb23c775977fdafdda9b36279fb9d5ebbc69121506dbef9d3ab2102b",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 37: Tương Ưng Nữ Nhân"
+      },
+      {
+        "id": "p2",
+        "text": "Phần Một—Phẩm Trung Lược"
+      },
+      {
+        "id": "p3",
+        "text": "37.9. Phạm Dâm (Aticari)"
+      },
+      {
+        "id": "p4",
+        "text": "S.iv,242… (như kinh trên, chỉ thế phạm dâm vào pháp thứ tư) …"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  }
+}

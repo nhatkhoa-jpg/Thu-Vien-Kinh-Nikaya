@@ -1,11 +1,22 @@
 {
   "collection": "SN",
   "catalogCount": 1819,
-  "verifiedBefore": 955,
+  "verifiedBefore": 1075,
   "selected": 120,
-  "materializedThisRun": 120,
-  "missingVietnameseThisRun": [],
+  "materializedThisRun": 110,
+  "missingVietnameseThisRun": [
+    "sn36.25",
+    "sn36.30",
+    "sn37.17",
+    "sn37.18",
+    "sn37.19",
+    "sn37.20",
+    "sn37.21",
+    "sn37.22",
+    "sn37.23",
+    "sn37.24"
+  ],
   "failures": {},
-  "remainingAfterRun": 740,
-  "lastRunAt": "2026-09-02T11:24:30+00:00"
+  "remainingAfterRun": 620,
+  "lastRunAt": "2026-09-02T12:31:01+00:00"
 }

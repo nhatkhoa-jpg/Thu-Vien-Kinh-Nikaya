@@ -1,0 +1,755 @@
+{
+  "sn40.1": {
+    "canonicalRef": "sn40.1",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn40.1/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:58+00:00",
+    "materializedAt": "2026-09-02T12:30:58+00:00",
+    "contentHash": "145344bd2d1345ea222f09458a5431865c6968092879288c566bb39967cedc51",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 40: Tương Ưng Moggallāna"
+      },
+      {
+        "id": "p2",
+        "text": "40.1. Với Tầm"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Một thời Tôn giả Mahà Moggallāna trú ở Sāvatthi, Jetavana, tại vườn ông Anāthapiṇḍika."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Ở đấy, Tôn giả Mahà Moggallāna gọi các Tỷ-kheo:"
+      },
+      {
+        "id": "p5",
+        "text": "—Này chư Hiền Tỷ-kheo."
+      },
+      {
+        "id": "p6",
+        "text": "—Thưa Hiền giả."
+      },
+      {
+        "id": "p7",
+        "text": "Các Tỷ-kheo ấy vâng đáp Tôn giả Mahà Moggallāna."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 3 Tôn giả Mahà Moggallāna nói như sau:"
+      },
+      {
+        "id": "p9",
+        "text": "—Ở đây, này chư Hiền, trong khi tôi độc cư Thiền tịnh, tâm tưởng tư duy như sau được khởi lên nơi tôi: “Thiền thứ nhất, Thiền thứ nhất”, được gọi là như vậy. Thế nào là Thiền thứ nhất?"
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 4 —Này chư Hiền, tôi suy nghĩ như sau: “Ở đây, Tỷ-kheo ly dục, ly bất thiện pháp, chứng và trú Thiền thứ nhất, một trạng thái hỷ lạc do ly dục sanh, có tầm có tứ. Ðây gọi là Thiền thứ nhất."
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 5 Rồi này chư Hiền, tôi ly dục, ly bất thiện pháp, chứng và trú Thiền thứ nhất một trạng thái hỷ lạc do ly dục sanh, có tầm có tứ. Này chư Hiền, do tôi trú với an trú này, các tưởng câu hữu với dục (kàma) được tác ý và hiện hành (samudàcaranti)."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 6 Rồi này chư Hiền, Thế Tôn với thần thông đi đến tôi và nói: “Này Moggallāna, này Moggallāna, chớ có phóng dật Thiền thứ nhất. Này Moggallāna, hãy đặt tâm vào Thiền thứ nhất! Hãy nhứt tâm vào Thiền thứ nhất”."
+      },
+      {
+        "id": "p13",
+        "text": "Vi-n 7 Rồi này chư Hiền, trong một thời gian khác, tôi chứng và trú Thiền thứ nhất, một trạng thái hỷ lạc do ly dục sanh, có tầm có tứ."
+      },
+      {
+        "id": "p14",
+        "text": "Vi-n 8 Này chư Hiền, nếu ai nói một cách chơn chánh: “Vị đệ tử được bậc Ðạo Sư hỗ trợ, chứng được đại thắng trí”, người ấy sẽ nói về tôi như sau: “Mahà Moggahàna là người đệ tử được bậc Ðạo Sư hỗ trợ, chứng được đại thắng trí”."
+      },
+      {
+        "id": "p15",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn40.10": {
+    "canonicalRef": "sn40.10",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn40.10/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:58+00:00",
+    "materializedAt": "2026-09-02T12:30:58+00:00",
+    "contentHash": "eca8162a32f805223290786664400ef609b232f22c8c3a299df8c42af08770d7",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 40: Tương Ưng Moggallāna"
+      },
+      {
+        "id": "p2",
+        "text": "40.10. Sakka (Ðế-thích)"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Một thời Tôn giả Mahà Moggallāna trú ở Sāvatthi, tại Jetavana, vườn ông Anāthapiṇḍika."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Rồi Tôn giả Mahà Moggallāna như người lực sĩ duỗi cánh tay đang co lại, hay co lại cánh tay đang duỗi ra, như vậy biến mất ở Jetavana và hiện ra trước mặt chư Thiên ở Tāvatiṁsa (Tam thập Tam thiên)."
+      },
+      {
+        "id": "p5",
+        "text": "I"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Rồi Thiên chủ Sakka cùng với 500 chư Thiên đi đến Tôn giả Mahà Moggallāna; sau khi đến, đảnh lễ Tôn giả Mahà Moggallāna rồi đứng một bên."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Tôn giả Mahà Moggallāna nói với Thiên chủ Sakka đang đứng một bên:"
+      },
+      {
+        "id": "p8",
+        "text": "—Lành thay, này Thiên chủ, là quy y Phật. Do nhân quy y Phật, này Thiên chủ, ở đây một số chúng sanh, sau khi thân hoại mạng chung, được sanh lên thiện thú, Thiên giới, cõi đời này. Lành thay, này Thiên chủ, là quy y pháp. Do nhân quy y Pháp, này Thiên chủ, ở đây một số chúng sanh, sau khi thân hoại mạng chung, được sanh lên thiện thú, Thiên giới, cõi đời này. Lành thay, này Thiên chủ, là quy y chúng Tăng. Do nhân quy y chúng Tăng, này Thiên chủ, ở đây một số chúng sanh, sau khi thân hoại mạng chung, được sanh lên thiện thú, Thiên giới, cõi đời này."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 5 —Lành thay, này Hiền giả Moggallāna, là quy y Phật. Do nhân quy y Phật, này Hiền giả Moggallāna, ở đây một số chúng sanh, sau khi thân hoại mạng chung, được sanh lên thiện thú, Thiên giới, cõi đời này. Lành thay, này Hiền giả Moggallāna, là quy y Pháp, này Hiền giả Moggallāna … là quy y chúng Tăng. Do nhân quy y chúng Tăng, thưa Hiền giả Moggallāna, ở đây một số chúng sanh, sau khi thân hoại mạng chung, được sanh lên thiện thú, Thiên giới, cõi đời này."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 6-7-8. Thiên chủ Sakka với 600 chư Thiên …"
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 9-10-11. Thiên chủ Sakka với 700 chư Thiên …"
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 12-13-14. Thiên chủ Sakka với 800 chư Thiên …"
+      },
+      {
+        "id": "p13",
+        "text": "Vi-n 15-16-17. Thiên chủ Sakka với 8000 chư Thiên … (giống như số 3,4,5 như trên, với những thay đổi cần thiết) …"
+      },
+      {
+        "id": "p14",
+        "text": "II"
+      },
+      {
+        "id": "p15",
+        "text": "Vi-n 18 Rồi Thiên chủ Sakka với 500 chư Thiên đi đến Tôn giả Mahà Moggallāna; sau khi đến, đảnh lễ Tôn giả Moggallāna rồi đứng một bên."
+      },
+      {
+        "id": "p16",
+        "text": "Vi-n 19 Tôn giả Mahà Moggallāna nói với Thiên chủ Sakka đang đứng một bên:"
+      },
+      {
+        "id": "p17",
+        "text": "—Lành thay, này Thiên chủ, là đầy đủ lòng tin bất động (avecca pasàdena) đối với đức Phật: Ðây là Thế Tôn, bậc Ứng Cúng, Chánh Biến Tri, Minh Hạnh Túc, Thiện Thệ, Thế Gian Giải, Vô Thượng Sĩ, Ðiều Ngự Trượng Phu, Thiên Nhơn Sư, Phật, Thế Tôn. Do nhân đầy đủ lòng tin bất động đối với đức Phật, này Thiên chủ, như vậy, ở đây một số chúng sanh, sau khi thân hoại mạng chung, được sanh thiện thú, Thiên giới, cõi đời này. Lành thay, này Thiên chủ, là lòng tin bất động đối với Pháp: Pháp do Thế Tôn khéo thuyết, thiết thực hiện tại, có hiệu quả tức thời, đến để mà thấy, có khả năng hướng thượng, được người trí tự mình giác hiểu. Do nhân đầy đủ lòng tin bất động như vậy đối với Pháp, này Thiên chủ, ở đây một số chúng sanh, sau khi thân hoại mạng chung, được sanh lên thiện thú, Thiên giới, cõi đời này. Lành thay, này Thiên chủ, là đầy đủ lòng tin bất động đối với chúng Tăng: Tế hạnh là chúng đệ tử của Thế Tôn. Trực hạnh là chúng đệ tử của Thế Tôn. Chánh hạnh là chúng đệ tử của Thế Tôn. Thanh tịnh hạnh là chúng đệ tử của Thế Tôn. Tức là bốn đôi tám chúng. Chúng đệ tử của Thế Tôn là đáng cung kính, đáng cúng dường, đáng tôn trọng, đáng được chấp tay, là phước điền vô thượng ở đời. Do nhân đầy đủ lòng tin bất động đối với chúng Tăng, này Thiên chủ, ở đây, một số chúng sanh, sau khi thân hoại mạng chung, được sanh lên thiện thú, Thiên giới, cõi đời này. Lành thay, này Thiên chủ, là đầy đủ hoàn toàn các giới được các bậc Thánh ái kính, không bị phá hủy, không bị phá hoại, không bị lấm tấm, không bị ô nhiễm, đem lại giải thoát, được người trí tán thán, không bị ô nhiễm (bởi tham và si), đưa đến Thiền định. Do nhân đầy đủ các giới được các bậc Thánh ái kính, này Thiên chủ, như vậy ở đây một số chúng sanh, sau khi thân hoại mạng chung, được sanh lên thiện thú, Thiên giới, cõi đời này."
+      },
+      {
+        "id": "p18",
+        "text": "Vi-n 20 —Lành thay, thưa Hiền giả Moggallāna, là đầy đủ lòng tin bất động đối với đức Phật: Ðây là Thế Tôn, bậc Ứng Cúng, Chánh Biến Tri, Minh Hạnh Túc, Thiện Thệ, Thế Gian Giải, Vô Thượng Sĩ, Ðiều Ngự Trượng Phu, Thiên Nhơn Sư, Phật, Thế Tôn. Do nhân đầy đủ lòng tin bất động đối với đức Phật, thưa Hiền giả Moggallāna, ở đây một số chúng sanh, sau khi thân hoại mạng chung, được sanh lên thiện thú, Thiên giới, cõi đời này. Lành thay, này Hiền giả Moggallāna, là đầy đủ lòng tin bất động đối với Pháp: Ðây là pháp được Thế Tôn khéo giảng … được người có trí tự mình giác hiểu. Do nhân đầy đủ lòng tin bất động đối với Pháp, thưa Hiền giả Moggallāna, ở đây một số chúng sinh, sau khi thân hoại mạng chung, được sanh vào thiện thú, Thiên giới, cõi đời này. Lành thay, thưa Hiền giả Moggallāna, là đầy đủ lòng tin bất động đối với chúng Tăng: Tế hạnh là chúng đệ tử của Thế Tôn … là vô thượng phước điền ở đời. Do nhân đầy đủ lòng tin bất động đối với chúng đệ tử của Thế Tôn, thưa Hiền giả Moggallāna, như vậy, ở đây một số chúng sanh, sau khi thân hoại mạng chung, được sanh lên thiện thú, Thiên giới, cõi đời này. Lành thay, thưa Hiền giả Moggallāna, là đầy đủ các giới được các bậc Thánh ái kính, không bị phá hủy … đưa đến Thiền định. Do nhân đầy đủ các giới được các bậc Thánh ái kính, thưa Hiền giả Moggallāna, như vậy, ở đây một số chúng sanh, sau khi thân hoại mạng chung, được sanh lên thiện thú, Thiên giới, cõi đời này."
+      },
+      {
+        "id": "p19",
+        "text": "Vi-n 21-23. Rồi Thiên chủ Sakka với 600 chư Thiên …"
+      },
+      {
+        "id": "p20",
+        "text": "Vi-n 24-26. Rồi Thiên chủ Sakka với 700 chư Thiên …"
+      },
+      {
+        "id": "p21",
+        "text": "Vi-n 27-29. Rồi Thiên chủ Sakka với 800 chư Thiên …"
+      },
+      {
+        "id": "p22",
+        "text": "Vi-n 30 Rồi Thiên chủ Sakka với 8000 chư Thiên đi đến Tôn giả Mahà Moggallāna; sau khi đến, đảnh lễ Tôn giả Mahà Moggallāna rồi đứng một bên."
+      },
+      {
+        "id": "p23",
+        "text": "Vi-n 31 Tôn giả Mahà Moggallāna nói với Thiên chủ Sakka đang đứng một bên:"
+      },
+      {
+        "id": "p24",
+        "text": "—Lành thay, này Thiên chủ, là đầy đủ lòng tin bất động đối với đức Phật: Ðây là Thế Tôn, bậc Ứng Cúng, Chánh Biến Tri … được sanh lên thiện thú, Thiên giới, cõi đời này."
+      },
+      {
+        "id": "p25",
+        "text": "Vi-n 32 —Lành thay, thưa Hiền giả Moggallāna, là đầy đủ lòng tin bất động đối với đức Phật … được sanh lên thiện thú, Thiên giới, cõi đời này."
+      },
+      {
+        "id": "p26",
+        "text": "III"
+      },
+      {
+        "id": "p27",
+        "text": "Vi-n 33 Rồi Thiên chủ Sakka cùng với 500 chư Thiên đi đến Tôn giả Mahà Moggallāna …"
+      },
+      {
+        "id": "p28",
+        "text": "Vi-n 34 Tôn giả Mahà Moggallāna nói với Thiên chủ Sakka đang đứng một bên:"
+      },
+      {
+        "id": "p29",
+        "text": "—Lành thay, này Thiên chủ, là quy y Phật. Do nhân quy y Phật, này Thiên chủ, như vậy ở đây một số chúng sanh, sau khi thân hoại mạng chung, được sanh lên thiện thú, Thiên giới, cõi đời này. Họ có được 10 pháp hơn chư Thiên khác: thiên thọ mạng, thiên sắc, thiên an lạc, thiên danh dự, thiên thù thắng, thiên sắc, thiên thanh, thiên hương, thiên vị, thiên xúc. Lành thay, này Thiên chủ, là sự quy y Pháp. Do nhân quy y Pháp, này Thiên chủ, như vậy ở đây một số chúng sanh, sau khi thân hoại mạng chung, được sanh lên thiện thú, Thiên giới, cõi đời này. Họ có được 10 pháp lợi hơn các chư Thiên khác: thiên thọ mạng … thiên xúc. Lành thay, này Thiên chủ, là quy y Tăng. Do nhân quy y Tăng, này Thiên chủ, như vậy, ở đây một số chúng sanh, sau khi thân hoại mạng chung, được sanh lên thiện thú, Thiên giới, cõi đời này. Họ có được 10 pháp lợi hơn các chư Thiên khác: thiên thọ mạng … thiên xúc."
+      },
+      {
+        "id": "p30",
+        "text": "Vi-n 35 —Lành thay, thưa Hiền giả Moggallāna, là quy y Phật … thiên xúc (như trên)."
+      },
+      {
+        "id": "p31",
+        "text": "Vi-n 36-38. Rồi Thiên chủ Sakka với 600 Thiên nhơn …"
+      },
+      {
+        "id": "p32",
+        "text": "Vi-n 39-41. Rồi Thiên chủ Sakka với 700 Thiên nhơn …"
+      },
+      {
+        "id": "p33",
+        "text": "Vi-n 42-44. Rồi Thiên chủ Sakka với 800 Thiên nhơn …"
+      },
+      {
+        "id": "p34",
+        "text": "Vi-n 45-47. Rồi Thiên chủ Sakka với 8000 Thiên nhơn …"
+      },
+      {
+        "id": "p35",
+        "text": "IV"
+      },
+      {
+        "id": "p36",
+        "text": "Vi-n 48 Rồi Thiên chủ Sakka với 500 Thiên nhơn đi đến Tôn giả Mahà Moggallāna; sau khi đến, đảnh lễ Tôn giả Mahà Moggallāna rồi đứng một bên."
+      },
+      {
+        "id": "p37",
+        "text": "Vi-n 49 Rồi Tôn giả Mahà Moggallāna nói với Thiên chủ Sakka đang đứng một bên:"
+      },
+      {
+        "id": "p38",
+        "text": "—Lành thay, này Thiên chủ, là đầy đủ lòng tin bất động đối với đức Phật: Ðây là Thế Tôn, bậc Ứng Cúng, Chánh Biến Tri … Thế Tôn. Do nhân đầy đủ lòng tin bất động đối với đức Phật, ở đây một số chúng sanh, sau khi thân hoại mạng chung, được sanh lên thiện thú, Thiên giới, cõi đời này. Họ có được 10 pháp lợi hơn các chư Thiên khác: thiên thọ mạng … thiên xúc. Lành thay, này Thiên chủ, là đầy đủ lòng tin bất động đối với Pháp … lòng tin bất động đối với chúng Tăng … là đầy đủ các giới được bậc Thánh ái kính … thiên xúc."
+      },
+      {
+        "id": "p39",
+        "text": "Vi-n 50 —Lành thay, thưa Hiền giả Moggallāna, là đầy đủ lòng tin bất động đối với đức Phật … thiên xúc."
+      },
+      {
+        "id": "p40",
+        "text": "Vi-n 51-53. Rồi Thiên chủ Sakka với 600 chư Thiên …"
+      },
+      {
+        "id": "p41",
+        "text": "Vi-n 54-56. Rồi Thiên chủ Sakka với 700 chư Thiên …"
+      },
+      {
+        "id": "p42",
+        "text": "Vi-n 57-60. Rồi Thiên chủ Sakka với 800 chư Thiên …"
+      },
+      {
+        "id": "p43",
+        "text": "Vi-n 61-63. Rồi Thiên chủ Sakka với 8000 chư Thiên … thiên xúc."
+      },
+      {
+        "id": "p44",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn40.11": {
+    "canonicalRef": "sn40.11",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn40.11/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:58+00:00",
+    "materializedAt": "2026-09-02T12:30:58+00:00",
+    "contentHash": "9f9f0c850b2a6e84eb88faabadb8995e6f9b797dd767486f9807694c51f83a31",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 40: Tương Ưng Moggallāna"
+      },
+      {
+        "id": "p2",
+        "text": "40.11. Candana"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1-63. Rồi Thiên tử Candana …"
+      },
+      {
+        "id": "p4",
+        "text": "Rồi Thiên tử Suyāma …"
+      },
+      {
+        "id": "p5",
+        "text": "Rồi Thiên tử Santusita …"
+      },
+      {
+        "id": "p6",
+        "text": "Rồi Thiên chủ Sunimmita …"
+      },
+      {
+        "id": "p7",
+        "text": "Rồi Thiên tử Vasavattī …"
+      },
+      {
+        "id": "p8",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn40.2": {
+    "canonicalRef": "sn40.2",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn40.2/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:58+00:00",
+    "materializedAt": "2026-09-02T12:30:58+00:00",
+    "contentHash": "372d760b6175260a2836a7828eea6086f4310011280f2ff5e677d75e3f14715f",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 40: Tương Ưng Moggallāna"
+      },
+      {
+        "id": "p2",
+        "text": "40.2. Không Tầm"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1-2..."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 3 : “Thiền thứ hai, Thiền thứ hai”, được nói đến như vậy. Thế nào là Thiền thứ hai?"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 4 Và này chư Hiền, tôi suy nghĩ như sau: “Ở đây, Tỷ-kheo làm cho tịnh chỉ các tầm và tứ, chứng và trú Thiền thứ hai, một trạng thái hỷ lạc do định sanh, không tầm, không tứ, nội tĩnh, nhứt tâm”. Ðây gọi là Thiền thứ hai."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 5 Rồi này chư Hiền, tôi làm cho tịnh chỉ các tầm và tứ, chứng và trú Thiền thứ hai, một trạng thái hỷ lạc do định sanh, không tầm, không tứ, nội tĩnh, nhứt tâm. Này chư Hiền, khi tôi trú với an trú này, các tưởng câu hữu với tầm được tác ý và hiện hành."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 6 Rồi này chư Hiền, Thế Tôn với thần thông đi đến tôi và nói: “Này Moggallāna, này Moggallāna, chớ có phóng dật Thiền thứ hai. Này Bà-la-môn, hãy đặt tâm vào Thiền thứ hai! Hãy nhứt tâm vào Thiền thứ hai! Hãy định tâm vào Thiền thứ hai!”"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 7 Rồi này chư Hiền, trong một thời gian khác, tôi chứng và trú Thiền thứ hai, một trạng thái hỷ lạc do định sanh, không tầm, không tứ, nội tĩnh, nhứt tâm."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 8 (Như đoạn 8 của kinh trên)."
+      },
+      {
+        "id": "p10",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn40.3": {
+    "canonicalRef": "sn40.3",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn40.3/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:58+00:00",
+    "materializedAt": "2026-09-02T12:30:58+00:00",
+    "contentHash": "7aaf0503794f14c04f824aa7ff3c361fc90ee3e34712c9a5d44bfc4e2b743bf4",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 40: Tương Ưng Moggallāna"
+      },
+      {
+        "id": "p2",
+        "text": "40.3. Với Lạc"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1-2..."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 3 : “Thiền thứ ba, Thiền thứ ba”, như vậy được nói đến. Như thế nào là Thiền thứ ba?"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 4 Rồi này chư Hiền, tôi suy nghĩ như sau: “Ở đây, Tỷ-kheo ly hỷ trú xả, chánh niệm, tỉnh giác, thân cảm sự lạc thọ mà các bậc Thánh gọi là xả niệm lạc trú, chứng và trú Thiền thứ ba”. Ðây gọi là Thiền thứ ba."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 5 Rồi này chư Hiền, tôi ly hỷ trú xả, chánh niệm, tỉnh giác, thân cảm sự lạc thọ mà các bậc Thánh gọi là xả niệm lạc trú, chứng và trú Thiền thứ ba. Này chư Hiền, do tôi trú với an trú này, các tưởng câu hữu với hỷ được tác ý và hiện hành."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 6 Rồi này chư Hiền, Thế Tôn với thần thông đi đến tôi và nói như sau: “Này Moggallāna, này Moggallāna, chớ có phóng dật Thiền thứ ba! Này Moggallāna, hãy đặt tâm vào Thiền thứ ba! Hãy nhứt tâm vào Thiền thứ ba! Hãy định tâm vào Thiền thứ ba!”"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 7 Rồi này chư Hiền, trong một thời gian khác, tôi ly hỷ trú xả, chánh niệm tỉnh giác, thân cảm sự lạc thọ mà các bậc Thánh gọi là xả niệm lạc trú, chứng và trú Thiền thứ ba."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 8 (Như đoạn 8 của kinh trước)"
+      },
+      {
+        "id": "p10",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn40.4": {
+    "canonicalRef": "sn40.4",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn40.4/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:58+00:00",
+    "materializedAt": "2026-09-02T12:30:58+00:00",
+    "contentHash": "8e24df72e0d8cf2f7a0b6569737375b68ac74e401ee73dc0688d27436de507c4",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 40: Tương Ưng Moggallāna"
+      },
+      {
+        "id": "p2",
+        "text": "40.4. Xả"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1-2..."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 3 : “Thiền thứ tư, Thiền thứ tư”, như vậy được nói đến. Như thế nào là Thiền thứ tư?"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 4 Này chư Hiền, rồi tôi suy nghĩ như sau: “Ở đây, Tỷ-kheo xả khổ, xả lạc, diệt hỷ ưu đã cảm thọ trước, chứng và trú Thiền thứ tư, không khổ, không lạc, xả niệm thanh tịnh”. Ðây gọi là Thiền thứ tư."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 5 Rồi này chư Hiền, tôi xả khổ, xả lạc, diệt hỷ ưu đã cảm thọ trước, chứng và trú Thiền thứ tư, không khổ, không lạc, xả niệm thanh tịnh. Này chư Hiền, do tôi trú với an trú này, các tưởng câu hữu với lạc được tác ý và hiện hành."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 6 Rồi này chư Hiền, Thế Tôn với thần thông đi đến tôi và nói: “Này Moggallāna, này Moggallāna, chớ có phóng dật Thiền thứ tư. Này Moggallāna, hãy đặt tâm vào Thiền thứ tư! Hãy nhứt tâm vào Thiền thứ tư! Hãy định tâm vào Thiền thứ tư!”"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 7 Rồi này chư Hiền, trong một thời gian khác, tôi xả lạc, xả khổ, diệt hỷ ưu đã cảm thọ trước, chứng và trú Thiền thứ tư, không khổ, không lạc, xả niệm thanh tịnh."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 8 (Như đoạn 8 của kinh trên)."
+      },
+      {
+        "id": "p10",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn40.5": {
+    "canonicalRef": "sn40.5",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn40.5/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:58+00:00",
+    "materializedAt": "2026-09-02T12:30:58+00:00",
+    "contentHash": "38b8d4da24adb04f3f16923201969247258e634eae573a1dae1d4e00b80ad3dc",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 40: Tương Ưng Moggallāna"
+      },
+      {
+        "id": "p2",
+        "text": "40.5. Hư Không"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1-2..."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 3 : “Không vô biên xứ, Không vô biên xứ”, như vậy được nói đến. Thế nào là Không vô biên xứ?"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 4 Này chư Hiền, tôi suy nghĩ như sau: “Ở đây, Tỷ-kheo vượt qua sắc tưởng một cách hoàn toàn, chấm dứt đối ngại tưởng, không tác ý sai biệt tưởng, tôi biết rằng: ‘Hư không là vô biên”, chứng và trú Không vô biên xứ”. Ðây gọi là Không vô biên xứ."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 5 Rồi này chư Hiền, đoạn tận sắc tưởng một cách hoàn toàn, chấm dứt đối ngại tưởng, không tác ý sai biệt tưởng, tôi biết rằng Hư không là vô biên, chứng và trú Không vô biên xứ. Này chư Hiền, do tôi trú với an trú này, các tưởng câu hữu với sắc được tác ý và hiện hành."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 6 Rồi này chư Hiền, Thế Tôn với thần thông đi đến tôi và nói như sau: “Này Moggallāna, này Moggallāna, chớ có phóng dật Không vô biên xứ! Này Moggallāna, hãy đặt tâm vào Không vô biên xứ! Hãy nhứt tâm vào Không vô biên xứ! Hãy định tâm vào Không vô biên xứ!”"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 7 Rồi này chư Hiền, trong một thời gian khác, vượt qua sắc tưởng một cách hoàn toàn, chấm dứt đối ngại tưởng, không tác ý sai biệt tưởng, tôi biết rằng Hư không là vô biên, chứng và trú Không vô biên xứ."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 8 (Như đoạn 8 của kinh trên)."
+      },
+      {
+        "id": "p10",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn40.6": {
+    "canonicalRef": "sn40.6",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn40.6/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:58+00:00",
+    "materializedAt": "2026-09-02T12:30:58+00:00",
+    "contentHash": "816cb1eb23efa1d24bdd71dcc63bf14ebd67abf6b1cc14ba82cdcb91cc47cd14",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 40: Tương Ưng Moggallāna"
+      },
+      {
+        "id": "p2",
+        "text": "40.6. Thức"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1-2..."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 3 : “Thức vô biên xứ, Thức vô biên xứ”, như vậy được nói đến. Thế nào là Thức vô biên xứ?"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 4 Này chư Hiền, tôi suy nghĩ như sau: “Ở đây, Tỷ-kheo vượt qua Không vô biên xứ một cách hoàn toàn, biết rằng: ‘Thức là vô biên’, chứng và trú Thức vô biên xứ”. Ðây gọi là Thức vô biên xứ."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 5 Rồi này chư Hiền, vượt qua Không vô biên xứ, tôi biết rằng Thức là vô biên, chứng và trú Thức vô biên xứ … Này chư Hiền, do tôi trú với an trú này, các tưởng câu hữu với Không vô biên xứ được tác ý và hiện hành."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 6 Rồi này chư Hiền, Thế Tôn với thần thông đi đến tôi và nói như sau: “Này Moggallāna, này Moggallāna, chớ có phóng dật Thức vô biên xứ! Này Moggallāna, hãy đặt tâm vào Thức vô biên xứ! Hãy nhứt tâm vào Thức vô biên xứ! Hãy định tâm vào Thức vô biên xứ!”"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 7 Rồi này chư Hiền, sau một thời gian, tôi vượt qua Không vô biên xứ, biết rằng Thức là vô biên, chứng và trú Thức vô biên xứ."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 8 (Như đoạn 8 của kinh trên)."
+      },
+      {
+        "id": "p10",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn40.7": {
+    "canonicalRef": "sn40.7",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn40.7/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:58+00:00",
+    "materializedAt": "2026-09-02T12:30:58+00:00",
+    "contentHash": "06e9e6813fa681c48de469c3c2c31d007902c3ba8c431a4a624cf578c7b67397",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 40: Tương Ưng Moggallāna"
+      },
+      {
+        "id": "p2",
+        "text": "40.7. Vô Sở Hữu Xứ"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1-2..."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 3 : “Vô sở hữu xứ, Vô sở hữu xứ”, như vậy được nói đến. Thế nào là Vô sở hữu xứ?"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 4 Này chư Hiền, tôi suy nghĩ như sau: “Ở đây, Tỷ-kheo vượt qua Thức vô biên xứ một cách hoàn toàn, biết rằng: ‘Không có sự vật gì”, chứng và trú Vô sở hữu xứ”. Này chư Hiền, đây gọi là Vô sở hữu xứ."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 5 Rồi này chư Hiền, sau khi vượt qua Thức vô biên xứ, tôi biết rằng không có sự vật gì, chứng và trú Vô sở hữu xứ. Này chư Hiền, do tôi trú với an trú này, các tưởng câu hữu với Thức vô biên xứ được tác ý và hiện hành."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 6 Rồi này chư Hiền, Thế Tôn với thần thông đi đến tôi và nói như sau: “Này Moggallāna, này Moggallāna, chớ có phóng dật Vô sở hữu xứ. Này Moggallāna, hãy đặt tâm vào Vô sở hữu xứ! Hãy nhứt tâm vào Vô sở hữu xứ! Hãy định tâm vào Vô sở hữu xứ!”"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 7 Rồi này chư Hiền, sau một thời gian, vượt qua Thức vô biên xứ, tôi biết rằng không có sự vật gì, chứng và trú Vô sở hữu xứ."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 8 (Như đoạn 8 của kinh trên)."
+      },
+      {
+        "id": "p10",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn40.8": {
+    "canonicalRef": "sn40.8",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn40.8/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:58+00:00",
+    "materializedAt": "2026-09-02T12:30:58+00:00",
+    "contentHash": "33b4df1abe512bd66a9b7ee9e648716965bd56efa18eb839771d0bf9d5b1186a",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 40: Tương Ưng Moggallāna"
+      },
+      {
+        "id": "p2",
+        "text": "40.8. Phi Tưởng"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1-2..."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 3 : “Phi tưởng phi phi tưởng xứ, Phi tưởng phi phi tưởng xứ”, như vậy được nói đến. Thế nào là Phi tưởng phi phi tưởng xứ?"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 4 Rồi này chư Hiền, tôi suy nghĩ như sau: “Ở đây, Tỷ-kheo vượt qua Vô sở hữu xứ một cách hoàn toàn, chứng và trú Phi tưởng phi phi tưởng xứ”. Ðây gọi là Phi tưởng phi phi tưởng xứ."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 5 Rồi này chư Hiền, tôi vượt qua Vô sở hữu xứ một cách hoàn toàn, chứng và trú Phi tưởng phi phi tưởng xứ. Này chư Hiền, do tôi trú với an trú này, các tưởng câu hữu với Vô sở hữu xứ được tác ý và hiện hành."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 6 Rồi này chư Hiền, Thế Tôn với thần thông đi đến tôi và nói như sau: “Này Moggallāna, này Moggallāna, chớ có phóng dật Phi tưởng phi phi tưởng xứ! Này Moggallāna, hãy đặt tâm vào Phi tưởng phi phi tưởng xứ! Hãy nhứt tâm vào Phi tưởng phi phi tưởng xứ! Hãy định tâm vào Phi tưởng phi phi tưởng xứ!”"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 7 Rồi này chư Hiền, sau một thời gian, tôi vượt qua Vô sở hữu xứ một cách hoàn toàn, chứng và trú Phi tưởng phi phi tưởng xứ."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 8 (Như số 8 của kinh trước)."
+      },
+      {
+        "id": "p10",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn40.9": {
+    "canonicalRef": "sn40.9",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn40.9/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:58+00:00",
+    "materializedAt": "2026-09-02T12:30:58+00:00",
+    "contentHash": "d7b7592d8025668066bc84cb2b66ef56db1dec123846f7d75d73cc8ab4f13777",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 40: Tương Ưng Moggallāna"
+      },
+      {
+        "id": "p2",
+        "text": "40.9. Vô Tướng"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1-2..."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 3 : “Vô tướng tâm định, Vô tướng tâm định” (animitto cete samādhi), như vậy được nói đến. Thế nào là Vô tướng tâm định?"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 4 Và này chư Hiền, tôi suy nghĩ như sau: “Ở đây, Tỷ-kheo không tác ý tất cả tướng, chứng và trú Vô tướng tâm định”. Ðây gọi là Vô tướng tâm định."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 5 Rồi này chư Hiền, tôi không tác ý tất cả tướng, chứng và an trú Vô tướng tâm định. Này chư Hiền, do tôi trú với an trú này, (tôi đạt được) thức tùy thuận tướng (nimittànusarivinnànam)."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 6 Rồi này chư Hiền, Thế Tôn với thần thông đi đến tôi và nói như sau: “Này Moggallāna, này Moggallāna, chớ có phóng dật Vô tướng tâm định! Này Moggallāna, hãy đặt tâm vào Vô tướng tâm định! Hãy nhứt tâm vào Vô tướng tâm định! Hãy định tâm vào Vô tướng tâm định!”"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 7 Rồi này chư Hiền, sau một thời gian, tôi không tác ý tất cả tướng, chứng và trú Vô tướng tâm định."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 8 Này chư Hiền, nếu ai có nói một cách chơn chánh: “Vị đệ tử được bậc Ðạo Sư hỗ trợ, chứng và đạt thắng trí”. Người ấy sẽ nói về tôi như sau: “Moggallāna là người đệ tử được bậc Ðạo Sư hỗ trợ, chứng và đạt thắng trí”."
+      },
+      {
+        "id": "p10",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  }
+}

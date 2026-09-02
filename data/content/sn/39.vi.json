@@ -1,0 +1,88 @@
+{
+  "sn39.1-15": {
+    "canonicalRef": "sn39.1-15",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn39.1-15/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:57+00:00",
+    "materializedAt": "2026-09-02T12:30:57+00:00",
+    "contentHash": "3f1eb3a008757da68fa31ddb0747deae8111887be371787a1339d19be7a84b20",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 39: Tương Ưng Sàmandaka"
+      },
+      {
+        "id": "p2",
+        "text": "39.1–15"
+      },
+      {
+        "id": "p3",
+        "text": "39.1. Niết Bàn"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Một thời Tôn giả Sāriputta ở giữa dân chúng Vajjī, trên bờ sông Hằng, tại Ukkavelà."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Rồi du sĩ Sàmandaka đi đến Tôn giả Sāriputta; sau khi đến, nói lên với Tôn giả Sāriputta những lời chào đón hỏi thăm, sau khi nói lên những lời chào đón hỏi thăm thân hữu rồi ngồi xuống một bên."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Ngồi một bên, du sĩ Sàmandaka thưa với Tôn giả Sāriputta:"
+      },
+      {
+        "id": "p7",
+        "text": ": “Niết-bàn, Niết-bàn”, này Hiền giả Sāriputta, được nói đến như vậy. Này Hiền giả, thế nào là Niết-bàn? (Giống như kinh trước, Chương Bốn I, từ số 3 đến số 6.)"
+      },
+      {
+        "id": "p8",
+        "text": "39.2–15"
+      },
+      {
+        "id": "p9",
+        "text": "(Giống như trong Chương Bốn, số 2–15, với những thay đổi cần thiết)."
+      },
+      {
+        "id": "p10",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn39.16": {
+    "canonicalRef": "sn39.16",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn39.16/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:57+00:00",
+    "materializedAt": "2026-09-02T12:30:57+00:00",
+    "contentHash": "aa458d5d99841fa1eb9f5fac1d115d5ac23bf1aee00323a0e7bedc4c8da015a9",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 39: Tương Ưng Sàmandaka"
+      },
+      {
+        "id": "p2",
+        "text": "39.16. Khó Làm"
+      },
+      {
+        "id": "p3",
+        "text": "(Giống như Chương Bốn, số 16)"
+      },
+      {
+        "id": "p4",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  }
+}

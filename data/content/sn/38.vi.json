@@ -1,0 +1,886 @@
+{
+  "sn38.1": {
+    "canonicalRef": "sn38.1",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn38.1/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:57+00:00",
+    "materializedAt": "2026-09-02T12:30:57+00:00",
+    "contentHash": "6081b972a03de41cb2d7c37f28cd3a384678e66352eb1b0661b92877ce343701",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 38: Tương Ưng Jambukhàdaka"
+      },
+      {
+        "id": "p2",
+        "text": "38.1. Nibbāna (Niết-bàn)"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Một thời, Tôn giả Sāriputta trú ở giữa dân chúng Magadha (Ma-kiệt-đà), làng Nālaka."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Rồi du sĩ Jambukhàdaka đi đến Tôn giả Sāriputta; sau khi đến, nói lên với Tôn giả Sāriputta những lời chào đón hỏi thăm, sau khi nói lên những lời chào đón hỏi thăm thân hữu rồi ngồi xuống một bên."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Ngồi một bên, du sĩ Jambukhàdaka nói với Tôn giả Sāriputta:"
+      },
+      {
+        "id": "p6",
+        "text": ": “Niết-bàn, Niết-bàn”, này Hiền giả Sāriputta, như vậy được nói đến. Này Hiền giả, thế nào là Niết-bàn?"
+      },
+      {
+        "id": "p7",
+        "text": "—Này Hiền giả, đoạn tận tham, đoạn tận sân, đoạn tận si, đây gọi là Niết-bàn."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 4 —Này Hiền giả, có con đường nào, có đạo lộ nào đưa đến chứng đắc Niết-bàn?"
+      },
+      {
+        "id": "p9",
+        "text": "—Này Hiền giả, có con đường có đạo lộ đưa đến chứng đắc Niết-bàn ấy."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 5 —Này Hiền giả, con đường ấy là gì, đạo lộ ấy là gì đưa đến chứng đắc Niết-bàn?"
+      },
+      {
+        "id": "p11",
+        "text": "—Này Hiền giả, đây là con đường Thánh đạo Tám ngành đưa đến chứng đắc Niết-bàn ấy, tức là chánh tri kiến, chánh tư duy, chánh ngữ, chánh nghiệp, chánh mạng, chánh tinh tấn, chánh niệm, chánh định. Này Hiền giả, đây là con đường, đây là đạo lộ đưa đến chứng đắc Niết-bàn ấy."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 6 —Này Hiền giả, hiền thiện là con đường, hiền thiện là đạo lộ đưa đến chứng đắc Niết-bàn. Thật là vừa đủ, này Hiền giả, để không phóng dật."
+      },
+      {
+        "id": "p13",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn38.10": {
+    "canonicalRef": "sn38.10",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn38.10/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:57+00:00",
+    "materializedAt": "2026-09-02T12:30:57+00:00",
+    "contentHash": "103c6b2ba8ee9b8ad7533a69cf021154fdc775a3016ffada422a1612bd57f0d4",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 38: Tương Ưng Jambukhàdaka"
+      },
+      {
+        "id": "p2",
+        "text": "38.10. Khát Ái"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1-2. …"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 3 “Khát ái, khát ái”, này Hiền giả Sāriputta, được nói đến như vậy. Này Hiền giả, thế nào là khát ái?"
+      },
+      {
+        "id": "p5",
+        "text": "—Có ba ái này, này Hiền giả, dục ái, hữu ái, vô hữu ái. Này Hiền giả, đây là ba khát ái này."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 —Này Hiền giả, có con đường nào, có đạo lộ nào đưa đến đoạn tận các khát ái ấy?"
+      },
+      {
+        "id": "p7",
+        "text": "—Này Hiền giả, có con đường, có đạo lộ đưa đến đoạn tận các khát ái ấy."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5-6. (Như kinh trước, số 5 và 6, với những thay đổi cần thiết)."
+      },
+      {
+        "id": "p9",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn38.11": {
+    "canonicalRef": "sn38.11",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn38.11/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:57+00:00",
+    "materializedAt": "2026-09-02T12:30:57+00:00",
+    "contentHash": "14994b707a15a6c75e2ff7f6310e94af7a9fb56b32723b31719a78e76f70c840",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 38: Tương Ưng Jambukhàdaka"
+      },
+      {
+        "id": "p2",
+        "text": "38.11. Bộc Lưu (Ogha)"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1-2. …"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 3 “Bộc lưu, bộc lưu”, này Hiền giả Sāriputta, được nói đến như vậy. Này Hiền giả, thế nào là bộc lưu?"
+      },
+      {
+        "id": "p5",
+        "text": "—Có bốn bộc lưu này, này dục bộc lưu, Hiền giả, hữu bộc lưu, kiến bộc lưu, vô minh bộc lưu. Này Hiền giả, có bốn bộc lưu này."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 —Này Hiền giả, có con đường nào, có đạo lộ nào đưa đến đoạn tận các bộc lưu ấy?"
+      },
+      {
+        "id": "p7",
+        "text": "—Này Hiền giả, có con đường, có đạo lộ đưa đến đoạn tận các bộc lưu ấy."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5-6. (Như kinh trước, số 5 và số 6, với những thay đổi cần thiết)"
+      },
+      {
+        "id": "p9",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn38.12": {
+    "canonicalRef": "sn38.12",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn38.12/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:57+00:00",
+    "materializedAt": "2026-09-02T12:30:57+00:00",
+    "contentHash": "8b63a517c82939e8d32fc3bd6f1d61d4fba3dc874c0decb92e568c06901c4756",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 38: Tương Ưng Jambukhàdaka"
+      },
+      {
+        "id": "p2",
+        "text": "38.12. Chấp Thủ (Upàdànam)"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1-2. …"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 3 : “Thủ, thủ”, này Hiền giả Sāriputta, được gọi là như vậy. Này Hiền giả, thế nào là thủ?"
+      },
+      {
+        "id": "p5",
+        "text": "—Có bốn thủ này, này Hiền giả, dục thủ, kiến thủ, giới cấm thủ, ngã luận thủ. Này Hiền giả, đây là bốn thủ này."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 —Này Hiền giả, có con đường nào, có đạo lộ nào đưa đến đoạn tận bốn thủ ấy?"
+      },
+      {
+        "id": "p7",
+        "text": "—Này Hiền giả, có con đường, có đạo lộ đưa đến đoạn tận bốn thủ ấy."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5-6. (Như kinh trên, số 5 và số 6, với những thay đổi cần thiết)."
+      },
+      {
+        "id": "p9",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn38.13": {
+    "canonicalRef": "sn38.13",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn38.13/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:58+00:00",
+    "materializedAt": "2026-09-02T12:30:58+00:00",
+    "contentHash": "8b6198f2659a217a0edd0df5a03541e58eda6364dc7bdfc69c884081600a96fc",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 38: Tương Ưng Jambukhàdaka"
+      },
+      {
+        "id": "p2",
+        "text": "38.13. Hữu"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1-2. …"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 3 : “Hữu, hữu”, này Hiền giả Sāriputta, như vậy được nói đến. Này Hiền giả, thế nào là hữu?"
+      },
+      {
+        "id": "p5",
+        "text": "—Có ba hữu này, này Hiền giả, dục hữu, sắc hữu, vô sắc hữu. Này Hiền giả, đây là các hữu này."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 —Này Hiền giả, có con đường nào, có đạo lộ nào đưa đến đoạn tận các hữu ấy?"
+      },
+      {
+        "id": "p7",
+        "text": "—Này Hiền giả, có con đường, có đạo lộ đưa đến đoạn tận các hữu ấy."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5-6. (Như kinh trước, số 5 và số 6, với những thay đổi cần thiết)."
+      },
+      {
+        "id": "p9",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn38.14": {
+    "canonicalRef": "sn38.14",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn38.14/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:57+00:00",
+    "materializedAt": "2026-09-02T12:30:57+00:00",
+    "contentHash": "7a6ba27dea95fb02645d69008be2f9870fa8b83d29ae767f33fa544b8a2f43a8",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 38: Tương Ưng Jambukhàdaka"
+      },
+      {
+        "id": "p2",
+        "text": "38.14. Khổ"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1-2. …"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 3 : “Khổ, khổ”, này Hiền giả Sāriputta, được nói đến như vậy. Này Hiền giả, thế nào là khổ?"
+      },
+      {
+        "id": "p5",
+        "text": "—Có ba khổ tánh này, này Hiền giả, khổ khổ tánh, hành khổ tánh, hoại khổ tánh. Này Hiền giả, đây là ba khổ tánh này."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 —Này Hiền giả, có con đường nào, có đạo lộ nào đưa đến liễu tri các khổ tánh ấy?"
+      },
+      {
+        "id": "p7",
+        "text": "—Này Hiền giả, có con đường có đạo lộ đưa đến đoạn tận các khổ tánh ấy."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5-6. (như kinh trước, số 5 và số 6, với những thay đổi cần thiết)."
+      },
+      {
+        "id": "p9",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn38.15": {
+    "canonicalRef": "sn38.15",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn38.15/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:57+00:00",
+    "materializedAt": "2026-09-02T12:30:57+00:00",
+    "contentHash": "6d1cf394062c334d303715ba74310ce30900af6453354be2acc30ac646af0ab7",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 38: Tương Ưng Jambukhàdaka"
+      },
+      {
+        "id": "p2",
+        "text": "38.15. Có Thân (Sakkāya)"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1-2. …"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 3 : “Có thân, có thân”, này Hiền giả Sāriputta, được nói đến như vậy. Này Hiền giả, thế nào là có thân?"
+      },
+      {
+        "id": "p5",
+        "text": "—Năm uẩn này, này Hiền giả, được Thế Tôn gọi là có thân: sắc thủ uẩn, thọ thủ uẩn, tưởng thủ uẩn, hành thủ uẩn và thức thủ uẩn. Này Hiền giả, những thủ uẩn này được Thế Tôn gọi là có thân."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 —Này Hiền giả, có con đường nào, có đạo lộ nào đưa đến liễu tri có thân ấy?"
+      },
+      {
+        "id": "p7",
+        "text": "—Này Hiền giả, có con đường, có đạo lộ đưa đến liễu tri có thân ấy."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5-6. (như kinh trước, số 5 và số 6, với những thay đổi cần thiết)."
+      },
+      {
+        "id": "p9",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn38.16": {
+    "canonicalRef": "sn38.16",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn38.16/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:57+00:00",
+    "materializedAt": "2026-09-02T12:30:57+00:00",
+    "contentHash": "20da7e2efee6de2d5041fe86d402d325af3fae6eee7e796102d4edab46412c08",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 38: Tương Ưng Jambukhàdaka"
+      },
+      {
+        "id": "p2",
+        "text": "38.16. Khó Làm"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1-2. …"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 3 —Này Hiền giả Sāriputta, trong Pháp luật này, cái gì là khó làm?"
+      },
+      {
+        "id": "p5",
+        "text": "—Xuất gia, này Hiền giả, là điều khó làm trong Pháp luật này."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 —Ðối với người đã xuất gia, này Hiền giả, cái gì là khó làm?"
+      },
+      {
+        "id": "p7",
+        "text": "—Ðối với người đã xuất gia, này Hiền giả, hoan hỷ (abhirati) là điều khó làm."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 —Này Hiền giả, đối với người đã hoan hỷ, cái gì là khó làm?"
+      },
+      {
+        "id": "p9",
+        "text": "—Này Hiền giả, đối với người đã hoan hỷ, điều khó làm là sự thực hành đúng pháp và tùy pháp."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 6 —Có lâu không, này Hiền giả, một người đã thực hành đúng pháp và tùy pháp có thể thành vị A-la-hán?"
+      },
+      {
+        "id": "p11",
+        "text": "—Không lâu, này Hiền giả."
+      },
+      {
+        "id": "p12",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn38.2": {
+    "canonicalRef": "sn38.2",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn38.2/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:57+00:00",
+    "materializedAt": "2026-09-02T12:30:57+00:00",
+    "contentHash": "a51a9d6e742a18c6e27b30b47319e349084ed54b62a516652aba609399b9434c",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 38: Tương Ưng Jambukhàdaka"
+      },
+      {
+        "id": "p2",
+        "text": "38.2. A-La-Hán"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1-2. …"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 3 : “A-la-hán, A-la-hán”, này Hiền giả Sāriputta, được gọi là như vậy. Này Hiền giả, thế nào là A-la-hán?"
+      },
+      {
+        "id": "p5",
+        "text": "—Này Hiền giả, đoạn tận tham, đoạn tận sân, đoạn tận si, đây gọi là A-la-hán."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 —Này Hiền giả, có con đường nào, có đạo lộ nào đưa đến chứng đắc A-la-hán ấy?"
+      },
+      {
+        "id": "p7",
+        "text": "—Này Hiền giả, có con đường, có đạo lộ đưa đến chứng đắc A-la-hán ấy."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 —Này Hiền giả, con đường ấy là gì, đạo lộ ấy là gì đưa đến chứng đắc A-la-hán ấy?"
+      },
+      {
+        "id": "p9",
+        "text": "—Này Hiền giả, đây là con đường Thánh đạo Tám ngành, tức là chánh tri kiến … chánh định … Này Hiền giả, đây là con đường, đây là đạo lộ đưa đến chứng đắc A-la-hán ấy."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 6 —Này Hiền giả, hiền thiện là con đường, hiền thiện là đạo lộ đưa đến chứng đắc A-la-hán. Thật là vừa đủ, này Hiền giả, để không phóng dật."
+      },
+      {
+        "id": "p11",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn38.3": {
+    "canonicalRef": "sn38.3",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn38.3/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:57+00:00",
+    "materializedAt": "2026-09-02T12:30:57+00:00",
+    "contentHash": "a9439f94b584954ffae0f9bd64580450b636b917a6e9a60494c7f1a440f78609",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 38: Tương Ưng Jambukhàdaka"
+      },
+      {
+        "id": "p2",
+        "text": "38.3. Vị Thuyết Pháp"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1-2. …"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 3 —Thưa Hiền giả, những ai là những vị thuyết thuận pháp ở đời? Những ai là những vị khéo thực hành ở đời? Những ai là những vị khéo đến ở đời?"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 4 —Này Hiền giả, những ai thuyết pháp để đoạn tận tham, những ai thuyết pháp để đoạn tận sân, những ai thuyết pháp để đoạn tận si; những vị ấy là những vị thuyết thuận pháp ở đời."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 5 Này Hiền giả, những ai thực hành đoạn tận tham, thực hành đoạn tận sân, thực hành đoạn tận si; những vị ấy là những vị khéo thực hành ở đời."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 6 Những ai đoạn tận tham, cắt đứt tận gốc rễ, làm cho như thân cây ta-la, làm cho không thể tái sanh, làm cho không thể sanh khởi trong tương lai; những ai đoạn tận sân, cắt đứt tận gốc rễ, làm cho như thân cây ta-la, làm cho không thể tái sanh, làm cho không thể sanh khởi trong tương lai; những ai đoạn tận si, cắt đứt tận gốc rễ, làm cho như thân cây ta-la, làm cho không thể tái sanh, làm cho không thể sanh khởi trong tương lai; những vị ấy là những vị khéo đến ở đời."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 7 —Này Hiền giả, có con đường nào, có đạo lộ nào đưa đến đoạn tận tham, sân và si ấy?"
+      },
+      {
+        "id": "p9",
+        "text": "—Này Hiền giả, có con đường, có đạo lộ đưa đến đoạn tận tham, sân và si ấy."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 8 —Này Hiền giả, con đường ấy là gì, đạo lộ ấy là gì đưa đến đoạn tận tham, sân và si ấy?"
+      },
+      {
+        "id": "p11",
+        "text": "—Này Hiền giả, đây là Thánh đạo Tám ngành đưa đến đoạn tận tham, sân và si ấy; tức là chánh tri kiến … chánh định. Này Hiền giả, đây là con đường, đây là đạo lộ đưa đến đoạn tận tham, sân và si ấy."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 9 —Này Hiền giả, hiền thiện là con đường, hiền thiện là đạo lộ đưa đến đoạn tận tham, sân và si ấy. Thật là vừa đủ, này Hiền giả Sāriputta, để không phóng dật."
+      },
+      {
+        "id": "p13",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn38.4": {
+    "canonicalRef": "sn38.4",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn38.4/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:57+00:00",
+    "materializedAt": "2026-09-02T12:30:57+00:00",
+    "contentHash": "fe532ed8ec3ff12c89275342bce2846520475eec2c33e2d647f385d2d95fe0c1",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 38: Tương Ưng Jambukhàdaka"
+      },
+      {
+        "id": "p2",
+        "text": "38.4. Có Cái Gì?"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 …"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 —Với mục đích gì, này Hiền giả Sāriputta, Phạm hạnh được sống dưới Sa-môn Gotama?"
+      },
+      {
+        "id": "p5",
+        "text": "—Này Hiền giả, Phạm hạnh được sống dưới Thế Tôn với mục đích liễu tri khổ."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 —Có con đường nào, có đạo lộ nào, này Hiền giả, đưa đến liễu tri khổ ấy?"
+      },
+      {
+        "id": "p7",
+        "text": "—Có con đường, có đạo lộ, này Hiền giả, đưa đến liễu tri khổ ấy."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 4 —Con đường ấy là gì, đạo lộ ấy là gì, này Hiền giả, đưa đến liễu tri khổ ấy?"
+      },
+      {
+        "id": "p9",
+        "text": "—Ðấy là Thánh đạo Tám ngành, này Hiền giả, tức là chánh tri kiến … chánh định. Ðây là con đường, đây là đạo lộ, này Hiền giả, đưa đến liễu tri khổ ấy."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 5 —Này Hiền giả, hiền thiện là con đường, hiền thiện là đạo lộ đưa đến liễu tri khổ ấy. Thật là vừa đủ, này Hiền giả, để không phóng dật."
+      },
+      {
+        "id": "p11",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn38.5": {
+    "canonicalRef": "sn38.5",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn38.5/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:57+00:00",
+    "materializedAt": "2026-09-02T12:30:57+00:00",
+    "contentHash": "6d7438f1e82110e7ed918a43ef5a89aff4d592da36c593314c95ca76723fc5ec",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 38: Tương Ưng Jambukhàdaka"
+      },
+      {
+        "id": "p2",
+        "text": "38.5. Ðiều Hòa Hơi Thở (Assàsa)"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1-2. …"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 3 : “Ðạt đến điều hòa hơi thở, đạt đến điều hòa hơi thở”, này Hiền giả Sāriputta, được nói đến như vậy. Cho đến như thế nào, này Hiền giả, là đạt đến điều hòa hơi thở?"
+      },
+      {
+        "id": "p5",
+        "text": "—Này Hiền giả, khi nào Tỷ-kheo như thật tuệ tri sự tập khởi, sự đoạn diệt, vị ngọt, sự nguy hiểm và sự xuất ly của sáu xúc xứ, cho đến như vậy là đạt được điều hòa hơi thở."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 —Này Hiền giả, có con đường nào, có đạo lộ nào đưa đến sự chứng đắc điều hòa hơi thở ấy?"
+      },
+      {
+        "id": "p7",
+        "text": "—Này Hiền giả, có con đường, có đạo lộ đưa đến sự chứng đắc điều hòa hơi thở ấy."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 —Này Hiền giả, con đường ấy là gì, đạo lộ ấy là gì đưa đến chứng đắc điều hòa hơi thở ấy?"
+      },
+      {
+        "id": "p9",
+        "text": "—Này Hiền giả, đây là con đường Thánh đạo Tám ngành, tức là chánh tri kiến … chánh định. Này Hiền giả, đây là con đường, đây là đạo lộ đưa đến chứng đắc điều hòa hơi thở ấy."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 6 —Này Hiền giả, hiền thiện là con đường …"
+      },
+      {
+        "id": "p11",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn38.6": {
+    "canonicalRef": "sn38.6",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn38.6/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:57+00:00",
+    "materializedAt": "2026-09-02T12:30:57+00:00",
+    "contentHash": "da4a8b7dfe565a7ed9a4c862b10e565fd2de9d530f51390ce9705585b7ab0ea9",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 38: Tương Ưng Jambukhàdaka"
+      },
+      {
+        "id": "p2",
+        "text": "38.6. Ðiều Hòa Hơi Thở Tối Thượng"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1-2. …"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 3 : “Ðạt đến điều hòa hơi thở tối thượng, đạt đến điều hòa hơi thở tối thượng”, này Hiền giả Sāriputta, được nói đến như vậy. Cho đến như thế nào, này Hiền giả, là đạt đến điều hòa hơi thở tối thượng?"
+      },
+      {
+        "id": "p5",
+        "text": "—Này Hiền giả, Tỷ-kheo sau khi như thật tuệ tri sự tập khởi, sự đoạn diệt, vị ngọt, sự nguy hiểm và sự xuất ly của sáu xúc xứ, được giải thoát không có chấp thủ; cho đến như vậy, này Hiền giả, là sự chứng đạt điều hòa hơi thở tối thượng."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 —Này Hiền giả, có con đường nào, có đạo lộ nào đưa đến chứng đắc điều hòa hơi thở tối thượng ấy?"
+      },
+      {
+        "id": "p7",
+        "text": "—Này Hiền giả, có con đường, có đạo lộ đưa đến chứng đắc điều hòa hơi thở tối thượng ấy."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 —Này Hiền giả, con đường ấy là gì … (như kinh trên, số 5 và 6)."
+      },
+      {
+        "id": "p9",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn38.7": {
+    "canonicalRef": "sn38.7",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn38.7/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:57+00:00",
+    "materializedAt": "2026-09-02T12:30:57+00:00",
+    "contentHash": "974a75a524b2d9fea0cfbd1b24f8c0537f0b608e15d8fc52f14a4c6f912ea67b",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 38: Tương Ưng Jambukhàdaka"
+      },
+      {
+        "id": "p2",
+        "text": "38.7. Thọ"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1-2. …"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 3 : “Thọ, thọ”, này Hiền giả Sāriputta, được nói đến như vậy. Này Hiền giả, thế nào là thọ?"
+      },
+      {
+        "id": "p5",
+        "text": "—Có ba thọ, này Hiền giả, lạc thọ, khổ thọ, bất khổ bất lạc thọ. Này Hiền giả, đây là những thọ này."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 —Này Hiền giả, có con đường nào, có đạo lộ nào đưa đến liễu tri những thọ ấy?"
+      },
+      {
+        "id": "p7",
+        "text": "—Này Hiền giả, có con đường, có đạo lộ đưa đến liễu tri những thọ ấy."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 —Này Hiền giả, con đường ấy là gì, đạo lộ ấy là gì đưa đến liễu tri những thọ ấy?. (như kinh trên, số 5 và số 6, với những thay đổi cần thiết)."
+      },
+      {
+        "id": "p9",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn38.8": {
+    "canonicalRef": "sn38.8",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn38.8/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:57+00:00",
+    "materializedAt": "2026-09-02T12:30:57+00:00",
+    "contentHash": "eda7bd5b1dc39ff02c5746827b9afdc980ebbdd8e05a5ac01447242fd3995262",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 38: Tương Ưng Jambukhàdaka"
+      },
+      {
+        "id": "p2",
+        "text": "38.8. Lậu Hoặc"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1-2. …"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 3 : “Lậu hoặc, lậu hoặc”, này Hiền giả Sāriputta, được nói đến như vậy. Này Hiền giả, thế nào là lậu hoặc?"
+      },
+      {
+        "id": "p5",
+        "text": "—Có ba lậu hoặc này, này Hiền giả, dục lậu, hữu lậu, vô minh lậu. Này Hiền giả, đây là ba lậu hoặc này."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 —Này Hiền giả, có con đường nào, có đạo lộ nào đưa đến đoạn tận các lậu hoặc ấy?"
+      },
+      {
+        "id": "p7",
+        "text": "—Này Hiền giả, có con đường, có đạo lộ đưa đến đoạn tận các lậu hoặc ấy."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 (Như kinh trên, số 5 và 6, với những thay đổi cần thiết)."
+      },
+      {
+        "id": "p9",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn38.9": {
+    "canonicalRef": "sn38.9",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn38.9/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T12:30:57+00:00",
+    "materializedAt": "2026-09-02T12:30:57+00:00",
+    "contentHash": "7a228cda5799300d24df7888ab7c31521fac9800aaa97b45d9a241b1d56afee6",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 38: Tương Ưng Jambukhàdaka"
+      },
+      {
+        "id": "p2",
+        "text": "38.9. Vô Minh."
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1-2. …"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 3 : “Vô minh, vô minh”, này Hiền giả Sāriputta, được nói đến như vậy. Này Hiền giả, thế nào là vô minh?"
+      },
+      {
+        "id": "p5",
+        "text": "—Này Hiền giả, không biết rõ đối với khổ, không biết rõ đối với khổ tập khởi, không biết rõ đối với khổ đoạn diệt, không biết rõ đối với con đường đưa đến khổ đoạn diệt, này Hiền giả, đây gọi là vô minh."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 —Này Hiền giả, có con đường nào, có đạo lộ nào đưa đến đoạn tận vô minh ấy?"
+      },
+      {
+        "id": "p7",
+        "text": "—Này Hiền giả, có con đường, có đạo lộ đưa đến đoạn tận vô minh ấy?"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5-6. (Như kinh trên, số 5 và số 6, với những thay đổi cần thiết)."
+      },
+      {
+        "id": "p9",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  }
+}
