@@ -1,0 +1,109 @@
+{
+  "collection": "SN",
+  "canonicalLeafCount": 1819,
+  "paliTitleCount": 1819,
+  "translatedTitleCount": 1732,
+  "preferredViCount": 1805,
+  "noPreferredViCount": 14,
+  "noPreferredViRangeCount": 0,
+  "noPreferredViRefs": [
+    {
+      "canonicalRef": "sn3.15",
+      "isRange": false,
+      "originalTitle": "Dutiyasaṅgāmasutta",
+      "translatedTitle": null,
+      "acronym": "SN 3.15"
+    },
+    {
+      "canonicalRef": "sn35.57",
+      "isRange": false,
+      "originalTitle": "Āsavasamugghātasutta",
+      "translatedTitle": null,
+      "acronym": "SN 35.57"
+    },
+    {
+      "canonicalRef": "sn35.59",
+      "isRange": false,
+      "originalTitle": "Anusayasamugghātasutta",
+      "translatedTitle": null,
+      "acronym": "SN 35.59"
+    },
+    {
+      "canonicalRef": "sn35.82",
+      "isRange": false,
+      "originalTitle": "Lokapañhāsutta",
+      "translatedTitle": null,
+      "acronym": "SN 35.82"
+    },
+    {
+      "canonicalRef": "sn36.25",
+      "isRange": false,
+      "originalTitle": "Ñāṇasutta",
+      "translatedTitle": null,
+      "acronym": "SN 36.25"
+    },
+    {
+      "canonicalRef": "sn36.30",
+      "isRange": false,
+      "originalTitle": "Suddhikasutta",
+      "translatedTitle": null,
+      "acronym": "SN 36.30"
+    },
+    {
+      "canonicalRef": "sn37.17",
+      "isRange": false,
+      "originalTitle": "Anissukīsutta",
+      "translatedTitle": null,
+      "acronym": "SN 37.17"
+    },
+    {
+      "canonicalRef": "sn37.18",
+      "isRange": false,
+      "originalTitle": "Amaccharīsutta",
+      "translatedTitle": null,
+      "acronym": "SN 37.18"
+    },
+    {
+      "canonicalRef": "sn37.19",
+      "isRange": false,
+      "originalTitle": "Anaticārīsutta",
+      "translatedTitle": null,
+      "acronym": "SN 37.19"
+    },
+    {
+      "canonicalRef": "sn37.20",
+      "isRange": false,
+      "originalTitle": "Susīlasutta",
+      "translatedTitle": null,
+      "acronym": "SN 37.20"
+    },
+    {
+      "canonicalRef": "sn37.21",
+      "isRange": false,
+      "originalTitle": "Bahussutasutta",
+      "translatedTitle": null,
+      "acronym": "SN 37.21"
+    },
+    {
+      "canonicalRef": "sn37.22",
+      "isRange": false,
+      "originalTitle": "Āraddhavīriyasutta",
+      "translatedTitle": null,
+      "acronym": "SN 37.22"
+    },
+    {
+      "canonicalRef": "sn37.23",
+      "isRange": false,
+      "originalTitle": "Upaṭṭhitassatisutta",
+      "translatedTitle": null,
+      "acronym": "SN 37.23"
+    },
+    {
+      "canonicalRef": "sn37.24",
+      "isRange": false,
+      "originalTitle": "Pañcasīlasutta",
+      "translatedTitle": null,
+      "acronym": "SN 37.24"
+    }
+  ]
+}
