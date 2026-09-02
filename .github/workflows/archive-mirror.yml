@@ -1,0 +1,61 @@
+name: Internet Archive Mirror
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Verify and compare without uploading
+        required: false
+        default: false
+        type: boolean
+  schedule:
+    - cron: '35 18 * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: archive-org-mirror
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+      R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+      R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+      R2_BUCKET_NAME: nikaya-media
+      IA_ACCESS_KEY: ${{ secrets.IA_ACCESS_KEY }}
+      IA_SECRET_KEY: ${{ secrets.IA_SECRET_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check mirror credentials
+        id: credentials
+        shell: bash
+        run: |
+          if [[ -n "${IA_ACCESS_KEY:-}" && -n "${IA_SECRET_KEY:-}" && -n "${R2_ACCESS_KEY_ID:-}" && -n "${R2_SECRET_ACCESS_KEY:-}" && -n "${R2_ACCOUNT_ID:-}" ]]; then
+            echo "ready=yes" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=no" >> "$GITHUB_OUTPUT"
+            echo "Internet Archive mirror skipped: IA_ACCESS_KEY / IA_SECRET_KEY or R2 credentials are not configured." >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - name: Install mirror clients
+        if: steps.credentials.outputs.ready == 'yes'
+        run: python -m pip install --disable-pip-version-check --quiet boto3 internetarchive
+      - name: Mirror verified DN MP3 files
+        if: steps.credentials.outputs.ready == 'yes'
+        shell: bash
+        run: |
+          EXTRA=()
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" && "${{ inputs.dry_run }}" == "true" ]]; then EXTRA+=(--dry-run); fi
+          python scripts/archive_org_mirror.py "${EXTRA[@]}"
+      - name: Mirror summary
+        if: steps.credentials.outputs.ready == 'yes'
+        run: |
+          echo "### Internet Archive mirror completed" >> "$GITHUB_STEP_SUMMARY"
+          echo "Target item: https://archive.org/details/thu-vien-kinh-nikaya-audio" >> "$GITHUB_STEP_SUMMARY"

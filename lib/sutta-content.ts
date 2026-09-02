@@ -10,16 +10,6 @@ const localeMap:Partial<Record<Locale,string>>={ja:'jpn'};
 const preferredAuthors:Partial<Record<Locale,string>>={vi:'minh_chau',en:'sujato'};
 const apiBase='https://suttacentral.net/api';
 
-/**
- * Normalize scripture text at the reader boundary so the same corpus renders
- * consistently on Windows, Android, iOS and generated PDF/audio surfaces.
- *
- * Some upstream Vietnamese text contains decomposed combining marks (NFD).
- * Windows serif font fallback can visually separate those marks from their
- * base letters even when mobile browsers appear fine. NFC composes those
- * graphemes. We also remove invisible formatting characters and repair only
- * whitespace that sits immediately before a Unicode combining mark.
- */
 export function normalizeScriptureText(value:string){
   return value
     .replace(/[\u200B\u200C\u200D\u2060\uFEFF]/g,'')
@@ -65,19 +55,13 @@ function extractSegments(data:any):FullTextSegment[]{
   return keys.map((id:string)=>({id,text:clean(String(raw[id]??''))})).filter((x:FullTextSegment)=>x.text.length>0);
 }
 
-export async function getSuttaFullText(uid:string,locale:Locale):Promise<FullTextResult|null>{
-  if(locale==='vi'&&materializedCorpusVi[uid]?.segments?.length){
-    const x=materializedCorpusVi[uid];
-    return {language:x.language,author:x.author,authorUid:x.authorUid,sourceUrl:x.sourceUrl,segments:normalizeSegments(x.segments)};
-  }
-  const language=localeMap[locale]||locale;
+async function fetchTranslation(uid:string,language:string,preferredAuthor?:string):Promise<FullTextResult|null>{
   try{
     const info=await fetchJson(`${apiBase}/suttas/${encodeURIComponent(uid)}`);
     const translations=Array.isArray(info?.suttaplex?.translations)?info.suttaplex.translations:[];
     const sameLanguage=translations.filter((t:any)=>t?.lang===language);
     if(!sameLanguage.length)return null;
-    const preferred=preferredAuthors[locale];
-    const chosen=(preferred&&sameLanguage.find((t:any)=>t?.author_uid===preferred))||sameLanguage.find((t:any)=>t?.segmented)||sameLanguage[0];
+    const chosen=(preferredAuthor&&sameLanguage.find((t:any)=>t?.author_uid===preferredAuthor))||sameLanguage.find((t:any)=>t?.segmented)||sameLanguage[0];
     const authorUid=chosen.author_uid;
     let payload:any=null;
     if(chosen.segmented){
@@ -91,4 +75,20 @@ export async function getSuttaFullText(uid:string,locale:Locale):Promise<FullTex
     if(!segments.length)return null;
     return {language,author:chosen.author||chosen.author_short||authorUid,authorUid,sourceUrl:`https://suttacentral.net/${uid}/${language}/${authorUid}`,segments:normalizeSegments(segments)};
   }catch{return null;}
+}
+
+export async function getSuttaFullText(uid:string,locale:Locale):Promise<FullTextResult|null>{
+  if(locale==='vi'&&materializedCorpusVi[uid]?.segments?.length){
+    const x=materializedCorpusVi[uid];
+    return {language:x.language,author:x.author,authorUid:x.authorUid,sourceUrl:x.sourceUrl,segments:normalizeSegments(x.segments)};
+  }
+
+  const language=localeMap[locale]||locale;
+  const primary=await fetchTranslation(uid,language,preferredAuthors[locale]);
+  if(primary)return primary;
+
+  // Keep every interface useful while the multilingual corpus is still growing.
+  // English is a transparent source fallback, never an AI-generated substitute.
+  if(language!=='en')return fetchTranslation(uid,'en',preferredAuthors.en);
+  return null;
 }
