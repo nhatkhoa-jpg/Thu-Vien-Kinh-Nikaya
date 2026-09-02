@@ -82,3 +82,5 @@ jobs:
           git add data/catalog/suttas.json data/exports data/catalog/sn-materialization-preview.json data/catalog/sn-materialization-report.json
           git commit -m 'data: materialize full SN canonical catalog'
           git push origin HEAD:feature/sn-canonical-discovery
+
+# trigger apply/validate after UI and schema hardening
