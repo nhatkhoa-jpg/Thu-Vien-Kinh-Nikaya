@@ -1,0 +1,28 @@
+{
+  "collection": "AN",
+  "canonicalCount": 1408,
+  "catalogCount": 1408,
+  "preservedEditorialRecords": [
+    "an10.60",
+    "an3.65"
+  ],
+  "minhChauVietnameseRecords": 1395,
+  "missingMinhChauVietnameseRecords": 13,
+  "missingMinhChauRefs": [
+    "an9.113-432",
+    "an11.30-69",
+    "an11.70-117",
+    "an11.118-165",
+    "an11.166-213",
+    "an11.214-261",
+    "an11.262-309",
+    "an11.310-357",
+    "an11.358-405",
+    "an11.406-453",
+    "an11.454-501",
+    "an11.502-981",
+    "an11.992-1151"
+  ],
+  "rangeCanonicalRefsPreserved": 95,
+  "policy": "Canonical ranges preserved; missing translations explicit; no generated scripture or editorial summary."
+}

@@ -1,0 +1,79 @@
+name: Work - Discover and Materialize AN
+
+on:
+  push:
+    branches: [work/an-corpus]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: corpus-writer-work-an-corpus
+  cancel-in-progress: false
+
+jobs:
+  build-an-corpus:
+    if: github.event_name == 'workflow_dispatch' || !contains(github.event.head_commit.message, '[skip work-an]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: work/an-corpus
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Discover authoritative AN metadata and materialize catalog
+        run: |
+          set -euo pipefail
+          python scripts/discover_collection_metadata.py --collection AN
+          python scripts/materialize_collection_catalog.py --collection AN --apply
+          python scripts/validate_corpus.py --collection AN
+      - name: Materialize source-backed Vietnamese full text with retries
+        run: |
+          set -euo pipefail
+          for attempt in 1 2 3; do
+            python scripts/materialize_fulltext.py --collection AN --batch-size 1500 --workers 12
+            failures=$(python -c "import json; print(len(json.load(open('data/status/materialize-an-last-run.json', encoding='utf-8')).get('failures', {})))")
+            remaining=$(python -c "import json; print(json.load(open('data/status/materialize-an-last-run.json', encoding='utf-8')).get('remainingAfterRun', 0))")
+            if [ "$failures" = "0" ] && [ "$remaining" = "0" ]; then
+              break
+            fi
+            echo "AN retry $attempt completed; failures=$failures remaining=$remaining"
+          done
+          python scripts/update_corpus_status.py
+          python scripts/validate_corpus.py --collection AN
+      - name: Commit durable AN corpus checkpoint before application build
+        run: |
+          set -euo pipefail
+          git config user.name "nikaya-corpus-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/catalog data/content/an data/status
+          if git diff --cached --quiet; then
+            echo "No new AN corpus records."
+          else
+            git commit -m "corpus: discover and materialize verified AN [skip work-an]"
+            git push origin HEAD:work/an-corpus
+          fi
+      - name: Refresh derived reader registry
+        run: python scripts/generate_content_registry.py
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - name: Validate RAG and production reader build
+        run: |
+          npm ci
+          npm run rag:export
+          npm run build
+      - name: Commit verified derived exports
+        run: |
+          set -euo pipefail
+          git add data/exports lib/materialized-content.generated.ts
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "corpus: refresh AN reader and RAG exports [skip work-an]"
+          git push origin HEAD:work/an-corpus

@@ -1,0 +1,12 @@
+{
+  "collection": "AN",
+  "language": "vi",
+  "endpoint": "https://suttacentral.net/api/suttaplex/an?language=vi",
+  "endpointSha256": "f5c7eaad5d69adec037d413cb6a350a68d6e991903fd345726cf643d7c577851",
+  "generatedAt": "2026-09-02T04:52:57+00:00",
+  "canonicalLeafCount": 1408,
+  "matchedCanonicalRecords": 1408,
+  "preferredTranslationCount": 1395,
+  "titleCount": 1346,
+  "missingCanonicalRefs": []
+}
