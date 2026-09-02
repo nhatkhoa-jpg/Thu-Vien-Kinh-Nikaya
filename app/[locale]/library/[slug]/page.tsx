@@ -7,6 +7,7 @@ import {suttas,collectionDisplayCode,suttaDisplayCode,suttaAudio} from '@/lib/da
 import {getSuttaFullText} from '@/lib/sutta-content';
 import {SITE_URL} from '@/lib/site';
 import AudioPlayer from '@/components/AudioPlayer';
+import R2AudioDisclosure from '@/components/R2AudioDisclosure';
 import ReaderProgress from '@/components/ReaderProgress';
 import YouTubeEmbed from '@/components/YouTubeEmbed';
 import BrowserReader from '@/components/BrowserReader';
@@ -28,6 +29,7 @@ export default async function SuttaPage({params}:{params:Promise<{locale:string;
   const locale=raw as Locale;const d=dict(locale);const s=suttas.find(x=>x.slug===slug);if(!s)notFound();
   const vi=locale==='vi';const title=vi?s.vi:s.en;const displayCode=suttaDisplayCode(s,vi);const displayCollection=collectionDisplayCode(s.collection,vi);
   const related=suttas.filter(x=>x.collection===s.collection&&x.slug!==s.slug).slice(0,3);const audio=suttaAudio(s,locale);
+  const canonicalKey=s.canonicalRef.toLowerCase();const r2AudioPath=vi&&s.collection==='DN'&&/^dn\d+$/.test(canonicalKey)?`/media/audio/dn/${canonicalKey}.mp3`:null;
   const fullText=await getSuttaFullText(s.canonicalRef,locale);const sourceUrl=fullText?.sourceUrl||s.sourceUrl;
   const paragraphs=fullText?.segments.map(x=>x.text).filter(Boolean)||[];const plainText=paragraphs.join('\n\n');
   const sourceAuthor=(fullText?.author||'').replace(/^Bhikkhu\s+/i,'').trim();const sourceLabel=fullText?`${sourceAuthor||fullText.author} · SuttaCentral`:s.licenseShort;
@@ -45,6 +47,7 @@ export default async function SuttaPage({params}:{params:Promise<{locale:string;
 
         <section className="readerEssentials compactEssentials" aria-label={vi?'Nghe và tải':'Listen and download'}>
           {audio&&<details className="essentialDisclosure mp3Disclosure primaryMp3Disclosure" id="mp3"><summary title={vi?'Nghe MP3 dựng sẵn, dùng trên mọi thiết bị':'Play the prebuilt MP3 on any device'}><span className="miniActionIcon"><Headphones size={17}/></span><span><strong>{vi?'Nghe bài kinh':'Listen'}</strong><small>{vi?(audio.provider==='5 Đại Tạng Kinh Nikāya'?'MP3 dựng sẵn · mọi thiết bị':'MP3'):'Prebuilt MP3 · all devices'}</small></span><ChevronDown size={15} className="disclosureChevron"/></summary><div className="disclosureBody"><AudioPlayer src={audio.url} segments={audio.segments} manifestUrl={audio.manifestUrl} storageKey={`${locale}:${s.slug}`}/><div className="mp3Links"><a className="downloadLink" href={audio.downloadUrl||audio.url} target="_blank" rel="noreferrer"><Download size={16}/>{vi?'Mở / tải MP3':'Open / download MP3'}</a>{audio.sourceUrl&&<a className="audioSource" href={audio.sourceUrl} target="_blank" rel="noreferrer">{vi?'Văn bản đối chiếu':'Text source'}<ExternalLink size={13}/></a>}</div></div></details>}
+          {!audio&&r2AudioPath&&<R2AudioDisclosure src={r2AudioPath} storageKey={`${locale}:${s.slug}`} sourceUrl={sourceUrl} vi={vi}/>} 
           {plainText&&<BrowserReader text={plainText} locale={locale}/>} 
           {paragraphs.length>0&&<details className="essentialDisclosure pdfDisclosure" id="pdf"><summary title={vi?'Tạo PDF từ chính nội dung bài kinh đang đọc':'Generate a PDF from this text'}><span className="miniActionIcon"><FileText size={17}/></span><span><strong>PDF</strong><small>{vi?'Tự tạo':'Generated'}</small></span><ChevronDown size={15} className="disclosureChevron"/></summary><div className="disclosureBody"><PdfDownloadButton code={displayCode} title={title} pali={s.pali} summary={summary} paragraphs={paragraphs} sourceLabel={sourceLabel} sourceUrl={sourceUrl} locale={locale}/></div></details>}
         </section>
