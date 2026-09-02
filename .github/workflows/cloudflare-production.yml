@@ -7,6 +7,8 @@ on:
         description: Approved production release reason
         required: true
         default: Verified preview promotion
+  push:
+    branches: [main]
 
 permissions:
   contents: read
@@ -17,6 +19,7 @@ concurrency:
 
 jobs:
   deploy-and-smoke:
+    if: github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '[deploy cloudflare production]')
     runs-on: ubuntu-latest
     timeout-minutes: 45
     environment: cloudflare-production
@@ -56,6 +59,6 @@ jobs:
       - name: Production release summary
         run: |
           echo "### Cloudflare production PASS" >> "$GITHUB_STEP_SUMMARY"
-          echo "Reason: ${{ inputs.reason }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "Trigger: ${{ github.event_name }}" >> "$GITHUB_STEP_SUMMARY"
           echo "URL: ${{ steps.production.outputs.url }}" >> "$GITHUB_STEP_SUMMARY"
           echo "Commit: $GITHUB_SHA" >> "$GITHUB_STEP_SUMMARY"
