@@ -1,0 +1,59 @@
+/* Public mobile navigation hardening. Keep this stylesheet last in app/layout.tsx. */
+.mobileMenuButton{display:none;width:44px;height:44px;border:1px solid var(--line);background:var(--surface);border-radius:14px;align-items:center;justify-content:center;cursor:pointer}
+.drawerBackdrop{position:fixed;inset:0;z-index:120;background:rgba(10,24,19,.55);backdrop-filter:blur(5px);display:flex;justify-content:flex-end;overscroll-behavior:contain}
+.mobileDrawer{width:min(88vw,390px);height:100dvh;background:#f8f6f1;border-left:1px solid rgba(255,255,255,.45);box-shadow:-24px 0 60px rgba(14,35,27,.22);display:flex;flex-direction:column;overflow:hidden;animation:drawerIn .18s ease-out}
+@keyframes drawerIn{from{transform:translateX(26px);opacity:.6}to{transform:translateX(0);opacity:1}}
+.drawerHead{min-height:78px;padding:16px 18px 14px;display:flex;align-items:center;justify-content:space-between;gap:12px;background:rgba(255,255,255,.82);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:2}
+.drawerHead strong{font-family:Georgia,"Times New Roman",serif;font-size:20px;line-height:1.15;letter-spacing:-.02em}
+.drawerHead button{width:44px;height:44px;flex:0 0 44px;border:0;border-radius:14px;background:var(--surface-2);display:grid;place-items:center;cursor:pointer}
+.mobileDrawer nav{padding:14px 14px 28px;overflow-y:auto;display:grid;gap:6px;-webkit-overflow-scrolling:touch}
+.mobileDrawer nav>a,.mobileDrawer nav>button{min-height:50px;width:100%;border:0;border-radius:14px;background:transparent;padding:0 14px;display:flex;align-items:center;gap:12px;text-align:left;font-weight:780;font-size:14px;cursor:pointer;color:var(--ink)}
+.mobileDrawer nav>a:hover,.mobileDrawer nav>button:hover,.mobileDrawer nav>a:focus-visible,.mobileDrawer nav>button:focus-visible{background:#ebe8df;outline:none}
+.mobileDrawer nav>a>svg,.mobileDrawer nav>button>svg{color:var(--brand);flex:0 0 auto}
+.drawerCollectionTitle{margin:15px 10px 5px;padding-top:14px;border-top:1px solid var(--line);font-size:10px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.mobileDrawer .drawerCollectionLink{min-height:58px;background:#fff;border:1px solid var(--line)}
+.drawerCollectionLink span{display:grid;gap:2px;min-width:0}
+.drawerCollectionLink strong{font-size:14px}
+.drawerCollectionLink small{font-size:10px;color:var(--muted);font-weight:700}
+.commandBackdrop{position:fixed;inset:0;z-index:130;background:rgba(10,24,19,.55);backdrop-filter:blur(5px);display:grid;place-items:start center;padding:10vh 16px 24px}
+.commandPalette{width:min(720px,100%);max-height:78dvh;overflow:hidden;background:#fbfaf7;border:1px solid rgba(255,255,255,.5);border-radius:24px;box-shadow:0 28px 80px rgba(12,30,23,.28)}
+.commandHead{min-height:64px;padding:10px 12px 10px 18px;display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--line)}
+.commandHead input{flex:1;min-width:0;border:0;outline:0;background:transparent;font-size:16px;color:var(--ink)}
+.commandHead button{width:42px;height:42px;border:0;border-radius:12px;background:var(--surface-2);display:grid;place-items:center}
+.commandHint{padding:10px 18px;font-size:11px;color:var(--muted);border-bottom:1px solid var(--line)}
+.commandResults{max-height:58dvh;overflow:auto;padding:8px}
+.commandResults>button{width:100%;border:0;background:transparent;border-radius:14px;padding:11px;display:grid;grid-template-columns:72px 1fr;gap:12px;text-align:left;cursor:pointer}
+.commandResults>button:hover{background:var(--surface-2)}
+.commandResults>button>span:last-child{display:grid;gap:3px;min-width:0}
+.commandResults strong{font-size:14px}.commandResults small{font-size:10px;color:var(--muted)}
+.commandCode{min-height:44px;border-radius:12px;background:var(--gold-soft);display:grid;place-items:center;font-size:12px;font-weight:900;color:#704716;text-align:center;padding:5px}
+.headerSearchTrigger{height:42px;border:1px solid var(--line);background:var(--surface);border-radius:13px;padding:0 12px;display:flex;align-items:center;gap:8px;cursor:pointer;color:var(--ink)}
+.headerSearchTrigger span{font-size:12px;font-weight:750;color:var(--muted)}
+.testVersionBadge,.buildBadge{display:none!important}
+
+@media(max-width:920px){
+  .desktopNav{display:none!important}
+  .mobileMenuButton{display:flex}
+  .headerSearchTrigger{width:44px;padding:0;justify-content:center}
+  .headerSearchTrigger span{display:none}
+  .headerActions{gap:7px}
+  .lang{min-width:0;width:auto;max-width:150px}
+  .nav{height:72px;gap:10px}
+  .logoText small{display:none}
+  .logoText strong{font-size:16px}
+}
+
+@media(max-width:640px){
+  .shell{width:min(100% - 28px,1440px)}
+  .topbar{z-index:80}
+  .nav{height:68px}
+  .logoMark{width:38px;height:38px;border-radius:12px}
+  .logoText strong{font-size:15px;max-width:190px;overflow:hidden;text-overflow:ellipsis}
+  .lang{display:none}
+  .mobileDrawer{width:min(92vw,372px)}
+  .drawerHead{min-height:70px;padding:13px 14px}
+  .drawerHead strong{font-size:18px}
+  .commandBackdrop{padding:7vh 10px 18px}
+  .commandPalette{border-radius:20px}
+  .mobileDock{z-index:70}
+}
