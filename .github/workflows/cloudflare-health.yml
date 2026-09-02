@@ -1,0 +1,49 @@
+name: Cloudflare Production Health
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cloudflare-production-health
+  cancel-in-progress: true
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check public production endpoints
+        env:
+          BASE: https://thu-vien-kinh-nikaya.nhatkhoa-nikaya.workers.dev
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl_ok() {
+            local path="$1"
+            echo "Checking ${BASE}${path}"
+            curl -fsSL --retry 3 --retry-all-errors --connect-timeout 10 --max-time 30 "${BASE}${path}" -o /tmp/health-body
+          }
+
+          curl_ok /vi
+          grep -Fq 'Ngũ Đại Tạng Kinh' /tmp/health-body || grep -Fq 'Nikāya' /tmp/health-body
+
+          curl_ok /en
+          grep -Eiq 'Nikāya|Library' /tmp/health-body
+
+          curl_ok /robots.txt
+          grep -Fq 'sitemap.xml' /tmp/health-body
+
+          curl_ok /sitemap.xml
+          grep -Fq '<urlset' /tmp/health-body
+
+          code=$(curl -sSL --retry 3 --retry-all-errors --connect-timeout 10 --max-time 30 -o /dev/null -w '%{http_code}' "${BASE}/not-a-real-route")
+          test "$code" = "404" || { echo "Expected 404, got $code"; exit 1; }
+
+          echo "Cloudflare production health PASS"
