@@ -1,0 +1,621 @@
+{
+  "sn3.1": {
+    "canonicalRef": "sn3.1",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn3.1/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:42:57+00:00",
+    "materializedAt": "2026-09-02T02:42:57+00:00",
+    "contentHash": "b9de6679d81f33f07c884212e2ea9a9098ab3f7fca40f9e8859a8ff1188038ac",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 3: Tương Ưng Kosala"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Thứ Nhất"
+      },
+      {
+        "id": "p3",
+        "text": "3.1. Tuổi Trẻ"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Như vầy tôi nghe."
+      },
+      {
+        "id": "p5",
+        "text": "Một thời Thế Tôn trú ở Sāvatthi (Xá-vệ), Jetavana (Thắng Lâm), tại vườn ông Anāthapiṇḍika (Cấp Cô Ðộc)."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 2 Rồi vua Pasenadi (Ba-tư-nặc) nước Kosala (Kiều-tát-la) đi đến Thế Tôn, sau khi đến, nói lên với Thế Tôn những lời chào đón hỏi thăm, sau khi nói lên những lời chào đón hỏi thăm thân hữu, rồi ngồi xuống một bên."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 3 Ngồi xuống một bên, vua Pasenadi nước Kosala bạch Thế Tôn:"
+      },
+      {
+        "id": "p8",
+        "text": "—Tôn giả Gotama có tự cho mình đã chứng Vô Thượng Chánh Ðẳng Chánh Giác không?"
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 4 —Thưa Ðại vương, nếu có ai có thể nói một cách chơn chánh là mình đã chứng Vô Thượng Chánh Ðẳng Chánh Giác, thời người ấy phải chính là Ta. Thưa Ðại vương, Ta đã chứng Vô thượng Chánh đẳng Chánh giác."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 5 —Thưa Tôn giả Gotama, có những vị Sa-môn, Bà-la-môn là vị hội chủ, vị giáo trưởng, vị sư trưởng giáo hội, có tiếng tốt, có danh vọng, khai tổ giáo phái, được quần chúng tôn sùng. Như ngài Purāna Kassapa, Makkhali Gosāla, Nigaṇṭha Nātaputta, Sanjaya Bellaṭṭhiputta, Kakudha Kaccāyana, Ajita Kesakambala. Khi con hỏi các vị ấy: “Có tự xem là đã chứng Vô thượng Chánh đẳng Chánh giác không?”, thời họ đã trả lời, không tự xem mình đã chứng Vô thượng Chánh đẳng Chánh giác. Vậy làm sao Tôn giả Gotama, trẻ tuổi, sanh sau đẻ muộn, và chỉ mới xuất gia lại tự cho mình như vậy?"
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 6 —Thưa Ðại vương, có bốn loại trẻ tuổi không nên khinh thường, hay không nên miệt thị vì họ là trẻ. Thế nào là bốn?"
+      },
+      {
+        "id": "p12",
+        "text": "—Thưa Ðại vương, Khattiya trẻ tuổi không nên khinh thường hay không nên miệt thị vì họ là trẻ. Thưa Ðại vương, con rắn trẻ tuổi không nên khinh thường hay không nên miệt thị vì chúng là trẻ. Thưa Ðại vương, ngọn lửa trẻ tuổi không nên khinh thường hay không nên miệt thị vì chúng là trẻ. Thưa Ðại vương, Tỷ-kheo trẻ tuổi không nên khinh thường hay không nên miệt thị vì họ là trẻ."
+      },
+      {
+        "id": "p13",
+        "text": "Thưa Ðại vương, bốn loại trẻ tuổi này không nên khinh thường hay không nên miệt thị vì chúng là trẻ."
+      },
+      {
+        "id": "p14",
+        "text": "Vi-n 7 Thế Tôn nói như vậy. Nói xong, bậc Thiện Thệ lại nói thêm như sau:"
+      },
+      {
+        "id": "p15",
+        "text": "Vi-n 8"
+      },
+      {
+        "id": "p16",
+        "text": "Sanh dòng Sát-đế-lỵ,\n\nThuộc quý tộc, danh xưng,\n\nChớ khinh thường là trẻ,\n\nChớ miệt thị là nhỏ.\n\nVị Sát-đế-lỵ ấy,\n\nÐến thời lên ngôi vua,\n\nLàm chúa tể loài Người,\n\nTrị vì cả quốc độ.\n\nVị ấy nếu phẫn nộ,\n\nDùng vương phạt gia hình,\n\nAi bảo tồn mạng mình,\n\nHãy tránh né vị ấy.\nVi-n 9\nỞ làng hay là rừng,\n\nCó thấy rắn bò qua,\n\nChớ khinh thường rắn trẻ,\n\nChớ miệt thị rắn nhỏ,\n\nCao thấp hình sai biệt.\n\nRắn sống đầy nhiệt khí,\n\nBị tấn công, nó cắn,\n\nKẻ ngu cả nam nữ,\n\nAi bảo tồn mạng mình,\n\nHãy tránh né loài rắn."
+      },
+      {
+        "id": "p17",
+        "text": "Vi-n 10"
+      },
+      {
+        "id": "p18",
+        "text": "Lửa cháy đầy khát vọng,\n\nLửa đốt thiêu, đốt cháy,\n\nChớ khinh thường lửa trẻ,\n\nChớ miệt thị lửa nhỏ.\n\nLửa được đồ bén cháy,\n\nLiền cháy to, cháy lớn,\n\nBị tấn công, lửa đốt,\n\nKẻ ngu cả nam nữ,\n\nAi bảo tồn mạng mình,\n\nHãy tránh né lửa cháy."
+      },
+      {
+        "id": "p19",
+        "text": "Vi-n 11"
+      },
+      {
+        "id": "p20",
+        "text": "Khu rừng bị lửa đốt,\n\nLửa đốt thiêu, đốt cháy,\n\nSau nhiều đêm và ngày,\n\nRễ mầm lại mọc lên."
+      },
+      {
+        "id": "p21",
+        "text": "Vi-n 12"
+      },
+      {
+        "id": "p22",
+        "text": "Còn Tỷ-kheo trẻ giới,\n\nNồng cháy với nhiệt tình,\n\nNhưng không con, không cái,\n\nKhông của cải truyền thừa,\n\nKhông con, không thừa tự,\n\nNhư thân cây tala."
+      },
+      {
+        "id": "p23",
+        "text": "Vi-n 13"
+      },
+      {
+        "id": "p24",
+        "text": "Do vậy, người hiền trí,\n\nTự thấy hạnh phúc mình,\n\nÐối với rắn và lửa\n\nDanh xưng Sát-đế-lỵ,\n\nVị Tỷ-kheo trì giới,\n\nVới bốn vị kể trên,\n\nHãy biết cách cư xử,\n\nChơn chánh và tốt đẹp."
+      },
+      {
+        "id": "p25",
+        "text": "Vi-n 14 Khi nghe nói vậy, vua Pasenadi nước Kosala bạch Thế Tôn:"
+      },
+      {
+        "id": "p26",
+        "text": "—Thật vi diệu thay, bạch Thế Tôn! Thật vi diệu thay, bạch Thế Tôn! Như người dựng đứng lại những gì bị quăng ngã xuống, phơi bày ra những gì bị che kín, chỉ đường cho người bị lạc hướng, đem đèn sáng vào trong bóng tối để những ai có mắt có thể thấy sắc. Cũng vậy, Chánh pháp đã được Thế Tôn dùng nhiều phương tiện trình bày, giải thích. Bạch Thế Tôn, con xin quy y Thế Tôn, quy y Pháp, quy y chúng Tăng. Mong Thế Tôn nhận con làm đệ tử, từ nay trở đi cho đến mạng chung, con trọn đời quy ngưỡng."
+      },
+      {
+        "id": "p27",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn3.2": {
+    "canonicalRef": "sn3.2",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn3.2/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:42:57+00:00",
+    "materializedAt": "2026-09-02T02:42:57+00:00",
+    "contentHash": "09efbe89624510313d6fe22ea44d246ae7174a73c8486821fb354093b60efda9",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 3: Tương Ưng Kosala"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Thứ Nhất"
+      },
+      {
+        "id": "p3",
+        "text": "3.2. Người"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Tại tịnh xá ở Sāvatthi."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Rồi vua Pasenadi nước Kosala, đi đến Thế Tôn, sau khi đảnh lễ Thế Tôn rồi ngồi xuống một bên."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Ngồi xuống một bên, vua Pasenadi nước Kosala bạch Thế Tôn:"
+      },
+      {
+        "id": "p7",
+        "text": "—Có bao nhiêu loại pháp, bạch Thế Tôn, khi khởi lên trong nội tâm của một người, sẽ đưa lại bất lợi, khổ não và bất an cho người ấy?"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 4 —Thưa Ðại vương có ba loại pháp khi khởi lên trong nội tâm của một người, sẽ đưa lại bất lợi, khổ não và bất an cho người ấy. Thế nào là ba? Tham pháp, thưa Ðại vương, khi khởi lên trong nội tâm của một người, sẽ đưa lại bất lợi, khổ não và bất an cho người ấy. Sân pháp, thưa Ðại vương, khi khởi lên trong nội tâm của một người, sẽ đưa lại bất lợi, khổ não và bất an trú cho người ấy. Si pháp, thưa Ðại vương, khi khởi lên trong nội tâm của một người sẽ đưa lại bất lợi, khổ não và bất an cho người ấy. Ba pháp ấy, thưa Ðại vương, khi khởi lên trong nội tâm của một người, sẽ đưa lại bất lợi, khổ não và bất an cho người ấy."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 5"
+      },
+      {
+        "id": "p10",
+        "text": "Tham, sân, si ba pháp,\n\nLà ác tâm cho người,\n\nChúng di hại tự ngã,\n\nChúng tác thành tự ngã,\n\nNhư vỏ và lõi cây,\n\nTự tác thành trái cây."
+      },
+      {
+        "id": "p11",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn3.3": {
+    "canonicalRef": "sn3.3",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn3.3/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:42:57+00:00",
+    "materializedAt": "2026-09-02T02:42:57+00:00",
+    "contentHash": "a5fbe24325fa29e1cac6fc9bb7a317873cae30e47cc0d9c3d32371f7a40fa9ba",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 3: Tương Ưng Kosala"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Thứ Nhất"
+      },
+      {
+        "id": "p3",
+        "text": "3.3. Vua"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Ở tại Sāvatthi."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Ngồi một bên, vua Pasenadi nước Kosala bạch Thế Tôn:"
+      },
+      {
+        "id": "p6",
+        "text": "—Bạch Thế Tôn, có cái gì sanh mà không già và không chết không?"
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 3 —Thưa Ðại vương, không có cái gì sanh mà không già và không chết."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 4 Thưa Ðại vương, dầu cho những vị Sát-đế-lỵ là những bậc đại phú, phú hào, có tiền của lớn, có tài sản lớn, có nhiều vàng và bạc, có nhiều tài sản vật dụng, có nhiều tiền của, ngũ cốc. Các vị ấy có sanh cũng không thoát khỏi già và chết."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 5 Thưa Ðại vương, dầu cho những vị Bà-la-môn là những bậc đại phú, dầu cho những gia chủ là những bậc đại phú, phú hào, có tiền của lớn, có tài sản lớn, có nhiều vàng bạc, có nhiều tài sản vật dụng, có nhiều tiền của, ngũ cốc, các vị ấy có sanh cũng không thoát khỏi già và chết."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 6 Thưa Ðại vương, cho đến các vị Tỷ-kheo, những bậc A-la-hán, đã đoạn tận các lậu hoặc, Phạm hạnh đã thành, những việc nên làm đã làm, đã đặt gánh nặng xuống, đã đạt được mục đích tối hậu, đã đoạn được hữu kiết sử, đã được giải thoát nhờ chánh trí, cho đến thân này của các vị ấy cũng phải bị hủy hoại, cũng phải bị từ bỏ."
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 7"
+      },
+      {
+        "id": "p12",
+        "text": "Xe vua dầu mỹ diệu,\n\nRồi cũng phải hư hoại,\n\nThân thể này cũng vậy,\n\nRồi cũng phải già yếu.\n\nChỉ thiện pháp không già,\n\nBậc thiện nhân nói vậy."
+      },
+      {
+        "id": "p13",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn3.4": {
+    "canonicalRef": "sn3.4",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn3.4/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:42:58+00:00",
+    "materializedAt": "2026-09-02T02:42:58+00:00",
+    "contentHash": "7783f9c1057b2bb64a3b2f4f1509d10cb136f8e41fdf272b456d0bd942eab24e",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 3: Tương Ưng Kosala"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Thứ Nhất"
+      },
+      {
+        "id": "p3",
+        "text": "3.4. Thân Ái"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Ở tại Sāvatthi."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Ngồi xuống một bên, vua Pasenadi nước Kosala bạch Thế Tôn:"
+      },
+      {
+        "id": "p6",
+        "text": "—Bạch Thế Tôn, ở đây khi con đang ngồi yên tịnh một mình, tư tưởng này khởi lên nơi con: “Ðối với những ai, tự ngã là thân ái? Ðối với những ai, tự ngã là kẻ thù?” Và rồi bạch Thế Tôn, con suy nghĩ như sau:"
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 3 “Những ai sống thân làm ác, sống miệng nói ác, sống ý nghĩ ác; đối với người ấy, tự ngã là kẻ thù. Dầu họ có nói: “Tự ngã là thân ái của chúng tôi”, nhưng tự ngã đối với họ là kẻ thù. Vì sao vậy? Những gì kẻ thù làm cho kẻ thù, tự ngã của họ làm cho tự ngã của họ như vậy. Do vậy, đối với họ, tự ngã là kẻ thù."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 4 Những ai sống thân làm thiện, sống miệng nói thiện, sống ý nghĩ thiện, đối với họ, tự ngã là thân ái. Dầu cho họ có nói: “Tự ngã là kẻ thù của chúng tôi”, nhưng tự ngã đối với họ là thân ái. Vì sao vậy? Những gì kẻ thân ái làm cho kẻ thân ái, tự ngã của họ làm cho tự ngã của họ như vậy. Do vậy, đối với họ, tự ngã là kẻ thân ái.”"
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 5 —Như vậy là phải, thưa Ðại vương. Như vậy là phải, thưa Ðại vương. Thưa Ðại vương, những ai sống thân làm ác … Do vậy, đối với họ, tự ngã là kẻ thù. Thưa Ðại vương, những ai sống thân làm thiện … Do vậy, đối với họ, tự ngã là kẻ thân ái."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 6"
+      },
+      {
+        "id": "p11",
+        "text": "Nếu những ai biết được,\n\nTự ngã là thân ái,\n\nHọ sẽ không liên hệ,\n\nVới các điều ác hạnh.\n\nKẻ làm điều ác hạnh,\n\nKhó được chơn hạnh phúc,\n\nBị thần chết cầm tù,\n\nTừ bỏ thân làm người.\n\nKẻ có nghiệp như vậy,\n\nCái gì là của mình?\n\nLấy cái gì đem đi?\n\nCái gì theo dõi họ,\n\nNhư bóng theo dõi hình?\n\nỞ đây kẻ bị chết,\n\nLàm các nghiệp công đức,\n\nLàm các nghiệp ác đức,\n\nLấy cả hai đem đi.\n\nCả hai của kẻ ấy,\n\nNhư bóng theo dõi hình.\n\nCả hai theo kẻ ấy,\n\nDo vậy hãy làm lành,\n\nTích lũy cho đời sau,\n\nCông đức cho đời sau,\n\nLà hậu cứ cho người."
+      },
+      {
+        "id": "p12",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn3.5": {
+    "canonicalRef": "sn3.5",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn3.5/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:42:57+00:00",
+    "materializedAt": "2026-09-02T02:42:57+00:00",
+    "contentHash": "6908353a1b665cda997e6cf53a6871062ddd70111242e4609f157f445fc28d1b",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 3: Tương Ưng Kosala"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Thứ Nhất"
+      },
+      {
+        "id": "p3",
+        "text": "3.5. Tự Bảo Hộ"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Ngồi một bên, vua Pasenadi nước Kosala bạch Thế Tôn:"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Ở đây, bạch Thế Tôn, trong khi con đang ngồi yên tịnh một mình, tư tưởng này khởi lên nơi con: “Ðối với những ai, tự ngã được bảo vệ? Ðối với những ai, tự ngã không được bảo vệ?” Và rồi bạch Thế Tôn, con suy nghĩ như sau:"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 “Những ai thân làm ác, miệng nói ác, ý nghĩ ác, những người ấy không bảo vệ tự ngã. Dầu cho họ được tượng binh bảo vệ, hay được mã binh bảo vệ, hay được xa binh bảo vệ, hay được bộ binh bảo vệ; đối với những người ấy, tự ngã không được bảo vệ. Vì cớ sao? Vì sự bảo vệ như vậy là bảo vệ ở ngoài, không phải sự bảo vệ bên trong. Cho nên đối với những người ấy, tự ngã không được bảo vệ."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Và những ai thân làm thiện, miệng nói thiện, ý nghĩ thiện, những người ấy bảo vệ tự ngã. Dầu cho họ không được tượng binh bảo vệ, hay không được mã binh bảo vệ, hay không được xa binh bảo vệ, hay không được bộ binh bảo vệ; đối với những người ấy, tự ngã được bảo vệ. Vì cớ sao? Vì sự bảo vệ như vậy là sự bảo vệ bên trong, không phải sự bảo vệ ở ngoài. Cho nên đối với những người ấy, tự ngã được bảo vệ.”"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5"
+      },
+      {
+        "id": "p9",
+        "text": "Lành thay bảo vệ thân!\n\nLành thay bảo vệ lời!\n\nLành thay bảo vệ ý!\n\nLành thay tổng bảo vệ!\n\nKẻ liêm sỉ bảo vệ,\n\nTổng quát và cùng khắp,\n\nVị ấy có tên gọi,\n\nLà vị được bảo vệ."
+      },
+      {
+        "id": "p10",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn3.6": {
+    "canonicalRef": "sn3.6",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn3.6/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:42:57+00:00",
+    "materializedAt": "2026-09-02T02:42:57+00:00",
+    "contentHash": "ced2fcfc9d2003a5dd2bed01815b54ee41103c5899e3b1018655d95c815fa380",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 3: Tương Ưng Kosala"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Thứ Nhất"
+      },
+      {
+        "id": "p3",
+        "text": "3.6. Thiểu Số"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Ở tại Sāvatthi."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Ngồi xuống một bên, vua Pasenadi nước Kosala bạch Thế Tôn:"
+      },
+      {
+        "id": "p6",
+        "text": "—Ở đây, bạch Thế Tôn, trong khi con đang ngồi yên tịnh một mình, tư tưởng này khởi lên nơi con: “Ít thay là những người trong đời này, sau khi được tài sản phong phú, dồi dào lại có thể không bị lôi cuốn, không bị chìm đắm, không bị say mê trong các dục và không có những hành vi không tốt đẹp đối với các người khác. Trái lại, thật là nhiều thay, những người trong đời này, sau khi được tài sản phong phú, dồi dào, có thể bị lôi cuốn, bị chìm đắm, bị say mê trong các dục và có những hành vi không tốt đẹp đối với các người khác."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 3 —Thật sự là vậy, thưa Ðại vương. Thật sự là vậy, thưa Ðại vương. Ít thay là những người trong đời này, sau khi được tài sản phong phú, dồi dào, lại có thể không bị lôi cuốn, không bị chìm đắm, không bị say mê trong các dục và không có những hành vi không tốt đẹp đối với người khác. Trái lại, thật là nhiều thay những người trong đời này, sau khi được tài sản phong phú, dồi dào, có thể bị lôi cuốn, bị chìm đắm, bị say mê trong các dục và có những hành vi không tốt đẹp đối với các người khác."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 4"
+      },
+      {
+        "id": "p9",
+        "text": "Loài người bị đắm say,\n\nTrong tài sản, trong dục,\n\nHọ tham lam, điên dại,\n\nTrong các dục ở đời,\n\nKhông ý thức rõ ràng,\n\nÐã quá độ say mê,\n\nChẳng khác gì con nai,\n\nKhông thấy đặt bẫy sập,\n\nVề sau họ khổ đau,\n\nChịu quả báo ác nghiệp."
+      },
+      {
+        "id": "p10",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn3.7": {
+    "canonicalRef": "sn3.7",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn3.7/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:43:07+00:00",
+    "materializedAt": "2026-09-02T02:43:07+00:00",
+    "contentHash": "f46ecb3c377b598a8133ecc48daf12603d38a368b760833bfcedda780423f23e",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 3: Tương Ưng Kosala"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Thứ Nhất"
+      },
+      {
+        "id": "p3",
+        "text": "3.7. Xử Kiện"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Ngồi xuống một bên, vua Pasenadi nước Kosala bạch Thế Tôn:"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Ở đây, bạch Thế Tôn, con ngồi trong pháp đường (để xử kiện), con thấy chính các vị Sát-đế-lỵ đại phú, các Bà-la-môn đại phú, các gia chủ đại phú, phú hào, có tiền của lớn, có tài sản lớn, có nhiều vàng và bạc, có nhiều tài sản vật dụng, có nhiều tiền của, ngũ cốc; vì nhân các dục, vì duyên các dục, vì nguyên nhân các dục, đã dụng ý nói lời vọng ngôn. Bạch Thế Tôn, con suy nghĩ như sau: “Nay ta đã chán ngấy xử kiện. Nay hãy để cho vị hiền diện (bhadramukha) được có danh tiếng nhờ tài xử kiện.”"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 —Thưa Ðại vương, các vị Sát-đế-lỵ đại phú, các vị Bà-la-môn đại phú, các vị gia chủ đại phú, phú hào có tiền của lớn, có tài sản lớn, có nhiều vàng và bạc, có nhiều tài sản vật dụng, có nhiều tiền của, ngũ cốc; vì nhân các dục, vì duyên các dục, vì nhân duyên các dục, đã dụng ý nói lên lời vọng ngôn. Do vậy họ sẽ gánh chịu bất lợi, đau khổ trong một thời gian dài."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4"
+      },
+      {
+        "id": "p8",
+        "text": "Loài Người bị đắm say,\n\nTrong tài sản, trong dục,\n\nHọ tham lam, điên dại,\n\nTrong các dục ở đời.\n\nKhông ý thức rõ ràng,\n\nÐã quá độ say mê,\n\nChẳng khác gì con cá,\n\nKhông thấy đặt bẫy sập.\n\nVề sau họ khổ đau,\n\nChịu quả báo ác nghiệp."
+      },
+      {
+        "id": "p9",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn3.8": {
+    "canonicalRef": "sn3.8",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn3.8/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:43:07+00:00",
+    "materializedAt": "2026-09-02T02:43:07+00:00",
+    "contentHash": "8d24cbda28e383ebad700fd50dd0bce0781635d3d704d2a82f817099cfdfbceb",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 3: Tương Ưng Kosala"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Thứ Nhất"
+      },
+      {
+        "id": "p3",
+        "text": "3.8. Mallikà: Mạt-lỵ"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Tại Sāvatthi."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Lúc bấy giờ vua Pasenadi nước Kosala có mặt với hoàng hậu Mallikà, trên lầu thượng (hoàng cung)."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Rồi vua Pasenadi nước Kosala nói với hoàng hậu Mallikà:"
+      },
+      {
+        "id": "p7",
+        "text": "—Này Mallikà, có ai khác thân ái với hoàng hậu hơn là tự ngã của hoàng hậu."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 4 —Thưa Ðại vương, không có ai khác thân ái với thiếp hơn là tự ngã của thiếp. Nhưng thưa Ðại vương, có ai khác thân ái với Ðại vương hơn là tự ngã của Ðại vương?"
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 5 —Này Mallikà, không có ai khác thân ái với ta hơn là tự ngã của ta."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 6 Rồi vua Pasenadi nước Kosala bước xuống lầu và đi đến Thế Tôn, sau khi đến, đảnh lễ Thế Tôn, rồi ngồi xuống một bên. Ngồi xuống một bên, vua Pasenadi nước Kosala bạch Thế Tôn:"
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 7 —Ở đây, bạch Thế Tôn, con đi lên lầu thượng (của hoàng cung) với hoàng hậu Mallikà và con nói với hoàng hậu Mallikà:"
+      },
+      {
+        "id": "p12",
+        "text": "“ —Này Mallikà, có ai khác thân ái với hoàng hậu hơn là tự ngã của hoàng hậu?”."
+      },
+      {
+        "id": "p13",
+        "text": "Khi được nói vậy, bạch Thế Tôn, hoàng hậu Mallikà trả lời với con:"
+      },
+      {
+        "id": "p14",
+        "text": "“ —Thưa Ðại vương, không có ai khác thân ái với thiếp hơn là tự ngã của thiếp. Nhưng thưa Ðại vương, có ai khác thân ái với Ðại vương hơn là tự ngã của Ðại vương?”. Ðược nói vậy, bạch Thế Tôn, con trả lời cho hoàng hậu Mallikà:"
+      },
+      {
+        "id": "p15",
+        "text": "“ —Này Mallikà, không có ai khác thân ái với ta hơn là tự ngã của ta”."
+      },
+      {
+        "id": "p16",
+        "text": "Vi-n 8 Rồi Thế Tôn, sau khi biết rõ ý nghĩa này, trong lúc ấy liền nói lên bài kệ này:"
+      },
+      {
+        "id": "p17",
+        "text": "Tâm ta đi cùng khắp,\n\nTất cả mọi phương trời,\n\nCũng không tìm thấy được,\n\nAi thân hơn tự ngã.\n\nTự ngã đối mọi người,\n\nQuá thân ái như vậy.\n\nVậy ai yêu tự ngã,\n\nChớ hại tự ngã người."
+      },
+      {
+        "id": "p18",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn3.9": {
+    "canonicalRef": "sn3.9",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn3.9/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:43:08+00:00",
+    "materializedAt": "2026-09-02T02:43:08+00:00",
+    "contentHash": "2b7cee91f837d0317e6a01e288e73e740204275468d94780d64b6eb256c854cf",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 3: Tương Ưng Kosala"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Thứ Nhất"
+      },
+      {
+        "id": "p3",
+        "text": "3.9. Tế Ðàn"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Tại Sāvatthi."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Lúc bấy giờ, vua Pasenadi nước Kosala tổ chức một đại tế đàn. Năm trăm con bò đực, năm trăm con bò con đực, năm trăm con bò con cái, năm trăm con dê, và năm trăm con cừu (urabbha) được dắt đến trụ tế lễ để làm lễ tế đàn."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Và có những người nô tỳ, hay những người phục dịch, hay những người lao động, bị hình phạt thúc đẩy, bị sợ hãi thúc đẩy, với nước mắt đầy mặt, than khóc và làm các công việc chuẩn bị cho lễ tế đàn."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Rồi rất nhiều Tỷ-kheo, vào buổi sáng đắp y, cầm bát đi vào Sāvatthi để khất thực; khất thực xong, sau bữa ăn, trên con đường đi khất thực trở về, đi đến Thế Tôn, sau khi đến, đảnh lễ Thế Tôn rồi ngồi xuống một bên. Ngồi xuống một bên, các Tỷ-kheo ấy bạch Thế Tôn:"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 —Ở đây, bạch Thế Tôn, vua Pasenadi nước Kosala tổ chức một đại lễ tế đàn. Năm trăm con bò đực, năm trăm con bò con đực, năm trăm con bò con cái, năm trăm con dê, năm trăm con cừu được dắt đến trụ tế lễ để làm lễ tế đàn. Và có những người nô tỳ, hay những người phục dịch, hay những người lao công, bị hình phạt thúc đẩy, bị sợ hãi thúc đẩy, với nước mắt đầy mặt và than khóc, làm các công việc chuẩn bị cho lễ tế đàn."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 6 Rồi Thế Tôn, sau khi hiểu rõ ý nghĩa này, ngay trong lúc ấy, nói lên bài kệ:"
+      },
+      {
+        "id": "p10",
+        "text": "Lễ cúng ngựa, cúng người,\n\nQuăng cọc, rượu chiến thắng,\n\nKhông chốt cửa, đại lễ,\n\nChúng không phải quả lớn.\n\nChỗ nào có giết hại,\n\nDê, cừu và trâu bò,\n\nLễ tế đàn như vậy,\n\nBậc Ðại Thánh không đi.\n\nTế đàn không rộn ràng,\n\nCúng dường được thường hằng,\n\nKhông có sự giết hại,\n\nDê, cừu và trâu bò,\n\nLễ tế đàn như vậy,\n\nBậc Ðại Thánh sẽ đi.\n\nBậc trí tế như vậy,\n\nTế đàn vậy, quả lớn.\n\nAi tế lễ như vậy,\n\nChỉ tốt hơn, không xấu,\n\nLà tế đàn vĩ đại,\n\nÐược chư Thiên hoan hỷ."
+      },
+      {
+        "id": "p11",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  }
+}

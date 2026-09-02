@@ -1,0 +1,4238 @@
+{
+  "collection": "AN",
+  "source": {
+    "provider": "SuttaCentral sc-data",
+    "url": "https://raw.githubusercontent.com/suttacentral/sc-data/main/structure/tree/sutta/an-tree.json",
+    "sha256": "65fb5f8266d1f84118693f68671f6a49bfff87d0684e929c75a34bb591ecc509"
+  },
+  "generatedAt": "2026-09-02T02:40:33+00:00",
+  "policy": "Canonical leaf UIDs are preserved exactly as published; ranges are not expanded.",
+  "canonicalLeafCount": 1408,
+  "rangeLeafCount": 95,
+  "items": [
+    {
+      "canonicalRef": "an1.1-10"
+    },
+    {
+      "canonicalRef": "an1.11-20"
+    },
+    {
+      "canonicalRef": "an1.21-30"
+    },
+    {
+      "canonicalRef": "an1.31-40"
+    },
+    {
+      "canonicalRef": "an1.41-50"
+    },
+    {
+      "canonicalRef": "an1.51-60"
+    },
+    {
+      "canonicalRef": "an1.61-70"
+    },
+    {
+      "canonicalRef": "an1.71-81"
+    },
+    {
+      "canonicalRef": "an1.82-97"
+    },
+    {
+      "canonicalRef": "an1.98-139"
+    },
+    {
+      "canonicalRef": "an1.140-149"
+    },
+    {
+      "canonicalRef": "an1.150-169"
+    },
+    {
+      "canonicalRef": "an1.170-187"
+    },
+    {
+      "canonicalRef": "an1.188-197"
+    },
+    {
+      "canonicalRef": "an1.198-208"
+    },
+    {
+      "canonicalRef": "an1.209-218"
+    },
+    {
+      "canonicalRef": "an1.219-234"
+    },
+    {
+      "canonicalRef": "an1.235-247"
+    },
+    {
+      "canonicalRef": "an1.248-257"
+    },
+    {
+      "canonicalRef": "an1.258-267"
+    },
+    {
+      "canonicalRef": "an1.268-277"
+    },
+    {
+      "canonicalRef": "an1.278-286"
+    },
+    {
+      "canonicalRef": "an1.287-295"
+    },
+    {
+      "canonicalRef": "an1.296-305"
+    },
+    {
+      "canonicalRef": "an1.306-315"
+    },
+    {
+      "canonicalRef": "an1.316-332"
+    },
+    {
+      "canonicalRef": "an1.333-377"
+    },
+    {
+      "canonicalRef": "an1.378-393"
+    },
+    {
+      "canonicalRef": "an1.394-574"
+    },
+    {
+      "canonicalRef": "an1.575-615"
+    },
+    {
+      "canonicalRef": "an1.616-627"
+    },
+    {
+      "canonicalRef": "an2.1-10"
+    },
+    {
+      "canonicalRef": "an2.11-20"
+    },
+    {
+      "canonicalRef": "an2.21-31"
+    },
+    {
+      "canonicalRef": "an2.32-41"
+    },
+    {
+      "canonicalRef": "an2.42-51"
+    },
+    {
+      "canonicalRef": "an2.52-63"
+    },
+    {
+      "canonicalRef": "an2.64-76"
+    },
+    {
+      "canonicalRef": "an2.77-86"
+    },
+    {
+      "canonicalRef": "an2.87-97"
+    },
+    {
+      "canonicalRef": "an2.98-117"
+    },
+    {
+      "canonicalRef": "an2.118-129"
+    },
+    {
+      "canonicalRef": "an2.130-140"
+    },
+    {
+      "canonicalRef": "an2.141-150"
+    },
+    {
+      "canonicalRef": "an2.151-162"
+    },
+    {
+      "canonicalRef": "an2.163-179"
+    },
+    {
+      "canonicalRef": "an2.180-229"
+    },
+    {
+      "canonicalRef": "an2.230-279"
+    },
+    {
+      "canonicalRef": "an2.280-309"
+    },
+    {
+      "canonicalRef": "an2.310-479"
+    },
+    {
+      "canonicalRef": "an3.1"
+    },
+    {
+      "canonicalRef": "an3.2"
+    },
+    {
+      "canonicalRef": "an3.3"
+    },
+    {
+      "canonicalRef": "an3.4"
+    },
+    {
+      "canonicalRef": "an3.5"
+    },
+    {
+      "canonicalRef": "an3.6"
+    },
+    {
+      "canonicalRef": "an3.7"
+    },
+    {
+      "canonicalRef": "an3.8"
+    },
+    {
+      "canonicalRef": "an3.9"
+    },
+    {
+      "canonicalRef": "an3.10"
+    },
+    {
+      "canonicalRef": "an3.11"
+    },
+    {
+      "canonicalRef": "an3.12"
+    },
+    {
+      "canonicalRef": "an3.13"
+    },
+    {
+      "canonicalRef": "an3.14"
+    },
+    {
+      "canonicalRef": "an3.15"
+    },
+    {
+      "canonicalRef": "an3.16"
+    },
+    {
+      "canonicalRef": "an3.17"
+    },
+    {
+      "canonicalRef": "an3.18"
+    },
+    {
+      "canonicalRef": "an3.19"
+    },
+    {
+      "canonicalRef": "an3.20"
+    },
+    {
+      "canonicalRef": "an3.21"
+    },
+    {
+      "canonicalRef": "an3.22"
+    },
+    {
+      "canonicalRef": "an3.23"
+    },
+    {
+      "canonicalRef": "an3.24"
+    },
+    {
+      "canonicalRef": "an3.25"
+    },
+    {
+      "canonicalRef": "an3.26"
+    },
+    {
+      "canonicalRef": "an3.27"
+    },
+    {
+      "canonicalRef": "an3.28"
+    },
+    {
+      "canonicalRef": "an3.29"
+    },
+    {
+      "canonicalRef": "an3.30"
+    },
+    {
+      "canonicalRef": "an3.31"
+    },
+    {
+      "canonicalRef": "an3.32"
+    },
+    {
+      "canonicalRef": "an3.33"
+    },
+    {
+      "canonicalRef": "an3.34"
+    },
+    {
+      "canonicalRef": "an3.35"
+    },
+    {
+      "canonicalRef": "an3.36"
+    },
+    {
+      "canonicalRef": "an3.37"
+    },
+    {
+      "canonicalRef": "an3.38"
+    },
+    {
+      "canonicalRef": "an3.39"
+    },
+    {
+      "canonicalRef": "an3.40"
+    },
+    {
+      "canonicalRef": "an3.41"
+    },
+    {
+      "canonicalRef": "an3.42"
+    },
+    {
+      "canonicalRef": "an3.43"
+    },
+    {
+      "canonicalRef": "an3.44"
+    },
+    {
+      "canonicalRef": "an3.45"
+    },
+    {
+      "canonicalRef": "an3.46"
+    },
+    {
+      "canonicalRef": "an3.47"
+    },
+    {
+      "canonicalRef": "an3.48"
+    },
+    {
+      "canonicalRef": "an3.49"
+    },
+    {
+      "canonicalRef": "an3.50"
+    },
+    {
+      "canonicalRef": "an3.51"
+    },
+    {
+      "canonicalRef": "an3.52"
+    },
+    {
+      "canonicalRef": "an3.53"
+    },
+    {
+      "canonicalRef": "an3.54"
+    },
+    {
+      "canonicalRef": "an3.55"
+    },
+    {
+      "canonicalRef": "an3.56"
+    },
+    {
+      "canonicalRef": "an3.57"
+    },
+    {
+      "canonicalRef": "an3.58"
+    },
+    {
+      "canonicalRef": "an3.59"
+    },
+    {
+      "canonicalRef": "an3.60"
+    },
+    {
+      "canonicalRef": "an3.61"
+    },
+    {
+      "canonicalRef": "an3.62"
+    },
+    {
+      "canonicalRef": "an3.63"
+    },
+    {
+      "canonicalRef": "an3.64"
+    },
+    {
+      "canonicalRef": "an3.65"
+    },
+    {
+      "canonicalRef": "an3.66"
+    },
+    {
+      "canonicalRef": "an3.67"
+    },
+    {
+      "canonicalRef": "an3.68"
+    },
+    {
+      "canonicalRef": "an3.69"
+    },
+    {
+      "canonicalRef": "an3.70"
+    },
+    {
+      "canonicalRef": "an3.71"
+    },
+    {
+      "canonicalRef": "an3.72"
+    },
+    {
+      "canonicalRef": "an3.73"
+    },
+    {
+      "canonicalRef": "an3.74"
+    },
+    {
+      "canonicalRef": "an3.75"
+    },
+    {
+      "canonicalRef": "an3.76"
+    },
+    {
+      "canonicalRef": "an3.77"
+    },
+    {
+      "canonicalRef": "an3.78"
+    },
+    {
+      "canonicalRef": "an3.79"
+    },
+    {
+      "canonicalRef": "an3.80"
+    },
+    {
+      "canonicalRef": "an3.81"
+    },
+    {
+      "canonicalRef": "an3.82"
+    },
+    {
+      "canonicalRef": "an3.83"
+    },
+    {
+      "canonicalRef": "an3.84"
+    },
+    {
+      "canonicalRef": "an3.85"
+    },
+    {
+      "canonicalRef": "an3.86"
+    },
+    {
+      "canonicalRef": "an3.87"
+    },
+    {
+      "canonicalRef": "an3.88"
+    },
+    {
+      "canonicalRef": "an3.89"
+    },
+    {
+      "canonicalRef": "an3.90"
+    },
+    {
+      "canonicalRef": "an3.91"
+    },
+    {
+      "canonicalRef": "an3.92"
+    },
+    {
+      "canonicalRef": "an3.93"
+    },
+    {
+      "canonicalRef": "an3.94"
+    },
+    {
+      "canonicalRef": "an3.95"
+    },
+    {
+      "canonicalRef": "an3.96"
+    },
+    {
+      "canonicalRef": "an3.97"
+    },
+    {
+      "canonicalRef": "an3.98"
+    },
+    {
+      "canonicalRef": "an3.99"
+    },
+    {
+      "canonicalRef": "an3.100"
+    },
+    {
+      "canonicalRef": "an3.101"
+    },
+    {
+      "canonicalRef": "an3.102"
+    },
+    {
+      "canonicalRef": "an3.103"
+    },
+    {
+      "canonicalRef": "an3.104"
+    },
+    {
+      "canonicalRef": "an3.105"
+    },
+    {
+      "canonicalRef": "an3.106"
+    },
+    {
+      "canonicalRef": "an3.107"
+    },
+    {
+      "canonicalRef": "an3.108"
+    },
+    {
+      "canonicalRef": "an3.109"
+    },
+    {
+      "canonicalRef": "an3.110"
+    },
+    {
+      "canonicalRef": "an3.111"
+    },
+    {
+      "canonicalRef": "an3.112"
+    },
+    {
+      "canonicalRef": "an3.113"
+    },
+    {
+      "canonicalRef": "an3.114"
+    },
+    {
+      "canonicalRef": "an3.115"
+    },
+    {
+      "canonicalRef": "an3.116"
+    },
+    {
+      "canonicalRef": "an3.117"
+    },
+    {
+      "canonicalRef": "an3.118"
+    },
+    {
+      "canonicalRef": "an3.119"
+    },
+    {
+      "canonicalRef": "an3.120"
+    },
+    {
+      "canonicalRef": "an3.121"
+    },
+    {
+      "canonicalRef": "an3.122"
+    },
+    {
+      "canonicalRef": "an3.123"
+    },
+    {
+      "canonicalRef": "an3.124"
+    },
+    {
+      "canonicalRef": "an3.125"
+    },
+    {
+      "canonicalRef": "an3.126"
+    },
+    {
+      "canonicalRef": "an3.127"
+    },
+    {
+      "canonicalRef": "an3.128"
+    },
+    {
+      "canonicalRef": "an3.129"
+    },
+    {
+      "canonicalRef": "an3.130"
+    },
+    {
+      "canonicalRef": "an3.131"
+    },
+    {
+      "canonicalRef": "an3.132"
+    },
+    {
+      "canonicalRef": "an3.133"
+    },
+    {
+      "canonicalRef": "an3.134"
+    },
+    {
+      "canonicalRef": "an3.135"
+    },
+    {
+      "canonicalRef": "an3.136"
+    },
+    {
+      "canonicalRef": "an3.137"
+    },
+    {
+      "canonicalRef": "an3.138"
+    },
+    {
+      "canonicalRef": "an3.139"
+    },
+    {
+      "canonicalRef": "an3.140"
+    },
+    {
+      "canonicalRef": "an3.141"
+    },
+    {
+      "canonicalRef": "an3.142"
+    },
+    {
+      "canonicalRef": "an3.143"
+    },
+    {
+      "canonicalRef": "an3.144"
+    },
+    {
+      "canonicalRef": "an3.145"
+    },
+    {
+      "canonicalRef": "an3.146"
+    },
+    {
+      "canonicalRef": "an3.147"
+    },
+    {
+      "canonicalRef": "an3.148"
+    },
+    {
+      "canonicalRef": "an3.149"
+    },
+    {
+      "canonicalRef": "an3.150"
+    },
+    {
+      "canonicalRef": "an3.151"
+    },
+    {
+      "canonicalRef": "an3.152"
+    },
+    {
+      "canonicalRef": "an3.153"
+    },
+    {
+      "canonicalRef": "an3.154"
+    },
+    {
+      "canonicalRef": "an3.155"
+    },
+    {
+      "canonicalRef": "an3.156-162"
+    },
+    {
+      "canonicalRef": "an3.163-182"
+    },
+    {
+      "canonicalRef": "an3.183-352"
+    },
+    {
+      "canonicalRef": "an4.1"
+    },
+    {
+      "canonicalRef": "an4.2"
+    },
+    {
+      "canonicalRef": "an4.3"
+    },
+    {
+      "canonicalRef": "an4.4"
+    },
+    {
+      "canonicalRef": "an4.5"
+    },
+    {
+      "canonicalRef": "an4.6"
+    },
+    {
+      "canonicalRef": "an4.7"
+    },
+    {
+      "canonicalRef": "an4.8"
+    },
+    {
+      "canonicalRef": "an4.9"
+    },
+    {
+      "canonicalRef": "an4.10"
+    },
+    {
+      "canonicalRef": "an4.11"
+    },
+    {
+      "canonicalRef": "an4.12"
+    },
+    {
+      "canonicalRef": "an4.13"
+    },
+    {
+      "canonicalRef": "an4.14"
+    },
+    {
+      "canonicalRef": "an4.15"
+    },
+    {
+      "canonicalRef": "an4.16"
+    },
+    {
+      "canonicalRef": "an4.17"
+    },
+    {
+      "canonicalRef": "an4.18"
+    },
+    {
+      "canonicalRef": "an4.19"
+    },
+    {
+      "canonicalRef": "an4.20"
+    },
+    {
+      "canonicalRef": "an4.21"
+    },
+    {
+      "canonicalRef": "an4.22"
+    },
+    {
+      "canonicalRef": "an4.23"
+    },
+    {
+      "canonicalRef": "an4.24"
+    },
+    {
+      "canonicalRef": "an4.25"
+    },
+    {
+      "canonicalRef": "an4.26"
+    },
+    {
+      "canonicalRef": "an4.27"
+    },
+    {
+      "canonicalRef": "an4.28"
+    },
+    {
+      "canonicalRef": "an4.29"
+    },
+    {
+      "canonicalRef": "an4.30"
+    },
+    {
+      "canonicalRef": "an4.31"
+    },
+    {
+      "canonicalRef": "an4.32"
+    },
+    {
+      "canonicalRef": "an4.33"
+    },
+    {
+      "canonicalRef": "an4.34"
+    },
+    {
+      "canonicalRef": "an4.35"
+    },
+    {
+      "canonicalRef": "an4.36"
+    },
+    {
+      "canonicalRef": "an4.37"
+    },
+    {
+      "canonicalRef": "an4.38"
+    },
+    {
+      "canonicalRef": "an4.39"
+    },
+    {
+      "canonicalRef": "an4.40"
+    },
+    {
+      "canonicalRef": "an4.41"
+    },
+    {
+      "canonicalRef": "an4.42"
+    },
+    {
+      "canonicalRef": "an4.43"
+    },
+    {
+      "canonicalRef": "an4.44"
+    },
+    {
+      "canonicalRef": "an4.45"
+    },
+    {
+      "canonicalRef": "an4.46"
+    },
+    {
+      "canonicalRef": "an4.47"
+    },
+    {
+      "canonicalRef": "an4.48"
+    },
+    {
+      "canonicalRef": "an4.49"
+    },
+    {
+      "canonicalRef": "an4.50"
+    },
+    {
+      "canonicalRef": "an4.51"
+    },
+    {
+      "canonicalRef": "an4.52"
+    },
+    {
+      "canonicalRef": "an4.53"
+    },
+    {
+      "canonicalRef": "an4.54"
+    },
+    {
+      "canonicalRef": "an4.55"
+    },
+    {
+      "canonicalRef": "an4.56"
+    },
+    {
+      "canonicalRef": "an4.57"
+    },
+    {
+      "canonicalRef": "an4.58"
+    },
+    {
+      "canonicalRef": "an4.59"
+    },
+    {
+      "canonicalRef": "an4.60"
+    },
+    {
+      "canonicalRef": "an4.61"
+    },
+    {
+      "canonicalRef": "an4.62"
+    },
+    {
+      "canonicalRef": "an4.63"
+    },
+    {
+      "canonicalRef": "an4.64"
+    },
+    {
+      "canonicalRef": "an4.65"
+    },
+    {
+      "canonicalRef": "an4.66"
+    },
+    {
+      "canonicalRef": "an4.67"
+    },
+    {
+      "canonicalRef": "an4.68"
+    },
+    {
+      "canonicalRef": "an4.69"
+    },
+    {
+      "canonicalRef": "an4.70"
+    },
+    {
+      "canonicalRef": "an4.71"
+    },
+    {
+      "canonicalRef": "an4.72"
+    },
+    {
+      "canonicalRef": "an4.73"
+    },
+    {
+      "canonicalRef": "an4.74"
+    },
+    {
+      "canonicalRef": "an4.75"
+    },
+    {
+      "canonicalRef": "an4.76"
+    },
+    {
+      "canonicalRef": "an4.77"
+    },
+    {
+      "canonicalRef": "an4.78"
+    },
+    {
+      "canonicalRef": "an4.79"
+    },
+    {
+      "canonicalRef": "an4.80"
+    },
+    {
+      "canonicalRef": "an4.81"
+    },
+    {
+      "canonicalRef": "an4.82"
+    },
+    {
+      "canonicalRef": "an4.83"
+    },
+    {
+      "canonicalRef": "an4.84"
+    },
+    {
+      "canonicalRef": "an4.85"
+    },
+    {
+      "canonicalRef": "an4.86"
+    },
+    {
+      "canonicalRef": "an4.87"
+    },
+    {
+      "canonicalRef": "an4.88"
+    },
+    {
+      "canonicalRef": "an4.89"
+    },
+    {
+      "canonicalRef": "an4.90"
+    },
+    {
+      "canonicalRef": "an4.91"
+    },
+    {
+      "canonicalRef": "an4.92"
+    },
+    {
+      "canonicalRef": "an4.93"
+    },
+    {
+      "canonicalRef": "an4.94"
+    },
+    {
+      "canonicalRef": "an4.95"
+    },
+    {
+      "canonicalRef": "an4.96"
+    },
+    {
+      "canonicalRef": "an4.97"
+    },
+    {
+      "canonicalRef": "an4.98"
+    },
+    {
+      "canonicalRef": "an4.99"
+    },
+    {
+      "canonicalRef": "an4.100"
+    },
+    {
+      "canonicalRef": "an4.101"
+    },
+    {
+      "canonicalRef": "an4.102"
+    },
+    {
+      "canonicalRef": "an4.103"
+    },
+    {
+      "canonicalRef": "an4.104"
+    },
+    {
+      "canonicalRef": "an4.105"
+    },
+    {
+      "canonicalRef": "an4.106"
+    },
+    {
+      "canonicalRef": "an4.107"
+    },
+    {
+      "canonicalRef": "an4.108"
+    },
+    {
+      "canonicalRef": "an4.109"
+    },
+    {
+      "canonicalRef": "an4.110"
+    },
+    {
+      "canonicalRef": "an4.111"
+    },
+    {
+      "canonicalRef": "an4.112"
+    },
+    {
+      "canonicalRef": "an4.113"
+    },
+    {
+      "canonicalRef": "an4.114"
+    },
+    {
+      "canonicalRef": "an4.115"
+    },
+    {
+      "canonicalRef": "an4.116"
+    },
+    {
+      "canonicalRef": "an4.117"
+    },
+    {
+      "canonicalRef": "an4.118"
+    },
+    {
+      "canonicalRef": "an4.119"
+    },
+    {
+      "canonicalRef": "an4.120"
+    },
+    {
+      "canonicalRef": "an4.121"
+    },
+    {
+      "canonicalRef": "an4.122"
+    },
+    {
+      "canonicalRef": "an4.123"
+    },
+    {
+      "canonicalRef": "an4.124"
+    },
+    {
+      "canonicalRef": "an4.125"
+    },
+    {
+      "canonicalRef": "an4.126"
+    },
+    {
+      "canonicalRef": "an4.127"
+    },
+    {
+      "canonicalRef": "an4.128"
+    },
+    {
+      "canonicalRef": "an4.129"
+    },
+    {
+      "canonicalRef": "an4.130"
+    },
+    {
+      "canonicalRef": "an4.131"
+    },
+    {
+      "canonicalRef": "an4.132"
+    },
+    {
+      "canonicalRef": "an4.133"
+    },
+    {
+      "canonicalRef": "an4.134"
+    },
+    {
+      "canonicalRef": "an4.135"
+    },
+    {
+      "canonicalRef": "an4.136"
+    },
+    {
+      "canonicalRef": "an4.137"
+    },
+    {
+      "canonicalRef": "an4.138"
+    },
+    {
+      "canonicalRef": "an4.139"
+    },
+    {
+      "canonicalRef": "an4.140"
+    },
+    {
+      "canonicalRef": "an4.141"
+    },
+    {
+      "canonicalRef": "an4.142"
+    },
+    {
+      "canonicalRef": "an4.143"
+    },
+    {
+      "canonicalRef": "an4.144"
+    },
+    {
+      "canonicalRef": "an4.145"
+    },
+    {
+      "canonicalRef": "an4.146"
+    },
+    {
+      "canonicalRef": "an4.147"
+    },
+    {
+      "canonicalRef": "an4.148"
+    },
+    {
+      "canonicalRef": "an4.149"
+    },
+    {
+      "canonicalRef": "an4.150"
+    },
+    {
+      "canonicalRef": "an4.151"
+    },
+    {
+      "canonicalRef": "an4.152"
+    },
+    {
+      "canonicalRef": "an4.153"
+    },
+    {
+      "canonicalRef": "an4.154"
+    },
+    {
+      "canonicalRef": "an4.155"
+    },
+    {
+      "canonicalRef": "an4.156"
+    },
+    {
+      "canonicalRef": "an4.157"
+    },
+    {
+      "canonicalRef": "an4.158"
+    },
+    {
+      "canonicalRef": "an4.159"
+    },
+    {
+      "canonicalRef": "an4.160"
+    },
+    {
+      "canonicalRef": "an4.161"
+    },
+    {
+      "canonicalRef": "an4.162"
+    },
+    {
+      "canonicalRef": "an4.163"
+    },
+    {
+      "canonicalRef": "an4.164"
+    },
+    {
+      "canonicalRef": "an4.165"
+    },
+    {
+      "canonicalRef": "an4.166"
+    },
+    {
+      "canonicalRef": "an4.167"
+    },
+    {
+      "canonicalRef": "an4.168"
+    },
+    {
+      "canonicalRef": "an4.169"
+    },
+    {
+      "canonicalRef": "an4.170"
+    },
+    {
+      "canonicalRef": "an4.171"
+    },
+    {
+      "canonicalRef": "an4.172"
+    },
+    {
+      "canonicalRef": "an4.173"
+    },
+    {
+      "canonicalRef": "an4.174"
+    },
+    {
+      "canonicalRef": "an4.175"
+    },
+    {
+      "canonicalRef": "an4.176"
+    },
+    {
+      "canonicalRef": "an4.177"
+    },
+    {
+      "canonicalRef": "an4.178"
+    },
+    {
+      "canonicalRef": "an4.179"
+    },
+    {
+      "canonicalRef": "an4.180"
+    },
+    {
+      "canonicalRef": "an4.181"
+    },
+    {
+      "canonicalRef": "an4.182"
+    },
+    {
+      "canonicalRef": "an4.183"
+    },
+    {
+      "canonicalRef": "an4.184"
+    },
+    {
+      "canonicalRef": "an4.185"
+    },
+    {
+      "canonicalRef": "an4.186"
+    },
+    {
+      "canonicalRef": "an4.187"
+    },
+    {
+      "canonicalRef": "an4.188"
+    },
+    {
+      "canonicalRef": "an4.189"
+    },
+    {
+      "canonicalRef": "an4.190"
+    },
+    {
+      "canonicalRef": "an4.191"
+    },
+    {
+      "canonicalRef": "an4.192"
+    },
+    {
+      "canonicalRef": "an4.193"
+    },
+    {
+      "canonicalRef": "an4.194"
+    },
+    {
+      "canonicalRef": "an4.195"
+    },
+    {
+      "canonicalRef": "an4.196"
+    },
+    {
+      "canonicalRef": "an4.197"
+    },
+    {
+      "canonicalRef": "an4.198"
+    },
+    {
+      "canonicalRef": "an4.199"
+    },
+    {
+      "canonicalRef": "an4.200"
+    },
+    {
+      "canonicalRef": "an4.201"
+    },
+    {
+      "canonicalRef": "an4.202"
+    },
+    {
+      "canonicalRef": "an4.203"
+    },
+    {
+      "canonicalRef": "an4.204"
+    },
+    {
+      "canonicalRef": "an4.205"
+    },
+    {
+      "canonicalRef": "an4.206"
+    },
+    {
+      "canonicalRef": "an4.207"
+    },
+    {
+      "canonicalRef": "an4.208"
+    },
+    {
+      "canonicalRef": "an4.209"
+    },
+    {
+      "canonicalRef": "an4.210"
+    },
+    {
+      "canonicalRef": "an4.211"
+    },
+    {
+      "canonicalRef": "an4.212"
+    },
+    {
+      "canonicalRef": "an4.213"
+    },
+    {
+      "canonicalRef": "an4.214"
+    },
+    {
+      "canonicalRef": "an4.215"
+    },
+    {
+      "canonicalRef": "an4.216"
+    },
+    {
+      "canonicalRef": "an4.217"
+    },
+    {
+      "canonicalRef": "an4.218"
+    },
+    {
+      "canonicalRef": "an4.219"
+    },
+    {
+      "canonicalRef": "an4.220"
+    },
+    {
+      "canonicalRef": "an4.221"
+    },
+    {
+      "canonicalRef": "an4.222"
+    },
+    {
+      "canonicalRef": "an4.223"
+    },
+    {
+      "canonicalRef": "an4.224"
+    },
+    {
+      "canonicalRef": "an4.225"
+    },
+    {
+      "canonicalRef": "an4.226"
+    },
+    {
+      "canonicalRef": "an4.227"
+    },
+    {
+      "canonicalRef": "an4.228"
+    },
+    {
+      "canonicalRef": "an4.229"
+    },
+    {
+      "canonicalRef": "an4.230"
+    },
+    {
+      "canonicalRef": "an4.231"
+    },
+    {
+      "canonicalRef": "an4.232"
+    },
+    {
+      "canonicalRef": "an4.233"
+    },
+    {
+      "canonicalRef": "an4.234"
+    },
+    {
+      "canonicalRef": "an4.235"
+    },
+    {
+      "canonicalRef": "an4.236"
+    },
+    {
+      "canonicalRef": "an4.237"
+    },
+    {
+      "canonicalRef": "an4.238"
+    },
+    {
+      "canonicalRef": "an4.239"
+    },
+    {
+      "canonicalRef": "an4.240"
+    },
+    {
+      "canonicalRef": "an4.241"
+    },
+    {
+      "canonicalRef": "an4.242"
+    },
+    {
+      "canonicalRef": "an4.243"
+    },
+    {
+      "canonicalRef": "an4.244"
+    },
+    {
+      "canonicalRef": "an4.245"
+    },
+    {
+      "canonicalRef": "an4.246"
+    },
+    {
+      "canonicalRef": "an4.247"
+    },
+    {
+      "canonicalRef": "an4.248"
+    },
+    {
+      "canonicalRef": "an4.249"
+    },
+    {
+      "canonicalRef": "an4.250"
+    },
+    {
+      "canonicalRef": "an4.251"
+    },
+    {
+      "canonicalRef": "an4.252"
+    },
+    {
+      "canonicalRef": "an4.253"
+    },
+    {
+      "canonicalRef": "an4.254"
+    },
+    {
+      "canonicalRef": "an4.255"
+    },
+    {
+      "canonicalRef": "an4.256"
+    },
+    {
+      "canonicalRef": "an4.257"
+    },
+    {
+      "canonicalRef": "an4.258"
+    },
+    {
+      "canonicalRef": "an4.259"
+    },
+    {
+      "canonicalRef": "an4.260"
+    },
+    {
+      "canonicalRef": "an4.261"
+    },
+    {
+      "canonicalRef": "an4.262"
+    },
+    {
+      "canonicalRef": "an4.263"
+    },
+    {
+      "canonicalRef": "an4.264"
+    },
+    {
+      "canonicalRef": "an4.265"
+    },
+    {
+      "canonicalRef": "an4.266"
+    },
+    {
+      "canonicalRef": "an4.267"
+    },
+    {
+      "canonicalRef": "an4.268"
+    },
+    {
+      "canonicalRef": "an4.269"
+    },
+    {
+      "canonicalRef": "an4.270"
+    },
+    {
+      "canonicalRef": "an4.271"
+    },
+    {
+      "canonicalRef": "an4.272"
+    },
+    {
+      "canonicalRef": "an4.273"
+    },
+    {
+      "canonicalRef": "an4.274"
+    },
+    {
+      "canonicalRef": "an4.275"
+    },
+    {
+      "canonicalRef": "an4.276"
+    },
+    {
+      "canonicalRef": "an4.277-303"
+    },
+    {
+      "canonicalRef": "an4.304-783"
+    },
+    {
+      "canonicalRef": "an5.1"
+    },
+    {
+      "canonicalRef": "an5.2"
+    },
+    {
+      "canonicalRef": "an5.3"
+    },
+    {
+      "canonicalRef": "an5.4"
+    },
+    {
+      "canonicalRef": "an5.5"
+    },
+    {
+      "canonicalRef": "an5.6"
+    },
+    {
+      "canonicalRef": "an5.7"
+    },
+    {
+      "canonicalRef": "an5.8"
+    },
+    {
+      "canonicalRef": "an5.9"
+    },
+    {
+      "canonicalRef": "an5.10"
+    },
+    {
+      "canonicalRef": "an5.11"
+    },
+    {
+      "canonicalRef": "an5.12"
+    },
+    {
+      "canonicalRef": "an5.13"
+    },
+    {
+      "canonicalRef": "an5.14"
+    },
+    {
+      "canonicalRef": "an5.15"
+    },
+    {
+      "canonicalRef": "an5.16"
+    },
+    {
+      "canonicalRef": "an5.17"
+    },
+    {
+      "canonicalRef": "an5.18"
+    },
+    {
+      "canonicalRef": "an5.19"
+    },
+    {
+      "canonicalRef": "an5.20"
+    },
+    {
+      "canonicalRef": "an5.21"
+    },
+    {
+      "canonicalRef": "an5.22"
+    },
+    {
+      "canonicalRef": "an5.23"
+    },
+    {
+      "canonicalRef": "an5.24"
+    },
+    {
+      "canonicalRef": "an5.25"
+    },
+    {
+      "canonicalRef": "an5.26"
+    },
+    {
+      "canonicalRef": "an5.27"
+    },
+    {
+      "canonicalRef": "an5.28"
+    },
+    {
+      "canonicalRef": "an5.29"
+    },
+    {
+      "canonicalRef": "an5.30"
+    },
+    {
+      "canonicalRef": "an5.31"
+    },
+    {
+      "canonicalRef": "an5.32"
+    },
+    {
+      "canonicalRef": "an5.33"
+    },
+    {
+      "canonicalRef": "an5.34"
+    },
+    {
+      "canonicalRef": "an5.35"
+    },
+    {
+      "canonicalRef": "an5.36"
+    },
+    {
+      "canonicalRef": "an5.37"
+    },
+    {
+      "canonicalRef": "an5.38"
+    },
+    {
+      "canonicalRef": "an5.39"
+    },
+    {
+      "canonicalRef": "an5.40"
+    },
+    {
+      "canonicalRef": "an5.41"
+    },
+    {
+      "canonicalRef": "an5.42"
+    },
+    {
+      "canonicalRef": "an5.43"
+    },
+    {
+      "canonicalRef": "an5.44"
+    },
+    {
+      "canonicalRef": "an5.45"
+    },
+    {
+      "canonicalRef": "an5.46"
+    },
+    {
+      "canonicalRef": "an5.47"
+    },
+    {
+      "canonicalRef": "an5.48"
+    },
+    {
+      "canonicalRef": "an5.49"
+    },
+    {
+      "canonicalRef": "an5.50"
+    },
+    {
+      "canonicalRef": "an5.51"
+    },
+    {
+      "canonicalRef": "an5.52"
+    },
+    {
+      "canonicalRef": "an5.53"
+    },
+    {
+      "canonicalRef": "an5.54"
+    },
+    {
+      "canonicalRef": "an5.55"
+    },
+    {
+      "canonicalRef": "an5.56"
+    },
+    {
+      "canonicalRef": "an5.57"
+    },
+    {
+      "canonicalRef": "an5.58"
+    },
+    {
+      "canonicalRef": "an5.59"
+    },
+    {
+      "canonicalRef": "an5.60"
+    },
+    {
+      "canonicalRef": "an5.61"
+    },
+    {
+      "canonicalRef": "an5.62"
+    },
+    {
+      "canonicalRef": "an5.63"
+    },
+    {
+      "canonicalRef": "an5.64"
+    },
+    {
+      "canonicalRef": "an5.65"
+    },
+    {
+      "canonicalRef": "an5.66"
+    },
+    {
+      "canonicalRef": "an5.67"
+    },
+    {
+      "canonicalRef": "an5.68"
+    },
+    {
+      "canonicalRef": "an5.69"
+    },
+    {
+      "canonicalRef": "an5.70"
+    },
+    {
+      "canonicalRef": "an5.71"
+    },
+    {
+      "canonicalRef": "an5.72"
+    },
+    {
+      "canonicalRef": "an5.73"
+    },
+    {
+      "canonicalRef": "an5.74"
+    },
+    {
+      "canonicalRef": "an5.75"
+    },
+    {
+      "canonicalRef": "an5.76"
+    },
+    {
+      "canonicalRef": "an5.77"
+    },
+    {
+      "canonicalRef": "an5.78"
+    },
+    {
+      "canonicalRef": "an5.79"
+    },
+    {
+      "canonicalRef": "an5.80"
+    },
+    {
+      "canonicalRef": "an5.81"
+    },
+    {
+      "canonicalRef": "an5.82"
+    },
+    {
+      "canonicalRef": "an5.83"
+    },
+    {
+      "canonicalRef": "an5.84"
+    },
+    {
+      "canonicalRef": "an5.85"
+    },
+    {
+      "canonicalRef": "an5.86"
+    },
+    {
+      "canonicalRef": "an5.87"
+    },
+    {
+      "canonicalRef": "an5.88"
+    },
+    {
+      "canonicalRef": "an5.89"
+    },
+    {
+      "canonicalRef": "an5.90"
+    },
+    {
+      "canonicalRef": "an5.91"
+    },
+    {
+      "canonicalRef": "an5.92"
+    },
+    {
+      "canonicalRef": "an5.93"
+    },
+    {
+      "canonicalRef": "an5.94"
+    },
+    {
+      "canonicalRef": "an5.95"
+    },
+    {
+      "canonicalRef": "an5.96"
+    },
+    {
+      "canonicalRef": "an5.97"
+    },
+    {
+      "canonicalRef": "an5.98"
+    },
+    {
+      "canonicalRef": "an5.99"
+    },
+    {
+      "canonicalRef": "an5.100"
+    },
+    {
+      "canonicalRef": "an5.101"
+    },
+    {
+      "canonicalRef": "an5.102"
+    },
+    {
+      "canonicalRef": "an5.103"
+    },
+    {
+      "canonicalRef": "an5.104"
+    },
+    {
+      "canonicalRef": "an5.105"
+    },
+    {
+      "canonicalRef": "an5.106"
+    },
+    {
+      "canonicalRef": "an5.107"
+    },
+    {
+      "canonicalRef": "an5.108"
+    },
+    {
+      "canonicalRef": "an5.109"
+    },
+    {
+      "canonicalRef": "an5.110"
+    },
+    {
+      "canonicalRef": "an5.111"
+    },
+    {
+      "canonicalRef": "an5.112"
+    },
+    {
+      "canonicalRef": "an5.113"
+    },
+    {
+      "canonicalRef": "an5.114"
+    },
+    {
+      "canonicalRef": "an5.115"
+    },
+    {
+      "canonicalRef": "an5.116"
+    },
+    {
+      "canonicalRef": "an5.117"
+    },
+    {
+      "canonicalRef": "an5.118"
+    },
+    {
+      "canonicalRef": "an5.119"
+    },
+    {
+      "canonicalRef": "an5.120"
+    },
+    {
+      "canonicalRef": "an5.121"
+    },
+    {
+      "canonicalRef": "an5.122"
+    },
+    {
+      "canonicalRef": "an5.123"
+    },
+    {
+      "canonicalRef": "an5.124"
+    },
+    {
+      "canonicalRef": "an5.125"
+    },
+    {
+      "canonicalRef": "an5.126"
+    },
+    {
+      "canonicalRef": "an5.127"
+    },
+    {
+      "canonicalRef": "an5.128"
+    },
+    {
+      "canonicalRef": "an5.129"
+    },
+    {
+      "canonicalRef": "an5.130"
+    },
+    {
+      "canonicalRef": "an5.131"
+    },
+    {
+      "canonicalRef": "an5.132"
+    },
+    {
+      "canonicalRef": "an5.133"
+    },
+    {
+      "canonicalRef": "an5.134"
+    },
+    {
+      "canonicalRef": "an5.135"
+    },
+    {
+      "canonicalRef": "an5.136"
+    },
+    {
+      "canonicalRef": "an5.137"
+    },
+    {
+      "canonicalRef": "an5.138"
+    },
+    {
+      "canonicalRef": "an5.139"
+    },
+    {
+      "canonicalRef": "an5.140"
+    },
+    {
+      "canonicalRef": "an5.141"
+    },
+    {
+      "canonicalRef": "an5.142"
+    },
+    {
+      "canonicalRef": "an5.143"
+    },
+    {
+      "canonicalRef": "an5.144"
+    },
+    {
+      "canonicalRef": "an5.145"
+    },
+    {
+      "canonicalRef": "an5.146"
+    },
+    {
+      "canonicalRef": "an5.147"
+    },
+    {
+      "canonicalRef": "an5.148"
+    },
+    {
+      "canonicalRef": "an5.149"
+    },
+    {
+      "canonicalRef": "an5.150"
+    },
+    {
+      "canonicalRef": "an5.151"
+    },
+    {
+      "canonicalRef": "an5.152"
+    },
+    {
+      "canonicalRef": "an5.153"
+    },
+    {
+      "canonicalRef": "an5.154"
+    },
+    {
+      "canonicalRef": "an5.155"
+    },
+    {
+      "canonicalRef": "an5.156"
+    },
+    {
+      "canonicalRef": "an5.157"
+    },
+    {
+      "canonicalRef": "an5.158"
+    },
+    {
+      "canonicalRef": "an5.159"
+    },
+    {
+      "canonicalRef": "an5.160"
+    },
+    {
+      "canonicalRef": "an5.161"
+    },
+    {
+      "canonicalRef": "an5.162"
+    },
+    {
+      "canonicalRef": "an5.163"
+    },
+    {
+      "canonicalRef": "an5.164"
+    },
+    {
+      "canonicalRef": "an5.165"
+    },
+    {
+      "canonicalRef": "an5.166"
+    },
+    {
+      "canonicalRef": "an5.167"
+    },
+    {
+      "canonicalRef": "an5.168"
+    },
+    {
+      "canonicalRef": "an5.169"
+    },
+    {
+      "canonicalRef": "an5.170"
+    },
+    {
+      "canonicalRef": "an5.171"
+    },
+    {
+      "canonicalRef": "an5.172"
+    },
+    {
+      "canonicalRef": "an5.173"
+    },
+    {
+      "canonicalRef": "an5.174"
+    },
+    {
+      "canonicalRef": "an5.175"
+    },
+    {
+      "canonicalRef": "an5.176"
+    },
+    {
+      "canonicalRef": "an5.177"
+    },
+    {
+      "canonicalRef": "an5.178"
+    },
+    {
+      "canonicalRef": "an5.179"
+    },
+    {
+      "canonicalRef": "an5.180"
+    },
+    {
+      "canonicalRef": "an5.181"
+    },
+    {
+      "canonicalRef": "an5.182"
+    },
+    {
+      "canonicalRef": "an5.183"
+    },
+    {
+      "canonicalRef": "an5.184"
+    },
+    {
+      "canonicalRef": "an5.185"
+    },
+    {
+      "canonicalRef": "an5.186"
+    },
+    {
+      "canonicalRef": "an5.187"
+    },
+    {
+      "canonicalRef": "an5.188"
+    },
+    {
+      "canonicalRef": "an5.189"
+    },
+    {
+      "canonicalRef": "an5.190"
+    },
+    {
+      "canonicalRef": "an5.191"
+    },
+    {
+      "canonicalRef": "an5.192"
+    },
+    {
+      "canonicalRef": "an5.193"
+    },
+    {
+      "canonicalRef": "an5.194"
+    },
+    {
+      "canonicalRef": "an5.195"
+    },
+    {
+      "canonicalRef": "an5.196"
+    },
+    {
+      "canonicalRef": "an5.197"
+    },
+    {
+      "canonicalRef": "an5.198"
+    },
+    {
+      "canonicalRef": "an5.199"
+    },
+    {
+      "canonicalRef": "an5.200"
+    },
+    {
+      "canonicalRef": "an5.201"
+    },
+    {
+      "canonicalRef": "an5.202"
+    },
+    {
+      "canonicalRef": "an5.203"
+    },
+    {
+      "canonicalRef": "an5.204"
+    },
+    {
+      "canonicalRef": "an5.205"
+    },
+    {
+      "canonicalRef": "an5.206"
+    },
+    {
+      "canonicalRef": "an5.207"
+    },
+    {
+      "canonicalRef": "an5.208"
+    },
+    {
+      "canonicalRef": "an5.209"
+    },
+    {
+      "canonicalRef": "an5.210"
+    },
+    {
+      "canonicalRef": "an5.211"
+    },
+    {
+      "canonicalRef": "an5.212"
+    },
+    {
+      "canonicalRef": "an5.213"
+    },
+    {
+      "canonicalRef": "an5.214"
+    },
+    {
+      "canonicalRef": "an5.215"
+    },
+    {
+      "canonicalRef": "an5.216"
+    },
+    {
+      "canonicalRef": "an5.217"
+    },
+    {
+      "canonicalRef": "an5.218"
+    },
+    {
+      "canonicalRef": "an5.219"
+    },
+    {
+      "canonicalRef": "an5.220"
+    },
+    {
+      "canonicalRef": "an5.221"
+    },
+    {
+      "canonicalRef": "an5.222"
+    },
+    {
+      "canonicalRef": "an5.223"
+    },
+    {
+      "canonicalRef": "an5.224"
+    },
+    {
+      "canonicalRef": "an5.225"
+    },
+    {
+      "canonicalRef": "an5.226"
+    },
+    {
+      "canonicalRef": "an5.227"
+    },
+    {
+      "canonicalRef": "an5.228"
+    },
+    {
+      "canonicalRef": "an5.229"
+    },
+    {
+      "canonicalRef": "an5.230"
+    },
+    {
+      "canonicalRef": "an5.231"
+    },
+    {
+      "canonicalRef": "an5.232"
+    },
+    {
+      "canonicalRef": "an5.233"
+    },
+    {
+      "canonicalRef": "an5.234"
+    },
+    {
+      "canonicalRef": "an5.235"
+    },
+    {
+      "canonicalRef": "an5.236"
+    },
+    {
+      "canonicalRef": "an5.237"
+    },
+    {
+      "canonicalRef": "an5.238"
+    },
+    {
+      "canonicalRef": "an5.239"
+    },
+    {
+      "canonicalRef": "an5.240"
+    },
+    {
+      "canonicalRef": "an5.241"
+    },
+    {
+      "canonicalRef": "an5.242"
+    },
+    {
+      "canonicalRef": "an5.243"
+    },
+    {
+      "canonicalRef": "an5.244"
+    },
+    {
+      "canonicalRef": "an5.245"
+    },
+    {
+      "canonicalRef": "an5.246"
+    },
+    {
+      "canonicalRef": "an5.247"
+    },
+    {
+      "canonicalRef": "an5.248"
+    },
+    {
+      "canonicalRef": "an5.249"
+    },
+    {
+      "canonicalRef": "an5.250"
+    },
+    {
+      "canonicalRef": "an5.251"
+    },
+    {
+      "canonicalRef": "an5.252"
+    },
+    {
+      "canonicalRef": "an5.253"
+    },
+    {
+      "canonicalRef": "an5.254"
+    },
+    {
+      "canonicalRef": "an5.255"
+    },
+    {
+      "canonicalRef": "an5.256"
+    },
+    {
+      "canonicalRef": "an5.257-263"
+    },
+    {
+      "canonicalRef": "an5.264"
+    },
+    {
+      "canonicalRef": "an5.265-271"
+    },
+    {
+      "canonicalRef": "an5.272"
+    },
+    {
+      "canonicalRef": "an5.273-285"
+    },
+    {
+      "canonicalRef": "an5.286"
+    },
+    {
+      "canonicalRef": "an5.287-292"
+    },
+    {
+      "canonicalRef": "an5.293"
+    },
+    {
+      "canonicalRef": "an5.294-302"
+    },
+    {
+      "canonicalRef": "an5.303"
+    },
+    {
+      "canonicalRef": "an5.304"
+    },
+    {
+      "canonicalRef": "an5.305"
+    },
+    {
+      "canonicalRef": "an5.306"
+    },
+    {
+      "canonicalRef": "an5.307"
+    },
+    {
+      "canonicalRef": "an5.308-1152"
+    },
+    {
+      "canonicalRef": "an6.1"
+    },
+    {
+      "canonicalRef": "an6.2"
+    },
+    {
+      "canonicalRef": "an6.3"
+    },
+    {
+      "canonicalRef": "an6.4"
+    },
+    {
+      "canonicalRef": "an6.5"
+    },
+    {
+      "canonicalRef": "an6.6"
+    },
+    {
+      "canonicalRef": "an6.7"
+    },
+    {
+      "canonicalRef": "an6.8"
+    },
+    {
+      "canonicalRef": "an6.9"
+    },
+    {
+      "canonicalRef": "an6.10"
+    },
+    {
+      "canonicalRef": "an6.11"
+    },
+    {
+      "canonicalRef": "an6.12"
+    },
+    {
+      "canonicalRef": "an6.13"
+    },
+    {
+      "canonicalRef": "an6.14"
+    },
+    {
+      "canonicalRef": "an6.15"
+    },
+    {
+      "canonicalRef": "an6.16"
+    },
+    {
+      "canonicalRef": "an6.17"
+    },
+    {
+      "canonicalRef": "an6.18"
+    },
+    {
+      "canonicalRef": "an6.19"
+    },
+    {
+      "canonicalRef": "an6.20"
+    },
+    {
+      "canonicalRef": "an6.21"
+    },
+    {
+      "canonicalRef": "an6.22"
+    },
+    {
+      "canonicalRef": "an6.23"
+    },
+    {
+      "canonicalRef": "an6.24"
+    },
+    {
+      "canonicalRef": "an6.25"
+    },
+    {
+      "canonicalRef": "an6.26"
+    },
+    {
+      "canonicalRef": "an6.27"
+    },
+    {
+      "canonicalRef": "an6.28"
+    },
+    {
+      "canonicalRef": "an6.29"
+    },
+    {
+      "canonicalRef": "an6.30"
+    },
+    {
+      "canonicalRef": "an6.31"
+    },
+    {
+      "canonicalRef": "an6.32"
+    },
+    {
+      "canonicalRef": "an6.33"
+    },
+    {
+      "canonicalRef": "an6.34"
+    },
+    {
+      "canonicalRef": "an6.35"
+    },
+    {
+      "canonicalRef": "an6.36"
+    },
+    {
+      "canonicalRef": "an6.37"
+    },
+    {
+      "canonicalRef": "an6.38"
+    },
+    {
+      "canonicalRef": "an6.39"
+    },
+    {
+      "canonicalRef": "an6.40"
+    },
+    {
+      "canonicalRef": "an6.41"
+    },
+    {
+      "canonicalRef": "an6.42"
+    },
+    {
+      "canonicalRef": "an6.43"
+    },
+    {
+      "canonicalRef": "an6.44"
+    },
+    {
+      "canonicalRef": "an6.45"
+    },
+    {
+      "canonicalRef": "an6.46"
+    },
+    {
+      "canonicalRef": "an6.47"
+    },
+    {
+      "canonicalRef": "an6.48"
+    },
+    {
+      "canonicalRef": "an6.49"
+    },
+    {
+      "canonicalRef": "an6.50"
+    },
+    {
+      "canonicalRef": "an6.51"
+    },
+    {
+      "canonicalRef": "an6.52"
+    },
+    {
+      "canonicalRef": "an6.53"
+    },
+    {
+      "canonicalRef": "an6.54"
+    },
+    {
+      "canonicalRef": "an6.55"
+    },
+    {
+      "canonicalRef": "an6.56"
+    },
+    {
+      "canonicalRef": "an6.57"
+    },
+    {
+      "canonicalRef": "an6.58"
+    },
+    {
+      "canonicalRef": "an6.59"
+    },
+    {
+      "canonicalRef": "an6.60"
+    },
+    {
+      "canonicalRef": "an6.61"
+    },
+    {
+      "canonicalRef": "an6.62"
+    },
+    {
+      "canonicalRef": "an6.63"
+    },
+    {
+      "canonicalRef": "an6.64"
+    },
+    {
+      "canonicalRef": "an6.65"
+    },
+    {
+      "canonicalRef": "an6.66"
+    },
+    {
+      "canonicalRef": "an6.67"
+    },
+    {
+      "canonicalRef": "an6.68"
+    },
+    {
+      "canonicalRef": "an6.69"
+    },
+    {
+      "canonicalRef": "an6.70"
+    },
+    {
+      "canonicalRef": "an6.71"
+    },
+    {
+      "canonicalRef": "an6.72"
+    },
+    {
+      "canonicalRef": "an6.73"
+    },
+    {
+      "canonicalRef": "an6.74"
+    },
+    {
+      "canonicalRef": "an6.75"
+    },
+    {
+      "canonicalRef": "an6.76"
+    },
+    {
+      "canonicalRef": "an6.77"
+    },
+    {
+      "canonicalRef": "an6.78"
+    },
+    {
+      "canonicalRef": "an6.79"
+    },
+    {
+      "canonicalRef": "an6.80"
+    },
+    {
+      "canonicalRef": "an6.81"
+    },
+    {
+      "canonicalRef": "an6.82"
+    },
+    {
+      "canonicalRef": "an6.83"
+    },
+    {
+      "canonicalRef": "an6.84"
+    },
+    {
+      "canonicalRef": "an6.85"
+    },
+    {
+      "canonicalRef": "an6.86"
+    },
+    {
+      "canonicalRef": "an6.87"
+    },
+    {
+      "canonicalRef": "an6.88"
+    },
+    {
+      "canonicalRef": "an6.89"
+    },
+    {
+      "canonicalRef": "an6.90"
+    },
+    {
+      "canonicalRef": "an6.91"
+    },
+    {
+      "canonicalRef": "an6.92"
+    },
+    {
+      "canonicalRef": "an6.93"
+    },
+    {
+      "canonicalRef": "an6.94"
+    },
+    {
+      "canonicalRef": "an6.95"
+    },
+    {
+      "canonicalRef": "an6.96"
+    },
+    {
+      "canonicalRef": "an6.97"
+    },
+    {
+      "canonicalRef": "an6.98"
+    },
+    {
+      "canonicalRef": "an6.99"
+    },
+    {
+      "canonicalRef": "an6.100"
+    },
+    {
+      "canonicalRef": "an6.101"
+    },
+    {
+      "canonicalRef": "an6.102"
+    },
+    {
+      "canonicalRef": "an6.103"
+    },
+    {
+      "canonicalRef": "an6.104"
+    },
+    {
+      "canonicalRef": "an6.105"
+    },
+    {
+      "canonicalRef": "an6.106"
+    },
+    {
+      "canonicalRef": "an6.107"
+    },
+    {
+      "canonicalRef": "an6.108"
+    },
+    {
+      "canonicalRef": "an6.109"
+    },
+    {
+      "canonicalRef": "an6.110"
+    },
+    {
+      "canonicalRef": "an6.111"
+    },
+    {
+      "canonicalRef": "an6.112"
+    },
+    {
+      "canonicalRef": "an6.113"
+    },
+    {
+      "canonicalRef": "an6.114"
+    },
+    {
+      "canonicalRef": "an6.115"
+    },
+    {
+      "canonicalRef": "an6.116"
+    },
+    {
+      "canonicalRef": "an6.117"
+    },
+    {
+      "canonicalRef": "an6.118"
+    },
+    {
+      "canonicalRef": "an6.119"
+    },
+    {
+      "canonicalRef": "an6.120-139"
+    },
+    {
+      "canonicalRef": "an6.140"
+    },
+    {
+      "canonicalRef": "an6.141"
+    },
+    {
+      "canonicalRef": "an6.142"
+    },
+    {
+      "canonicalRef": "an6.143-169"
+    },
+    {
+      "canonicalRef": "an6.170-649"
+    },
+    {
+      "canonicalRef": "an7.1"
+    },
+    {
+      "canonicalRef": "an7.2"
+    },
+    {
+      "canonicalRef": "an7.3"
+    },
+    {
+      "canonicalRef": "an7.4"
+    },
+    {
+      "canonicalRef": "an7.5"
+    },
+    {
+      "canonicalRef": "an7.6"
+    },
+    {
+      "canonicalRef": "an7.7"
+    },
+    {
+      "canonicalRef": "an7.8"
+    },
+    {
+      "canonicalRef": "an7.9"
+    },
+    {
+      "canonicalRef": "an7.10"
+    },
+    {
+      "canonicalRef": "an7.11"
+    },
+    {
+      "canonicalRef": "an7.12"
+    },
+    {
+      "canonicalRef": "an7.13"
+    },
+    {
+      "canonicalRef": "an7.14"
+    },
+    {
+      "canonicalRef": "an7.15"
+    },
+    {
+      "canonicalRef": "an7.16"
+    },
+    {
+      "canonicalRef": "an7.17"
+    },
+    {
+      "canonicalRef": "an7.18"
+    },
+    {
+      "canonicalRef": "an7.19"
+    },
+    {
+      "canonicalRef": "an7.20"
+    },
+    {
+      "canonicalRef": "an7.21"
+    },
+    {
+      "canonicalRef": "an7.22"
+    },
+    {
+      "canonicalRef": "an7.23"
+    },
+    {
+      "canonicalRef": "an7.24"
+    },
+    {
+      "canonicalRef": "an7.25"
+    },
+    {
+      "canonicalRef": "an7.26"
+    },
+    {
+      "canonicalRef": "an7.27"
+    },
+    {
+      "canonicalRef": "an7.28"
+    },
+    {
+      "canonicalRef": "an7.29"
+    },
+    {
+      "canonicalRef": "an7.30"
+    },
+    {
+      "canonicalRef": "an7.31"
+    },
+    {
+      "canonicalRef": "an7.32"
+    },
+    {
+      "canonicalRef": "an7.33"
+    },
+    {
+      "canonicalRef": "an7.34"
+    },
+    {
+      "canonicalRef": "an7.35"
+    },
+    {
+      "canonicalRef": "an7.36"
+    },
+    {
+      "canonicalRef": "an7.37"
+    },
+    {
+      "canonicalRef": "an7.38"
+    },
+    {
+      "canonicalRef": "an7.39"
+    },
+    {
+      "canonicalRef": "an7.40"
+    },
+    {
+      "canonicalRef": "an7.41"
+    },
+    {
+      "canonicalRef": "an7.42"
+    },
+    {
+      "canonicalRef": "an7.43"
+    },
+    {
+      "canonicalRef": "an7.44"
+    },
+    {
+      "canonicalRef": "an7.45"
+    },
+    {
+      "canonicalRef": "an7.46"
+    },
+    {
+      "canonicalRef": "an7.47"
+    },
+    {
+      "canonicalRef": "an7.48"
+    },
+    {
+      "canonicalRef": "an7.49"
+    },
+    {
+      "canonicalRef": "an7.50"
+    },
+    {
+      "canonicalRef": "an7.51"
+    },
+    {
+      "canonicalRef": "an7.52"
+    },
+    {
+      "canonicalRef": "an7.53"
+    },
+    {
+      "canonicalRef": "an7.54"
+    },
+    {
+      "canonicalRef": "an7.55"
+    },
+    {
+      "canonicalRef": "an7.56"
+    },
+    {
+      "canonicalRef": "an7.57"
+    },
+    {
+      "canonicalRef": "an7.58"
+    },
+    {
+      "canonicalRef": "an7.59"
+    },
+    {
+      "canonicalRef": "an7.60"
+    },
+    {
+      "canonicalRef": "an7.61"
+    },
+    {
+      "canonicalRef": "an7.62"
+    },
+    {
+      "canonicalRef": "an7.63"
+    },
+    {
+      "canonicalRef": "an7.64"
+    },
+    {
+      "canonicalRef": "an7.65"
+    },
+    {
+      "canonicalRef": "an7.66"
+    },
+    {
+      "canonicalRef": "an7.67"
+    },
+    {
+      "canonicalRef": "an7.68"
+    },
+    {
+      "canonicalRef": "an7.69"
+    },
+    {
+      "canonicalRef": "an7.70"
+    },
+    {
+      "canonicalRef": "an7.71"
+    },
+    {
+      "canonicalRef": "an7.72"
+    },
+    {
+      "canonicalRef": "an7.73"
+    },
+    {
+      "canonicalRef": "an7.74"
+    },
+    {
+      "canonicalRef": "an7.75"
+    },
+    {
+      "canonicalRef": "an7.76"
+    },
+    {
+      "canonicalRef": "an7.77"
+    },
+    {
+      "canonicalRef": "an7.78"
+    },
+    {
+      "canonicalRef": "an7.79"
+    },
+    {
+      "canonicalRef": "an7.80"
+    },
+    {
+      "canonicalRef": "an7.81"
+    },
+    {
+      "canonicalRef": "an7.82"
+    },
+    {
+      "canonicalRef": "an7.83"
+    },
+    {
+      "canonicalRef": "an7.84"
+    },
+    {
+      "canonicalRef": "an7.85"
+    },
+    {
+      "canonicalRef": "an7.86"
+    },
+    {
+      "canonicalRef": "an7.87"
+    },
+    {
+      "canonicalRef": "an7.88"
+    },
+    {
+      "canonicalRef": "an7.89"
+    },
+    {
+      "canonicalRef": "an7.90"
+    },
+    {
+      "canonicalRef": "an7.91"
+    },
+    {
+      "canonicalRef": "an7.92"
+    },
+    {
+      "canonicalRef": "an7.93"
+    },
+    {
+      "canonicalRef": "an7.94"
+    },
+    {
+      "canonicalRef": "an7.95"
+    },
+    {
+      "canonicalRef": "an7.96-614"
+    },
+    {
+      "canonicalRef": "an7.615"
+    },
+    {
+      "canonicalRef": "an7.616"
+    },
+    {
+      "canonicalRef": "an7.617"
+    },
+    {
+      "canonicalRef": "an7.618-644"
+    },
+    {
+      "canonicalRef": "an7.645-1124"
+    },
+    {
+      "canonicalRef": "an8.1"
+    },
+    {
+      "canonicalRef": "an8.2"
+    },
+    {
+      "canonicalRef": "an8.3"
+    },
+    {
+      "canonicalRef": "an8.4"
+    },
+    {
+      "canonicalRef": "an8.5"
+    },
+    {
+      "canonicalRef": "an8.6"
+    },
+    {
+      "canonicalRef": "an8.7"
+    },
+    {
+      "canonicalRef": "an8.8"
+    },
+    {
+      "canonicalRef": "an8.9"
+    },
+    {
+      "canonicalRef": "an8.10"
+    },
+    {
+      "canonicalRef": "an8.11"
+    },
+    {
+      "canonicalRef": "an8.12"
+    },
+    {
+      "canonicalRef": "an8.13"
+    },
+    {
+      "canonicalRef": "an8.14"
+    },
+    {
+      "canonicalRef": "an8.15"
+    },
+    {
+      "canonicalRef": "an8.16"
+    },
+    {
+      "canonicalRef": "an8.17"
+    },
+    {
+      "canonicalRef": "an8.18"
+    },
+    {
+      "canonicalRef": "an8.19"
+    },
+    {
+      "canonicalRef": "an8.20"
+    },
+    {
+      "canonicalRef": "an8.21"
+    },
+    {
+      "canonicalRef": "an8.22"
+    },
+    {
+      "canonicalRef": "an8.23"
+    },
+    {
+      "canonicalRef": "an8.24"
+    },
+    {
+      "canonicalRef": "an8.25"
+    },
+    {
+      "canonicalRef": "an8.26"
+    },
+    {
+      "canonicalRef": "an8.27"
+    },
+    {
+      "canonicalRef": "an8.28"
+    },
+    {
+      "canonicalRef": "an8.29"
+    },
+    {
+      "canonicalRef": "an8.30"
+    },
+    {
+      "canonicalRef": "an8.31"
+    },
+    {
+      "canonicalRef": "an8.32"
+    },
+    {
+      "canonicalRef": "an8.33"
+    },
+    {
+      "canonicalRef": "an8.34"
+    },
+    {
+      "canonicalRef": "an8.35"
+    },
+    {
+      "canonicalRef": "an8.36"
+    },
+    {
+      "canonicalRef": "an8.37"
+    },
+    {
+      "canonicalRef": "an8.38"
+    },
+    {
+      "canonicalRef": "an8.39"
+    },
+    {
+      "canonicalRef": "an8.40"
+    },
+    {
+      "canonicalRef": "an8.41"
+    },
+    {
+      "canonicalRef": "an8.42"
+    },
+    {
+      "canonicalRef": "an8.43"
+    },
+    {
+      "canonicalRef": "an8.44"
+    },
+    {
+      "canonicalRef": "an8.45"
+    },
+    {
+      "canonicalRef": "an8.46"
+    },
+    {
+      "canonicalRef": "an8.47"
+    },
+    {
+      "canonicalRef": "an8.48"
+    },
+    {
+      "canonicalRef": "an8.49"
+    },
+    {
+      "canonicalRef": "an8.50"
+    },
+    {
+      "canonicalRef": "an8.51"
+    },
+    {
+      "canonicalRef": "an8.52"
+    },
+    {
+      "canonicalRef": "an8.53"
+    },
+    {
+      "canonicalRef": "an8.54"
+    },
+    {
+      "canonicalRef": "an8.55"
+    },
+    {
+      "canonicalRef": "an8.56"
+    },
+    {
+      "canonicalRef": "an8.57"
+    },
+    {
+      "canonicalRef": "an8.58"
+    },
+    {
+      "canonicalRef": "an8.59"
+    },
+    {
+      "canonicalRef": "an8.60"
+    },
+    {
+      "canonicalRef": "an8.61"
+    },
+    {
+      "canonicalRef": "an8.62"
+    },
+    {
+      "canonicalRef": "an8.63"
+    },
+    {
+      "canonicalRef": "an8.64"
+    },
+    {
+      "canonicalRef": "an8.65"
+    },
+    {
+      "canonicalRef": "an8.66"
+    },
+    {
+      "canonicalRef": "an8.67"
+    },
+    {
+      "canonicalRef": "an8.68"
+    },
+    {
+      "canonicalRef": "an8.69"
+    },
+    {
+      "canonicalRef": "an8.70"
+    },
+    {
+      "canonicalRef": "an8.71"
+    },
+    {
+      "canonicalRef": "an8.72"
+    },
+    {
+      "canonicalRef": "an8.73"
+    },
+    {
+      "canonicalRef": "an8.74"
+    },
+    {
+      "canonicalRef": "an8.75"
+    },
+    {
+      "canonicalRef": "an8.76"
+    },
+    {
+      "canonicalRef": "an8.77"
+    },
+    {
+      "canonicalRef": "an8.78"
+    },
+    {
+      "canonicalRef": "an8.79"
+    },
+    {
+      "canonicalRef": "an8.80"
+    },
+    {
+      "canonicalRef": "an8.81"
+    },
+    {
+      "canonicalRef": "an8.82"
+    },
+    {
+      "canonicalRef": "an8.83"
+    },
+    {
+      "canonicalRef": "an8.84"
+    },
+    {
+      "canonicalRef": "an8.85"
+    },
+    {
+      "canonicalRef": "an8.86"
+    },
+    {
+      "canonicalRef": "an8.87"
+    },
+    {
+      "canonicalRef": "an8.88"
+    },
+    {
+      "canonicalRef": "an8.89"
+    },
+    {
+      "canonicalRef": "an8.90"
+    },
+    {
+      "canonicalRef": "an8.91-117"
+    },
+    {
+      "canonicalRef": "an8.118"
+    },
+    {
+      "canonicalRef": "an8.119"
+    },
+    {
+      "canonicalRef": "an8.120"
+    },
+    {
+      "canonicalRef": "an8.121-147"
+    },
+    {
+      "canonicalRef": "an8.148-627"
+    },
+    {
+      "canonicalRef": "an9.1"
+    },
+    {
+      "canonicalRef": "an9.2"
+    },
+    {
+      "canonicalRef": "an9.3"
+    },
+    {
+      "canonicalRef": "an9.4"
+    },
+    {
+      "canonicalRef": "an9.5"
+    },
+    {
+      "canonicalRef": "an9.6"
+    },
+    {
+      "canonicalRef": "an9.7"
+    },
+    {
+      "canonicalRef": "an9.8"
+    },
+    {
+      "canonicalRef": "an9.9"
+    },
+    {
+      "canonicalRef": "an9.10"
+    },
+    {
+      "canonicalRef": "an9.11"
+    },
+    {
+      "canonicalRef": "an9.12"
+    },
+    {
+      "canonicalRef": "an9.13"
+    },
+    {
+      "canonicalRef": "an9.14"
+    },
+    {
+      "canonicalRef": "an9.15"
+    },
+    {
+      "canonicalRef": "an9.16"
+    },
+    {
+      "canonicalRef": "an9.17"
+    },
+    {
+      "canonicalRef": "an9.18"
+    },
+    {
+      "canonicalRef": "an9.19"
+    },
+    {
+      "canonicalRef": "an9.20"
+    },
+    {
+      "canonicalRef": "an9.21"
+    },
+    {
+      "canonicalRef": "an9.22"
+    },
+    {
+      "canonicalRef": "an9.23"
+    },
+    {
+      "canonicalRef": "an9.24"
+    },
+    {
+      "canonicalRef": "an9.25"
+    },
+    {
+      "canonicalRef": "an9.26"
+    },
+    {
+      "canonicalRef": "an9.27"
+    },
+    {
+      "canonicalRef": "an9.28"
+    },
+    {
+      "canonicalRef": "an9.29"
+    },
+    {
+      "canonicalRef": "an9.30"
+    },
+    {
+      "canonicalRef": "an9.31"
+    },
+    {
+      "canonicalRef": "an9.32"
+    },
+    {
+      "canonicalRef": "an9.33"
+    },
+    {
+      "canonicalRef": "an9.34"
+    },
+    {
+      "canonicalRef": "an9.35"
+    },
+    {
+      "canonicalRef": "an9.36"
+    },
+    {
+      "canonicalRef": "an9.37"
+    },
+    {
+      "canonicalRef": "an9.38"
+    },
+    {
+      "canonicalRef": "an9.39"
+    },
+    {
+      "canonicalRef": "an9.40"
+    },
+    {
+      "canonicalRef": "an9.41"
+    },
+    {
+      "canonicalRef": "an9.42"
+    },
+    {
+      "canonicalRef": "an9.43"
+    },
+    {
+      "canonicalRef": "an9.44"
+    },
+    {
+      "canonicalRef": "an9.45"
+    },
+    {
+      "canonicalRef": "an9.46"
+    },
+    {
+      "canonicalRef": "an9.47"
+    },
+    {
+      "canonicalRef": "an9.48"
+    },
+    {
+      "canonicalRef": "an9.49"
+    },
+    {
+      "canonicalRef": "an9.50"
+    },
+    {
+      "canonicalRef": "an9.51"
+    },
+    {
+      "canonicalRef": "an9.52"
+    },
+    {
+      "canonicalRef": "an9.53"
+    },
+    {
+      "canonicalRef": "an9.54"
+    },
+    {
+      "canonicalRef": "an9.55"
+    },
+    {
+      "canonicalRef": "an9.56"
+    },
+    {
+      "canonicalRef": "an9.57"
+    },
+    {
+      "canonicalRef": "an9.58"
+    },
+    {
+      "canonicalRef": "an9.59"
+    },
+    {
+      "canonicalRef": "an9.60"
+    },
+    {
+      "canonicalRef": "an9.61"
+    },
+    {
+      "canonicalRef": "an9.62"
+    },
+    {
+      "canonicalRef": "an9.63"
+    },
+    {
+      "canonicalRef": "an9.64"
+    },
+    {
+      "canonicalRef": "an9.65"
+    },
+    {
+      "canonicalRef": "an9.66"
+    },
+    {
+      "canonicalRef": "an9.67"
+    },
+    {
+      "canonicalRef": "an9.68"
+    },
+    {
+      "canonicalRef": "an9.69"
+    },
+    {
+      "canonicalRef": "an9.70"
+    },
+    {
+      "canonicalRef": "an9.71"
+    },
+    {
+      "canonicalRef": "an9.72"
+    },
+    {
+      "canonicalRef": "an9.73"
+    },
+    {
+      "canonicalRef": "an9.74-81"
+    },
+    {
+      "canonicalRef": "an9.82"
+    },
+    {
+      "canonicalRef": "an9.83"
+    },
+    {
+      "canonicalRef": "an9.84-91"
+    },
+    {
+      "canonicalRef": "an9.92"
+    },
+    {
+      "canonicalRef": "an9.93"
+    },
+    {
+      "canonicalRef": "an9.94"
+    },
+    {
+      "canonicalRef": "an9.95-112"
+    },
+    {
+      "canonicalRef": "an9.113-432"
+    },
+    {
+      "canonicalRef": "an10.1"
+    },
+    {
+      "canonicalRef": "an10.2"
+    },
+    {
+      "canonicalRef": "an10.3"
+    },
+    {
+      "canonicalRef": "an10.4"
+    },
+    {
+      "canonicalRef": "an10.5"
+    },
+    {
+      "canonicalRef": "an10.6"
+    },
+    {
+      "canonicalRef": "an10.7"
+    },
+    {
+      "canonicalRef": "an10.8"
+    },
+    {
+      "canonicalRef": "an10.9"
+    },
+    {
+      "canonicalRef": "an10.10"
+    },
+    {
+      "canonicalRef": "an10.11"
+    },
+    {
+      "canonicalRef": "an10.12"
+    },
+    {
+      "canonicalRef": "an10.13"
+    },
+    {
+      "canonicalRef": "an10.14"
+    },
+    {
+      "canonicalRef": "an10.15"
+    },
+    {
+      "canonicalRef": "an10.16"
+    },
+    {
+      "canonicalRef": "an10.17"
+    },
+    {
+      "canonicalRef": "an10.18"
+    },
+    {
+      "canonicalRef": "an10.19"
+    },
+    {
+      "canonicalRef": "an10.20"
+    },
+    {
+      "canonicalRef": "an10.21"
+    },
+    {
+      "canonicalRef": "an10.22"
+    },
+    {
+      "canonicalRef": "an10.23"
+    },
+    {
+      "canonicalRef": "an10.24"
+    },
+    {
+      "canonicalRef": "an10.25"
+    },
+    {
+      "canonicalRef": "an10.26"
+    },
+    {
+      "canonicalRef": "an10.27"
+    },
+    {
+      "canonicalRef": "an10.28"
+    },
+    {
+      "canonicalRef": "an10.29"
+    },
+    {
+      "canonicalRef": "an10.30"
+    },
+    {
+      "canonicalRef": "an10.31"
+    },
+    {
+      "canonicalRef": "an10.32"
+    },
+    {
+      "canonicalRef": "an10.33"
+    },
+    {
+      "canonicalRef": "an10.34"
+    },
+    {
+      "canonicalRef": "an10.35"
+    },
+    {
+      "canonicalRef": "an10.36"
+    },
+    {
+      "canonicalRef": "an10.37"
+    },
+    {
+      "canonicalRef": "an10.38"
+    },
+    {
+      "canonicalRef": "an10.39"
+    },
+    {
+      "canonicalRef": "an10.40"
+    },
+    {
+      "canonicalRef": "an10.41"
+    },
+    {
+      "canonicalRef": "an10.42"
+    },
+    {
+      "canonicalRef": "an10.43"
+    },
+    {
+      "canonicalRef": "an10.44"
+    },
+    {
+      "canonicalRef": "an10.45"
+    },
+    {
+      "canonicalRef": "an10.46"
+    },
+    {
+      "canonicalRef": "an10.47"
+    },
+    {
+      "canonicalRef": "an10.48"
+    },
+    {
+      "canonicalRef": "an10.49"
+    },
+    {
+      "canonicalRef": "an10.50"
+    },
+    {
+      "canonicalRef": "an10.51"
+    },
+    {
+      "canonicalRef": "an10.52"
+    },
+    {
+      "canonicalRef": "an10.53"
+    },
+    {
+      "canonicalRef": "an10.54"
+    },
+    {
+      "canonicalRef": "an10.55"
+    },
+    {
+      "canonicalRef": "an10.56"
+    },
+    {
+      "canonicalRef": "an10.57"
+    },
+    {
+      "canonicalRef": "an10.58"
+    },
+    {
+      "canonicalRef": "an10.59"
+    },
+    {
+      "canonicalRef": "an10.60"
+    },
+    {
+      "canonicalRef": "an10.61"
+    },
+    {
+      "canonicalRef": "an10.62"
+    },
+    {
+      "canonicalRef": "an10.63"
+    },
+    {
+      "canonicalRef": "an10.64"
+    },
+    {
+      "canonicalRef": "an10.65"
+    },
+    {
+      "canonicalRef": "an10.66"
+    },
+    {
+      "canonicalRef": "an10.67"
+    },
+    {
+      "canonicalRef": "an10.68"
+    },
+    {
+      "canonicalRef": "an10.69"
+    },
+    {
+      "canonicalRef": "an10.70"
+    },
+    {
+      "canonicalRef": "an10.71"
+    },
+    {
+      "canonicalRef": "an10.72"
+    },
+    {
+      "canonicalRef": "an10.73"
+    },
+    {
+      "canonicalRef": "an10.74"
+    },
+    {
+      "canonicalRef": "an10.75"
+    },
+    {
+      "canonicalRef": "an10.76"
+    },
+    {
+      "canonicalRef": "an10.77"
+    },
+    {
+      "canonicalRef": "an10.78"
+    },
+    {
+      "canonicalRef": "an10.79"
+    },
+    {
+      "canonicalRef": "an10.80"
+    },
+    {
+      "canonicalRef": "an10.81"
+    },
+    {
+      "canonicalRef": "an10.82"
+    },
+    {
+      "canonicalRef": "an10.83"
+    },
+    {
+      "canonicalRef": "an10.84"
+    },
+    {
+      "canonicalRef": "an10.85"
+    },
+    {
+      "canonicalRef": "an10.86"
+    },
+    {
+      "canonicalRef": "an10.87"
+    },
+    {
+      "canonicalRef": "an10.88"
+    },
+    {
+      "canonicalRef": "an10.89"
+    },
+    {
+      "canonicalRef": "an10.90"
+    },
+    {
+      "canonicalRef": "an10.91"
+    },
+    {
+      "canonicalRef": "an10.92"
+    },
+    {
+      "canonicalRef": "an10.93"
+    },
+    {
+      "canonicalRef": "an10.94"
+    },
+    {
+      "canonicalRef": "an10.95"
+    },
+    {
+      "canonicalRef": "an10.96"
+    },
+    {
+      "canonicalRef": "an10.97"
+    },
+    {
+      "canonicalRef": "an10.98"
+    },
+    {
+      "canonicalRef": "an10.99"
+    },
+    {
+      "canonicalRef": "an10.100"
+    },
+    {
+      "canonicalRef": "an10.101"
+    },
+    {
+      "canonicalRef": "an10.102"
+    },
+    {
+      "canonicalRef": "an10.103"
+    },
+    {
+      "canonicalRef": "an10.104"
+    },
+    {
+      "canonicalRef": "an10.105"
+    },
+    {
+      "canonicalRef": "an10.106"
+    },
+    {
+      "canonicalRef": "an10.107"
+    },
+    {
+      "canonicalRef": "an10.108"
+    },
+    {
+      "canonicalRef": "an10.109"
+    },
+    {
+      "canonicalRef": "an10.110"
+    },
+    {
+      "canonicalRef": "an10.111"
+    },
+    {
+      "canonicalRef": "an10.112"
+    },
+    {
+      "canonicalRef": "an10.113"
+    },
+    {
+      "canonicalRef": "an10.114"
+    },
+    {
+      "canonicalRef": "an10.115"
+    },
+    {
+      "canonicalRef": "an10.116"
+    },
+    {
+      "canonicalRef": "an10.117"
+    },
+    {
+      "canonicalRef": "an10.118"
+    },
+    {
+      "canonicalRef": "an10.119"
+    },
+    {
+      "canonicalRef": "an10.120"
+    },
+    {
+      "canonicalRef": "an10.121"
+    },
+    {
+      "canonicalRef": "an10.122"
+    },
+    {
+      "canonicalRef": "an10.123"
+    },
+    {
+      "canonicalRef": "an10.124"
+    },
+    {
+      "canonicalRef": "an10.125"
+    },
+    {
+      "canonicalRef": "an10.126"
+    },
+    {
+      "canonicalRef": "an10.127"
+    },
+    {
+      "canonicalRef": "an10.128"
+    },
+    {
+      "canonicalRef": "an10.129"
+    },
+    {
+      "canonicalRef": "an10.130"
+    },
+    {
+      "canonicalRef": "an10.131"
+    },
+    {
+      "canonicalRef": "an10.132"
+    },
+    {
+      "canonicalRef": "an10.133"
+    },
+    {
+      "canonicalRef": "an10.134"
+    },
+    {
+      "canonicalRef": "an10.135"
+    },
+    {
+      "canonicalRef": "an10.136"
+    },
+    {
+      "canonicalRef": "an10.137"
+    },
+    {
+      "canonicalRef": "an10.138"
+    },
+    {
+      "canonicalRef": "an10.139"
+    },
+    {
+      "canonicalRef": "an10.140"
+    },
+    {
+      "canonicalRef": "an10.141"
+    },
+    {
+      "canonicalRef": "an10.142"
+    },
+    {
+      "canonicalRef": "an10.143"
+    },
+    {
+      "canonicalRef": "an10.144"
+    },
+    {
+      "canonicalRef": "an10.145"
+    },
+    {
+      "canonicalRef": "an10.146"
+    },
+    {
+      "canonicalRef": "an10.147"
+    },
+    {
+      "canonicalRef": "an10.148"
+    },
+    {
+      "canonicalRef": "an10.149"
+    },
+    {
+      "canonicalRef": "an10.150"
+    },
+    {
+      "canonicalRef": "an10.151"
+    },
+    {
+      "canonicalRef": "an10.152"
+    },
+    {
+      "canonicalRef": "an10.153"
+    },
+    {
+      "canonicalRef": "an10.154"
+    },
+    {
+      "canonicalRef": "an10.155"
+    },
+    {
+      "canonicalRef": "an10.156-166"
+    },
+    {
+      "canonicalRef": "an10.167"
+    },
+    {
+      "canonicalRef": "an10.168"
+    },
+    {
+      "canonicalRef": "an10.169"
+    },
+    {
+      "canonicalRef": "an10.170"
+    },
+    {
+      "canonicalRef": "an10.171"
+    },
+    {
+      "canonicalRef": "an10.172"
+    },
+    {
+      "canonicalRef": "an10.173"
+    },
+    {
+      "canonicalRef": "an10.174"
+    },
+    {
+      "canonicalRef": "an10.175"
+    },
+    {
+      "canonicalRef": "an10.176"
+    },
+    {
+      "canonicalRef": "an10.177"
+    },
+    {
+      "canonicalRef": "an10.178"
+    },
+    {
+      "canonicalRef": "an10.179"
+    },
+    {
+      "canonicalRef": "an10.180"
+    },
+    {
+      "canonicalRef": "an10.181"
+    },
+    {
+      "canonicalRef": "an10.182"
+    },
+    {
+      "canonicalRef": "an10.183"
+    },
+    {
+      "canonicalRef": "an10.184"
+    },
+    {
+      "canonicalRef": "an10.185"
+    },
+    {
+      "canonicalRef": "an10.186"
+    },
+    {
+      "canonicalRef": "an10.187"
+    },
+    {
+      "canonicalRef": "an10.188"
+    },
+    {
+      "canonicalRef": "an10.189"
+    },
+    {
+      "canonicalRef": "an10.190"
+    },
+    {
+      "canonicalRef": "an10.191"
+    },
+    {
+      "canonicalRef": "an10.192"
+    },
+    {
+      "canonicalRef": "an10.193"
+    },
+    {
+      "canonicalRef": "an10.194"
+    },
+    {
+      "canonicalRef": "an10.195"
+    },
+    {
+      "canonicalRef": "an10.196"
+    },
+    {
+      "canonicalRef": "an10.197"
+    },
+    {
+      "canonicalRef": "an10.198"
+    },
+    {
+      "canonicalRef": "an10.199-210"
+    },
+    {
+      "canonicalRef": "an10.211"
+    },
+    {
+      "canonicalRef": "an10.212"
+    },
+    {
+      "canonicalRef": "an10.213"
+    },
+    {
+      "canonicalRef": "an10.214"
+    },
+    {
+      "canonicalRef": "an10.215"
+    },
+    {
+      "canonicalRef": "an10.216"
+    },
+    {
+      "canonicalRef": "an10.217"
+    },
+    {
+      "canonicalRef": "an10.218"
+    },
+    {
+      "canonicalRef": "an10.219"
+    },
+    {
+      "canonicalRef": "an10.220"
+    },
+    {
+      "canonicalRef": "an10.221"
+    },
+    {
+      "canonicalRef": "an10.222"
+    },
+    {
+      "canonicalRef": "an10.223"
+    },
+    {
+      "canonicalRef": "an10.224"
+    },
+    {
+      "canonicalRef": "an10.225-228"
+    },
+    {
+      "canonicalRef": "an10.229-232"
+    },
+    {
+      "canonicalRef": "an10.233-236"
+    },
+    {
+      "canonicalRef": "an10.237"
+    },
+    {
+      "canonicalRef": "an10.238"
+    },
+    {
+      "canonicalRef": "an10.239"
+    },
+    {
+      "canonicalRef": "an10.240-266"
+    },
+    {
+      "canonicalRef": "an10.267-746"
+    },
+    {
+      "canonicalRef": "an11.1"
+    },
+    {
+      "canonicalRef": "an11.2"
+    },
+    {
+      "canonicalRef": "an11.3"
+    },
+    {
+      "canonicalRef": "an11.4"
+    },
+    {
+      "canonicalRef": "an11.5"
+    },
+    {
+      "canonicalRef": "an11.6"
+    },
+    {
+      "canonicalRef": "an11.7"
+    },
+    {
+      "canonicalRef": "an11.8"
+    },
+    {
+      "canonicalRef": "an11.9"
+    },
+    {
+      "canonicalRef": "an11.10"
+    },
+    {
+      "canonicalRef": "an11.11"
+    },
+    {
+      "canonicalRef": "an11.12"
+    },
+    {
+      "canonicalRef": "an11.13"
+    },
+    {
+      "canonicalRef": "an11.14"
+    },
+    {
+      "canonicalRef": "an11.15"
+    },
+    {
+      "canonicalRef": "an11.16"
+    },
+    {
+      "canonicalRef": "an11.17"
+    },
+    {
+      "canonicalRef": "an11.18"
+    },
+    {
+      "canonicalRef": "an11.19"
+    },
+    {
+      "canonicalRef": "an11.20"
+    },
+    {
+      "canonicalRef": "an11.21"
+    },
+    {
+      "canonicalRef": "an11.22-29"
+    },
+    {
+      "canonicalRef": "an11.30-69"
+    },
+    {
+      "canonicalRef": "an11.70-117"
+    },
+    {
+      "canonicalRef": "an11.118-165"
+    },
+    {
+      "canonicalRef": "an11.166-213"
+    },
+    {
+      "canonicalRef": "an11.214-261"
+    },
+    {
+      "canonicalRef": "an11.262-309"
+    },
+    {
+      "canonicalRef": "an11.310-357"
+    },
+    {
+      "canonicalRef": "an11.358-405"
+    },
+    {
+      "canonicalRef": "an11.406-453"
+    },
+    {
+      "canonicalRef": "an11.454-501"
+    },
+    {
+      "canonicalRef": "an11.502-981"
+    },
+    {
+      "canonicalRef": "an11.982"
+    },
+    {
+      "canonicalRef": "an11.983-991"
+    },
+    {
+      "canonicalRef": "an11.992-1151"
+    }
+  ]
+}

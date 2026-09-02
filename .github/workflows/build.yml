@@ -33,7 +33,7 @@ jobs:
           }
           if(knVi.length!==expected||knEn.length!==expected)throw new Error(`knowledge export mismatch: expected ${expected}`);
           for(const [name,rows] of [['rag.vi',ragVi],['rag.en',ragEn]]){
-            if(rows.length<expected||rows.length>expected*2)throw new Error(`${name} count outside expected range ${expected}..${expected*2}: ${rows.length}`);
+            if(rows.length<expected)throw new Error(`${name} count below catalog coverage ${expected}: ${rows.length}`);
             const ids=new Set();
             const chunkIds=new Set();
             for(const row of rows){
@@ -90,7 +90,10 @@ jobs:
           must_have /tmp/home.html 'Tiểu Bộ' 'full name Tiểu Bộ'
           must_have /tmp/home.html '/vi/tien-do' 'progress route link'
 
-          curl --fail --silent http://127.0.0.1:3000/vi/library/mn-21-kakacupama -o /tmp/mn21.html
+          MN21_SLUG=$(node -e "const s=require('./data/catalog/suttas.json').find(x=>x.canonicalRef==='mn21');if(!s?.slug)process.exit(2);process.stdout.write(s.slug)")
+          MN21_URL="http://127.0.0.1:3000/vi/library/${MN21_SLUG}"
+          echo "Smoke reader canonicalRef=mn21 URL=${MN21_URL}"
+          curl --fail --silent "$MN21_URL" -o /tmp/mn21.html || { echo "FAIL reader canonicalRef=mn21 URL=${MN21_URL}"; exit 1; }
           must_have /tmp/mn21.html 'compactEssentials' 'compact reader essentials'
           must_have /tmp/mn21.html 'primaryMp3Disclosure' 'primary prebuilt MP3 disclosure'
           must_have /tmp/mn21.html 'V5.1-HOME-DN' 'test build marker'

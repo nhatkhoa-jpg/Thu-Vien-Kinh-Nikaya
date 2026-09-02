@@ -1,0 +1,66 @@
+name: Corpus Orchestrator
+
+on:
+  workflow_dispatch:
+    inputs:
+      collection:
+        description: Collection to resume
+        required: true
+        default: SN
+        type: choice
+        options: [MN, SN, AN, KN]
+      batch_size:
+        description: Maximum canonical records in this checkpoint
+        required: true
+        default: "120"
+  schedule:
+    - cron: "17 */6 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: corpus-writer-main
+  cancel-in-progress: false
+
+jobs:
+  materialize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    env:
+      COLLECTION: ${{ inputs.collection || 'SN' }}
+      BATCH_SIZE: ${{ inputs.batch_size || '120' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - name: Materialize one resumable batch
+        run: python scripts/materialize_fulltext.py --collection "$COLLECTION" --batch-size "$BATCH_SIZE" --workers 12
+      - name: Refresh machine-readable status and RAG
+        run: |
+          python scripts/generate_content_registry.py
+          python scripts/update_corpus_status.py
+          python scripts/validate_corpus.py --collection "$COLLECTION"
+          npm install
+          npm run rag:export
+      - name: Validate production build
+        run: npm run build
+      - name: Commit successful checkpoint
+        run: |
+          if git diff --quiet; then
+            echo "No new verified corpus records."
+            exit 0
+          fi
+          git config user.name "nikaya-corpus-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/content data/status data/exports lib/materialized-content.generated.ts
+          git commit -m "corpus: checkpoint ${COLLECTION} full text [skip corpus]"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

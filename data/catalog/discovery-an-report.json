@@ -1,0 +1,14 @@
+{
+  "collection": "AN",
+  "source": {
+    "provider": "SuttaCentral sc-data",
+    "url": "https://raw.githubusercontent.com/suttacentral/sc-data/main/structure/tree/sutta/an-tree.json",
+    "sha256": "65fb5f8266d1f84118693f68671f6a49bfff87d0684e929c75a34bb591ecc509"
+  },
+  "generatedAt": "2026-09-02T02:40:33+00:00",
+  "canonicalLeafCount": 1408,
+  "rangeLeafCount": 95,
+  "policy": "Canonical leaf UIDs are preserved exactly as published; ranges are not expanded.",
+  "firstCanonicalRef": "an1.1-10",
+  "lastCanonicalRef": "an11.992-1151"
+}
