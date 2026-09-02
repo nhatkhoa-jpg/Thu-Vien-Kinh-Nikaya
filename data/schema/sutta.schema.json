@@ -19,7 +19,7 @@
     "media": {"type":"object","properties":{"bookUrl":{"type":"string","format":"uri"},"mp3Url":{"type":"string","format":"uri"},"youtubeId":{"type":"string"}}},
     "summary": {"type":"object","required":["vi","en"],"properties":{"vi":{"type":"string"},"en":{"type":"string"}}},
     "practice": {"type":"object","required":["vi","en"],"properties":{"vi":{"type":"string"},"en":{"type":"string"}}},
-    "readMinutes": {"type":"integer","minimum":1},
+    "readMinutes": {"type":"integer","minimum":0,"description":"0 means unknown in catalog; reader may derive an approximate value from loaded full text."},
     "featured": {"type":"boolean"},
     "contentVersion": {"type":"string","description":"Bump only when semantic content changes; used to invalidate downstream caches."}
   },
