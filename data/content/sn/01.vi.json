@@ -1,0 +1,3553 @@
+{
+  "sn1.1": {
+    "canonicalRef": "sn1.1",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.1/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:40:49+00:00",
+    "materializedAt": "2026-09-02T02:40:49+00:00",
+    "contentHash": "3c7b04e5dab98262c097a3a6a6de0664819380b662738dc89c39eeff563b7619",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Cây Lau"
+      },
+      {
+        "id": "p3",
+        "text": "1.1. Bộc Lưu"
+      },
+      {
+        "id": "p4",
+        "text": "Như vầy tôi nghe."
+      },
+      {
+        "id": "p5",
+        "text": "Một thời Thế Tôn ở Sāvatthi (Xá-vệ), Jetavana (Thắng Lâm), tại vườn ông Anāthapiṇḍika (Cấp Cô Ðộc)."
+      },
+      {
+        "id": "p6",
+        "text": "Rồi một vị Thiên, khi đêm đã gần tàn, với nhan sắc thù thắng chói sáng toàn vùng Jetavana, đi đến Thế Tôn, sau khi đến, đảnh lễ Thế Tôn rồi đứng một bên. Ðứng một bên, vị Thiên ấy bạch Thế Tôn:"
+      },
+      {
+        "id": "p7",
+        "text": "—Thưa Tôn giả, làm sao Ngài vượt khỏi bộc lưu?"
+      },
+      {
+        "id": "p8",
+        "text": "—Này Hiền giả, không đứng lại, không bước tới, Ta vượt khỏi bộc lưu."
+      },
+      {
+        "id": "p9",
+        "text": "—Thưa Tôn giả, làm sao không đứng lại, không bước tới, Ngài vượt khỏi bộc lưu?"
+      },
+      {
+        "id": "p10",
+        "text": "—Này Hiền giả, khi Ta đứng lại, thời Ta chìm xuống. Này Hiền giả, khi Ta bước tới, thời Ta trôi giạt; do vậy, này Hiền giả, không đứng lại, không bước tới, Ta vượt khỏi bộc lưu."
+      },
+      {
+        "id": "p11",
+        "text": "(Vị Thiên):\nTừ lâu, tôi mới thấy\n\nBà-la-môn tịch tịnh.\n\nKhông đứng, không bước tới,\n\nVượt chấp trước ở đời."
+      },
+      {
+        "id": "p12",
+        "text": "Vị Thiên ấy nói như vậy và bậc Ðạo Sư chấp nhận. Vị Thiên ấy biết được: “Thế Tôn đã chấp nhận ta”. Vị ấy đảnh lễ Thế Tôn, thân phía hữu hướng về Ngài, rồi biến mất tại chỗ."
+      },
+      {
+        "id": "p13",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.10": {
+    "canonicalRef": "sn1.10",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.10/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:02+00:00",
+    "materializedAt": "2026-09-02T02:41:02+00:00",
+    "contentHash": "d146f76f6d93731602a0e83ad1bd980b939187b68e569855676a66cc93ec67fe",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Cây Lau"
+      },
+      {
+        "id": "p3",
+        "text": "1.10. Rừng Núi"
+      },
+      {
+        "id": "p4",
+        "text": "… Ðứng một bên, vị Thiên ấy nói lên bài kệ này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p5",
+        "text": "Thường sống trong rừng núi,\n\nBậc Thánh sống Phạm hạnh,\n\nMột ngày ăn một buổi,\n\nSao sắc họ thù diệu?\n(Thế Tôn):\nKhông than việc đã qua,\n\nKhông mong việc sắp tới,\n\nSống ngay với hiện tại,\n\nDo vậy, sắc thù diệu.\nDo mong việc sắp tới,\n\nDo than việc đã qua,\n\nNên kẻ ngu héo mòn,\n\nNhư lau xanh rời cành."
+      },
+      {
+        "id": "p6",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.11": {
+    "canonicalRef": "sn1.11",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.11/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:02+00:00",
+    "materializedAt": "2026-09-02T02:41:02+00:00",
+    "contentHash": "8c1e88b470b0012ecc267264cf498e2f01b196c1bffdf2cf08bd088ae1f3a094",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Vườn Hoan Hỷ"
+      },
+      {
+        "id": "p3",
+        "text": "1.11. Vườn Hoan Hỷ"
+      },
+      {
+        "id": "p4",
+        "text": "Như vậy tôi nghe."
+      },
+      {
+        "id": "p5",
+        "text": "Một thời Thế Tôn trú ở Sāvatthi (Xá-vệ), Jetavana (Thắng Lâm), tại vườn ông Anāthapiṇḍika (Cấp Cô Ðộc). Tại đấy, Thế Tôn gọi các Tỷ-kheo: “Này các Tỷ-kheo”: “Thưa vâng, bạch Thế Tôn”."
+      },
+      {
+        "id": "p6",
+        "text": "Các Tỷ-kheo ấy vâng đáp Thế Tôn. Thế Tôn nói như sau:"
+      },
+      {
+        "id": "p7",
+        "text": "—Thuở xưa, này các Tỷ-kheo, có vị Thiên thuộc cõi trời Ba mươi ba, với chúng Thiên nữ vây quanh, du hí ở vườn Hoan Hỷ, thọ hưởng năm thiên dục công đức. Bây giờ, vị Thiên ấy nói lên bài kệ này:"
+      },
+      {
+        "id": "p8",
+        "text": "Chúng không biết đến lạc,\n\nNếu không thấy Hoan Hỷ,\n\nChỗ trú cả Trời, Người,\n\nCõi ba mươi lừng danh."
+      },
+      {
+        "id": "p9",
+        "text": "Ðược nghe nói vậy, này các Tỷ-kheo, một vị Thiên khác đáp vị Thiên ấy với bài kệ:"
+      },
+      {
+        "id": "p10",
+        "text": "Kẻ ngu, sao không biết,\n\nVị Ứng cúng đã nói:\n\n“Mọi hành là vô thường,\n\nTự tánh phải sanh diệt,\n\nSau khi sanh, chúng diệt,\n\nNhiếp chúng là an lạc.”"
+      },
+      {
+        "id": "p11",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.12": {
+    "canonicalRef": "sn1.12",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.12/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:03+00:00",
+    "materializedAt": "2026-09-02T02:41:03+00:00",
+    "contentHash": "816e3a40f85af7d027328cfbbbceba8a9c0601657167a807be0f54b7d6c80a1c",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Vườn Hoan Hỷ"
+      },
+      {
+        "id": "p3",
+        "text": "1.12. Vui Thích"
+      },
+      {
+        "id": "p4",
+        "text": "… Ðứng một bên, vị Thiên ấy nói lên bài kệ này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p5",
+        "text": "Cha đối con vui thích,\n\nChủ với bò vui thích,\n\nNgười sanh y, vui thích,\n\nKhông sanh y, không vui.\n(Thế Tôn):\nCha đối con sầu muộn,\n\nChủ với bò sầu muộn,\n\nNgười sanh y, sầu muộn,\n\nKhông sanh y, không sầu."
+      },
+      {
+        "id": "p6",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.13": {
+    "canonicalRef": "sn1.13",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.13/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:03+00:00",
+    "materializedAt": "2026-09-02T02:41:03+00:00",
+    "contentHash": "b76337ec1eef386f34921af4ffff51eb350ae0642755aba6cc247cb995c23fda",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Vườn Hoan Hỷ"
+      },
+      {
+        "id": "p3",
+        "text": "1.13. Không Ai Bằng Con"
+      },
+      {
+        "id": "p4",
+        "text": "… Ðứng một bên, vị Thiên ấy nói lên bài kệ này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p5",
+        "text": "Thương ai bằng thương con,\n\nCủa nào bằng bò nhà,\n\nSáng nào bằng mặt trời,\n\nNước nào hơn biển cả.\n(Thế Tôn):\nThương ai bằng thương mình,\n\nCủa nào bằng lúa gạo,\n\nSáng nào bằng trí tuệ,\n\nNước nào hơn mưa rào."
+      },
+      {
+        "id": "p6",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.14": {
+    "canonicalRef": "sn1.14",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.14/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:03+00:00",
+    "materializedAt": "2026-09-02T02:41:03+00:00",
+    "contentHash": "d1682b9b6c2a8e711b93193d1b9882c4c5f261378aed2896db8e8ebf287138ec",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Vườn Hoan Hỷ"
+      },
+      {
+        "id": "p3",
+        "text": "1.14. Giai Cấp Sát Ðế Lỵ"
+      },
+      {
+        "id": "p4",
+        "text": "Giữa các hàng hai chân,\n\nSát-lỵ là tối thắng,\n\nGiữa các loài bốn chân,\n\nBò đực là tối thắng,\n\nTrong các hàng thê thiếp,\n\nQuý nữ là tối thắng.\n\nTrong các hàng con trai,\n\nTrưởng nam là tối thắng.\n(Thế Tôn):\nGiữa các loài hai chân,\n\nChánh giác là tối thắng.\n\nGiữa các loài bốn chân,\n\nThuần chủng là tối thắng.\n\nTrong các hàng thê thiếp,\n\nNhu thuận là tối thắng.\n\nTrong các hàng con trai,\n\nTrung thành là tối thắng."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.15": {
+    "canonicalRef": "sn1.15",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.15/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:01+00:00",
+    "materializedAt": "2026-09-02T02:41:01+00:00",
+    "contentHash": "7f0b1c85272be9fbb87413169e2812d951cc33ec3604e59c5e6dc5be2299fa81",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Vườn Hoan Hỷ"
+      },
+      {
+        "id": "p3",
+        "text": "1.15. Tiếng Ðộng Rừng Sâu (hay Thân tịch tịnh)"
+      },
+      {
+        "id": "p4",
+        "text": "Nay là thời giữa trưa,\n\nLoài chim nghỉ yên lặng,\n\nVang động tiếng rừng sâu,\n\nTa run, ta khiếp sợ.\n(Thế Tôn):\nNay là thời giữa trưa,\n\nLoài chim nghỉ yên lặng,\n\nVang động tiếng rừng sâu,\n\nTa vui, Ta thích thú."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.16": {
+    "canonicalRef": "sn1.16",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.16/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:03+00:00",
+    "materializedAt": "2026-09-02T02:41:03+00:00",
+    "contentHash": "d618852a1b20a2ddf9f5e17ada36b8ab81d2d7c01612a20c61f1af331998c463",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Vườn Hoan Hỷ"
+      },
+      {
+        "id": "p3",
+        "text": "1.16. Ngủ Gục, Biếng Nhác"
+      },
+      {
+        "id": "p4",
+        "text": "Ngủ gục, nhác, ngáp dài,\n\nKhông vui, ăn quá độ,\n\nỞ đây, đối chúng sanh,\n\nThánh đạo không hiển lộ.\n\nNgủ gục, nhác, ngáp dài,\n\nKhông vui, ăn quá độ,\n\nVới tinh tấn, đoạn chúng,\n\nThánh đạo được thanh tịnh."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.17": {
+    "canonicalRef": "sn1.17",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.17/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:10+00:00",
+    "materializedAt": "2026-09-02T02:41:10+00:00",
+    "contentHash": "7763e48b63602b75131cd39d34c2c98e1fd9fa62efc45bbf8e86a007488f6852",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Vườn Hoan Hỷ"
+      },
+      {
+        "id": "p3",
+        "text": "1.17. Khó Làm (hay Con rùa)"
+      },
+      {
+        "id": "p4",
+        "text": "Khó làm, khó kham nhẫn,\n\nThiếu trí, hành Sa-môn,\n\nChỗ kẻ ngu thối đọa,\n\nChỗ ấy đầy chướng ngại.\n\nBao ngày hành Sa-môn\n\nNếu tâm không chế ngự,\n\nMỗi bước, phải sa đọa,\n\nNô lệ cho suy tư,\n\nNhư rùa rút chân cẳng,\n\nTrong mai rùa của mình.\n\nVị Tỷ-kheo cũng vậy,\n\nThâu nhiếp mọi suy tư,\n\nKhông tham dính vật gì,\n\nKhông làm hại người nào,\n\nHoàn toàn thật tịch tịnh,\n\nKhông chỉ trích một ai."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.18": {
+    "canonicalRef": "sn1.18",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.18/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:20+00:00",
+    "materializedAt": "2026-09-02T02:41:20+00:00",
+    "contentHash": "530e6bca57579532864b88c0f80a6095dd1ab34e75b152f0ebef8dcbb03c4d67",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Vườn Hoan Hỷ"
+      },
+      {
+        "id": "p3",
+        "text": "1.18. Tàm Quý"
+      },
+      {
+        "id": "p4",
+        "text": "Người được tàm chế ngự,\n\nTìm được ai ở đời?\n\nAi biết ngăn chỉ trích,\n\nNhư ngựa hiền bóng roi.\n\nNgười được tàm chế ngự,\n\nSống thường thường chánh niệm,\n\nVị ấy đạt kết quả,\n\nKhổ đau được đoạn tận,\n\nBước những bước thăng bằng,\n\nTrên đường không thăng bằng."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.19": {
+    "canonicalRef": "sn1.19",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.19/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:19+00:00",
+    "materializedAt": "2026-09-02T02:41:19+00:00",
+    "contentHash": "f7592944291e2f205151f59ccb4f56e4dfa74236d2b1ccce3507f237f9993669",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Vườn Hoan Hỷ"
+      },
+      {
+        "id": "p3",
+        "text": "1.19. Am Tranh"
+      },
+      {
+        "id": "p4",
+        "text": "Ngài không có am tranh,\n\nNgài không có tổ ấm,\n\nNgài không có dây giăng,\n\nNgài thoát khỏi hệ phược.\n(Thế Tôn):\nTa không có am tranh,\n\nTa không có tổ ấm,\n\nTa không có dây giăng,\n\nTa thoát khỏi hệ phược.\n(Vị Thiên):\nCon nói am là gì?\n\nNói tổ ấm là gì?\n\nNói dây giăng là gì?\n\nNói hệ phược là gì?\n(Thế Tôn):\nÔng nói am là mẹ,\n\nNói tổ ấm là vợ,\n\nNói dây giăng là con,\n\nNói hệ phược là ái.\n(Vị Thiên):\nLành thay, Ngài không am!\n\nLành thay, không tổ ấm!\n\nLành thay, không dây giăng!\n\nLành thay, Ngài thoát phược!"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.2": {
+    "canonicalRef": "sn1.2",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.2/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:03+00:00",
+    "materializedAt": "2026-09-02T02:41:03+00:00",
+    "contentHash": "8555517673b04da238ad01f7a4e332d243cb2d5472b579bc7a025af79f61c82b",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Cây Lau"
+      },
+      {
+        "id": "p3",
+        "text": "1.2. Giải Thoát"
+      },
+      {
+        "id": "p4",
+        "text": "… Ở Sāvatthi. Rồi một vị Thiên, khi đêm đã gần tàn, với nhan sắc thù thắng chói sáng toàn vùng Jetavana, đi đến Thế Tôn. Sau khi đến, vị ấy đảnh lễ Thế Tôn rồi đứng một bên. Ðứng một bên, vị Thiên ấy bạch Thế Tôn:"
+      },
+      {
+        "id": "p5",
+        "text": "—Thưa Tôn giả, Ngài có biết giải thoát, thoát ly, viễn ly cho các chúng sanh không?"
+      },
+      {
+        "id": "p6",
+        "text": "—Này Hiền giả, Ta có biết giải thoát, thoát ly, viễn ly cho các chúng sanh."
+      },
+      {
+        "id": "p7",
+        "text": "—Thưa Tôn giả, như thế nào Ngài biết giải thoát, thoát ly, viễn ly cho các chúng sanh?"
+      },
+      {
+        "id": "p8",
+        "text": "Hỷ, tái sanh đoạn tận,\n\nTưởng, thức được trừ diệt,\n\nCác thọ diệt, tịch tịnh,\n\nNhư vậy này Hiền giả,\n\nTa biết sự giải thoát,\n\nThoát ly và viễn ly,\n\nCho các loại chúng sanh."
+      },
+      {
+        "id": "p9",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.20": {
+    "canonicalRef": "sn1.20",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.20/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:20+00:00",
+    "materializedAt": "2026-09-02T02:41:20+00:00",
+    "contentHash": "1c3be9ef5d049a904100ea4aa44c9b5a4e854fab0f97ef07a8c7c02b356ef381",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Vườn Hoan Hỷ"
+      },
+      {
+        "id": "p3",
+        "text": "1.20. Samiddhi"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Như vầy tôi nghe."
+      },
+      {
+        "id": "p5",
+        "text": "Một thời Thế Tôn ở Vương Xá tại Tapodārāma (Tịnh xá Suối nước nóng)."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 2 Tôn giả Samiddhi, khi đêm đã gần tàn, thức dậy và đi đến suối nước nóng để tắm rửa tay chân. Sau khi tắm rửa tay chân, ra khỏi suối nước nóng, Tôn giả đứng, đắp một tấm y để phơi tay chân cho khô."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 3 Rồi một vị Thiên, khi đêm đã gần tàn, với dung sắc thù thắng, chói sáng toàn vùng suối nước nóng, đi đến Tôn giả Samiddhi, sau khi đến, đứng giữa hư không, nói lên bài kệ với Tôn giả Samiddhi:"
+      },
+      {
+        "id": "p8",
+        "text": "Không hưởng, Ông khất thực,\n\nNay khất thực, không hưởng,\n\nHãy hưởng rồi khất thực,\n\nChớ uổng phí thời gian.\n(Samiddhi):\nThời Ông, ta không biết.\n\nThời ta, ẩn không hiện.\n\nKhông hưởng, ta khất thực,\n\nKhông uổng thời gian ta."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 4 Rồi vị Thiên ấy đứng xuống đất và thưa với Tôn giả Samiddhi:"
+      },
+      {
+        "id": "p10",
+        "text": "—Này Tỷ-kheo, Ông còn trẻ tuổi mà đã xuất gia, niên thiếu, tóc còn đen nhánh trong tuổi thanh xuân. Trong thời trẻ thơ của tuổi đời, Ông không thọ hưởng các ái dục. Này Tỷ-kheo, hãy thọ hưởng các ái dục của người đời. Chớ có bỏ hiện tại mà chạy theo những gì bị thời gian chi phối."
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 5 —Này Hiền giả, ta không bỏ hiện tại và chạy theo những gì bị thời gian chi phối. Và này Hiền giả, chính ta bỏ những gì bị thời gian chi phối để chạy theo hiện tại. Này Hiền giả, Thế Tôn đã nói, các dục bị thời gian chi phối, nhiều khổ đau, nhiều phiền não (Upàyàsà); nguy hiểm ở đấy càng nhiều hơn. Còn pháp này thuộc về hiện tại, không bị thời gian chi phối, đến để mà thấy, có khả năng hướng thượng, chỉ người trí mới tự mình giác hiểu."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 6 —Và này Tỷ-kheo, như thế nào mà Thế Tôn đã nói các dục bị thời gian chi phối, nhiều khổ đau, nhiều phiền não, nguy hiểm ở đấy càng nhiều hơn? Như thế nào thuộc về hiện tại là pháp này, không bị thời gian chi phối, đến để mà thấy, có khả năng hướng thượng, chỉ người trí mới tự mình giác hiểu?"
+      },
+      {
+        "id": "p13",
+        "text": "Vi-n 7 —Này Hiền giả, tôi là người mới xuất gia, mới đến đây không bao lâu. Tôi không thể giải thích rộng rãi cho Ông pháp và luật này. Nhưng Thế Tôn, bậc A-la-hán, Chánh Ðẳng Giác nay ở Rājagaha (Vương Xá) tại tịnh xá Tapoda (Suối nước nóng). Hãy đi đến Thế Tôn và hỏi ý nghĩa này. Thế Tôn trả lời cho Ông như thế nào, hãy như vậy thọ trì."
+      },
+      {
+        "id": "p14",
+        "text": "Vi-n 8 —Này Tỷ-kheo, không dễ gì cho chúng tôi được đến gặp bậc Thế Tôn ấy, một bậc được chư Thiên khác, có đại uy lực đoanh vây. Này Tỷ-Kheo, nếu Ngài đi đến bậc Thế Tôn ấy và hỏi ý nghĩa này, chúng tôi có thể đến để nghe pháp."
+      },
+      {
+        "id": "p15",
+        "text": "Vi-n 9 —Thưa vâng, Hiền giả."
+      },
+      {
+        "id": "p16",
+        "text": "Tôn giả Samiddhi vâng đáp vị Thiên ấy, đi đến Thế Tôn, sau khi đến, đảnh lễ Thế Tôn rồi ngồi xuống một bên. Ngồi xuống một bên, Tôn giả Samiddhi bạch Thế Tôn:"
+      },
+      {
+        "id": "p17",
+        "text": "Vi-n 10 —Ở đây, bạch Thế Tôn, sau khi đêm đã gần tàn, con thức dậy và đi đến suối nước nóng để tắm rửa tay chân. Sau khi tắm rửa tay chân, ra khỏi suối nước nóng, con đứng đắp một tấm y để phơi tay chân cho khô. Bạch Thế Tôn, rồi một vị Thiên, sau khi đêm vừa mãn, với dung sắc thù thắng, chói sáng toàn vùng nước nóng, đi đến con, sau khi đến, đứng giữa hư không và nói lên bài kệ này:"
+      },
+      {
+        "id": "p18",
+        "text": "“Không hưởng, Ông khất thực,\n\nNay khất thực, không hưởng,\n\nHãy hưởng rồi khất thực,\n\nChớ uổng phí thời gian.”"
+      },
+      {
+        "id": "p19",
+        "text": "Vi-n 11 Khi nghe nói vậy, bạch Thế Tôn, con trả lời với vị Thiên ấy bằng bài kệ:"
+      },
+      {
+        "id": "p20",
+        "text": "“Thời Ông, ta không biết,\n\nThời ta, ẩn không hiện,\n\nKhông hưởng, ta khất thực,\n\nKhông uổng thời gian ta.”"
+      },
+      {
+        "id": "p21",
+        "text": "Vi-n 12 Bạch Thế Tôn, rồi vị Thiên ấy đứng xuống đất và thưa với con:"
+      },
+      {
+        "id": "p22",
+        "text": "“—Này Tỷ-kheo, Ông còn trẻ tuổi mà đã xuất gia, niên thiếu, tóc đen nhánh, trong tuổi thanh xuân. Trong thời trẻ thơ của tuổi đời, Ông không thọ hưởng các dục. Này Tỷ-kheo, hãy thọ hưởng các dục lạc của người đời. Chớ có bỏ hiện tại để chạy theo những gì bị thời gian chi phối.”"
+      },
+      {
+        "id": "p23",
+        "text": "Vi-n 13 Khi được nói vậy, bạch Thế Tôn, con nói với vị Thiên ấy:"
+      },
+      {
+        "id": "p24",
+        "text": "“—Này Hiền giả, ta không bỏ hiện tại để chạy theo những gì bị thời gian chi phối. Và này Hiền giả, chính ta bỏ những gì bị thời gian chi phối để chạy theo hiện tại. Những gì thuộc thời gian, này Hiền giả, là các dục, được nói đến là nhiều khổ đau, nhiều phiền não (upàyàsa), nguy hiểm ở đấy lại nhiều hơn. Còn pháp này thuộc hiện tại, không bị thời gian chi phối, đến để mà thấy, có khả năng hướng thượng, chỉ người trí mới tự mình giác hiểu.”"
+      },
+      {
+        "id": "p25",
+        "text": "Vi-n 14 Khi được nói vậy, bạch Thế Tôn, vị Thiên ấy nói với con:"
+      },
+      {
+        "id": "p26",
+        "text": "“—Và này Tỷ-kheo, như thế nào mà Thế Tôn đã nói các dục bị thời gian chi phối, nhiều khổ đau, nhiều phiền não, nguy hiểm ở đây càng nhiều hơn? Như thế nào thuộc về hiện tại là pháp này không bị thời gian chi phối, đến để mà thấy, có khả năng hướng thượng, chỉ người trí mới tự mình giác hiểu?”"
+      },
+      {
+        "id": "p27",
+        "text": "Vi-n 15 Khi được nói vậy, bạch Thế Tôn, con nói với vị Thiên ấy:"
+      },
+      {
+        "id": "p28",
+        "text": "“—Này Hiền giả, tôi là người mới xuất gia, mới đến đây không bao lâu. Tôi không thể giải thích rộng rãi cho Ông về pháp và luật này. Nhưng Thế Tôn, bậc A-la-hán, Chánh Ðẳng Giác nay ở Rājagaha (Vương Xá), tại tịnh xá Tapoda (Suối nước nóng). Hãy đi đến Thế Tôn và hỏi ý nghĩa này. Thế Tôn trả lời cho Ông như thế nào, hãy như vậy thọ trì.”"
+      },
+      {
+        "id": "p29",
+        "text": "Vi-n 16 Khi được nói vậy, bạch Thế Tôn, vị Thiên ấy nói với con:"
+      },
+      {
+        "id": "p30",
+        "text": "“ —Này Tỷ-kheo, không dễ gì cho chúng tôi được đến gặp bậc Thế Tôn ấy, một bậc được các chư Thiên khác có đại uy lực đoanh vây. Này Tỷ-kheo, nếu Ngài đi đến bậc Thế Tôn và hỏi ý nghĩa ấy, chúng tôi cũng sẽ đến và nghe pháp.”"
+      },
+      {
+        "id": "p31",
+        "text": "—Bạch Thế Tôn, nếu vị Thiên ấy nói sự thật, thời vị ấy ở đây, không xa bao nhiêu."
+      },
+      {
+        "id": "p32",
+        "text": "Vi-n 17 Khi được nói vậy, vị Thiên ấy nói với Tôn giả Samiddhi như sau:"
+      },
+      {
+        "id": "p33",
+        "text": "—Hãy hỏi đi, Tỷ-kheo! Hãy hỏi đi, Tỷ-kheo! Tôi đã đến rồi."
+      },
+      {
+        "id": "p34",
+        "text": "Vi-n 18 Rồi Thế Tôn nói lên bài kệ với vị Thiên ấy:"
+      },
+      {
+        "id": "p35",
+        "text": "Chúng sanh được hiểu biết,\n\nNhững điều được nói lên,\n\nVà chấp trước thái độ,\n\nTrên những điều được nói.\n\nNếu họ không liễu tri\n\nNhững điều được nói lên,\n\nHọ đi đến trói buộc.\n\nDo thần chết chi phối,\n\nNếu họ liễu tri được\n\nNhững điều được nói lên,\n\nHọ không có tưởng tri,\n\nNhững điều được nói ra.\n\nÐối với vị như vậy,\n\nLỗi lầm nhất định không.\n\nNếu các Ông có biết,\n\nHãy nói lên Dạ-xoa."
+      },
+      {
+        "id": "p36",
+        "text": "Vi-n 19 —Bạch Thế Tôn, con không có hiểu ý nghĩa một cách rộng rãi những điều Thế Tôn nói lên một cách vắn tắt. Lành thay, nếu Thế Tôn nói lên cho con để con có thể hiểu một cách rộng rãi những điều Thế Tôn nói lên một cách vắn tắt."
+      },
+      {
+        "id": "p37",
+        "text": "(Thế Tôn):"
+      },
+      {
+        "id": "p38",
+        "text": "Vi-n 20"
+      },
+      {
+        "id": "p39",
+        "text": "Bằng, thắng hay thua Ta,\n\nNghĩ vậy đấu tranh khởi;\n\nCả ba không dao động,\n\nBằng, thắng không khởi lên.\n\nNếu như Ông có biết,\n\nHãy nói lên, Dạ-xoa."
+      },
+      {
+        "id": "p40",
+        "text": "Vi-n 21 —Bạch Thế Tôn, con không có hiểu ý nghĩa một cách rộng rãi những điều Thế Tôn nói lên một cách vắn tắt. Lành thay, nếu Thế Tôn nói lên cho con để con có thể hiểu một cách rộng rãi những điều Thế Tôn nói lên một cách vắn tắt."
+      },
+      {
+        "id": "p41",
+        "text": "Vi-n 22 (Thế Tôn):\nHãy từ bỏ tính toán,\n\nKhông chạy theo hư tưởng,\n\nTừ bỏ mọi tham ái,\n\nÐối danh sắc ở đời,\n\nVị ấy đoạn triền phược,\n\nKhông lo âu, không ái.\n\nChư Thiên và loài Người,\n\nÐời này hay đời sau,\n\nỞ cảnh giới chư Thiên,\n\nHay tại mọi trú xứ,\n\nTìm cầu nhưng không gặp,\n\nVết tích của vị ấy.\n\nNếu Ông biết người ấy\n\nHãy nói lên, Dạ-xoa."
+      },
+      {
+        "id": "p42",
+        "text": "Vi-n 23 —Bạch Thế Tôn, lời nói vắn tắt của Thế Tôn, con hiểu ý nghĩa rộng rãi như sau:"
+      },
+      {
+        "id": "p43",
+        "text": "Khắp thế giới chớ làm,\n\nÐiều ác thân, miệng, ý,\n\nTừ bỏ mọi ái dục,\n\nChánh niệm, tâm tỉnh giác,\n\nKhông khổ hạnh ép xác,\n\nVô bổ, không lợi ích."
+      },
+      {
+        "id": "p44",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.21": {
+    "canonicalRef": "sn1.21",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.21/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:20+00:00",
+    "materializedAt": "2026-09-02T02:41:20+00:00",
+    "contentHash": "39a252b7934f64a303a1776c1f84217f166ec89c8d509ce41a7a4c194c929b1e",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "III: Phẩm Kiếm"
+      },
+      {
+        "id": "p3",
+        "text": "1.21. Kiếm:"
+      },
+      {
+        "id": "p4",
+        "text": "… (Nhân duyên ở Sāvatthi). Ðứng một bên, vị Thiên ấy nói lên bài kệ này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p5",
+        "text": "Như kiếm đã chạm da,\n\nNhư lửa cháy trên đầu,\n\nTỷ-kheo hãy chánh niệm,\n\nXuất gia bỏ ái dục.\n(Thế Tôn):\nNhư kiếm đã chạm da,\n\nNhư lửa cháy trên đầu,\n\nTỷ-kheo hãy chánh niệm,\n\nXuất gia bỏ thân kiến."
+      },
+      {
+        "id": "p6",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.22": {
+    "canonicalRef": "sn1.22",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.22/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:20+00:00",
+    "materializedAt": "2026-09-02T02:41:20+00:00",
+    "contentHash": "f4e8f910b2c10afdc7f7b2ef52c17cb55588b4097ab757652387c3b95e95f572",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "III: Phẩm Kiếm"
+      },
+      {
+        "id": "p3",
+        "text": "1.22. Xúc Chạm"
+      },
+      {
+        "id": "p4",
+        "text": "Không xúc, không có chạm,\n\nCó xúc, thời có chạm,\n\nNên hại người không hại,\n\nTức có xúc, có chạm,\n\nAi hại người không hại,\n\nNgười tịnh, không ô nhiễm,\n\nKẻ ngu hái quả ác,\n\nNhư ngược gió tung bụi."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.23": {
+    "canonicalRef": "sn1.23",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.23/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:21+00:00",
+    "materializedAt": "2026-09-02T02:41:21+00:00",
+    "contentHash": "2bd50bc499966786eeb7624a7726d770cd39a402eb87137323ec2bc3952d21a5",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "III: Phẩm Kiếm"
+      },
+      {
+        "id": "p3",
+        "text": "1.23. Triền Phược"
+      },
+      {
+        "id": "p4",
+        "text": "Nội triền và ngoại triền,\n\nChúng sanh bị triền phược,\n\nCon hỏi Gotama,\n\nAi thoát khỏi triền này?\n(Thế Tôn):\nNgười trú giới có trí,\n\nTu tập tâm và tuệ,\n\nNhiệt tâm và thận trọng,\n\nTỷ-kheo ấy thoát triền.\n\nVới ai, đã từ bỏ\n\nTham, sân và vô minh,\n\nBậc Lậu tận, Ứng cúng,\n\nVị ấy thoát triền phược.\n\nChỗ nào danh và sắc,\n\nÐược đoạn tận, vô dư,\n\nÐoạn chướng ngại, sắc tưởng,\n\nChỗ ấy triền phược đoạn."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.24": {
+    "canonicalRef": "sn1.24",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.24/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:21+00:00",
+    "materializedAt": "2026-09-02T02:41:21+00:00",
+    "contentHash": "01b01d61e122148c38f75abea2391ae97ec36b3df13253f61dc3bbac9289712b",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "III: Phẩm Kiếm"
+      },
+      {
+        "id": "p3",
+        "text": "1.24. Chế Ngự Tâm"
+      },
+      {
+        "id": "p4",
+        "text": "Chỗ nào ý chế ngự,\n\nChỗ ấy đau khổ tận.\n\nÝ chế ngự hoàn toàn,\n\nThoát đau khổ hoàn toàn.\n(Thế Tôn):\nKhông nên chế ngự ý,\n\nHoàn toàn về mọi mặt,\n\nChớ có chế ngự ý,\n\nNếu tự chủ đạt được.\n\nChỗ nào ác pháp khởi,\n\nChỗ ấy chế ngự ý."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.25": {
+    "canonicalRef": "sn1.25",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.25/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:20+00:00",
+    "materializedAt": "2026-09-02T02:41:20+00:00",
+    "contentHash": "2ba6ebc8150905c1ec4333c07378639eea68318295d4ddad0501bcaf681101a4",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "III: Phẩm Kiếm"
+      },
+      {
+        "id": "p3",
+        "text": "1.25. Vị A-La-Hán"
+      },
+      {
+        "id": "p4",
+        "text": "Vị Tỷ-kheo La-hán,\n\nÐã làm điều phải làm,\n\nCác lậu được đoạn tận,\n\nThân này, thân tối hậu.\n\nVị ấy có thể nói:\n\n“Chính tôi vừa nói lên”\n\nVị ấy có thể nói:\n\n“Họ nói là của tôi”.\n(Thế Tôn):\nVị Tỷ-kheo La-hán,\n\nÐã làm điều phải làm,\n\nCác lậu được đoạn tận,\n\nThân này, thân tối hậu.\n\nVị ấy có thể nói:\n\n“Chính tôi vừa nói lên”,\n\nVị ấy có thể nói:\n\n“Họ nói là của tôi”.\n\nVị ấy khéo biết rõ,\n\nDanh xưng ở thế gian,\n\nVì chỉ là danh xưng,\n\nVị ấy cũng danh xưng.\n(Vị Thiên):\nVị Tỷ-kheo La-hán,\n\nÐã làm điều phải làm,\n\nCác lậu được đoạn tận,\n\nThân này, thân tối hậu.\n\nCó phải Tỷ-kheo ấy,\n\nÐi gần đến kiêu mạn,\n\nKhi vị ấy có nói:\n\n“Chính tôi vừa nói lên”.\n\nKhi vị ấy có nói:\n\n“Họ nói là của tôi”?\n(Thế Tôn):\nAi đoạn tận kiêu mạn,\n\nKhông còn những buộc ràng,\n\nMọi hệ phược kiêu mạn,\n\nÐược hoàn toàn đoạn tận.\n\nVị có trí sáng suốt,\n\nVượt khỏi mọi hư tưởng,\n\nVị ấy có thể nói:\n\n“Chính tôi vừa nói lên”,\n\nVị ấy có thể nói:\n\n“Họ nói là của tôi”.\n\nVị ấy khéo biết rõ,\n\nDanh xưng ở thế gian,\n\nVì chỉ là danh xưng,\n\nVị ấy cũng danh xưng."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.26": {
+    "canonicalRef": "sn1.26",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.26/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:20+00:00",
+    "materializedAt": "2026-09-02T02:41:20+00:00",
+    "contentHash": "4c2911878fab686dc6e973a771a87a8fcc7a9e73cbbd3b7a9114f0eafa25f243",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "III: Phẩm Kiếm"
+      },
+      {
+        "id": "p3",
+        "text": "1.26. Ánh Sáng"
+      },
+      {
+        "id": "p4",
+        "text": "Vật gì chiếu sáng đời,\n\nDo chúng, đời chói sáng?\n\nCon đến hỏi Thế Tôn,\n\nMuốn biết lời giải đáp.\n(Thế Tôn):\nBốn vật chiếu sáng đời,\n\nThứ năm, đây không có.\n\nNgày, mặt trời sáng chói,\n\nÐêm, mặt trăng tỏ rạng,\n\nLửa cháy đỏ đêm ngày,\n\nChói sáng khắp mọi nơi.\n\nChánh giác sáng tối thắng,\n\nSáng này, sáng vô thượng."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.27": {
+    "canonicalRef": "sn1.27",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.27/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:20+00:00",
+    "materializedAt": "2026-09-02T02:41:20+00:00",
+    "contentHash": "b203b76d98c1c40438462e1a8ff9ff7d26d6e5c8ac0f58038e962fed00b7fc5c",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "III: Phẩm Kiếm"
+      },
+      {
+        "id": "p3",
+        "text": "1.27. Nước Chảy"
+      },
+      {
+        "id": "p4",
+        "text": "Chỗ nào nước chảy ngược?\n\nChỗ nào nước xoáy dừng?\n\nChỗ nào danh và sắc,\n\nÐược đoạn diệt, không dư?\n\nChỗ nào nước và đất,\n\nLửa, gió không vững trú,\n\nDo vậy nước chảy ngược,\n\nChỗ ấy nước xoáy dừng,\n\nChỗ ấy danh và sắc,\n\nÐược đoạn diệt, không dư."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.28": {
+    "canonicalRef": "sn1.28",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.28/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:20+00:00",
+    "materializedAt": "2026-09-02T02:41:20+00:00",
+    "contentHash": "0c021481af436b152948e13ad0036d859a06b60fe3a180ea148ea06f0f3c5dbe",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "III: Phẩm Kiếm"
+      },
+      {
+        "id": "p3",
+        "text": "1.28. Giàu Lớn"
+      },
+      {
+        "id": "p4",
+        "text": "Sát-đế-lỵ giàu lớn,\n\nTài sản, quốc độ lớn,\n\nLuôn luôn ganh tị nhau,\n\nHưởng dục không biết ngán,\n\nGiữa người sống dao động,\n\nTrôi theo dòng tái sanh.\n\nAi bỏ tật và ái,\n\nKhông dao động giữa đời.\n(Thế Tôn):\nVị xuất gia bỏ nhà,\n\nBỏ con, gia súc, thân,\n\nBỏ tham và bỏ sân,\n\nVà từ bỏ vô minh,\n\nBậc Lậu tận, La-hán,\n\nKhông dao động giữa đời."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.29": {
+    "canonicalRef": "sn1.29",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.29/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:20+00:00",
+    "materializedAt": "2026-09-02T02:41:20+00:00",
+    "contentHash": "1aac0093f69ec27a07447d9271616f67d6071e01bbaa9d0badb849c6b4166efa",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "III: Phẩm Kiếm"
+      },
+      {
+        "id": "p3",
+        "text": "1.29. Bốn Bánh Xe"
+      },
+      {
+        "id": "p4",
+        "text": "Bốn bánh xe, chín cửa,\n\nÐầy uế, hệ lụy tham,\n\nChìm đắm trong bùn nhơ,\n\nÔi, thưa bậc Ðại Hùng,\n\nSanh thú người như vậy,\n\nTương lai sẽ thế nào?\n(Thế Tôn):\nCắt hỷ và buộc ràng,\n\nDục tham và tà ác,\n\nÁi căn được đoạn tận,\n\nSanh thú sẽ như vậy."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.3": {
+    "canonicalRef": "sn1.3",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.3/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:02+00:00",
+    "materializedAt": "2026-09-02T02:41:02+00:00",
+    "contentHash": "7e5e5a528128c4e036922871c62672d7818faa309883c06ca2292c593492f582",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Cây Lau"
+      },
+      {
+        "id": "p3",
+        "text": "1.3. Ðưa Ðến Ðoạn Tận -"
+      },
+      {
+        "id": "p4",
+        "text": "… Ðứng một bên, vị Thiên ấy nói lên bài kệ này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p5",
+        "text": "Mạng sống bị dắt dẫn,\n\nTuổi thọ chẳng là bao,\n\nBị dẫn đến già nua,\n\nKhông có nơi dừng bước.\n\nAi đem tâm quán tưởng,\n\nSợ hãi tử vong này,\n\nHãy làm các công đức,\n\nÐưa đến chơn an lạc.\n(Thế Tôn):\nMạng sống bị dắt dẫn,\n\nTuổi thọ chẳng là bao,\n\nBị dẫn đến già nua,\n\nKhông có nơi dừng bước.\n\nAi đem tâm quán tưởng,\n\nSợ hãi tử vong này,\n\nHãy bỏ mọi thế lợi,\n\nTâm hướng cầu tịch tịnh."
+      },
+      {
+        "id": "p6",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.30": {
+    "canonicalRef": "sn1.30",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.30/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:20+00:00",
+    "materializedAt": "2026-09-02T02:41:20+00:00",
+    "contentHash": "c0363d043eacfb84121cf0242170a609ed19538fff980f707c192d31f7a073c9",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "III: Phẩm Kiếm"
+      },
+      {
+        "id": "p3",
+        "text": "1.30. Con Sơn Dương"
+      },
+      {
+        "id": "p4",
+        "text": "Chân như chân sơn dương,\n\nVừa thon lại vừa mạnh,\n\nĂn uống có chừng mực,\n\nKhông tham lam, say đắm,\n\nNhư sư tử, voi rừng,\n\nÐộc hành, không dục vọng.\n\nSau khi đến, con hỏi,\n\nLàm sao thoát khổ đau?\n(Thế Tôn):\nCó năm dục ở đời,\n\nÝ căn là thứ sáu,\n\nỞ đây, từ ước muốn,\n\nNhư vậy thoát khổ đau."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.31": {
+    "canonicalRef": "sn1.31",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.31/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:20+00:00",
+    "materializedAt": "2026-09-02T02:41:20+00:00",
+    "contentHash": "a26b2749e92011086f570aca8d3466268b57b9e4c70d4745d51754322c67fc49",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "IV: Phẩm Quần Tiên"
+      },
+      {
+        "id": "p3",
+        "text": "1.31. Với Người Thiện"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Như vầy tôi nghe."
+      },
+      {
+        "id": "p5",
+        "text": "Một thời Thế Tôn ở Sāvatthi (Xá-vệ), Jetavana (Thắng Lâm), tại vườn ông Anāthapiṇḍika (Cấp Cô Ðộc)."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 2 Rồi rất nhiều quần tiên Satullapa, sau khi đêm đã gần mãn, với dung sắc thù thắng chói sáng toàn vùng Jetavana, đi đến Thế Tôn, sau khi đến, đảnh lễ Thế Tôn rồi đứng một bên."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 3 Ðứng một bên, một vị Thiên nói lên bài kệ này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p8",
+        "text": "Hãy thân với người lành,\n\nHãy gần gũi người thiện,\n\nBiết diệu pháp người hiền,\n\nÐược tốt hơn, không xấu."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 4 Rồi một vị Thiên khác lại nói lên bài kệ này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p10",
+        "text": "Hãy thân với người lành,\n\nHãy gần gũi người thiện,\n\nBiết diệu pháp người hiền,\n\nÐược tuệ, không gì khác."
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 5 Rồi một vị Thiên khác lại nói lên bài kệ này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p12",
+        "text": "Hãy thân với người lành,\n\nHãy gần gũi người thiện,\n\nBiết diệu pháp người hiền,\n\nKhông sầu, giữa sầu muộn."
+      },
+      {
+        "id": "p13",
+        "text": "Vi-n 6 Rồi một vị Thiên khác lại nói lên bài kệ này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p14",
+        "text": "Hãy thân với người lành,\n\nHãy gần gũi người thiện,\n\nBiết diệu pháp người hiền,\n\nChúng sanh sanh thiện thú."
+      },
+      {
+        "id": "p15",
+        "text": "Vi-n 8 Rồi một vị Thiên khác lại nói lên bài kệ này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p16",
+        "text": "Hãy thân với người lành,\n\nHãy gần gũi người thiện,\n\nBiết diệu pháp người hiền,\n\nChúng sanh thường hưởng lạc."
+      },
+      {
+        "id": "p17",
+        "text": "Vi-n 9 Rồi một vị Thiên khác bạch Thế Tôn:"
+      },
+      {
+        "id": "p18",
+        "text": "—Bạch Thế Tôn, trong tất cả vị ấy, ai đã nói lên một cách tốt đẹp?"
+      },
+      {
+        "id": "p19",
+        "text": "—Về vấn đề này, tất cả các Ông đều nói lên một cách tốt đẹp. Tuy vậy, hãy nghe lời Ta nói:"
+      },
+      {
+        "id": "p20",
+        "text": "Hãy thân với người lành,\n\nHãy gần gũi người thiện,\n\nBiết diệu pháp người hiền,\n\nGiải thoát mọi khổ đau."
+      },
+      {
+        "id": "p21",
+        "text": "Thế Tôn thuyết giảng như vậy. Quần Tiên ấy hoan hỷ tín thọ lời Thế Tôn dạy."
+      },
+      {
+        "id": "p22",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.32": {
+    "canonicalRef": "sn1.32",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.32/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:21+00:00",
+    "materializedAt": "2026-09-02T02:41:21+00:00",
+    "contentHash": "f157cb5acb05803a7f517541814f1f216d65a3d4743ef06efd21ed09fd68aa54",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "IV: Phẩm Quần Tiên"
+      },
+      {
+        "id": "p3",
+        "text": "1.32. Xan Tham"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Một thời Thế Tôn trú ở Sāvatthi, Jetavana, tại vườn ông Anāthapiṇḍika."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Rồi rất nhiều quần tiên Satullapa, sau khi đêm đã gần mãn, với dung sắc thù thắng, chói sáng toàn vùng Jetavana, đi đến Thế Tôn, sau khi đến, đảnh lễ Thế Tôn rồi đứng một bên."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Ðứng một bên, một vị Thiên nói lên bài kệ này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p7",
+        "text": "Vì xan tham, phóng dật,\n\nNhư vậy không bố thí,\n\nAi ước mong công đức,\n\nCó trí nên bố thí."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 4 Rồi một vị Thiên khác nói lên bài kệ này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p9",
+        "text": "Ðiều kẻ xan tham sợ,\n\nNên không dám bố thí,\n\nSợ ấy đến với họ,\n\nChính vì không bố thí.\n\nÐiều kẻ xan tham sợ,\n\nChính là đói và khát,\n\nKẻ ngu phải cảm thọ,\n\nÐời này và đời sau.\n\nVậy hãy chế xan tham,\n\nBố thí, nhiếp cấu uế,\n\nChúng sanh vững an trú,\n\nCông đức trong đời sau."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 5 Rồi một vị Thiên khác nói lên bài kệ này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p11",
+        "text": "Không chết giữa người chết,\n\nNhư thiện hữu trên đường,\n\nSan sẻ lương thực hiếm,\n\nThường pháp là như vậy.\n\nKẻ ít, vui san sẻ,\n\nKẻ nhiều khó, đem cho,\n\nBố thí từ kẻ khó,\n\nÐong được ngàn đồng vàng."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 6 Rồi một vị Thiên khác nói lên bài kệ này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p13",
+        "text": "Khó thay sự đem cho,\n\nKhó thay làm hạnh ấy.\n\nKẻ ác khó tùy thuận,\n\nKhó thay pháp bậc lành.\n\nDo vậy kẻ hiền, ác,\n\nSanh thú phải sai khác,\n\nKẻ ác sanh địa ngục,\n\nNgười lành lên cõi trời."
+      },
+      {
+        "id": "p14",
+        "text": "Vi-n 7 Rồi một vị Thiên khác bạch Thế Tôn:"
+      },
+      {
+        "id": "p15",
+        "text": "—Bạch Thế Tôn, trong tất cả vị ấy, vị nào đã nói một cách tốt đẹp?"
+      },
+      {
+        "id": "p16",
+        "text": "—Về vấn đề này, tất cả các Ông đã nói một cách tốt đẹp. Tuy vậy hãy nghe Ta:"
+      },
+      {
+        "id": "p17",
+        "text": "Sở hành vẫn chơn chánh,\n\nDầu phải sống vụn vặt,\n\nDầu phải nuôi vợ con,\n\nVới đồ ăn lượm lặt,\n\nNhưng vẫn bố thí được,\n\nTừ vật chứa ít ỏi,\n\nTừ ngàn người bố thí,\n\nTừ trăm ngàn vật cho,\n\nTrị giá không ngang bằng,\n\nKẻ bố thí như vậy."
+      },
+      {
+        "id": "p18",
+        "text": "Vi-n 8 Rồi một vị Thiên khác nói lên bài kệ này với Thế Tôn:"
+      },
+      {
+        "id": "p19",
+        "text": "Vì sao họ bố thí,\n\nRộng lớn nhiều như vậy,\n\nTrị giá không ngang bằng,\n\nKẻ nghèo, chơn bố thí?\n\nSao ngàn người bố thí,\n\nTừ trăm ngàn vật cho,\n\nTrị giá không ngang bằng,\n\nKẻ bố thí như vậy?"
+      },
+      {
+        "id": "p20",
+        "text": "Vi-n 9 Rồi Thế Tôn nói lên bài kệ này với vị Thiên ấy:"
+      },
+      {
+        "id": "p21",
+        "text": "Có những người bố thí,\n\nMột cách bất bình thường,\n\nSau khi chém và giết,\n\nMới làm vơi nỗi sầu.\n\nSự bố thí như vậy,\n\nÐầy nước mắt đánh đập,\n\nTrị giá không ngang bằng,\n\nKẻ nghèo, chơn bố thí.\n\nTừ ngàn người bố thí,\n\nTừ trăm ngàn vật cho,\n\nTrị giá không ngang bằng,\n\nKẻ bố thí như vậy."
+      },
+      {
+        "id": "p22",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.33": {
+    "canonicalRef": "sn1.33",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.33/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:28+00:00",
+    "materializedAt": "2026-09-02T02:41:28+00:00",
+    "contentHash": "7e99fe3427cffd78d563a3a89f70eceb02b83d33f13f2736132755f522e7219e",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "IV: Phẩm Quần Tiên"
+      },
+      {
+        "id": "p3",
+        "text": "1.33. Lành Thay"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Ở Sāvatthi."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Rồi rất nhiều quần tiên Satullapa, khi đêm đã gần mãn, với dung sắc thù thắng, chói sáng toàn vùng Jetavana, đi đến Thế Tôn, sau khi đến, đảnh lễ Thế Tôn rồi đứng một bên."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Ðứng một bên, một vị Thiên nói lên lời cảm hứng này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p7",
+        "text": "Lành thay sự bố thí!\n\nKính thưa bậc Tôn giả.\n\nVì xan tham, phóng dật,\n\nNhư vậy không bố thí,\n\nAi ước mong công đức,\n\nCó trí nên bố thí."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 4 Rồi một vị Thiên khác nói lên lời cảm hứng này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p9",
+        "text": "Lành thay sự bố thí,\n\nKính thưa bậc Tôn giả!\n\nNhưng thật tốt lành thay,\n\nBố thí trong thiếu thốn!\n\nKẻ ít, vui san sẻ,\n\nKẻ nhiều khó, đem cho,\n\nBố thí từ kẻ khó,\n\nÐong được ngàn đồng vàng."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 5 Rồi một vị Thiên khác nói lên lời cảm hứng này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p11",
+        "text": "Lành thay sự bố thí,\n\nKính thưa bậc Tôn giả!\n\nNhưng thật tốt lành thay,\n\nBố thí trong thiếu thốn!\n\nLành thay sự bố thí,\n\nPhát xuất từ lòng tin.\n\nBố thí và đánh nhau,\n\nÐược nói là bằng nhau,\n\nMột số ít kẻ lành,\n\nThắng xa số đông người.\n\nVí dầu cho có ít,\n\nNhưng cho với lòng tin,\n\nDo vậy được an lạc,\n\nVì lợi ích cho người."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 6 Rồi một vị Thiên khác nói lên lời cảm hứng này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p13",
+        "text": "Lành thay sự bố thí,\n\nKính thưa bậc Tôn giả!\n\nNhưng thật tốt lành thay,\n\nBố thí trong thiếu thốn!\n\nLành thay sự bố thí,\n\nPhát xuất từ lòng tin!\n\nLành thay sự bố thí,\n\nVới tài sản hợp pháp!\n\nAi là người bố thí,\n\nVới tàn sản hợp pháp,\n\nDo nỗ lực tinh tấn,\n\nNhờ vậy thâu hoạch được;\n\nVị ấy vượt dòng suối,\n\nThần chết Dạ-ma giới,\n\nSau khi chết được sanh,\n\nChỗ trú xứ chư Thiên."
+      },
+      {
+        "id": "p14",
+        "text": "Vi-n 7 Rồi một vị Thiên khác nói lên lời cảm hứng này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p15",
+        "text": "Lành thay sự bố thí,\n\nKính thưa bậc Tôn giả!\n\nNhưng thật tốt lành thay,\n\nBố thí trong thiếu thốn!\n\nLành thay sự bố thí,\n\nPhát xuất từ lòng tin!\n\nLành thay sự bố thí,\n\nVới tài sản hợp pháp!\n\nLành thay sự bố thí,\n\nCó suy tư sáng suốt!\n\nBố thí có suy tư,\n\nBậc Thiện Thệ tán thán.\n\nBố thí cho những vị,\n\nÐáng kính trọng ở đời,\n\nBố thí những vị ấy,\n\nÐược hưởng quả phước lớn,\n\nNhư hạt giống tốt đẹp,\n\nGieo vào ruộng tốt lành."
+      },
+      {
+        "id": "p16",
+        "text": "Vi-n 8 Rồi một vị Thiên khác nói lên lời cảm hứng này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p17",
+        "text": "Lành thay sự bố thí,\n\nKính thưa bậc Tôn giả!\n\nNhưng thật tốt lành thay,\n\nBố thí trong thiếu thốn!\n\nLành thay sự bố thí,\n\nPhát xuất từ lòng tin!\n\nLành thay sự bố thí,\n\nVới tài sản hợp pháp!\n\nLành thay sự bố thí,\n\nCó suy tư sáng suốt!\n\nLành thay sự tự chế,\n\nÐối với các chúng sanh!\n\nGiữa chúng sanh hữu tình,\n\nAi sống không làm hại,\n\nSợ người khác chỉ trích,\n\nKhông làm ác, bất thiện,\n\nHọ khen kẻ nhút nhát,\n\nNhưng chỉ trích người hùng,\n\nChính sợ bị chỉ trích,\n\nNgười lành không làm ác."
+      },
+      {
+        "id": "p18",
+        "text": "Vi-n 9 Rồi một vị Thiên khác bạch Thế Tôn:"
+      },
+      {
+        "id": "p19",
+        "text": "—Bạch Thế Tôn, giữa chúng con, lời nói ai được tốt lành?"
+      },
+      {
+        "id": "p20",
+        "text": "—Về vấn đề này, tất cả các Ông đều nói lên một cách tốt đẹp. Tuy vậy hãy nghe lời của Ta:"
+      },
+      {
+        "id": "p21",
+        "text": "Bố thí với lòng tin,\n\nÐược tán thán nhiều mặt,\n\nCó pháp hơn bố thí,\n\nPháp ấy là Pháp cú.\n\nTừ xưa, từ xa xưa,\n\nNgười lành, người chơn thiện,\n\nVới trí tuệ sáng suốt,\n\nÐạt đến cảnh Niết-bàn."
+      },
+      {
+        "id": "p22",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.34": {
+    "canonicalRef": "sn1.34",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.34/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:31+00:00",
+    "materializedAt": "2026-09-02T02:41:31+00:00",
+    "contentHash": "25ede2aa160c6b7911e24a44bc254854692e19f076ce07f07f0e25beb7e821ac",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "IV: Phẩm Quần Tiên"
+      },
+      {
+        "id": "p3",
+        "text": "1.34. Chúng Không Phải"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Một thời Thế Tôn trú ở Sāvatthi (Xá-vệ), Jetavana (Thắng Lâm), tại vườn ông Anāthapiṇḍika (Cấp Cô Ðộc)."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Rồi rất nhiều quần tiên Satullapa, sau khi đêm đã gần mãn, với dung sắc thù thắng chói sáng toàn vùng Jetavana, đi đến Thế Tôn, sau khi đến, đảnh lễ Thế Tôn rồi đứng một bên."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Ðứng một bên, một vị Thiên nói lên bài kệ này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p7",
+        "text": "Giữa loài Người chúng ta,\n\nCó các dục vô thường.\n\nAi hưởng chúng ở đời,\n\nBị chúng trói, chúng buộc.\n\nPhóng dật đối với chúng,\n\nKhó thoát ly với chúng,\n\nNgười nào khó thoát ly,\n\nBị thần chết chinh phục.\n\nHọa từ dục vọng sanh,\n\nKhổ từ dục vọng khởi,\n\nDục vọng được nhiếp phục,\n\nNhờ vậy họa nhiếp phục,\n\nTai họa được nhiếp phục,\n\nNhờ vậy khổ nhiếp phục.\n\nVật sai biệt ở đời,\n\nChúng không phải các dục,\n\nChính tư niệm tham ái,\n\nLà dục vọng con người.\n\nVật sai biệt tồn tại,\n\nNhư vậy ở trên đời,\n\nDo vậy bậc Hiền trí,\n\nÐiều phục các dục vọng.\n\nHãy từ bỏ phẫn nộ,\n\nHãy nhiếp phục kiêu mạn,\n\nHãy vượt qua tất cả,\n\nMọi kiết sử trói buộc.\n\nChớ có quá chấp trước,\n\nÐối với danh sắc ấy,\n\nKhổ không thể đến được,\n\nVới ai không có gì.\n\nHãy từ bỏ tính toán,\n\nKhông chạy theo hư tưởng,\n\nCắt đứt mọi tham ái,\n\nVới danh sắc ở đời.\n\nVị ấy đoạn phiền trược,\n\nKhông lo âu, không ái;\n\nChư Thiên và loài Người,\n\nÐời này hay đời sau,\n\nỞ cảnh giới chư Thiên,\n\nHay tại mọi trú xứ,\n\nTìm cầu nhưng không gặp,\n\nVết tích của vị ấy,\n\nHọ tìm nhưng không thấy,\n\nVị giải thoát như vậy."
+      },
+      {
+        "id": "p8",
+        "text": "(Tôn giả Mogharàjà nói như vầy)"
+      },
+      {
+        "id": "p9",
+        "text": "Chư Thiên và loài Người,\n\nÐời này hay đời sau,\n\nBậc tối thượng loài Người,\n\nLo hạnh phúc chúng sanh,\n\nHọ đảnh lễ vị ấy,\n\nNên tán thán họ không?"
+      },
+      {
+        "id": "p10",
+        "text": "(Bậc Thế Tôn lên tiếng)"
+      },
+      {
+        "id": "p11",
+        "text": "Này Mogharàjà\n\nHọ cũng nên tán thán,\n\nBậc giải thoát như vậy.\n\nNày Tỷ-kheo khất sĩ,\n\nNếu họ biết Chánh pháp,\n\nÐoạn trừ được nghi hoặc,\n\nHọ trở thành giải thoát."
+      },
+      {
+        "id": "p12",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.35": {
+    "canonicalRef": "sn1.35",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.35/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:30+00:00",
+    "materializedAt": "2026-09-02T02:41:30+00:00",
+    "contentHash": "e4c33ce481d99878990219dee094b50e036486c066ab6d0a869fe6f655e38038",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "IV: Phẩm Quần Tiên"
+      },
+      {
+        "id": "p3",
+        "text": "1.35. Hiềm Trách Thiên"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Một thời Thế Tôn ở Sāvatthi (Xá-vệ), Jetavana (Thắng Lâm), tại vườn ông Anāthapiṇḍika (Cấp Cô Ðộc)."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Rồi rất nhiều quần tiên Ujjhànasannà (Hiềm trách thiên), sau khi đêm đã gần mãn, với dung sắc thù thắng, chói sáng toàn vùng Jetavana, đi đến Thế Tôn. Sau khi đến, các vị ấy đứng giữa hư không."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Rồi một vị Thiên đứng giữa hư không, nói lên bài kệ này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p7",
+        "text": "Những ai nói mình khác\n\nVới điều họ thực có,\n\nThời mọi vật thọ dụng,\n\nXem như do trộm cắp,\n\nChẳng khác kẻ gian manh,\n\nDùng lừa đảo trộm cắp.\n\nHãy nói điều có làm,\n\nKhông nói điều không làm,\n\nKhông làm nói có làm,\n\nKẻ trí biết rõ họ.\n(Thế Tôn):\nNhững ai chỉ biết nói,\n\nHay chỉ biết nghe thôi,\n\nNhững hạng người như vậy,\n\nKhông thể nào tiến bộ.\n\nKhó nhọc thay con đường,\n\nGiúp kẻ trí giải thoát.\n\nNhờ Thiền định thiêu cháy,\n\nMọi trói buộc quần ma,\n\nKẻ trí không làm vậy,\n\nSau khi biết thế tình,\n\nVới trí, chứng Niết-bàn,\n\nVượt chấp trước ở đời."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 4 Rồi các quần tiên ấy đứng xuống đất, cúi đầu đảnh lễ chân Thế Tôn, và bạch Thế Tôn:"
+      },
+      {
+        "id": "p9",
+        "text": "—Ðây là tội lỗi của chúng con, bạch Thế Tôn. Chúng con đi đến tội lỗi, vì ngu xuẩn, vì mê mờ, vì bất thiện. Chúng con nghĩ chúng con có thể công kích Thế Tôn. Bạch Thế Tôn, mong Thế Tôn chấp nhận cho chúng con, lỗi lầm là lỗi lầm để gìn giữ trong tương lai."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 5 Rồi Thế Tôn mỉm cười."
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 6 Các quần tiên ấy càng tức tối thêm và bay lên hư không."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 7 Một vị Thiên nói bài kệ này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p13",
+        "text": "Ai không chịu chấp nhận,\n\nTội lỗi được phát lộ,\n\nNội phẫn, ưa sân hận,\n\nHận thù càng kiên chặt.\n\nNếu không có tội lỗi,\n\nỞ đây không lầm lạc,\n\nHận thù không thể tiêu.\n\nDo gì xem là thiện?\n\nVới ai không tội lỗi?\n\nVới ai không lầm lạc?\n\nAi không bị si mê?\n\nAi kẻ trí thường niệm?\n(Thế Tôn):\nNhư Lai, bậc Giác Ngộ,\n\nThương xót mọi hữu tình,\n\nNơi Ngài không tội lỗi,\n\nNơi Ngài không lầm lạc.\n\nNgài không bị si mê,\n\nNgài chánh trí thường niệm.\n\nAi không chịu chấp nhận,\n\nTội lỗi được phát lộ,\n\nNội phẫn, ưa sân hận,\n\nHận thù càng kiên chặt.\n\nTa không thích hận thù,\n\nTa nhận tội các Ông."
+      },
+      {
+        "id": "p14",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.36": {
+    "canonicalRef": "sn1.36",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.36/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:32+00:00",
+    "materializedAt": "2026-09-02T02:41:32+00:00",
+    "contentHash": "b2003927a023d9b0166ce715e203021916358b304d77b89b250935b00a7027c4",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "IV: Phẩm Quần Tiên"
+      },
+      {
+        "id": "p3",
+        "text": "1.36. Lòng Tin"
+      },
+      {
+        "id": "p4",
+        "text": "S.i,25Vi-n 1 Một thời, Thế Tôn trú ở Sāvatthi (Xá-vệ), Jetavana (Thắng Lâm) tại vườn ông Anāthapiṇḍika (Cấp Cô Ðộc)."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Rồi rất nhiều quần tiên SatullapaKàyikà, khi đêm đã gần tàn, với dung sắc thù thắng chói sáng toàn vùng Jetavana, đi đến Thế Tôn, sau khi đến, đảnh lễ Thế Tôn rồi đứng một bên."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Ðứng một bên, một vị Thiên nói lên bài kệ này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p7",
+        "text": "Tín là người thứ hai,\n\nLà bạn của loài Người,\n\nNếu không trú bất tín,\n\nÐược danh dự, xưng tán,\n\nSau khi bỏ thân này,\n\nÐược sanh lên Thiên giới.\n\nHãy từ bỏ phẫn nộ,\n\nHãy nhiếp phục kiêu mạn,\n\nHãy vượt qua tất cả\n\nMọi kiết sử trói buộc.\n\nChớ có quá chấp trước,\n\nÐối với danh sắc ấy.\n\nTham không thể đến được,\n\nVới ai không có gì.\n\nKẻ ngu không trí tuệ,\n\nMới đam mê, phóng dật,\n\nKẻ trí không phóng dật,\n\nNhư giữ tài vật quý.\n\nChớ đam mê, phóng dật,\n\nChớ đắm say ái dục,\n\nThiền tư, không phóng dật,\n\nÐạt được tối thắng lạc."
+      },
+      {
+        "id": "p8",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.37": {
+    "canonicalRef": "sn1.37",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.37/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:31+00:00",
+    "materializedAt": "2026-09-02T02:41:31+00:00",
+    "contentHash": "db7762d3b383b8b1a3c548c4aa68a4f37284a289864b7a8ecf1d2a87be9925c3",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "IV: Phẩm Quần Tiên"
+      },
+      {
+        "id": "p3",
+        "text": "1.37. Tụ Hội"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Như vầy tôi nghe."
+      },
+      {
+        "id": "p5",
+        "text": "Một thời Thế Tôn ở giữa dòng họ Sakka (Thích-ca), tại Kapilavatthu (Ca-tỳ-la-vệ), ở rừng Ðại Lâm, cùng với đại chúng Tỷ-kheo khoảng 500 vị, tất cả là bậc A-la-hán. Và chư Thiên ở mười phương thế giới phần lớn cũng thường tập hội để chiêm ngưỡng Thế Tôn và chúng Tỷ-kheo."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 2 Rồi bốn vị Tịnh cư thiên (Suddàvàsà) suy nghĩ như sau: “Thế Tôn nay ở giữa dân chúng Sakka, thành Kapilavatthu, rừng Ðại Lâm, cùng với đại chúng Tỷ-kheo khoảng 500 vị, tất cả đều là bậc A-la-hán. Và chư Thiên ở mười phương thế giới, phần lớn cũng thường tập hội để chiêm ngưỡng Thế Tôn và chúng Tỷ-kheo. Vậy chúng ta hãy đi đến Thế Tôn; sau khi đến, mỗi chúng ta đọc một bài kệ dâng lên Thế Tôn.”"
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 3 Rồi chư Thiên ấy nhanh như nhà lực sĩ duỗi cánh tay đã co lại, hay co cánh tay đã duỗi ra, biến mất từ Tịnh cư thiên và hiện ra trước mặt Thế Tôn."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 4 Chư Thiên ấy đảnh lễ Thế Tôn và đứng một bên. Sau khi đứng một bên, một vị Thiên đọc bài kệ trước Thế Tôn:"
+      },
+      {
+        "id": "p9",
+        "text": "Ðại hội tại Ðại Lâm,\n\nChư Thiên đồng tụ tập,\n\nChúng con đến Pháp hội,\n\nÐảnh lễ chúng Bất thắng."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 5 Rồi các vị Thiên khác cũng đọc lên một bài kệ trước Thế Tôn:"
+      },
+      {
+        "id": "p11",
+        "text": "Tại đây chúng Tỷ-kheo,\n\nThiền định, tâm chánh trực,\n\nNhư chủ xe nắm cương,\n\nBậc hiền hộ các căn."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 6 Lại một vị Thiên khác cũng đọc lên một bài kệ trước Thế Tôn:"
+      },
+      {
+        "id": "p13",
+        "text": "Như khóa gãy, chốt tháo,\n\nTrụ bị đào, tham đoạn,\n\nSống thanh tịnh, vô cấu,\n\nCó mắt, voi khéo điều."
+      },
+      {
+        "id": "p14",
+        "text": "Vi-n 7 Lại một vị Thiên khác cũng đọc lên một bài kệ trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p15",
+        "text": "Những ai quy y Phật,\n\nSẽ không đọa ác thú,\n\nSau khi bỏ thân Người,\n\nSẽ sanh làm chư Thiên."
+      },
+      {
+        "id": "p16",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.38": {
+    "canonicalRef": "sn1.38",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.38/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:32+00:00",
+    "materializedAt": "2026-09-02T02:41:32+00:00",
+    "contentHash": "a240c3c0c1805eec9a5f1071104899d6f53e7221dd98c52054d5d2163747c8c0",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "IV: Phẩm Quần Tiên"
+      },
+      {
+        "id": "p3",
+        "text": "1.38. Miếng Ðá Vụn"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Như vầy tôi nghe."
+      },
+      {
+        "id": "p5",
+        "text": "Một thời Thế Tôn ở tại Rājagaha (Vương Xá), tại vườn Nai (Maddakucchi)"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 2 Lúc bấy giờ, chân Thế Tôn bị miếng đá bể đâm phải. Cảm thọ Thế Tôn mãnh liệt. Thân cảm thọ khổ đau, nhói đau, nhức nhối, khốc liệt, không khoái tâm, không thích thú. Nhưng Thế Tôn chánh niệm tỉnh giác, nhẫn chịu, không phiền não."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 3 Rồi Thế Tôn cho trải áo Sanghàti (Tăng-già-lê) xếp tư lại, nằm xuống phía hông bên phải như dáng điệu con sư tử, chân đặt trên chân, chánh niệm tỉnh giác."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 4 Rồi bảy trăm quần tiên Satullapakàyikà, sau khi đêm đã gần mãn, với dung sắc thù thắng chói sáng toàn vùng Maddakucchi, đi đến Thế Tôn; sau khi đến, đảnh lễ Thế Tôn rồi đứng một bên."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 5 Ðứng một bên, một vị Thiên đọc lên lời cảm hứng này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p10",
+        "text": "—Sa-môn Gotama thật là bậc Long tượng. Và với tư cách Long tượng, Ngài nhẫn chịu thân thọ khởi lên, đau khổ, nhói đau, nhức nhối, khốc liệt, không khoái tâm, không thích thú, Ngài chánh niệm tỉnh giác, nhẫn chịu, không phiền não."
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 6 Rồi một vị Thiên khác nói lên lời cảm hứng này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p12",
+        "text": "—Sa-môn Gotama thật là bậc Sư tử. Và với tư cách Sư tử, Ngài nhẫn chịu thân thọ khởi lên, khổ đau … không có phiền não."
+      },
+      {
+        "id": "p13",
+        "text": "Vi-n 7 Rồi một vị Thiên khác nói lên lời cảm hứng này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p14",
+        "text": "—Sa-môn Gotama thật là Lương tuấn mã. Và với tư cách Lương tuấn mã, Ngài nhẫn chịu thân thọ khởi lên, khổ đau … không có phiền não."
+      },
+      {
+        "id": "p15",
+        "text": "Vi-n 8 Rồi một vị Thiên khác nói lên lời cảm hứng này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p16",
+        "text": "—Sa-môn Gotama thật là bậc Ngưu vương. Và với tư cách Ngưu vương, Ngài nhẫn chịu thân thọ khởi lên, khổ đau … không có phiền não."
+      },
+      {
+        "id": "p17",
+        "text": "Vi-n 9 Rồi một vị Thiên khác nói lên lời cảm hứng này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p18",
+        "text": "—Sa-môn Gotama thật là bậc Nhẫn nại Kiên cường. Và với tư cách bậc Nhẫn nại Kiên cường, Ngài nhẫn chịu thân thọ khởi lên, khổ đau … không có phiền não."
+      },
+      {
+        "id": "p19",
+        "text": "Vi-n 10 Rồi một vị Thiên khác nói lên lời cảm hứng này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p20",
+        "text": "—Sa-môn Gotama thật là một bậc Khéo điều phục. Và với tư cách là một bậc Khéo điều phục, Ngài nhẫn chịu thân thọ khởi lên, khổ đau … không có phiền não."
+      },
+      {
+        "id": "p21",
+        "text": "Vi-n 11 Rồi một vị Thiên khác nói lên lời cảm hứng này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p22",
+        "text": "—Hãy xem tâm của Ngài khéo được tu tập Thiền định và giải thoát, không có nổi lên, không có chìm xuống, mọi hành động được tác thành, không có ai kích thích. Ai có thể nghĩ mình đi ngược lại một Long tượng như vậy, một bậc Sư tử như vậy, một bậc Lương tuấn mã như vậy, một bậc Ngưu vương như vậy, một bậc Nhẫn nại Kiên cường như vậy, một bậc Nhiếp phục như vậy, trừ phi là một người mù."
+      },
+      {
+        "id": "p23",
+        "text": "Các vị Bà-la-môn,\n\nTinh thông năm Vệ-đà,\n\nDầu tu tập khổ hạnh,\n\nCho đến hàng trăm năm,\n\nTâm họ không có thể,\n\nChơn chánh được giải thoát.\n\nTự tánh quá hạ liệt,\n\nKhông đến bờ bên kia,\n\nBị khát ái chi phối,\n\nBị giới cấm trói buộc,\n\nDầu tu tập khổ hạnh,\n\nCho đến hàng trăm năm,\n\nTâm họ không có thể,\n\nChơn chánh được giải thoát.\n\nTự tánh quá hạ liệt,\n\nKhông đến bờ bên kia.\n\nỞ đời không nhiếp phục,\n\nKiêu mạn cùng các dục,\n\nTâm không được an tịnh,\n\nKhông tu tập Thiền định.\n\nỞ trong rừng cô độc,\n\nNhưng tâm tư phóng dật,\n\nVị ấy khó vượt khỏi,\n\nSự chinh phục tử thần.\n\nNhiếp phục được kiêu mạn,\n\nKhéo tu tập Thiền định,\n\nTâm tư khéo an tịnh,\n\nGiải thoát được viên mãn,\n\nỞ trong rừng cô độc,\n\nTâm tư không phóng dật,\n\nVị ấy khéo vượt khỏi,\n\nSự chinh phục tử thần."
+      },
+      {
+        "id": "p24",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.39": {
+    "canonicalRef": "sn1.39",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.39/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:32+00:00",
+    "materializedAt": "2026-09-02T02:41:32+00:00",
+    "contentHash": "387cb23a54c8b986cbd30157063401b025e4ff71ff1717dfd5eabec1b4763737",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "IV: Phẩm Quần Tiên"
+      },
+      {
+        "id": "p3",
+        "text": "1.39. Con Gái Của Pajjuna"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Như vầy tôi nghe."
+      },
+      {
+        "id": "p5",
+        "text": "Một thời Thế Tôn ở Vesālī, Ðại Lâm, tại Trùng Các giảng đường."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 2 Rồi Kokanadà, con gái của Pajjuna, sau khi đêm vừa mãn, với dung sắc thù thắng chiếu sáng toàn vùng Ðại Lâm, đi đến Thế Tôn, sau khi đến, đảnh lễ Thế Tôn rồi đứng một bên."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 3 Ðứng một bên, Thiên nữ Kokanadà, con gái của Pajjuna, nói lên bài kệ này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p8",
+        "text": "Bậc Chánh Ðẳng Chánh Giác,\n\nThượng thủ các chúng sanh,\n\nNay an trú Ðại Lâm,\n\nTại thành Vesālī,\n\nHãy để con đảnh lễ,\n\nCon gái Pajjuna,\n\nTên Kokanadà.\n\nTừ trước con chỉ nghe,\n\nBậc chứng ngộ Chánh Giác.\n\nBậc vô thượng Pháp Nhãn,\n\nBậc Chánh Ðẳng Chánh Giác.\n\nNgày nay con có thể,\n\nBiết được Chánh pháp ấy,\n\nDo Thiện Thệ thuyết giảng,\n\nBậc Mâu-ni Chánh Giác.\n\nNhững ai kém trí tuệ,\n\nKhinh bác chống Thánh pháp,\n\nSẽ rơi vào địa ngục,\n\nMệnh danh Roruva,\n\nTrải thời gian lâu dài,\n\nThọ lãnh nhiều thống khổ.\n\nNhững ai đối Thánh pháp,\n\nKham nhẫn, tâm tịch tịnh,\n\nTừ bỏ thân làm người,\n\nViên mãn thân chư Thiên."
+      },
+      {
+        "id": "p9",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.4": {
+    "canonicalRef": "sn1.4",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.4/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:01+00:00",
+    "materializedAt": "2026-09-02T02:41:01+00:00",
+    "contentHash": "de416b16b5244f1ed243cf2c4f155b0f44631b4d382fd93b27b72d74ffa29146",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Cây Lau"
+      },
+      {
+        "id": "p3",
+        "text": "1.4. Thời Gian Trôi Qua"
+      },
+      {
+        "id": "p4",
+        "text": "… Nhân duyên ở (Sāvatthi ), đứng một bên, vị Thiên ấy nói lên bài kệ này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p5",
+        "text": "Thời gian lặng trôi qua,\n\nÐêm ngày luôn di động,\n\nTuổi tác buổi thanh xuân,\n\nTiếp tục bỏ chúng ta.\n\nNhững ai chịu quán sát,\n\nSợ hãi tử vong này,\n\nHãy làm các công đức,\n\nÐưa đến chơn an lạc.\n(Thế Tôn):\nThời gian lặng trôi qua,\n\nÐêm ngày luôn di động,\n\nTuổi tác buổi thanh xuân,\n\nTiếp tục bỏ chúng ta.\n\nNhững ai chịu quán sát,\n\nSợ hãi tử vong này,\n\nHãy bỏ mọi thế lợi,\n\nTâm hướng cầu tịch tịnh."
+      },
+      {
+        "id": "p6",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.40": {
+    "canonicalRef": "sn1.40",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.40/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:31+00:00",
+    "materializedAt": "2026-09-02T02:41:31+00:00",
+    "contentHash": "3edf087bc1e01e5e6a690b4549d690da9b470549ec89d66fed0cb3e9b801207a",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "IV: Phẩm Quần Tiên"
+      },
+      {
+        "id": "p3",
+        "text": "1.40. Con Gái Của Pajjuna"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Như vầy tôi nghe."
+      },
+      {
+        "id": "p5",
+        "text": "Một thời Thế Tôn trú ở Vesālī, Ðại Lâm, tại Trùng Các giảng đường."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 2 Rồi Cùla—Kokanadà, con gái của Pajjuna, sau khi đêm đã gần mãn, với dung sắc thù thắng chói sáng toàn vùng Ðại Lâm đi đến Thế Tôn; sau khi đi đến, đảnh lễ Thế Tôn rồi đứng một bên. Ðứng một bên, Cùla-Kokanadà, con gái của Pajjuna, nói lên bài kệ này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p7",
+        "text": "Con gái Pajjuna,\n\nTên Kokanadà.\n\nNhan sắc như điện quang,\n\nNàng đã đến tại đây,\n\nÐảnh lễ Phật và Pháp,\n\nNói kệ lợi ích này,\n\nDầu với nhiều pháp môn,\n\nCon phân tích pháp này.\n\nNhưng lược nghĩa con nói,\n\nTheo ý con hiểu biết,\n\nỞ đời, chớ làm ác,\n\nCả ba: thân, khẩu, ý,\n\nTừ bỏ mọi thứ dục,\n\nChánh niệm, tâm tỉnh giác,\n\nKhông khổ hạnh ép xác,\n\nVô bổ, không lợi ích."
+      },
+      {
+        "id": "p8",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.41": {
+    "canonicalRef": "sn1.41",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.41/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:30+00:00",
+    "materializedAt": "2026-09-02T02:41:30+00:00",
+    "contentHash": "82bce272c00989a9be7b127f161cf7f56393585ff319c881de4c79fac0e41a5c",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "V: Phẩm Thiêu Cháy"
+      },
+      {
+        "id": "p3",
+        "text": "1.41. Thiêu Cháy"
+      },
+      {
+        "id": "p4",
+        "text": "Như vầy tôi nghe."
+      },
+      {
+        "id": "p5",
+        "text": "Một thời Thế Tôn ở Sāvatthi (Xá-vệ), Jetavana (Thắng Lâm), tại vườn ông Anāthapiṇḍika (Cấp Cô Ðộc). Rồi một vị Thiên, sau khi đêm đã gần mãn, với dung sắc thù thắng chói sáng toàn vùng Jetavana, đi đến Thế Tôn; sau khi đến, đảnh lễ Thế Tôn rồi đứng một bên. Ðứng một bên, vị Thiên ấy nói lên bài kệ này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p6",
+        "text": "Trong ngôi nhà thiêu cháy,\n\nVật dụng đem ra ngoài,\n\nVật ấy có lợi ích,\n\nKhông phải vật bị thiêu.\n\nCũng vậy trong đời này,\n\nBị già chết thiêu cháy,\n\nHãy đem ra, bằng thí,\n\nVật thí, khéo đem ra.\n\nCó thí, có lạc quả,\n\nKhông thí, không như vậy.\n\nKẻ trộm, vua cướp đoạt,\n\nLửa thiêu đốt hủy hoại,\n\nKhi giờ cuối cùng đến,\n\nBỏ thân, bỏ sở hữu.\n\nKẻ trí, hiểu biết vậy,\n\nThọ dụng và bố thí,\n\nThí xong, thọ dụng xong,\n\nTheo lực hành động ấy,\n\nKhông bị ai chỉ trích,\n\nVị ấy được sanh Thiên."
+      },
+      {
+        "id": "p7",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.42": {
+    "canonicalRef": "sn1.42",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.42/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:32+00:00",
+    "materializedAt": "2026-09-02T02:41:32+00:00",
+    "contentHash": "aa1dec5c390d2f35a3e819c40318bca5e4a3ec5f5be54d4eeaf0ef6526705dee",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "V: Phẩm Thiêu Cháy"
+      },
+      {
+        "id": "p3",
+        "text": "1.42. Cho Gì?"
+      },
+      {
+        "id": "p4",
+        "text": "Cho gì là cho lực?\n\nCho gì là cho sắc?\n\nCho gì là cho lạc?\n\nCho gì là cho mắt?\n\nCho gì cho tất cả?\n\nXin đáp điều con hỏi?\n(Thế Tôn):\nCho ăn là cho lực,\n\nCho mặc là cho sắc,\n\nCho xe là cho lạc,\n\nCho đèn là cho mắt.\n\nAi cho chỗ trú xứ,\n\nVị ấy cho tất cả,\n\nAi giảng dạy Chánh pháp,\n\nVị ấy cho bất tử."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.43": {
+    "canonicalRef": "sn1.43",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.43/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:31+00:00",
+    "materializedAt": "2026-09-02T02:41:31+00:00",
+    "contentHash": "d3eb0f52b79ab471ceb6f13a8320fca7c4a3b0edff5f6a5131774db3af37eff2",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "V: Phẩm Thiêu Cháy"
+      },
+      {
+        "id": "p3",
+        "text": "1.43. Ðồ Ăn"
+      },
+      {
+        "id": "p4",
+        "text": "Trời, Người, cả hai loài,\n\nÐều ưa thích ăn uống,\n\nVị Dạ-xoa tên gì,\n\nLại không thích ăn uống?\n(Thế Tôn):\nAi cho với lòng tin,\n\nVới tâm tư thanh tịnh,\n\nÐược phần món ăn ấy,\n\nÐời này và đời sau.\n\nVậy hãy ngừa xan tham,\n\nBố thí, nhiếp cấu uế,\n\nHữu tình vững an trú,\n\nCông đức trong đời sau."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.44": {
+    "canonicalRef": "sn1.44",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.44/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:32+00:00",
+    "materializedAt": "2026-09-02T02:41:32+00:00",
+    "contentHash": "035570ce59c8239df44a33989b8618a84ff3be52dc733007021b728a10077535",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "V: Phẩm Thiêu Cháy"
+      },
+      {
+        "id": "p3",
+        "text": "1.44. Một Căn Rễ"
+      },
+      {
+        "id": "p4",
+        "text": "Một rễ, hai phương diện,\n\nBa uế, năm môi trường,\n\nBiển lớn, mười hai họa,\n\nVực xoáy bậc Thánh siêu."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.45": {
+    "canonicalRef": "sn1.45",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.45/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:31+00:00",
+    "materializedAt": "2026-09-02T02:41:31+00:00",
+    "contentHash": "e768d762385ae4f4cfd0d55fc8e714df66ead4bd32cc5d06c02c420f695d4521",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "V: Phẩm Thiêu Cháy"
+      },
+      {
+        "id": "p3",
+        "text": "1.45. Bậc Hoàn Toàn"
+      },
+      {
+        "id": "p4",
+        "text": "Bậc viên mãn toàn diện,\n\nThấy được nghĩa bí huyền,\n\nBan phát chân trí tuệ,\n\nThoát ly khỏi dục tạng,\n\nThấy được bậc toàn trí,\n\nBậc Thiện tuệ trí giác.\n\nVị Ðại Thánh dấn bước,\n\nTrên con đường Thánh đạo."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.46": {
+    "canonicalRef": "sn1.46",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.46/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:32+00:00",
+    "materializedAt": "2026-09-02T02:41:32+00:00",
+    "contentHash": "66a7dbc78904a0bd86b485093095d18d7c2a5291dfab4352119d414e177e768f",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "V: Phẩm Thiêu Cháy"
+      },
+      {
+        "id": "p3",
+        "text": "1.46. Thiên Nữ"
+      },
+      {
+        "id": "p4",
+        "text": "Thiên nữ đoàn tụ hội,\n\nNgạ quỷ chúng tới lui,\n\nRừng ấy danh rừng si,\n\nLàm sao có lối thoát?\n(Thế Tôn):\nÐường ấy tên chơn trực,\n\nPhương ấy danh vô úy,\n\nCỗ xe gọi vô thanh,\n\nVới pháp luân khéo ráp,\n\nTàm là dàn xe dựa,\n\nNiệm là trướng màn xe,\n\nTa nói vị đánh xe,\n\nTức là chơn diệu pháp,\n\nVà chính chánh tri kiến,\n\nMau chóng đi tiền phong.\n\nKhông kể nam hay nữ,\n\nÐều dùng cỗ xe ấy.\n\nChính nhờ cỗ xe ấy,\n\nHướng tiến đến Niết-bàn."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.47": {
+    "canonicalRef": "sn1.47",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.47/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:32+00:00",
+    "materializedAt": "2026-09-02T02:41:32+00:00",
+    "contentHash": "d4022a71057deb633d3e9024ddbe4274f0bca973ff736b2d875de19fe3618834",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "V: Phẩm Thiêu Cháy"
+      },
+      {
+        "id": "p3",
+        "text": "1.47. Trồng Rừng"
+      },
+      {
+        "id": "p4",
+        "text": "Những ai ngày lẫn đêm,\n\nCông đức luôn tăng trưởng,\n\nTrú pháp, cụ túc giới,\n\nKẻ nào sanh thiên giới?\n\nAi trồng vườn, trồng rừng,\n\nAi dựng xây cầu cống,\n\nÐào giếng, cho nước uống,\n\nNhững ai cho nhà cửa,\n\nNhững vị ấy ngày đêm,\n\nCông đức luôn tăng trưởng,\n\nTrú pháp, cụ túc giới,\n\nNhững vị ấy sanh Thiên."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.48": {
+    "canonicalRef": "sn1.48",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.48/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:32+00:00",
+    "materializedAt": "2026-09-02T02:41:32+00:00",
+    "contentHash": "222ffa18d1cb4b293b9d785f3caba2f7c1701ff9c8244d0d8bddec311164257b",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "V: Phẩm Thiêu Cháy"
+      },
+      {
+        "id": "p3",
+        "text": "1.48. Kỳ Viên"
+      },
+      {
+        "id": "p4",
+        "text": "Ðây là rừng Kỳ Viên.\n\nChỗ trú xứ Thánh chúng,\n\nChỗ ở đấng Pháp Vương,\n\nKhiến tâm con hoan hỷ.\n\nNghiệp minh và tâm pháp,\n\nGiới và tối thắng mạng,\n\nChính những diệu pháp ấy,\n\nKhiến chúng sanh thanh tịnh,\n\nKhông phải vì dòng họ,\n\nKhông phải vì tài sản.\n\nDo vậy bậc Hiền trí,\n\nThấy lợi ích chính mình,\n\nChánh giác sát tâm pháp,\n\nNhư vậy được thanh tịnh.\n\nNhư ngài Xá-lợi-phất,\n\nTuệ giới và tịch tịnh,\n\nTỷ-kheo đến bờ giác,\n\nỞ đây là tối thượng."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.49": {
+    "canonicalRef": "sn1.49",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.49/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:41+00:00",
+    "materializedAt": "2026-09-02T02:41:41+00:00",
+    "contentHash": "2a357ab558ef3f3df30225b3d05da4c564b676f5c8939bd83ecf547c6e751485",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "V: Phẩm Thiêu Cháy"
+      },
+      {
+        "id": "p3",
+        "text": "1.49. Xan Tham"
+      },
+      {
+        "id": "p4",
+        "text": "Ở đời kẻ xan tham,\n\nKeo kiết hay khước từ,\n\nTạo nên những chướng ngại,\n\nNgăn kẻ khác bố thí,\n\nÐời này và đời sau,\n\nQuả báo họ là gì?\n\nChúng con đến tại đây,\n\nChính muốn hỏi Thế Tôn,\n\nChúng con muốn được biết,\n\nThế Tôn đáp thế nào?\n(Thế Tôn):\nỞ đời kẻ xan tham,\n\nKeo kiết hay khước từ,\n\nTạo nên những chướng ngại,\n\nNgăn kẻ khác bố thí,\n\nBị tái sanh địa ngục,\n\nBàng sanh, Dạ-ma giới.\n\nNếu được sanh làm người,\n\nSanh gia đình nghèo khó,\n\nY, thực, dục, hỷ lạc,\n\nHọ được rất khó khăn.\n\nÐiều kẻ ngu ước vọng,\n\nHọ không thâu hoạch được,\n\nQuả hiện tại là vậy,\n\nÐời sau sanh ác thú.\n(Vị Thiên):\nNhờ những điều Ngài nói,\n\nChúng con được hiểu vậy,\n\nTôn giả Gotama,\n\nCon xin hỏi câu khác.\n\nỞ đây được thân người,\n\nTừ tốn không xan tham,\n\nTin Phật và Chánh pháp,\n\nCùng tôn trọng chúng Tăng,\n\nÐời này và đời sau,\n\nQuả báo họ là gì?\n\nChúng con đến tại đây,\n\nChính muốn hỏi Thế Tôn,\n\nChúng con muốn được biết,\n\nThế Tôn đáp thế nào?\n(Thế Tôn):\nỞ đây được thân người,\n\nTừ tốn không xan tham,\n\nTin Phật và Chánh pháp,\n\nCùng tôn trọng chúng Tăng,\n\nHọ chói sáng chư Thiên,\n\nTại đấy họ tái sanh.\n\nNếu họ sanh làm người,\n\nHọ sanh nhà phú gia,\n\nY, thực, dục, hỷ lạc,\n\nHọ được không khó khăn,\n\nNhư các Tự tại thiên,\n\nHân hoan được thọ hưởng,\n\nGiữa vật dụng tài sản,\n\nÐược người khác quy tụ,\n\nQuả hiện tại là vậy,\n\nÐời sau sanh Thiên giới."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.5": {
+    "canonicalRef": "sn1.5",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.5/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:03+00:00",
+    "materializedAt": "2026-09-02T02:41:03+00:00",
+    "contentHash": "c773290e71b1a318e0d5cbf408119f9493d19379832597d38d06e6a5ab0e4f84",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Cây Lau"
+      },
+      {
+        "id": "p3",
+        "text": "1.5. Bao Nhiêu Phải Cắt Ðoạn."
+      },
+      {
+        "id": "p4",
+        "text": "… Ðứng một bên, vị Thiên ấy nói lên bài kệ này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p5",
+        "text": "Phải cắt đoạn bao nhiêu,\n\nPhải từ bỏ bao nhiêu,\n\nTu tập thêm bao nhiêu,\n\nVượt qua bao trói buộc,\n\nÐể được có danh xưng,\n\nTỷ-kheo vượt bộc lưu?\n(Thế Tôn):\nPhải cắt đoạn đến năm,\n\nPhải từ bỏ đến năm,\n\nTu tập thêm năm pháp (lực),\n\nVượt qua năm trói buộc,\n\nÐể được có danh xưng,\n\nTỷ-kheo “vượt bộc lưu”."
+      },
+      {
+        "id": "p6",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.50": {
+    "canonicalRef": "sn1.50",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.50/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:40+00:00",
+    "materializedAt": "2026-09-02T02:41:40+00:00",
+    "contentHash": "752660d3211d46d5e2a9380f97f8368f4cc5aea185a8f56547edfe3fea366bb4",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "V: Phẩm Thiêu Cháy"
+      },
+      {
+        "id": "p3",
+        "text": "1.50. Thợ Ðồ Gốm"
+      },
+      {
+        "id": "p4",
+        "text": "Ðược sanh Vô phiền thiên,\n\nBảy Tỷ-kheo giải thoát,\n\nÐoạn tận tham và sân,\n\nVượt qua đời triền phược.\n\nVượt bùn, họ là ai,\n\nKhéo vượt lệnh thần chết,\n\nSau khi bỏ thân người,\n\nHọ thoát ách chư Thiên?\n\nHọ là Upaka,\n\nVới Pukkusāti,\n\nHợp thành là ba vị,\n\nVà Phalaganda,\n\nLại thêm Bhaddiya,\n\nVới Khandadeva,\n\nVà Bàhuraggi,\n\nCùng với Pingiya,\n\nSau khi bỏ thân người,\n\nHọ thoát ách chư Thiên.\n(Thế Tôn):\nNgười nói điều tốt lành,\n\nVề bảy Tỷ-kheo ấy,\n\nHọ thoát ly, đoạn trừ,\n\nCác cạm bẫy Ma vương,\n\nPháp họ biết, của ai,\n\nÐoạn diệt hữu kiết sử?\n(Ghaṭikāra):\nKhông ai ngoài Thế Tôn,\n\nChính thật giáo lý Ngài,\n\nHọ biết pháp của Ngài,\n\nÐoạn được hữu kiết sử.\n\nChỗ nào danh và sắc,\n\nÐược đoạn diệt, không dư,\n\nHọ học được pháp ấy,\n\nỞ đây từ nơi Ngài.\n\nNhờ vậy họ đoạn trừ,\n\nHữu kiết sử trói buộc.\n(Thế Tôn):\nLời nói người thâm sâu,\n\nKhó biết, khó chứng ngộ,\n\nPháp Ông biết của ai,\n\nSao Ông không nói được?\n(Ghaṭikāra):\nThuở xưa, con thợ gốm,\n\nTại Vehalinga,\n\nVà con được tên gọi,\n\nLà Ghaṭikāra.\n\nChính con lo nuôi dưỡng,\n\nCả mẹ lẫn cả cha,\n\nÐối với Phật Ca-diếp,\n\nCon đệ tử tại gia.\n\nCon viễn ly dâm dục,\n\nPhạm hạnh, không thế vật,\n\nThuở xưa con đồng hương,\n\nCũng là bạn của họ,\n\nDo vậy con biết họ,\n\nBảy Tỷ-kheo giải thoát,\n\nÐoạn tận tham và sân,\n\nVượt qua đời triền phược.\n(Thế Tôn):\nVậy này Bhaggava,\n\nChính như Ông vừa nói,\n\nThuở xưa, Ông thợ gốm,\n\nTại Vehalinga,\n\nVà Ông được tên gọi,\n\nLà Ghaṭikāra.\n\nChính Ông lo nuôi dưỡng,\n\nCả mẹ lẫn cả cha,\n\nÐối với Phật Ca-diếp,\n\nÔng đệ tử tại gia.\n\nÔng viễn ly dâm dục,\n\nPhạm hạnh, không thế vật.\n\nThuở xưa Ông đồng hương,\n\nCũng là bạn của Ta,\n\nNhư vậy là hội ngộ,\n\nGiữa những bạn thời xưa,\n\nCả hai khéo tu tập,\n\nMang thân này tối hậu."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.51": {
+    "canonicalRef": "sn1.51",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.51/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:41+00:00",
+    "materializedAt": "2026-09-02T02:41:41+00:00",
+    "contentHash": "c6c10aa13af277b92dd5c79e20e4d6e244fb77b09e652d0f652c46b9a41f999f",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "VI: Phẩm Già"
+      },
+      {
+        "id": "p3",
+        "text": "1.51. Già"
+      },
+      {
+        "id": "p4",
+        "text": "—Vật gì tốt đến già?\n\nVật gì tốt kiên trú?\n\nVật gì vật báu người?\n\nVật gì cướp khó đoạt?\n\n—Giới là tốt đến già,\n\nTín là tốt kiên trú,\n\nTuệ, vật báu loài Người,\n\nCông đức, cướp khó đoạt ."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.52": {
+    "canonicalRef": "sn1.52",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.52/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:41+00:00",
+    "materializedAt": "2026-09-02T02:41:41+00:00",
+    "contentHash": "a1aa37e521a8b2f8f5b3c0c35ab1e3f711b3a956e27fa46fc3479d4f6186b657",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "VI: Phẩm Già"
+      },
+      {
+        "id": "p3",
+        "text": "1.52. Không Già"
+      },
+      {
+        "id": "p4",
+        "text": "—Vật gì tốt không già?\n\nVật gì tốt trường cửu?\n\nVật gì vật báu người?\n\nVật gì cướp không đoạt?\n\n—Giới là tốt không già,\n\nTín là tốt trường cửu,\n\nTuệ, vật báu loài Người,\n\nCông đức, cướp không đoạt."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.53": {
+    "canonicalRef": "sn1.53",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.53/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:41+00:00",
+    "materializedAt": "2026-09-02T02:41:41+00:00",
+    "contentHash": "ebd700246f219e69544f41cceb4b22521e3386f03396f7553e783225223a0e22",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "VI: Phẩm Già"
+      },
+      {
+        "id": "p3",
+        "text": "1.53. Bạn"
+      },
+      {
+        "id": "p4",
+        "text": "—Ai bạn kẻ đi đường?\n\nAi bạn người ở nhà?\n\nAi bạn khi cần thiết?\n\nAi bạn cho đời sau?\n\nBạn đường, bạn đi đường,\n\n— Bạn ở nhà là mẹ,\n\nBạn bè khi cần thiết,\n\nMới là bạn thường xuyên,\n\nCông đức tự mình làm,\n\nLà bạn cho đời sau."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.54": {
+    "canonicalRef": "sn1.54",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.54/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:41+00:00",
+    "materializedAt": "2026-09-02T02:41:41+00:00",
+    "contentHash": "95e36e6ec3e7a271e90a62d5b386ffaf72589c72f7baf1ce7b4bf495bc86f39b",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "VI: Phẩm Già"
+      },
+      {
+        "id": "p3",
+        "text": "1.54. Cơ Sở"
+      },
+      {
+        "id": "p4",
+        "text": "—Vật gì, cơ sở người?\n\nVật gì, bạn tối thượng (ở đời)?\n\nHữu tình gì trì mạng?\n\nY cứ vào địa đại?\n\n—Con là cơ sở người,\n\nVợ là bạn tối thượng,\n\nThần mưa là trì mạng,\n\nY cứ vào địa đại."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.55": {
+    "canonicalRef": "sn1.55",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.55/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:41+00:00",
+    "materializedAt": "2026-09-02T02:41:41+00:00",
+    "contentHash": "e30c719fcc30e3af7dd7c54732f1759fc62b5246f769a22cb932fc013f2e417c",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "VI: Phẩm Già"
+      },
+      {
+        "id": "p3",
+        "text": "1.55. Sanh Nhân"
+      },
+      {
+        "id": "p4",
+        "text": "—Cái gì sanh thành người?\n\nCái gì luôn dong ruỗi?\n\nCái gì chịu luân hồi?\n\nCái gì người sợ hãi?\n\n—Ái dục sanh thành người,\n\nChính tâm luôn dong ruỗi,\n\nChúng sanh chịu luân hồi,\n\nÐau khổ, người sợ hãi."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.56": {
+    "canonicalRef": "sn1.56",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.56/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:41+00:00",
+    "materializedAt": "2026-09-02T02:41:41+00:00",
+    "contentHash": "266e87aa1c92ed31b55464eede6be363526a5998e7cc0a76ba13e440ef3f052f",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "VI: Phẩm Già"
+      },
+      {
+        "id": "p3",
+        "text": "1.56. Sanh Nhân"
+      },
+      {
+        "id": "p4",
+        "text": "—Cái gì sanh thành người?\n\nCái gì luôn dong ruỗi?\n\nCái gì chịu luân hồi?\n\nVì đâu, không giải thoát?\n\n—Ái dục sanh thành người,\n\nChính tâm luôn dong ruỗi,\n\nChúng sanh chịu luân hồi,\n\nVì khổ, không giải thoát."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.57": {
+    "canonicalRef": "sn1.57",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.57/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:41+00:00",
+    "materializedAt": "2026-09-02T02:41:41+00:00",
+    "contentHash": "1f66d1e73c676348bca3749b32173a46346f555e995995eb4acc8099f9a8657c",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "VI: Phẩm Già"
+      },
+      {
+        "id": "p3",
+        "text": "1.57. Sanh Nhân"
+      },
+      {
+        "id": "p4",
+        "text": "—Cái gì sanh thành người?\n\nCái gì luôn dong ruỗi?\n\nCái gì chịu luân hồi?\n\nCái gì người nương tựa?\n\n—Ái dục sanh thành người,\n\nChính tâm luôn dong ruỗi,\n\nChúng sanh chịu luân hồi,\n\nChính nghiệp, người nương tựa."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.58": {
+    "canonicalRef": "sn1.58",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.58/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:41+00:00",
+    "materializedAt": "2026-09-02T02:41:41+00:00",
+    "contentHash": "0f64da2854dd66e58c264bdb48bb47012e6a432c40eb7c8f2256222ba4c2e1c7",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "VI: Phẩm Già"
+      },
+      {
+        "id": "p3",
+        "text": "1.58. Phi Ðạo"
+      },
+      {
+        "id": "p4",
+        "text": "—Cái gì gọi phi đạo?\n\nCái gì diệt ngày đêm?\n\nCái gì uế Phạm hạnh?\n\nCái gì tắm không nước?\n\n—Tham dục gọi phi đạo,\n\nTuổi tác diệt ngày đêm,\n\nNữ nhân uế Phạm hạnh,\n\nKhiến loài Người hệ lụy,\n\nKhổ hạnh và Phạm hạnh,\n\nLà tắm không cần nước."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.59": {
+    "canonicalRef": "sn1.59",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.59/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:40+00:00",
+    "materializedAt": "2026-09-02T02:41:40+00:00",
+    "contentHash": "2a4a1034b5c7f8a32f77e52b68a93cc319ee53d00dede253da6180591667408a",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "VI: Phẩm Già"
+      },
+      {
+        "id": "p3",
+        "text": "1.59. Người Bạn"
+      },
+      {
+        "id": "p4",
+        "text": "—Cái gì làm người bạn?\n\nCái gì giáo hóa người?\n\nCái gì người ái lạc?\n\nGiải thoát mọi khổ đau?\n\n—Tín thành làm bạn người,\n\nTrí tuệ giáo hóa người,\n\nNgười ái lạc Niết-bàn,\n\nGiải thoát mọi khổ đau."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.6": {
+    "canonicalRef": "sn1.6",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.6/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:03+00:00",
+    "materializedAt": "2026-09-02T02:41:03+00:00",
+    "contentHash": "ec2962412d1b8228f4572c57a5654bc4b8ce2d3d73232e05eeb56f09cd8b159e",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Cây Lau"
+      },
+      {
+        "id": "p3",
+        "text": "1.6. Tỉnh Giác"
+      },
+      {
+        "id": "p4",
+        "text": "… Ðứng một bên, vị Thiên ấy nói lên bài kệ này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p5",
+        "text": "Có bao pháp mê ngủ,\n\nKhi pháp khác tỉnh giác?\n\nCó bao pháp tỉnh giác,\n\nKhi pháp khác mê ngủ?\n\nCó bao nhiêu việc làm\n\nÐưa ta đến trần cấu?\n\nCó bao nhiêu việc làm\n\nKhiến ta được thanh tịnh?\n(Thế Tôn):\nCó năm pháp mê ngủ,\n\nKhi pháp khác tỉnh giác,\n\nCó năm pháp tỉnh giác,\n\nKhi pháp khác mê ngủ.\n\nChính có năm việc làm\n\nÐưa ta đến trần cấu,\n\nChính có năm việc làm\n\nKhiến ta được thanh tịnh."
+      },
+      {
+        "id": "p6",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.60": {
+    "canonicalRef": "sn1.60",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.60/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:40+00:00",
+    "materializedAt": "2026-09-02T02:41:40+00:00",
+    "contentHash": "3d0af0e277120504c170d2a20f8c81f90d29125b24a8b4412f2945371445b194",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "VI: Phẩm Già"
+      },
+      {
+        "id": "p3",
+        "text": "1.60. Người Thi Sĩ"
+      },
+      {
+        "id": "p4",
+        "text": "—Vật gì nhân kệ tụng?\n\nVật gì làm tự cú?\n\nVật gì kệ y cứ?\n\nVật gì kệ an trú?\n\n—Âm vận nhân kệ tụng,\n\nVăn tự làm tự cú,\n\nKệ ý cứ đề danh,\n\nKệ an trú thi nhân."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.61": {
+    "canonicalRef": "sn1.61",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.61/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:41+00:00",
+    "materializedAt": "2026-09-02T02:41:41+00:00",
+    "contentHash": "1712e02b2387835f8ed4279875a0452d51051d7f008fccd94022334540006fb5",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "VII: Phẩm Thắng"
+      },
+      {
+        "id": "p3",
+        "text": "1.61. Danh"
+      },
+      {
+        "id": "p4",
+        "text": "—Vật gì thắng tất cả?\n\nVật gì không số hơn?\n\nVà có một pháp nào,\n\nMọi vật đều tùy thuộc?\n—Danh vượt thắng tất cả,\n\nDanh không số nào hơn,\n\nChính danh là một pháp,\n\nMọi vật đều tùy thuộc."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.62": {
+    "canonicalRef": "sn1.62",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.62/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:41+00:00",
+    "materializedAt": "2026-09-02T02:41:41+00:00",
+    "contentHash": "0cf314768b5d518d6ba618c3b5223f87d1a410a0547cb8fa9cac74b1c949e2a3",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "VII: Phẩm Thắng"
+      },
+      {
+        "id": "p3",
+        "text": "1.62. Tâm"
+      },
+      {
+        "id": "p4",
+        "text": "—Vật gì dắt dẫn đời?\n\nVật gì tự não hại?\n\nVà có một pháp nào,\n\nMọi vật đều tùy thuộc?\n\n—Chính tâm dắt dẫn đời,\n\nChính tâm tự não hại,\n\nChính tâm là một pháp,\n\nMọi vật đều tùy thuộc."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.63": {
+    "canonicalRef": "sn1.63",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.63/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:41+00:00",
+    "materializedAt": "2026-09-02T02:41:41+00:00",
+    "contentHash": "cd6388b31fbc33e0331c5046e3681e247c3102091bdc6c7b492cf4cad9330c78",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "VII: Phẩm Thắng"
+      },
+      {
+        "id": "p3",
+        "text": "1.63. Khát Ái"
+      },
+      {
+        "id": "p4",
+        "text": "—Vật gì dẫn dắt đời?\n\nVật gì tự não hại?\n\nVà có một pháp nào,\n\nMọi vật đều tùy thuộc?\n\n—Chính ái là một đời,\n\nChính ái tự não hại,\n\nChính ái là một pháp,\n\nMọi vật đều tùy thuộc."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.64": {
+    "canonicalRef": "sn1.64",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.64/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:41+00:00",
+    "materializedAt": "2026-09-02T02:41:41+00:00",
+    "contentHash": "8bf01c10b190936b314dd0c18b96a74c4b76a4c97adc00d648127a0f0e372256",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "VII: Phẩm Thắng"
+      },
+      {
+        "id": "p3",
+        "text": "1.64. Kiết Sử"
+      },
+      {
+        "id": "p4",
+        "text": "—Vật gì trói buộc đời?\n\nVật gì dẫn hành đời?\n\nDo đoạn trừ pháp gì,\n\nMới được gọi Niết-bàn?\n\n—Chính hỷ trói buộc đời,\n\nTầm cầu dẫn hành đời,\n\nDo đoạn trừ khát ái,\n\nMới được gọi Niết-bàn."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.65": {
+    "canonicalRef": "sn1.65",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.65/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:42:17+00:00",
+    "materializedAt": "2026-09-02T02:42:17+00:00",
+    "contentHash": "ec60fbf91ae8161385054f90ab74e0facdba08e321f8010ad06fa212b06ca661",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "VII: Phẩm Thắng"
+      },
+      {
+        "id": "p3",
+        "text": "1.65. Triền Phược"
+      },
+      {
+        "id": "p4",
+        "text": "—Vật gì triền phược đời?\n\nVật gì dẫn hành đời?\n\nDo đoạn trừ pháp gì,\n\nMọi triền phược đoạn diệt?\n\n—Chính hỷ triền phược đời,\n\nTầm cầu dẫn hành đời,\n\nDo đoạn trừ khát ái,\n\nMọi triền phược đoạn diệt."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.66": {
+    "canonicalRef": "sn1.66",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.66/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:42:17+00:00",
+    "materializedAt": "2026-09-02T02:42:17+00:00",
+    "contentHash": "7300fffcdddcbfc2ab88ff622576b901aa8d1a3c58b7cec6027fa835cfff483f",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "VII: Phẩm Thắng"
+      },
+      {
+        "id": "p3",
+        "text": "1.66. Bị Áp Ðảo"
+      },
+      {
+        "id": "p4",
+        "text": "—Vật gì áp đảo đời?\n\nVật gì bao phủ đời?\n\nTên gì bắn trúng đời?\n\nBởi gì thường huân tập?\n\n—Sự chết áp đảo đời,\n\nGià nua bao phủ đời,\n\nTên ái bắn trúng đời,\n\nBởi dục, thường huân tập."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.67": {
+    "canonicalRef": "sn1.67",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.67/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:42:16+00:00",
+    "materializedAt": "2026-09-02T02:42:16+00:00",
+    "contentHash": "c70b843c271469803a08a0be314df6b22c86b5e23e95169cb70cbca9e5f202ba",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "VII: Phẩm Thắng"
+      },
+      {
+        "id": "p3",
+        "text": "1.67. Bị Treo Cột"
+      },
+      {
+        "id": "p4",
+        "text": "—Vật gì treo cột đời?\n\nVật gì bao phủ đời?\n\nVật gì đóng kín đời?\n\nTrên gì đời an trú?\n\n—Khát ái treo cột đời,\n\nGià nua bao phủ đời,\n\nSự chết đóng kín đời,\n\nTrên khổ, đời an trú."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.68": {
+    "canonicalRef": "sn1.68",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.68/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:42:09+00:00",
+    "materializedAt": "2026-09-02T02:42:09+00:00",
+    "contentHash": "2d913f2066ff4cfc0eba809eb848bddcc2b6493495f064bc5af7e8f6205cadd7",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "VII: Phẩm Thắng"
+      },
+      {
+        "id": "p3",
+        "text": "1.68. Bị Ðóng Kín"
+      },
+      {
+        "id": "p4",
+        "text": "—Vật gì đóng kín đời?\n\nTrên gì đời an trú?\n\nVật gì treo cột đời?\n\nVật gì bao phủ đời?\n\n—Sự chết đóng kín đời,\n\nTrên khổ, đời an trú,\n\nKhát ái treo cột đời,\n\nGià nua bao phủ đời."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.69": {
+    "canonicalRef": "sn1.69",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.69/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:42:17+00:00",
+    "materializedAt": "2026-09-02T02:42:17+00:00",
+    "contentHash": "a4c7ddf6684def4cbc33d0a1d975e51bf294b41b1d574593f886a9cde5e1a0f5",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "VII: Phẩm Thắng"
+      },
+      {
+        "id": "p3",
+        "text": "1.69. Ước Muốn"
+      },
+      {
+        "id": "p4",
+        "text": "—Vật gì trói buộc đời?\n\nÐiều phục gì được thoát?\n\nVật gì được đoạn trừ,\n\nKhiến mọi phược đoạn tận?\n\n—Ước muốn trói buộc đời,\n\nÐiều phục dục được thoát,\n\nƯớc muốn được đoạn trừ,\n\nMọi triền phược đoạn tận."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.7": {
+    "canonicalRef": "sn1.7",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.7/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:02+00:00",
+    "materializedAt": "2026-09-02T02:41:02+00:00",
+    "contentHash": "531da22774ce61f9c1f70817771509dd29c8a0c70e235409f75f2c53ab5b6b10",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Cây Lau"
+      },
+      {
+        "id": "p3",
+        "text": "1.7. Không Liễu Tri"
+      },
+      {
+        "id": "p4",
+        "text": "… Ðứng một bên, vị Thiên ấy nói lên bài kệ này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p5",
+        "text": "Những ai với các pháp,\n\nKhông liễu tri thấu suốt,\n\nBị hướng dẫn lầm lạc,\n\nVòng quanh các dị giáo.\n\nHọ mê ngủ triền miên,\n\nHọ không có tỉnh giác,\n\nNay thật đã đến thời,\n\nHọ cần phải thức tỉnh.\n(Thế Tôn):\nNhững ai với các pháp,\n\nKhéo liễu tri sáng suốt,\n\nKhông bị dẫn lầm lạc,\n\nVòng quanh các dị giáo,\n\nHọ chứng Chánh đẳng giác.\n\nHọ liễu tri viên mãn,\n\nTrên đường không thăng bằng,\n\nHọ bước thật thăng bằng."
+      },
+      {
+        "id": "p6",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.70": {
+    "canonicalRef": "sn1.70",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.70/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:42:16+00:00",
+    "materializedAt": "2026-09-02T02:42:16+00:00",
+    "contentHash": "800f1aad7d93a55903ad02510f96581b19726e800aad5edc6afccb3565a1b981",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "VII: Phẩm Thắng"
+      },
+      {
+        "id": "p3",
+        "text": "1.70. Ðời (Thế gian)"
+      },
+      {
+        "id": "p4",
+        "text": "—Trên gì thế gian sanh?\n\nTrên gì được giao tiếp?\n\nThế gian chấp trước gì?\n\nTrên gì đời khổ não?\n\n—Trên sáu, thế gian sanh,\n\nTrên sáu, được giao tiếp,\n\nThế gian chấp trước sáu,\n\nTrên sáu, đời khổ não."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.71": {
+    "canonicalRef": "sn1.71",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.71/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:42:16+00:00",
+    "materializedAt": "2026-09-02T02:42:16+00:00",
+    "contentHash": "1ccd341a0ad2fd746bc5fdcf92b8ebfd901ebaee761dbc00a438ae8a7049c695",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "VIII: Phẩm Ðoạn"
+      },
+      {
+        "id": "p3",
+        "text": "1.71. Ðoạn Sát"
+      },
+      {
+        "id": "p4",
+        "text": "Sát vật gì được lạc?\n\nSát vật gì không sầu?\n\nCó một pháp loại gì,\n\nNgài tán đồng sát hại,\n\nTôn giả Gotama?"
+      },
+      {
+        "id": "p5",
+        "text": "(Thế Tôn):"
+      },
+      {
+        "id": "p6",
+        "text": "Sát phẫn nộ được lạc,\n\nSát phẫn nộ không sầu,\n\nPhẫn nộ với độc căn,\n\nVới vị ngọt tối thượng,\n\nPháp ấy, bậc Thánh Hiền,\n\nTán đồng sự sát hại.\n\nSát pháp ấy không sầu,\n\nNày Hiền giả Thiên nhân."
+      },
+      {
+        "id": "p7",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.72": {
+    "canonicalRef": "sn1.72",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.72/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:42:17+00:00",
+    "materializedAt": "2026-09-02T02:42:17+00:00",
+    "contentHash": "a6d299338f10848aff5b92e11ba5114cf1cab14ebc343fc75348b0893a67c89f",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "VIII: Phẩm Ðoạn"
+      },
+      {
+        "id": "p3",
+        "text": "1.72. Cỗ Xe"
+      },
+      {
+        "id": "p4",
+        "text": "—Cỗ xe hiện tướng gì?\n\nNgọn lửa hiện tướng gì?\n\nVương quốc hiện tướng gì?\n\nPhụ nữ hiện tướng gì?\n\n—Cờ hiện tướng cỗ xe,\n\nKhói hiện tướng ngọn lửa,\n\nVua hiện tướng vương quốc,\n\nChồng hiện tướng nữ nhân."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.73": {
+    "canonicalRef": "sn1.73",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.73/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:42:17+00:00",
+    "materializedAt": "2026-09-02T02:42:17+00:00",
+    "contentHash": "b2fa69e031b84156d68c126063bf7bbc37de65e39e3f71a5e52f652dcb8eb755",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "VIII: Phẩm Ðoạn"
+      },
+      {
+        "id": "p3",
+        "text": "1.73. Tài Sản"
+      },
+      {
+        "id": "p4",
+        "text": "—Tài sản gì ở đời,\n\nÐối người là tối thượng?\n\nSự gì khéo tu trì,\n\nÐưa đến chơn an lạc?\n\nVật gì ngọt tối thượng,\n\nTrong tất cả vị ngọt?\n\nSống cuộc sống thế nào,\n\nÐược gọi sống tối thượng?\n\n—Lòng tin ở đời này,\n\nLà tài sản tối thượng.\n\nChánh pháp khéo tu trì,\n\nÐưa đến chơn an lạc.\n\nSự thật ngọt tối thượng,\n\nTrong tất cả vị ngọt.\n\nSống cuộc sống trí tuệ,\n\nÐược gọi sống tối thượng."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.74": {
+    "canonicalRef": "sn1.74",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.74/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:42:17+00:00",
+    "materializedAt": "2026-09-02T02:42:17+00:00",
+    "contentHash": "dd8877c98782286d5392331ac8a70b9eed9f62bb76d63945d441032cc360d02a",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "VIII: Phẩm Ðoạn"
+      },
+      {
+        "id": "p3",
+        "text": "1.74. Mưa"
+      },
+      {
+        "id": "p4",
+        "text": "Vật gì được mọc lên,\n\nLà mọc lên tối thượng?\n\nVật gì được rơi xuống,\n\nLà rơi xuống tối thượng?\n\nVật gì thường bộ hành?\n\nVật gì thuyết tối thượng?\n(Một Thiên nhân):\nHột giống được mọc lên,\n\nLà mọc lên tối thượng.\n\nCơn mưa được rơi xuống,\n\nLà rơi xuống tối thượng.\n\nCon bò thường bộ hành,\n\nCon trai thuyết tối thượng.\n(Thế Tôn):\nHuệ minh được mọc lên,\n\nLà mọc lên tối thượng.\n\nVô minh được rơi xuống,\n\nLà rơi xuống tối thượng.\n\nTăng-già thường bộ hành,\n\nÐức Phật thuyết tối thượng."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.75": {
+    "canonicalRef": "sn1.75",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.75/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:42:08+00:00",
+    "materializedAt": "2026-09-02T02:42:08+00:00",
+    "contentHash": "8a1f1cdbf8856d0bdc95ac7720860a67e1c9db5d7ef5818230c4d65dd1183be9",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "VIII: Phẩm Ðoạn"
+      },
+      {
+        "id": "p3",
+        "text": "1.75. Khủng Bố"
+      },
+      {
+        "id": "p4",
+        "text": "Vì sao ở đời này,\n\nRất nhiều người sợ hãi,\n\nDầu con đường đề cập,\n\nDưới hình thức sai biệt?\n\nCon hỏi Gotama,\n\nBậc trí tuệ sáng suốt,\n\nPhải an trú chỗ nào,\n\nKhỏi sợ hãi đời sau?\n(Thế Tôn):\nHãy chánh trú lời, ý,\n\nThân nghiệp chớ làm ác.\n\nNếu an trú trong nhà,\n\nVới tài sản dồi dào,\n\nHãy tín tâm, nhu hòa,\n\nChia tài sản, hòa nhã.\n\nAn trú bốn pháp này,\n\nKhông sợ hãi đời sau."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.76": {
+    "canonicalRef": "sn1.76",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.76/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:42:09+00:00",
+    "materializedAt": "2026-09-02T02:42:09+00:00",
+    "contentHash": "bfc109f8db012eaa5957965e99337575b9d6927424c01cb632e36e3693df5227",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "VIII: Phẩm Ðoạn"
+      },
+      {
+        "id": "p3",
+        "text": "1.76. Không Già"
+      },
+      {
+        "id": "p4",
+        "text": "—Ai già, ai không già?\n\nThế nào gọi phi đạo?\n\nVật gì chướng ngại pháp?\n\nVật gì đêm ngày diệt?\n\nVật gì uế Phạm hạnh?\n\nVật gì tắm không nước?\n\nÐời bao nhiêu lỗ trống,\n\nTrên ấy, tâm không trú?\n\nCon đến hỏi Thế Tôn,\n\nMong biết câu trả lời!\n\n—Sắc hữu tình bị già,\n\nDanh tánh lại không già,\n\nTham dục gọi phi đạo,\n\nTham ái, chướng ngại pháp.\n\nTuổi tác đêm, ngày diệt,\n\nNữ nhân uế Phạm hạnh,\n\nÐắm trước trong uế này,\n\nLà toàn thể chúng sanh.\n\nKhổ hạnh và Phạm hạnh,\n\nLà tắm không cần nước,\n\nSáu lỗ trống ở đời,\n\nTrên ấy, tâm không trú,\n\nBiếng nhác và phóng dật,\n\nUể oải, không tự chế,\n\nThụy miên và hôn trầm,\n\nCả sáu lỗ trống này,\n\nCần ly khai tất cả."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.77": {
+    "canonicalRef": "sn1.77",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.77/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:42:17+00:00",
+    "materializedAt": "2026-09-02T02:42:17+00:00",
+    "contentHash": "f23d91bdd5fa216bd6f4d4f2699dd5a51417d87a5cee829557654866ae2fac48",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "VIII: Phẩm Ðoạn"
+      },
+      {
+        "id": "p3",
+        "text": "1.77. Tôn Chủ"
+      },
+      {
+        "id": "p4",
+        "text": "—Vật gì chủ ở đời?\n\nHàng hóa gì tối thượng?\n\nVật gì làm rỉ sét,\n\nLưỡi kiếm ở trên đời?\n\nVật gì ở đời này,\n\nTác thành cõi địa ngục?\n\nAi đem đi, bị chận?\n\nAi đem đi, được ưa?\n\nAi thường xuyên đi lại,\n\nÐược kẻ trí hoan hỷ?\n\n—Thế lực chủ ở đời,\n\nNữ nhân, vật tối thượng.\n\nPhẫn nộ làm rỉ sét,\n\nLưỡi kiếm ở trên đời.\n\nKẻ trộm ở đời này,\n\nTác thành cõi địa ngục.\n\nTrộm đem đi, bị chận,\n\nSa-môn đem, được ưa,\n\nSa-môn thường đi lại,\n\nÐược kẻ trí hoan hỷ."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.78": {
+    "canonicalRef": "sn1.78",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.78/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:42:08+00:00",
+    "materializedAt": "2026-09-02T02:42:08+00:00",
+    "contentHash": "7c766c85f47e5ac0152b1ccf2b485108e2b2f494761c627e4008de8ebb2bcfa6",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "VIII: Phẩm Ðoạn"
+      },
+      {
+        "id": "p3",
+        "text": "1.78. Dục"
+      },
+      {
+        "id": "p4",
+        "text": "—Nghĩ lợi, không cho ai,\n\nCon người từ bỏ gì?\n\nThiện gì nên thốt ra?\n\nÁc gì nên ngăn chận?\n\n—Con người không cho mình,\n\nKhông nên từ bỏ mình,\n\nLời thiện, nên thốt ra,\n\nLời ác, nên ngăn chận."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.79": {
+    "canonicalRef": "sn1.79",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.79/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:42:09+00:00",
+    "materializedAt": "2026-09-02T02:42:09+00:00",
+    "contentHash": "269737f05d3aeb931afc29ca77884d17cc7e8d595b7f76d178e503288da4142f",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "VIII: Phẩm Ðoạn"
+      },
+      {
+        "id": "p3",
+        "text": "1.79. Lương Thực"
+      },
+      {
+        "id": "p4",
+        "text": "—Cái gì cột lương thực?\n\nCái gì hút tài sản?\n\nCái gì lôi cuốn người?\n\nỞ đời, khó bỏ gì?\n\nCái gì buộc phàm nhân,\n\nNhư chim bị bẫy sập?\n\n—Lòng tin cột lương thực,\n\nThần tài hút tài sản.\n\nLòng muốn lôi cuốn người,\n\nỞ đời, muốn (icchà) khó bỏ.\n\nHam muốn buộc phàm nhân,\n\nNhư chim bị bẫy sập."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.8": {
+    "canonicalRef": "sn1.8",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.8/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:03+00:00",
+    "materializedAt": "2026-09-02T02:41:03+00:00",
+    "contentHash": "d48276742373633bf4b48ba60e37c354e34f9a7e8eadcfd9629fc929af7b5c4e",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Cây Lau"
+      },
+      {
+        "id": "p3",
+        "text": "1.8. Mê Loạn"
+      },
+      {
+        "id": "p4",
+        "text": "… Ðứng một bên, vị Thiên ấy nói lên bài kệ này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p5",
+        "text": "Những ai đối các pháp,\n\nQuá đắm say mê loạn,\n\nBị hướng dẫn lầm lạc,\n\nVòng quanh các dị giáo,\n\nHọ mê ngủ triền miên,\n\nHọ không có tỉnh giác,\n\nNay thật đã đến thời,\n\nHọ cần phải thức tỉnh.\n(Thế Tôn):\nNhững ai đối các pháp,\n\nKhông đắm say mê loạn,\n\nKhông bị dẫn lầm lạc,\n\nVòng quanh các dị giáo,\n\nHọ chứng Chánh đẳng giác.\n\nHọ liễu tri viên mãn,\n\nTrên đường không thăng bằng,\n\nHọ bước thật thăng bằng."
+      },
+      {
+        "id": "p6",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.80": {
+    "canonicalRef": "sn1.80",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.80/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:42:17+00:00",
+    "materializedAt": "2026-09-02T02:42:17+00:00",
+    "contentHash": "895cfb4fbf60befbaa598fc249b04e59cd2856360dba094c7301e7bcf968961e",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "VIII: Phẩm Ðoạn"
+      },
+      {
+        "id": "p3",
+        "text": "1.80. Chớp"
+      },
+      {
+        "id": "p4",
+        "text": "—Vật gì chiếu sáng đời?\n\nVật gì thức tỉnh đời?\n\nAi cọng nghiệp với người?\n\nCử chỉ chúng là gì?\n\nAi nuôi kẻ nhác, siêng,\n\nNhư mẹ nuôi con cái?\n\nHữu tình gì trì mạng,\n\nY cứ vào địa đại?\n\n—Trí tuệ chiếu sáng đời,\n\nChánh niệm thức tỉnh đời,\n\nBò cọng nghiệp với người,\n\nÐường cày là con đường.\n\nMưa nuôi kẻ nhác, siêng,\n\nNhư mẹ nuôi con cái.\n\nMưa trì mạng chúng sanh,\n\nY cứ vào địa đại."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.81": {
+    "canonicalRef": "sn1.81",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.81/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:42:16+00:00",
+    "materializedAt": "2026-09-02T02:42:16+00:00",
+    "contentHash": "ae4dff98c2c8e903748952a45eb55da8c607386a0dbe2b439700fcd0ee4e0afd",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "VIII: Phẩm Ðoạn"
+      },
+      {
+        "id": "p3",
+        "text": "1.81. Không Tranh Luận"
+      },
+      {
+        "id": "p4",
+        "text": "—Ai không tranh luận đời?\n\nAi sống không hoại diệt?\n\nAi rõ ham muốn đời?\n\nAi thường xuyên tự tại?\n\nAi an trú như vậy,\n\nCha, mẹ, anh đảnh lễ?\n\nAi dầu có hạ sanh,\n\nÐược Sát-lỵ tôn kính?\n\n—Sa-môn không tranh đời,\n\nSa-môn sống không diệt,\n\nSa-môn rõ dục vọng,\n\nSa-môn thường tự tại,\n\nSa-môn trú như vậy,\n\nCha, mẹ, anh kính lễ.\n\nSa-môn dầu hạ sanh,\n\nÐược Sát-lỵ tôn kính."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn1.9": {
+    "canonicalRef": "sn1.9",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn1.9/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T02:41:01+00:00",
+    "materializedAt": "2026-09-02T02:41:01+00:00",
+    "contentHash": "981c69062d6ab11e7a007ce685b2e14c6e313944a58dde01ffe070c04ab9e384",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 1: Tương Ưng Chư Thiên"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Cây Lau"
+      },
+      {
+        "id": "p3",
+        "text": "1.9. Mong Muốn Kiêu Mạn"
+      },
+      {
+        "id": "p4",
+        "text": "… Ðứng một bên, vị Thiên ấy nói lên bài kệ này trước mặt Thế Tôn:"
+      },
+      {
+        "id": "p5",
+        "text": "Ðối vị ưa kiêu mạn,\n\nỞ đây không điều phục,\n\nKhông trí tuệ sáng suốt,\n\nKhông định tĩnh nhiếp tâm,\n\nÐộc thân trú rừng núi,\n\nSống với tâm phóng dật,\n\nVị ấy không vượt khỏi,\n\nSự chi phối ma lực.\n(Thế Tôn):\nTừ bỏ mọi kiêu mạn,\n\nTâm tư khéo nhiếp định,\n\nVới tâm khéo tư sát,\n\nGiải thoát mọi phiền trược,\n\nÐộc thân trú rừng núi (giới),\n\nVới tâm không phóng dật,\n\nVị ấy vượt thoát khỏi,\n\nSự chi phối ma lực."
+      },
+      {
+        "id": "p6",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  }
+}

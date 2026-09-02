@@ -1,11 +1,11 @@
 import type {Locale} from '@/lib/i18n';
-import dnVi from '@/data/content/dn.vi.json';
+import {materializedVi} from '@/lib/materialized-content.generated';
 
 export type FullTextSegment={id:string;text:string};
 export type FullTextResult={language:string;author:string;authorUid:string;sourceUrl:string;segments:FullTextSegment[]};
 
 type MaterializedText=FullTextResult&{license?:string;contentHash?:string;contentVersion?:string};
-const materializedDnVi=dnVi as Record<string,MaterializedText>;
+const materializedCorpusVi=materializedVi as Record<string,MaterializedText>;
 const localeMap:Partial<Record<Locale,string>>={ja:'jpn'};
 const preferredAuthors:Partial<Record<Locale,string>>={vi:'minh_chau',en:'sujato'};
 const apiBase='https://suttacentral.net/api';
@@ -42,8 +42,8 @@ function extractSegments(data:any):FullTextSegment[]{
 }
 
 export async function getSuttaFullText(uid:string,locale:Locale):Promise<FullTextResult|null>{
-  if(locale==='vi'&&materializedDnVi[uid]?.segments?.length){
-    const x=materializedDnVi[uid];
+  if(locale==='vi'&&materializedCorpusVi[uid]?.segments?.length){
+    const x=materializedCorpusVi[uid];
     return {language:x.language,author:x.author,authorUid:x.authorUid,sourceUrl:x.sourceUrl,segments:x.segments};
   }
   const language=localeMap[locale]||locale;

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "lastVerifiedAt": "2026-09-02T02:43:42+00:00",
+  "collections": [
+    {
+      "collection": "DN",
+      "canonicalCount": 34,
+      "catalogCount": 34,
+      "vietnameseFullTextCount": 34,
+      "missingVietnameseCount": 0,
+      "audioCount": 34,
+      "source": "SuttaCentral canonical tree + repository materialized corpus",
+      "lastVerifiedAt": "2026-09-02T02:43:42+00:00",
+      "status": "complete"
+    },
+    {
+      "collection": "MN",
+      "canonicalCount": 152,
+      "catalogCount": 152,
+      "vietnameseFullTextCount": 0,
+      "missingVietnameseCount": 152,
+      "audioCount": 152,
+      "source": "SuttaCentral canonical tree + repository materialized corpus",
+      "lastVerifiedAt": "2026-09-02T02:43:42+00:00",
+      "status": "in_progress"
+    },
+    {
+      "collection": "SN",
+      "canonicalCount": 1819,
+      "catalogCount": 1819,
+      "vietnameseFullTextCount": 120,
+      "missingVietnameseCount": 1699,
+      "audioCount": 0,
+      "source": "SuttaCentral canonical tree + repository materialized corpus",
+      "lastVerifiedAt": "2026-09-02T02:43:42+00:00",
+      "status": "in_progress"
+    },
+    {
+      "collection": "AN",
+      "canonicalCount": 1408,
+      "catalogCount": 2,
+      "vietnameseFullTextCount": 0,
+      "missingVietnameseCount": 1408,
+      "audioCount": 0,
+      "source": "SuttaCentral canonical tree + repository materialized corpus",
+      "lastVerifiedAt": "2026-09-02T02:43:42+00:00",
+      "status": "in_progress"
+    },
+    {
+      "collection": "KN",
+      "canonicalCount": 2,
+      "catalogCount": 2,
+      "vietnameseFullTextCount": 0,
+      "missingVietnameseCount": 2,
+      "audioCount": 0,
+      "source": "SuttaCentral canonical tree + repository materialized corpus",
+      "lastVerifiedAt": "2026-09-02T02:43:42+00:00",
+      "status": "in_progress"
+    }
+  ]
+}
