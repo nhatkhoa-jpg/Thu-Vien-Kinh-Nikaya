@@ -149,3 +149,5 @@ jobs:
           git add data/catalog/discovery-sn.json data/catalog/discovery-sn-report.json
           git commit -m 'data: discover authoritative SN canonical refs'
           git push origin HEAD:feature/sn-canonical-discovery
+
+# trigger discovery run
