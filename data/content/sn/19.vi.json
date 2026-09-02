@@ -114,6 +114,428 @@
       }
     ]
   },
+  "sn19.10": {
+    "canonicalRef": "sn19.10",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn19.10/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T07:24:57+00:00",
+    "materializedAt": "2026-09-02T07:24:57+00:00",
+    "contentHash": "7c9ef1485ccf0774981572c912d0d4afc1b3b859b709a235b325b4f111cf1da2",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 19: Tương Ưng Lakkhaṇa"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Thứ Nhất"
+      },
+      {
+        "id": "p3",
+        "text": "19.10. Người Phán Quan Tham Nhũng Với Hòn Dái Lớn"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Ở đây, này các Tỷ-kheo, khi tôi từ núi Gijjhakùta bước xuống, tôi thấy một người với hòn dái đang đi giữa hư không."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Khi đang đi, người ấy mang hòn dái trên vai mà đi. Khi ngồi, người ấy ngồi trên những hòn dái ấy."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Và các con chim kên kên, chim quạ, chim ưng đuổi theo người ấy để cắn mổ, cắn xé, và người ấy kêu lên những tiếng kêu đau đớn."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Chúng sanh ấy, này các Tỷ-kheo, là một phán quan ở Rājagaha này."
+      },
+      {
+        "id": "p8",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn19.11": {
+    "canonicalRef": "sn19.11",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn19.11/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T07:24:56+00:00",
+    "materializedAt": "2026-09-02T07:24:56+00:00",
+    "contentHash": "ad0226979e40ee0780873a8484e95dd77d82455d03bff62aa303f234f9ac506b",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 19: Tương Ưng Lakkhaṇa"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Thứ Hai"
+      },
+      {
+        "id": "p3",
+        "text": "19.11. Kẻ Thông Dâm Bị Chìm Trong Hố"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Như vầy tôi nghe."
+      },
+      {
+        "id": "p5",
+        "text": "Một thời, Thế Tôn ở Rājagaha (Vương Xá), Veluvana (Trúc Lâm). …, …"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 2 —Ở đây, này Hiền giả, khi tôi từ núi Gijjhakùta bước xuống, tôi thấy một người với đầu chìm trong hố phân."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 3 Chúng sanh ấy, này các Tỷ-kheo, là một người thông dâm ở tại Rājagaha này."
+      },
+      {
+        "id": "p8",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn19.12": {
+    "canonicalRef": "sn19.12",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn19.12/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T07:24:57+00:00",
+    "materializedAt": "2026-09-02T07:24:57+00:00",
+    "contentHash": "d3fda04f06b0a3c44d3bb9b927a3eda6ea1706be8fcc5c65ff2e946bc49100f1",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 19: Tương Ưng Lakkhaṇa"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Thứ Hai"
+      },
+      {
+        "id": "p3",
+        "text": "19.12. Tà Ác Là Bà La Môn Ăn Phân"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Ở đây, này Hiền giả, khi tôi từ núi Gijjhakùta bước xuống, tôi thấy một người chìm trong hố phân, ăn phân bằng hai tay."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Chúng sanh ấy, này các Tỷ-kheo, là một Bà-la-môn tại Ràjgaha này. Khi bậc Chánh Ðẳng Giác Kassapa đang giảng dạy, người ấy mời chúng Tỷ-kheo dùng cơm. Rồi người ấy lấy một cái gáo đựng đầy phân và nói: “Ôi mong các Tôn giả ăn cho tận kỳ thỏa thích và mang về!”"
+      },
+      {
+        "id": "p6",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn19.13": {
+    "canonicalRef": "sn19.13",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn19.13/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T07:24:56+00:00",
+    "materializedAt": "2026-09-02T07:24:56+00:00",
+    "contentHash": "d32f6e9d0a5568ef84e9191e829220f9759156d60ee79d28931455dc22383010",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 19: Tương Ưng Lakkhaṇa"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Thứ Hai"
+      },
+      {
+        "id": "p3",
+        "text": "19.13. Gian Phụ bị Lột Da"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Ở đây, này Hiền giả, khi tôi từ núi Gijjhakùta bước xuống, tôi thấy một phụ nữ bị lột da đang đi giữa hư không. Những con chim kên, những con quạ, những con chim ưng đuổi theo để cắn mổ, rứt xé người ấy và người ấy kêu lên những tiếng kêu đau đớn."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Người phụ nữ ấy, này các Tỷ-kheo, là một người gian phụ ở Rājagaha này."
+      },
+      {
+        "id": "p6",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn19.14": {
+    "canonicalRef": "sn19.14",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn19.14/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T07:24:56+00:00",
+    "materializedAt": "2026-09-02T07:24:56+00:00",
+    "contentHash": "721d3977eed6e21886d65336b71028435b3381d7e74e3dffdc229bd5c6f95ad1",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 19: Tương Ưng Lakkhaṇa"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Thứ Hai"
+      },
+      {
+        "id": "p3",
+        "text": "19.14. Người Phụ Nữ Xấu Xí Bói Toán"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Ở đây, này Hiền giả, khi tôi từ núi Gijjhakùta bước xuống, tôi thấy một người phụ nữ hôi hám, xấu xí đang đi trên hư không. Các con chim kên, các con quạ, các con chim ưng đuổi theo để cắn mổ, rứt xé người ấy và người ấy kêu lên những tiếng kêu đau đớn."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Người phụ nữ ấy, này các Tỷ-kheo, là một người bói toán ở chính Rājagaha này."
+      },
+      {
+        "id": "p6",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn19.15": {
+    "canonicalRef": "sn19.15",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn19.15/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T07:24:57+00:00",
+    "materializedAt": "2026-09-02T07:24:57+00:00",
+    "contentHash": "2a1319ff606b49807031696914a6a017a9afaad3a4221eb82e61f6bb3e71182b",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 19: Tương Ưng Lakkhaṇa"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Thứ Hai"
+      },
+      {
+        "id": "p3",
+        "text": "19.15. Người Ðàn Bà Khô Héo Ðã Rải Than Ðỏ trên Một Người Ðàn Bà"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Ở đây, này Hiền giả, khi tôi từ núi Gijjhakùta bước xuống, tôi thấy một người đàn bà cằn cỗi, khô héo, dính đầy than mồ hóng, đang đi trên hư không … Người ấy kêu lên những tiếng kêu đau đớn."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Người đàn bà ấy, này các Tỷ-kheo, là đệ nhất phu nhân của vua xứ Kalinga. Bà ta vì ghen tức nên đã đổ lò than hồng lên trên một vương nữ khác."
+      },
+      {
+        "id": "p6",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn19.16": {
+    "canonicalRef": "sn19.16",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn19.16/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T07:24:56+00:00",
+    "materializedAt": "2026-09-02T07:24:56+00:00",
+    "contentHash": "4441afa49dc639d3ade01c2b5aec74335a216239c11568e5ace9e5fb81134fc1",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 19: Tương Ưng Lakkhaṇa"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Thứ Hai"
+      },
+      {
+        "id": "p3",
+        "text": "19.16. Kẻ Trộm Cướp Ðứt Ðầu"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Ở đây, này Hiền giả, khi tôi từ núi Gujjhakùta bước xuống, tôi thấy một cái thân không đầu đi giữa hư không. Con mắt và miệng thời ở trên ngực."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Các con chim kên, các con quạ, các con chim ưng đuổi theo để cắn mổ, rứt xé người ấy và người ấy kêu lên những tiếng kêu đau đớn."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Chúng sanh ấy, này các Tỷ-kheo, là một người ăn cướp tên là Hàrika ở tại Rājagaha."
+      },
+      {
+        "id": "p7",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn19.17": {
+    "canonicalRef": "sn19.17",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn19.17/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T07:24:57+00:00",
+    "materializedAt": "2026-09-02T07:24:57+00:00",
+    "contentHash": "a16d9b4a176d77ea1d6f2bf6fd0616c7b71d7ebfc6c94e37217eabdf3939a10f",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 19: Tương Ưng Lakkhaṇa"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Thứ Hai"
+      },
+      {
+        "id": "p3",
+        "text": "19.17. Tỷ Kheo"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Ở đây, này Hiền giả, khi tôi từ núi Gijjhakùta bước xuống, tôi thấy một Tỷ-kheo đi giữa hư không."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Y tăng-già-lê (thượng y) của vị ấy bị cháy đỏ, cháy đỏ rực, cháy đỏ ngọn. Cái bát cũng bị cháy đỏ, cháy đỏ rực, cháy đỏ ngọn. Cái nịt cũng bị cháy đỏ, cháy đỏ rực, cháy đỏ ngọn. Thân cũng bị cháy đỏ, cháy đỏ rực, cháy đỏ ngọn. Và vị ấy thốt lên những tiếng kêu đau đớn."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Tỷ-kheo ấy, này các Tỷ-kheo, là một ác Tỷ-kheo trong thời bậc Chánh Ðẳng Giác Kassapa thuyết pháp."
+      },
+      {
+        "id": "p7",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn19.18": {
+    "canonicalRef": "sn19.18",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn19.18/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T07:24:57+00:00",
+    "materializedAt": "2026-09-02T07:24:57+00:00",
+    "contentHash": "67496a98a2c6c44900e01aa5614fbbf1690518c6af4c77cbefa499159e4d6697",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 19: Tương Ưng Lakkhaṇa"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Thứ Hai"
+      },
+      {
+        "id": "p3",
+        "text": "19.18. Tỷ Kheo Ni"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 … tôi thấy một Tỷ-kheo-ni đi giữa hư không."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Y tăng-già-lê của vị ấy bị cháy đỏ."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 … là một ác Tỷ-kheo-ni …"
+      },
+      {
+        "id": "p7",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn19.19": {
+    "canonicalRef": "sn19.19",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn19.19/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T07:24:57+00:00",
+    "materializedAt": "2026-09-02T07:24:57+00:00",
+    "contentHash": "3eb1067a116ac26704cce17a06f4db49aaa9aaf0cfa1831e564b1046c508ca02",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 19: Tương Ưng Lakkhaṇa"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Thứ Hai"
+      },
+      {
+        "id": "p3",
+        "text": "19.19. Học Nữ"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 … tôi thấy một học nữ đi giữa hư không."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Y tăng-già-lê của vị ấy bị cháy …"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 … là một ác học nữ …"
+      },
+      {
+        "id": "p7",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
   "sn19.2": {
     "canonicalRef": "sn19.2",
     "collection": "SN",
@@ -153,6 +575,104 @@
       },
       {
         "id": "p7",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn19.20": {
+    "canonicalRef": "sn19.20",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn19.20/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T07:24:57+00:00",
+    "materializedAt": "2026-09-02T07:24:57+00:00",
+    "contentHash": "75db159ba239da2d76db45e9204fa1dc82a13607bf8627da814d126610c3bf3e",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 19: Tương Ưng Lakkhaṇa"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Thứ Hai"
+      },
+      {
+        "id": "p3",
+        "text": "19.20. Sa Di"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 … tôi thấy một Sa-di đi giữa hư không …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2-3. Y Tăng-già-lê của vị ấy bị cháy … là một ác Sa-di."
+      },
+      {
+        "id": "p6",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn19.21": {
+    "canonicalRef": "sn19.21",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn19.21/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T07:24:57+00:00",
+    "materializedAt": "2026-09-02T07:24:57+00:00",
+    "contentHash": "6b6e335d9070da1b1c5e3834355bd9e1b183e72d93e932d2ebdb7d7f647ed2d7",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 19: Tương Ưng Lakkhaṇa"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Thứ Hai"
+      },
+      {
+        "id": "p3",
+        "text": "19.21. Sa Di Ni"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Ở đây, này Hiền giả, khi tôi từ núi Gijjhakùta bước xuống, tôi thấy một Sa-di-ni đi giữa hư không."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Y tăng-già-lê (sanghàti) của vị này bị cháy đỏ, cháy đỏ rực, cháy đỏ ngọn. Bình bát cũng bị cháy đỏ, cháy đỏ rực, cháy đỏ ngọn. Cái nịt cũng bị cháy đỏ, cháy đỏ rực, cháy đỏ ngọn. Thân cũng bị cháy đỏ, cháy đỏ rực, cháy đỏ ngọn. Vị ấy thốt lên những tiếng kêu đau đớn."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Này Hiền giả, tôi suy nghĩ như sau: “Thật vi diệu thay, thật hy hữu thay! Một kẻ có tên như vậy lại trở thành một chúng sanh như vậy. Một kẻ có tên như vậy trở thành một Dạ-xoa như vậy. Một kẻ có tên như vậy lại trở thành được một tự ngã như vậy”."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Rồi Thế Tôn gọi các Tỷ-kheo:"
+      },
+      {
+        "id": "p8",
+        "text": "—Sống với nhau như thực nhãn, này các Tỷ-kheo, là các đệ tử. Sống với nhau như thực trí, này các Tỷ-kheo, là các đệ tử. Vì rằng, một đệ tử sẽ biết, hay sẽ thấy, hay sẽ chứng thực như vậy."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 5 Xưa kia, này các Tỷ-kheo, Ta cũng thấy Sa-di-ni ấy, nhưng Ta không có nói. Nếu Ta có nói, các người khác cũng không tin Ta. Và những ai không tin Ta, những người ấy sẽ bị bất hạnh, đau khổ lâu dài."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 6 Vị Sa-di-ni ấy, này các Tỷ-kheo, là một ác Sa-di-ni trong thời bậc Chánh Ðẳng Giác Kassapa thuyết pháp. Do nghiệp của người đó thuần thục, sau khi bị nung nấu trong địa ngục nhiều năm, nhiều trăm năm, nhiều ngàn năm, nhiều trăm ngàn năm, và với quả thuần thục còn lại, người đó cảm thọ một tự ngã như vậy."
+      },
+      {
+        "id": "p11",
         "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
       }
     ]
@@ -270,6 +790,166 @@
       },
       {
         "id": "p6",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn19.6": {
+    "canonicalRef": "sn19.6",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn19.6/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T07:24:57+00:00",
+    "materializedAt": "2026-09-02T07:24:57+00:00",
+    "contentHash": "23492969e92d37dfc1bf3447abbafac0e18424133034addf59abf409b96a5e63",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 19: Tương Ưng Lakkhaṇa"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Thứ Nhất"
+      },
+      {
+        "id": "p3",
+        "text": "19.6. Người Săn Thú Với Cây Lao"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Ở đây, này Hiền giả, khi tôi từ núi Gijjhakùta bước xuống, tôi thấy một người với lông bằng các cây lao đang đi trên hư không. Những cây lao ấy tiếp tục đứng dựng lên và rơi xuống trên thân người ấy, và người ấy kêu lên những tiếng kêu đau đớn."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Chúng sanh ấy, này các Tỷ-kheo, là một người thợ săn thú ở tại Rājagaha này."
+      },
+      {
+        "id": "p6",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn19.7": {
+    "canonicalRef": "sn19.7",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn19.7/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T07:24:56+00:00",
+    "materializedAt": "2026-09-02T07:24:56+00:00",
+    "contentHash": "1fde75eae2c361363f1f3a3bcce97eb7f7e43d468e034ccbe11c6b7f0cc87892",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 19: Tương Ưng Lakkhaṇa"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Thứ Nhất"
+      },
+      {
+        "id": "p3",
+        "text": "19.7. Người Tra Tấn Với Mũi Tên."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Ở đây, này Hiền giả, khi tôi từ núi Gujjhakùta bước xuống, tôi thấy một người với lông bằng các mũi tên, đang đi giữa hư không. Những mũi tên ấy tiếp tục đứng dựng lên và rơi xuống trên thân người ấy, và người ấy kêu lên những tiếng kêu đau đớn."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Chúng sanh ấy, này các Tỷ-kheo, là một người tra tấn ở tại Rājagaha này."
+      },
+      {
+        "id": "p6",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn19.8": {
+    "canonicalRef": "sn19.8",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn19.8/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T07:24:56+00:00",
+    "materializedAt": "2026-09-02T07:24:56+00:00",
+    "contentHash": "9805c8e9bc8774c16b33559063c9f3d4b7d7c06d07bd17c13368ea181942b104",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 19: Tương Ưng Lakkhaṇa"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Thứ Nhất"
+      },
+      {
+        "id": "p3",
+        "text": "19.8. Người Ðánh Xe Với Các Cây Kim"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Ở đây, này Hiền giả, khi tôi từ núi Gijjhakùta bước xuống, tôi thấy một người với lông bằng mũi kim đang đi giữa hư không …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Chúng sanh ấy, này các Tỷ-kheo, là một người điều phục các loài thú (xin đọc Sùto thế cho Sùcako của nguyên bản)."
+      },
+      {
+        "id": "p6",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn19.9": {
+    "canonicalRef": "sn19.9",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn19.9/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T07:24:56+00:00",
+    "materializedAt": "2026-09-02T07:24:56+00:00",
+    "contentHash": "d7b7beaa9a113b983b1ea890fdf96ac92a26000f887fd8a0ce3c9a6e743606ba",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 19: Tương Ưng Lakkhaṇa"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Thứ Nhất"
+      },
+      {
+        "id": "p3",
+        "text": "19.9. Người Do Thám"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Ở đây, thưa Hiền giả, khi tôi từ núi Gijjhakùta bước xuống, tôi thấy một người với lông bằng mũi tên đang đi giữa hư không."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Các mũi tên ấy đâm vào đầu và ra khỏi miệng người ấy. Chúng đâm vào miệng và ra khỏi ngực người ấy, chúng đâm vào ngực và ra khỏi bụng người ấy, chúng đâm vào bụng và ra khỏi bắp vế của người ấy, chúng đâm vào bắp vế và ra khỏi cổ chân của người ấy, chúng đâm vào cổ chân và ra khỏi bàn chân của người ấy và người ấy kêu lên những tiếng kêu đau đớn."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Chúng sanh ấy, này các Tỷ-kheo, là một gián điệp ở tại Rājagaha này."
+      },
+      {
+        "id": "p7",
         "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
       }
     ]

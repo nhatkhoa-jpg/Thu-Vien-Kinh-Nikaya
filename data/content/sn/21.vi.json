@@ -1,0 +1,926 @@
+{
+  "sn21.1": {
+    "canonicalRef": "sn21.1",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn21.1/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T07:24:58+00:00",
+    "materializedAt": "2026-09-02T07:24:58+00:00",
+    "contentHash": "da7a826ae39de680d92c27d190687c37d82da273c391d40196b89bd99b447ac9",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 21: Tương Ưng Tỷ Kheo"
+      },
+      {
+        "id": "p2",
+        "text": "21.1. Kolita"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Như vầy tôi nghe."
+      },
+      {
+        "id": "p4",
+        "text": "Một thời Thế Tôn ở Sāvatthi, Jetavana, tại vườn ông Anāthapiṇḍika."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Tại đấy, Tôn giả Mahà Moggallāna (Ðại Mục-kiền-liên) gọi các Tỷ-kheo:"
+      },
+      {
+        "id": "p6",
+        "text": "—Này các Hiền giả Tỷ-kheo."
+      },
+      {
+        "id": "p7",
+        "text": "—Thưa vâng, Hiền giả."
+      },
+      {
+        "id": "p8",
+        "text": "Các Tỷ-kheo ấy vâng đáp Tôn giả Mahà Moggallāna."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 3 Tôn giả Mahà Moggallāna nói:"
+      },
+      {
+        "id": "p10",
+        "text": "—Ở đây, này Hiền giả, trong khi tôi độc trú tĩnh cư, tâm tưởng tư duy như sau được khởi lên: “Thánh im lặng được gọi là Thánh im lặng. Thế nào là Thánh im lặng?”"
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 4 Rồi này các Hiền giả, tôi suy nghĩ như sau: “Ở đây, Tỷ-kheo diệt tầm và tứ, chứng và trú Thiền thứ hai, một trạng thái hỷ lạc do định sanh, không tầm, không tứ, nội tĩnh nhất tâm”. Như vậy gọi là Thánh im lặng."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 5 Rồi này các Hiền giả, tôi diệt tầm và tứ, chứng và trú Thiền thứ hai, một trạng thái hỷ lạc do định sanh, không tầm, không tứ, nội tĩnh nhất tâm. Này các Hiền giả, khi tôi an trú với sự an trú như vậy, các tưởng câu hữu với tầm, các tác ý hiện khởi và hiện hành."
+      },
+      {
+        "id": "p13",
+        "text": "Vi-n 6 Rồi này các Hiền giả, Thế Tôn bằng thần thông đến với tôi và nói: “Moggallāna, Moggallāna, chớ có phóng dật. Này Bà-la-môn, đối với Thánh im lặng, hãy an trú tâm vào Thánh im lặng, hãy chú nhất tâm vào Thánh im lặng, hãy chú định tâm vào Thánh im lặng”."
+      },
+      {
+        "id": "p14",
+        "text": "Vi-n 7 Rồi này các Hiền giả, sau một thời gian, tôi diệt tầm và tứ, chứng và trú vào Thiền thứ hai, một trạng thái hỷ lạc do định sanh, không tầm không tứ, nội tĩnh nhứt tâm. Này các Hiền giả, nếu ai nói một cách chơn chánh, sẽ nói như sau: “Ðược bậc Ðạo Sư hỗ trợ, vị đệ tử chứng đạt đại thắng trí”. Người ấy nói một cách chơn chánh, sẽ nói về tôi: “Ðược bậc Ðạo Sư hỗ trợ, vị đệ tử chứng đạt đại thắng trí”."
+      },
+      {
+        "id": "p15",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn21.10": {
+    "canonicalRef": "sn21.10",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn21.10/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T07:24:59+00:00",
+    "materializedAt": "2026-09-02T07:24:59+00:00",
+    "contentHash": "056a4a8909d1137aeb42249407e9d3b929774adc513529e5039c1274f5076949",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 21: Tương Ưng Tỷ Kheo"
+      },
+      {
+        "id": "p2",
+        "text": "21.10. Tên Trưởng Lão"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Một thời, Thế Tôn trú ở Rājagaha (Vương Xá), Veluvana (Trúc Lâm), tại chỗ nuôi dưỡng các con sóc."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Lúc bấy giờ một Tỷ-kheo tên là Theranàmaka sống độc trú và tán thán hạnh sống độc trú. Vị ấy đi vào làng khất thực một mình, đi về một mình, ngồi vắng lặng một mình, đi kinh hành một mình."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Rồi các Tỷ-kheo đi đến Thế Tôn; sau khi đến, đảnh lễ Thế Tôn rồi ngồi xuống một bên."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 Ngồi xuống một bên, các Tỷ-kheo ấy bạch Thế Tôn:"
+      },
+      {
+        "id": "p7",
+        "text": "—Ở đây, bạch Thế Tôn, có Tỷ-kheo tên là Theranàmaka sống độc trú và tán thán hạnh sống độc trú … đi kinh hành một mình."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 Rồi Thế Tôn bảo một Tỷ-kheo:"
+      },
+      {
+        "id": "p9",
+        "text": "—Này Tỷ-kheo, hãy đến, hãy nhân danh Ta gọi Tỷ-kheo Thera: “Này Hiền giả Thera, bậc Ðạo Sư gọi Hiền giả”."
+      },
+      {
+        "id": "p10",
+        "text": "—Thưa vâng, bạch Thế Tôn."
+      },
+      {
+        "id": "p11",
+        "text": "Tỷ-kheo ấy vâng đáp Thế Tôn rồi đi đến Tỷ-kheo Thera."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 6 Sau khi đến, Tỷ-kheo ấy nói với Tỷ-kheo Thera:"
+      },
+      {
+        "id": "p13",
+        "text": "—Này Hiền giả Thera, bậc Ðạo Sư gọi Hiền giả."
+      },
+      {
+        "id": "p14",
+        "text": "—Thưa vâng, Hiền giả."
+      },
+      {
+        "id": "p15",
+        "text": "Tôn giả Thera vâng đáp Tỷ-kheo ấy và đi đến Thế Tôn."
+      },
+      {
+        "id": "p16",
+        "text": "Vi-n 7 Sau khi đến, vị ấy đảnh lễ Thế Tôn và ngồi xuống một bên."
+      },
+      {
+        "id": "p17",
+        "text": "Vi-n 8 Thế Tôn nói với Tôn giả Thera đang ngồi một bên:"
+      },
+      {
+        "id": "p18",
+        "text": "—Có thật chăng, này Thera, Ông sống độc trú và tán thán hạnh độc trú?"
+      },
+      {
+        "id": "p19",
+        "text": "—Thưa có, bạch Thế Tôn."
+      },
+      {
+        "id": "p20",
+        "text": "Vi-n 9 —Như thế nào, này Thera, Ông sống độc trú và tán thán hạnh sống độc trú?"
+      },
+      {
+        "id": "p21",
+        "text": "Vi-n 10 —Ở đây, bạch Thế Tôn, con đi vào làng khất thực một mình, con đi về một mình, con ngồi vắng lặng một mình, con đi kinh hành một mình. Như vậy, bạch Thế Tôn, con sống độc trú và tán thán hạnh sống độc trú."
+      },
+      {
+        "id": "p22",
+        "text": "Vi-n 11 —Ðấy là sống độc trú, này Thera, Ta không nói đấy không phải vậy. Này Thera, có một cách làm viên mãn độc trú với các chi tiết. Hãy nghe và suy nghiệm kỹ, Ta sẽ nói."
+      },
+      {
+        "id": "p23",
+        "text": "—Thưa vâng, bạch Thế Tôn."
+      },
+      {
+        "id": "p24",
+        "text": "Vi-n 12 —Này Thera, thế nào là độc trú được làm viên mãn với các chi tiết? Ở đây, này Thera, cái gì đã qua được đoạn tận; cái gì sắp đến được từ bỏ; đối với những tự ngã, lợi đắc hiện tại, dục tham được khéo nhiếp phục. Như vậy, này Thera, là độc trú được làm viên mãn với các chi tiết."
+      },
+      {
+        "id": "p25",
+        "text": "Vi-n 13 Thế Tôn thuyết giảng như vậy, Thiện Thệ nói như vậy xong, bậc Ðạo Sư lại nói thêm:"
+      },
+      {
+        "id": "p26",
+        "text": "Ai chiến thắng tất cả,\n\nAi hiểu biết tất cả,\n\nAi là bậc Thiện trí,\n\nMọi pháp không ô nhiễm.\n\nAi từ bỏ tất cả,\n\nÁi tận được giải thoát,\n\nTa nói chính người ấy,\n\nThật là vị độc trú."
+      },
+      {
+        "id": "p27",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn21.11": {
+    "canonicalRef": "sn21.11",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn21.11/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T07:24:59+00:00",
+    "materializedAt": "2026-09-02T07:24:59+00:00",
+    "contentHash": "82466a73f63e7578d6aabf622561358c02667949574e7994f266086ba1fbf939",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 21: Tương Ưng Tỷ Kheo"
+      },
+      {
+        "id": "p2",
+        "text": "21.11. Kappina"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 … Trú ở Sāvatthi."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Rồi Tôn giả Mahà Kappina đi đến Thế Tôn."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Thế Tôn thấy Tôn giả Mahà Kappina từ đường xa đi đến."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 Sau khi thấy, Thế Tôn liền gọi các Tỷ-kheo:"
+      },
+      {
+        "id": "p7",
+        "text": "—Các Ông có thấy không, này các Tỷ-kheo, vị Tỷ-kheo kia đi đến, da bạc trắng, ốm yếu, với cái mũi cao?"
+      },
+      {
+        "id": "p8",
+        "text": "—Thưa có, bạch Thế Tôn."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 5 —Tỷ-kheo ấy, này các Tỷ-kheo, có đại thần thông, có đại uy lực. Thật không dễ gì đạt được sự chứng đắc mà trước kia vị Tỷ-kheo ấy chưa chứng đắc. Vị ấy còn ngay trong hiện tại, tự mình với thắng trí, chứng ngộ, chứng đạt và an trú vô thượng cứu cánh Phạm hạnh mà vì mục đích này, con các lương gia chơn chánh xuất gia, từ bỏ gia đình, sống không gia đình."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 6 Thế Tôn thuyết như vậy, Thiện Thệ thuyết như vậy xong, bậc Ðạo Sư lại nói thêm:"
+      },
+      {
+        "id": "p11",
+        "text": "Sát-lỵ là tối thượng,\n\nGiữa mọi loài chúng sanh,\n\nVới những ai nương tựa,\n\nVào vấn đề giai cấp.\n\nBậc Minh Hạnh cụ túc,\n\nTối thượng giữa Trời, Người,\n\nNgày, mặt trời chói sáng,\n\nÐêm, mặt trăng chói sáng,\n\nTrong tấm áo chiến bào,\n\nSát-lỵ được chói sáng.\n\nTrong Thiền định, Thiền tri,\n\nBà-là-môn chói sáng,\n\nNhưng suốt cả đêm ngày,\n\nPhật chói sáng hào quang."
+      },
+      {
+        "id": "p12",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn21.12": {
+    "canonicalRef": "sn21.12",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn21.12/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T07:24:59+00:00",
+    "materializedAt": "2026-09-02T07:24:59+00:00",
+    "contentHash": "b05807afa7089bf0b8fe8d2606d4f16c1ccfb44f520d895244b4c277db5ef1cf",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 21: Tương Ưng Tỷ Kheo"
+      },
+      {
+        "id": "p2",
+        "text": "21.12. Thân Hữu"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 … Trú ở Sāvatthi."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Rồi hai Tỷ-kheo thân hữu, đệ tử của Tôn giả Mahà Kappina, đi đến Thế Tôn."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Thế Tôn thấy hai Tỷ-kheo ấy từ đàng xa đi đến."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 Thấy vậy, Thế Tôn liền gọi các Tỷ-kheo:"
+      },
+      {
+        "id": "p7",
+        "text": "—Các Ông có thấy không, này các Tỷ-kheo, hai Tỷ-kheo thân hữu ấy đang đi tới, cả hai là đệ tử của Tôn giả Mahà Kappina?"
+      },
+      {
+        "id": "p8",
+        "text": "—Thưa có, bạch Thế Tôn."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 5 —Hai Tỷ-kheo ấy có đại thần thông, có đại uy lực. Thật không dễ gì đạt được sự chứng đắc mà trước kia những Tỷ-kheo ấy chưa chứng đắc. Các vị ấy còn ngay trong hiện tại, tự mình với thắng trí, chứng ngộ, chứng đắc và an trú vô thượng cứu cánh Phạm hạnh, mà vì mục đích này, con các lương gia chơn chánh xuất gia, từ bỏ gia đình, sống không gia đình."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 6 Thế Tôn thuyết giảng như vậy, Thiện Thệ nói như vậy xong, bậc Ðạo Sư lại nói thêm:"
+      },
+      {
+        "id": "p11",
+        "text": "Tỷ-kheo thân hữu này,\n\nLâu ngày cùng chung sống,\n\nChung sống trong diệu pháp,\n\nDiệu pháp, Phật thuyết giảng.\n\nTôn giả Kappina\n\nKhéo léo huấn luyện họ,\n\nTrong Chánh pháp vi diệu,\n\nDo bậc Thánh thuyết giảng,\n\nChiến thắng ma quân xong,\n\nThọ trì thân tối hậu."
+      },
+      {
+        "id": "p12",
+        "text": "- Hết Tập II -"
+      },
+      {
+        "id": "p13",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn21.2": {
+    "canonicalRef": "sn21.2",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn21.2/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T07:24:58+00:00",
+    "materializedAt": "2026-09-02T07:24:58+00:00",
+    "contentHash": "995be622065ecf3fcecabfeb5712ff8a73153abb2e7c2844455b50559af3cd10",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 21: Tương Ưng Tỷ Kheo"
+      },
+      {
+        "id": "p2",
+        "text": "21.2. Upatissa..."
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Nhơn duyên ở Sāvatthi."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Tại đấy, Tôn giả Sāriputta gọi các Tỷ-kheo:"
+      },
+      {
+        "id": "p5",
+        "text": "—Này các Hiền giả Tỷ-kheo."
+      },
+      {
+        "id": "p6",
+        "text": "—Thưa vâng, Hiền giả."
+      },
+      {
+        "id": "p7",
+        "text": "Các vị Tỷ-kheo ấy vâng đáp Tôn giả Sāriputta."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 3 Tôn giả Sāriputta nói:"
+      },
+      {
+        "id": "p9",
+        "text": "—Ở đây, này các Hiền giả, trong khi tôi độc trú tĩnh cư, tâm tưởng tư duy như sau được khởi lên: “Có cái gì trong đời, khi bị biến hoại, trạng huống đổi khác, có thể khởi lên nơi ta sầu, bi, khổ, ưu, não?”."
+      },
+      {
+        "id": "p10",
+        "text": "Rồi này các Hiền giả, tôi suy nghĩ: “Không có cái gì trong đời, khi bị biến hoại, trạng huống đổi khác, có thể khởi lên nơi ta sầu, bi, khổ, ưu, não”."
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 4 Khi được nói vậy, Tôn giả Ānanda nói với Tôn giả Sāriputta:"
+      },
+      {
+        "id": "p12",
+        "text": "—Bậc Ðạo Sư, này Hiền giả Sāriputta, khi bị biến hoại, trạng huống đổi khác, có thể khởi lên nơi Hiền giả sầu, bi, khổ, ưu, não?"
+      },
+      {
+        "id": "p13",
+        "text": "Vi-n 5 —Bậc Ðạo Sư, này Hiền giả Ānanda, khi bị biến hoại, trạng thái đổi khác, không có thể khởi lên nơi ta sầu, bi, khổ, ưu, não. Nhưng ta có thể suy nghĩ: “Mong rằng bậc Ðại Thế Lực, bậc Ðạo Sư có đại thần thông, có đại uy lực chớ có biến diệt! Nếu bậc Thế Tôn ấy an trú lâu dài, thời như vậy thật là hạnh phúc cho quần sanh, thật là an lạc cho quần sanh, vì lòng từ mẫn cho đời, vì lợi ích, vì hạnh phúc, vì an lạc cho chư Thiên và loài Người”."
+      },
+      {
+        "id": "p14",
+        "text": "Vi-n 6 —Như vậy đối với Tôn giả Sāriputta, ngã kiến, ngã sở kiến, ngã mạn, tùy miên được khéo đoạn trừ đã lâu ngày."
+      },
+      {
+        "id": "p15",
+        "text": "Vi-n 7 Do vậy, đối với Tôn giả Sāriputta, dầu cho bậc Ðạo Sư có biến hoại, trạng huống có đổi khác, cũng không khởi lên sầu, bi, khổ, ưu, não."
+      },
+      {
+        "id": "p16",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn21.3": {
+    "canonicalRef": "sn21.3",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn21.3/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T07:24:58+00:00",
+    "materializedAt": "2026-09-02T07:24:58+00:00",
+    "contentHash": "03611d64917db67f310aa69b6100a72819c6b1866f5b5eeaa7c23de1631e2005",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 21: Tương Ưng Tỷ Kheo"
+      },
+      {
+        "id": "p2",
+        "text": "21.3. Cái Ghè"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Như vầy tôi nghe."
+      },
+      {
+        "id": "p4",
+        "text": "Một thời Thế Tôn ở Sāvatthi (Xá-vệ), Jetavana (Kỳ-đà Lâm), tại vườn ông Anāthapiṇḍika (Cấp Cô Ðộc)."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Lúc bấy giờ, Tôn giả Sāriputta và Tôn giả Mahà Moggallāna cùng ở Rājagaha (Vương Xá), Veluvana (Trúc Lâm) tại chỗ nuôi dưỡng các con sóc, chung một tịnh xá."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Rồi Tôn giả Sāriputta, từ chỗ độc cư Thiền tịnh đứng dậy, đi đến Tôn giả Mahà Moggallāna; sau khi đến, nói lên với Tôn giả Mahà Moggallāna những lời chào đón hỏi thăm; sau khi nói lên những lời chào đón hỏi thăm thân hữu bèn ngồi xuống một bên."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Ngồi xuống một bên, Tôn giả Sāriputta nói với Tôn giả Mahà Moggallāna:"
+      },
+      {
+        "id": "p8",
+        "text": "—Này Hiền giả Moggallāna, các căn của Hiền giả thật là tịch tịnh; sắc mặt thật là thanh tịnh, trong sáng. Có phải hôm nay Tôn giả Mahà Moggallāna an trú với sự an trú tịnh lạc?"
+      },
+      {
+        "id": "p9",
+        "text": "—Thưa Hiền giả, hôm nay tôi an trú với sự an trú thô thiển. Tôi có được một cuộc pháp thoại."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 5 —Với ai, Tôn giả Mahà Moggallāna có được một cuộc đàm luận về Chánh pháp?"
+      },
+      {
+        "id": "p11",
+        "text": "—Thưa Hiền giả, tôi có một cuộc pháp thoại với Thế Tôn."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 6 —Ở xa, thưa Hiền giả, là Thế Tôn. Hiện nay Thế Tôn ở Sāvatthi, Jetavana, tại vườn ông Anāthapiṇḍika. Có phải Tôn giả Mahà Moggallāna đi đến Thế Tôn bằng thần thông hay Thế Tôn đi đến Tôn giả Mahà Moggallāna bằng thần thông?"
+      },
+      {
+        "id": "p13",
+        "text": "Vi-n 7 —Thưa Hiền giả, tôi không đi đến Thế Tôn bằng thần thông. Và Thế Tôn cũng không đi đến tôi bằng thần thông. Tôi như thế nào thời Thế Tôn được thiên nhãn thanh tịnh, cả thiên nhĩ nữa như vậy! Thế Tôn như thế nào thời tôi được thiên nhãn thanh tịnh, cả thiên nhĩ nữa như vậy."
+      },
+      {
+        "id": "p14",
+        "text": "Vi-n 8 —Như thế nào là cuộc pháp thoại giữa Tôn giả Mahà Moggallāna với Thế Tôn?"
+      },
+      {
+        "id": "p15",
+        "text": "Vi-n 9 —Ở đây, thưa Hiền giả, tôi bạch với Thế Tôn:"
+      },
+      {
+        "id": "p16",
+        "text": "“—Bạch Thế Tôn ở đây tinh cần, tinh tấn, được gọi là tinh cần, tinh tấn. Như thế nào, bạch Thế Tôn, là tinh cần, tinh tấn?”."
+      },
+      {
+        "id": "p17",
+        "text": "Vi-n 10 Khi được nói vậy, thưa Hiền giả, Thế Tôn nói với tôi:"
+      },
+      {
+        "id": "p18",
+        "text": "“—Ở đây, này Moggallāna, Tỷ-kheo sống tinh cần, tinh tấn: ‘Dầu cho da, dây gân và xương có khô héo, dầu thịt và máu có héo tàn trên thân tôi, cái gì có thể lấy sức lực của người, tinh tấn của người, nỗ lực của người có thể đạt được; nếu chưa đạt được, thời tinh tấn sẽ không bao giờ dừng nghỉ’. Như vậy, này Moggallāna, là sự tinh cần, tinh tấn”."
+      },
+      {
+        "id": "p19",
+        "text": "Vi-n 11 Như vậy, này Hiền giả, là cuộc pháp thoại giữa Thế Tôn và tôi."
+      },
+      {
+        "id": "p20",
+        "text": "Vi-n 12 Ví như, này Hiền giả, một đống hòn sạn nhỏ đem đặt dài theo Hy-mã-lạp sơn, vua các loài núi. Cũng vậy, là chúng tôi được đem đặt dài theo Tôn giả Mahà Moggallāna. Mong rằng Tôn giả Mahà Moggallāna, bậc đại thần thông, đại uy lực, nếu muốn hãy sống cho đến một kiếp."
+      },
+      {
+        "id": "p21",
+        "text": "Vi-n 13 Ví như, này Hiền giả, một nắm muối nhỏ được đem đặt dài theo một ghè muối lớn. Cũng vậy, là chúng tôi được đem đặt dài theo Tôn giả Sāriputta."
+      },
+      {
+        "id": "p22",
+        "text": "Vi-n 14 Tôn giả Sāriputta được Thế Tôn dùng nhiều phương tiện xưng tán, tán thán, tán dương:"
+      },
+      {
+        "id": "p23",
+        "text": "Như vị Xá-lợi-phất,\n\nVề trí tuệ, giới luật,\n\nVà cả về tịch tịnh,\n\nÔng là bậc đệ nhất.\n\nTỷ-kheo đạt bỉ ngạn,\n\nCũng là bậc tối thượng."
+      },
+      {
+        "id": "p24",
+        "text": "Vi-n 15 Như vậy, hai bậc Long Tượng ấy (Nàgà) cùng nhau hoan hỷ, tán thán trong câu chuyện khéo nói, khéo thuyết."
+      },
+      {
+        "id": "p25",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn21.4": {
+    "canonicalRef": "sn21.4",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn21.4/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T07:24:58+00:00",
+    "materializedAt": "2026-09-02T07:24:58+00:00",
+    "contentHash": "7fb16a8d81524cd252e05db2be8f84dae16205b224926ea013a17c087338e235",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 21: Tương Ưng Tỷ Kheo"
+      },
+      {
+        "id": "p2",
+        "text": "21.4. Tân Tỷ Kheo"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 … Trú ở Sāvatthi."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Lúc bấy giờ, một tân Tỷ-kheo sau buổi ăn, trên con đường khất thực trở về, đi vào tịnh xá, rảnh rỗi, yên lặng, phân vân (không biết làm gì), không phụ việc với các Tỷ-kheo trong thời gian may y."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Rồi nhiều Tỷ-kheo đi đến Thế Tôn; sau khi đến, đảnh lễ Thế Tôn rồi ngồi xuống một bên."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 Ngồi xuống một bên, các Tỷ-kheo ấy bạch Thế Tôn:"
+      },
+      {
+        "id": "p7",
+        "text": "—Ở đây, bạch Thế Tôn, có một tân Tỷ-kheo sau buổi ăn, trên con đường khất thực trở về, đi vào tịnh xá, rảnh rỗi, im lặng, phân vân (không biết làm gì), không phụ việc với các Tỷ-kheo trong thời gian may y."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 Rồi Thế Tôn gọi một Tỷ-kheo:"
+      },
+      {
+        "id": "p9",
+        "text": "—Hãy đến, này Tỷ-kheo, nhân danh Ta, hãy gọi Tỷ-kheo ấy và nói: “Này Hiền giả, bậc Ðạo Sư cho gọi Hiền giả”."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 6 —Thưa vâng, bạch Thế Tôn."
+      },
+      {
+        "id": "p11",
+        "text": "Tỷ-kheo ấy vâng đáp Thế Tôn, đi đến Tỷ-kheo kia; sau khi đến nói với Tỷ-kheo ấy:"
+      },
+      {
+        "id": "p12",
+        "text": "—Thưa Hiền giả, bậc Ðạo Sư cho gọi Hiền giả."
+      },
+      {
+        "id": "p13",
+        "text": "Vi-n 7 —Thưa vâng, này Hiền giả."
+      },
+      {
+        "id": "p14",
+        "text": "Tỷ-kheo ấy vâng đáp Tỷ-kheo kia, đi đến Thế Tôn; sau khi đến, đảnh lễ Thế Tôn rồi ngồi xuống một bên."
+      },
+      {
+        "id": "p15",
+        "text": "Vi-n 8 Thế Tôn nói với Tỷ-kheo đang ngồi xuống một bên:"
+      },
+      {
+        "id": "p16",
+        "text": "—Có thật chăng, này Tỷ-kheo, sau bữa ăn, trên con đường đi khất thực trở về, sau khi vào tịnh xá, Ông rảnh rỗi, im lặng, phân vân (không biết làm gì), không phụ việc với các Tỷ-kheo trong thời gian may y?"
+      },
+      {
+        "id": "p17",
+        "text": "—Bạch Thế Tôn, con làm việc của con."
+      },
+      {
+        "id": "p18",
+        "text": "Vi-n 9 Rồi Thế Tôn, với tâm của mình biết tâm Tỷ-kheo ấy, liền gọi các Tỷ-kheo:"
+      },
+      {
+        "id": "p19",
+        "text": "—Này các Tỷ-kheo, các Ông chớ có bực phiền với Tỷ-kheo này. Này các Tỷ-kheo, Tỷ-kheo này chứng được không có khó khăn, chứng được không có mệt nhọc, chứng được không phí sức bốn Thiền thuộc tăng thượng tâm, hiện tại lạc trú. Vị ấy còn tự mình ngay trong hiện tại, chứng tri, chứng ngộ, chứng đạt và an trú vô thượng cứu cánh Phạm hạnh mà vì mục đích này, con các lương gia chơn chánh xuất gia, từ bỏ gia đình, sống không gia đình."
+      },
+      {
+        "id": "p20",
+        "text": "Vi-n 10 Thế Tôn thuyết như vậy. Bậc Thiện Thệ sau khi nói xong, bậc Ðạo Sư lại nói thêm:"
+      },
+      {
+        "id": "p21",
+        "text": "Kẻ sống buông thả này,\n\nKẻ ít nghị lực này,\n\nKhông thể đạt Niết-bàn,\n\nGiải thoát mọi khổ đau.\n\nVị Tỷ-kheo trẻ này,\n\nLà một người tối thượng,\n\nChiến thắng ma quân xong,\n\nThọ trì thân tối hậu."
+      },
+      {
+        "id": "p22",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn21.5": {
+    "canonicalRef": "sn21.5",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn21.5/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T07:24:58+00:00",
+    "materializedAt": "2026-09-02T07:24:58+00:00",
+    "contentHash": "957149e6edeb7c1719843411d54f983de471fd8d889a5aa12243119a2449d9c2",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 21: Tương Ưng Tỷ Kheo"
+      },
+      {
+        "id": "p2",
+        "text": "21.5. Thiện Sanh"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Trú ở Sāvatthi."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Rồi Tôn giả Sujāta đi đến Thế Tôn."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Thế Tôn thấy Tôn giả Sujāta từ đằng xa đi đến; thấy vậy, liền gọi các Tỷ-kheo:"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 —Cả hai phương diện, này các Tỷ-kheo, thiện nam tử này thật sự chói sáng. Vị ấy đẹp trai, ưa nhìn, khả ái, đầy đủ với nhan sắc tối thượng. Vị ấy còn ngay trong hiện tại tự mình chứng tri, chứng ngộ, chứng đạt và an trú vô thượng cứu cánh Phạm hạnh mà vì mục đích này, con các lương gia chơn chánh xuất gia từ bỏ gia đình, sống không gia đình."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 5 Thế Tôn nói như vậy xong … Bậc Ðạo Sư, lại nói thêm:"
+      },
+      {
+        "id": "p8",
+        "text": "Tỷ-kheo này sáng chói,\n\nVới tâm tư chánh trực,\n\nLy kiết sử, ly ách,\n\nKhông chấp, không sanh lại,\n\nChiến thắng ma quân xong,\n\nThọ trì thân tối hậu."
+      },
+      {
+        "id": "p9",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn21.6": {
+    "canonicalRef": "sn21.6",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn21.6/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T07:24:58+00:00",
+    "materializedAt": "2026-09-02T07:24:58+00:00",
+    "contentHash": "e80e597025b83f800cb6c0650529dd6289f29f245ee3f59e19c2868e41cfb383",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 21: Tương Ưng Tỷ Kheo"
+      },
+      {
+        "id": "p2",
+        "text": "21.6. Bhaddi"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 … Trú ở Sāvatthi."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Rồi Tôn giả Lakuṇṭaka Bhaddiya đi đến Thế Tôn."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Thế Tôn thấy Tôn giả Lakuṇṭaka Bhaddiya từ xa đi đến; sau khi thấy, liền gọi các Tỷ-kheo:"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 —Các Ông có thấy không, này các Tỷ-kheo, Tỷ-kheo kia đang đi đến, xấu xí, khó nhìn, còm lưng, bị các Tỷ-kheo khinh miệt?"
+      },
+      {
+        "id": "p7",
+        "text": "—Thưa có, bạch Thế Tôn."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 —Tỷ-kheo ấy, này các Tỷ-kheo, có đại thần thông, có đại uy lực. Thật không dễ gì đạt được chứng đắc mà trước kia vị Tỷ-kheo ấy chưa chứng đắc. Và cả đến mục đích mà con một lương gia xuất gia, từ bỏ gia đình, sống không gia đình. Tức vị ấy còn tự mình, ngay trong hiện tại, chứng tri, chứng ngộ, chứng đạt và an trú vô thượng cứu cánh Phạm hạnh mà vì mục đích này, con các lương gia xuất gia, từ bỏ gia đình, sống không gia đình."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 6 Thế Tôn thuyết như vậy, Bậc Thiện Thệ nói xong, bậc Ðạo Sư lại nói thêm:"
+      },
+      {
+        "id": "p10",
+        "text": "Thiên nga, cò, chim, công,\n\nVoi và nai có chấm,\n\nTất cả sợ sư tử,\n\nDầu thân không đồng đều.\n\nCũng vậy, giữa loài Người,\n\nNếu kẻ có trí tuệ,\n\nỞ đấy vị ấy lớn,\n\nKhông như thân kẻ ngu."
+      },
+      {
+        "id": "p11",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn21.7": {
+    "canonicalRef": "sn21.7",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn21.7/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T07:24:58+00:00",
+    "materializedAt": "2026-09-02T07:24:58+00:00",
+    "contentHash": "6dc7dc6ce39e154c6c99eee95eaae53ca279646fe5cf1eb520ef38689e95507a",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 21: Tương Ưng Tỷ Kheo"
+      },
+      {
+        "id": "p2",
+        "text": "21.7. Visākha"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Như vầy tôi nghe."
+      },
+      {
+        "id": "p4",
+        "text": "Một thời Thế Tôn ở Vesālī (Tỳ-xá-ly), tại Mahāvana (Ðại Lâm) chỗ Trùng Các giảng đường."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Lúc bấy giờ Tôn giả Visākha, thuộc dòng họ Pancàla, trong giảng đường đang thuyết pháp thoại cho các Tỷ-kheo, khích lệ làm cho phấn khởi, làm cho hoan hỷ, với những lời lễ độ, thân hữu, không phun nước miếng, giải thích nghĩa lý, thích hợp, không chấp trước."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Rồi Thế Tôn vào buổi chiều, từ chỗ tịnh cư đứng dậy, đi đến giảng đường; sau khi đến, ngồi trên chỗ đã soạn sẵn."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Sau khi ngồi, Thế Tôn bảo các Tỷ-kheo:"
+      },
+      {
+        "id": "p8",
+        "text": "—Này các Tỷ-kheo, trong hội trường, ai đã thuyết giảng pháp thoại cho các Tỷ-kheo, khích lệ, làm cho phấn khởi, làm cho hoan hỷ, với những lời lễ độ, thân hữu, không phun nước miếng, giải thích nghĩa lý, thích hợp, không chấp trước?"
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 5 —Bạch Thế Tôn, Tôn giả Visākha thuộc dòng họ Pancàla, trong hội trường thuyết giảng pháp thoại cho các Tỷ-kheo, khích lệ, làm cho phấn khởi, làm cho hoan hỷ, với những lời lễ độ, thân hữu, không phun nước miếng, giải thích nghĩa lý, thích hợp, không chấp trước."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 6 Rồi Thế Tôn cho gọi Tôn giả Visākha, thuộc dòng họ Pancàla và nói:"
+      },
+      {
+        "id": "p11",
+        "text": "—Lành thay, lành thay, Visākha! Lành thay, này Visākha! Ông thuyết pháp thoại cho các Tỷ-kheo, khích lệ làm cho phấn khởi, làm cho hoan hỷ … không chấp trước."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 7 Thế Tôn thuyết như vậy, bậc Thiện Thệ thuyết như vậy, bậc Ðạo Sư lại nói thêm:"
+      },
+      {
+        "id": "p13",
+        "text": "Họ biết bậc Hiền triết,\n\nKhi vị này lẫn lộn,\n\nVới các kẻ ngu si,\n\nDầu vị này không nói.\n\nVà họ biết vị ấy,\n\nKhi vị này nói lên,\n\nNói lên lời thuyết giảng,\n\nLiên hệ đến bất tử;\n\nHãy để vị ấy nói,\n\nLàm sáng chói Chánh pháp;\n\nHãy để vị nêu cao\n\nLá cờ các bậc Thánh.\n\nLá cờ bậc Hiền Thánh,\n\nLà những lời khéo nói,\n\nLá cờ bậc Hiền Thánh,\n\nChính là lời Chánh pháp."
+      },
+      {
+        "id": "p14",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn21.8": {
+    "canonicalRef": "sn21.8",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn21.8/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T07:24:58+00:00",
+    "materializedAt": "2026-09-02T07:24:58+00:00",
+    "contentHash": "ac1a3ac95785a339c4b8dbd8356a4e0428d20efbbe011068570f8890f27736ca",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 21: Tương Ưng Tỷ Kheo"
+      },
+      {
+        "id": "p2",
+        "text": "21.8. Nanda"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 Trú ở Sāvatthi."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Rồi Tôn giả Nanda, con di mẫu của Phật, đắp những y khéo ủi, khéo là, bôi vẽ mắt, cầm bát sáng chói, đi đến Thế Tôn; sau khi đến, đảnh lễ Thế Tôn rồi ngồi xuống một bên."
+      },
+      {
+        "id": "p5",
+        "text": "Thế Tôn nói với Tôn giả Nanda đang ngồi xuống một bên:"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 —Như vậy không xứng đáng cho Ông, này Nanda, là con một lương gia, vì lòng tin xuất gia, từ bỏ gia đình, sống không gia đình, lại mang những y khéo ủi, khéo là, bôi vẽ con mắt và mang bát sáng chói. Như vậy là xứng đáng cho Ông, này Nanda, là con một lương gia, vì lòng tin xuất gia, từ bỏ gia đình, sống không gia đình, tức là sống trong rừng, sống đi khất thực, sống mặc áo phấn tảo, và sống không mong đợi các dục vọng."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Thế Tôn thuyết giảng như vậy. Bậc Thiện Thệ nói như vậy xong, bậc Ðạo Sư lại nói thêm:"
+      },
+      {
+        "id": "p8",
+        "text": "Ta mong được nhìn thấy,\n\nNanda sống trong rừng,\n\nMặc áo phấn tảo y,\n\nSống với những đồ ăn,\n\nBiết là đã vứt bỏ,\n\nKhông mong chờ dục vọng."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 5 Rồi Tôn giả Nanda, sau một thời gian, trở thành một vị sống trong rừng, ăn đồ ăn khất thực, mang y phấn tảo, không mong đợi các dục vọng."
+      },
+      {
+        "id": "p10",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn21.9": {
+    "canonicalRef": "sn21.9",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn21.9/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T07:24:59+00:00",
+    "materializedAt": "2026-09-02T07:24:59+00:00",
+    "contentHash": "3a4e5982f5f4801f5b3927f545a7103ca95ffb93e48a7021cc5ef107617a7a33",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 21: Tương Ưng Tỷ Kheo"
+      },
+      {
+        "id": "p2",
+        "text": "21.9. Tissa"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1 … Trú ở Sāvatthi."
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 2 Rồi Tôn giả Tissa, cháu của phụ vương Thế Tôn đi đến Thế Tôn, đảnh lễ Thế Tôn, rồi ngồi xuống một bên, khổ đau, sầu muộn, nước mắt tuôn chảy."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 Rồi Thế Tôn nói với Tôn giả Tissa:"
+      },
+      {
+        "id": "p6",
+        "text": "—Này Tissa, vì sao Ông ngồi khổ đau, sầu muộn, nước mắt tuôn chảy?"
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 —Vì rằng, bạch Thế Tôn, các vị Tỷ-kheo nhất loạt mắng nhiếc và nhạo báng con."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 —Vì rằng, này Tissa, Ông nói tất cả và không kham nhẫn người khác nói."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 6 Như vậy không xứng đáng cho Ông, này Tissa, là con một lương gia, vì lòng tin xuất gia, từ bỏ gia đình, sống không gia đình, lại nói tất cả và không kham nhẫn người khác nói. Như vậy là xứng đáng cho Ông, này Tissa, là con một lương gia, vì lòng tin xuất gia, từ bỏ gia đình, sống không gia đình, tức là đã nói lời kham nhẫn người khác nói."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 7 Thế Tôn nói như vậy. Thiện Thệ nói như vậy xong, bậc Ðạo Sư lại nói thêm:"
+      },
+      {
+        "id": "p11",
+        "text": "Sao Ông lại phẫn nộ?\n\nChớ có nên phẫn nộ,\n\nKhông phẫn nộ, Tissa,\n\nThật tốt đẹp cho Ông.\n\nHãy nhiếp phục phẫn nộ,\n\nKiêu mạn và xan tham,\n\nHỡi Tissa, hãy sống,\n\nSống đời sống Phạm hạnh."
+      },
+      {
+        "id": "p12",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  }
+}
