@@ -3,7 +3,9 @@ param(
   [Parameter(Mandatory=$true)][string]$TtsCommand,
   [string]$PackRoot='dist/local-media',
   [int]$Workers=1,
-  [switch]$Force
+  [switch]$Force,
+  [switch]$AutoPublishR2,
+  [switch]$DeleteVerifiedLocal
 )
 
 $ErrorActionPreference='Stop'
@@ -33,7 +35,6 @@ function Invoke-One($item){
   if(-not (Test-Path $output)){throw "TTS command did not create $output"}
 }
 
-# Default is deliberately conservative. Raise Workers only if the local TTS backend safely supports parallel GPU jobs.
 if($Workers -le 1){
   foreach($item in $ready){Invoke-One $item}
 }else{
@@ -68,4 +69,34 @@ $outMp3=Join-Path $base ($collectionLower+'-complete.mp3')
 ffmpeg -hide_banner -loglevel warning -y -f concat -safe 0 -i $ffconcat -c copy $outMp3
 if($LASTEXITCODE -ne 0){throw 'FFmpeg concat failed. Ensure all per-sutta files use the same MP3 codec/sample rate/channel layout.'}
 Write-Host "DONE: $outMp3"
+
+if($AutoPublishR2){
+  foreach($name in @('R2_ACCESS_KEY_ID','R2_SECRET_ACCESS_KEY','R2_ACCOUNT_ID')){
+    if([string]::IsNullOrWhiteSpace([Environment]::GetEnvironmentVariable($name))){
+      throw "AutoPublishR2 requested but environment variable $name is missing"
+    }
+  }
+  $mp3Dir=Join-Path $base 'mp3'
+  $args=@('scripts/r2_sync.py',$mp3Dir,'--prefix',("audio/"+$collectionLower),'--max-total-gib','9')
+  if($DeleteVerifiedLocal){$args+='--delete-verified-local'}
+  Write-Host "R2 PUBLISH per-sutta MP3 -> audio/$collectionLower"
+  python @args
+  if($LASTEXITCODE -ne 0){throw "R2 sync failed for per-sutta MP3"}
+
+  $completeStage=Join-Path $base '_r2-complete'
+  New-Item -ItemType Directory -Force -Path $completeStage | Out-Null
+  $stagedComplete=Join-Path $completeStage (Split-Path $outMp3 -Leaf)
+  Copy-Item $outMp3 $stagedComplete -Force
+  $args2=@('scripts/r2_sync.py',$completeStage,'--prefix',("audio/"+$collectionLower+"/complete"),'--max-total-gib','9')
+  if($DeleteVerifiedLocal){$args2+='--delete-verified-local'}
+  Write-Host "R2 PUBLISH complete MP3 -> audio/$collectionLower/complete"
+  python @args2
+  if($LASTEXITCODE -ne 0){throw "R2 sync failed for complete MP3"}
+  Remove-Item $completeStage -Recurse -Force -ErrorAction SilentlyContinue
+  if($DeleteVerifiedLocal -and (Test-Path $outMp3)){
+    Remove-Item $outMp3 -Force
+    Write-Host "DELETE-LOCAL verified complete MP3: $outMp3"
+  }
+}
+
 Write-Host "Tip: re-run this command anytime; existing per-sutta MP3 files are checkpointed and skipped."
