@@ -144,6 +144,254 @@
       }
     ]
   },
+  "sn34.12": {
+    "canonicalRef": "sn34.12",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn34.12/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T10:25:53+00:00",
+    "materializedAt": "2026-09-02T10:25:53+00:00",
+    "contentHash": "d96000ece782e7602edde07bfe55acb60514b71a5fb92df12e1b154b7411c4d0",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 34: Tương Ưng Thiền"
+      },
+      {
+        "id": "p2",
+        "text": "34.12. Xuất Khởi Từ Thiền Chứng"
+      },
+      {
+        "id": "p3",
+        "text": "((Như kinh trên, chỉ thế “thiện xảo về xuất khởi” thay cho “thiện xảo về chỉ trú”)."
+      },
+      {
+        "id": "p4",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn34.13": {
+    "canonicalRef": "sn34.13",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn34.13/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T10:25:53+00:00",
+    "materializedAt": "2026-09-02T10:25:53+00:00",
+    "contentHash": "a1acdabd0135fc63437084e409c833b97094f5142d17161411e58785fe55eb80",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 34: Tương Ưng Thiền"
+      },
+      {
+        "id": "p2",
+        "text": "34.13. Thuần Thục Trong Thiền Chứng"
+      },
+      {
+        "id": "p3",
+        "text": "(Như kinh trên, chỉ thế vào “thiện xảo về thuần thục”)."
+      },
+      {
+        "id": "p4",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn34.14": {
+    "canonicalRef": "sn34.14",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn34.14/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T10:25:53+00:00",
+    "materializedAt": "2026-09-02T10:25:53+00:00",
+    "contentHash": "16fc3d608f4c7a7e2871c15694dc9004171fa40e912f993cea3a7eb3533e8954",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 34: Tương Ưng Thiền"
+      },
+      {
+        "id": "p2",
+        "text": "34.14. Sở Duyên Trong Thiền Chứng"
+      },
+      {
+        "id": "p3",
+        "text": "(Như kinh trên, chỉ thế vào “thiện xảo về sở duyên”)."
+      },
+      {
+        "id": "p4",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn34.15": {
+    "canonicalRef": "sn34.15",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn34.15/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T10:25:53+00:00",
+    "materializedAt": "2026-09-02T10:25:53+00:00",
+    "contentHash": "231bb3ef60d6037535c7cca10cbe68a1e9b4418d0999b1a4a9b54e89a340741b",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 34: Tương Ưng Thiền"
+      },
+      {
+        "id": "p2",
+        "text": "34.15. Hành Cảnh Trong Thiền Chứng"
+      },
+      {
+        "id": "p3",
+        "text": "(Như kinh trên, chỉ thế vào “thiện xảo về hành cảnh”)."
+      },
+      {
+        "id": "p4",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn34.16": {
+    "canonicalRef": "sn34.16",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn34.16/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T10:25:53+00:00",
+    "materializedAt": "2026-09-02T10:25:53+00:00",
+    "contentHash": "19005a3273216981bb10a2f22e5247e25c2c67f405c2cc7a7b0c9ed3c646bdb8",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 34: Tương Ưng Thiền"
+      },
+      {
+        "id": "p2",
+        "text": "34.16. Sở Nguyện Trong Thiền Chứng"
+      },
+      {
+        "id": "p3",
+        "text": "(Như kinh trên, chỉ thế vào “thiện xảo về sở nguyện”)."
+      },
+      {
+        "id": "p4",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn34.17": {
+    "canonicalRef": "sn34.17",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn34.17/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T10:25:53+00:00",
+    "materializedAt": "2026-09-02T10:25:53+00:00",
+    "contentHash": "09a1acfc7f7f636504ec389be0d68e2c3389b0a292cfe8f5fbe7ee45bad02b48",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 34: Tương Ưng Thiền"
+      },
+      {
+        "id": "p2",
+        "text": "34.17. Thận Trọng Trong Thiền Chứng"
+      },
+      {
+        "id": "p3",
+        "text": "(Như kinh trên, chỉ thế vào “thiện xảo về thận trọng”)."
+      },
+      {
+        "id": "p4",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn34.18": {
+    "canonicalRef": "sn34.18",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn34.18/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T10:25:53+00:00",
+    "materializedAt": "2026-09-02T10:25:53+00:00",
+    "contentHash": "ddab543224936f9378f2ee65239c2e122cd03af297ef1bc2055e1fe02658f1d0",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 34: Tương Ưng Thiền"
+      },
+      {
+        "id": "p2",
+        "text": "34.18. Kiên Trì Trong Thiền Chứng"
+      },
+      {
+        "id": "p3",
+        "text": "(Như kinh trên, chỉ thế vào “thiện xảo về kiên trì”)."
+      },
+      {
+        "id": "p4",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn34.19": {
+    "canonicalRef": "sn34.19",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn34.19/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T10:25:53+00:00",
+    "materializedAt": "2026-09-02T10:25:53+00:00",
+    "contentHash": "9a0807313f81b10c55fc2a5f32d293af49d2765f5d25cb8e6b48100190348300",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 34: Tương Ưng Thiền"
+      },
+      {
+        "id": "p2",
+        "text": "34.19. Thích ứng Trong Thiền Chứng"
+      },
+      {
+        "id": "p3",
+        "text": "(Như kinh trên, chỉ thế vào “thiện xảo về thích ứng”)."
+      },
+      {
+        "id": "p4",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
   "sn34.2": {
     "canonicalRef": "sn34.2",
     "collection": "SN",
@@ -207,6 +455,140 @@
       }
     ]
   },
+  "sn34.20-27": {
+    "canonicalRef": "sn34.20-27",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn34.20-27/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T10:25:53+00:00",
+    "materializedAt": "2026-09-02T10:25:53+00:00",
+    "contentHash": "3643b69f457e3820ed0d0b6908496005808abb69d9f944d2945ccc63b57dadb1",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 34: Tương Ưng Thiền"
+      },
+      {
+        "id": "p2",
+        "text": "34.20–27"
+      },
+      {
+        "id": "p3",
+        "text": "34.20. Chỉ Trú—Xuất Khởi"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-3. Nhân duyên ở Sāvatthi …"
+      },
+      {
+        "id": "p5",
+        "text": "—Có bốn hạng tu Thiền này, này các Tỷ-kheo. Thế nào là bốn?"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 Ở đây, này các Tỷ-kheo, có người tu Thiền, thiện xảo về chỉ trú trong Thiền định, nhưng không thiện xảo về xuất khởi trong Thiền định."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 5 Ở đây, này các Tỷ-kheo, có người tu Thiền, thiện xảo về xuất khởi trong Thiền định, nhưng không thiện xảo về chỉ trú trong Thiền định."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 6 Ở đây, này các Tỷ-kheo, có người tu Thiền, không thiện xảo về chỉ trú trong Thiền định, cũng không thiện xảo về xuất khởi trong Thiền định."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 7 Ở đây, này các Tỷ-kheo, có người tu Thiền, thiện xảo về chỉ trú trong Thiền định, và cũng thiện xảo về xuất khởi trong Thiền định."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 8-9. Tại đây, này các Tỷ-kheo, vị tu Thiền thiện xảo về chỉ trú trong Thiền định và cũng thiện xảo về xuất khởi trong Thiền định. Trong bốn vị tu Thiền ấy, vị tu Thiền này là tối tôn, tối thắng, là bậc thượng thủ, bậc tối thượng, tối diệu."
+      },
+      {
+        "id": "p11",
+        "text": "34.21–27. Thuần Thục Cho Ðến Thích ứng"
+      },
+      {
+        "id": "p12",
+        "text": "(Như kinh trên, chỉ thế vào “thuần thục, sở duyên, hành cảnh, sở nguyện, thận trọng, kiên trì, thích ứng trong chỉ trú”)."
+      },
+      {
+        "id": "p13",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn34.28-34": {
+    "canonicalRef": "sn34.28-34",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn34.28-34/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T10:25:53+00:00",
+    "materializedAt": "2026-09-02T10:25:53+00:00",
+    "contentHash": "5b83674ef65a8d0f1bb8ca02e43877b8b03aff6942ebf148eb41d5153d803cc9",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 34: Tương Ưng Thiền"
+      },
+      {
+        "id": "p2",
+        "text": "34.28–34"
+      },
+      {
+        "id": "p3",
+        "text": "34.28. Xuất Khởi—Thuần Thục"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-3. Nhân duyên ở Sāvatthi …"
+      },
+      {
+        "id": "p5",
+        "text": "—Có bốn hạng người tu Thiền này, này các Tỷ-kheo. Thế nào là bốn?"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 Ở đây, này các Tỷ-kheo, có người tu Thiền, thiện xảo về xuất khởi trong Thiền định, nhưng không thiện xảo về thuần thục trong Thiền định."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 5 Ở đây, này các Tỷ-kheo, có người tu Thiền, thiện xảo về thuần thục trong Thiền định, nhưng không thiện xảo về xuất khởi trong Thiền định."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 6 Ở đây, này các Tỷ-kheo, có người tu Thiền, không thiện xảo về xuất khởi trong Thiền định, cũng không thiện xảo về thuần thục trong Thiền định."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 7 Ở đây, này các Tỷ-kheo, có người tu Thiền thiện xảo về xuất khởi trong Thiền định, và cũng thiện xảo về thuần thục trong Thiền định."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 8-9. Tại đây, vị tu Thiền thiện xảo về xuất khởi trong Thiền định và cũng thiện xảo về thuần thục trong Thiền định. Trong bốn vị tu Thiền ấy, vị này là tối tôn, tối thắng, là bậc thượng thủ, tối thượng và tối diệu."
+      },
+      {
+        "id": "p11",
+        "text": "34.29–34. Sở Duyên—Thích ứng"
+      },
+      {
+        "id": "p12",
+        "text": "(Như kinh trên, chỉ thế vào “sở duyên” … cho đến “thích ứng”)."
+      },
+      {
+        "id": "p13",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
   "sn34.3": {
     "canonicalRef": "sn34.3",
     "collection": "SN",
@@ -234,6 +616,73 @@
       },
       {
         "id": "p4",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn34.35-40": {
+    "canonicalRef": "sn34.35-40",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn34.35-40/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T10:25:53+00:00",
+    "materializedAt": "2026-09-02T10:25:53+00:00",
+    "contentHash": "39e066a6cfe58cd92b5faa0cdcdee562daeae004c41a4c332142f3149194cd7b",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 34: Tương Ưng Thiền"
+      },
+      {
+        "id": "p2",
+        "text": "34.35–40"
+      },
+      {
+        "id": "p3",
+        "text": "34.35. Thuần Thục—Sở Duyên"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-4. Nhân duyên ở Sāvatthi …"
+      },
+      {
+        "id": "p5",
+        "text": "—Có bốn hạng người tu Thiền này, này các Tỷ-kheo. Thế nào là bốn?"
+      },
+      {
+        "id": "p6",
+        "text": "Ở đây, này các Tỷ-kheo, có người tu Thiền, thiện xảo về thuần thục trong Thiền định, nhưng không thiện xảo về sở duyên trong Thiền định."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 5 Ở đây, này các Tỷ-kheo, có người tu Thiền, thiện xảo về sở duyên trong Thiền định, nhưng không thiện xảo về thuần thục trong Thiền định."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 6 Ở đây, này các Tỷ-kheo, có người tu Thiền, không thiện xảo về thuần thục trong Thiền định, cũng không thiện xảo về sở duyên trong Thiền định."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 7 Ở đây, này các Tỷ-kheo, có người tu Thiền, thiện xảo về thuần thục trong Thiền định, và cũng thiện xảo về sở duyên trong Thiền định."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 8 Ở đây, này các Tỷ-kheo, vị tu Thiền thiện xảo về thuần thục trong Thiền định và cũng thiện xảo về sở duyên trong Thiền định. Trong bốn vị tu Thiền ấy, vị tu Thiền này là tối tôn, tối thắng, là bậc thượng thủ, là vị tối thượng, tối diệu."
+      },
+      {
+        "id": "p11",
+        "text": "34.36–40. Thuần Thục"
+      },
+      {
+        "id": "p12",
+        "text": "(Vị ấy thiện xảo về thuần thục trong Thiền định, nhưng (a) không thiện xảo về hành cảnh … (b) không thiện xảo về sở nguyện, (c) không thiện xảo về thận trọng, (d) không thiện xảo về kiên trì, (e) không thiện xảo về thích ứng)."
+      },
+      {
+        "id": "p13",
         "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
       }
     ]
@@ -269,6 +718,112 @@
       }
     ]
   },
+  "sn34.41-45": {
+    "canonicalRef": "sn34.41-45",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn34.41-45/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T10:25:53+00:00",
+    "materializedAt": "2026-09-02T10:25:53+00:00",
+    "contentHash": "5b2990e9bf819886910ab060ae8e048ad78bff0a990563cfac19a2f279a68eef",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 34: Tương Ưng Thiền"
+      },
+      {
+        "id": "p2",
+        "text": "34.41–45"
+      },
+      {
+        "id": "p3",
+        "text": "34.41. Sở Duyên—Hành Cảnh"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-7. Nhân duyên ở Sāvatthi …"
+      },
+      {
+        "id": "p5",
+        "text": "… thiện xảo về sở duyên trong Thiền định, nhưng không thiện xảo về hành cảnh trong Thiền định."
+      },
+      {
+        "id": "p6",
+        "text": "… thiện xảo về hành cảnh trong Thiền định, nhưng không thiện xảo về sở duyên trong Thiền định."
+      },
+      {
+        "id": "p7",
+        "text": "… không thiện xảo về sở duyên trong Thiền định, cũng không thiện xảo về hành cảnh trong Thiền định."
+      },
+      {
+        "id": "p8",
+        "text": "… thiện xảo về sở duyên trong Thiền định, cũng thiện xảo về hành cảnh trong Thiền định."
+      },
+      {
+        "id": "p9",
+        "text": "34.40–45. Sở Duyên"
+      },
+      {
+        "id": "p10",
+        "text": "… vị ấy thiện xảo về sở duyên trong Thiền định, nhưng (a) không thiện xảo về sở nguyện, (b) không thiện xảo về thận trọng, (c) không thiện xảo về kiên trì, (d) không thiện xảo về thích ứng."
+      },
+      {
+        "id": "p11",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn34.46-49": {
+    "canonicalRef": "sn34.46-49",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn34.46-49/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T10:25:54+00:00",
+    "materializedAt": "2026-09-02T10:25:54+00:00",
+    "contentHash": "0184ca21e51a899f51d18293a53a83e707ddcd740a4e1fcea0aefd54e4265aa4",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 34: Tương Ưng Thiền"
+      },
+      {
+        "id": "p2",
+        "text": "34.46–49. Sỏ Nguyện—Thận Trọng"
+      },
+      {
+        "id": "p3",
+        "text": "34.46. Hành Cảnh—Sở Nguyện"
+      },
+      {
+        "id": "p4",
+        "text": "… thiện xảo về hành cảnh trong Thiền định, nhưng không thiện xảo về sở nguyện trong Thiền định.. thiện xảo về sở nguyện trong Thiền định, nhưng không thiện xảo về hành cảnh trong Thiền định.. không thiện xảo về hành cảnh trong Thiền định, và cũng không thiện xảo về sở nguyện trong Thiền định."
+      },
+      {
+        "id": "p5",
+        "text": "… thiện xảo về hành cảnh trong Thiền định và cũng thiện xảo về sở nguyện trong Thiền định."
+      },
+      {
+        "id": "p6",
+        "text": "34.47–49. Hành Cảnh"
+      },
+      {
+        "id": "p7",
+        "text": "… thiện xảo về hành cảnh trong Thiền định, nhưng (a) không thiện xảo về thận trọng trong Thiền định, (b) không thiện xảo về kiên trì trong Thiền định, (c) không thiện xảo về thích ứng trong Thiền định."
+      },
+      {
+        "id": "p8",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh and Aminah Borg-Luck."
+      }
+    ]
+  },
   "sn34.5": {
     "canonicalRef": "sn34.5",
     "collection": "SN",
@@ -296,6 +851,179 @@
       },
       {
         "id": "p4",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn34.50-52": {
+    "canonicalRef": "sn34.50-52",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn34.50-52/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T10:25:54+00:00",
+    "materializedAt": "2026-09-02T10:25:54+00:00",
+    "contentHash": "d018f74ed8b16baaa00dc28b50bbe68a921c717cae662da962f4284a24dd1172",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 34: Tương Ưng Thiền"
+      },
+      {
+        "id": "p2",
+        "text": "34.50–52"
+      },
+      {
+        "id": "p3",
+        "text": "34.50. Sỏ Nguyện—Thận Trọng"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-7. Nhân duyên ở Sāvatthi …"
+      },
+      {
+        "id": "p5",
+        "text": "… thiện xảo về sở nguyện trong Thiền định, nhưng không thiện xảo về thận trọng trong Thiền định."
+      },
+      {
+        "id": "p6",
+        "text": "… thiện xảo về thận trọng trong Thiền định, nhưng không thiện xảo về sở nguyện trong Thiền định."
+      },
+      {
+        "id": "p7",
+        "text": "… không thiện xảo về sở nguyện trong Thiền định, và cũng không thiện xảo về thận trọng trong Thiền định."
+      },
+      {
+        "id": "p8",
+        "text": "… thiện xảo về sở nguyện trong Thiền định và cũng thiện xảo về thận trong trong Thiền định."
+      },
+      {
+        "id": "p9",
+        "text": "34.51–52. Sở Nguyện Và Kiên Trì"
+      },
+      {
+        "id": "p10",
+        "text": "… thiện xảo về sở nguyện trong Thiền định, nhưng (a) không thiện xảo về kiên trì, và (b) không thiện xảo về thích ứng."
+      },
+      {
+        "id": "p11",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh and Aminah Borg-Luck."
+      }
+    ]
+  },
+  "sn34.53-54": {
+    "canonicalRef": "sn34.53-54",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn34.53-54/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T10:25:54+00:00",
+    "materializedAt": "2026-09-02T10:25:54+00:00",
+    "contentHash": "77ce0cdbb907f89381a25da3c8afd397a3c3e20db65974c5a7d652491f9bfef0",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 34: Tương Ưng Thiền"
+      },
+      {
+        "id": "p2",
+        "text": "34.53–54. Thận Trọng Và Kiên Trì"
+      },
+      {
+        "id": "p3",
+        "text": "… thiện xảo về thận trọng trong Thiền định, nhưng không thiện xảo về kiên trì trong Thiền định … thiện xảo về kiên trì trong Thiền định, nhưng không thiện xảo về thận trọng trong Thiền định."
+      },
+      {
+        "id": "p4",
+        "text": "… không thiện xảo về thận trọng trong Thiền định, và cũng thiện xảo về kiên trì trong Thiền định."
+      },
+      {
+        "id": "p5",
+        "text": "… thiện xảo về thận trọng trong Thiền định và cũng thiện xảo về kiên trì trong Thiền định."
+      },
+      {
+        "id": "p6",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh and Aminah Borg-Luck."
+      }
+    ]
+  },
+  "sn34.55": {
+    "canonicalRef": "sn34.55",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn34.55/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T10:25:54+00:00",
+    "materializedAt": "2026-09-02T10:25:54+00:00",
+    "contentHash": "942acef95694a9ab23ff7a3aca25fcf531c88c6c957fba82da3ec66fcd9eff3e",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 34: Tương Ưng Thiền"
+      },
+      {
+        "id": "p2",
+        "text": "34.55. Kiên Trì Và Thích ứng"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1-3. Nhân duyên ở Sāvatthi …"
+      },
+      {
+        "id": "p4",
+        "text": "—Này các Tỷ-kheo, có bốn hạng người tu Thiền này. Thế nào là bốn?"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 4 Ở đây, này các Tỷ-kheo, có người tu Thiền, thiện xảo về kiên trì trong Thiền định, nhưng không thiện xảo về thích ứng trong Thiền định."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 5 Ở đây, này các Tỷ-kheo, có người tu Thiền, thiện xảo về thích ứng trong Thiền định, nhưng không thiện xảo về kiên trì trong Thiền định."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 6 Ở đây, này các Tỷ-kheo, có người tu Thiền, không thiện xảo về kiên trì trong Thiền định và cũng không thiện xảo về thích ứng trong Thiền định."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 7 Ở đây, này các Tỷ-kheo, có người tu Thiền, thiện xảo về kiên trì trong Thiền định, và cũng thiện xảo về thích ứng trong Thiền định."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 8 Tại đây, này các Tỷ-kheo, người tu Thiền thiện xảo về kiên trì trong Thiền định và cũng thiện xảo về thích ứng trong Thiền định. Trong bốn vị tu Thiền ấy, người tu Thiền này là tối tôn, tối thắng, là bậc thượng thủ, là tối thượng và tối diệu."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 9 Ví như, này các Tỷ-kheo, từ bò cái, có được sữa; từ sữa có lạc; từ lạc có sanh tô; từ sanh tô có thục tô; từ thục tô có đề hồ. Và đề hồ được xem là tối tôn."
+      },
+      {
+        "id": "p11",
+        "text": "Cũng vậy, này các Tỷ-kheo, vị tu Thiền này đối với bốn vị tu Thiền ấy, vị này là tối tôn, tối thắng, là bậc thượng thủ, là tối thượng, và tối diệu."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 10 Thế Tôn thuyết như vậy. Các Tỷ-kheo ấy hoan hỷ, tín thọ lời Thế Tôn dạy."
+      },
+      {
+        "id": "p13",
+        "text": "(Như vậy có 55 câu trả lời vắn tắt cần phải giải thích cho rộng)"
+      },
+      {
+        "id": "p14",
+        "text": "Hết Tập III"
+      },
+      {
+        "id": "p15",
         "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
       }
     ]
