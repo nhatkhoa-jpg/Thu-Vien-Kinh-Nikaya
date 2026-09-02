@@ -1,0 +1,2 @@
+Release marker for the verified public UI refresh on 2026-09-02.
+No runtime logic or corpus content is changed by this file.
