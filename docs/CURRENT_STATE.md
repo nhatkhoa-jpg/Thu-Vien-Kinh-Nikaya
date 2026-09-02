@@ -8,12 +8,9 @@ Verified: 2026-09-02 UTC
   SN 1,819 catalog, 358 verified local full texts, 1 verified missing Vietnamese,
   1 transient source failure queued for retry; AN canonical 1,408 discovered but
   catalog/full text pending; KN discovery pending.
-- Hosting: Cloudflare adapter/build/dry-run gates merged; Worker gzip 1.922 MiB;
-  preview deployment awaits scoped Cloudflare credentials. Vercel remains backup
-  and must not be retried while rate-limited.
+- Hosting: Cloudflare preview verified at https://thu-vien-kinh-nikaya-preview.nhatkhoa-nikaya.workers.dev; production cutover remains blocked until an explicit production gate. Vercel remains current primary/backup candidate and is not retried while rate-limited.
 - Locales: PR in progress for public `vi/th/my/si/km/lo/en/zh`; Pāli canonical;
   other UI locales deferred/noindex.
 - Running next: scheduled resumable SN batches on GitHub Actions, then AN and KN
   catalog/materialization factories.
-- Blocker: Cloudflare preview needs `CLOUDFLARE_API_TOKEN` and
-  `CLOUDFLARE_ACCOUNT_ID` (or connected Cloudflare authorization).
+- Blocker: Cloudflare production has not been deployed; preview verification is complete.
