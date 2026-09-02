@@ -1,0 +1,38 @@
+{
+  "collection": "SN",
+  "authoritativeCanonicalCount": 1819,
+  "materializedSnCount": 1819,
+  "preservedEditorialRecords": [
+    "sn22.59",
+    "sn56.11"
+  ],
+  "generatedRecords": 1817,
+  "minhChauVietnameseRecords": 1805,
+  "missingMinhChauVietnameseRecords": 14,
+  "missingMinhChauRefs": [
+    "sn3.15",
+    "sn35.57",
+    "sn35.59",
+    "sn35.82",
+    "sn36.25",
+    "sn36.30",
+    "sn37.17",
+    "sn37.18",
+    "sn37.19",
+    "sn37.20",
+    "sn37.21",
+    "sn37.22",
+    "sn37.23",
+    "sn37.24"
+  ],
+  "rangeCanonicalRefsPreserved": 134,
+  "finalCatalogCount": 1977,
+  "newRecordsUseUnknownReadMinutesZero": 1817,
+  "policy": {
+    "canonicalRanges": "Preserved exactly; never expanded into invented canonical refs.",
+    "editorialSeeds": "Existing SN records preserve slug/topics/summary/practice/featured/media except source normalization.",
+    "missingVietnamese": "Pali title is shown with an explicit missing-Vietnamese marker; no translation is invented.",
+    "summaryPractice": "New records use empty editorial fields; no doctrinal summary/practice text is fabricated.",
+    "readMinutes": "0 means unknown until runtime full text can provide a word-count estimate."
+  }
+}
