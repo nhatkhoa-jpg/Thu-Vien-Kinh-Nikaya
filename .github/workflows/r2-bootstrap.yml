@@ -6,6 +6,7 @@ on:
     paths:
       - '.github/workflows/r2-bootstrap.yml'
       - 'scripts/r2_smoke.py'
+      - 'scripts/r2_sync.py'
   workflow_dispatch:
 
 permissions:
@@ -39,5 +40,14 @@ jobs:
           echo 'R2 secret availability: PASS'
       - name: Install S3 client library
         run: python -m pip install --disable-pip-version-check --quiet boto3
+      - name: Validate R2 scripts
+        run: python -m py_compile scripts/r2_smoke.py scripts/r2_sync.py
       - name: Upload, read, verify and delete smoke object
         run: python scripts/r2_smoke.py
+      - name: Verify checksum-aware sync planner without writing objects
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/r2-sync-smoke
+          printf 'nikaya-r2-sync-dry-run\n' >/tmp/r2-sync-smoke/sample.txt
+          python scripts/r2_sync.py /tmp/r2-sync-smoke --prefix ops/dryrun --dry-run --max-total-gib 9
