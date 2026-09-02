@@ -2,7 +2,9 @@ name: Build Preservation Audio V2
 
 on:
   push:
-    branches: [feature/preservation-audio-v2]
+    branches:
+      - feature/preservation-audio-v2
+      - feature/preservation-audio-dn
     paths:
       - '.github/workflows/build-preservation-audio.yml'
   workflow_dispatch:
@@ -18,11 +20,11 @@ permissions:
   contents: write
 
 concurrency:
-  group: preservation-audio-v2-${{ github.event.inputs.collection || 'mn' }}
+  group: preservation-audio-v2-${{ github.event.inputs.collection || (github.ref_name == 'feature/preservation-audio-dn' && 'dn') || 'mn' }}
   cancel-in-progress: false
 
 env:
-  COLLECTION: ${{ github.event.inputs.collection || 'mn' }}
+  COLLECTION: ${{ github.event.inputs.collection || (github.ref_name == 'feature/preservation-audio-dn' && 'dn') || 'mn' }}
   SEGMENT_SECONDS: '600'
 
 jobs:
