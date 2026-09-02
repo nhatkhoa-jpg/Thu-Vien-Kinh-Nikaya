@@ -50,6 +50,24 @@ jobs:
         run: |
           npm install
           npm run rag:export
+      - name: Validate non-empty RAG coverage
+        run: |
+          node <<'NODE'
+          const fs=require('fs');
+          const suttas=require('./data/catalog/suttas.json');
+          const read=f=>fs.readFileSync(f,'utf8').trim().split('\n').filter(Boolean).map(JSON.parse);
+          for(const lang of ['vi','en']){
+            const rag=read(`data/exports/nikaya-rag.${lang}.jsonl`);
+            const docs=read(`data/exports/nikaya-knowledge.${lang}.jsonl`);
+            if(docs.length!==suttas.length)throw new Error(`${lang} knowledge ${docs.length}/${suttas.length}`);
+            if(rag.some(x=>!String(x.text||'').trim()))throw new Error(`${lang} RAG contains empty text`);
+            const covered=new Set(rag.map(x=>x.sutta_id));
+            if(covered.size!==suttas.length)throw new Error(`${lang} RAG coverage ${covered.size}/${suttas.length}`);
+            const snCatalog=rag.filter(x=>x.collection==='SN'&&x.section==='catalog');
+            if(snCatalog.length<1817)throw new Error(`${lang} SN catalog chunks unexpectedly low: ${snCatalog.length}`);
+            console.log(lang,{documents:docs.length,ragChunks:rag.length,snCatalogChunks:snCatalog.length});
+          }
+          NODE
       - name: Build application
         run: npm run build
       - name: Smoke test representative SN pages
@@ -83,4 +101,4 @@ jobs:
           git commit -m 'data: materialize full SN canonical catalog'
           git push origin HEAD:feature/sn-canonical-discovery
 
-# trigger apply/validate after UI and schema hardening
+# final validation after non-empty RAG hardening
