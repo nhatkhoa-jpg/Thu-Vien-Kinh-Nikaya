@@ -1,0 +1,133 @@
+name: SN data-first mainline materialization
+
+on:
+  push:
+    branches:
+      - feature/sn-data-first-mainline
+    paths:
+      - '.github/workflows/sn-data-first-mainline.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  materialize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/sn-data-first-mainline
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Discover authoritative SN refs and metadata
+        run: python3 scripts/discover_sn_catalog.py
+
+      - name: Materialize SN into current mainline catalog
+        run: python3 scripts/materialize_sn_catalog.py --apply
+
+      - name: Validate collection invariants before build
+        run: |
+          node <<'NODE'
+          const fs=require('fs');
+          const rows=JSON.parse(fs.readFileSync('data/catalog/suttas.json','utf8'));
+          const count=c=>rows.filter(x=>x.collection===c).length;
+          const sn=rows.filter(x=>x.collection==='SN');
+          if(count('MN')!==152)throw new Error(`MN regressed: ${count('MN')}/152`);
+          if(count('DN')!==34)throw new Error(`DN regressed: ${count('DN')}/34`);
+          if(sn.length!==1819)throw new Error(`SN count ${sn.length}/1819`);
+          if(rows.length!==2009)throw new Error(`catalog total ${rows.length}/2009`);
+          for(const key of ['id','canonicalRef','slug']){
+            const values=rows.map(x=>x[key]);
+            if(new Set(values).size!==values.length)throw new Error(`duplicate ${key}`);
+          }
+          const minh=sn.filter(x=>x.source?.language==='vi'&&x.source?.translator==='Thích Minh Châu').length;
+          const paliOnly=sn.filter(x=>x.source?.language==='pli').length;
+          const ranges=sn.filter(x=>x.canonicalRef.includes('-')).length;
+          if(minh!==1805)throw new Error(`SN Minh Chau coverage ${minh}/1805`);
+          if(paliOnly!==14)throw new Error(`SN missing-VI count ${paliOnly}/14`);
+          if(ranges!==134)throw new Error(`SN canonical range count ${ranges}/134`);
+          const seed1=sn.find(x=>x.canonicalRef==='sn56.11');
+          const seed2=sn.find(x=>x.canonicalRef==='sn22.59');
+          if(!seed1||!seed2)throw new Error('existing SN editorial seeds missing');
+          console.log({total:rows.length,DN:count('DN'),MN:count('MN'),SN:sn.length,AN:count('AN'),KN:count('KN'),minh,paliOnly,ranges});
+          NODE
+
+      - name: Install dependencies and regenerate source-backed exports
+        run: |
+          npm install
+          npm run rag:export
+          node <<'NODE'
+          const fs=require('fs');
+          const paths=['data/exports/nikaya-rag.vi.jsonl','data/exports/nikaya-rag.en.jsonl','data/exports/nikaya-knowledge.vi.jsonl','data/exports/nikaya-knowledge.en.jsonl'];
+          for(const p of paths){
+            const lines=fs.readFileSync(p,'utf8').trim().split('\n').filter(Boolean).map(JSON.parse);
+            if(!lines.length)throw new Error(`${p} empty`);
+            for(const x of lines){if(!String(x.text||'').trim())throw new Error(`${p} contains empty text`);}
+          }
+          NODE
+
+      - name: Build application
+        run: npm run build
+
+      - name: Smoke test SN and preserve DN/MN readers
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run start -- -p 3000 > /tmp/nikaya-sn-mainline.log 2>&1 &
+          PID=$!
+          trap 'kill $PID || true' EXIT
+          READY=0
+          for i in {1..45}; do
+            if curl --fail --silent http://127.0.0.1:3000/vi >/dev/null; then READY=1; break; fi
+            sleep 1
+          done
+          if [ "$READY" -ne 1 ]; then cat /tmp/nikaya-sn-mainline.log; exit 1; fi
+
+          curl --fail --silent 'http://127.0.0.1:3000/vi?collection=SN' -o /tmp/home-sn.html
+          grep -Fq 'Tương Ưng Bộ' /tmp/home-sn.html
+
+          curl --fail --silent http://127.0.0.1:3000/vi/library/sn-1-1 -o /tmp/sn11.html
+          grep -Fq 'TƯB 1.1' /tmp/sn11.html
+          grep -Fq 'Bộc Lưu' /tmp/sn11.html
+          if grep -Fq '>0 phút<' /tmp/sn11.html; then echo 'FAIL: 0-minute label leaked'; exit 1; fi
+
+          curl --fail --silent http://127.0.0.1:3000/vi/library/sn-3-15 -o /tmp/sn315.html
+          grep -Fq 'chưa có bản Việt Thích Minh Châu' /tmp/sn315.html
+          grep -Fq 'không tự chuyển sang bản dịch khác' /tmp/sn315.html
+
+          curl --fail --silent http://127.0.0.1:3000/vi/library/sn-22-59-anattalakkhana -o /tmp/sn2259.html
+          grep -Fq 'Kinh Vô Ngã Tướng' /tmp/sn2259.html
+
+          curl --fail --silent http://127.0.0.1:3000/vi/library/mn-21-kakacupama >/dev/null
+          curl --fail --silent http://127.0.0.1:3000/vi/library/dn-1 >/dev/null
+          echo 'SN DATA-FIRST MAINLINE SMOKE PASS'
+
+      - name: Commit verified SN corpus checkpoint
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add \
+            data/catalog/discovery-sn.json \
+            data/catalog/discovery-sn-report.json \
+            data/catalog/discovery-sn-suttaplex.json \
+            data/catalog/discovery-sn-suttaplex-report.json \
+            data/catalog/discovery-sn-suttaplex-en.json \
+            data/catalog/discovery-sn-suttaplex-en-report.json \
+            data/catalog/sn-materialization-preview.json \
+            data/catalog/sn-materialization-report.json \
+            data/catalog/suttas.json \
+            data/exports
+          if git diff --cached --quiet; then
+            echo 'No SN corpus changes to commit.'
+            exit 0
+          fi
+          git commit -m 'data: materialize full SN catalog on current mainline'
+          git push origin HEAD:feature/sn-data-first-mainline
