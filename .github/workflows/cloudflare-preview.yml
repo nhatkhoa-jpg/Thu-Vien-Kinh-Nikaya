@@ -1,0 +1,61 @@
+name: Cloudflare Preview Gate
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "app/**"
+      - "components/**"
+      - "lib/**"
+      - "public/**"
+      - "package.json"
+      - "package-lock.json"
+      - "next.config.ts"
+      - "vite.config.ts"
+      - "wrangler.jsonc"
+      - ".github/workflows/cloudflare-preview.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: cloudflare-preview-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+      - run: npm run build:vinext
+      - name: Verify Worker free-tier bundle
+        run: |
+          npx wrangler deploy --dry-run --config dist/server/wrangler.json 2>&1 | tee /tmp/wrangler-dry-run.log
+          grep -F -- "--dry-run: exiting now" /tmp/wrangler-dry-run.log
+      - name: Smoke Worker routes using real catalog slugs
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run start:vinext -- --ip 127.0.0.1 --port 8787 > /tmp/cloudflare-worker.log 2>&1 &
+          PID=$!
+          trap 'kill $PID || true' EXIT
+          for i in {1..45}; do
+            curl -fsS http://127.0.0.1:8787/vi >/dev/null && break
+            if [ "$i" = 45 ]; then cat /tmp/cloudflare-worker.log; exit 1; fi
+            sleep 1
+          done
+          refs=(mn21 dn1 dn16 dn34 sn1.1 sn22.59)
+          for ref in "${refs[@]}"; do
+            slug=$(REF="$ref" node -e "const s=require('./data/catalog/suttas.json').find(x=>x.canonicalRef===process.env.REF);if(!s?.slug)process.exit(2);process.stdout.write(s.slug)")
+            url="http://127.0.0.1:8787/vi/library/${slug}"
+            echo "Smoke canonicalRef=${ref} URL=${url}"
+            curl -fsS "$url" -o "/tmp/${ref//./-}.html" || { cat /tmp/cloudflare-worker.log; exit 1; }
+          done
+          curl -fsS http://127.0.0.1:8787/en >/dev/null
+          curl -fsS http://127.0.0.1:8787/robots.txt | grep -F 'sitemap.xml'
+          curl -fsS http://127.0.0.1:8787/sitemap.xml | grep -F '<urlset'
+          test "$(curl -sS -o /dev/null -w '%{http_code}' http://127.0.0.1:8787/not-a-real-route)" = 404
