@@ -1,0 +1,911 @@
+{
+  "sn24.1": {
+    "canonicalRef": "sn24.1",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn24.1/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T08:26:49+00:00",
+    "materializedAt": "2026-09-02T08:26:49+00:00",
+    "contentHash": "3c5c607f6f0cb8b876735e9aff816a80e757ebfe5e84a02fea95329836efbf96",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 24: Tương Ưng Kiến"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Dự Lưu"
+      },
+      {
+        "id": "p3",
+        "text": "24.1. Gió"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-2. Nhân duyên ở Sāvatthi …"
+      },
+      {
+        "id": "p5",
+        "text": "Thế Tôn nói với các Tỷ-kheo:"
+      },
+      {
+        "id": "p6",
+        "text": "—Do có cái gì, này các Tỷ-kheo, do chấp thủ cái gì, do thiên chấp cái gì, (tà) kiến này khởi lên: “Gió không thổi, sông không chảy, đàn bà mang thai không sanh, mặt trăng, mặt trời không mọc hay không lặn. Tất cả đều đứng vững như cột trụ”?"
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 3 —Ðối với chúng con, bạch Thế Tôn, các pháp lấy Thế Tôn làm căn bản, lấy Thế Tôn làm lãnh đạo, lấy Thế Tôn làm chỗ nương tựa. Lành thay, bạch Thế Tôn! Thế Tôn hãy nói cho chúng con ý nghĩa của lời dạy ấy. Sau khi nghe lời dạy của Thế Tôn, các Tỷ-kheo sẽ thọ trì."
+      },
+      {
+        "id": "p8",
+        "text": "—Vậy này các Tỷ-kheo, hãy nghe và suy nghiệm kỹ, Ta sẽ giảng."
+      },
+      {
+        "id": "p9",
+        "text": "—Thưa vâng, bạch Thế Tôn."
+      },
+      {
+        "id": "p10",
+        "text": "Các Tỷ-kheo ấy vâng đáp Thế Tôn. Thế Tôn nói như sau:"
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 4 —Do có sắc, này các Tỷ-kheo, do chấp thủ sắc, do thiên chấp sắc, (tà) kiến này khởi lên: “Gió không thổi, sông không chảy, đàn bà có thai không sanh, mặt trăng, mặt trời không mọc hay không lặn. Tất cả đều đứng vững như cột trụ”."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 5-7. Do có thọ … có tưởng … có các hành …"
+      },
+      {
+        "id": "p13",
+        "text": "Vi-n 8 Do có thức, này các Tỷ-kheo, do chấp thủ thức, do thiên chấp thức, (tà) kiến này khởi lên: “Gió không thổi … Tất cả đều đứng vững như cột trụ”."
+      },
+      {
+        "id": "p14",
+        "text": "Vi-n 9 Các Ông nghĩ thế nào, này các Tỷ-kheo, sắc là thường hay vô thường?"
+      },
+      {
+        "id": "p15",
+        "text": "—Là vô thường, bạch Thế Tôn."
+      },
+      {
+        "id": "p16",
+        "text": "—Cái gì vô thường là khổ hay lạc?"
+      },
+      {
+        "id": "p17",
+        "text": "—Là khổ, bạch Thế Tôn."
+      },
+      {
+        "id": "p18",
+        "text": "—Cái gì vô thường, khổ, chịu sự biến hoại, nếu không chấp thủ cái ấy, thời có thể khởi lên (tà) kiến: “Gió không thổi … Tất cả đều đứng vững như cột trụ”?"
+      },
+      {
+        "id": "p19",
+        "text": "—Thưa không, bạch Thế Tôn."
+      },
+      {
+        "id": "p20",
+        "text": "Vi-n 10-12. —Thọ … Tưởng … Các hành …"
+      },
+      {
+        "id": "p21",
+        "text": "Vi-n 13 … Thức là thường hay vô thường?"
+      },
+      {
+        "id": "p22",
+        "text": "—Là vô thường, bạch Thế Tôn."
+      },
+      {
+        "id": "p23",
+        "text": "—Cái gì vô thường, là khổ hay lạc?"
+      },
+      {
+        "id": "p24",
+        "text": "—Là khổ, bạch Thế Tôn."
+      },
+      {
+        "id": "p25",
+        "text": "—Cái gì vô thường, khổ, chịu sự biến hoại, nếu không chấp thủ cái ấy, thời có thể khởi lên (tà) kiến: “Gió không thổi … Tất cả đều đứng vững như cột trụ”?"
+      },
+      {
+        "id": "p26",
+        "text": "—Thưa không, bạch Thế Tôn."
+      },
+      {
+        "id": "p27",
+        "text": "Vi-n 14 —Cái gì được thấy, được nghe, được nghĩ đến, được biết, được đạt đến, được tìm cầu, được ý tư duy; cái ấy là thường hay vô thường?"
+      },
+      {
+        "id": "p28",
+        "text": "—Là vô thường, bạch Thế Tôn?"
+      },
+      {
+        "id": "p29",
+        "text": "—Cái gì vô thường là khổ hay lạc?"
+      },
+      {
+        "id": "p30",
+        "text": "—Là khổ, bạch Thế Tôn."
+      },
+      {
+        "id": "p31",
+        "text": "—Cái gì vô thường, khổ, chịu sự biến hoại, nếu không chấp thủ cái ấy, thời có thể khởi lên (tà) kiến: “Gió không thổi … Tất cả đều đứng vững như cột trụ”?"
+      },
+      {
+        "id": "p32",
+        "text": "—Thưa không, bạch Thế Tôn."
+      },
+      {
+        "id": "p33",
+        "text": "Vi-n 15 —Khi nào vị Thánh đệ tử, này các Tỷ-kheo, đối với sáu xứ này, nghi hoặc được đoạn trừ; đối với khổ, nghi hoặc được đoạn trừ; đối với khổ tập khởi, nghi hoặc được đoạn trừ; đối với khổ đoạn diệt, nghi hoặc được đoạn trừ; đối với con đường đưa đến khổ đoạn diệt, nghi hoặc được đoạn trừ; như vậy, này các Tỷ-kheo gọi là bậc Thánh đệ tử đã chứng được Dự lưu, không còn bị thối đọa, quyết chắc hướng đến giác ngộ."
+      },
+      {
+        "id": "p34",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn24.10": {
+    "canonicalRef": "sn24.10",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn24.10/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T08:26:50+00:00",
+    "materializedAt": "2026-09-02T08:26:50+00:00",
+    "contentHash": "feea1260ec0a5798f6936fdc6fe79af888587a9a1ad5dcb0a9f5b8eb42392e67",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 24: Tương Ưng Kiến"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Dự Lưu"
+      },
+      {
+        "id": "p3",
+        "text": "24.10. Thế Gian Là Vô Thường"
+      },
+      {
+        "id": "p4",
+        "text": "(Như các kinh trên, chỉ khác về “tà kiến” )."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn24.11": {
+    "canonicalRef": "sn24.11",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn24.11/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T08:26:50+00:00",
+    "materializedAt": "2026-09-02T08:26:50+00:00",
+    "contentHash": "87e0210554f616ca3422f83a76c88f670b4d354305eed22f7b183f363c369d89",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 24: Tương Ưng Kiến"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Dự Lưu"
+      },
+      {
+        "id": "p3",
+        "text": "24.11. Hữu Biên"
+      },
+      {
+        "id": "p4",
+        "text": "(Như các kinh trên, chỉ khác về “tà kiến” )"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn24.12": {
+    "canonicalRef": "sn24.12",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn24.12/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T08:26:50+00:00",
+    "materializedAt": "2026-09-02T08:26:50+00:00",
+    "contentHash": "0a06d45b100bad288afc985415234c5393327f3be9c175ec10cc1e504d5c7776",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 24: Tương Ưng Kiến"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Dự Lưu"
+      },
+      {
+        "id": "p3",
+        "text": "24.12. Vô Biên"
+      },
+      {
+        "id": "p4",
+        "text": "(Như các kinh trên, chỉ khác về “tà kiến” )"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn24.13": {
+    "canonicalRef": "sn24.13",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn24.13/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T08:26:50+00:00",
+    "materializedAt": "2026-09-02T08:26:50+00:00",
+    "contentHash": "0dc28aa72e2a623dbe02f251334d0b003452cc38250db9f08804b047904ad699",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 24: Tương Ưng Kiến"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Dự Lưu"
+      },
+      {
+        "id": "p3",
+        "text": "24.13. Mạng Với Thân Là Một"
+      },
+      {
+        "id": "p4",
+        "text": "(Như các kinh trên, chỉ khác về “tà kiến” )"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn24.14": {
+    "canonicalRef": "sn24.14",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn24.14/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T08:26:50+00:00",
+    "materializedAt": "2026-09-02T08:26:50+00:00",
+    "contentHash": "8bb30febe953ced0d8113908dab71e3395dd182bdd2a0990854eb5de150ac211",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 24: Tương Ưng Kiến"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Dự Lưu"
+      },
+      {
+        "id": "p3",
+        "text": "24.14. Mạng Với Thân Là Khác"
+      },
+      {
+        "id": "p4",
+        "text": "(Như các kinh trên, chỉ khác về “tà kiến” )"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn24.15": {
+    "canonicalRef": "sn24.15",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn24.15/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T08:26:50+00:00",
+    "materializedAt": "2026-09-02T08:26:50+00:00",
+    "contentHash": "222a54a3a244f7ae54da78cd6e4d35bbcf92258e104be39186069368dbf0e1df",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 24: Tương Ưng Kiến"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Dự Lưu"
+      },
+      {
+        "id": "p3",
+        "text": "24.15. Như Lai Có Tồn Tại"
+      },
+      {
+        "id": "p4",
+        "text": "(Như các kinh trên, chỉ khác về “tà kiến” )"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn24.2": {
+    "canonicalRef": "sn24.2",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn24.2/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T08:26:49+00:00",
+    "materializedAt": "2026-09-02T08:26:49+00:00",
+    "contentHash": "2a232e2155d46af61ba045f63fe38437e7e9419fbdde5f42fbbb594c6343f3d8",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 24: Tương Ưng Kiến"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Dự Lưu"
+      },
+      {
+        "id": "p3",
+        "text": "24.2. Cái Này Là Của Tôi"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-2. Nhân duyên ở Sāvatthi …"
+      },
+      {
+        "id": "p5",
+        "text": "—Do có cái gì, này các Tỷ-kheo, do chấp thủ cái gì, do thiên chấp cái gì, (tà) kiến này được khởi lên: “Cái này là của tôi, cái này là tôi, cái này là tự ngã của tôi”?"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 —Ðối với chúng con, bạch Thế Tôn, các pháp lấy Thế Tôn làm căn bản …"
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 —Do có sắc, này các Tỷ-kheo, do chấp thủ sắc, do thiên chấp sắc, (tà) kiến này được khởi lên: “Cái này là của tôi, cái này là tôi, cái này là tự ngã của tôi”."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5-7. Do có thọ … tưởng … các hành …"
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 8 Do có thức, này các Tỷ-kheo, do chấp thủ thức, do thiên chấp thức, (tà) kiến này được khởi lên: “Cái này là của tôi, cái này là tôi, cái này là tự ngã của tôi”."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 9 Các Ông nghĩ thế nào, này các Tỷ-kheo, sắc là thường hay vô thường?"
+      },
+      {
+        "id": "p11",
+        "text": "—Là vô thường, bạch Thế Tôn."
+      },
+      {
+        "id": "p12",
+        "text": "—Cái gì vô thường là khổ hay lạc?"
+      },
+      {
+        "id": "p13",
+        "text": "—Là khổ, bạch Thế Tôn."
+      },
+      {
+        "id": "p14",
+        "text": "—Cái gì vô thường, khổ, chịu sự biến hoại, nếu không chấp thủ cái ấy, thời có thể khởi lên (tà) kiến này: “Cái này là của tôi, cái này là tôi, cái này là tự ngã của tôi?”"
+      },
+      {
+        "id": "p15",
+        "text": "—Thưa không, bạch Thế Tôn."
+      },
+      {
+        "id": "p16",
+        "text": "Vi-n 10-12. —.. Thọ … Tưởng … Các hành …"
+      },
+      {
+        "id": "p17",
+        "text": "Vi-n 13 Thức là thường hay vô thường?"
+      },
+      {
+        "id": "p18",
+        "text": "—Là vô thường, bạch Thế Tôn."
+      },
+      {
+        "id": "p19",
+        "text": "—Cái gì vô thường là khổ hay lạc?"
+      },
+      {
+        "id": "p20",
+        "text": "—Là khổ, bạch Thế Tôn."
+      },
+      {
+        "id": "p21",
+        "text": "—Cái gì vô thường, khổ, chịu sự biến hoại, nếu không chấp thủ cái ấy, thời có thể khởi lên (tà) kiến này: “Cái này là của tôi, cái này là tôi, cái này là tự ngã của tôi”?"
+      },
+      {
+        "id": "p22",
+        "text": "—Thưa không, bạch Thế Tôn."
+      },
+      {
+        "id": "p23",
+        "text": "Vi-n 14 —Cái gì được thấy, được nghe, được nghĩ đến, được biết, được tìm cầu, được ý tư duy, cái ấy là thường hay vô thường?"
+      },
+      {
+        "id": "p24",
+        "text": "—Là vô thường, bạch Thế Tôn."
+      },
+      {
+        "id": "p25",
+        "text": "—Cái gì vô thường là khổ hay lạc?"
+      },
+      {
+        "id": "p26",
+        "text": "—Là khổ, bạch Thế Tôn."
+      },
+      {
+        "id": "p27",
+        "text": "—Cái gì vô thường, khổ, chịu sự biến hoại, nếu không chấp thủ cái ấy, thời có thể khởi lên (tà) kiến này: “Cái này là của tôi, cái này là tôi, cái này là tự ngã của tôi”?"
+      },
+      {
+        "id": "p28",
+        "text": "—Thưa không, bạch Thế Tôn."
+      },
+      {
+        "id": "p29",
+        "text": "Vi-n 15 —Khi nào vị Thánh đệ tử, này các Tỷ-kheo, đối với sáu xứ này, nghi hoặc được đoạn trừ; đối với khổ, nghi hoặc được đoạn trừ; … đối với con đường đưa đến khổ đoạn diệt, nghi hoặc được đoạn trừ; như vậy, này các Tỷ-kheo, gọi là bậc Thánh đệ tử đã chứng được Dự lưu, không còn bị thối đọa, quyết chắc hướng đến giác ngộ."
+      },
+      {
+        "id": "p30",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn24.3": {
+    "canonicalRef": "sn24.3",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn24.3/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T08:26:49+00:00",
+    "materializedAt": "2026-09-02T08:26:49+00:00",
+    "contentHash": "dd46bacd9d51ba3d203cda93bfb765bfde957c26e1020a46a72722a61b974e86",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 24: Tương Ưng Kiến"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Dự Lưu"
+      },
+      {
+        "id": "p3",
+        "text": "24.3. Cái Này Là Tự Ngã"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-2. Nhân duyên ở Sāvatthi …"
+      },
+      {
+        "id": "p5",
+        "text": "—Do có cái gì, này các Tỷ-kheo, do chấp thủ cái gì, do thiên chấp cái gì, (tà) kiến này khởi lên: “Cái ấy là tự ngã, cái ấy là thế giới. Sau khi chết, cái ấy sẽ thường còn, thường hằng, thường trú, không chịu sự biến hoại”?"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 —Ðối với chúng con, bạch Thế Tôn, các pháp lấy Thế Tôn làm căn bản …"
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 —Do có sắc, này các Tỷ-kheo, do chấp thủ sắc, do thiên chấp sắc, (tà) kiến này khởi lên: “Cái ấy là tự ngã, cái ấy là thế giới. Sau khi chết, cái ấy sẽ thường còn, thường hằng, thường trú, không chịu sự biến hoại”."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5-7. … thọ … tưởng … các hành …"
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 8 Do có thức, do chấp thủ thức, do thiên chấp thức, (tà) kiến này khởi lên: “Cái ấy là tự ngã, cái ấy là thế giới. Sau khi chết cái ấy sẽ thường còn, thường hằng, thường trú, không chịu sự biến hoại”."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 9 Các Ông nghĩ thế nào, này các Tỷ-kheo, sắc là thường hay vô thường?"
+      },
+      {
+        "id": "p11",
+        "text": "—Là vô thường, bạch Thế Tôn."
+      },
+      {
+        "id": "p12",
+        "text": "—Cái gì vô thường là khổ hay lạc?"
+      },
+      {
+        "id": "p13",
+        "text": "—Là khổ, bạch Thế Tôn."
+      },
+      {
+        "id": "p14",
+        "text": "—Cái gì vô thường, khổ, chịu sự biến hoại, nếu không có chấp thủ cái ấy, thời có thể khởi lên (tà) kiến này: “Cái ấy là tự ngã, cái ấy là thế giới. Sau khi chết, cái ấy sẽ thường còn, thường hằng, thường trú, không chịu sự biến hoại”?"
+      },
+      {
+        "id": "p15",
+        "text": "—Thưa không, bạch Thế Tôn."
+      },
+      {
+        "id": "p16",
+        "text": "Vi-n 10-13. … Thọ … Tưởng … Các hành … Thức là thường hay vô thường?"
+      },
+      {
+        "id": "p17",
+        "text": "—Là vô thường, bạch Thế Tôn."
+      },
+      {
+        "id": "p18",
+        "text": "—Cái gì vô thường, là khổ hay lạc?"
+      },
+      {
+        "id": "p19",
+        "text": "—Là khổ, bạch Thế Tôn."
+      },
+      {
+        "id": "p20",
+        "text": "—Cái gì vô thường, khổ, chịu sự biến hoại, nếu không chấp thủ cái ấy, thời có thể khởi lên (tà) kiến này: “Cái ấy là tự ngã, cái ấy là thế giới. Sau khi chết, cái ấy sẽ thường còn, thường hằng, thường trú, không chịu sự biến hoại”?"
+      },
+      {
+        "id": "p21",
+        "text": "—Thưa không, bạch Thế Tôn."
+      },
+      {
+        "id": "p22",
+        "text": "Vi-n 14 —Cái gì được thấy, được nghe, được nghĩ đến, được biết, được đạt tới, được tìm cầu, được ý tư duy, cái ấy là thường hay vô thường?"
+      },
+      {
+        "id": "p23",
+        "text": "—Là vô thường, bạch Thế Tôn."
+      },
+      {
+        "id": "p24",
+        "text": "—Cái gì vô thường là khổ hay lạc?"
+      },
+      {
+        "id": "p25",
+        "text": "—Là khổ, bạch Thế Tôn."
+      },
+      {
+        "id": "p26",
+        "text": "—Cái gì vô thường, khổ, chịu sự biến hoại, nếu không có chấp thủ cái ấy, thời có thể khởi lên (tà) kiến này: “Cái ấy là tự ngã, cái ấy là thế giới. Sau khi chết, cái ấy sẽ thường còn, thường hằng, thường trú, không chịu sự biến hoại”?"
+      },
+      {
+        "id": "p27",
+        "text": "—Thưa không, bạch Thế Tôn."
+      },
+      {
+        "id": "p28",
+        "text": "Vi-n 15 —Khi nào, này các Tỷ-kheo, vị Thánh đệ tử đối với sáu xứ này, nghi hoặc được đoạn trừ; đối với khổ, nghi hoặc được đoạn trừ; … đối với con đường đưa đến khổ đoạn diệt, nghi hoặc được đoạn trừ; như vậy, này các Tỷ-kheo, được gọi là vị Thánh đệ tử chứng được Dự lưu, không còn thối đọa, quyết chắc hướng đến giác ngộ."
+      },
+      {
+        "id": "p29",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn24.4": {
+    "canonicalRef": "sn24.4",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn24.4/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T08:26:49+00:00",
+    "materializedAt": "2026-09-02T08:26:49+00:00",
+    "contentHash": "cd8dc7dce19c87798e426c665aecc2d70a12c9331f5837b4b23d846fa8e90da4",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 24: Tương Ưng Kiến"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Dự Lưu"
+      },
+      {
+        "id": "p3",
+        "text": "24.4. Có Thể Không Phải Của Tôi"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-2. Nhân duyên ở Sāvatthi …"
+      },
+      {
+        "id": "p5",
+        "text": "—Do cái gì, này các Tỷ-kheo, do chấp thủ cái gì, do thiên chấp cái gì, (tà) kiến này khởi lên: “Nếu trước không có ta, thời đã không có của ta. Nếu sẽ không có ta, thời sẽ không có của ta”?"
+      },
+      {
+        "id": "p6",
+        "text": "(Như kinh trên, chỉ có sự sai khác về “tà kiến” )."
+      },
+      {
+        "id": "p7",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn24.5": {
+    "canonicalRef": "sn24.5",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn24.5/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T08:26:49+00:00",
+    "materializedAt": "2026-09-02T08:26:49+00:00",
+    "contentHash": "e4f54a7ca14deeb41a31e6a6de5146b68de6265f4297b6dc8d56bfef3c73acc9",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 24: Tương Ưng Kiến"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Dự Lưu"
+      },
+      {
+        "id": "p3",
+        "text": "24.5. Không Có"
+      },
+      {
+        "id": "p4",
+        "text": "—Do có cái gì, này các Tỷ-kheo, do chấp thủ cái gì, do thiên chấp cái gì, (tà) kiến này khởi lên: “Không có bố thí, không có lễ hy sinh, không có tế tự, không có quả dị thục các nghiệp thiện ác, không có đời này, không có đời khác, không có mẹ, không có cha, không có các loài hóa sanh. Ở đời, không có những vị Sa-môn chánh hạnh, chánh hướng, đã tự mình chứng tri, chứng ngộ đời này và đời khác, và truyền dạy lại. Con người này do bốn đại hợp thành, khi mệnh chung, địa đại trở về trả lại cho địa giới; thủy đại trở về trả lại cho thủy giới; hỏa đại trở về trả lại cho hỏa giới; phong đại trở về trả lại cho phong giới; các căn nhập vào hư không. Bốn người gánh quan tài với người nằm trong quan tài là năm, gánh người chết mang đi (đến chỗ hỏa táng), thốt ra những lời tán tụng, các xương trắng như màu bồ câu và những vật cúng dường trở thành tro bụi. Chỉ có người ngu mới tán dương bố thí. Lời nói của họ trống không, giả dối, khi họ thuyết có sự sống. Kẻ ngu cũng như người hiền, sau khi thân hoại mạng chung, sẽ đoạn diệt, tiêu thất, không còn tồn tại sau khi chết”?"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 3 —Ðối với chúng con, bạch Thế Tôn, các pháp lấy Thế Tôn làm căn bản …"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 (Như kinh trên, chỉ khác ở “tà kiến” )."
+      },
+      {
+        "id": "p7",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn24.6": {
+    "canonicalRef": "sn24.6",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn24.6/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T08:26:50+00:00",
+    "materializedAt": "2026-09-02T08:26:50+00:00",
+    "contentHash": "2b90da9f4ab2d58908fd561501e3c5fb21ded611d2f434cf0d8a275334d788f9",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 24: Tương Ưng Kiến"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Dự Lưu"
+      },
+      {
+        "id": "p3",
+        "text": "24.6. Ðối Với Người Hành Ðộng"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-2. Nhân duyên ở Sāvatthi …"
+      },
+      {
+        "id": "p5",
+        "text": "—Do có cái gì, này các Tỷ-kheo, do chấp thủ cái gì, do thiên chấp cái gì, (tà) kiến này khởi lên: “Tự làm hay khiến người làm, chém giết hay khiến người chém giết, đốt nấu hay khiến người đốt nấu, gây phiền muộn hay khiến người gây phiền muộn, gây áo não hay khiến người gây áo não, tự mình gây sợ hãi hay khiến người gây sợ hãi, sát sanh, lấy của không cho, phá cửa nhà mà vào cướp bóc, đánh cướp một nhà lẻ loi, chận đường cướp giựt, tư thông vợ người, nói láo, hành động như vậy không có tội ác gì. Nếu lấy một bánh xe sắc bén giết hại tất cả chúng sanh trên cõi đất thành một đống thịt, thành một chồng thịt, cũng không vì vậy mà có tội ác, mà gây ra tội ác. Nếu có người đi trên bờ phía Nam sông Hằng giết hại, tàn sát, chém giết, khiến người chém giết, đốt nấu, khiến người đốt nấu, cũng không vì vậy mà có tội ác. Nếu có người đi trên bờ phía Bắc sông Hằng bố thí, khiến người bố thí, tế lễ, khiến người tế lễ, cũng không vì vậy mà có phước báo. Bố thí, điều phục, cấm giới, tự chế, tôn trọng sự thật, không có phước đức, không đưa đến phước đức”?"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 —Ðối với chúng con, bạch Thế Tôn, các pháp lấy Thế Tôn làm căn bản …"
+      },
+      {
+        "id": "p7",
+        "text": "(Như kinh trên, chỉ khác phần tà kiến” )."
+      },
+      {
+        "id": "p8",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn24.7": {
+    "canonicalRef": "sn24.7",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn24.7/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T08:26:50+00:00",
+    "materializedAt": "2026-09-02T08:26:50+00:00",
+    "contentHash": "b30d75ae550e73a7db3c3a0e41d4fe7afa07b5d1e0b4c589bf4c83b80cf22e2a",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 24: Tương Ưng Kiến"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Dự Lưu"
+      },
+      {
+        "id": "p3",
+        "text": "24.7. Nhân"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-2. Nhân duyên ở Sāvatthi …"
+      },
+      {
+        "id": "p5",
+        "text": "—Do có cái gì, này các Tỷ-kheo, do chấp thủ cái gì, do thiên chấp cái gì, (tà) kiến này khởi lên: “Không có nhân, không có duyên, các loài hữu tình bị nhiễm ô; vô nhân, vô duyên, các loài hữu tình bị nhiễm ô. Không có nhân, không có duyên, các loài hữu tình được thanh tịnh; vô nhân, vô duyên, các loài hữu tình được thanh tịnh. Không có lực, không có tinh tấn, không có nhân lực, không có sự cố gắng của người. Tất cả chúng sanh, tất cả hữu tình, tất cả sinh vật, tất cả sinh mạng đều không tự tại, không lực, không tinh tấn. Họ bị dắt dẫn, chi phối bởi định mệnh, bởi điều kiện bộ loại của họ, bởi cá tánh của họ. Họ hưởng thọ khổ, lạc, y theo sáu loại thác sanh của họ”?"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 —Ðối với chúng con, bạch Thế Tôn, các pháp lấy Thế Tôn làm căn bản …"
+      },
+      {
+        "id": "p7",
+        "text": "(Như các kinh trên, chỉ khác phần “tà kiến” )."
+      },
+      {
+        "id": "p8",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn24.8": {
+    "canonicalRef": "sn24.8",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn24.8/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T08:26:50+00:00",
+    "materializedAt": "2026-09-02T08:26:50+00:00",
+    "contentHash": "b19064cdafc760b18c94a3aab2b67d6517bee91781454fd66c538baaad481c72",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 24: Tương Ưng Kiến"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Dự Lưu"
+      },
+      {
+        "id": "p3",
+        "text": "24.8. Ðạt Tà Kiến"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-2. Nhân duyên ở Sāvatthi …"
+      },
+      {
+        "id": "p5",
+        "text": "—Do có cái gì, này các Tỷ-kheo, do chấp thủ cái gì, do thiên chấp cái gì, khởi lên (tà) kiến như sau: “Có bảy thân không bị làm ra, không làm ra, không bị sáng tạo, không sáng tạo, không sanh sản, thường tại như đỉnh núi, đứng thẳng như trụ đá. Chúng bất động, không chuyển biến, không xâm lăng nhau. Chúng không ảnh hưởng đến lạc hay khổ với nhau, hoặc cả khổ và lạc”?"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Bảy thân ấy là gì?—Ðịa thân, thủy thân, hỏa thân, phong thân, khổ, lạc và thứ bảy là mạng. Bảy thân này không bị làm ra, không làm ra, không bị sáng tạo, không sáng tạo, không sanh sản, thường tại như đỉnh núi, đứng thẳng như trụ đá. Chúng bất động, không chuyển biến, không xâm lăng nhau, chúng không ảnh hưởng đến lạc hay khổ với nhau, hoặc cả khổ và lạc."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Khi một ai dùng lưỡi kiếm sắc bén chém đầu, thời không có ai tước đoạt sanh mạng của ai cả, lưỡi kiếm chỉ rơi vào giữa bảy thân mà thôi."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 Có tất cả là 1.400.000 chủng loại thác sanh, lại có thêm 6.000 và có thêm 600 nữa. Có 500 loại nghiệp và năm nghiệp (theo 5 căn), lại có ba nghiệp (về thân, khẩu, ý), lại có toàn nghiệp (thân và khẩu), và bán nghiệp (ý), có 62 đạo, 62 trung kiếp, sáu giai cấp, tám nhân địa, 4.900 sanh nghiệp, 4.900 kẻ du hành, 4.900 chỗ ở của loài Nāga, 2.000 căn, 3.000 cảnh địa ngục, 36 trần giới, 7 tưởng thai, 7 vô tưởng thai, 7 tiết thai, 7 loài Thiên, 7 loài Người, 7 loài quỷ, 7 hồ nước, 7 pavutas (rừng hay hồ nhỏ), 7 papàta (vực thẳm), 700 papàta (vực thẳm), 7 mộng, 700 mộng, có 8 trăm 40 vạn đại kiếp, trong thời gian ấy, kẻ ngu và người hiền sau khi lưu chuyển luân hồi sẽ trừ tận khổ đau."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 6 Không có lời nguyền: “Với giới hạnh này, với kỷ luật này, với khổ hạnh này hay với Phạm hạnh này, tôi sẽ làm cho chín muồi những nghiệp chưa được thuần thục, hoặc trừ diệt những nghiệp đã thuần thục bởi những nhẫn thọ liên tục, không thể đo lường khổ và lạc với những vật đo lường, trong khi luân hồi không có giảm tăng, không có thặng dư, thiếu thốn."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 7 Ví như một cuộn chỉ được tung ra sẽ được kéo dài đến một mức độ nào đó. Cũng như vậy, kẻ ngu và người hiền sau khi lưu chuyển luân hồi sẽ đoạn tận khổ đau”."
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 8 —Ðối với chúng con, bạch Thế Tôn, các pháp lấy Thế Tôn làm căn bản …"
+      },
+      {
+        "id": "p12",
+        "text": "(Như các kinh trên, chỉ khác về “tà kiến” )."
+      },
+      {
+        "id": "p13",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn24.9": {
+    "canonicalRef": "sn24.9",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn24.9/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T08:26:50+00:00",
+    "materializedAt": "2026-09-02T08:26:50+00:00",
+    "contentHash": "d698257d7b73dcd7caff079dfb22c40c4b45b6a660a56f4fa9c29ccd3c4d6322",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 24: Tương Ưng Kiến"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Dự Lưu"
+      },
+      {
+        "id": "p3",
+        "text": "24.9. Thế Gian Là Thường"
+      },
+      {
+        "id": "p4",
+        "text": "(Như các kinh trên, chỉ khác về “tà kiến”. Ở đây “tà kiến” được thay bằng “thế gian là thường” )."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  }
+}
