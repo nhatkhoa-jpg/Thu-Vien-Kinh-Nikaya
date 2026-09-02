@@ -22,6 +22,7 @@ export default function SiteFooter({locale}:{locale:Locale}){
         <Link href={`/${locale}#library`}>{vi?'Tra cứu kinh':'Browse the library'}</Link>
         <Link href={`/${locale}/tien-do`}>{vi?'Tiến độ dữ liệu':'Data progress'}</Link>
         <a href="https://suttacentral.net" target="_blank" rel="noreferrer">SuttaCentral <ExternalLink size={12}/></a>
+        <a href="https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/issues" target="_blank" rel="noreferrer">{vi?'Báo lỗi / góp ý nguồn':'Report a correction'} <ExternalLink size={12}/></a>
       </div>
     </div>
     <div className="shell siteFooterBottom"><span><ShieldCheck size={14}/>{vi?'Kinh văn ưu tiên nguồn có thể kiểm tra; AI không được dùng để bịa kinh văn.':'Scripture text prioritizes verifiable sources; AI is not used to invent scripture.'}</span><small>© {new Date().getFullYear()} {d.brand}</small></div>
