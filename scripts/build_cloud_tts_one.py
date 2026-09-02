@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import argparse, base64, hashlib, html, json, os, re, subprocess, time, urllib.parse, urllib.request
+import argparse, base64, hashlib, html, json, os, re, subprocess, time, urllib.error, urllib.parse, urllib.request
 from pathlib import Path
 
 API_BASE='https://suttacentral.net/api'
@@ -62,7 +62,6 @@ def fetch_text(uid):
     return normalize(text),chosen,source
 
 def normalize(text):
-    # Narration normalization: remove segment labels, add breathing room, preserve semantic punctuation.
     text=re.sub(r'\b(?:TTC|Vi-n|SC)\s*\d+[A-Za-z.-]*\b',' ',text,flags=re.I)
     text=re.sub(r'\bMN\s*(\d+)\b',r'Trung Bộ \1',text,flags=re.I)
     text=text.replace('…','...')
@@ -75,13 +74,9 @@ def chunks(text,max_chars=3200):
     paras=[p.strip() for p in text.split('\n') if p.strip()]
     out=[]; cur=''
     for p in paras:
-        if len(p)>max_chars:
-            bits=re.split(r'(?<=[.!?])\s+',p)
-        else: bits=[p]
+        bits=re.split(r'(?<=[.!?])\s+',p) if len(p)>max_chars else [p]
         for b in bits:
-            if len(b)>max_chars:
-                bits2=[b[i:i+max_chars] for i in range(0,len(b),max_chars)]
-            else: bits2=[b]
+            bits2=[b[i:i+max_chars] for i in range(0,len(b),max_chars)] if len(b)>max_chars else [b]
             for x in bits2:
                 cand=(cur+' '+x).strip()
                 if cur and len(cand)>max_chars: out.append(cur); cur=x
