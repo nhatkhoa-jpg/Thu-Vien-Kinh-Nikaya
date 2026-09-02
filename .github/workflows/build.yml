@@ -24,16 +24,28 @@ jobs:
           const audio=require('./data/catalog/audio.json');
           const lines=f=>fs.readFileSync(f,'utf8').trim().split('\n').filter(Boolean);
           const expected=suttas.length;
-          const ragVi=lines('data/exports/nikaya-rag.vi.jsonl');
-          const ragEn=lines('data/exports/nikaya-rag.en.jsonl');
-          const knVi=lines('data/exports/nikaya-knowledge.vi.jsonl');
-          const knEn=lines('data/exports/nikaya-knowledge.en.jsonl');
+          const ragVi=lines('data/exports/nikaya-rag.vi.jsonl').map(JSON.parse);
+          const ragEn=lines('data/exports/nikaya-rag.en.jsonl').map(JSON.parse);
+          const knVi=lines('data/exports/nikaya-knowledge.vi.jsonl').map(JSON.parse);
+          const knEn=lines('data/exports/nikaya-knowledge.en.jsonl').map(JSON.parse);
           for(const [name,rows] of [['rag.vi',ragVi],['rag.en',ragEn],['knowledge.vi',knVi],['knowledge.en',knEn]]){
-            for(const row of rows)JSON.parse(row);
             if(!rows.length)throw new Error(`${name} export is empty`);
           }
           if(knVi.length!==expected||knEn.length!==expected)throw new Error(`knowledge export mismatch: expected ${expected}`);
-          if(ragVi.length!==expected*2||ragEn.length!==expected*2)throw new Error(`RAG export mismatch: expected ${expected*2}`);
+          for(const [name,rows] of [['rag.vi',ragVi],['rag.en',ragEn]]){
+            if(rows.length<expected||rows.length>expected*2)throw new Error(`${name} count outside expected range ${expected}..${expected*2}: ${rows.length}`);
+            const ids=new Set();
+            const chunkIds=new Set();
+            for(const row of rows){
+              if(!String(row.text||'').trim())throw new Error(`${name} contains empty text: ${row.chunk_id||'unknown'}`);
+              if(!row.sutta_id)throw new Error(`${name} chunk missing sutta_id`);
+              if(!row.chunk_id)throw new Error(`${name} chunk missing chunk_id`);
+              if(chunkIds.has(row.chunk_id))throw new Error(`${name} duplicate chunk_id ${row.chunk_id}`);
+              chunkIds.add(row.chunk_id);ids.add(row.sutta_id);
+            }
+            const missing=suttas.filter(s=>!ids.has(s.id));
+            if(missing.length)throw new Error(`${name} missing RAG coverage for ${missing.length} suttas; first=${missing[0].id}`);
+          }
           const mn=suttas.filter(s=>s.collection==='MN');
           if(mn.length===152){
             for(let i=1;i<=152;i++){
@@ -52,6 +64,7 @@ jobs:
             }
             console.log('Full MN audio catalog validated: 152/152');
           } else throw new Error(`MN catalog incomplete: ${mn.length}/152`);
+          console.log(`RAG coverage validated: ${expected}/${expected} suttas, non-empty variable chunks`);
           NODE
       - run: npm run build
       - name: Smoke test reader, home discovery and progress dashboard
