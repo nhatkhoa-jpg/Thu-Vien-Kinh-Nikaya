@@ -1,0 +1,151 @@
+name: Discover SN canonical catalog
+
+on:
+  push:
+    branches:
+      - feature/sn-canonical-discovery
+    paths:
+      - '.github/workflows/discover-sn-canonical.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/sn-canonical-discovery
+          fetch-depth: 0
+
+      - name: Fetch authoritative SN tree
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fsSL --retry 5 --retry-delay 2 \
+            https://raw.githubusercontent.com/suttacentral/sc-data/main/structure/tree/sutta/sn-tree.json \
+            -o /tmp/sn-tree.json
+          test -s /tmp/sn-tree.json
+          sha256sum /tmp/sn-tree.json
+
+      - name: Build canonical discovery report
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p data/catalog
+          python3 - <<'PY'
+          import datetime as dt
+          import hashlib
+          import json
+          import re
+          from collections import Counter
+          from pathlib import Path
+
+          source_path = Path('/tmp/sn-tree.json')
+          raw = source_path.read_bytes()
+          tree = json.loads(raw)
+          uid_re = re.compile(r'^sn(\d+)\.(\d+)(?:-(\d+))?$')
+
+          refs = []
+          def walk(node):
+              if isinstance(node, str):
+                  if uid_re.fullmatch(node):
+                      refs.append(node)
+                  return
+              if isinstance(node, list):
+                  for item in node:
+                      walk(item)
+                  return
+              if isinstance(node, dict):
+                  for value in node.values():
+                      walk(value)
+
+          walk(tree)
+          if not refs:
+              raise SystemExit('No SN canonical refs found')
+          if len(refs) != len(set(refs)):
+              dupes = [r for r, n in Counter(refs).items() if n > 1]
+              raise SystemExit(f'Duplicate refs found: {dupes[:20]}')
+
+          rows = []
+          group_counts = Counter()
+          range_count = 0
+          expanded_count = 0
+          for ref in refs:
+              m = uid_re.fullmatch(ref)
+              assert m
+              samyutta = int(m.group(1))
+              start = int(m.group(2))
+              end = int(m.group(3)) if m.group(3) else start
+              if end < start:
+                  raise SystemExit(f'Invalid range: {ref}')
+              is_range = end != start
+              range_count += int(is_range)
+              expanded_count += end - start + 1
+              group_counts[samyutta] += 1
+              rows.append({
+                  'canonicalRef': ref,
+                  'samyutta': samyutta,
+                  'start': start,
+                  'end': end,
+                  'isRange': is_range,
+                  'impliedCount': end - start + 1,
+              })
+
+          groups = sorted(group_counts)
+          expected = list(range(1, 57))
+          if groups != expected:
+              raise SystemExit(f'Expected SN groups 1..56, got {groups}')
+
+          generated = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
+          source_url = 'https://raw.githubusercontent.com/suttacentral/sc-data/main/structure/tree/sutta/sn-tree.json'
+          source_sha256 = hashlib.sha256(raw).hexdigest()
+          discovery = {
+              'collection': 'SN',
+              'source': {
+                  'provider': 'SuttaCentral sc-data',
+                  'url': source_url,
+                  'sha256': source_sha256,
+              },
+              'generatedAt': generated,
+              'policy': 'Canonical leaf UIDs are preserved exactly as published. Range UIDs are not expanded automatically.',
+              'canonicalLeafCount': len(rows),
+              'rangeLeafCount': range_count,
+              'impliedNumericCount': expanded_count,
+              'samyuttaCount': len(groups),
+              'groupLeafCounts': {str(k): group_counts[k] for k in groups},
+              'items': rows,
+          }
+          report = {
+              'collection': 'SN',
+              'sourceSha256': source_sha256,
+              'canonicalLeafCount': len(rows),
+              'rangeLeafCount': range_count,
+              'impliedNumericCount': expanded_count,
+              'samyuttaCount': len(groups),
+              'firstCanonicalRef': rows[0]['canonicalRef'],
+              'lastCanonicalRef': rows[-1]['canonicalRef'],
+              'rangeExamples': [r['canonicalRef'] for r in rows if r['isRange']][:20],
+              'groupLeafCounts': {str(k): group_counts[k] for k in groups},
+              'generatedAt': generated,
+          }
+          Path('data/catalog/discovery-sn.json').write_text(json.dumps(discovery, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          Path('data/catalog/discovery-sn-report.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          print(json.dumps(report, ensure_ascii=False, indent=2))
+          PY
+
+      - name: Commit discovery outputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- data/catalog/discovery-sn.json data/catalog/discovery-sn-report.json; then
+            echo 'Discovery outputs unchanged.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/catalog/discovery-sn.json data/catalog/discovery-sn-report.json
+          git commit -m 'data: discover authoritative SN canonical refs'
+          git push origin HEAD:feature/sn-canonical-discovery
