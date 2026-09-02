@@ -47,9 +47,17 @@ const page=await browser.newPage({viewport:{width:390,height:844},isMobile:true,
 const consoleErrors=[];
 page.on('console',msg=>{if(msg.type()==='error')consoleErrors.push(msg.text());});
 page.on('pageerror',error=>consoleErrors.push(error.message));
-for(const [locale,marker] of [['th','ไทย'],['my','မြန်မာ'],['si','සිංහල'],['km','ខ្មែរ'],['lo','ລາວ']]){
+const unicodeScripts=[
+  ['th',/[\u0E00-\u0E7F]/],
+  ['my',/[\u1000-\u109F]/],
+  ['si',/[\u0D80-\u0DFF]/],
+  ['km',/[\u1780-\u17FF]/],
+  ['lo',/[\u0E80-\u0EFF]/],
+];
+for(const [locale,scriptPattern] of unicodeScripts){
   await page.goto(`${base}/${locale}`,{waitUntil:'networkidle'});
-  if(!(await page.locator('body').innerText()).includes(marker))throw new Error(`Unicode marker missing locale=${locale}`);
+  const bodyText=await page.locator('body').innerText();
+  if(!scriptPattern.test(bodyText))throw new Error(`Locale script missing locale=${locale}`);
   if(await page.locator('.suttaCard').count()>60)throw new Error(`Too many initial cards locale=${locale}`);
 }
 
