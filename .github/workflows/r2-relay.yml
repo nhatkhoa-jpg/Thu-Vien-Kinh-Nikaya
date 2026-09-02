@@ -1,0 +1,79 @@
+name: R2 Relay
+run-name: R2 relay ${{ inputs.request_id }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Temporary release tag containing exactly one upload asset
+        required: true
+        type: string
+      prefix:
+        description: R2 key prefix
+        required: true
+        type: string
+      expected_sha256:
+        description: SHA-256 expected from local source
+        required: true
+        type: string
+      expected_size:
+        description: Expected byte size
+        required: true
+        type: string
+      request_id:
+        description: Unique request id for local polling
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: r2-relay-${{ inputs.request_id }}
+  cancel-in-progress: false
+
+jobs:
+  relay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      GH_TOKEN: ${{ github.token }}
+      R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+      R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+      R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+      R2_BUCKET_NAME: nikaya-media
+      RELAY_TAG: ${{ inputs.tag }}
+      RELAY_PREFIX: ${{ inputs.prefix }}
+      EXPECTED_SHA256: ${{ inputs.expected_sha256 }}
+      EXPECTED_SIZE: ${{ inputs.expected_size }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Download temporary release asset
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/r2-relay
+          gh release download "$RELAY_TAG" --repo "$GITHUB_REPOSITORY" --dir /tmp/r2-relay
+          COUNT=$(find /tmp/r2-relay -maxdepth 1 -type f | wc -l)
+          test "$COUNT" -eq 1 || { echo "Expected exactly one release asset, got $COUNT"; exit 1; }
+      - name: Verify local checksum before R2 upload
+        shell: bash
+        run: |
+          set -euo pipefail
+          FILE=$(find /tmp/r2-relay -maxdepth 1 -type f | head -n1)
+          ACTUAL_SHA=$(sha256sum "$FILE" | awk '{print $1}')
+          ACTUAL_SIZE=$(stat -c%s "$FILE")
+          test "$ACTUAL_SHA" = "$EXPECTED_SHA256" || { echo 'SHA256 mismatch before R2 upload'; exit 1; }
+          test "$ACTUAL_SIZE" = "$EXPECTED_SIZE" || { echo 'Size mismatch before R2 upload'; exit 1; }
+          echo 'Relay source verification: PASS'
+      - name: Install S3 client
+        run: python -m pip install --disable-pip-version-check --quiet boto3
+      - name: Upload to R2 and verify object metadata
+        run: python scripts/r2_sync.py /tmp/r2-relay --prefix "$RELAY_PREFIX" --max-total-gib 9
+      - name: Delete temporary GitHub release after verified R2 upload
+        if: success()
+        shell: bash
+        run: gh release delete "$RELAY_TAG" --repo "$GITHUB_REPOSITORY" --yes --cleanup-tag

@@ -5,10 +5,12 @@ param(
   [int]$Workers=1,
   [switch]$Force,
   [switch]$AutoPublishR2,
+  [switch]$AutoPublishViaGitHub,
   [switch]$DeleteVerifiedLocal
 )
 
 $ErrorActionPreference='Stop'
+if($AutoPublishR2 -and $AutoPublishViaGitHub){throw 'Choose only one publish path: direct R2 or GitHub relay.'}
 $collectionLower=$Collection.ToLowerInvariant()
 $base=Join-Path $PackRoot $collectionLower
 $manifestPath=Join-Path $base 'manifest.json'
@@ -69,6 +71,23 @@ $outMp3=Join-Path $base ($collectionLower+'-complete.mp3')
 ffmpeg -hide_banner -loglevel warning -y -f concat -safe 0 -i $ffconcat -c copy $outMp3
 if($LASTEXITCODE -ne 0){throw 'FFmpeg concat failed. Ensure all per-sutta files use the same MP3 codec/sample rate/channel layout.'}
 Write-Host "DONE: $outMp3"
+
+if($AutoPublishViaGitHub){
+  $relay=Join-Path $PSScriptRoot 'r2-relay-via-github.ps1'
+  if(-not (Test-Path $relay)){throw "Missing relay script: $relay"}
+  $mp3Dir=Join-Path $base 'mp3'
+  $files=@(Get-ChildItem -LiteralPath $mp3Dir -File -Filter '*.mp3' | Sort-Object Name)
+  foreach($media in $files){
+    $relayArgs=@('-ExecutionPolicy','Bypass','-File',$relay,'-File',$media.FullName,'-Prefix',("audio/"+$collectionLower))
+    if($DeleteVerifiedLocal){$relayArgs+='-DeleteVerifiedLocal'}
+    & powershell @relayArgs
+    if($LASTEXITCODE -ne 0){throw "GitHub R2 relay failed for $($media.Name)"}
+  }
+  $relayArgs=@('-ExecutionPolicy','Bypass','-File',$relay,'-File',$outMp3,'-Prefix',("audio/"+$collectionLower+"/complete"))
+  if($DeleteVerifiedLocal){$relayArgs+='-DeleteVerifiedLocal'}
+  & powershell @relayArgs
+  if($LASTEXITCODE -ne 0){throw "GitHub R2 relay failed for complete MP3"}
+}
 
 if($AutoPublishR2){
   foreach($name in @('R2_ACCESS_KEY_ID','R2_SECRET_ACCESS_KEY','R2_ACCOUNT_ID')){
