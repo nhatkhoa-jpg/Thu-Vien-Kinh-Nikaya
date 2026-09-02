@@ -55,7 +55,7 @@ jobs:
               payload={
                 'input': {'text': text},
                 'voice': {'languageCode':'vi-VN','name':voice},
-                'audioConfig': {'audioEncoding':'MP3','speakingRate':0.92,'pitch':-1.0}
+                'audioConfig': {'audioEncoding':'MP3','speakingRate':0.92}
               }
               pathlib.Path(f'/tmp/{slug}.json').write_text(json.dumps(payload,ensure_ascii=False),encoding='utf-8')
           PY
@@ -79,7 +79,7 @@ jobs:
 
           cp /tmp/sample.txt out/sample.txt
           python3 - <<'PY'
-          import hashlib,json,pathlib,subprocess
+          import hashlib,json,pathlib
           names={
             'chirp3-hd-aoede':'vi-VN-Chirp3-HD-Aoede',
             'neural2-a':'vi-VN-Neural2-A',
@@ -89,8 +89,8 @@ jobs:
           for slug,voice in names.items():
               p=pathlib.Path('out')/f'{slug}.mp3'
               probe=json.loads((pathlib.Path('out')/f'{slug}.probe.json').read_text())['format']
-              rows.append({'file':p.name,'voice':voice,'provider':'Google Cloud Text-to-Speech','language':'vi-VN','speakingRate':0.92,'pitch':-1.0,'bytes':p.stat().st_size,'durationSeconds':round(float(probe['duration']),3),'sha256':hashlib.sha256(p.read_bytes()).hexdigest()})
-          pathlib.Path('out/manifest.json').write_text(json.dumps({'version':'1.0','purpose':'Vietnamese scripture voice benchmark','sampleFile':'sample.txt','voices':rows},ensure_ascii=False,indent=2),encoding='utf-8')
+              rows.append({'file':p.name,'voice':voice,'provider':'Google Cloud Text-to-Speech','language':'vi-VN','speakingRate':0.92,'bytes':p.stat().st_size,'durationSeconds':round(float(probe['duration']),3),'sha256':hashlib.sha256(p.read_bytes()).hexdigest()})
+          pathlib.Path('out/manifest.json').write_text(json.dumps({'version':'1.1','purpose':'Vietnamese scripture voice benchmark','sampleFile':'sample.txt','voices':rows},ensure_ascii=False,indent=2),encoding='utf-8')
           PY
 
       - name: Publish benchmark MP3 files to GitHub Release
