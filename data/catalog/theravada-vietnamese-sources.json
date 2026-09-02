@@ -1,6 +1,6 @@
 {
   "version": "2026-09-02",
-  "policy": "Link-only research registry until redistribution rights are verified. Do not ingest full text merely because it is readable online.",
+  "policy": "Link-only research registry. Theravada.vn states its Dhamma materials are for study, practice, and propagation rather than commerce and notes that some collected materials may be copyrighted. Because this library may use AdSense, do not ingest or republish full text from these sources without separate verified redistribution/commercial-use permission.",
   "sources": [
     {
       "id": "theravada-vn-vinaya",
@@ -9,7 +9,7 @@
       "provider": "theravada.vn",
       "url": "https://theravada.vn/book-author/tang-luat/",
       "language": "vi",
-      "rightsStatus": "link-only-pending-redistribution-review",
+      "rightsStatus": "link-only-noncommercial-notice-commercial-rights-unverified",
       "coverage": ["Bhikkhu-vibhaṅga", "Bhikkhunī-vibhaṅga", "Mahāvagga", "Cūḷavagga", "Parivāra/Tập Yếu"]
     },
     {
@@ -20,8 +20,8 @@
       "url": "https://theravada.vn/book-author/vy-dieu-phap/",
       "language": "vi",
       "translatorPriority": "Đại Trưởng Lão Tịnh Sự (Santakicco Mahāthera)",
-      "rightsStatus": "link-only-pending-redistribution-review",
-      "coverage": ["Dhammasaṅgaṇī", "Vibhaṅga", "Dhātukathā", "Puggalapaññatti", "Kathāvatthu", "Yamaka"]
+      "rightsStatus": "link-only-noncommercial-notice-commercial-rights-unverified",
+      "coverage": ["Dhammasaṅgaṇī", "Vibhaṅga", "Dhātukathā", "Puggalapaññatti", "Kathāvatthu", "Yamaka", "Paṭṭhāna"]
     },
     {
       "id": "tinh-su-dhammasangani",
@@ -31,7 +31,7 @@
       "url": "https://theravada.vn/book/tang-vo-ty-phap-1-bo-phap-tu-dai-truong-lao-tinh-su/",
       "language": "vi",
       "translator": "Đại Trưởng Lão Tịnh Sự",
-      "rightsStatus": "link-only-pending-redistribution-review"
+      "rightsStatus": "link-only-noncommercial-notice-commercial-rights-unverified"
     },
     {
       "id": "tinh-su-vibhanga",
@@ -41,7 +41,7 @@
       "url": "https://theravada.vn/book/tang-vo-ty-phap-2-bo-phan-tich-dai-truong-lao-tinh-su/",
       "language": "vi",
       "translator": "Đại Trưởng Lão Tịnh Sự",
-      "rightsStatus": "link-only-pending-redistribution-review"
+      "rightsStatus": "link-only-noncommercial-notice-commercial-rights-unverified"
     },
     {
       "id": "tinh-su-yamaka",
@@ -51,7 +51,7 @@
       "url": "https://theravada.vn/book/bo-song-doi/",
       "language": "vi",
       "translator": "Đại Trưởng Lão Tịnh Sự",
-      "rightsStatus": "link-only-pending-redistribution-review"
+      "rightsStatus": "link-only-noncommercial-notice-commercial-rights-unverified"
     }
   ]
 }
