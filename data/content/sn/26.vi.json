@@ -1,0 +1,328 @@
+{
+  "sn26.1": {
+    "canonicalRef": "sn26.1",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn26.1/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:06+00:00",
+    "materializedAt": "2026-09-02T09:25:06+00:00",
+    "contentHash": "c9e5bab7390a7c76be18da3f6800ccd7db5fe5d6aa2c1a436fe11d64ea30d183",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 26: Tương Ưng Sanh"
+      },
+      {
+        "id": "p2",
+        "text": "26.1. Mắt"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1-2. Nhân duyên ở Sāvatthi …"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 3 —Này các Tỷ-kheo, sự sanh, sự trú, sự thành, sự xuất hiện của mắt là sự sanh của khổ, sự trú của bệnh hoạn, sự xuất hiện của già chết."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 4-8. Sự sanh, sự trú, sự thành, sự xuất hiện của tai … của mũi … của lưỡi … của thân … của ý là sự sanh của khổ, sự trú của bệnh hoạn, sự xuất hiện của già chết."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 9 Sự diệt, sự lắng dịu, sự chấm dứt của sắc là sự diệt của khổ, sự lắng dịu của bệnh hoạn, sự chấm dứt của già chết."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 10-14. Sự diệt, sự lắng dịu, sự chấm dứt của tai … của mũi … của lưỡi … của thân … của ý là sự diệt của khổ, sự lắng dịu của bệnh hoạn, sự chấm dứt của già chết."
+      },
+      {
+        "id": "p8",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn26.10": {
+    "canonicalRef": "sn26.10",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn26.10/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:06+00:00",
+    "materializedAt": "2026-09-02T09:25:06+00:00",
+    "contentHash": "21fedd1be5f7a43f638e55719de144dc99a8022ad44fe5e6bcd497c797c9e205",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 26: Tương Ưng Sanh"
+      },
+      {
+        "id": "p2",
+        "text": "26.10. Uẩn"
+      },
+      {
+        "id": "p3",
+        "text": "(Như kinh trên, chỉ thế vào sắc uẩn, thọ uẩn, tưởng uẩn, hành uẩn, thức uẩn)."
+      },
+      {
+        "id": "p4",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn26.2": {
+    "canonicalRef": "sn26.2",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn26.2/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:06+00:00",
+    "materializedAt": "2026-09-02T09:25:06+00:00",
+    "contentHash": "f828fe81fa8f9fcba3f666229a92fb2dc7f2760c523ffaed5b83325c2b9803f6",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 26: Tương Ưng Sanh"
+      },
+      {
+        "id": "p2",
+        "text": "26.2. Sắc"
+      },
+      {
+        "id": "p3",
+        "text": "(Như kinh trên, chỉ thế vào sắc, thanh, hương, vị, xúc, pháp)."
+      },
+      {
+        "id": "p4",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn26.3": {
+    "canonicalRef": "sn26.3",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn26.3/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:06+00:00",
+    "materializedAt": "2026-09-02T09:25:06+00:00",
+    "contentHash": "6d01532be0e188a75027752efb94ef78c1692a9079e6fa35c5d94a2fa602ce1c",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 26: Tương Ưng Sanh"
+      },
+      {
+        "id": "p2",
+        "text": "26.3. Thức"
+      },
+      {
+        "id": "p3",
+        "text": "(Như kinh trên, chỉ thế vào nhãn thức, nhĩ thức, tỷ thức, thiệt thức, thân thức, ý thức)."
+      },
+      {
+        "id": "p4",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn26.4": {
+    "canonicalRef": "sn26.4",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn26.4/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:06+00:00",
+    "materializedAt": "2026-09-02T09:25:06+00:00",
+    "contentHash": "e4325f1dfd1dd23a06cfdfdb384094e6e22cd40dca480cb10748d8f1b3bad310",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 26: Tương Ưng Sanh"
+      },
+      {
+        "id": "p2",
+        "text": "26.4. Xúc"
+      },
+      {
+        "id": "p3",
+        "text": "(Như kinh trên, chỉ thế vào nhãn xúc, nhĩ xúc, tỷ xúc, thiệt xúc, thân xúc, ý xúc)."
+      },
+      {
+        "id": "p4",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn26.5": {
+    "canonicalRef": "sn26.5",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn26.5/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:06+00:00",
+    "materializedAt": "2026-09-02T09:25:06+00:00",
+    "contentHash": "4d0b33ca4e3fc13f8b78d4117651f6ad060d95e4c9a9ec4761c360ae57a07558",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 26: Tương Ưng Sanh"
+      },
+      {
+        "id": "p2",
+        "text": "26.5. Thọ"
+      },
+      {
+        "id": "p3",
+        "text": "(Như kinh trên, chỉ thế vào thọ do nhãn xúc sanh, thọ do nhĩ xúc sanh, thọ do tỷ xúc sanh, thọ do thiệt xúc sanh, thọ do thân xúc sanh, thọ do ý xúc sanh)."
+      },
+      {
+        "id": "p4",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn26.6": {
+    "canonicalRef": "sn26.6",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn26.6/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:06+00:00",
+    "materializedAt": "2026-09-02T09:25:06+00:00",
+    "contentHash": "db405f8a176ebbcc0aaec49ad8e36242b3738dc8450731bf19db5e6a0dfb2074",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 26: Tương Ưng Sanh"
+      },
+      {
+        "id": "p2",
+        "text": "26.6. Tưởng"
+      },
+      {
+        "id": "p3",
+        "text": "(Như kinh trên, chỉ thế vào sắc tưởng, thanh tưởng, hương tưởng, vị tưởng, xúc tưởng, pháp tưởng)."
+      },
+      {
+        "id": "p4",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn26.7": {
+    "canonicalRef": "sn26.7",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn26.7/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:06+00:00",
+    "materializedAt": "2026-09-02T09:25:06+00:00",
+    "contentHash": "bcc98d0af37008d4912379d4a18f0873c13b948f423ecaff7334d0791eb4ea7b",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 26: Tương Ưng Sanh"
+      },
+      {
+        "id": "p2",
+        "text": "26.7. Tư"
+      },
+      {
+        "id": "p3",
+        "text": "(Như kinh trên, chỉ thế vào sắc tư, thanh tư, hương tư, vị tư, xúc tư, pháp tư)."
+      },
+      {
+        "id": "p4",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn26.8": {
+    "canonicalRef": "sn26.8",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn26.8/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:06+00:00",
+    "materializedAt": "2026-09-02T09:25:06+00:00",
+    "contentHash": "5a2d4e9ab39056b188e8e847753e853eeb2bf99d4532bd833f0083c91856c55a",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 26: Tương Ưng Sanh"
+      },
+      {
+        "id": "p2",
+        "text": "26.8. Ái"
+      },
+      {
+        "id": "p3",
+        "text": "(Như kinh trên, chỉ thế vào sắc ái, thanh ái, hương ái, vị ái, xúc ái, pháp ái)."
+      },
+      {
+        "id": "p4",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn26.9": {
+    "canonicalRef": "sn26.9",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn26.9/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:06+00:00",
+    "materializedAt": "2026-09-02T09:25:06+00:00",
+    "contentHash": "a98bff39a951465646132908fb3bf90abd5116f9b3d66cae2fffea7fc322259a",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 26: Tương Ưng Sanh"
+      },
+      {
+        "id": "p2",
+        "text": "26.9. Giới"
+      },
+      {
+        "id": "p3",
+        "text": "(Như kinh trên, chỉ thế vào địa giới, thủy giới, hỏa giới, phong giới, không giới, thức giới)."
+      },
+      {
+        "id": "p4",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  }
+}

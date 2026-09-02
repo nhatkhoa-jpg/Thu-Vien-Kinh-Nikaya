@@ -1,0 +1,353 @@
+{
+  "sn32.1": {
+    "canonicalRef": "sn32.1",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn32.1/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:09+00:00",
+    "materializedAt": "2026-09-02T09:25:09+00:00",
+    "contentHash": "94fc759ebf4afc3a4423bfae41d2d21e629605cbaef6c39154ffb00bdd229b47",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 32: Tương Ưng Thần Mây"
+      },
+      {
+        "id": "p2",
+        "text": "32.1. Chủng Loại"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1-2. Trú ở Sāvatthi …"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 3 —Này các Tỷ-kheo, Ta sẽ thuyết cho các Ông về chư Thiên thuộc loại thần mây. Hãy lắng nghe."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 4 —Này các Tỷ-kheo, thế nào là chư Thiên thuộc loại thần mây? Có chư Thiên, này các Tỷ-kheo, thuộc loại mây lạnh. Có chư Thiên, này các Tỷ-kheo, thuộc loại mây nóng. Có chư Thiên, này các Tỷ-kheo, thuộc loại mây sấm. Có chư Thiên, này các Tỷ-kheo, thuộc loại mây gió. Có chư Thiên, này các Tỷ-kheo, thuộc loại mây mưa."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 5 Như vậy, này các Tỷ-kheo, họ được gọi là chư Thiên thuộc loại thần mây."
+      },
+      {
+        "id": "p7",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn32.13-52": {
+    "canonicalRef": "sn32.13-52",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn32.13-52/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:09+00:00",
+    "materializedAt": "2026-09-02T09:25:09+00:00",
+    "contentHash": "62a6c54f055666798030b63fea6e98e6af8b3d57c191902f45c91557cc6268a3",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 32: Tương Ưng Thần Mây"
+      },
+      {
+        "id": "p2",
+        "text": "32.13–52. Ủng Hộ Bố Thí"
+      },
+      {
+        "id": "p3",
+        "text": "(Như kinh trên, chỉ khác là “chư Thiên thuộc loại thần mây khác như thần mây nóng” … “thần mây mưa”)."
+      },
+      {
+        "id": "p4",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Aminah Borg-Luck."
+      }
+    ]
+  },
+  "sn32.2": {
+    "canonicalRef": "sn32.2",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn32.2/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:09+00:00",
+    "materializedAt": "2026-09-02T09:25:09+00:00",
+    "contentHash": "6754be01f226173c80aa635ddb6daff1ae6e00a59e69edc846b98498def56037",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 32: Tương Ưng Thần Mây"
+      },
+      {
+        "id": "p2",
+        "text": "32.2. Thiện Hành"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1-3. Nhân duyên ở Sāvatthi …"
+      },
+      {
+        "id": "p4",
+        "text": "Ngồi xuống một bên, Tỷ-kheo ấy bạch Thế Tôn:"
+      },
+      {
+        "id": "p5",
+        "text": "—Do nhân gì, do duyên gì, bạch Thế Tôn, ở đây, có loại (chúng sanh), sau khi thân hoại mạng chung, được sanh cọng trú với chư Thiên thuộc loại thần mây?"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 —Ở đây, này các Tỷ-kheo, có loại (chúng sanh) làm thiện hạnh về thân, làm thiện hạnh về lời nói, làm thiện hạnh về ý. Họ được nghe như sau: “Chư Thiên thuộc loại thần mây được thọ mạng lâu dài, nhan sắc thù thắng, hưởng thọ nhiều lạc”."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 5 Họ suy nghĩ như sau: “Ôi mong rằng, sau khi thân hoại mạng chung, chúng ta được sanh cọng trú với chư Thiên thuộc loại thần mây!” Sau khi thân hoại mạng chung, loại (chúng sanh) ấy được sanh cọng trú với chư Thiên thuộc loại thần mây."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 6 Do nhân này, do duyên này, này Tỷ-kheo, ở đây, có loại (chúng sanh), sau khi thân hoại mạng chung, được sanh cọng trú với chư Thiên thuộc loại thần mây."
+      },
+      {
+        "id": "p9",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn32.3-12": {
+    "canonicalRef": "sn32.3-12",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn32.3-12/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:09+00:00",
+    "materializedAt": "2026-09-02T09:25:09+00:00",
+    "contentHash": "8924117331e15dd17808aa323f89fd015219c96d319634fab7874ba854fa9146",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 32: Tương Ưng Thần Mây"
+      },
+      {
+        "id": "p2",
+        "text": "32.3–12. Ủng Hộ Bố Thí"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1-3. Nhân duyên ở Sāvatthi …"
+      },
+      {
+        "id": "p4",
+        "text": "Ngồi xuống một bên, vị Tỷ-kheo ấy bạch Thế Tôn:"
+      },
+      {
+        "id": "p5",
+        "text": "—Do nhân gì, do duyên gì, bạch Thế Tôn, ở đây, có loại (chúng sanh), sau khi thân hoại mạng chung, được sanh cọng trú với chư Thiên thuộc loại thần mây lạnh?"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 —Ở đây, này Tỷ-kheo, có loại (chúng sanh) làm thiện hạnh về thân, làm thiện hạnh về lời nói, làm thiện hạnh về ý. Họ được nghe như sau: “Chư Thiên thuộc loại thần mây lạnh được thọ mạng lâu dài, nhan sắc thù thắng, hưởng thọ nhiều lạc”."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 5 Họ suy nghĩ như sau: “Ôi mong rằng, sau khi thân hoại mạng chung, chúng ta được sanh cọng trú với chư Thiên thuộc loại thần mây lạnh!”"
+      },
+      {
+        "id": "p8",
+        "text": "Họ bố thí đồ ăn … Họ bố thí đèn dầu. Sau khi thân hoại mạng chung, họ được sanh cọng trú với chư Thiên thuộc loại thần mây lạnh."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 6 Do nhân này, do duyên này, này Tỷ-kheo, ở đây, một loại (chúng sanh), sau khi thân hoại mạng chung, được sanh cọng trú chư Thiên thuộc loại thần mây lạnh."
+      },
+      {
+        "id": "p10",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh and Aminah Borg-Luck."
+      }
+    ]
+  },
+  "sn32.53": {
+    "canonicalRef": "sn32.53",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn32.53/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:09+00:00",
+    "materializedAt": "2026-09-02T09:25:09+00:00",
+    "contentHash": "17e690c821fb4914d0fdd1f3d14d1e87ea4ff26c1cc565a232b077f05bf3ba8c",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 32: Tương Ưng Thần Mây"
+      },
+      {
+        "id": "p2",
+        "text": "32.53. Lạnh"
+      },
+      {
+        "id": "p3",
+        "text": "Vi-n 1-3. Nhân duyên ở Sāvatthi …"
+      },
+      {
+        "id": "p4",
+        "text": "Ngồi xuống một bên, Tỷ-kheo ấy bạch Thế Tôn:"
+      },
+      {
+        "id": "p5",
+        "text": "—Do nhân gì, do duyên gì, bạch Thế Tôn, có khi trời lạnh?"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 4 —Này Tỷ-kheo, có chư Thiên được gọi là thần mây lạnh. Khi chư Thiên ấy suy nghĩ: “Chúng ta hãy sống, hoan hỉ với tự thân”. Tùy theo tâm nguyện của họ, trời lạnh."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 5 Do nhân này, do duyên này, này Tỷ-kheo, có khi trời lạnh."
+      },
+      {
+        "id": "p8",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Aminah Borg-Luck."
+      }
+    ]
+  },
+  "sn32.54": {
+    "canonicalRef": "sn32.54",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn32.54/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:09+00:00",
+    "materializedAt": "2026-09-02T09:25:09+00:00",
+    "contentHash": "52774d4fe1c3013b2f88a2611d3f7b29eb0315b79e95dc8a6f907f2afddfc5cb",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 32: Tương Ưng Thần Mây"
+      },
+      {
+        "id": "p2",
+        "text": "32.54. Trời Nóng"
+      },
+      {
+        "id": "p3",
+        "text": "(Như kinh trên, chỉ khác … “ở đây là trời nóng và thuộc chư Thiên thuộc loại mây nóng”)."
+      },
+      {
+        "id": "p4",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Aminah Borg-Luck."
+      }
+    ]
+  },
+  "sn32.55": {
+    "canonicalRef": "sn32.55",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn32.55/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:10+00:00",
+    "materializedAt": "2026-09-02T09:25:10+00:00",
+    "contentHash": "1516bfd55088111dc078dad8de4003a51decf6de47679e4d9854776964b81ab4",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 32: Tương Ưng Thần Mây"
+      },
+      {
+        "id": "p2",
+        "text": "32.55. Trời Sấm"
+      },
+      {
+        "id": "p3",
+        "text": "(Như kinh trên, chỉ khác … “ở đây là trời sấm và thuộc chư Thiên loại mây sấm”)."
+      },
+      {
+        "id": "p4",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Aminah Borg-Luck."
+      }
+    ]
+  },
+  "sn32.56": {
+    "canonicalRef": "sn32.56",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn32.56/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:10+00:00",
+    "materializedAt": "2026-09-02T09:25:10+00:00",
+    "contentHash": "b9fc597d4e98e2e8ac7976c254ea4936e2bf1552cf37fe129018a2125770c171",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 32: Tương Ưng Thần Mây"
+      },
+      {
+        "id": "p2",
+        "text": "32.56. Trời Gió"
+      },
+      {
+        "id": "p3",
+        "text": "(Như kinh trên, chỉ khác … “ở đây trời gió và thuộc chư Thiên loại mây gió”)."
+      },
+      {
+        "id": "p4",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Aminah Borg-Luck."
+      }
+    ]
+  },
+  "sn32.57": {
+    "canonicalRef": "sn32.57",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn32.57/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:09+00:00",
+    "materializedAt": "2026-09-02T09:25:09+00:00",
+    "contentHash": "6b3cb48c39d5a91f7e6e59f40ff22a26ae64c6712cd8d86e599f6841395cb2c9",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 32: Tương Ưng Thần Mây"
+      },
+      {
+        "id": "p2",
+        "text": "32.57. Trời Mưa"
+      },
+      {
+        "id": "p3",
+        "text": "(Như kinh trên, chỉ khác … “ở đây trời mưa và thuộc chư Thiên loại mây mưa”)."
+      },
+      {
+        "id": "p4",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Aminah Borg-Luck."
+      }
+    ]
+  }
+}

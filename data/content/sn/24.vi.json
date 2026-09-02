@@ -360,6 +360,214 @@
       }
     ]
   },
+  "sn24.16": {
+    "canonicalRef": "sn24.16",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn24.16/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:04+00:00",
+    "materializedAt": "2026-09-02T09:25:04+00:00",
+    "contentHash": "57a68def88c2bd5f12612b4566f42ee71480d61b42fbb8c44bd63973a5492d73",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 24: Tương Ưng Kiến"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Dự Lưu"
+      },
+      {
+        "id": "p3",
+        "text": "24.16. Như Lai Không Có Tồn Tại"
+      },
+      {
+        "id": "p4",
+        "text": "(Như các kinh trên, chỉ khác về “tà kiến” )"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn24.17": {
+    "canonicalRef": "sn24.17",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn24.17/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:04+00:00",
+    "materializedAt": "2026-09-02T09:25:04+00:00",
+    "contentHash": "a054abb9a804e52f7432da2702475c19b9fe3169995245e668d62011e5a30cad",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 24: Tương Ưng Kiến"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Dự Lưu"
+      },
+      {
+        "id": "p3",
+        "text": "24.17. Như Lai Có Tồn Tại Và Không Có Tồn Tại"
+      },
+      {
+        "id": "p4",
+        "text": "(Như các kinh trên, chỉ khác về “tà kiến” )"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn24.18": {
+    "canonicalRef": "sn24.18",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn24.18/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:04+00:00",
+    "materializedAt": "2026-09-02T09:25:04+00:00",
+    "contentHash": "5f3a6042669111babd5b259a6c30a19c4e3515d31ceae5090c2607e2e7dc05da",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 24: Tương Ưng Kiến"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Dự Lưu"
+      },
+      {
+        "id": "p3",
+        "text": "24.18. Như Lai Không Tồn Tại Và Không Không Tồn Tại"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1-2. Nhân duyên ở Sāvatthi …"
+      },
+      {
+        "id": "p5",
+        "text": "—Này các Tỷ-kheo, do có cái gì, do chấp thủ cái gì, do thiên chấp cái gì, (tà) kiến này khởi lên: “Như Lai không tồn tại và không không tồn tại sau khi chết”?"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 —Ðối với chúng con, bạch Thế Tôn, các pháp lấy Thế Tôn làm căn bản …"
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4-8. —Do có sắc, này các Tỷ-kheo, do chấp thủ sắc, do thiên chấp sắc, (tà) kiến này khởi lên: “Như Lai không tồn tại và không không tồn tại sau khi chết” … … thọ … tưởng … các hành … Do có thức, này các Tỷ-kheo, do chấp thủ thức, do thiên chấp thức, khởi lên (tà) kiến này: “Như Lai không tồn tại và không không tồn tại sau khi chết”."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 9 Các Ông nghĩ thế nào, này các Tỷ-kheo, sắc là thường hay vô thường?"
+      },
+      {
+        "id": "p9",
+        "text": "—Vô thường, bạch Thế Tôn."
+      },
+      {
+        "id": "p10",
+        "text": "—Cái gì vô thường là khổ hay lạc?"
+      },
+      {
+        "id": "p11",
+        "text": "—Là khổ, bạch Thế Tôn."
+      },
+      {
+        "id": "p12",
+        "text": "—Cái gì vô thường, khổ, chịu sự biến hoại, nếu không chấp thủ cái ấy, thời có thể khởi lên (tà) kiến như sau: “Như Lai không tồn tại và không không tồn tại sau khi chết?”"
+      },
+      {
+        "id": "p13",
+        "text": "—Thưa không, bạch Thế Tôn."
+      },
+      {
+        "id": "p14",
+        "text": "Vi-n 10-13. … Thọ … Tưởng … Các hành … Thức …"
+      },
+      {
+        "id": "p15",
+        "text": "Vi-n 14 —Cái được thấy, được nghe, được nghĩ đến, được biết đến, được đạt tới, được tìm cầu, được ý suy tư; cái ấy là thường hay vô thường?"
+      },
+      {
+        "id": "p16",
+        "text": "—Vô thường, bạch Thế Tôn."
+      },
+      {
+        "id": "p17",
+        "text": "—Cái gì vô thường là khổ hay lạc?"
+      },
+      {
+        "id": "p18",
+        "text": "—Là khổ, bạch Thế Tôn."
+      },
+      {
+        "id": "p19",
+        "text": "—Cái gì vô thường, khổ, chịu sự biến hoại, nếu không chấp thủ cái ấy, thời có thể khởi lên (tà) kiến như sau: “Như Lai không tồn tại và không không tồn tại sau khi chết”?"
+      },
+      {
+        "id": "p20",
+        "text": "—Thưa không, bạch Thế Tôn."
+      },
+      {
+        "id": "p21",
+        "text": "Vi-n 15 —Khi nào vị Thánh đệ tử, này các Tỷ-kheo, đối với các xứ này, nghi hoặc được đoạn trừ, đối với khổ, nghi hoặc được đoạn trừ, đối với khổ tập khởi, nghi hoặc được đoạn trừ, đối với khổ đoạn diệt, nghi hoặc được đoạn trừ, đối với con đường đưa đến khổ đoạn diệt, nghi hoặc được đoạn trừ, vị Thánh đệ tử như vậy được gọi là đã chứng được bậc Dự lưu, không bị thối đọa, chắc quyết hướng đến giác ngộ."
+      },
+      {
+        "id": "p22",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn24.19": {
+    "canonicalRef": "sn24.19",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn24.19/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:05+00:00",
+    "materializedAt": "2026-09-02T09:25:05+00:00",
+    "contentHash": "d7c273cbd764cfa099c2b12e3afb426c8dd55db29a69485cabc8805f05bb85fc",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 24: Tương Ưng Kiến"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Trùng Thuyết (1)"
+      },
+      {
+        "id": "p3",
+        "text": "24.19. Gió"
+      },
+      {
+        "id": "p4",
+        "text": "(Những kinh I, II trong phẩm này là giống như những kinh trong Chương Ba, Kiến Tương Ưng từ số I cho đến số XVIII)."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
   "sn24.2": {
     "canonicalRef": "sn24.2",
     "collection": "SN",
@@ -495,6 +703,41 @@
       }
     ]
   },
+  "sn24.20-35": {
+    "canonicalRef": "sn24.20-35",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn24.20-35/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:04+00:00",
+    "materializedAt": "2026-09-02T09:25:04+00:00",
+    "contentHash": "96052b6c7d4316fa3d310ef11e81612c5a97d7cf67a6aab3ceed2a2b9a0f453a",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 24: Tương Ưng Kiến"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Trùng Thuyết (1)"
+      },
+      {
+        "id": "p3",
+        "text": "24.20–35. Phi Hữu Phi Vô"
+      },
+      {
+        "id": "p4",
+        "text": "(Những kinh I, II trong phẩm này là giống như những kinh trong Chương Ba, Kiến Tương Ưng từ số I cho đến số XVIII)."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh and Aminah Borg-Luck."
+      }
+    ]
+  },
   "sn24.3": {
     "canonicalRef": "sn24.3",
     "collection": "SN",
@@ -626,6 +869,146 @@
       }
     ]
   },
+  "sn24.36": {
+    "canonicalRef": "sn24.36",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn24.36/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:04+00:00",
+    "materializedAt": "2026-09-02T09:25:04+00:00",
+    "contentHash": "b36b715b1ed7c310f944ab9a5e3e242c15917d5bee81c4967e18fb64b5d07746",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 24: Tương Ưng Kiến"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Trùng Thuyết (1)"
+      },
+      {
+        "id": "p3",
+        "text": "24.36"
+      },
+      {
+        "id": "p4",
+        "text": "(Những kinh I, II trong phẩm này là giống như những kinh trong Chương Ba, Kiến Tương Ưng từ số I cho đến số XVIII)."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Aminah Borg-Luck."
+      }
+    ]
+  },
+  "sn24.37": {
+    "canonicalRef": "sn24.37",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn24.37/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:04+00:00",
+    "materializedAt": "2026-09-02T09:25:04+00:00",
+    "contentHash": "c50e91720967842ed1888ce73767e74e03097fd1498ec0256d1edbbbdab0119e",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 24: Tương Ưng Kiến"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Trùng Thuyết (1)"
+      },
+      {
+        "id": "p3",
+        "text": "24.37. Tự Ngã Có Sắc"
+      },
+      {
+        "id": "p4",
+        "text": "(Những kinh này giống như các kinh trước chỉ khác là “tà kiến” được thay bằng “Tự ngã có sắc, sau khi chết, không bệnh”)."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Aminah Borg-Luck."
+      }
+    ]
+  },
+  "sn24.38": {
+    "canonicalRef": "sn24.38",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn24.38/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:04+00:00",
+    "materializedAt": "2026-09-02T09:25:04+00:00",
+    "contentHash": "a618e1656c975bdca6e853bdfa523d1150dc69b99d4dac6bef449cab59da26e9",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 24: Tương Ưng Kiến"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Trùng Thuyết (1)"
+      },
+      {
+        "id": "p3",
+        "text": "24.38. Tự Ngã Không Có Sắc"
+      },
+      {
+        "id": "p4",
+        "text": "(Như trên, được thay bằng “Tự ngã không có sắc, sau khi chết, không bệnh”)."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Aminah Borg-Luck."
+      }
+    ]
+  },
+  "sn24.39": {
+    "canonicalRef": "sn24.39",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn24.39/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:05+00:00",
+    "materializedAt": "2026-09-02T09:25:05+00:00",
+    "contentHash": "f93ef029be9b520068fe7a04f202b806b5599fba96203426be46d866f84a864d",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 24: Tương Ưng Kiến"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Trùng Thuyết (1)"
+      },
+      {
+        "id": "p3",
+        "text": "24.39. Tự Ngã Có Sắc Và Không Sắc."
+      },
+      {
+        "id": "p4",
+        "text": "(Những kinh này giống như các kinh trước)."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Aminah Borg-Luck."
+      }
+    ]
+  },
   "sn24.4": {
     "canonicalRef": "sn24.4",
     "collection": "SN",
@@ -666,6 +1049,251 @@
       {
         "id": "p7",
         "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn24.40": {
+    "canonicalRef": "sn24.40",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn24.40/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:05+00:00",
+    "materializedAt": "2026-09-02T09:25:05+00:00",
+    "contentHash": "c82ae42826572d165132a0430a44656e8c6a7100e3e61cc0a1dc8d0147f90da1",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 24: Tương Ưng Kiến"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Trùng Thuyết (1)"
+      },
+      {
+        "id": "p3",
+        "text": "24.40. Tự Ngã Không Có Sắc Và Không Không Sắc"
+      },
+      {
+        "id": "p4",
+        "text": "(Những kinh này giống như các kinh trước)."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Aminah Borg-Luck."
+      }
+    ]
+  },
+  "sn24.41": {
+    "canonicalRef": "sn24.41",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn24.41/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:05+00:00",
+    "materializedAt": "2026-09-02T09:25:05+00:00",
+    "contentHash": "15ac5d1756e7dcfea2c25acae026520abe0ab0c3be34e6aa794afd6651585e0a",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 24: Tương Ưng Kiến"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Trùng Thuyết (1)"
+      },
+      {
+        "id": "p3",
+        "text": "24.41. Thuần Lạc"
+      },
+      {
+        "id": "p4",
+        "text": "(… ”Tự ngã là thuần lạc, sau khi chết, không bệnh”)."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Aminah Borg-Luck."
+      }
+    ]
+  },
+  "sn24.42": {
+    "canonicalRef": "sn24.42",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn24.42/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:04+00:00",
+    "materializedAt": "2026-09-02T09:25:04+00:00",
+    "contentHash": "3849d4097f90d10fd67f590e6daea50c47a07ca8003b0829ccfb1946900235f2",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 24: Tương Ưng Kiến"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Trùng Thuyết (1)"
+      },
+      {
+        "id": "p3",
+        "text": "24.42. Thuần Khổ"
+      },
+      {
+        "id": "p4",
+        "text": "(Những kinh này giống như các kinh trước)."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Aminah Borg-Luck."
+      }
+    ]
+  },
+  "sn24.43": {
+    "canonicalRef": "sn24.43",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn24.43/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:05+00:00",
+    "materializedAt": "2026-09-02T09:25:05+00:00",
+    "contentHash": "43af697d1c89b8709e9e2cd482bf269c84572f57d285b93b99f1ac8716084d4e",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 24: Tương Ưng Kiến"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Trùng Thuyết (1)"
+      },
+      {
+        "id": "p3",
+        "text": "24.43. Thuần Lạc Và Thuần Khổ"
+      },
+      {
+        "id": "p4",
+        "text": "(Những kinh này giống như các kinh trước)."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Aminah Borg-Luck."
+      }
+    ]
+  },
+  "sn24.44": {
+    "canonicalRef": "sn24.44",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn24.44/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:05+00:00",
+    "materializedAt": "2026-09-02T09:25:05+00:00",
+    "contentHash": "5d68e33a8a6ffa535f871794cf4b8a923504110a4236c511e81437aeb620f43e",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 24: Tương Ưng Kiến"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Trùng Thuyết (1)"
+      },
+      {
+        "id": "p3",
+        "text": "24.44. Chẳng Phải Khổ , Chẳng Phải Lạc"
+      },
+      {
+        "id": "p4",
+        "text": "(Những kinh này giống như các kinh trước)."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Aminah Borg-Luck."
+      }
+    ]
+  },
+  "sn24.45": {
+    "canonicalRef": "sn24.45",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn24.45/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:05+00:00",
+    "materializedAt": "2026-09-02T09:25:05+00:00",
+    "contentHash": "22a7ad1ee78d08de2e1234696c9f5bbdad2e02692b0e128b48fe81a320d1965c",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 24: Tương Ưng Kiến"
+      },
+      {
+        "id": "p2",
+        "text": "III: Phẩm Trùng Thuyết (2)"
+      },
+      {
+        "id": "p3",
+        "text": "24.45"
+      },
+      {
+        "id": "p4",
+        "text": "(Như kinh Chương Một I, Kinh Nakulapità)."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Aminah Borg-Luck."
+      }
+    ]
+  },
+  "sn24.46-69": {
+    "canonicalRef": "sn24.46-69",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn24.46-69/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:05+00:00",
+    "materializedAt": "2026-09-02T09:25:05+00:00",
+    "contentHash": "34ce82863a0b47545bc26ef4ab79f6952c7f1ef149dbfd09792cd8d46906cd6b",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 24: Tương Ưng Kiến"
+      },
+      {
+        "id": "p2",
+        "text": "III: Phẩm Trùng Thuyết (2)"
+      },
+      {
+        "id": "p3",
+        "text": "24.46–69"
+      },
+      {
+        "id": "p4",
+        "text": "(Như kinh từ số I, Phẩm Trùng Thuyết 1, đến VII Phẩm Trùng Thuyết 1)"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh and Aminah Borg-Luck."
       }
     ]
   },
@@ -806,6 +1434,111 @@
       }
     ]
   },
+  "sn24.70": {
+    "canonicalRef": "sn24.70",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn24.70/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:05+00:00",
+    "materializedAt": "2026-09-02T09:25:05+00:00",
+    "contentHash": "7775c6dc59c554f00c128a0503067e4a11cce649afd6c5d264d0cd3db9439499",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 24: Tương Ưng Kiến"
+      },
+      {
+        "id": "p2",
+        "text": "III: Phẩm Trùng Thuyết (2)"
+      },
+      {
+        "id": "p3",
+        "text": "24.70"
+      },
+      {
+        "id": "p4",
+        "text": "(Như kinh VIII, Phẩm Trùng Thuyết 1)"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh and Aminah Borg-Luck."
+      }
+    ]
+  },
+  "sn24.71": {
+    "canonicalRef": "sn24.71",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn24.71/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:05+00:00",
+    "materializedAt": "2026-09-02T09:25:05+00:00",
+    "contentHash": "9d89da86ef0af51895fc93fde784fc526c68eb714e4b08265fd9aad97b906cdf",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 24: Tương Ưng Kiến"
+      },
+      {
+        "id": "p2",
+        "text": "III: Phẩm Trùng Thuyết (3)"
+      },
+      {
+        "id": "p3",
+        "text": "24.71"
+      },
+      {
+        "id": "p4",
+        "text": "(Như kinh Chương Một I, Kinh Nakulapità)."
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Aminah Borg-Luck."
+      }
+    ]
+  },
+  "sn24.72-95": {
+    "canonicalRef": "sn24.72-95",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn24.72-95/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:05+00:00",
+    "materializedAt": "2026-09-02T09:25:05+00:00",
+    "contentHash": "3fe66019243710447fc7f351f1db01a0a597b1a7156efd75cfb0188acd469852",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 24: Tương Ưng Kiến"
+      },
+      {
+        "id": "p2",
+        "text": "III: Phẩm Trùng Thuyết (3)"
+      },
+      {
+        "id": "p3",
+        "text": "24.72–95"
+      },
+      {
+        "id": "p4",
+        "text": "(Như kinh từ số I, Phẩm Trùng Thuyết 1, đến VII Phẩm Trùng Thuyết 1)"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Aminah Borg-Luck."
+      }
+    ]
+  },
   "sn24.8": {
     "canonicalRef": "sn24.8",
     "collection": "SN",
@@ -905,6 +1638,41 @@
       {
         "id": "p5",
         "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn24.96": {
+    "canonicalRef": "sn24.96",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn24.96/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T09:25:05+00:00",
+    "materializedAt": "2026-09-02T09:25:05+00:00",
+    "contentHash": "d592b34696354729c416a49cf6a7bf1966526135becbe8deede2e61dae5fd8b3",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 24: Tương Ưng Kiến"
+      },
+      {
+        "id": "p2",
+        "text": "III: Phẩm Trùng Thuyết (3)"
+      },
+      {
+        "id": "p3",
+        "text": "24.96"
+      },
+      {
+        "id": "p4",
+        "text": "(Như kinh VIII, Phẩm Trùng Thuyết 1)"
+      },
+      {
+        "id": "p5",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Aminah Borg-Luck."
       }
     ]
   }
