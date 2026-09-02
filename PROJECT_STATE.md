@@ -83,7 +83,15 @@ Kiến trúc V4 dùng browser/server neural TTS đã bị thay thế.
 - V5.1 PR #3 merged vào `main` bằng commit `c1a782c432d0d4a2241a939c7f053a083e95da2c`.
 - Main Build & Validate run `33568862972` PASS; Vercel production cho merge commit báo SUCCESS.
 
-## 8. Responsive UX
+## 8. Chiến lược ngôn ngữ
+- Public UI locales: `vi`, `th`, `my`, `si`, `km`, `lo`, `en`, `zh`.
+- Tier A: Việt, Thái, Myanmar, Sinhala, Khmer, Lào. Tier B: Anh, Trung.
+- Pāli luôn là lớp canonical/source, không phải UI locale bắt buộc.
+- Các locale cũ khác vẫn route-compatible nhưng bị ẩn khỏi selector, không prerender/QA và dùng `noindex`; có thể bật lại khi traffic thật chứng minh nhu cầu.
+- Chỉ `vi` và `en` hiện có giá trị scripture/source đủ để đưa toàn bộ reader URLs vào sitemap/hreflang. Locale UI khác không được quảng bá như có bản dịch kinh bản địa khi chưa có nguồn.
+- UI localization có thể được QA/cải thiện riêng; scripture translation tuyệt đối phải source-backed và không được AI tự lấp.
+
+## 9. Responsive UX
 Bắt buộc test ít nhất 4 lớp:
 - Phone <= 640px
 - Tablet/DeX 641–1024px
@@ -91,20 +99,20 @@ Bắt buộc test ít nhất 4 lớp:
 - Wide >= 1500px
 Mobile bottom dock không được che nội dung/nút quan trọng. Tên đầy đủ 5 bộ được phép wrap trên mobile.
 
-## 9. Dữ liệu website + RAG/AI
+## 10. Dữ liệu website + RAG/AI
 - Nguồn chuẩn: `data/catalog/*.json`.
 - Mỗi bài giữ ID ổn định, canonical ref, code quốc tế, viCode, title, Pāli, topics, source, translator/license, version.
 - RAG export: `npm run rag:export`.
 - Mỗi chunk có stable id + `content_hash` + `embedding_cache_key`.
 - Quality gate kiểm tra số catalog/audio thực tế; không hard-code giả định số lượng cho SN/AN/KN trước khi khám phá canonical refs.
 
-## 10. YouTube — nguyên tắc tích hợp
+## 11. YouTube — nguyên tắc tích hợp
 - Reader đã có khả năng render video theo `youtubeId` như nội dung bổ sung; YouTube không được biến homepage thành feed chính.
 - Không sửa thủ công JSX từng trang. Dữ liệu video phải map theo canonicalRef/videoId trong catalog (ưu tiên tách `videos.json` khi triển khai lớn).
 - Giai đoạn tự động hóa: YouTube Data API scan video của channel, đọc mã cấu trúc trong title/description như `TB 21`, `MN 21`, `TrB 1`, map vào canonicalRef; trường hợp mơ hồ cho manual override.
 - Nên hỗ trợ `startSeconds/endSeconds`, title, role/topic để một video hoặc trích đoạn gắn đúng bài/đoạn.
 
-## 11. Vercel / domain — URL CỐ ĐỊNH
+## 12. Vercel / domain — URL CỐ ĐỊNH
 - Không tạo project Vercel mới cho mỗi phiên bản.
 - Project cố định: `nikaya-reader-v4-final`.
 - Stable URL: `https://nikaya-reader-v4-final-khoa-3f1b.vercel.app`.
@@ -112,12 +120,12 @@ Mobile bottom dock không được che nội dung/nút quan trọng. Tên đầy
 - URL random chỉ là deployment nội bộ, không đưa làm URL chính.
 - Nếu production cần public cho người ngoài, `Require Log In` của Deployment Protection phải tắt; kiểm tra lại bằng tab ẩn danh.
 
-## 12. Cách người dùng theo dõi công việc
+## 13. Cách người dùng theo dõi công việc
 - Dễ xem trên website: `https://nikaya-reader-v4-final-khoa-3f1b.vercel.app/vi/tien-do`.
 - Nguồn kỹ thuật chính xác nhất: `https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/actions`.
 - Chỉ coi “đang làm” khi GitHub workflow/job là `queued` hoặc `in_progress`; automation ChatGPT bật một mình không phải bằng chứng công việc đang chạy.
 
-## 13. Quy trình chuẩn khi tiếp tục
+## 14. Quy trình chuẩn khi tiếp tục
 1. Đọc `PROJECT_STATE.md`, `AGENTS.md`, `README.md`, `data/README.md`.
 2. Đọc `main` + GitHub Actions/release mới nhất; actual state thắng state file cũ.
 3. Không tạo repo/project/Vercel URL mới nếu không có lý do đặc biệt.
@@ -131,7 +139,7 @@ Mobile bottom dock không được che nội dung/nút quan trọng. Tên đầy
 11. Xác nhận production bằng stable URL; không gửi random deployment URL.
 12. Update file này khi kiến trúc/quy tắc/trạng thái một bộ thay đổi.
 
-## 14. Thứ tự tiếp theo
+## 15. Thứ tự tiếp theo
 - **Ngay bây giờ:** hoàn tất corpus Trường Bộ DN1–DN34 trên website (toàn văn + catalog + PDF + reader), không chờ audio.
 - Sau đó: Tương Ưng Bộ SN/TƯB → Tăng Chi Bộ AN/TCB → Tiểu Bộ KN/TiB, luôn data-first.
 - Song song dài hạn: thay audio Piper/checkpoint bằng cloud-quality audio miễn phí theo quota, có versioning và không render lại file final.

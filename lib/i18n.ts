@@ -1,8 +1,10 @@
-export const locales=['vi','en','zh','hi','es','ar','fr','bn','pt','ru','id','ur','de','ja','ko','th'] as const;
-export type Locale=typeof locales[number];
+export const locales=['vi','th','my','si','km','lo','en','zh'] as const;
+export const scriptureLocales=['vi','en'] as const;
+export const deferredLocales=['hi','es','ar','fr','bn','pt','ru','id','ur','de','ja','ko'] as const;
+export type Locale=typeof locales[number]|typeof deferredLocales[number];
 export const defaultLocale:Locale='vi';
 
-export const languageNames:Record<Locale,string>={vi:'Tiếng Việt',en:'English',zh:'中文',hi:'हिन्दी',es:'Español',ar:'العربية',fr:'Français',bn:'বাংলা',pt:'Português',ru:'Русский',id:'Bahasa Indonesia',ur:'اردو',de:'Deutsch',ja:'日本語',ko:'한국어',th:'ไทย'};
+export const languageNames:Record<Locale,string>={vi:'Tiếng Việt',th:'ไทย',my:'မြန်မာ',si:'සිංහල',km:'ខ្មែរ',lo:'ລາວ',en:'English',zh:'中文',hi:'हिन्दी',es:'Español',ar:'العربية',fr:'Français',bn:'বাংলা',pt:'Português',ru:'Русский',id:'Bahasa Indonesia',ur:'اردو',de:'Deutsch',ja:'日本語',ko:'한국어'};
 
 type Dict=Record<string,string>;
 const en:Dict={
@@ -35,8 +37,13 @@ const overrides:Partial<Record<Locale,Dict>>={
  de:{brand:'5 Große Nikāya-Sammlungen',brandSub:'Bibliothek früher buddhistischer Lehrreden',home:'Start',navCollections:'5 Nikāyas',navLibrary:'Bibliothek',navListen:'Hören',searchShort:'Suchen',featured:'Ausgewählte Lehrreden',featuredLead:'Wichtige Texte als klarer Einstieg zum Lesen und Hören.'},
  ja:{brand:'五大ニカーヤ経蔵',brandSub:'初期仏教経典ライブラリ',home:'ホーム',navCollections:'五大ニカーヤ',navLibrary:'経典',navListen:'聴く',searchShort:'検索',featured:'注目の経典',featuredLead:'読む・聴くための大切な経典から始められます。'},
  ko:{brand:'5대 니까야 경장',brandSub:'초기 불교 경전 라이브러리',home:'홈',navCollections:'5대 니까야',navLibrary:'경전',navListen:'듣기',searchShort:'검색',featured:'추천 경전',featuredLead:'읽기와 듣기를 시작하기 좋은 주요 경전입니다.'},
- th:{brand:'นิกายะ 5 หมวดใหญ่',brandSub:'คลังพระสูตรพุทธศาสนายุคต้น',home:'หน้าแรก',navCollections:'5 นิกาย',navLibrary:'ห้องสมุด',navListen:'ฟัง',searchShort:'ค้นหา',featured:'พระสูตรแนะนำ',featuredLead:'พระสูตรสำคัญสำหรับเริ่มอ่านและฟัง'}
+ th:{brand:'นิกายะ 5 หมวดใหญ่',brandSub:'คลังพระสูตรพุทธศาสนายุคต้น',home:'หน้าแรก',navCollections:'5 นิกาย',navLibrary:'ห้องสมุด',navListen:'ฟัง',searchShort:'ค้นหา',heroTitle:'พระไตรปิฎกนิกาย 5 หมวดในห้องสมุดที่เรียบง่ายและทันสมัย',heroLead:'ค้นหาพระสูตร อ่านอย่างสบาย ฟังเสียง และบันทึกความคืบหน้า',explore:'เปิดห้องสมุด',collections:'นิกายะ 5 หมวดใหญ่',featured:'พระสูตรแนะนำ',featuredLead:'พระสูตรสำคัญสำหรับเริ่มอ่านและฟัง',search:'ค้นหาชื่อ รหัส ภาษาบาลี หรือหัวข้อ…'},
+ my:{brand:'နိကာယ်ကျမ်း ၅ ရပ်',brandSub:'ရှေးဦးဗုဒ္ဓဘာသာ သုတ်တော်စာကြည့်တိုက်',home:'ပင်မ',navCollections:'နိကာယ် ၅ ရပ်',navLibrary:'စာကြည့်တိုက်',navListen:'နားထောင်ရန်',searchShort:'ရှာဖွေ',heroTitle:'နိကာယ်ကျမ်း ၅ ရပ်ကို ခေတ်မီစာကြည့်တိုက်တစ်ခုတွင် ဖတ်ရှုပါ။',heroLead:'သုတ်တော်ကို ရှာဖွေ၊ ဖတ်ရှု၊ နားထောင်ပြီး ဖတ်ခဲ့သည့်နေရာကို သိမ်းဆည်းနိုင်သည်။',explore:'စာကြည့်တိုက်ဖွင့်ရန်',collections:'နိကာယ်ကျမ်း ၅ ရပ်',featured:'ရွေးချယ်ထားသော သုတ်တော်များ',search:'အမည်၊ ကျမ်းညွှန်း၊ ပါဠိ သို့မဟုတ် အကြောင်းအရာဖြင့် ရှာရန်…'},
+ si:{brand:'මහා නිකාය සංග්‍රහ 5',brandSub:'මුල් බෞද්ධ සූත්‍ර පුස්තකාලය',home:'මුල් පිටුව',navCollections:'නිකාය 5',navLibrary:'පුස්තකාලය',navListen:'සවන් දෙන්න',searchShort:'සොයන්න',heroTitle:'මහා නිකාය සංග්‍රහ පහ සරල නවීන පුස්තකාලයකින් කියවන්න.',heroLead:'සූත්‍ර සොයන්න, පහසුවෙන් කියවන්න, ශ්‍රව්‍යයට සවන් දෙන්න සහ ප්‍රගතිය සුරකින්න.',explore:'පුස්තකාලය විවෘත කරන්න',collections:'මහා නිකාය සංග්‍රහ 5',featured:'තෝරාගත් සූත්‍ර',search:'නම, යොමුව, පාලි හෝ මාතෘකාව සොයන්න…'},
+ km:{brand:'និកាយធំទាំង ៥',brandSub:'បណ្ណាល័យព្រះសូត្រពុទ្ធសាសនាដើម',home:'ទំព័រដើម',navCollections:'និកាយ ៥',navLibrary:'បណ្ណាល័យ',navListen:'ស្តាប់',searchShort:'ស្វែងរក',heroTitle:'អាននិកាយធំទាំងប្រាំក្នុងបណ្ណាល័យទំនើប និងស្ងប់ស្ងាត់។',heroLead:'ស្វែងរកព្រះសូត្រ អានដោយងាយ ស្តាប់សំឡេង និងរក្សាទុកវឌ្ឍនភាព។',explore:'បើកបណ្ណាល័យ',collections:'និកាយធំទាំង ៥',featured:'ព្រះសូត្រជ្រើសរើស',search:'ស្វែងរកតាមឈ្មោះ លេខយោង ភាសាបាលី ឬប្រធានបទ…'},
+ lo:{brand:'ນິກາຍໃຫຍ່ 5 ໝວດ',brandSub:'ຫໍສະໝຸດພຣະສູດພຸດທະສາສະໜາຍຸກຕົ້ນ',home:'ໜ້າຫຼັກ',navCollections:'5 ນິກາຍ',navLibrary:'ຫໍສະໝຸດ',navListen:'ຟັງ',searchShort:'ຄົ້ນຫາ',heroTitle:'ອ່ານນິກາຍໃຫຍ່ທັງຫ້າໃນຫໍສະໝຸດທີ່ທັນສະໄໝ.',heroLead:'ຄົ້ນຫາພຣະສູດ ອ່ານຢ່າງສະບາຍ ຟັງສຽງ ແລະບັນທຶກຄວາມຄືບໜ້າ.',explore:'ເປີດຫໍສະໝຸດ',collections:'ນິກາຍໃຫຍ່ 5 ໝວດ',featured:'ພຣະສູດແນະນຳ',search:'ຄົ້ນຫາຊື່ ລະຫັດ ພາສາປາລີ ຫຼືຫົວຂໍ້…'}
 };
 
-export function isLocale(v:string):v is Locale{return locales.includes(v as Locale)}
+export function isLocale(v:string):v is Locale{return [...locales,...deferredLocales].includes(v as Locale)}
+export function isDeferredLocale(v:Locale){return deferredLocales.includes(v as typeof deferredLocales[number])}
 export function dict(locale:Locale):Dict{return {...en,...(locale==='vi'?vi:{}),...(overrides[locale]||{})}}

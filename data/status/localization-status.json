@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "lastVerifiedAt": "2026-09-02T03:08:00Z",
+  "canonicalLanguage": "pli",
+  "publicUiLocales": ["vi", "th", "my", "si", "km", "lo", "en", "zh"],
+  "scriptureSitemapLocales": ["vi", "en"],
+  "deferredLocales": ["hi", "es", "ar", "fr", "bn", "pt", "ru", "id", "ur", "de", "ja", "ko"],
+  "policy": {
+    "uiLocalization": "machine assistance permitted with QA",
+    "scriptureTranslation": "source-backed only; no invented AI translations",
+    "deferredRoutes": "route-compatible, hidden from selector, noindex, not prerendered",
+    "fallback": "no silent Vietnamese scripture fallback"
+  },
+  "measurements": {
+    "staticPagesBefore": 69,
+    "staticPagesAfter": 37,
+    "staticPageReductionPercent": 46.4,
+    "sitemapUrlsBefore": 32160,
+    "sitemapUrlsAfter": 4026,
+    "sitemapReductionPercent": 87.5,
+    "nextBuildSeconds": 10.534
+  }
+}
