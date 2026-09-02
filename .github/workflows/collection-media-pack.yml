@@ -51,12 +51,22 @@ jobs:
           }
           console.log(`PASS ${m.collection}: ${m.readyCount}/${m.catalogCount} body-only TTS files, ${m.totalChars} chars`);
           NODE
-      - name: Install Chromium for PDF
-        if: github.event_name == 'workflow_dispatch'
+      - name: Install Chromium for PDF validation
         run: npx playwright install --with-deps chromium
       - name: Render whole-collection PDF
-        if: github.event_name == 'workflow_dispatch'
         run: npm run media:pdf -- --collection "$COLLECTION" --pack /tmp/local-media
+      - name: Validate PDF output
+        run: |
+          PDF="/tmp/local-media/$(echo "$COLLECTION" | tr '[:upper:]' '[:lower:]')/$(echo "$COLLECTION" | tr '[:upper:]' '[:lower:]')-complete.pdf"
+          test -f "$PDF"
+          SIZE=$(stat -c%s "$PDF")
+          echo "PDF size: $SIZE bytes"
+          if [ "$SIZE" -lt 100000 ]; then
+            echo "PDF unexpectedly small"
+            exit 1
+          fi
+          head -c 5 "$PDF" | grep -q '%PDF-'
+          echo "PASS whole-collection PDF: $PDF"
       - name: Upload package artifact
         if: github.event_name == 'workflow_dispatch'
         uses: actions/upload-artifact@v4
