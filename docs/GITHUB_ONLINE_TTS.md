@@ -8,7 +8,7 @@ The website must always prefer the best verified narration available, while pres
 
 1. **Preferred:** Gemini 3.1 Flash TTS generated online by GitHub Actions and stored at `audio/gemini/<collection>/<canonicalRef>.mp3`.
 2. **Backup MP3:** trusted PC/local narration already published at `audio/<collection>/<canonicalRef>.mp3`, plus any existing verified catalog MP3.
-3. **Last-resort option:** browser speech synthesis from the exact source-backed text already displayed on the scripture page.
+3. **Optional fallback:** browser speech synthesis from the exact source-backed text already displayed on the scripture page.
 
 A higher-quality cloud asset must never overwrite or delete a valid local MP3. The two production lanes are independent and can improve coverage in parallel.
 
