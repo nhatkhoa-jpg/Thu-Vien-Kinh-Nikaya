@@ -4,7 +4,7 @@ import {useEffect,useMemo,useState} from 'react';
 import {ChevronDown,Download,ExternalLink,Headphones} from 'lucide-react';
 import AudioPlayer from '@/components/AudioPlayer';
 
-type AudioCandidate={src:string;label:string;provider:'gemini'|'local'};
+type AudioCandidate={src:string;label:string;provider:'gemini'|'local';downloadUrl?:string;manifestUrl?:string};
 type Props={sources:AudioCandidate[];storageKey:string;sourceUrl?:string;vi:boolean};
 
 export default function R2AudioDisclosure({sources,storageKey,sourceUrl,vi}:Props){
@@ -33,9 +33,9 @@ export default function R2AudioDisclosure({sources,storageKey,sourceUrl,vi}:Prop
       <ChevronDown size={15} className="disclosureChevron"/>
     </summary>
     <div className="disclosureBody">
-      <AudioPlayer src={selected.src} storageKey={`${storageKey}:${selected.provider}`}/>
+      <AudioPlayer src={selected.src} manifestUrl={selected.manifestUrl} storageKey={`${storageKey}:${selected.provider}`}/>
       <div className="mp3Links">
-        <a className="downloadLink" href={selected.src} target="_blank" rel="noreferrer"><Download size={16}/>{vi?'Mở / tải MP3':'Open / download MP3'}</a>
+        <a className="downloadLink" href={selected.downloadUrl||selected.src} target="_blank" rel="noreferrer"><Download size={16}/>{vi?'Mở / tải MP3':'Open / download MP3'}</a>
         {sourceUrl&&<a className="audioSource" href={sourceUrl} target="_blank" rel="noreferrer">{vi?'Văn bản đối chiếu':'Text source'}<ExternalLink size={13}/></a>}
       </div>
       {!bestAvailable&&<p className="audioFallbackNote">{vi?'Giọng đọc chất lượng cao đang được bổ sung. Bản MP3 hiện tại vẫn nghe bình thường; bạn cũng có thể dùng chức năng đọc bằng trình duyệt.':'Higher-quality narration is still being added. The current MP3 remains available, and browser reading is another option.'}</p>}
