@@ -1,0 +1,1250 @@
+{
+  "sn15.1": {
+    "canonicalRef": "sn15.1",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn15.1/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T06:34:29+00:00",
+    "materializedAt": "2026-09-02T06:34:29+00:00",
+    "contentHash": "d8d777f02056b3115bbb843421cb076d202794dc85a5c66dfc89ced8062a963f",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 15: Tương Ưng Vô Thỉ (Anamatagga)"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Thứ Nhất"
+      },
+      {
+        "id": "p3",
+        "text": "15.1. Cỏ Và Củi"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Như vầy tôi nghe."
+      },
+      {
+        "id": "p5",
+        "text": "Một thời Thế Tôn trú ở Sāvatthi, Jetavana, tại vườn ông Anāthapiṇḍika."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 2 Tại đấy, Thế Tôn gọi các Tỷ-kheo: “Này các Tỷ-kheo”. “Thưa vâng, bạch Thế Tôn”. Các Tỷ-kheo vâng đáp Thế Tôn."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 3 Thế Tôn nói như sau:"
+      },
+      {
+        "id": "p8",
+        "text": "—Vô thỉ là luân hồi này, này các Tỷ-kheo, khởi điểm không thể nêu rõ đối với lưu chuyển luân hồi của các chúng sanh bị vô minh che đậy, bị tham ái trói buộc."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 4 Ví như, này các Tỷ-kheo, có người chặt các cành cỏ, khúc cây, nhành cây, nhành lá, trong cõi Diêm-phù-đề này, chất chúng thành một đống, làm chúng thành những que đặt theo hình các ô vuông, cầm từng que đặt xuống và nói: “Ðây là mẹ tôi, đây là mẹ của mẹ tôi”. Và không thể cùng tận, này các Tỷ-kheo, là các bà mẹ, mẹ của người ấy. Nhưng nhành cỏ, khúc cây, nhành cây, nhành lá trong cõi Diêm-phù-đề này có thể đi đến đoạn tận, đoạn diệt."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 5 Vì sao? Vô thỉ là luân hồi, này các Tỷ-kheo, khởi điểm không thể nêu rõ đối với lưu chuyển luân hồi của các chúng sanh bị vô minh che đậy, bị tham ái trói buộc."
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 6 Cũng vậy, đã lâu ngày, này các Tỷ-kheo, các Ông chịu đựng khổ, chịu đựng thống khổ, chịu đựng tai họa, và các mộ phần ngày một lớn lên."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 7 Cho đến như vậy, này các Tỷ-kheo, là vừa đủ để các Ông nhàm chán, là vừa đủ để các Ông từ bỏ, là vừa đủ để các Ông giải thoát đối với tất cả các hành."
+      },
+      {
+        "id": "p13",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn15.10": {
+    "canonicalRef": "sn15.10",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn15.10/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T06:34:30+00:00",
+    "materializedAt": "2026-09-02T06:34:30+00:00",
+    "contentHash": "2ec0b3b3e918fde072b8169b67647230fa0070d1afce5a05deeb1d15cdac2c00",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 15: Tương Ưng Vô Thỉ (Anamatagga)"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Thứ Nhất"
+      },
+      {
+        "id": "p3",
+        "text": "15.10. Người"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 … Thế Tôn trú ở Rājagaha (Vương Xá), tại núi Gijjhakuuta (Linh Thứu)."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Tại đấy Thế Tôn …"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 —Vô thỉ là luân hồi này, này các Tỷ-kheo …"
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Các xương của một người, này các Tỷ-kheo, lưu chuyển luân hồi có thể lớn như một đồi xương, một chồng xương, một đống xương, như núi Vepulla này, nếu có người thâu lượm xương lại, gìn giữ chúng, không làm chúng hủy hoại."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 Vì sao? Vô thỉ là luân hồi này, này các Tỷ-kheo … là vừa đủ để giải thoát đối với tất cả các hành."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 6 Thế Tôn nói vậy, Thiện Thệ nói như vậy xong, bậc Ðạo Sư lại nói thêm:"
+      },
+      {
+        "id": "p10",
+        "text": "Chồng chất như xương người,\n\nChỉ sống có một kiếp,\n\nChất đống bằng hòn núi,\n\nBậc Ðạo Sư nói vậy.\nÐống xương ấy được nói,\n\nLớn như Vepulla,\n\nPhía Bắc núi Linh Thứu,\n\nNúi thành Magadha.\nNgười thấy bốn sự thật,\n\nVới chân chánh trí tuệ,\n\nKhổ và khổ tập khởi,\n\nSẽ vượt qua đau khổ,\n\nCon đường Thánh tám ngành,\n\nDẫn đến khổ tịnh chỉ.\nNgười ấy phải luân chuyển,\n\nTối đa là bảy lần.\n\nLà vị đoạn tận khổ,\n\nÐoạn diệt mọi kiết sử."
+      },
+      {
+        "id": "p11",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn15.11": {
+    "canonicalRef": "sn15.11",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn15.11/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T06:34:30+00:00",
+    "materializedAt": "2026-09-02T06:34:30+00:00",
+    "contentHash": "fca07e2a17abd97593f4619ba523d80529e137cd095e943cda17e0c1792a735a",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 15: Tương Ưng Vô Thỉ (Anamatagga)"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Thứ Hai"
+      },
+      {
+        "id": "p3",
+        "text": "15.11. Khốn Cùng"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Một thời Thế Tôn trú ở Sāvatthi …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Tại đấy …"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 —Vô thỉ là luân hồi này, này các Tỷ-kheo. Khởi điểm không thể nêu rõ đối với sự lưu chuyển luân hồi của các chúng sanh bị vô minh che đậy, bị tham ái trói buộc."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Này các Tỷ-kheo, khi các Ông thấy sự khốn cùng, bất hạnh, các Ông phải đi đến kết luận: “Chúng ta chịu đựng như vậy trong thời gian dài này”."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 Vì sao? Vô thỉ là luân hồi này, này các Tỷ-kheo … là vừa đủ để giải thoát đối với tất cả các hành."
+      },
+      {
+        "id": "p9",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn15.12": {
+    "canonicalRef": "sn15.12",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn15.12/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T06:34:30+00:00",
+    "materializedAt": "2026-09-02T06:34:30+00:00",
+    "contentHash": "6b7fbd67a6b9b9fc3caf5de47068c726d9b28694768f0aaa07e5f927d50bc6de",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 15: Tương Ưng Vô Thỉ (Anamatagga)"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Thứ Hai"
+      },
+      {
+        "id": "p3",
+        "text": "15.12. An Lạc"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 … Trú ở Sāvatthi …"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Vô thỉ là luân hồi này, này các Tỷ-kheo …"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Này các Tỷ-kheo, khi các Ông thấy an lạc, may mắn, các Ông phải đi đến kết luận: “Chúng ta chịu đựng như vậy trong thời gian dài này”."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Vì sao? Vô thỉ là luân hồi này, này các Tỷ-kheo … là vừa đủ để giải thoát đối với tất cả các hành."
+      },
+      {
+        "id": "p8",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn15.13": {
+    "canonicalRef": "sn15.13",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn15.13/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T06:34:30+00:00",
+    "materializedAt": "2026-09-02T06:34:30+00:00",
+    "contentHash": "c8b00ee3ebcedd926b3885213716a5b8f10f350f8ef2ccf37c47e2303f3d6ad5",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 15: Tương Ưng Vô Thỉ (Anamatagga)"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Thứ Hai"
+      },
+      {
+        "id": "p3",
+        "text": "15.13. Khoảng Ba Mươi"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 … Trú ở Vương Xá, Trúc Lâm."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Ba mươi vị Tỷ-kheo xứ Pàvà, tất cả sống ở rừng, tất cả đi khất thực, tất cả mang y phấn tảo, tất cả mang ba y, tất cả đang còn kiết sử, cùng đi đến Thế Tôn; sau khi đến, đảnh lễ Thế Tôn rồi ngồi xuống một bên."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Rồi Thế Tôn suy nghĩ: “Ba mươi vị Tỷ-kheo xứ Pàvà này, tất cả sống ở rừng, tất cả đi khất thực, tất cả mang y phấn tảo, tất cả mang ba y, tất cả đang còn kiết sử. Vậy Ta hãy thuyết pháp cho họ như thế nào để ngay tại chỗ ngồi này, tâm của họ được giải thoát khỏi các lậu hoặc, không có chấp thủ”."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Rồi Thế Tôn gọi các Tỷ-kheo: “Này các Tỷ-kheo”: “Thưa vâng, bạch Thế Tôn”. Các Tỷ-kheo ấy vâng đáp Thế Tôn."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 Thế Tôn nói như sau:"
+      },
+      {
+        "id": "p9",
+        "text": "—Vô thỉ là luân hồi này, này các Tỷ-kheo. Khởi điểm không thể nêu rõ, đối với sự lưu chuyển luân hồi của các chúng sanh bị vô minh che đậy, bị tham ái trói buộc."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 6 Các Ông nghĩ thế nào, này các Tỷ-kheo, cái nào là nhiều hơn, dòng máu tuôn chảy do đầu bị thương tích khi các Ông lưu chuyển luân hồi trong thời gian dài này, hay là nước trong bốn biển lớn?"
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 7 —Bạch Thế Tôn, theo như lời Thế Tôn thuyết pháp, chúng con hiểu rằng cái này là nhiều hơn, bạch Thế Tôn, tức là dòng máu tuôn chảy do đầu bị thương tích, khi chúng con lưu chuyển luân hồi trong thời gian dài này, không phải là nước trong bốn biển lớn."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 8 Lành thay, lành thay, này các Tỷ-kheo! Lành thay, này các Tỷ-kheo, các Ông đã hiểu Pháp Ta dạy như vậy!"
+      },
+      {
+        "id": "p13",
+        "text": "Vi-n 9 Cái này là nhiều hơn, này các Tỷ-kheo, tức là dòng máu tuôn chảy do đầu bị thương tích khi các Ông lưu chuyển luân hồi trong thời gian dài này, không phải là nước trong bốn biển lớn."
+      },
+      {
+        "id": "p14",
+        "text": "Vi-n 10 Này các Tỷ-kheo, dòng máu tuôn chảy do đầu các Ông bị thương tích khi các Ông là bò, sanh ra làm bò trong thời gian dài, hay là nước trong bốn biển lớn?"
+      },
+      {
+        "id": "p15",
+        "text": "Vi-n 11 Này các Tỷ-kheo, dòng máu tuôn chảy do đầu bị thương tích khi các Ông là trâu, sanh ra làm trâu trong thời gian dài …"
+      },
+      {
+        "id": "p16",
+        "text": "Vi-n 12 Này các Tỷ-kheo, dòng máu tuôn chảy do đầu bị thương tích khi các Ông là cừu, sanh ra làm cừu trong thời gian dài …"
+      },
+      {
+        "id": "p17",
+        "text": "Vi-n 13 … khi các Ông là dê, sanh ra làm dê …"
+      },
+      {
+        "id": "p18",
+        "text": "Vi-n 14 … khi các Ông là nai, sanh ra làm nai …"
+      },
+      {
+        "id": "p19",
+        "text": "Vi-n 15 … khi các Ông là gia cầm, sanh ra làm gia cầm …"
+      },
+      {
+        "id": "p20",
+        "text": "Vi-n 16 … khi các Ông là heo, sanh ra làm heo …"
+      },
+      {
+        "id": "p21",
+        "text": "Vi-n 17 Này các Tỷ-kheo, dòng máu tuôn chảy do đầu bị thương tích khi các Ông làm đạo tặc, làm kẻ trộm làng, bị bắt trong thời gian dài …"
+      },
+      {
+        "id": "p22",
+        "text": "Vi-n 18 Này các Tỷ-kheo, dòng máu tuôn chảy do đầu bị thương tích khi các Ông làm đạo tặc, ăn cướp đường, bị bắt trong thời gian dài …"
+      },
+      {
+        "id": "p23",
+        "text": "Vi-n 19 Này các Tỷ-kheo, dòng máu tuôn chảy do đầu bị thương tích khi các Ông làm đạo tặc, tư thông vợ người, bị bắt trong thời gian dài chớ không phải là nước trong bốn biển lớn."
+      },
+      {
+        "id": "p24",
+        "text": "Vi-n 20 Vì sao? Vô thỉ là luân hồi này, này các Tỷ-kheo … là vừa đủ để được giải thoát đối với tất cả các hành …"
+      },
+      {
+        "id": "p25",
+        "text": "Vi-n 21 Thế Tôn nói như vậy, các vị Tỷ-kheo ấy hoan hỷ tín thọ lời Thế Tôn dạy."
+      },
+      {
+        "id": "p26",
+        "text": "Vi-n 22 Và trong khi lời dạy này được tuyên bố, đối với ba mươi vị Tỷ-kheo xứ Pàvà, tâm các vị ấy được giải thoát khỏi các lậu hoặc, không có chấp thủ."
+      },
+      {
+        "id": "p27",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn15.14": {
+    "canonicalRef": "sn15.14",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn15.14/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T06:34:30+00:00",
+    "materializedAt": "2026-09-02T06:34:30+00:00",
+    "contentHash": "0cb985bcec9d5c3948e0a13f88c1b971fbefb729caa8036ba5c92d9f79829a3a",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 15: Tương Ưng Vô Thỉ (Anamatagga)"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Thứ Hai"
+      },
+      {
+        "id": "p3",
+        "text": "15.14. Mẹ"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 … Trú ở Sāvatthi."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Vô thỉ là luân hồi này, này các Tỷ-kheo …"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Này các Tỷ-kheo, thật không dễ gì tìm được một chúng sanh, trong thời gian dài này, lại không một lần đã làm mẹ …"
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Vì sao? Vô thỉ là luân hồi này, này các Tỷ-kheo … là vừa đủ để được giải thoát đối với tất cả các hành."
+      },
+      {
+        "id": "p8",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn15.15": {
+    "canonicalRef": "sn15.15",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn15.15/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T06:34:30+00:00",
+    "materializedAt": "2026-09-02T06:34:30+00:00",
+    "contentHash": "709a327812e1133dfc342d6afe24d4e96eb28dbbd3ae4213595f11ec1e6ed2cd",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 15: Tương Ưng Vô Thỉ (Anamatagga)"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Thứ Hai"
+      },
+      {
+        "id": "p3",
+        "text": "15.15. Cha"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 … Trú ở Sāvatthi."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Vô thỉ là luân hồi này, này các Tỷ-kheo …"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Này các Tỷ-kheo, thật không dễ gì tìm được một chúng sanh, trong thời gian dài này, lại không một lần đã làm cha …"
+      },
+      {
+        "id": "p7",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn15.16": {
+    "canonicalRef": "sn15.16",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn15.16/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T06:34:30+00:00",
+    "materializedAt": "2026-09-02T06:34:30+00:00",
+    "contentHash": "8268a8aacade065291b80131f8ec81870aac8ca9df552ac462bd2c9c252ac8af",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 15: Tương Ưng Vô Thỉ (Anamatagga)"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Thứ Hai"
+      },
+      {
+        "id": "p3",
+        "text": "15.16. Anh"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 … Trú tại Sāvatthi."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Này các Tỷ-kheo, thật không dễ gì tìm được một chúng sanh, trong thời gian dài này, lại không một lần đã làm anh …"
+      },
+      {
+        "id": "p6",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn15.17": {
+    "canonicalRef": "sn15.17",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn15.17/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T06:34:31+00:00",
+    "materializedAt": "2026-09-02T06:34:31+00:00",
+    "contentHash": "84b5b89ae26918501b7ebdf01aeda59dfe249611082155655bb4ab8de99cd393",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 15: Tương Ưng Vô Thỉ (Anamatagga)"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Thứ Hai"
+      },
+      {
+        "id": "p3",
+        "text": "15.17. Chị"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 … Trú ở Sāvatthi."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Này các Tỷ-kheo, thật không dễ gì tìm được một chúng sanh, trong thời gian dài này, lại không một lần đã làm chị …"
+      },
+      {
+        "id": "p6",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn15.18": {
+    "canonicalRef": "sn15.18",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn15.18/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T06:34:31+00:00",
+    "materializedAt": "2026-09-02T06:34:31+00:00",
+    "contentHash": "39a6f710b049f28766f7d7bddf724242246bfd7c2e23c84eb7bd2552bb52aa70",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 15: Tương Ưng Vô Thỉ (Anamatagga)"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Thứ Hai"
+      },
+      {
+        "id": "p3",
+        "text": "15.18. Con Trai"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 … Trú ở Sāvatthi."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Này các Tỷ-kheo, thật không dễ gì tìm được một chúng sanh, trong thời gian dài này, lại không một lần đã làm con trai …"
+      },
+      {
+        "id": "p6",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn15.19": {
+    "canonicalRef": "sn15.19",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn15.19/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T06:34:31+00:00",
+    "materializedAt": "2026-09-02T06:34:31+00:00",
+    "contentHash": "88b3946bc03ddf8caeea9970216d96c2bcfc8cd4b457b82a52443f8a192b7f30",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 15: Tương Ưng Vô Thỉ (Anamatagga)"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Thứ Hai"
+      },
+      {
+        "id": "p3",
+        "text": "15.19. Con Gái"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 … Trú ở Sāvatthi."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Vô thỉ là luân hồi, này các Tỷ-kheo. Khởi điểm không thể nêu rõ, đối với sự lưu chuyển luân hồi của các chúng sanh bị vô minh che đậy, bị tham ái trói buộc."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Này các Tỷ-kheo, thật không dễ gì tìm được một chúng sanh, trong thời gian dài này, lại không một lần đã làm con gái."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Vì sao? Vô thỉ là luân hồi này, này các Tỷ-kheo. Khởi điểm không thể nêu rõ, này các Tỷ-kheo, đối với sự lưu chuyển luân hồi của các chúng sanh bị vô minh che đậy, bị tham ái trói buộc."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 Như vậy, trong thời gian này, này các Tỷ-kheo, các Ông chịu đựng khổ, chịu đựng thống khổ, chịu đựng tai họa, mộ phần càng ngày càng lớn lên. Cho đến như vậy, này các Tỷ-kheo, là vừa đủ để nhàm chán, là vừa đủ để từ bỏ, là vừa đủ để giải thoát đối với tất cả các hành."
+      },
+      {
+        "id": "p9",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn15.2": {
+    "canonicalRef": "sn15.2",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn15.2/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T06:34:29+00:00",
+    "materializedAt": "2026-09-02T06:34:29+00:00",
+    "contentHash": "2a35c8023e6af21ad9c62bf07cc5266613d807a69c6ee43cb6b445bc7c973c62",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 15: Tương Ưng Vô Thỉ (Anamatagga)"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Thứ Nhất"
+      },
+      {
+        "id": "p3",
+        "text": "15.2. Quả Ðất"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 … Trú ở Sāvatthi."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Vô thỉ là luân hồi này, này các Tỷ-kheo, khởi điểm không thể nêu rõ đối với sự lưu chuyển luân hồi của các chúng sanh bị vô minh che đậy, bị tham ái trói buộc."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Ví như, này các Tỷ-kheo, có người từ quả đất lớn này làm thành những cục đất tròn, lớn bằng hạt táo, cầm từng cục đất đặt xuống và nói: “Ðây là cha tôi, đây là cha của cha tôi”. Và không thể cùng tận, này các Tỷ-kheo, là các người cha, cha của người ấy. Nhưng quả đất lớn này đi đến đoạn tận, đoạn diệt."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Vì sao? Vô thỉ là luân hồi này, này các Tỷ-kheo, khởi điểm không thể nêu rõ đối với sự lưu chuyển luân hồi của các chúng sanh bị vô minh che đậy, bị tham ái trói buộc."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 Cũng vậy, đã lâu ngày, này các Tỷ-kheo, các Ông chịu đựng khổ, chịu đựng thống khổ, chịu đựng tai họa, và các mộ phần ngày càng lớn lên."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 6 Cho đến như vậy, này các Tỷ-kheo, là vừa đủ để các Ông nhàm chán, là vừa đủ để các Ông từ bỏ, là vừa đủ để các Ông giải thoát đối với tất cả các hành."
+      },
+      {
+        "id": "p10",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn15.20": {
+    "canonicalRef": "sn15.20",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn15.20/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T06:34:31+00:00",
+    "materializedAt": "2026-09-02T06:34:31+00:00",
+    "contentHash": "60a4b8eb3ba15eab0509eae0cd79677b15130c13af6931bcdedbf56c478d17a9",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 15: Tương Ưng Vô Thỉ (Anamatagga)"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Thứ Hai"
+      },
+      {
+        "id": "p3",
+        "text": "15.20. Núi Vepulla"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Một thời Thế Tôn trú ở Rājagaha (Vương Xá), tại núi Gijjhakùta (Linh Thứu)."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Tại đấy Thế Tôn gọi các Tỷ-kheo …"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Thế Tôn nói như sau:"
+      },
+      {
+        "id": "p7",
+        "text": "—Vô thỉ là luân hồi này, này các Tỷ-kheo. Khởi điểm không thể nêu rõ đối với sự lưu chuyển luân hồi của các chúng sanh bị vô minh che đậy, bị tham ái trói buộc."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 4 Thuở xưa, này các Tỷ-kheo, núi Vepulla này được biết với tên là Pàcìnavamsa. Lúc bấy giờ, dân chúng được biết với tên là Tivàrà. Này các Tỷ-kheo, dân chúng Tivàrà có tuổi thọ đến 40.000 năm. Này các Tỷ-kheo, dân chúng Tivàrà phải bốn ngày để leo lên núi Pàcìnavamsa, phải bốn ngày để leo xuống."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 5 Lúc bấy giờ, này các Tỷ-kheo, Thế Tôn Kakusandha, bậc Ứng Cúng, Chánh Ðẳng Giác xuất hiện ở đời. Này các Tỷ-kheo, Thế Tôn Kakusandha, bậc Ứng Cúng, Chánh Ðẳng Giác, có hai vị đệ tử, hai vị thượng thủ, hiền thiện tên là Vidhura và Sajìva."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 6 Hãy nhìn xem, này các Tỷ-kheo, tên của hòn núi ấy đã biến mất, dân chúng ấy đã mệnh chung, và bậc Thế Tôn ấy đã nhập diệt."
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 7 Vô thường như vậy, này các Tỷ-kheo, là các hành. Không kiên cố như vậy, này các Tỷ-kheo, là các hành. Bất an như vậy, này các Tỷ-kheo, là các hành. Cho đến như vậy, này các Tỷ-kheo là vừa đủ để nhàm chán, là vừa đủ để từ bỏ, là vừa đủ để giải thoát đối với tất cả các hành."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 8 Thuở xưa, này các Tỷ-kheo, núi Vepulla này được biết với tên là Vànkaka. Lúc bấy giờ, này các Tỷ-kheo, dân chúng được biết với tên là Rohita. Này các Tỷ-kheo, dân chúng Rohita có tuổi thọ đến 30.000 năm. Này các Tỷ-kheo, dân chúng Rohita phải ba ngày để leo lên núi Vànkaka, phải ba ngày để leo xuống."
+      },
+      {
+        "id": "p13",
+        "text": "Vi-n 9 Lúc bấy giờ, này các Tỷ-kheo, Thế Tôn Konāgamana, bậc Ứng Cúng, Chánh Ðẳng Giác xuất hiện ở đời. Này các Tỷ-kheo, Thế Tôn Konāgamana, bậc Ứng Cúng, Chánh Ðẳng Giác, có hai vị đệ tử, hai vị thượng thủ, hiền thiện tên là Bhìyya và Suttara."
+      },
+      {
+        "id": "p14",
+        "text": "Vi-n 10 Hãy nhìn xem, này các Tỷ-kheo, tên của hòn núi ấy đã biến mất, dân chúng ấy đã mệnh chung, và bậc Thế Tôn ấy đã nhập diệt. Vô thường như vậy, này các Tỷ-kheo, là các hành … là vừa đủ để giải thoát đối với tất cả các hành."
+      },
+      {
+        "id": "p15",
+        "text": "Vi-n 11 Thuở xưa, này các Tỷ-kheo, núi Vepulla này được biết với tên là Supassa. Lúc bấy giờ, này các Tỷ-kheo, dân chúng được biết với tên là Suppiya. Này các Tỷ-kheo, dân chúng Suppiya có tuổi thọ đến 20.000 năm. Này các Tỷ-kheo, dân chúng Suppiya phải hai ngày để leo núi Supassa, phải hai ngày để leo xuống."
+      },
+      {
+        "id": "p16",
+        "text": "Vi-n 12 Lúc bấy giờ, Thế Tôn Kassapa, bậc Ứng Cúng, Chánh Ðẳng Giác xuất hiện ở đời. Này các Tỷ-kheo, Thế Tôn Kassapa, bậc Ứng Cúng, Chánh Ðẳng Giác, có hai đệ tử, hai vị thượng thủ, hiền thiện tên là Tissa và Bharadvāja."
+      },
+      {
+        "id": "p17",
+        "text": "Vi-n 13 Hãy nhìn xem, này các Tỷ-kheo, tên của hòn núi ấy đã biến mất, dân chúng ấy đã mệnh chung, và bậc Thế Tôn ấy đã nhập diệt."
+      },
+      {
+        "id": "p18",
+        "text": "Vi-n 14 Vô thường như vậy, này các Tỷ-kheo, là các hành. Không kiên cố như vậy, này các Tỷ-kheo, là các hành … là vừa đủ để được giải thoát đối với tất cả các hành."
+      },
+      {
+        "id": "p19",
+        "text": "Vi-n 15 Hiện tại, này các Tỷ-kheo, núi Vepulla này được biết với tên là Vepulla. Hiện tại, này các Tỷ-kheo, dân chúng ấy được biết với tên là Magadhaka. Tuổi thọ dân chúng Magadhaka ấy, này các Tỷ-kheo, là ít, nhẹ, không bao nhiêu, họ sống lâu cho đến 100 tuổi hay hơn một chút. Dân chúng Magadhaka, này các Tỷ-kheo, leo lên núi Vepulla này trong một thời gian ngắn, leo xuống trong một thời gian ngắn."
+      },
+      {
+        "id": "p20",
+        "text": "Vi-n 16 Hiện tại, này các Tỷ-kheo, Ta, bậc Ứng Cúng, Chánh Ðẳng Giác xuất hiện ở đời. Này các Tỷ-kheo, Ta có hai vị đệ tử, hai vị thượng thủ, hiền thiện tên là Sāriputta và Moggallāna."
+      },
+      {
+        "id": "p21",
+        "text": "Vi-n 17 Một thời sẽ đến, này các Tỷ-kheo, tên của ngọn núi này sẽ biến mất, dân chúng sẽ mệnh chung, và Ta sẽ nhập diệt."
+      },
+      {
+        "id": "p22",
+        "text": "Vi-n 18 Vô thường như vậy, này các Tỷ-kheo, là các hành. Không kiên cố, này các Tỷ-kheo, là các hành. Bất an như vậy, này các Tỷ-kheo, là các hành. Cho đến như vậy, này các Tỷ-kheo, là vừa đủ để được nhàm chán, là vừa đủ để từ bỏ, là vừa đủ để giải thoát đối với tất cả các hành."
+      },
+      {
+        "id": "p23",
+        "text": "Vi-n 19 Thế Tôn nói như vậy, bậc Thiện Thệ nói như vậy xong, bậc Ðạo Sư lại nói thêm:"
+      },
+      {
+        "id": "p24",
+        "text": "Pacinavamsa,\n\nVới dân Tivàra.\n\nTên núi Vankaka\n\nVới dân Rohita.\n\nTên núi Supassa\n\nVới dân Suppiyà.\n\nTên núi Vepulla\n\nVới dân Magadha,\nChư hành là vô thường,\n\nPhải sanh rồi phải diệt,\n\nSau khi sanh, chúng diệt,\n\nChúng tịnh là an lạc."
+      },
+      {
+        "id": "p25",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn15.3": {
+    "canonicalRef": "sn15.3",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn15.3/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T06:34:29+00:00",
+    "materializedAt": "2026-09-02T06:34:29+00:00",
+    "contentHash": "2c609379d4c8f5b9e6189418cbf8a666535117c263929530334a53afef2ef3ce",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 15: Tương Ưng Vô Thỉ (Anamatagga)"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Thứ Nhất"
+      },
+      {
+        "id": "p3",
+        "text": "15.3. Nước Mắt"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 … Trú ở Sāvatthi."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Vô thỉ là luân hồi này, này các Tỷ-kheo, khởi điểm không thể nêu rõ đối với sự lưu chuyển luân hồi của các chúng sanh bị vô minh che đậy, bị tham ái trói buộc."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Các Ông nghĩ thế nào, này các Tỷ-kheo, cái gì là nhiều hơn? Dòng nước mắt tuôn chảy do các Ông than van, khóc lóc, phải hội ngộ với những gì không ưa, phải biệt ly với những gì mình thích, khi các Ông phải lưu chuyển luân hồi trong thời gian dài này hay là nước trong bốn biển lớn?"
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 —Bạch Thế Tôn, theo như lời Thế Tôn thuyết pháp, chúng con hiểu rằng, cái này, bạch Thế Tôn, là nhiều hơn, tức là dòng nước mắt tuôn chảy do chúng con than van, khóc lóc, phải hội ngộ với những gì không ưa, phải biệt ly với những gì mình thích, khi phải lưu chuyển luân hồi trong thời gian dài này chớ không phải nước trong bốn biển lớn."
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 —Lành thay, lành thay, này các Tỷ-kheo! Lành thay, này các Tỷ-kheo, các Ông đã hiểu như vậy Pháp do Ta dạy!"
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 6 Cái này là nhiều hơn, này các Tỷ-kheo, tức là dòng nước mắt tuôn chảy do các Ông than van, khóc lóc, phải hội ngộ với những gì không ưa, phải biệt ly với những gì mình thích, khi các Ông phải lưu chuyển luân hồi trong thời gian dài này chớ không phải nước trong bốn biển lớn."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 7 Trong một thời gian dài, này các Tỷ-kheo, các Ông chịu đựng mẹ chết."
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 8 … các Ông chịu đựng con chết.."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 9 … các Ông chịu đựng con gái chết …"
+      },
+      {
+        "id": "p13",
+        "text": "Vi-n 10 … các Ông chịu đựng tai họa về bà con …"
+      },
+      {
+        "id": "p14",
+        "text": "Vi-n 11 … các Ông chịu đựng tai họa về tiền của …"
+      },
+      {
+        "id": "p15",
+        "text": "Vi-n 12 Trong một thời gian dài, này các Tỷ-kheo, các Ông chịu đựng tai họa của bệnh tật. Cái này là nhiều hơn, là dòng nước mắt tuôn chảy do các Ông than van, khóc lóc, phải hội ngộ với những gì mình không ưa, phải biệt ly với những gì mình thích, khi các Ông phải chịu đựng tai họa của bệnh tật chớ không phải nước trong bốn biển."
+      },
+      {
+        "id": "p16",
+        "text": "Vi-n 13 Vì sao? Vô thỉ là luân hồi này, này các Tỷ-kheo … bị tham ái trói buộc."
+      },
+      {
+        "id": "p17",
+        "text": "Vi-n 14 Cho đến như vậy, này các Tỷ-kheo, là vừa đủ để các Ông nhàm chán, là vừa đủ để các Ông từ bỏ, là vừa đủ để các Ông giải thoát đối với tất cả các hành."
+      },
+      {
+        "id": "p18",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn15.4": {
+    "canonicalRef": "sn15.4",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn15.4/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T06:34:29+00:00",
+    "materializedAt": "2026-09-02T06:34:29+00:00",
+    "contentHash": "32355741a897058da222d640ec31427c168600c090717877db8106b3acd304e3",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 15: Tương Ưng Vô Thỉ (Anamatagga)"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Thứ Nhất"
+      },
+      {
+        "id": "p3",
+        "text": "15.4. Sữa"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 … Trú ở Sāvatthi."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Vô thỉ là luân hồi này, này các Tỷ-kheo, khởi điểm không thể nêu rõ đối với sự lưu chuyển luân hồi của các chúng sanh bị vô minh che đậy, bị tham ái trói buộc."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Các Ông nghĩ thế nào, này các Tỷ-kheo, cái gì là nhiều hơn, sữa mẹ mà các Ông đã uống trong khi các Ông lưu chuyển luân hồi trong một thời gian dài, hay là nước trong bốn biển?"
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 —Bạch Thế Tôn, theo như lời Thế Tôn thuyết pháp, chúng con hiểu rằng cái này là nhiều hơn, tức là sữa mẹ mà chúng con đã uống trong khi chúng con lưu chuyển luân hồi trong một thời gian dài chớ không phải nước trong bốn biển!"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 5 —Lành thay, lành thay, này các Tỷ-kheo! Lành thay, này các Tỷ-kheo, các Ông đã hiểu như vậy Pháp do Ta dạy!"
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 6 Cái này là nhiều hơn, này các Tỷ-kheo, tức là sữa mẹ mà các Ông đã uống trong khi các Ông lưu chuyển luân hồi trong một thời gian dài chớ không phải nước trong bốn biển."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 7 Vì sao? Vô thỉ là luân hồi này, này các Tỷ-kheo … là vừa đủ để các Ông giải thoát đối với tất cả các hành."
+      },
+      {
+        "id": "p11",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn15.5": {
+    "canonicalRef": "sn15.5",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn15.5/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T06:34:29+00:00",
+    "materializedAt": "2026-09-02T06:34:29+00:00",
+    "contentHash": "371dc982d2713ff4f06c331bc0ac6984560a029f8316dce9b2c53a16caa894d3",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 15: Tương Ưng Vô Thỉ (Anamatagga)"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Thứ Nhất"
+      },
+      {
+        "id": "p3",
+        "text": "15.5. Núi"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 … Trú ở Sāvatthi."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Rồi một Tỷ-kheo đi đến Thế Tôn; sau khi đến đảnh lễ Thế Tôn rồi ngồi xuống một bên."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Ngồi xuống một bên, Tỷ-kheo ấy bạch Thế Tôn:"
+      },
+      {
+        "id": "p7",
+        "text": "—Một kiếp, bạch Thế Tôn, dài như thế nào?"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 4 —Thật dài, này Tỷ-kheo, là một kiếp. Thật không dễ gì có thể đếm là một vài năm, một vài trăm năm, một vài ngàn năm hay một vài trăm ngàn năm."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 5 —Bạch Thế Tôn, Thế Tôn có thể cho một ví dụ được không?"
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 6 —Có thể được, này Tỷ-kheo. Thế Tôn nói như vậy. Ví như, này Tỷ-kheo, có một hòn núi đá lớn, một do tuần bề dài, một do tuần bề rộng, một do tuần bề cao, không có khe hở, không có lỗ hổng, một tảng đá thuần đặc. Rồi một người đến, cứ sau một trăm năm lại lau hòn đá ấy một lần với tấm vải kāsi. Này Tỷ-kheo, hòn núi đá lớn ấy được làm như vậy có thể đi đến đoạn tận, đoạn diệt mau hơn là một kiếp."
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 7 Như vậy dài, này các Tỷ-kheo, là một kiếp. Với những kiếp dài như vậy, này Tỷ-kheo, hơn một kiếp đã qua, hơn một trăm kiếp đã qua, hơn một ngàn kiếp đã qua, hơn một trăm ngàn kiếp đã qua."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 8 Vì sao? Vô thỉ là luân hồi này, này … vừa đủ để giải thoát."
+      },
+      {
+        "id": "p13",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn15.6": {
+    "canonicalRef": "sn15.6",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn15.6/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T06:34:30+00:00",
+    "materializedAt": "2026-09-02T06:34:30+00:00",
+    "contentHash": "a22681f29cd1026f5687ea20be9718bd7199893e8340ca1c6896c4e967cf0f45",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 15: Tương Ưng Vô Thỉ (Anamatagga)"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Thứ Nhất"
+      },
+      {
+        "id": "p3",
+        "text": "15.6. Hột Cải"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 … Trú ở Sāvatthi."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Rồi một Tỷ-kheo đi đến Thế Tôn …"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Ngồi xuống một bên, Tỷ-kheo ấy bạch Thế Tôn:"
+      },
+      {
+        "id": "p7",
+        "text": "—Một kiếp, bạch Thế Tôn, dài như thế nào?"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 4 —Thật dài, này Tỷ-kheo, là một kiếp. Thật không dễ gì để có thể đếm là một vài năm, một vài trăm năm, một vài ngàn năm, hay một vài trăm ngàn năm."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 5 —Bạch Thế Tôn, Thế Tôn có thể cho một ví dụ được không?"
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 6 —Có thể được, này Tỷ-kheo. Ví như, này Tỷ-kheo, có một thành bằng sắt, dài một do tuần, rộng một do tuần, cao một do tuần, chứa đầy hột cải cao như chóp khăn đầu. Một người từ nơi chỗ ấy, sau mỗi trăm năm lấy ra một hột cải. Này Tỷ-kheo, đống hột cải ấy được làm như vậy, có thể đi đến đoạn tận, đoạn diệt mau hơn là một kiếp."
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 7 Như vậy dài, này Tỷ-kheo, là một kiếp. Với những kiếp dài như vậy, hơn một kiếp đã qua, hơn một trăm kiếp đã qua, hơn một ngàn kiếp đã qua, hơn một trăm ngàn kiếp đã qua."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 8 Vì sao? Vô thỉ là luân hồi, này Tỷ-kheo … vừa đủ để giải thoát."
+      },
+      {
+        "id": "p13",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn15.7": {
+    "canonicalRef": "sn15.7",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn15.7/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T06:34:30+00:00",
+    "materializedAt": "2026-09-02T06:34:30+00:00",
+    "contentHash": "6fbdd0673f9dc2006609f398717e8335d53d7a6c287dbc8893514027d48a1faa",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 15: Tương Ưng Vô Thỉ (Anamatagga)"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Thứ Nhất"
+      },
+      {
+        "id": "p3",
+        "text": "15.7. Các Ðệ Tử"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 … Trú ở Sāvatthi."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Rồi nhiều Tỷ-kheo đi đến Thế Tôn …"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Ngồi xuống một bên, các Tỷ-kheo ấy bạch Thế Tôn:"
+      },
+      {
+        "id": "p7",
+        "text": "—Có bao nhiêu kiếp, bạch Thế Tôn, đã đi qua, đã vượt qua?"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 4 —Rất nhiều, này các Tỷ-kheo, là những kiếp đã đi qua, đã vượt qua. Thật không dễ gì để có thể đếm chúng được là một vài kiếp, một vài trăm kiếp, một vài ngàn kiếp, một vài trăm ngàn kiếp."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 5 —Bạch Thế Tôn, Thế Tôn có thể cho một ví dụ được không?"
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 6 —Có thể được, này các Tỷ-kheo. Ở đây, này các Tỷ-kheo, có bốn vị đệ tử, tuổi thọ một trăm tuổi, sống đến một trăm năm. Cứ mỗi ngày họ nhớ đến trăm ngàn kiếp, này các Tỷ-kheo, các kiếp được họ nhớ đến là vậy. Bốn đệ tử ấy tuổi thọ một trăm tuổi, sống đến một trăm năm, sau một trăm năm đi đến mệnh chung."
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 7 Nhiều như vậy, này các Tỷ-kheo, là những kiếp đã đi qua, đã vượt qua. Thật không dễ gì để có thể đếm chúng được là một vài kiếp, một vài trăm kiếp, một vài ngàn kiếp, một vài trăm ngàn kiếp."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 8 Vì sao? Vô thỉ là luân hồi này, này các Tỷ-kheo … là vừa đủ để được giải thoát."
+      },
+      {
+        "id": "p13",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn15.8": {
+    "canonicalRef": "sn15.8",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn15.8/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T06:34:30+00:00",
+    "materializedAt": "2026-09-02T06:34:30+00:00",
+    "contentHash": "c826f247c5b48847f315c1cb8712fbf402438607fe66af2bcd2cee9ec5412b2b",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 15: Tương Ưng Vô Thỉ (Anamatagga)"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Thứ Nhất"
+      },
+      {
+        "id": "p3",
+        "text": "15.8. Sông Hằng"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 … Trú ở Rājagaha (Vương Xá), Veluvana (Trúc Lâm)."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Rồi một Bà-la-môn đi đến Thế Tôn …"
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Ngồi xuống một bên, Bà-la-môn ấy bạch Thế Tôn:"
+      },
+      {
+        "id": "p7",
+        "text": "—Có bao nhiêu kiếp, bạch Thế Tôn đã đi qua, đã vượt qua?"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 4 —Rất nhiều, này Bà-la-môn, là những kiếp đã đi qua, đã vượt qua. Thật không dễ gì để có thể đếm chúng được, là một vài kiếp, một vài trăm kiếp, một vài ngàn kiếp, một vài trăm ngàn kiếp."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 5 —Tôn giả Gotama có thể cho một ví dụ được không?"
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 6 —Có thể được, này Bà-la-môn. Ví như, này Bà-la-môn, sông Hằng này từ chỗ nguồn bắt đầu đến chỗ nó chảy nhập vào biển. Số cát nằm ở giữa chặng ấy, thật không dễ gì để có thể đếm chúng được là một số hột cát, là số trăm hột cát, là số ngàn hột cát, là số trăm ngàn hột cát."
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 7 Nhiều hơn vậy, này Bà-la-môn, là những kiếp đã đi qua, đã vượt qua. Thật không dễ gì có thể đếm chúng được, là một số kiếp, một trăm kiếp, là một ngàn kiếp, là một số trăm ngàn kiếp."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 8 Ví sao? Vô thỉ là luân hồi này, này Bà-la-môn, khởi điểm không thể nêu rõ đối với sự lưu chuyển luân hồi của các chúng sanh bị vô minh che đậy, bị tham ái trói buộc."
+      },
+      {
+        "id": "p13",
+        "text": "Vi-n 9 Cũng vậy, đã lâu ngày, này Bà-la-môn, các Ông chịu đựng khổ, chịu đựng thống khổ, chịu đựng tai họa, và các mộ phần ngày một lớn lên. Cho đến như vậy, này Bà-la-môn, là vừa đủ để nhàm chán, là vừa đủ để từ bỏ, là vừa đủ để giải thoát đối với tất cả các hành."
+      },
+      {
+        "id": "p14",
+        "text": "Vi-n 10 Ðược nghe nói vậy, Bà-la-môn ấy bạch Thế Tôn:"
+      },
+      {
+        "id": "p15",
+        "text": "—Thật vi diệu thay, Tôn giả Gotama! Thật vi diệu thay, Tôn giả Gotama! … Mong Tôn giả Gotama nhận con làm đệ tử, từ nay cho đến mạng chung, con trọn đời quy ngưỡng!"
+      },
+      {
+        "id": "p16",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn15.9": {
+    "canonicalRef": "sn15.9",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn15.9/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T06:34:30+00:00",
+    "materializedAt": "2026-09-02T06:34:30+00:00",
+    "contentHash": "e5caba20358793fa2da97c31132f1c101b26406ccdb7a660095ab5ca507cc5dc",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 15: Tương Ưng Vô Thỉ (Anamatagga)"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Thứ Nhất"
+      },
+      {
+        "id": "p3",
+        "text": "15.9. Cây Gậy"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 … Trú ở Sāvatthi."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Vô thỉ là luân hồi này, này các Tỷ-kheo. Khởi điểm không thể nêu rõ đối với sự lưu chuyển luân hồi của các chúng sanh bị vô minh che đậy, bị tham ái trói buộc."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 3 Ví như, này các Tỷ-kheo, một cây gậy được ném lên trên hư không, khi thì rơi trên đầu gốc, khi thì rơi chặng giữa, khi thì rơi đầu ngọn. Cũng vậy, này các Tỷ-kheo, các chúng sanh bị vô minh che đậy, bị tham ái trói buộc, lưu chuyển luân hồi, khi thì từ thế giới này đi thế giới khác, khi thì từ thế giới khác đến thế giới này."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 4 Vì sao? Vô thỉ là luân hồi, này các Tỷ-kheo … là vừa đủ để được giải thoát."
+      },
+      {
+        "id": "p8",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  }
+}

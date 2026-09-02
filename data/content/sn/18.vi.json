@@ -1,0 +1,1040 @@
+{
+  "sn18.1": {
+    "canonicalRef": "sn18.1",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn18.1/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T06:34:35+00:00",
+    "materializedAt": "2026-09-02T06:34:35+00:00",
+    "contentHash": "81de1ca81d0f29444730589e46227d9617adc4b7dcb83910a217edf3586fdbc6",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 18: Tương Ưng Rāhula"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Thứ Nhất"
+      },
+      {
+        "id": "p3",
+        "text": "18.1. Mắt"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Như vầy tôi nghe."
+      },
+      {
+        "id": "p5",
+        "text": "Một thời Thế Tôn trú ở Sāvatthi (Xá-vệ), tại Jetavana (Thắng Lâm), vườn ông Anāthapiṇḍika (Cấp Cô Ðộc)."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 2 Rồi Tôn giả Rāhula đi đến Thế Tôn; sau khi đến, đảnh lễ Thế Tôn rồi ngồi xuống một bên."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 3 Ngồi xuống một bên, Tôn giả Ràahula bạch Thế Tôn:"
+      },
+      {
+        "id": "p8",
+        "text": "—Lành thay, bạch Thế Tôn! Thế Tôn hãy thuyết pháp cho con để sau khi nghe, con có thể sống một mình, viễn ly, không phóng dật, nhiệt tâm, tinh cần!"
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 4 —Này Rāhula, Ông nghĩ thế nào? Mắt là thường hay vô thường?"
+      },
+      {
+        "id": "p10",
+        "text": "—Là vô thường, bạch Thế Tôn."
+      },
+      {
+        "id": "p11",
+        "text": "—Cái gì vô thường là khổ hay lạc?"
+      },
+      {
+        "id": "p12",
+        "text": "—Là khổ, bạch Thế Tôn."
+      },
+      {
+        "id": "p13",
+        "text": "—Cái gì vô thường, khổ, chịu sự biến hoại, có hợp lý chăng nếu xem cái ấy: “Cái này là của tôi, cái này là tôi, cái này tự ngã của tôi”?"
+      },
+      {
+        "id": "p14",
+        "text": "—Thưa không, bạch Thế Tôn."
+      },
+      {
+        "id": "p15",
+        "text": "Vi-n 5 —Tai là thường hay vô thường?"
+      },
+      {
+        "id": "p16",
+        "text": "—Là vô thường, bạch Thế Tôn …"
+      },
+      {
+        "id": "p17",
+        "text": "Vi-n 6 —Mũi là thường hay vô thường?"
+      },
+      {
+        "id": "p18",
+        "text": "—Là vô thường, bạch Thế Tôn …"
+      },
+      {
+        "id": "p19",
+        "text": "Vi-n 7 —Lưỡi là thường hay vô thường?"
+      },
+      {
+        "id": "p20",
+        "text": "—Là vô thường, bạch Thế Tôn …"
+      },
+      {
+        "id": "p21",
+        "text": "Vi-n 8 Thân là thường hay vô thường?"
+      },
+      {
+        "id": "p22",
+        "text": "—Là vô thường, bạch Thế Tôn …"
+      },
+      {
+        "id": "p23",
+        "text": "Vi-n 9 Ý là thường hay vô thường?"
+      },
+      {
+        "id": "p24",
+        "text": "—Là vô thường, bạch Thế Tôn …"
+      },
+      {
+        "id": "p25",
+        "text": "—Cái gì vô thường là khổ hay lạc?"
+      },
+      {
+        "id": "p26",
+        "text": "—Là khổ, bạch Thế Tôn."
+      },
+      {
+        "id": "p27",
+        "text": "—Cái gì vô thường, khổ, chịu sự biến hoại, có hợp lý chăng, khi xem cái ấy: “Cái này là của tôi, cái này là tôi, cái này là tự ngã của tôi”?"
+      },
+      {
+        "id": "p28",
+        "text": "—Thưa không, bạch Thế Tôn."
+      },
+      {
+        "id": "p29",
+        "text": "Vi-n 10 —Thấy vậy, này Rāhula, bậc Thánh đệ tử nghe nhiều, nhàm chán mắt, nhàm chán tai, nhàm chán mũi, nhàm chán lưỡi, nhàm chán thân, nhàm chán ý."
+      },
+      {
+        "id": "p30",
+        "text": "Vi-n 11 Do nhàm chán, vị ấy ly tham. Do ly tham, vị ấy giải thoát. Trong sự giải thoát, trí khởi lên: “Ta đã giải thoát”. Vị ấy biết: “Sanh đã tận, Phạm hạnh đã thành; những gì nên làm đã làm; không còn trở lui trạng thái này nữa”."
+      },
+      {
+        "id": "p31",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn18.10": {
+    "canonicalRef": "sn18.10",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn18.10/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T06:34:35+00:00",
+    "materializedAt": "2026-09-02T06:34:35+00:00",
+    "contentHash": "0c141a424c6c27905386374c1b24069700bb4ceeea310fd82a5a625326bde1a2",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 18: Tương Ưng Rāhula"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Thứ Nhất"
+      },
+      {
+        "id": "p3",
+        "text": "18.10. Uẩn"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 … Tại Sāvatthi."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Này Rāhula, Ông nghĩ thế nào? Sắc là thường hay vô thường?"
+      },
+      {
+        "id": "p6",
+        "text": "—Là vô thường, bạch Thế Tôn."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 3-6. —Thọ … Tưởng … Hành … Thức là thường hay vô thường?"
+      },
+      {
+        "id": "p8",
+        "text": "—Là vô thường, bạch Thế Tôn. …, …"
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 7 —Thấy vậy, này Rāhula, bậc Thánh đệ tử nghe nhiều, nhàm chán sắc, nhàm chán thọ, nhàm chán tưởng, nhàm chán hành, nhàm chán thức."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 8 Do nhàm chán, vị ấy ly tham. Do ly tham, vị ấy giải thoát. Trong sự giải thoát, trí khởi lên: “Ta đã giải thoát”. Vị ấy biết rõ: “Sanh đã tận, Phạm hạnh đã thành; những gì nên làm đã làm; không còn trở lui trạng thái này nữa”."
+      },
+      {
+        "id": "p11",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn18.11": {
+    "canonicalRef": "sn18.11",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn18.11/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T06:34:35+00:00",
+    "materializedAt": "2026-09-02T06:34:35+00:00",
+    "contentHash": "c02f4ffc2cd9817ab314335f9c3ce5fa139d8439aa02bf55ec149c6ed570059f",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 18: Tương Ưng Rāhula"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Thứ Hai"
+      },
+      {
+        "id": "p3",
+        "text": "18.11. Mắt"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 Như vầy tôi nghe."
+      },
+      {
+        "id": "p5",
+        "text": "Một thời Thế Tôn trú ở Sāvatthi (Xá-vệ), tại Jetavana (Kỳ-đà Lâm), vườn ông Anāthapiṇḍika (Cấp Cô Ðộc)."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 2 Rồi Tôn giả Rāhula, đi đến Thế Tôn; sau khi đến, đảnh lễ Thế Tôn, rồi ngồi xuống một bên."
+      },
+      {
+        "id": "p7",
+        "text": "Thế Tôn nói với Tôn giả Rāhula đang ngồi xuống một bên:"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 3 —Này Rāhula, Ông nghĩ thế nào? Con mắt là thường hay vô thường?"
+      },
+      {
+        "id": "p9",
+        "text": "—Là vô thường, bạch Thế Tôn."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 4 —Cái gì vô thường, là khổ hay lạc?"
+      },
+      {
+        "id": "p11",
+        "text": "—Là khổ, bạch Thế Tôn."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 5 —Cái gì vô thường, khổ, chịu sự biến hoại, có hợp lý chăng khi nhìn cái ấy như sau: “Cái này là của tôi, cái này là tôi, cái này là tự ngã của tôi”?"
+      },
+      {
+        "id": "p13",
+        "text": "—Thưa không, bạch Thế Tôn."
+      },
+      {
+        "id": "p14",
+        "text": "Vi-n 6-17. —Tai … Mũi … Lưỡi … Thân …"
+      },
+      {
+        "id": "p15",
+        "text": "Vi-n 18 —Ý là thường hay vô thường?"
+      },
+      {
+        "id": "p16",
+        "text": "—Là vô thường, bạch Thế Tôn."
+      },
+      {
+        "id": "p17",
+        "text": "Vi-n 19 —Cái gì vô thường là khổ hay lạc?"
+      },
+      {
+        "id": "p18",
+        "text": "—Là khổ, bạch Thế Tôn."
+      },
+      {
+        "id": "p19",
+        "text": "Vi-n 20 —Cái gì vô thường, khổ, chịu sự biến hoại, có hợp lý chăng khi nhìn cái ấy như sau: “Cái này là của tôi, cái này là tôi, cái này là tự ngã của tôi”?"
+      },
+      {
+        "id": "p20",
+        "text": "—Thưa không, bạch Thế Tôn."
+      },
+      {
+        "id": "p21",
+        "text": "Vi-n 21 —Thấy vậy, này Rāhula, bậc Thánh đệ tử có trí, nhàm chán mắt, nhàm chán tai, nhàm chán mũi, nhàm chán lưỡi, nhàm chán thân, nhàm chán ý."
+      },
+      {
+        "id": "p22",
+        "text": "Vi-n 22 Do nhàm chán, vị ấy ly tham. Do ly tham, vị ấy giải thoát. Trong sự giải thoát, trí khởi lên: “Ta đã giải thoát”. Vị ấy biết rõ: “Sanh đã tận, Phạm hạnh đã thành; những gì nên làm đã làm; không còn trở lui trạng thái này nữa”."
+      },
+      {
+        "id": "p23",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn18.12-20": {
+    "canonicalRef": "sn18.12-20",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn18.12-20/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T06:34:36+00:00",
+    "materializedAt": "2026-09-02T06:34:36+00:00",
+    "contentHash": "2718e66646a6fa92b174ddcd2cf8495141ca5fb44ac598d56b66ee14fe546fc2",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 18: Tương Ưng Rāhula"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Thứ Hai"
+      },
+      {
+        "id": "p3",
+        "text": "18.12–20"
+      },
+      {
+        "id": "p4",
+        "text": "18.12. Sắc"
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 1 Tại Sāvatthi."
+      },
+      {
+        "id": "p6",
+        "text": "Vi-n 2 —Này Rāhula, Ông nghĩ thế nào?"
+      },
+      {
+        "id": "p7",
+        "text": "(2) Sắc:"
+      },
+      {
+        "id": "p8",
+        "text": "—Sắc là thường hay vô thường?"
+      },
+      {
+        "id": "p9",
+        "text": "—Là vô thường, bạch Thế Tôn."
+      },
+      {
+        "id": "p10",
+        "text": "(6–20) —Thanh … Hương … Vị … Xúc … Pháp …"
+      },
+      {
+        "id": "p11",
+        "text": "18.13. Thức"
+      },
+      {
+        "id": "p12",
+        "text": "(3–20) —Nhãn thức … Nhĩ thức … Tỷ thức … Thiệt thức … Thân thức … Ý thức …"
+      },
+      {
+        "id": "p13",
+        "text": "18.14. Xúc"
+      },
+      {
+        "id": "p14",
+        "text": "(3–20) —Nhãn xúc … Nhĩ xúc … Tỷ xúc … Thiệt xúc … Thân xúc … Ý xúc …"
+      },
+      {
+        "id": "p15",
+        "text": "18.15. Thọ"
+      },
+      {
+        "id": "p16",
+        "text": "(3–20) —Thọ do nhãn xúc sanh … Thọ do nhĩ xúc sanh … Thọ do tỷ xúc sanh … Thọ do thiệt xúc sanh … Thọ do thân xúc sanh … Thọ do ý xúc sanh …"
+      },
+      {
+        "id": "p17",
+        "text": "18.16. Tưởng"
+      },
+      {
+        "id": "p18",
+        "text": "(3–20) —Sắc tưởng … Thanh tưởng … Hương tưởng … Vị tưởng … Xúc tưởng … Pháp tưởng …"
+      },
+      {
+        "id": "p19",
+        "text": "18.17. Tư"
+      },
+      {
+        "id": "p20",
+        "text": "(3–20) —Sắc tư … Thanh tư … Hương tư … Vị tư … Xúc tư … Pháp tư …"
+      },
+      {
+        "id": "p21",
+        "text": "18.18. Ái"
+      },
+      {
+        "id": "p22",
+        "text": "(3–20) —Sắc ái … Thanh ái … Hương ái … Vị ái … Xúc ái … Pháp ái …"
+      },
+      {
+        "id": "p23",
+        "text": "18.19. Giới"
+      },
+      {
+        "id": "p24",
+        "text": "(3–20) —Ðịa giới … Thủy giới … Hỏa giới … Phong giới … Không giới … Thức giới …"
+      },
+      {
+        "id": "p25",
+        "text": "18.20. Uẩn"
+      },
+      {
+        "id": "p26",
+        "text": "(3–17) —Sắc … Thọ … Tưởng … Hành … Thức là thường hay vô thường?"
+      },
+      {
+        "id": "p27",
+        "text": "—Là vô thường, bạch Thế Tôn …"
+      },
+      {
+        "id": "p28",
+        "text": "(21–22) —Thấy vậy, này Rāhula, bậc Thánh đệ tử nghe nhiều … ” … không còn trở lui trạng thái này nữa”."
+      },
+      {
+        "id": "p29",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn18.2": {
+    "canonicalRef": "sn18.2",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn18.2/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T06:34:35+00:00",
+    "materializedAt": "2026-09-02T06:34:35+00:00",
+    "contentHash": "d5322aebdc0e2bf1ae7ceef6bc741d0ee8dd302fab65a680283fe49fffcc8137",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 18: Tương Ưng Rāhula"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Thứ Nhất"
+      },
+      {
+        "id": "p3",
+        "text": "18.2. Sắc"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 … Tại Sāvatthi."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Này Rāhula, Ông nghĩ thế nào? Sắc là thường hay vô thường?"
+      },
+      {
+        "id": "p6",
+        "text": "—Là vô thường, bạch Thế Tôn."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 3-6. Thanh … Hương … Vị … Xúc …"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 7 —Này Rāhula, Ông nghĩ thế nào? Pháp là thường hay vô thường?"
+      },
+      {
+        "id": "p9",
+        "text": "—Là vô thường, bạch Thế Tôn. …, …"
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 8 —Thấy vậy, này Rāhula, bậc Thánh đệ tử nghe nhiều, nhàm chán sắc … nhàm chán pháp."
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 9 Do nhàm chán, vị ấy ly tham. Do ly tham, vị ấy giải thoát … ” … không còn trở lui trạng thái này nữa”."
+      },
+      {
+        "id": "p12",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn18.21": {
+    "canonicalRef": "sn18.21",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn18.21/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T06:34:36+00:00",
+    "materializedAt": "2026-09-02T06:34:36+00:00",
+    "contentHash": "a11e8ed4678e5299ab407abaa1031d07957a3e0fdfd9d069faf0699f28511c60",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 18: Tương Ưng Rāhula"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Thứ Hai"
+      },
+      {
+        "id": "p3",
+        "text": "18.21. Tùy Miên"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 … Tại Sāvatthi."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Rồi Tôn giả Rāhula đi đến Thế Tôn; sau khi đến, đảnh lễ Thế Tôn rồi ngồi xuống một bên."
+      },
+      {
+        "id": "p6",
+        "text": "Ngồi xuống một bên, Tôn giả Rāhula bạch Thế Tôn:"
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 3 —Bạch Thế Tôn, do biết thế nào, do thấy thế nào, trong thân có thức này và trong tất cả tướng ở ngoài, không có ngã kiến, ngã sở kiến, ngã mạn tùy miên?"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 4 —Này Rāhula, phàm sắc nào quá khứ, vị lai, hiện tại, hoặc nội hay ngoại, hoặc thô hay tế, hoặc liệt hay thắng, hoặc xa hay gần, vị ấy thấy như thật tất cả các sắc với chánh trí tuệ là: “Cái này không phải của tôi, cái này không phải là tôi, cái này không phải tự ngã của tôi”. Phàm thọ nào … Phàm tưởng nào … Phàm hành nào … Phàm thức nào quá khứ, vị lai, hiện tại, hoặc nội hay ngoại, hoặc thô hay tế, hoặc liệt hay thắng, hoặc xa hay gần, vị ấy thấy như thật tất cả các thức với chánh trí tuệ là: “Cái này không phải của tôi, cái này không phải là tôi, cái này không phải tự ngã của tôi”."
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 5 Này Rāhula, do biết như vậy, do thấy như vậy, trong thân có thức này với tất cả tướng ở ngoài, không có ngã kiến, không có ngã sở kiến, không có ngã mạn tùy miên."
+      },
+      {
+        "id": "p10",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn18.22": {
+    "canonicalRef": "sn18.22",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn18.22/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T06:34:36+00:00",
+    "materializedAt": "2026-09-02T06:34:36+00:00",
+    "contentHash": "47e17db5b8451ba75220923d567a6dce8a9e139e76310c7759d90e5fbdf01310",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 18: Tương Ưng Rāhula"
+      },
+      {
+        "id": "p2",
+        "text": "II: Phẩm Thứ Hai"
+      },
+      {
+        "id": "p3",
+        "text": "18.22. Viễn Ly"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 … Tại Sāvatthi."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 Rồi Tôn giả Rāhula đi đến Thế Tôn; sau khi đi đến, đảnh lễ Thế Tôn rồi ngồi xuống một bên."
+      },
+      {
+        "id": "p6",
+        "text": "Ngồi xuống một bên, Tôn giả Rāhula bạch Thế Tôn:"
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 3 —Bạch Thế Tôn, do biết như thế nào, thấy như thế nào, trong thân thể có thức này và trong tất cả tướng ở ngoài, tâm đã viễn ly được ngã kiến, ngã sở kiến, ngã mạn, siêu việt mọi ngã mạn, tịch tịnh, giải thoát?"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 4 —Này Rāhula, phàm sắc gì quá khứ, vị lai, hiện tại, hoặc nội hay ngoại, hoặc thô hay tế, hoặc liệt hay thắng, hoặc xa hay gần; vị ấy thấy như thật tất cả các sắc với chánh trí tuệ là: “Cái này không phải của tôi, cái này không phải là tôi, cái này không phải tự ngã của tôi”."
+      },
+      {
+        "id": "p9",
+        "text": "Do thấy như thật với chánh trí tuệ như vậy, vị ấy được giải thoát, không có chấp thủ."
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 5 Này Rāhula, phàm thọ gì … phàm tưởng gì … phàm hành gì … phàm thức gì quá khứ, vị lai, hiện tại, hoặc nội hay ngoại, hoặc thô hay tế, hoặc liệt hay thắng, hoặc xa hay gần; vị ấy thấy như thật tất cả các thức với chánh trí tuệ là: “Cái này không phải của tôi, cái này không phải là tôi, cái này không phải tự ngã của tôi”."
+      },
+      {
+        "id": "p11",
+        "text": "Do thấy như thật với chánh trí tuệ như vậy, vị ấy được giải thoát, không có chấp thủ."
+      },
+      {
+        "id": "p12",
+        "text": "Vi-n 6 Này Rāhula, do biết như vậy, thấy như vậy, trong thân thể có thức này và trong tất cả tướng ở ngoài, tâm đã viễn ly ngã kiến, ngã sở kiến, ngã mạn, vượt khỏi các ngã mạn, được tịch tịnh, giải thoát."
+      },
+      {
+        "id": "p13",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn18.3": {
+    "canonicalRef": "sn18.3",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn18.3/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T06:34:35+00:00",
+    "materializedAt": "2026-09-02T06:34:35+00:00",
+    "contentHash": "9faf518e92a54e6a34e9ad3651cc1e22ddfd3e6c6f047e8e7d9f675f1dfe297c",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 18: Tương Ưng Rāhula"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Thứ Nhất"
+      },
+      {
+        "id": "p3",
+        "text": "18.3. Thức"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 … Tại Sāvatthi."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Này Rāhula, Ông nghĩ thế nào? Nhãn thức là thường hay vô thường?"
+      },
+      {
+        "id": "p6",
+        "text": "—Là vô thường, bạch Thế Tôn …"
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 3-6. —Nhĩ thức … Tỷ thức … Thiệt thức … Thân thức …"
+      },
+      {
+        "id": "p8",
+        "text": "Vi-n 7 —Này Rāhula, Ông nghĩ thế nào? Ý thức là thường hay vô thường?"
+      },
+      {
+        "id": "p9",
+        "text": "—Là vô thường, bạch Thế Tôn …"
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 8 —Thấy vậy, này Rāhula, bậc Thánh đệ tử nghe nhiều, nhàm chán nhãn thức, nhàm chán nhĩ thức, nhàm chán tỷ thức, nhàm chán thiệt thức, nhàm chán thân thức, nhàm chán ý thức."
+      },
+      {
+        "id": "p11",
+        "text": "Vi-n 9 Do nhàm chán, vị ấy ly tham … ” … không còn trở lui trạng thái này nữa”."
+      },
+      {
+        "id": "p12",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn18.4": {
+    "canonicalRef": "sn18.4",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn18.4/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T06:34:35+00:00",
+    "materializedAt": "2026-09-02T06:34:35+00:00",
+    "contentHash": "c5853fa1009a6d0b4d03c950796be166680435301808f69f7a74e7c321a12854",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 18: Tương Ưng Rāhula"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Thứ Nhất"
+      },
+      {
+        "id": "p3",
+        "text": "18.4. Xúc"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 … Tại Sāvatthi."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Này Rāhula, Ông nghĩ thế nào? Nhãn xúc là thường hay vô thường?"
+      },
+      {
+        "id": "p6",
+        "text": "—Là vô thường, bạch Thế Tôn. …, …"
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 3-7. —Này Rāhula, Ông nghĩ thế nào? Nhĩ xúc … Tỷ xúc … Thiệt xúc … Thân xúc … Ý xúc là thường hay vô thường?"
+      },
+      {
+        "id": "p8",
+        "text": "—Là vô thường, bạch Thế Tôn. …, …"
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 8 —Thấy vậy, này Rāhula, bậc Thánh đệ tử nghe nhiều, nhàm chán nhãn xúc, nhàm chán nhĩ xúc, nhàm chán tỷ xúc, nhàm chán thiệt xúc, nhàm chán thân xúc, nhàm chán ý xúc …"
+      },
+      {
+        "id": "p10",
+        "text": "Vi-n 9 Do nhàm chán, vị ấy ly tham … ” … không còn trở lui trạng thái này nữa”."
+      },
+      {
+        "id": "p11",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn18.5": {
+    "canonicalRef": "sn18.5",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn18.5/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T06:34:35+00:00",
+    "materializedAt": "2026-09-02T06:34:35+00:00",
+    "contentHash": "b5fa35099423e6682173d6a5d72ca87ab8ee2133bd36fe8c95ffddf2d7c8fa7e",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 18: Tương Ưng Rāhula"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Thứ Nhất"
+      },
+      {
+        "id": "p3",
+        "text": "18.5. Thọ"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 … Tại Sāvatthi."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Này Rāhula, Ông nghĩ thế nào? Thọ do nhãn xúc sanh là thường hay vô thường?"
+      },
+      {
+        "id": "p6",
+        "text": "—Là vô thường, bạch Thế Tôn."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 3-6. —Thọ do nhĩ xúc sanh … Thọ do tỷ xúc sanh … Thọ do thiệt xúc sanh … Thọ do thân xúc sanh … Thọ do ý xúc sanh là thường hay vô thường?"
+      },
+      {
+        "id": "p8",
+        "text": "—Là vô thường, bạch Thế Tôn. …, …"
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 7-8. —Thấy vậy, này Rāhula, bậc Thánh đệ tử nghe nhiều, nhàm chán thọ do nhãn xúc sanh, nhàm chán thọ do nhĩ xúc sanh, nhàm chán thọ do tỷ xúc sanh, nhàm chán thọ do thiệt xúc sanh, nhàm chán thọ do thân xúc sanh, nhàm chán thọ do ý xúc sanh …"
+      },
+      {
+        "id": "p10",
+        "text": "Do nhàm chán, vị ấy ly tham … ” … không còn trở lui trạng thái này nữa”."
+      },
+      {
+        "id": "p11",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn18.6": {
+    "canonicalRef": "sn18.6",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn18.6/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T06:34:35+00:00",
+    "materializedAt": "2026-09-02T06:34:35+00:00",
+    "contentHash": "839f8a5465f602faff62f25d3e46264df2cba30a4240dbc6468d6a160b848fb0",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 18: Tương Ưng Rāhula"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Thứ Nhất"
+      },
+      {
+        "id": "p3",
+        "text": "18.6. Tưởng"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 … Tại Sāvatthi."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Này Rāhula, Ông nghĩ thế nào? Sắc tưởng là thường hay vô thường?"
+      },
+      {
+        "id": "p6",
+        "text": "—Là vô thường, bạch Thế Tôn."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 3-7. —Thanh tưởng … Hương tưởng … Vị tưởng … Xúc tưởng … Pháp tưởng là thường hay vô thường?"
+      },
+      {
+        "id": "p8",
+        "text": "—Là vô thường, bạch Thế Tôn. …, …"
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 8-9. —Thấy vậy, này Rāhula, bậc Thánh đệ tử nghe nhiều, nhàm chán sắc tưởng, nhàm chán thanh tưởng, nhàm chán hương tưởng, nhàm chán vị tưởng, nhàm chán xúc tưởng, nhàm chán pháp tưởng …"
+      },
+      {
+        "id": "p10",
+        "text": "Do nhàm chán, vị ấy ly tham … ” … không còn trở lui trạng thái này nữa”."
+      },
+      {
+        "id": "p11",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn18.7": {
+    "canonicalRef": "sn18.7",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn18.7/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T06:34:35+00:00",
+    "materializedAt": "2026-09-02T06:34:35+00:00",
+    "contentHash": "1359e10125cde507408d57c608a620f3020ce3a61709e24160f2bb51c637c401",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 18: Tương Ưng Rāhula"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Thứ Nhất"
+      },
+      {
+        "id": "p3",
+        "text": "18.7. Tư"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 … Tại Sāvatthi."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Này Rāhula, Ông nghĩ thế nào? Sắc tư là thường hay vô thường?"
+      },
+      {
+        "id": "p6",
+        "text": "—Là vô thường, bạch Thế Tôn."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 3-7. —Thanh tư … Hương tư … Vị tư … Xúc tư … Pháp tư là thường hay vô thường?"
+      },
+      {
+        "id": "p8",
+        "text": "—Là vô thường, bạch Thế Tôn. …, …"
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 8-9. —Thấy vậy, này Rāhula, bậc Thánh đệ tử nghe nhiều, nhàm chán sắc tư, nhàm chán thanh tư, nhàm chán hương tư, nhàm chán vị tư, nhàm chán xúc tư, nhàm chán pháp tư."
+      },
+      {
+        "id": "p10",
+        "text": "Do nhàm chán, vị ấy ly tham … ” … không còn trở lui trạng thái này nữa”."
+      },
+      {
+        "id": "p11",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn18.8": {
+    "canonicalRef": "sn18.8",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn18.8/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T06:34:35+00:00",
+    "materializedAt": "2026-09-02T06:34:35+00:00",
+    "contentHash": "d382641a38b342440826059556afd46773d61d844a78371b01bcc0317610a466",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 18: Tương Ưng Rāhula"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Thứ Nhất"
+      },
+      {
+        "id": "p3",
+        "text": "18.8. Ái"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 … Tại Sāvatthi."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Này Rāhula, Ông nghĩ thế nào? Sắc ái là thường hay vô thường?"
+      },
+      {
+        "id": "p6",
+        "text": "—Là vô thường, bạch Thế Tôn."
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 3-7. —Thanh ái … Hương ái … Vị ái … Xúc ái … Pháp ái là thường hay vô thường?"
+      },
+      {
+        "id": "p8",
+        "text": "—Là vô thường, bạch Thế Tôn. …, …"
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 8-9. —Thấy vậy, này Rāhula, bậc Thánh đệ tử nghe nhiều, nhàm chán sắc ái, nhàm chán thanh ái, nhàm chán hương ái, nhàm chán vị ái, nhàm chán xúc ái, nhàm chán pháp ái."
+      },
+      {
+        "id": "p10",
+        "text": "Do nhàm chán, vị ấy ly tham … ” … không còn trở lui trạng thái này nữa”."
+      },
+      {
+        "id": "p11",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  },
+  "sn18.9": {
+    "canonicalRef": "sn18.9",
+    "collection": "SN",
+    "language": "vi",
+    "author": "Thích Minh Châu",
+    "authorUid": "minh_chau",
+    "source": "SuttaCentral",
+    "sourceUrl": "https://suttacentral.net/sn18.9/vi/minh_chau",
+    "license": "Xem ghi chú quyền sử dụng tại nguồn",
+    "fetchedAt": "2026-09-02T06:34:35+00:00",
+    "materializedAt": "2026-09-02T06:34:35+00:00",
+    "contentHash": "fadda5f207dec3e12205bb3b2963f345319de094e142c7479f5fc3e896ad9b21",
+    "segments": [
+      {
+        "id": "p1",
+        "text": "Chương 18: Tương Ưng Rāhula"
+      },
+      {
+        "id": "p2",
+        "text": "I: Phẩm Thứ Nhất"
+      },
+      {
+        "id": "p3",
+        "text": "18.9. Giới"
+      },
+      {
+        "id": "p4",
+        "text": "Vi-n 1 … Tại Sāvatthi."
+      },
+      {
+        "id": "p5",
+        "text": "Vi-n 2 —Này Rāhula, Ông nghĩ thế nào? Ðịa giới là thường hay vô thường?"
+      },
+      {
+        "id": "p6",
+        "text": "—Là vô thường, bạch Thế Tôn …"
+      },
+      {
+        "id": "p7",
+        "text": "Vi-n 3-7. —Thủy giới … Hỏa giới … Phong giới … Không giới … Thức giới là thường hay vô thường?"
+      },
+      {
+        "id": "p8",
+        "text": "—Là vô thường, bạch Thế Tôn. …, …"
+      },
+      {
+        "id": "p9",
+        "text": "Vi-n 8-9. —Thấy vậy, này Rāhula, bậc Thánh đệ tử nghe nhiều, nhàm chán địa giới, nhàm chán thủy giới, nhàm chán hỏa giới, nhàm chán phong giới, nhàm chán không giới, nhàm chán thức giới."
+      },
+      {
+        "id": "p10",
+        "text": "Do nhàm chán, vị ấy ly tham … ” … không còn trở lui trạng thái này nữa”."
+      },
+      {
+        "id": "p11",
+        "text": "Bộ kinh đã được Hòa thượng Thích Minh Châu dịch sang Việt ngữ và Thiền viện Vạn Hạnh phát hành trong đầu thập niên 1980. Sau đó, trong chương trình phiên dịch và ấn hành Ðại tạng kinh Việt Nam, bộ kinh được tái bản năm 1993 và có số thứ tự từ 12 đến 16.\nPrepared for SuttaCentral by Blake Walsh."
+      }
+    ]
+  }
+}
