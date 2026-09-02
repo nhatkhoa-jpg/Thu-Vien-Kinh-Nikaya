@@ -1,4 +1,4 @@
-name: SN data-first current main
+name: DN + SN data-first current main
 
 on:
   push:
@@ -14,16 +14,23 @@ permissions:
 jobs:
   materialize:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 55
     steps:
       - uses: actions/checkout@v4
         with:
           ref: feature/sn-data-first-current-main
           fetch-depth: 0
 
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+
+      - name: Materialize DN1-DN34 Vietnamese corpus and catalog
+        run: python3 scripts/materialize_dn_corpus.py
 
       - name: Discover authoritative SN refs and metadata
         run: python3 scripts/discover_sn_catalog.py
@@ -31,15 +38,23 @@ jobs:
       - name: Materialize SN into current mainline catalog
         run: python3 scripts/materialize_sn_catalog.py --apply
 
-      - name: Validate collection invariants before build
+      - name: Validate DN + SN corpus invariants before build
         run: |
           node <<'NODE'
           const fs=require('fs');
           const rows=JSON.parse(fs.readFileSync('data/catalog/suttas.json','utf8'));
+          const audio=JSON.parse(fs.readFileSync('data/catalog/audio.json','utf8'));
+          const dnCorpus=JSON.parse(fs.readFileSync('data/content/dn.vi.json','utf8'));
           const count=c=>rows.filter(x=>x.collection===c).length;
           const sn=rows.filter(x=>x.collection==='SN');
           if(count('MN')!==152)throw new Error(`MN regressed: ${count('MN')}/152`);
-          if(count('DN')!==34)throw new Error(`DN regressed: ${count('DN')}/34`);
+          if(count('DN')!==34)throw new Error(`DN catalog ${count('DN')}/34`);
+          if(Object.keys(dnCorpus).length!==34)throw new Error(`DN full-text corpus ${Object.keys(dnCorpus).length}/34`);
+          for(let i=1;i<=34;i++){
+            const uid=`dn${i}`;
+            if(!dnCorpus[uid]?.segments?.length)throw new Error(`missing DN full text ${uid}`);
+            if(!audio[`nikaya.dn.${i}`]?.vi?.url?.includes(`/dn${i}.mp3`))throw new Error(`missing DN audio checkpoint ${i}`);
+          }
           if(sn.length!==1819)throw new Error(`SN count ${sn.length}/1819`);
           if(count('AN')!==2)throw new Error(`AN seed count changed unexpectedly: ${count('AN')}`);
           if(count('KN')!==2)throw new Error(`KN seed count changed unexpectedly: ${count('KN')}`);
@@ -57,7 +72,7 @@ jobs:
           const seed1=sn.find(x=>x.canonicalRef==='sn56.11');
           const seed2=sn.find(x=>x.canonicalRef==='sn22.59');
           if(!seed1||!seed2)throw new Error('existing SN editorial seeds missing');
-          console.log({total:rows.length,DN:count('DN'),MN:count('MN'),SN:sn.length,AN:count('AN'),KN:count('KN'),minh,paliOnly,ranges});
+          console.log({total:rows.length,DN:count('DN'),MN:count('MN'),SN:sn.length,AN:count('AN'),KN:count('KN'),dnCorpus:Object.keys(dnCorpus).length,minh,paliOnly,ranges});
           NODE
 
       - name: Install dependencies and regenerate source-backed exports
@@ -77,11 +92,11 @@ jobs:
       - name: Build application
         run: npm run build
 
-      - name: Smoke test SN and preserve DN/MN readers
+      - name: Smoke test DN, SN and preserve MN reader
         shell: bash
         run: |
           set -euo pipefail
-          npm run start -- -p 3000 > /tmp/nikaya-sn-current-main.log 2>&1 &
+          npm run start -- -p 3000 > /tmp/nikaya-dn-sn-current-main.log 2>&1 &
           PID=$!
           trap 'kill $PID || true' EXIT
           READY=0
@@ -89,7 +104,13 @@ jobs:
             if curl --fail --silent http://127.0.0.1:3000/vi >/dev/null; then READY=1; break; fi
             sleep 1
           done
-          if [ "$READY" -ne 1 ]; then cat /tmp/nikaya-sn-current-main.log; exit 1; fi
+          if [ "$READY" -ne 1 ]; then cat /tmp/nikaya-dn-sn-current-main.log; exit 1; fi
+
+          for slug in dn-1 dn-16 dn-34; do
+            curl --fail --silent "http://127.0.0.1:3000/vi/library/$slug" -o "/tmp/$slug.html"
+            grep -Fq 'TOÀN VĂN BÀI KINH' "/tmp/$slug.html"
+            grep -Fq 'PDF' "/tmp/$slug.html"
+          done
 
           curl --fail --silent 'http://127.0.0.1:3000/vi?collection=SN' -o /tmp/home-sn.html
           grep -Fq 'Tương Ưng Bộ' /tmp/home-sn.html
@@ -107,16 +128,18 @@ jobs:
           grep -Fq 'Kinh Vô Ngã Tướng' /tmp/sn2259.html
 
           curl --fail --silent http://127.0.0.1:3000/vi/library/mn-21-kakacupama >/dev/null
-          curl --fail --silent http://127.0.0.1:3000/vi/library/dn-1 >/dev/null
-          echo 'SN DATA-FIRST CURRENT MAIN SMOKE PASS'
+          echo 'DN + SN DATA-FIRST CURRENT MAIN SMOKE PASS'
 
-      - name: Commit verified SN corpus checkpoint
+      - name: Commit verified DN + SN corpus checkpoint
         shell: bash
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add \
+            data/catalog/suttas.json \
+            data/catalog/audio.json \
+            data/content/dn.vi.json \
             data/catalog/discovery-sn.json \
             data/catalog/discovery-sn-report.json \
             data/catalog/discovery-sn-suttaplex.json \
@@ -125,11 +148,10 @@ jobs:
             data/catalog/discovery-sn-suttaplex-en-report.json \
             data/catalog/sn-materialization-preview.json \
             data/catalog/sn-materialization-report.json \
-            data/catalog/suttas.json \
             data/exports
           if git diff --cached --quiet; then
-            echo 'No SN corpus changes to commit.'
+            echo 'No DN/SN corpus changes to commit.'
             exit 0
           fi
-          git commit -m 'data: materialize full SN catalog on current main'
+          git commit -m 'data: materialize DN34 + full SN corpus on current main'
           git push origin HEAD:feature/sn-data-first-current-main
