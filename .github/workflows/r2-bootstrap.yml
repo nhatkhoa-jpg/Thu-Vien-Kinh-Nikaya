@@ -1,19 +1,15 @@
 name: R2 Bootstrap and Credential Smoke
 
 on:
-  push:
-    branches: [ops/chatgpt-r2-bootstrap]
-    paths:
-      - '.github/workflows/r2-bootstrap.yml'
-      - 'scripts/r2_smoke.py'
-      - 'scripts/r2_sync.py'
+  schedule:
+    - cron: '47 3 * * *'
   workflow_dispatch:
 
 permissions:
   contents: read
 
 concurrency:
-  group: r2-bootstrap-${{ github.ref }}
+  group: r2-health
   cancel-in-progress: true
 
 jobs:
