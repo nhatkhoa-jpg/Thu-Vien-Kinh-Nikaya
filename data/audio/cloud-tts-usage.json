@@ -1,0 +1,48 @@
+{
+  "version": "1.0",
+  "month": "2026-09",
+  "provider": "Google Cloud Text-to-Speech",
+  "policy": {
+    "safetyMarginPercent": 10,
+    "hardStopBeforeFreeTier": true,
+    "notes": "Pipeline must stop before the configured safety limits. This ledger is the authoritative project-side guard; Google billing/usage metrics should be used for reconciliation because provider reporting can lag."
+  },
+  "models": {
+    "chirp3-hd": {
+      "freeTierCharacters": 1000000,
+      "projectSafetyLimitCharacters": 900000,
+      "usedCharacters": 567,
+      "remainingProjectSafeCharacters": 899433,
+      "status": "SAFE"
+    },
+    "neural2": {
+      "freeTierCharacters": 1000000,
+      "projectSafetyLimitCharacters": 900000,
+      "usedCharacters": 567,
+      "remainingProjectSafeCharacters": 899433,
+      "status": "SAFE"
+    },
+    "wavenet": {
+      "freeTierCharacters": 4000000,
+      "projectSafetyLimitCharacters": 3600000,
+      "usedCharacters": 567,
+      "remainingProjectSafeCharacters": 3599433,
+      "status": "SAFE"
+    }
+  },
+  "events": [
+    {
+      "date": "2026-09-02",
+      "purpose": "Vietnamese scripture voice benchmark",
+      "canonicalRef": null,
+      "charactersPerVoice": 567,
+      "voices": [
+        "vi-VN-Chirp3-HD-Aoede",
+        "vi-VN-Neural2-A",
+        "vi-VN-Wavenet-A"
+      ],
+      "workflowRun": 33577897465,
+      "result": "success"
+    }
+  ]
+}
