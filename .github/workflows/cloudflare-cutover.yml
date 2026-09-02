@@ -63,6 +63,32 @@ jobs:
           node-version: "22"
           cache: npm
       - run: npm ci
+      - name: Ensure account workers.dev subdomain exists
+        shell: bash
+        run: |
+          set -euo pipefail
+          API="https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/workers/subdomain"
+          AUTH_HEADER="Authorization: Bearer ${CLOUDFLARE_API_TOKEN}"
+
+          CURRENT=$(curl -sS -H "$AUTH_HEADER" "$API")
+          EXISTING=$(printf '%s' "$CURRENT" | jq -r 'if .success == true then (.result.subdomain // "") else "" end')
+          if [ -n "$EXISTING" ]; then
+            echo "workers.dev account subdomain already registered."
+            exit 0
+          fi
+
+          candidates=("nhatkhoa-nikaya" "thu-vien-kinh-nikaya-nhatkhoa" "nikaya-nhatkhoa")
+          for candidate in "${candidates[@]}"; do
+            RESPONSE=$(curl -sS -X PUT -H "$AUTH_HEADER" -H 'Content-Type: application/json' \
+              --data "{\"subdomain\":\"${candidate}\"}" "$API")
+            if [ "$(printf '%s' "$RESPONSE" | jq -r '.success // false')" = "true" ]; then
+              echo "workers.dev account subdomain registered successfully."
+              exit 0
+            fi
+          done
+
+          echo "Unable to register a workers.dev account subdomain with the prepared names."
+          exit 1
       - run: npm run build:vinext
       - name: Verify Worker free-tier bundle
         run: |
@@ -88,3 +114,9 @@ jobs:
           git config user.name "nikaya-hosting-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/status/hosting-status.json docs/CURRENT_STATE.md
+          if git diff --cached --quiet; then
+            echo "No hosting status changes to commit."
+          else
+            git commit -m "chore: record verified Cloudflare preview [skip cloudflare]"
+            git push origin HEAD:deploy/cloudflare-preview
+          fi
