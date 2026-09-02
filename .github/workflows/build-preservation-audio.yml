@@ -163,3 +163,5 @@ jobs:
           PY
           gh api --method PATCH "repos/$GITHUB_REPOSITORY/releases/$RELEASE_ID" -f draft=false >/dev/null
           echo "PRESERVATION AUDIO V2 COMPLETE: $COLLECTION $COUNT/$COUNT manifests" >> "$GITHUB_STEP_SUMMARY"
+
+# DN branch trigger commit
