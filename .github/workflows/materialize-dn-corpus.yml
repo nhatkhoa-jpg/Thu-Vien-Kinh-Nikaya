@@ -2,7 +2,7 @@ name: Materialize DN Corpus
 
 on:
   push:
-    branches: [feature/dn-corpus-data-first]
+    branches: [feature/sn-data-first-current-main]
   pull_request:
     branches: [main]
   workflow_dispatch:
@@ -11,7 +11,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: dn-corpus-data-first
+  group: dn-corpus-data-first-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
@@ -21,7 +21,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: feature/dn-corpus-data-first
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -62,16 +62,30 @@ jobs:
           set -euo pipefail
           npm run start -- -p 3000 >/tmp/next.log 2>&1 &
           PID=$!; trap 'kill $PID || true' EXIT
-          for i in {1..30}; do curl -fsS http://127.0.0.1:3000/vi >/dev/null && break; sleep 1; done
-          for slug in dn-1 dn-16 dn-34; do
-            curl -fsS "http://127.0.0.1:3000/vi/library/$slug" -o "/tmp/$slug.html"
-            grep -Fq 'TOÀN VĂN BÀI KINH' "/tmp/$slug.html"
-            grep -Fq 'Bản dịch:' "/tmp/$slug.html"
-            grep -Fq 'PDF' "/tmp/$slug.html"
+          READY=0
+          for i in {1..30}; do
+            if curl -fsS http://127.0.0.1:3000/vi >/dev/null; then READY=1; break; fi
+            sleep 1
+          done
+          if [ "$READY" != 1 ]; then cat /tmp/next.log; exit 1; fi
+          for ref in dn1 dn16 dn34; do
+            slug=$(REF="$ref" node - <<'NODE'
+          const fs=require('fs');
+          const rows=JSON.parse(fs.readFileSync('data/catalog/suttas.json','utf8'));
+          const row=rows.find(x=>x.canonicalRef===process.env.REF);
+          if(!row) process.exit(2);
+          process.stdout.write(row.slug);
+          NODE
+            )
+            echo "Smoke $ref -> $slug"
+            curl -fsS "http://127.0.0.1:3000/vi/library/$slug" -o "/tmp/$ref.html"
+            grep -Fq 'TOÀN VĂN BÀI KINH' "/tmp/$ref.html"
+            grep -Fq 'Bản dịch:' "/tmp/$ref.html"
+            grep -Fq 'PDF' "/tmp/$ref.html"
           done
           echo 'PASS DN reader smoke: dn1/dn16/dn34 full text + PDF surface'
       - name: Commit materialized corpus and generated exports
-        if: github.event_name != 'pull_request'
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         shell: bash
         run: |
           set -euo pipefail
@@ -80,4 +94,4 @@ jobs:
           git add data/catalog/suttas.json data/catalog/audio.json data/content/dn.vi.json data/exports/
           if git diff --cached --quiet; then echo 'No corpus changes'; exit 0; fi
           git commit -m 'data: materialize DN1-DN34 Vietnamese corpus'
-          git push origin HEAD:feature/dn-corpus-data-first
+          git push origin HEAD:${GITHUB_REF_NAME}

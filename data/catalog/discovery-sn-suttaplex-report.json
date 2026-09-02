@@ -1,0 +1,10 @@
+{
+  "collection": "SN",
+  "endpoint": "https://suttacentral.net/api/suttaplex/sn?language=vi",
+  "canonicalLeafCount": 1819,
+  "matchedCanonicalRecords": 1819,
+  "missingCanonicalRecords": 0,
+  "recordsWithAnyViTranslation": 1805,
+  "recordsWithMinhChauTranslation": 1805,
+  "firstMissing": []
+}
