@@ -37,7 +37,7 @@ def md5_file(path: Path) -> str:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--prefix", default="audio/dn/")
+    parser.add_argument("--prefix", default="audio/")
     parser.add_argument("--identifier", default="thu-vien-kinh-nikaya-audio")
     parser.add_argument("--title", default="5 Great Nikāya Collections — Audio Library")
     parser.add_argument("--description", default="Preservation mirror of verified Nikāya MP3 readings. Source and editorial information: https://thu-vien-kinh-nikaya.nhatkhoa-nikaya.workers.dev/en/editorial-policy")
@@ -76,7 +76,7 @@ def main() -> int:
         "description": args.description,
         "mediatype": "audio",
         "collection": "opensource_audio",
-        "subject": ["Nikaya", "Early Buddhism", "Buddhist discourses", "Vietnamese audio"],
+        "subject": ["Nikaya", "Theravada", "Early Buddhism", "Buddhist discourses", "Vietnamese audio"],
         "language": "Vietnamese",
     }
 

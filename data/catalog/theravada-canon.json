@@ -1,0 +1,164 @@
+{
+  "version": "2026-09-02",
+  "scope": "Theravada Pali Canon expansion metadata. Full-text materialization remains source-and-rights gated.",
+  "pitakas": [
+    {
+      "id": "sutta",
+      "pali": "Sutta Piṭaka",
+      "vi": "Kinh Tạng",
+      "en": "Basket of Discourses",
+      "status": "active",
+      "descriptionVi": "Năm bộ Nikāya đang là phần đọc chính của thư viện: Trường Bộ, Trung Bộ, Tương Ưng Bộ, Tăng Chi Bộ và Tiểu Bộ.",
+      "descriptionEn": "The five Nikāya collections are the library's primary reading corpus: Dīgha, Majjhima, Saṁyutta, Aṅguttara, and Khuddaka Nikāya.",
+      "sourceUrl": "https://suttacentral.net/pitaka/sutta"
+    },
+    {
+      "id": "vinaya",
+      "pali": "Vinaya Piṭaka",
+      "vi": "Luật Tạng",
+      "en": "Basket of Monastic Law",
+      "status": "catalogued",
+      "descriptionVi": "Luật tạng Theravāda gồm phần phân tích giới bổn cho Tỳ-kheo và Tỳ-kheo-ni, các chương Khandhaka, cùng Parivāra. Thư viện sẽ materialize toàn văn theo từng nguồn có quyền sử dụng rõ ràng.",
+      "descriptionEn": "The Theravāda Vinaya contains the analyses of the monastic rules, the Khandhakas, and the Parivāra. Full text will be materialized only from clearly licensed or permitted sources.",
+      "sourceUrl": "https://suttacentral.net/pitaka/vinaya/pli-tv-vi",
+      "guideUrl": "https://suttacentral.net/vinaya-guide-brahmali",
+      "books": [
+        {
+          "id": "bu-vb",
+          "pali": "Bhikkhu-vibhaṅga",
+          "vi": "Phân Tích Giới Bổn Tỳ-kheo",
+          "en": "Monks' Analysis",
+          "noteVi": "Phân tích 227 điều học Pātimokkha dành cho Tỳ-kheo, cùng các duyên khởi, giải thích và trường hợp áp dụng.",
+          "noteEn": "Analysis of the 227 Pātimokkha rules for monks, including origin stories, definitions, and applications.",
+          "sourceUrl": "https://suttacentral.net/pli-tv-bu-vb"
+        },
+        {
+          "id": "bi-vb",
+          "pali": "Bhikkhunī-vibhaṅga",
+          "vi": "Phân Tích Giới Bổn Tỳ-kheo-ni",
+          "en": "Nuns' Analysis",
+          "noteVi": "Quy định và phân tích 311 điều học Pātimokkha dành cho Tỳ-kheo-ni.",
+          "noteEn": "Analysis of the 311 Pātimokkha rules for nuns.",
+          "sourceUrl": "https://suttacentral.net/pli-tv-bi-vb"
+        },
+        {
+          "id": "mv",
+          "pali": "Mahāvagga",
+          "vi": "Đại Phẩm",
+          "en": "Great Chapter",
+          "noteVi": "Các chương về hình thành Tăng đoàn, xuất gia, bố-tát, an cư, tự tứ, y dược và nhiều quy chế cộng đồng.",
+          "noteEn": "Major chapters on ordination, community procedures, rains retreat, invitation, robes, medicine, and monastic life.",
+          "sourceUrl": "https://suttacentral.net/pitaka/vinaya/pli-tv-vi"
+        },
+        {
+          "id": "cv",
+          "pali": "Cūḷavagga",
+          "vi": "Tiểu Phẩm",
+          "en": "Lesser Chapter",
+          "noteVi": "Các quy trình xử lý Tăng sự, tranh tụng, hình phạt, thủ tục cộng đồng và nhiều quy định bổ sung.",
+          "noteEn": "Community procedures, dispute settlement, disciplinary acts, and additional regulations.",
+          "sourceUrl": "https://suttacentral.net/pitaka/vinaya/pli-tv-vi"
+        },
+        {
+          "id": "pvr",
+          "pali": "Parivāra",
+          "vi": "Tập Yếu / Phụ Tùy",
+          "en": "Compendium",
+          "noteVi": "Hệ thống hóa và ôn tập Luật tạng bằng nhiều bảng phân loại, câu hỏi và phương pháp tổng hợp.",
+          "noteEn": "A systematic compendium and study aid for the Vinaya.",
+          "sourceUrl": "https://suttacentral.net/pli-tv-pvr"
+        }
+      ]
+    },
+    {
+      "id": "abhidhamma",
+      "pali": "Abhidhamma Piṭaka",
+      "vi": "Tạng Vi Diệu Pháp",
+      "en": "Basket of Systematic Treatises",
+      "status": "catalogued",
+      "descriptionVi": "Tạng Vi Diệu Pháp của truyền thống Theravāda gồm 7 bộ luận kinh điển, hệ thống hóa và phân tích giáo pháp theo các phạm trù pháp, uẩn, xứ, giới, nhân, duyên và nhiều cấu trúc liên hệ khác.",
+      "descriptionEn": "The Theravāda Abhidhamma Piṭaka contains seven canonical books that systematically classify and analyze the teaching.",
+      "sourceUrl": "https://suttacentral.net/abhidhamma-guide-sujato",
+      "books": [
+        {
+          "id": "ds",
+          "pali": "Dhammasaṅgaṇī",
+          "vi": "Bộ Pháp Tụ",
+          "en": "Enumeration of Phenomena",
+          "noteVi": "Liệt kê, phân loại và tập hợp các pháp theo những nhóm và đầu đề phân tích.",
+          "noteEn": "Enumerates and classifies phenomena using analytical matrices and grouped categories.",
+          "sourceUrl": "https://suttacentral.net/ds"
+        },
+        {
+          "id": "vb",
+          "pali": "Vibhaṅga",
+          "vi": "Bộ Phân Tích / Phân Biệt",
+          "en": "Book of Analysis",
+          "noteVi": "Phân tích uẩn, xứ, giới, đế, quyền và nhiều nhóm giáo pháp theo các phương pháp khác nhau.",
+          "noteEn": "Analyzes aggregates, sense fields, elements, truths, faculties, and other doctrinal sets.",
+          "sourceUrl": "https://suttacentral.net/vb"
+        },
+        {
+          "id": "dtk",
+          "pali": "Dhātukathā",
+          "vi": "Bộ Chất Ngữ / Giới Thuyết",
+          "en": "Discussion of Elements",
+          "noteVi": "Khảo sát quan hệ giữa các pháp với uẩn, xứ và giới theo nhiều phương pháp phân loại.",
+          "noteEn": "Examines how doctrinal categories relate to aggregates, sense fields, and elements.",
+          "sourceUrl": "https://suttacentral.net/abhidhamma-guide-sujato"
+        },
+        {
+          "id": "pp",
+          "pali": "Puggalapaññatti",
+          "vi": "Bộ Nhân Chế Định / Nhân Thi Thuyết",
+          "en": "Designation of Persons",
+          "noteVi": "Trình bày các hạng người theo nhiều nhóm phân loại mang tính chế định.",
+          "noteEn": "Classifies types of persons through conventional designations.",
+          "sourceUrl": "https://suttacentral.net/pp"
+        },
+        {
+          "id": "kv",
+          "pali": "Kathāvatthu",
+          "vi": "Bộ Ngữ Tông / Biện Giải",
+          "en": "Points of Controversy",
+          "noteVi": "Dùng hình thức vấn đáp để khảo sát và tranh biện nhiều điểm giáo lý giữa các quan điểm khác nhau.",
+          "noteEn": "A dialectical examination of disputed doctrinal positions.",
+          "sourceUrl": "https://suttacentral.net/abhidhamma-guide-sujato"
+        },
+        {
+          "id": "ya",
+          "pali": "Yamaka",
+          "vi": "Bộ Song Đối / Song Luận",
+          "en": "Pairs",
+          "noteVi": "Phân tích vấn đề bằng các cặp mệnh đề hoán vị xuôi và ngược nhằm làm rõ quan hệ logic giữa các pháp.",
+          "noteEn": "Uses paired and reversed propositions to clarify logical relations between categories.",
+          "sourceUrl": "https://suttacentral.net/abhidhamma-guide-sujato"
+        },
+        {
+          "id": "patthana",
+          "pali": "Paṭṭhāna",
+          "vi": "Bộ Vị Trí / Phát Thú",
+          "en": "Conditional Relations",
+          "noteVi": "Bộ luận lớn về các quan hệ duyên, nổi bật với hệ thống 24 duyên dùng để phân tích sự tương quan giữa các pháp.",
+          "noteEn": "A large analysis of conditional relations, classically organized around twenty-four conditions.",
+          "sourceUrl": "https://suttacentral.net/abhidhamma-guide-sujato"
+        }
+      ]
+    }
+  ],
+  "importantTexts": [
+    {"id":"dhp","pali":"Dhammapada","vi":"Kinh Pháp Cú","en":"Dhammapada","status":"canonical-khuddaka","sourceUrl":"https://suttacentral.net/dhp"},
+    {"id":"snp","pali":"Sutta Nipāta","vi":"Kinh Tập","en":"Sutta Nipāta","status":"canonical-khuddaka","sourceUrl":"https://suttacentral.net/snp"},
+    {"id":"ud","pali":"Udāna","vi":"Kinh Phật Tự Thuyết / Cảm Hứng Ngữ","en":"Inspired Utterances","status":"canonical-khuddaka","sourceUrl":"https://suttacentral.net/ud"},
+    {"id":"iti","pali":"Itivuttaka","vi":"Kinh Phật Thuyết Như Vậy","en":"Itivuttaka","status":"canonical-khuddaka","sourceUrl":"https://suttacentral.net/iti"},
+    {"id":"thag","pali":"Theragāthā","vi":"Trưởng Lão Tăng Kệ","en":"Verses of the Senior Monks","status":"canonical-khuddaka","sourceUrl":"https://suttacentral.net/thag"},
+    {"id":"thig","pali":"Therīgāthā","vi":"Trưởng Lão Ni Kệ","en":"Verses of the Senior Nuns","status":"canonical-khuddaka","sourceUrl":"https://suttacentral.net/thig"},
+    {"id":"ja","pali":"Jātaka","vi":"Bổn Sanh","en":"Jātaka","status":"canonical-khuddaka","sourceUrl":"https://suttacentral.net/ja"},
+    {"id":"bv","pali":"Buddhavaṁsa","vi":"Phật Sử","en":"Chronicle of Buddhas","status":"canonical-khuddaka","sourceUrl":"https://suttacentral.net/bv"},
+    {"id":"cp","pali":"Cariyāpiṭaka","vi":"Hạnh Tạng","en":"Basket of Conduct","status":"canonical-khuddaka","sourceUrl":"https://suttacentral.net/cp"}
+  ],
+  "rightsPolicy": {
+    "vi": "Không sao chép toàn văn từ Studocu hoặc nguồn tổng hợp không xác định quyền. Bản dịch của Đại Trưởng Lão Tịnh Sự được ưu tiên khảo sát và đối chiếu, nhưng chỉ nhập toàn văn khi xác minh quyền tái bản/phân phối hoặc có nguồn được phép rõ ràng.",
+    "en": "Do not copy full text from Studocu or unidentified aggregators. Vietnamese translations associated with Đại Trưởng Lão Tịnh Sự are a priority for source research, but full text may be mirrored only after redistribution rights or explicit permission are verified."
+  }
+}

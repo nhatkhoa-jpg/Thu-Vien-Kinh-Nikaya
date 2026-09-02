@@ -16,6 +16,7 @@ export default function Header({locale}:{locale:Locale}){
         <nav className="desktopNav" aria-label="Primary navigation">
           <Link href={`/${locale}`}>{d.home}</Link>
           <Link href={`/${locale}#collections`}>{d.navCollections}</Link>
+          <Link href={`/${locale}/tam-tang`}>{vi?'Tam Tạng Pāli':'Pāli Canon'}</Link>
           <Link href={`/${locale}#library`}>{vi?'Tìm kinh':d.navLibrary}</Link>
           <Link href={`/${locale}#featured`}>{d.navListen}</Link>
           <Link href={`/${locale}/tien-do`}><Activity size={14}/>{vi?'Tiến độ thư viện':'Progress'}</Link>

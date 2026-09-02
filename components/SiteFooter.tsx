@@ -8,10 +8,11 @@ export default function SiteFooter({locale}:{locale:Locale}){
     <div className="shell siteFooterGrid">
       <div className="siteFooterBrand">
         <span className="siteFooterMark"><BookOpen size={20}/></span>
-        <div><strong>{d.brand}</strong><p>{vi?'Thư viện đọc, nghe và lưu giữ kinh điển Nikāya với nguồn đối chiếu rõ ràng.':'A reading, listening and preservation library for the Nikāyas with traceable source references.'}</p></div>
+        <div><strong>{d.brand}</strong><p>{vi?'Thư viện đọc, nghe và lưu giữ kinh điển Nikāya, Luật tạng và Vi Diệu Pháp với nguồn đối chiếu rõ ràng.':'A reading, listening and preservation library for the Nikāyas, Vinaya, and Abhidhamma with traceable source references.'}</p></div>
       </div>
       <div className="siteFooterLinks" aria-label={vi?'Thông tin thư viện':'Library information'}>
         <strong>{vi?'Thư viện':'Library'}</strong>
+        <Link href={`/${locale}/tam-tang`}>{vi?'Tam Tạng Pāli':'Pāli Canon'}</Link>
         <Link href={`/${locale}/about`}>{vi?'Giới thiệu':'About'}</Link>
         <Link href={`/${locale}/editorial-policy`}>{vi?'Nguồn & nguyên tắc biên tập':'Sources & editorial policy'}</Link>
         <Link href={`/${locale}/privacy`}>{vi?'Quyền riêng tư':'Privacy'}</Link>

@@ -8,6 +8,14 @@ on:
         required: false
         default: false
         type: boolean
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/archive-mirror.yml'
+      - 'scripts/archive_org_mirror.py'
+  workflow_run:
+    workflows: ["R2 Relay"]
+    types: [completed]
   schedule:
     - cron: '35 18 * * *'
 
@@ -20,6 +28,7 @@ concurrency:
 
 jobs:
   mirror:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 90
     env:
@@ -47,7 +56,7 @@ jobs:
       - name: Install mirror clients
         if: steps.credentials.outputs.ready == 'yes'
         run: python -m pip install --disable-pip-version-check --quiet boto3 internetarchive
-      - name: Mirror verified DN MP3 files
+      - name: Mirror verified Nikaya MP3 files
         if: steps.credentials.outputs.ready == 'yes'
         shell: bash
         run: |
@@ -59,3 +68,4 @@ jobs:
         run: |
           echo "### Internet Archive mirror completed" >> "$GITHUB_STEP_SUMMARY"
           echo "Target item: https://archive.org/details/thu-vien-kinh-nikaya-audio" >> "$GITHUB_STEP_SUMMARY"
+          echo "Trigger: ${{ github.event_name }}" >> "$GITHUB_STEP_SUMMARY"
