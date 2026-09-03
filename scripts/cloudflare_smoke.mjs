@@ -7,6 +7,8 @@ const catalog=JSON.parse(readFileSync(new URL('../data/catalog/suttas.json',impo
 const byRef=ref=>{const row=catalog.find(x=>x.canonicalRef===ref);if(!row)throw new Error(`Missing smoke canonicalRef=${ref}`);return row;};
 const range=catalog.find(x=>x.collection==='SN'&&x.canonicalRef.includes('-'));
 if(!range)throw new Error('Missing canonical range smoke fixture');
+const anSmoke=catalog.find(x=>x.collection==='AN');
+if(!anSmoke)throw new Error('Missing AN smoke fixture');
 const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 
 async function http(path,expected=200){
@@ -45,10 +47,11 @@ if(!statsHtml.includes('Thống kê người đọc'))throw new Error('Stats das
 const statsApi=JSON.parse(await http('/api/stats?days=1'));
 if(!statsApi?.ok||!statsApi?.totals)throw new Error('Stats API invalid');
 
-for(const ref of ['dn1','mn21','sn1.1',range.canonicalRef,'an1.1']){
-  const row=byRef(ref);const html=await http(`/vi/library/${row.slug}`);
-  if(!html.includes(row.pali))throw new Error(`Reader missing Pali title canonicalRef=${ref}`);
-  if(!html.includes('SuttaCentral'))throw new Error(`Reader missing provenance canonicalRef=${ref}`);
+const readerRows=[byRef('dn1'),byRef('mn21'),byRef('sn1.1'),range,anSmoke];
+for(const row of readerRows){
+  const html=await http(`/vi/library/${row.slug}`);
+  if(!html.includes(row.pali))throw new Error(`Reader missing Pali title canonicalRef=${row.canonicalRef}`);
+  if(!html.includes('SuttaCentral'))throw new Error(`Reader missing provenance canonicalRef=${row.canonicalRef}`);
 }
 
 const browser=await chromium.launch({headless:true});
@@ -81,8 +84,8 @@ await page.getByRole('button',{name:/Trường Bộ/}).click();await page.waitFo
 if(await cards.count()<1||await cards.count()>60)throw new Error('Collection filtering failed');
 await page.getByRole('button',{name:/Tăng Chi Bộ/}).click();await page.waitForTimeout(150);
 if(await cards.count()<1||await cards.count()>60)throw new Error('AN collection filtering failed');
-await page.locator('input[aria-label="search"]').fill('AN 1.1');await page.waitForTimeout(200);
-if(await cards.count()<1)throw new Error('AN canonical search returned no result');
+await page.locator('input[aria-label="search"]').fill(anSmoke.canonicalRef);await page.waitForTimeout(200);
+if(await cards.count()<1)throw new Error(`AN canonical search returned no result for ${anSmoke.canonicalRef}`);
 
 const mn=byRef('mn21');
 await page.goto(`${base}/vi/library/${mn.slug}`,{waitUntil:'networkidle'});
@@ -99,7 +102,12 @@ if(!await page.locator('details.pdfDisclosure summary').isVisible())throw new Er
 if(!await page.locator('.readerToolbar.compactReaderToolbar').count())throw new Error('Reader progress/tools missing');
 if(!await page.getByRole('button',{name:'Lưu vị trí'}).count())throw new Error('Reader save-position control missing');
 
+await page.goto(`${base}/vi/stats`,{waitUntil:'networkidle'});
+if(!await page.getByText('Thống kê người đọc',{exact:false}).count())throw new Error('Stats dashboard missing in browser');
+const liveStats=await page.evaluate(async()=>{const r=await fetch('/api/stats?days=1');return r.json();});
+if(!liveStats?.ok||typeof liveStats?.totals?.views!=='number')throw new Error('Stats API browser check failed');
+
 const hydrationErrors=consoleErrors.filter(x=>/hydration|uncaught|typeerror|referenceerror/i.test(x));
 await browser.close();
 if(hydrationErrors.length)throw new Error(`Browser errors: ${hydrationErrors.join(' | ')}`);
-console.log(JSON.stringify({base,locales:8,stats:true,readers:['dn1','mn21','sn1.1',range.canonicalRef,'an1.1'],unicodeNfc:true,mobile:true,status:'PASS'}));
+console.log(JSON.stringify({base,locales:8,stats:true,readers:readerRows.map(x=>x.canonicalRef),unicodeNfc:true,mobile:true,status:'PASS'}));
