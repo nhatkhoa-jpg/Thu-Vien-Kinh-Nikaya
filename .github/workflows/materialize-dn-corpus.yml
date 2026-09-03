@@ -57,7 +57,7 @@ jobs:
         run: |
           npm run rag:export
           npm run build
-      - name: Smoke test local materialized DN reader without source API dependency
+      - name: Smoke test DN reader source provenance and PDF surface
         shell: bash
         run: |
           set -euo pipefail
@@ -81,10 +81,10 @@ jobs:
             echo "Smoke $ref -> $slug"
             curl -fsS "http://127.0.0.1:3000/vi/library/$slug" -o "/tmp/$ref.html"
             grep -Fq 'TOÀN VĂN BÀI KINH' "/tmp/$ref.html"
-            grep -Fq 'Bản dịch:' "/tmp/$ref.html"
+            grep -Fq "suttacentral.net/$ref/vi/" "/tmp/$ref.html"
             grep -Fq 'PDF' "/tmp/$ref.html"
           done
-          echo 'PASS DN reader smoke: dn1/dn16/dn34 full text + PDF surface'
+          echo 'PASS DN reader smoke: dn1/dn16/dn34 provenance + PDF surface'
       - name: Commit materialized corpus and generated exports
         if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         shell: bash
