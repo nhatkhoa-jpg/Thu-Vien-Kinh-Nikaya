@@ -30,7 +30,7 @@ export default async function SuttaPage({params}:{params:Promise<{locale:string;
   const vi=locale==='vi';const title=vi?s.vi:s.en;const displayCode=suttaDisplayCode(s,vi);const displayCollection=collectionDisplayCode(s.collection,vi);
   const related=suttas.filter(x=>x.collection===s.collection&&x.slug!==s.slug).slice(0,3);const audio=suttaAudio(s,locale);
   const canonicalKey=s.canonicalRef.toLowerCase();const collectionKey=s.collection.toLowerCase();
-  const r2AudioSources=vi?[{src:`/media/audio/gemini/${collectionKey}/${canonicalKey}.mp3`,label:'Gemini · giọng đọc chất lượng cao',provider:'gemini' as const},{src:`/media/audio/${collectionKey}/${canonicalKey}.mp3`,label:'MP3 thư viện · dự phòng',provider:'local' as const},...(audio?[{src:audio.url,label:'MP3 thư viện · dự phòng',provider:'local' as const,downloadUrl:audio.downloadUrl,manifestUrl:audio.manifestUrl}]:[])]:[];
+  const r2AudioSources=vi?[{src:`/media/audio/gemini/${collectionKey}/${canonicalKey}.mp3`,label:'Gemini · giọng đọc chất lượng cao',provider:'gemini' as const},{src:`/media/audio/${collectionKey}/${canonicalKey}.mp3`,label:'MP3 thư viện · dự phòng',provider:'local' as const},...(audio?[{src:audio.url,label:'MP3 thư viện · dự phòng',provider:'local' as const,downloadUrl:audio.downloadUrl,manifestUrl:audio.manifestUrl,trustedFallback:true}]:[])]:[];
   const localizedText=await getSuttaFullText(s.canonicalRef,locale);
   const englishFallback=!localizedText&&locale!=='vi'&&locale!=='en'?await getSuttaFullText(s.canonicalRef,'en'):null;
   const fullText=localizedText||englishFallback;const fallbackToEnglish=Boolean(!localizedText&&englishFallback);
