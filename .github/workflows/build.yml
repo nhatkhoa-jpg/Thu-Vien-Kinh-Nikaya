@@ -55,8 +55,9 @@ jobs:
               const id=`nikaya.mn.${i}`;
               const asset=audio[id]?.vi;
               if(!asset)throw new Error(`missing Vietnamese MP3 mapping ${id}`);
-              if(asset.provider!=='5 Đại Tạng Kinh Nikāya')throw new Error(`MN ${i} is not mapped to library prebuilt MP3`);
-              if(!asset.url.includes(`/releases/download/mn-vi-audio-v1/mn${i}.mp3`))throw new Error(`bad MP3 URL for MN ${i}`);
+              const legacy=asset.provider==='5 Đại Tạng Kinh Nikāya'&&asset.url.includes(`/releases/download/mn-vi-audio-v1/mn${i}.mp3`);
+              const cloud=asset.provider==='Google Cloud Text-to-Speech'&&asset.url.includes(`/releases/download/mn-vi-cloud-audio-v1/mn${i}.mp3`);
+              if(!legacy&&!cloud)throw new Error(`MN ${i} has unsupported Vietnamese MP3 provider or URL`);
               if(asset.segments){
                 if(!Array.isArray(asset.segments)||!asset.segments.length)throw new Error(`empty segments for MN ${i}`);
                 for(const seg of asset.segments){
@@ -65,7 +66,7 @@ jobs:
                 }
               }
             }
-            console.log('Full MN audio catalog validated: 152/152');
+            console.log('Full MN audio catalog validated: 152/152 (legacy or Cloud TTS)');
           } else throw new Error(`MN catalog incomplete: ${mn.length}/152`);
           console.log(`RAG coverage validated: ${expected}/${expected} suttas, non-empty variable chunks`);
           NODE
