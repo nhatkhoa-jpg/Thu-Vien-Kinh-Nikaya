@@ -44,7 +44,7 @@ await http('/not-a-real-route',404);
 const statsShortcut=await fetch(`${base}/stats`,{redirect:'manual'});
 if(![301,302,303,307,308].includes(statsShortcut.status))throw new Error(`/stats shortcut expected redirect, got ${statsShortcut.status}`);
 const statsHtml=await http('/vi/stats');
-if(!statsHtml.includes('Thống kê người đọc'))throw new Error('Stats dashboard route missing expected heading');
+if(!statsHtml.includes('Thống kê hành vi người đọc'))throw new Error('Stats dashboard route missing expected heading');
 const statsApi=JSON.parse(await http('/api/stats?days=1'));
 if(!statsApi?.ok||!statsApi?.totals)throw new Error('Stats API invalid');
 
@@ -105,7 +105,7 @@ if(!await page.getByRole('button',{name:'Lưu vị trí'}).count())throw new Err
 
 await page.waitForTimeout(1000);
 await page.goto(`${base}/vi/stats`,{waitUntil:'networkidle'});
-if(!await page.getByText('Thống kê người đọc',{exact:false}).count())throw new Error('Stats dashboard missing in browser');
+if(!await page.getByText('Thống kê hành vi người đọc',{exact:false}).count())throw new Error('Stats dashboard missing in browser');
 const liveStats=await page.evaluate(async()=>{const r=await fetch('/api/stats?days=1');return r.json();});
 if(!liveStats?.ok||typeof liveStats?.totals?.views!=='number')throw new Error('Stats API browser check failed');
 if(liveStats.totals.views<1)throw new Error('Stats page-view persistence check failed: no page views recorded');
