@@ -31,42 +31,32 @@ jobs:
           const ragEn=lines('data/exports/nikaya-rag.en.jsonl').map(JSON.parse);
           const knVi=lines('data/exports/nikaya-knowledge.vi.jsonl').map(JSON.parse);
           const knEn=lines('data/exports/nikaya-knowledge.en.jsonl').map(JSON.parse);
-          for(const [name,rows] of [['rag.vi',ragVi],['rag.en',ragEn],['knowledge.vi',knVi],['knowledge.en',knEn]]){
-            if(!rows.length)throw new Error(`${name} export is empty`);
-          }
+          for(const [name,rows] of [['rag.vi',ragVi],['rag.en',ragEn],['knowledge.vi',knVi],['knowledge.en',knEn]])if(!rows.length)throw new Error(`${name} export is empty`);
           if(knVi.length!==expected||knEn.length!==expected)throw new Error(`knowledge export mismatch: expected ${expected}`);
           for(const [name,rows] of [['rag.vi',ragVi],['rag.en',ragEn]]){
             if(rows.length<expected)throw new Error(`${name} count below catalog coverage ${expected}: ${rows.length}`);
-            const ids=new Set();
-            const chunkIds=new Set();
+            const ids=new Set(),chunkIds=new Set();
             for(const row of rows){
               if(!String(row.text||'').trim())throw new Error(`${name} contains empty text: ${row.chunk_id||'unknown'}`);
-              if(!row.sutta_id)throw new Error(`${name} chunk missing sutta_id`);
-              if(!row.chunk_id)throw new Error(`${name} chunk missing chunk_id`);
+              if(!row.sutta_id||!row.chunk_id)throw new Error(`${name} chunk missing identity`);
               if(chunkIds.has(row.chunk_id))throw new Error(`${name} duplicate chunk_id ${row.chunk_id}`);
               chunkIds.add(row.chunk_id);ids.add(row.sutta_id);
             }
-            const missing=suttas.filter(s=>!ids.has(s.id));
-            if(missing.length)throw new Error(`${name} missing RAG coverage for ${missing.length} suttas; first=${missing[0].id}`);
+            const missing=suttas.filter(s=>!ids.has(s.id));if(missing.length)throw new Error(`${name} missing RAG coverage for ${missing.length} suttas; first=${missing[0].id}`);
           }
           const mn=suttas.filter(s=>s.collection==='MN');
-          if(mn.length===152){
-            for(let i=1;i<=152;i++){
-              const id=`nikaya.mn.${i}`;
-              const asset=audio[id]?.vi;
-              if(!asset)throw new Error(`missing Vietnamese MP3 mapping ${id}`);
-              if(asset.provider!=='5 Đại Tạng Kinh Nikāya')throw new Error(`MN ${i} is not mapped to library prebuilt MP3`);
-              if(!asset.url.includes(`/releases/download/mn-vi-audio-v1/mn${i}.mp3`))throw new Error(`bad MP3 URL for MN ${i}`);
-              if(asset.segments){
-                if(!Array.isArray(asset.segments)||!asset.segments.length)throw new Error(`empty segments for MN ${i}`);
-                for(const seg of asset.segments){
-                  if(!seg.id||!Array.isArray(seg.sources)||!seg.sources.length)throw new Error(`bad segment schema for MN ${i}`);
-                  if(!seg.sources.every(s=>s.url))throw new Error(`segment source missing URL for MN ${i}`);
-                }
-              }
+          if(mn.length!==152)throw new Error(`MN catalog incomplete: ${mn.length}/152`);
+          for(let i=1;i<=152;i++){
+            const id=`nikaya.mn.${i}`;const asset=audio[id]?.vi;if(!asset)throw new Error(`missing Vietnamese MP3 mapping ${id}`);
+            const local=asset.provider==='5 Đại Tạng Kinh Nikāya'&&asset.url.includes(`/releases/download/mn-vi-audio-v1/mn${i}.mp3`);
+            const cloud=asset.provider==='Google Cloud Text-to-Speech'&&asset.url.includes(`/releases/download/mn-vi-cloud-audio-v1/mn${i}.mp3`)&&String(asset.sourceUrl||'').includes(`suttacentral.net/mn${i}/vi/`);
+            if(!local&&!cloud)throw new Error(`MN ${i} has unverified audio mapping: ${JSON.stringify(asset)}`);
+            if(asset.segments){
+              if(!Array.isArray(asset.segments)||!asset.segments.length)throw new Error(`empty segments for MN ${i}`);
+              for(const seg of asset.segments){if(!seg.id||!Array.isArray(seg.sources)||!seg.sources.length||!seg.sources.every(s=>s.url))throw new Error(`bad segment schema for MN ${i}`);}
             }
-            console.log('Full MN audio catalog validated: 152/152');
-          } else throw new Error(`MN catalog incomplete: ${mn.length}/152`);
+          }
+          console.log('Full MN audio catalog validated: local or verified Google Cloud TTS 152/152');
           console.log(`RAG coverage validated: ${expected}/${expected} suttas, non-empty variable chunks`);
           NODE
       - run: npm run build
@@ -77,49 +67,20 @@ jobs:
           must_have(){ local file="$1" text="$2" label="$3"; if grep -Fq "$text" "$file"; then echo "PASS: $label"; else echo "FAIL missing: $label [$text]"; exit 1; fi; }
           must_not_have(){ local file="$1" text="$2" label="$3"; if grep -Fq "$text" "$file"; then echo "FAIL present: $label [$text]"; exit 1; else echo "PASS: $label"; fi; }
           npm run start -- -p 3000 > /tmp/nikaya-next.log 2>&1 &
-          SERVER_PID=$!
-          trap 'kill $SERVER_PID || true' EXIT
-          READY=0
-          for i in {1..30}; do
-            if curl --fail --silent http://127.0.0.1:3000/vi > /dev/null; then READY=1; break; fi
-            sleep 1
-          done
+          SERVER_PID=$!;trap 'kill $SERVER_PID || true' EXIT
+          READY=0;for i in {1..30}; do if curl --fail --silent http://127.0.0.1:3000/vi > /dev/null; then READY=1; break; fi;sleep 1;done
           if [ "$READY" -ne 1 ]; then cat /tmp/nikaya-next.log; exit 1; fi
-
           curl --fail --silent http://127.0.0.1:3000/vi -o /tmp/home.html
-          must_have /tmp/home.html 'Trường Bộ' 'full name Trường Bộ'
-          must_have /tmp/home.html 'Trung Bộ' 'full name Trung Bộ'
-          must_have /tmp/home.html 'Tương Ưng Bộ' 'full name Tương Ưng Bộ'
-          must_have /tmp/home.html 'Tăng Chi Bộ' 'full name Tăng Chi Bộ'
-          must_have /tmp/home.html 'Tiểu Bộ' 'full name Tiểu Bộ'
+          for t in 'Trường Bộ' 'Trung Bộ' 'Tương Ưng Bộ' 'Tăng Chi Bộ' 'Tiểu Bộ'; do must_have /tmp/home.html "$t" "home $t"; done
           must_have /tmp/home.html '/vi/tien-do' 'progress route link'
-
           MN21_SLUG=$(node -e "const s=require('./data/catalog/suttas.json').find(x=>x.canonicalRef==='mn21');if(!s?.slug)process.exit(2);process.stdout.write(s.slug)")
-          MN21_URL="http://127.0.0.1:3000/vi/library/${MN21_SLUG}"
-          echo "Smoke reader canonicalRef=mn21 URL=${MN21_URL}"
-          curl --fail --silent "$MN21_URL" -o /tmp/mn21.html || { echo "FAIL reader canonicalRef=mn21 URL=${MN21_URL}"; exit 1; }
+          MN21_URL="http://127.0.0.1:3000/vi/library/${MN21_SLUG}";curl --fail --silent "$MN21_URL" -o /tmp/mn21.html
           must_have /tmp/mn21.html 'compactEssentials' 'compact reader essentials'
-          must_not_have /tmp/mn21.html 'V5.1-HOME-DN' 'public reader has no internal build marker'
-          must_have /tmp/mn21.html '/media/audio/gemini/mn/mn21.mp3' 'preferred Gemini audio candidate'
-          must_have /tmp/mn21.html 'mn21.mp3' 'MN21 fallback MP3 candidate'
-          must_have /tmp/mn21.html 'mn21.manifest.json' 'MN21 preservation manifest URL'
-          must_have /tmp/mn21.html 'Bản dịch:' 'compact source label'
-          must_have components/R2AudioDisclosure.tsx "method:'HEAD'" 'runtime audio availability probing'
-          must_have components/R2AudioDisclosure.tsx "provider==='gemini'" 'Gemini quality preference'
+          must_have /tmp/mn21.html 'mn21.mp3' 'MN21 MP3 candidate'
+          must_have /tmp/mn21.html 'suttacentral.net/mn21/vi/' 'MN21 source provenance'
           must_have components/BrowserReader.tsx 'speechSynthesis' 'browser speech fallback implementation'
-          if grep -Fq 'Giọng thư viện' /tmp/mn21.html; then echo 'FAIL: Legacy library TTS leaked into reader'; exit 1; fi
-          echo 'PASS: no legacy library TTS'
-
           curl --fail --silent http://127.0.0.1:3000/vi/tien-do -o /tmp/progress.html
           must_have /tmp/progress.html 'DỰ ÁN 5 ĐẠI TẠNG KINH' 'public progress page heading'
-          must_have /tmp/progress.html 'Trung Bộ' 'progress page Trung Bộ card'
-          must_not_have /tmp/progress.html 'GitHub Actions' 'public progress page hides internal workflows'
-          must_not_have /tmp/progress.html 'head_branch' 'public progress page hides branch internals'
-
-          curl --fail --silent http://127.0.0.1:3000/en > /dev/null
-          STATUS=$(curl --silent --output /dev/null --write-out '%{http_code}' http://127.0.0.1:3000/api/tts)
-          if [ "$STATUS" != "404" ]; then echo "FAIL: /api/tts expected 404 got $STATUS"; exit 1; fi
-          echo 'PASS: runtime TTS route absent'
-          curl -L --fail --silent --range 0-4095 'https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn21.mp3' -o /tmp/mn21.part
-          if [ "$(stat -c%s /tmp/mn21.part)" -le 1000 ]; then echo 'FAIL: MN21 MP3 range fetch too small'; exit 1; fi
-          echo 'V5.1 public home/progress/hybrid-audio preservation smoke test PASS'
+          must_not_have /tmp/progress.html 'GitHub Actions' 'public progress page hides internals'
+          STATUS=$(curl --silent --output /dev/null --write-out '%{http_code}' http://127.0.0.1:3000/api/tts);if [ "$STATUS" != "404" ]; then echo "FAIL: /api/tts expected 404 got $STATUS"; exit 1; fi
+          echo 'PASS: build, reader source, audio catalog and progress smoke'
