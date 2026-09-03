@@ -1,0 +1,88 @@
+name: Deploy Trọc Thumbnail AI Worker
+on:
+  push:
+    branches: [ops/secret-audit]
+    paths: [.github/workflows/deploy-troc-thumbnail-ai.yml]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      TROC_SHARED_KEY: ${{ secrets.GEMINI_API_KEY }}
+    steps:
+      - name: Validate secrets
+        shell: bash
+        run: |
+          test -n "$CLOUDFLARE_API_TOKEN" || (echo 'CLOUDFLARE_API_TOKEN missing' && exit 1)
+          test -n "$CLOUDFLARE_ACCOUNT_ID" || (echo 'CLOUDFLARE_ACCOUNT_ID missing' && exit 1)
+          test -n "$TROC_SHARED_KEY" || (echo 'GEMINI_API_KEY missing' && exit 1)
+
+      - name: Build worker
+        shell: bash
+        run: |
+          mkdir -p worker/src
+          cat > worker/package.json <<'JSON'
+          {"private":true,"devDependencies":{"wrangler":"latest"}}
+          JSON
+          cat > worker/wrangler.jsonc <<'JSON'
+          {
+            "name": "troc-thumbnail-ai",
+            "main": "src/index.js",
+            "compatibility_date": "2026-09-01",
+            "ai": { "binding": "AI" }
+          }
+          JSON
+          cat > worker/src/index.js <<'JS'
+          const json=(data,status=200)=>new Response(JSON.stringify(data),{status,headers:{'content-type':'application/json;charset=utf-8','cache-control':'no-store'}})
+          export default {
+            async fetch(request,env){
+              if(request.method==='GET')return json({ok:true,service:'troc-thumbnail-ai',model:'@cf/black-forest-labs/flux-1-schnell'})
+              if(request.method!=='POST')return json({ok:false,error:'method_not_allowed'},405)
+              const key=request.headers.get('x-troc-key')||''
+              if(!env.TROC_SHARED_KEY||key!==env.TROC_SHARED_KEY)return json({ok:false,error:'unauthorized'},401)
+              try{
+                const body=await request.json(),prompt=String(body?.prompt||'').trim().slice(0,2048)
+                if(!prompt)return json({ok:false,error:'missing_prompt'},400)
+                const steps=Math.min(8,Math.max(4,Number(body?.steps)||4))
+                const result=await env.AI.run('@cf/black-forest-labs/flux-1-schnell',{prompt,steps})
+                const image=result?.image||''
+                if(!image)return json({ok:false,error:'no_image_returned'},502)
+                return json({ok:true,image,provider:'cloudflare:@cf/black-forest-labs/flux-1-schnell'})
+              }catch(e){return json({ok:false,error:String(e?.message||e)},500)}
+            }
+          }
+          JS
+
+      - name: Deploy worker and secret
+        working-directory: worker
+        shell: bash
+        run: |
+          npm install --silent
+          npx wrangler deploy
+          printf '%s' "$TROC_SHARED_KEY" | npx wrangler secret put TROC_SHARED_KEY
+
+      - name: Smoke test FLUX
+        shell: bash
+        run: |
+          set -euo pipefail
+          url='https://troc-thumbnail-ai.nhatkhoa-nikaya.workers.dev'
+          code=$(curl -sS --max-time 90 -o /tmp/out.json -w '%{http_code}' \
+            -H "x-troc-key: $TROC_SHARED_KEY" -H 'content-type: application/json' \
+            -X POST "$url" -d '{"prompt":"cinematic peaceful sunrise behind a Buddhist temple garden, realistic, no text, 16:9 composition","steps":4}')
+          echo "HTTP=$code"
+          python3 - <<'PY'
+          import json
+          p='/tmp/out.json'
+          try:
+              d=json.load(open(p,encoding='utf-8'))
+              print('OK=',d.get('ok'),'PROVIDER=',d.get('provider'),'IMAGE_LEN=',len(d.get('image','')),'ERROR=',d.get('error',''))
+              raise SystemExit(0 if d.get('ok') and len(d.get('image',''))>1000 else 1)
+          except Exception as e:
+              print('SMOKE_PARSE_ERROR',e)
+              print(open(p,'rb').read(500))
+              raise
+          PY
