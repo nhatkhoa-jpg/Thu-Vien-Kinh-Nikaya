@@ -4,24 +4,23 @@ on:
   workflow_dispatch:
     inputs:
       collection:
-        description: Collection to resume
+        description: Collection to resume, or AUTO for the next incomplete lane
         required: true
-        default: SN
+        default: AUTO
         type: choice
-        options: [MN, SN, AN, KN]
+        options: [AUTO, MN, SN, AN, KN]
       batch_size:
         description: Maximum canonical records in this checkpoint
         required: true
-        default: "120"
-      publish:
-        description: Rebuild registry/RAG/site only for a deliberate milestone
-        required: true
-        default: false
-        type: boolean
-  # Scheduled autopilot deliberately advances SN only. Other collections stay
-  # under explicit Work/manual control until their integration state is merged.
+        default: "500"
   schedule:
     - cron: "17 * * * *"
+  push:
+    branches: [main]
+    paths:
+      - "data/content/**"
+      - "data/status/**"
+      - ".github/workflows/corpus-orchestrator.yml"
 
 permissions:
   contents: write
@@ -35,9 +34,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 330
     env:
-      COLLECTION: ${{ inputs.collection || 'SN' }}
-      BATCH_SIZE: ${{ inputs.batch_size || '120' }}
-      PUBLISH: ${{ inputs.publish || 'false' }}
+      REQUESTED_COLLECTION: ${{ inputs.collection || 'AUTO' }}
+      BATCH_SIZE: ${{ inputs.batch_size || '500' }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -46,56 +44,41 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Preflight pending full-text work
-        id: preflight
+      - name: Resolve next incomplete collection
+        id: resolve
         shell: bash
         run: |
           set -euo pipefail
-          pending=$(python - <<'PY'
-          import json
-          import os
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, os
           from pathlib import Path
 
-          collection = os.environ["COLLECTION"]
-          path = Path("data/status/corpus-status.json")
-          if not path.exists():
-              print(1)
-              raise SystemExit
-          data = json.loads(path.read_text(encoding="utf-8"))
-          row = next((item for item in data.get("collections", []) if item.get("collection") == collection), None)
-          print(int(row.get("pendingFullTextCount", 1)) if row else 1)
+          requested = os.environ.get("REQUESTED_COLLECTION", "AUTO")
+          data = json.loads(Path("data/status/corpus-status.json").read_text(encoding="utf-8"))
+          rows = {x["collection"]: x for x in data.get("collections", [])}
+          order = ["MN", "AN", "SN", "KN"]
+          if requested != "AUTO":
+              chosen = requested
+          else:
+              chosen = next((c for c in order if int(rows.get(c, {}).get("pendingFullTextCount", 0)) > 0), "")
+          pending = int(rows.get(chosen, {}).get("pendingFullTextCount", 0)) if chosen else 0
+          print(f"collection={chosen}")
+          print(f"pending={pending}")
+          print(f"needs_work={'true' if chosen and pending > 0 else 'false'}")
           PY
-          )
-          echo "pending=$pending" >> "$GITHUB_OUTPUT"
-          if [ "$pending" = "0" ]; then
-            echo "needs_work=false" >> "$GITHUB_OUTPUT"
-            echo "$COLLECTION has zero pending full-text records; exiting cheaply."
-          else
-            echo "needs_work=true" >> "$GITHUB_OUTPUT"
-            echo "$COLLECTION pending full-text records: $pending"
-          fi
+      - name: Report no pending corpus work
+        if: steps.resolve.outputs.needs_work != 'true'
+        run: echo "All currently modeled Nikaya full-text lanes have zero pending records."
       - name: Materialize one resumable batch
-        if: steps.preflight.outputs.needs_work == 'true'
-        run: python scripts/materialize_fulltext.py --collection "$COLLECTION" --batch-size "$BATCH_SIZE" --workers 12
+        if: steps.resolve.outputs.needs_work == 'true'
+        run: python scripts/materialize_fulltext.py --collection "${{ steps.resolve.outputs.collection }}" --batch-size "$BATCH_SIZE" --workers 12
       - name: Refresh and validate machine-readable status
-        if: steps.preflight.outputs.needs_work == 'true'
+        if: steps.resolve.outputs.needs_work == 'true'
         run: |
           python scripts/update_corpus_status.py
-          python scripts/validate_corpus.py --collection "$COLLECTION"
-      - uses: actions/setup-node@v4
-        if: steps.preflight.outputs.needs_work == 'true' && env.PUBLISH == 'true'
-        with:
-          node-version: "22"
-          cache: npm
-      - name: Milestone-only derived exports and production build
-        if: steps.preflight.outputs.needs_work == 'true' && env.PUBLISH == 'true'
-        run: |
-          python scripts/generate_content_registry.py
-          npm install
-          npm run rag:export
-          npm run build
-      - name: Commit successful checkpoint
-        if: steps.preflight.outputs.needs_work == 'true'
+          python scripts/validate_corpus.py --collection "${{ steps.resolve.outputs.collection }}"
+      - name: Commit verified checkpoint and trigger production publish
+        if: steps.resolve.outputs.needs_work == 'true'
         run: |
           if git diff --quiet; then
             echo "No new verified corpus records."
@@ -104,8 +87,5 @@ jobs:
           git config user.name "nikaya-corpus-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/content data/status
-          if [ "$PUBLISH" = "true" ]; then
-            git add data/exports lib/materialized-content.generated.ts
-          fi
-          git commit -m "corpus: checkpoint ${COLLECTION} full text [skip corpus]"
+          git commit -m "corpus: checkpoint ${{ steps.resolve.outputs.collection }} full text [skip corpus] [deploy cloudflare production]"
           git push origin "HEAD:${GITHUB_REF_NAME}"
