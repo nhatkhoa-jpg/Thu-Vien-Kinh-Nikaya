@@ -1,0 +1,47 @@
+/* High-contrast UI pass: desktop/tablet first, phone stays compact. */
+:root{--hc-green:#073f32;--hc-green-2:#0b6b50;--hc-gold:#f2bd46;--hc-cream:#fff8e8;--hc-ink:#10231c;--hc-muted:#56665f}
+
+.brandedLogoMark{width:50px!important;height:50px!important;padding:0!important;background:transparent!important;border-radius:15px!important;overflow:hidden;box-shadow:0 9px 24px rgba(7,63,50,.2)!important}.brandedLogoMark img{display:block;width:100%;height:100%}
+
+/* Fix the V2 collision: global .heroCopy previously painted a white card behind white hero text. */
+.visualHomeV2 .heroFocus .heroCopy{max-width:720px!important;margin-top:auto!important;margin-bottom:22px!important;padding:0!important;background:transparent!important;border:0!important;border-radius:0!important;overflow:visible!important}
+.visualHomeV2 .heroImageShade{background:linear-gradient(90deg,rgba(4,27,22,.97) 0%,rgba(5,39,30,.93) 36%,rgba(5,42,32,.70) 62%,rgba(4,26,22,.32) 100%),linear-gradient(0deg,rgba(3,22,18,.66),transparent 54%)!important}
+.visualHomeV2 .heroCopy .kicker{color:#ffd978!important;text-shadow:0 2px 8px rgba(0,0,0,.35)}
+.visualHomeV2 .heroFocus h2{color:#fffdf4!important;text-shadow:0 3px 18px rgba(0,0,0,.62)!important}
+.visualHomeV2 .heroCopy>p:last-child{color:#fff9ed!important;font-weight:600;text-shadow:0 2px 12px rgba(0,0,0,.58)}
+.visualHomeV2 .focusAction{background:#ffd56f!important;color:#102d24!important;border:2px solid rgba(255,255,255,.72)!important}
+.visualHomeV2 .focusAction small{color:#315044!important}.visualHomeV2 .playCircle{background:#075f47!important;color:white!important}
+
+/* Quote panel is deliberately bolder, but text always sits on an opaque readable card. */
+.visualHomeV2 .rotatingVerse{min-height:320px!important;background:linear-gradient(115deg,#063d31 0%,#0b6b50 43%,#e4a934 43.2%,#f5ce76 100%),url('/visuals/hero-lotus.svg') center/cover!important;border:2px solid #d99c27!important;box-shadow:0 18px 44px rgba(31,49,39,.18)!important}
+.visualHomeV2 .rotatingVerse .canonPromoCopy{position:relative!important;z-index:3!important;margin:28px 32px 28px 39%!important;max-width:none!important;padding:30px 34px!important;border-radius:25px!important;background:rgba(255,250,238,.96)!important;border:1px solid rgba(102,67,18,.18)!important;box-shadow:0 16px 38px rgba(34,31,21,.16)!important}
+.visualHomeV2 .rotatingVerse .kicker{color:#8a5611!important}.visualHomeV2 .rotatingVerse h2{color:#12271f!important;text-shadow:none!important}.visualHomeV2 .rotatingVerse p{color:#4e5b55!important}.visualHomeV2 .verseActions a{color:#8a4f08!important;font-weight:900}.visualHomeV2 .verseActions button{background:#0b664d!important;color:white!important;border-color:#0b664d!important}
+
+/* More lively discovery cards without sacrificing contrast. */
+.visualHomeV2 .fiveShortcuts>a{border-width:2px!important;box-shadow:0 10px 25px rgba(23,50,40,.08)!important}.visualHomeV2 .fiveShortcuts>a:nth-child(1){background:linear-gradient(145deg,#effaf4,#dff3e8)!important;border-color:#9fcdb6!important}.visualHomeV2 .fiveShortcuts>a:nth-child(2){background:linear-gradient(145deg,#fff4e8,#f9dfc2)!important;border-color:#ddb88c!important}.visualHomeV2 .fiveShortcuts>a:nth-child(3){background:linear-gradient(145deg,#f5effb,#e8dcf6)!important;border-color:#c7afd9!important}.visualHomeV2 .fiveShortcuts>a:nth-child(4){background:linear-gradient(145deg,#edf8ee,#d9efdc)!important;border-color:#9ccca7!important}.visualHomeV2 .fiveShortcuts>a:nth-child(5){background:linear-gradient(145deg,#eaf8fa,#d4eef2)!important;border-color:#9bcbd2!important}.visualHomeV2 .fiveShortcuts strong{color:#10261e!important}.visualHomeV2 .fiveShortcuts small{color:#4f6159!important;font-weight:650!important}
+
+/* Desktop and tablet: larger controls, larger hit targets, wider reader. */
+@media(min-width:761px){
+  .shell{width:min(1500px,calc(100% - 64px))}
+  .nav{height:88px;gap:22px}.logo{gap:13px}.logoText strong{font-size:18px}.logoText small{font-size:11px}.desktopNav{gap:5px;padding:6px}.desktopNav a{font-size:14px;padding:11px 14px;min-height:42px;display:flex;align-items:center;gap:6px}.headerActions{gap:10px}.headerActions button,.headerActions input,.headerActions select,.lang{min-height:46px!important;font-size:14px!important}.lang{min-width:152px!important}
+  .visualHomeV2 .mobileWelcome{padding-top:34px!important;padding-bottom:22px!important}.visualHomeV2 .mobileWelcome h1{font-size:clamp(52px,5vw,74px)!important;line-height:1!important}.visualHomeV2 .mobileWelcome p{font-size:18px!important;color:#465850!important}.quickSearch{min-height:50px!important;padding:0 20px!important;font-size:15px!important}
+  .visualHomeV2 .heroDiscovery .heroFocus,.visualHomeV2 .heroFocusContent{min-height:500px!important}.visualHomeV2 .heroFocusContent{padding:35px 39px!important}.visualHomeV2 .heroFocus h2{font-size:clamp(48px,5.2vw,74px)!important;line-height:1!important}.visualHomeV2 .heroCopy>p:last-child{font-size:18px!important;line-height:1.62!important}.visualHomeV2 .focusAction{min-width:365px!important;padding:17px!important}.visualHomeV2 .focusAction strong{font-size:15px!important}.visualHomeV2 .focusAction small{font-size:12px!important}
+  .visualHomeV2 .fiveShortcuts>a{min-height:142px!important;padding:20px!important}.visualHomeV2 .fiveShortcuts>a>span{width:50px!important;height:50px!important}.visualHomeV2 .fiveShortcuts strong{font-size:16px!important}.visualHomeV2 .fiveShortcuts small{font-size:12px!important;line-height:1.35!important}
+  .sectionHead h2{font-size:clamp(36px,3vw,48px)!important}.collectionCard h3{font-size:29px!important}.collectionCard p{font-size:14px!important}.collectionCount,.collectionCode{font-size:12px!important}
+  .libraryToolbar{gap:12px!important}.searchBox{min-height:60px!important;font-size:15px!important}.formatFilter button{height:46px!important;padding:0 16px!important;font-size:13px!important}.collectionChips button{min-height:42px!important;padding:10px 15px!important;font-size:12px!important}.suttaCard{min-height:184px!important;padding:19px!important}.suttaCard h3{font-size:20px!important}.suttaCard .summary{font-size:13px!important}
+  .readerShell{max-width:1500px!important}.readerLayout{grid-template-columns:minmax(0,1fr) 320px!important;gap:24px!important}.readerMain{padding:clamp(38px,4vw,64px)!important}.readerMain h1{font-size:clamp(50px,5vw,76px)!important}.readerPali{font-size:19px!important}.suttaText{max-width:900px!important;font-size:max(var(--reader-size),21px)!important;line-height:1.88!important}
+  .readerQuickJump{min-height:64px!important;padding:8px!important;gap:8px!important}.readerQuickJump>a,.readerQuickJump>button{min-height:48px!important;padding:0 15px!important;font-size:13px!important}.readerQuickJump select{min-height:46px!important;font-size:14px!important}.rqSelect{min-height:48px!important}.rqSelect>span{font-size:11px!important}
+  .compactEssentials{gap:10px!important}.essentialDisclosure>summary{min-height:58px!important;padding:10px 14px!important}.essentialDisclosure>summary strong{font-size:14px!important}.essentialDisclosure>summary small{font-size:11px!important}.miniActionIcon{width:38px!important;height:38px!important}
+  .readerToolbar{top:98px!important;padding:10px!important;gap:9px!important}.readerToolbar button{height:44px!important;min-width:44px!important;font-size:13px!important;padding:0 12px!important}.readerToolGroup button{min-width:40px!important}.readerSize{font-size:12px!important;min-width:28px!important}
+  .passageCollectorBar{min-height:48px!important;padding:9px 13px!important;font-size:12px!important}.passageActions button{width:38px!important;height:38px!important}
+}
+
+/* Tablet keeps the same readable tool sizing but reduces columns and visual density. */
+@media(min-width:761px) and (max-width:1100px){
+  .shell{width:min(100% - 34px,1040px)}.desktopNav a{padding:10px 9px;font-size:12px}.logoText small{display:none}.visualHomeV2 .fiveShortcuts{grid-template-columns:repeat(3,1fr)!important}.visualHomeV2 .fiveShortcuts>a:nth-child(4),.visualHomeV2 .fiveShortcuts>a:nth-child(5){min-height:120px}.collectionGrid{grid-template-columns:repeat(3,1fr)!important}.featuredRail{grid-template-columns:repeat(2,1fr)!important}.readerLayout{grid-template-columns:1fr!important}.readerSide{display:none!important}.visualHomeV2 .rotatingVerse .canonPromoCopy{margin-left:31%!important}
+}
+
+/* Phone was already usable: only enforce contrast and keep controls compact. */
+@media(max-width:760px){
+  .brandedLogoMark{width:42px!important;height:42px!important}.visualHomeV2 .heroFocus .heroCopy{padding:0!important;background:transparent!important}.visualHomeV2 .heroImageShade{background:linear-gradient(0deg,rgba(4,28,22,.96),rgba(5,39,30,.78) 72%,rgba(4,30,24,.58))!important}.visualHomeV2 .heroFocus h2{color:#fffdf5!important}.visualHomeV2 .heroCopy>p:last-child{color:#fff9ec!important}.visualHomeV2 .rotatingVerse{background:linear-gradient(160deg,#064534,#0b6b50 48%,#f1bd4d 48.4%,#f7d989)!important}.visualHomeV2 .rotatingVerse .canonPromoCopy{margin:22px!important;padding:22px!important;background:rgba(255,250,239,.97)!important;border-radius:20px!important}.visualHomeV2 .rotatingVerse h2{color:#14271f!important}
+}
