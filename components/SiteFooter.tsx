@@ -1,31 +1,32 @@
 import Link from 'next/link';
 import {BookOpen,ExternalLink,ShieldCheck} from 'lucide-react';
-import {dict,type Locale} from '@/lib/i18n';
+import {type Locale} from '@/lib/i18n';
+import {publicUi} from '@/lib/public-ui';
 
 export default function SiteFooter({locale}:{locale:Locale}){
-  const d=dict(locale);const vi=locale==='vi';
+  const u=publicUi(locale);
   return <footer className="siteFooter">
     <div className="shell siteFooterGrid">
       <div className="siteFooterBrand">
         <span className="siteFooterMark"><BookOpen size={20}/></span>
-        <div><strong>{d.brand}</strong><p>{vi?'Thư viện đọc, nghe và lưu giữ kinh điển Nikāya, Luật tạng và Vi Diệu Pháp với nguồn đối chiếu rõ ràng.':'A reading, listening and preservation library for the Nikāyas, Vinaya, and Abhidhamma with traceable source references.'}</p></div>
+        <div><strong>{u.brand}</strong><p>{u.footerDescription}</p></div>
       </div>
-      <div className="siteFooterLinks" aria-label={vi?'Thông tin thư viện':'Library information'}>
-        <strong>{vi?'Thư viện':'Library'}</strong>
-        <Link href={`/${locale}/tam-tang`}>{vi?'Tam Tạng Pāli':'Pāli Canon'}</Link>
-        <Link href={`/${locale}/about`}>{vi?'Giới thiệu':'About'}</Link>
-        <Link href={`/${locale}/editorial-policy`}>{vi?'Nguồn & nguyên tắc biên tập':'Sources & editorial policy'}</Link>
-        <Link href={`/${locale}/privacy`}>{vi?'Quyền riêng tư':'Privacy'}</Link>
-        <Link href={`/${locale}/terms`}>{vi?'Điều khoản sử dụng':'Terms'}</Link>
+      <div className="siteFooterLinks" aria-label={u.libraryInfo}>
+        <strong>{u.libraryInfo}</strong>
+        <Link href={`/${locale}/tam-tang`}>{u.canon}</Link>
+        <Link href={`/${locale}/about`}>{u.about}</Link>
+        <Link href={`/${locale}/editorial-policy`}>{u.editorial}</Link>
+        <Link href={`/${locale}/privacy`}>{u.privacy}</Link>
+        <Link href={`/${locale}/terms`}>{u.terms}</Link>
       </div>
       <div className="siteFooterLinks">
-        <strong>{vi?'Đọc & kiểm chứng':'Read & verify'}</strong>
-        <Link href={`/${locale}#library`}>{vi?'Tra cứu kinh':'Browse the library'}</Link>
-        <Link href={`/${locale}/tien-do`}>{vi?'Tiến độ dữ liệu':'Data progress'}</Link>
+        <strong>{u.readVerify}</strong>
+        <Link href={`/${locale}#library`}>{u.browse}</Link>
+        <Link href={`/${locale}/tien-do`}>{u.dataProgress}</Link>
         <a href="https://suttacentral.net" target="_blank" rel="noreferrer">SuttaCentral <ExternalLink size={12}/></a>
-        <a href="https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/issues" target="_blank" rel="noreferrer">{vi?'Báo lỗi / góp ý nguồn':'Report a correction'} <ExternalLink size={12}/></a>
+        <a href="https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/issues" target="_blank" rel="noreferrer">{u.reportCorrection} <ExternalLink size={12}/></a>
       </div>
     </div>
-    <div className="shell siteFooterBottom"><span><ShieldCheck size={14}/>{vi?'Kinh văn ưu tiên nguồn có thể kiểm tra; AI không được dùng để bịa kinh văn.':'Scripture text prioritizes verifiable sources; AI is not used to invent scripture.'}</span><small>© {new Date().getFullYear()} {d.brand}</small></div>
+    <div className="shell siteFooterBottom"><span><ShieldCheck size={14}/>{u.integrity}</span><small>© {new Date().getFullYear()} {u.brand}</small></div>
   </footer>;
 }
