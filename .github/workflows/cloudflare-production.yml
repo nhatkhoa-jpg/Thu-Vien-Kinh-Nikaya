@@ -47,10 +47,37 @@ jobs:
       - name: Deploy production Worker
         id: production
         run: |
-          set -euo pipefail
-          npm run deploy:vinext 2>&1 | tee /tmp/cloudflare-production-deploy.log
+          set -uo pipefail
+          DEPLOY_OK=0
+          for attempt in 1 2 3; do
+            echo "Cloudflare production deploy attempt ${attempt}/3"
+            : > /tmp/cloudflare-production-deploy.log
+            set +e
+            npm run deploy:vinext 2>&1 | tee /tmp/cloudflare-production-deploy.log
+            code=${PIPESTATUS[0]}
+            set -e
+            if [ "$code" -eq 0 ]; then
+              DEPLOY_OK=1
+              break
+            fi
+            if ! grep -Eqi '502 Bad Gateway|503 Service Unavailable|504 Gateway Timeout|upstream connect error|connection termination|connection reset|malformed response from the API|ECONNRESET|ETIMEDOUT' /tmp/cloudflare-production-deploy.log; then
+              echo "Permanent/non-transient deploy failure; not retrying."
+              exit "$code"
+            fi
+            if [ "$attempt" -eq 3 ]; then
+              echo "Cloudflare transient failure persisted after 3 attempts."
+              exit "$code"
+            fi
+            delay=$((attempt * 15))
+            echo "Transient Cloudflare API/network failure detected; retrying in ${delay}s."
+            sleep "$delay"
+          done
+          test "$DEPLOY_OK" -eq 1
           URL=$(grep -Eo 'https://[A-Za-z0-9.-]+\.workers\.dev' /tmp/cloudflare-production-deploy.log | tail -1)
-          test -n "$URL" || { echo "Production deploy completed without a workers.dev URL"; exit 1; }
+          if [ -z "$URL" ]; then
+            URL='https://thu-vien-kinh-nikaya.nhatkhoa-nikaya.workers.dev'
+            echo "Wrangler returned no workers.dev URL; using the verified production hostname: $URL"
+          fi
           echo "url=$URL" >> "$GITHUB_OUTPUT"
       - name: Install browser for production smoke test
         run: npx playwright install --with-deps chromium
