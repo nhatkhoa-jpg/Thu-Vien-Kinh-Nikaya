@@ -26,6 +26,13 @@ function viCodeFor(ref:string,collection:string){
   const suffix=ref.toLowerCase().replace(collection.toLowerCase(),'');
   return `${prefix} ${suffix}`.trim();
 }
+function cleanPublicViTitle(value:string){
+  const title=String(value||'').trim();
+  return title
+    .replace(/\s*\(bản Việt[^)]*tiêu đề Việt chưa có trong metadata nguồn[^)]*\)\s*$/i,'')
+    .replace(/\s*\(tiêu đề Việt chưa có trong metadata nguồn[^)]*\)\s*$/i,'')
+    .trim()||title;
+}
 function versionTimestamp(value:string){
   const match=String(value||'').match(/^\d{4}-\d{2}-\d{2}(?:T[^ ]+)?/);
   if(!match)return 0;
@@ -33,7 +40,7 @@ function versionTimestamp(value:string){
   return Number.isFinite(time)?time:0;
 }
 
-const curated:Sutta[]=(suttasRaw as CanonicalSutta[]).map(s=>({id:s.id,canonicalRef:s.canonicalRef,slug:s.slug,code:s.code,viCode:s.viCode,collection:s.collection,pali:s.pali,vi:s.vi,en:s.en,topics:s.topics,sourceUrl:s.source.url,licenseShort:`${s.source.translator} · ${s.source.license}`,youtubeId:s.media.youtubeId,summaryVi:s.summary.vi,summaryEn:s.summary.en,practiceVi:s.practice.vi,practiceEn:s.practice.en,readMinutes:s.readMinutes,featured:s.featured,contentVersion:s.contentVersion}));
+const curated:Sutta[]=(suttasRaw as CanonicalSutta[]).map(s=>({id:s.id,canonicalRef:s.canonicalRef,slug:s.slug,code:s.code,viCode:s.viCode,collection:s.collection,pali:s.pali,vi:cleanPublicViTitle(s.vi),en:s.en,topics:s.topics,sourceUrl:s.source.url,licenseShort:`${s.source.translator} · ${s.source.license}`,youtubeId:s.media.youtubeId,summaryVi:s.summary.vi,summaryEn:s.summary.en,practiceVi:s.practice.vi,practiceEn:s.practice.en,readMinutes:s.readMinutes,featured:s.featured,contentVersion:s.contentVersion}));
 const curatedRefs=new Set(curated.map(s=>s.canonicalRef.toLowerCase()));
 const generated:Sutta[]=Object.values(materializedCatalog as Record<string,MaterializedCatalogEntry>).flatMap(entry=>{
   const canonicalRef=entry.canonicalRef.toLowerCase();
@@ -49,7 +56,7 @@ const generated:Sutta[]=Object.values(materializedCatalog as Record<string,Mater
     viCode:viCodeFor(canonicalRef,collection),
     collection,
     pali:'',
-    vi:entry.titleVi,
+    vi:cleanPublicViTitle(entry.titleVi),
     en:`Discourse ${code}`,
     topics:[],
     sourceUrl:entry.sourceUrl,
