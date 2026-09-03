@@ -9,6 +9,7 @@ const range=catalog.find(x=>x.collection==='SN'&&x.canonicalRef.includes('-'));
 if(!range)throw new Error('Missing canonical range smoke fixture');
 const anSmoke=catalog.find(x=>x.collection==='AN');
 if(!anSmoke)throw new Error('Missing AN smoke fixture');
+const anSearch=anSmoke.code||anSmoke.canonicalRef.toUpperCase().replace(/^AN(?=\d)/,'AN ');
 const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 
 async function http(path,expected=200){
@@ -84,8 +85,8 @@ await page.getByRole('button',{name:/Trường Bộ/}).click();await page.waitFo
 if(await cards.count()<1||await cards.count()>60)throw new Error('Collection filtering failed');
 await page.getByRole('button',{name:/Tăng Chi Bộ/}).click();await page.waitForTimeout(150);
 if(await cards.count()<1||await cards.count()>60)throw new Error('AN collection filtering failed');
-await page.locator('input[aria-label="search"]').fill(anSmoke.canonicalRef);await page.waitForTimeout(200);
-if(await cards.count()<1)throw new Error(`AN canonical search returned no result for ${anSmoke.canonicalRef}`);
+await page.locator('input[aria-label="search"]').fill(anSearch);await page.waitForTimeout(200);
+if(await cards.count()<1)throw new Error(`AN user-facing search returned no result for ${anSearch}`);
 
 const mn=byRef('mn21');
 await page.goto(`${base}/vi/library/${mn.slug}`,{waitUntil:'networkidle'});
@@ -102,12 +103,14 @@ if(!await page.locator('details.pdfDisclosure summary').isVisible())throw new Er
 if(!await page.locator('.readerToolbar.compactReaderToolbar').count())throw new Error('Reader progress/tools missing');
 if(!await page.getByRole('button',{name:'Lưu vị trí'}).count())throw new Error('Reader save-position control missing');
 
+await page.waitForTimeout(1000);
 await page.goto(`${base}/vi/stats`,{waitUntil:'networkidle'});
 if(!await page.getByText('Thống kê người đọc',{exact:false}).count())throw new Error('Stats dashboard missing in browser');
 const liveStats=await page.evaluate(async()=>{const r=await fetch('/api/stats?days=1');return r.json();});
 if(!liveStats?.ok||typeof liveStats?.totals?.views!=='number')throw new Error('Stats API browser check failed');
+if(liveStats.totals.views<1)throw new Error('Stats page-view persistence check failed: no page views recorded');
 
 const hydrationErrors=consoleErrors.filter(x=>/hydration|uncaught|typeerror|referenceerror/i.test(x));
 await browser.close();
 if(hydrationErrors.length)throw new Error(`Browser errors: ${hydrationErrors.join(' | ')}`);
-console.log(JSON.stringify({base,locales:8,stats:true,readers:readerRows.map(x=>x.canonicalRef),unicodeNfc:true,mobile:true,status:'PASS'}));
+console.log(JSON.stringify({base,locales:8,stats:true,statsViews:liveStats.totals.views,anSearch,readers:readerRows.map(x=>x.canonicalRef),unicodeNfc:true,mobile:true,status:'PASS'}));
