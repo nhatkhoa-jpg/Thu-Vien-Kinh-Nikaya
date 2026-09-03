@@ -84,7 +84,8 @@ jobs:
           cat /tmp/pick.env >> "$GITHUB_OUTPUT"
       - name: Stop cleanly when complete or monthly safe quota is exhausted
         if: steps.pick.outputs.done == 'true'
-        run: echo "No render this run: ${{ steps.pick.outputs.reason }}" >> "$GITHUB_STEP_SUMMARY"
+        run: |
+          echo "No render this run: ${{ steps.pick.outputs.reason }}" >> "$GITHUB_STEP_SUMMARY"
       - name: Render one discourse
         if: steps.pick.outputs.done != 'true'
         run: |
@@ -155,4 +156,5 @@ jobs:
           gh workflow run cloudflare-production.yml --repo "$GITHUB_REPOSITORY" --ref main -f reason="Verified Google Cloud TTS ${{ steps.pick.outputs.ref }}"
       - name: Summary
         if: steps.pick.outputs.done != 'true'
-        run: echo "Rendered and published ${{ steps.pick.outputs.ref }} with ${{ steps.pick.outputs.model }}; planned chars ${{ steps.pick.outputs.needed }}." >> "$GITHUB_STEP_SUMMARY"
+        run: |
+          echo "Rendered and published ${{ steps.pick.outputs.ref }} with ${{ steps.pick.outputs.model }}; planned chars ${{ steps.pick.outputs.needed }}." >> "$GITHUB_STEP_SUMMARY"
