@@ -1,11 +1,8 @@
 import type {Locale} from '@/lib/i18n';
-import {materializedVi} from '@/lib/materialized-content.generated';
 
 export type FullTextSegment={id:string;text:string};
 export type FullTextResult={language:string;author:string;authorUid:string;sourceUrl:string;segments:FullTextSegment[]};
 
-type MaterializedText=FullTextResult&{license?:string;contentHash?:string;contentVersion?:string};
-const materializedCorpusVi=materializedVi as Record<string,MaterializedText>;
 const localeMap:Partial<Record<Locale,string>>={ja:'jpn'};
 const preferredAuthors:Partial<Record<Locale,string>>={vi:'minh_chau',en:'sujato'};
 const apiBase='https://suttacentral.net/api';
@@ -78,11 +75,11 @@ async function fetchTranslation(uid:string,language:string,preferredAuthor?:stri
 }
 
 export async function getSuttaFullText(uid:string,locale:Locale):Promise<FullTextResult|null>{
-  if(locale==='vi'&&materializedCorpusVi[uid]?.segments?.length){
-    const x=materializedCorpusVi[uid];
-    return {language:x.language,author:x.author,authorUid:x.authorUid,sourceUrl:x.sourceUrl,segments:normalizeSegments(x.segments)};
-  }
-
+  // The verified materialized corpus remains preserved under data/content/**, but is
+  // intentionally not statically imported into the Cloudflare Worker. Importing
+  // thousands of full-text records makes the free-tier Worker exceed its 3 MiB
+  // compressed script limit. Runtime reading therefore resolves the same
+  // source-backed SuttaCentral translation directly and caches it at the edge.
   const language=localeMap[locale]||locale;
   const primary=await fetchTranslation(uid,language,preferredAuthors[locale]);
   if(primary)return primary;
