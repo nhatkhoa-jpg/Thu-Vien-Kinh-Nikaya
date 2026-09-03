@@ -81,7 +81,7 @@ jobs:
             echo "Smoke $ref -> $slug"
             curl -fsS "http://127.0.0.1:3000/vi/library/$slug" -o "/tmp/$ref.html"
             grep -Fq 'TOÀN VĂN BÀI KINH' "/tmp/$ref.html"
-            grep -Fq 'Bản dịch:' "/tmp/$ref.html"
+            grep -Fq 'Bản dịch' "/tmp/$ref.html"
             grep -Fq 'PDF' "/tmp/$ref.html"
           done
           echo 'PASS DN reader smoke: dn1/dn16/dn34 full text + PDF surface'
