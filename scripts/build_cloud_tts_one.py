@@ -63,7 +63,15 @@ def fetch_text(uid):
 
 def normalize(text):
     text=re.sub(r'\b(?:TTC|Vi-n|SC)\s*\d+[A-Za-z.-]*\b',' ',text,flags=re.I)
-    text=re.sub(r'\bMN\s*(\d+)\b',r'Trung Bộ \1',text,flags=re.I)
+    refs={
+        'DN':'Trường Bộ',
+        'MN':'Trung Bộ',
+        'SN':'Tương Ưng Bộ',
+        'AN':'Tăng Chi Bộ',
+        'KN':'Tiểu Bộ',
+    }
+    for code,name in refs.items():
+        text=re.sub(rf'\b{code}\s*(\d+(?:\.\d+)*)\b',rf'{name} \1',text,flags=re.I)
     text=text.replace('…','...')
     text=re.sub(r'\s+([,.;:!?])',r'\1',text)
     text=re.sub(r'([.!?])\s+',r'\1\n',text)
@@ -109,7 +117,7 @@ def main():
     mp3=out/f'{a.ref}.mp3'
     subprocess.run(['ffmpeg','-hide_banner','-loglevel','error','-y','-f','concat','-safe','0','-i',str(concat),'-c','copy',str(mp3)],check=True)
     dur=duration(mp3); sha=hashlib.sha256(mp3.read_bytes()).hexdigest()
-    meta={'version':'1.0','canonicalRef':a.ref,'language':'vi','provider':'Google Cloud Text-to-Speech','model':a.model,'voice':VOICES[a.model],'characters':sum(len(x) for x in pieces),'normalizedTextCharacters':len(text),'chunkCount':len(pieces),'durationSeconds':round(dur,3),'bytes':mp3.stat().st_size,'sha256':sha,'textSha256':hashlib.sha256(text.encode()).hexdigest(),'textSource':source,'textAuthorUid':chosen.get('author_uid'),'narrationNormalizationVersion':'1.0','speakingRate':0.92}
+    meta={'version':'1.0','canonicalRef':a.ref,'language':'vi','provider':'Google Cloud Text-to-Speech','model':a.model,'voice':VOICES[a.model],'characters':sum(len(x) for x in pieces),'normalizedTextCharacters':len(text),'chunkCount':len(pieces),'durationSeconds':round(dur,3),'bytes':mp3.stat().st_size,'sha256':sha,'textSha256':hashlib.sha256(text.encode()).hexdigest(),'textSource':source,'textAuthorUid':chosen.get('author_uid'),'narrationNormalizationVersion':'1.1','speakingRate':0.92}
     (out/f'{a.ref}.json').write_text(json.dumps(meta,ensure_ascii=False,indent=2),encoding='utf-8')
     print(json.dumps(meta,ensure_ascii=False))
 if __name__=='__main__': main()
