@@ -1,7 +1,7 @@
 import type {Locale} from '@/lib/i18n';
 
 export type FullTextSegment={id:string;text:string};
-export type FullTextResult={language:string;author:string;authorUid:string;sourceUrl:string;segments:FullTextSegment[]};
+export type FullTextResult={language:string;author:string;authorUid:string;sourceUrl:string;segments:FullTextSegment[];title?:string};
 
 const localeMap:Partial<Record<Locale,string>>={ja:'jpn'};
 const preferredAuthors:Partial<Record<Locale,string>>={vi:'minh_chau',en:'sujato'};
@@ -70,22 +70,15 @@ async function fetchTranslation(uid:string,language:string,preferredAuthor?:stri
       segments=extractSegments(payload);
     }
     if(!segments.length)return null;
-    return {language,author:chosen.author||chosen.author_short||authorUid,authorUid,sourceUrl:`https://suttacentral.net/${uid}/${language}/${authorUid}`,segments:normalizeSegments(segments)};
+    const localizedTitle=clean(String(chosen?.name||chosen?.title||chosen?.translation_title||''));
+    return {language,author:chosen.author||chosen.author_short||authorUid,authorUid,sourceUrl:`https://suttacentral.net/${uid}/${language}/${authorUid}`,segments:normalizeSegments(segments),title:localizedTitle||undefined};
   }catch{return null;}
 }
 
 export async function getSuttaFullText(uid:string,locale:Locale):Promise<FullTextResult|null>{
-  // The verified materialized corpus remains preserved under data/content/**, but is
-  // intentionally not statically imported into the Cloudflare Worker. Importing
-  // thousands of full-text records makes the free-tier Worker exceed its 3 MiB
-  // compressed script limit. Runtime reading therefore resolves the same
-  // source-backed SuttaCentral translation directly and caches it at the edge.
   const language=localeMap[locale]||locale;
   const primary=await fetchTranslation(uid,language,preferredAuthors[locale]);
   if(primary)return primary;
-
-  // Keep every interface useful while the multilingual corpus is still growing.
-  // English is a transparent source fallback, never an AI-generated substitute.
   if(language!=='en')return fetchTranslation(uid,'en',preferredAuthors.en);
   return null;
 }
