@@ -25,7 +25,6 @@ async function http(path,expected=200){
     }catch(error){
       lastError=error;
       if(attempt>=24)break;
-      // Do not mistake a stable application 404 for DNS/TLS propagation.
       if(error instanceof Error && /expected 200, got 404/.test(error.message))throw error;
       console.log(`Waiting for workers.dev TLS/DNS propagation: ${path} network error (attempt ${attempt}/24)`);
       await sleep(5000);
@@ -38,6 +37,14 @@ for(const locale of ['vi','en','th','my','si','km','lo','zh'])await http(`/${loc
 const robots=await http('/robots.txt');if(!robots.includes('sitemap.xml'))throw new Error('robots.txt missing sitemap');
 const sitemap=await http('/sitemap.xml');if(!sitemap.includes('<urlset'))throw new Error('sitemap.xml invalid');
 await http('/not-a-real-route',404);
+
+const statsShortcut=await fetch(`${base}/stats`,{redirect:'manual'});
+if(![301,302,303,307,308].includes(statsShortcut.status))throw new Error(`/stats shortcut expected redirect, got ${statsShortcut.status}`);
+const statsHtml=await http('/vi/stats');
+if(!statsHtml.includes('Thống kê người đọc'))throw new Error('Stats dashboard route missing expected heading');
+const statsApi=JSON.parse(await http('/api/stats?days=1'));
+if(!statsApi?.ok||!statsApi?.totals)throw new Error('Stats API invalid');
+
 for(const ref of ['dn1','mn21','sn1.1',range.canonicalRef,'an1.1']){
   const row=byRef(ref);const html=await http(`/vi/library/${row.slug}`);
   if(!html.includes(row.pali))throw new Error(`Reader missing Pali title canonicalRef=${ref}`);
@@ -95,4 +102,4 @@ if(!await page.getByRole('button',{name:'Lưu vị trí'}).count())throw new Err
 const hydrationErrors=consoleErrors.filter(x=>/hydration|uncaught|typeerror|referenceerror/i.test(x));
 await browser.close();
 if(hydrationErrors.length)throw new Error(`Browser errors: ${hydrationErrors.join(' | ')}`);
-console.log(JSON.stringify({base,locales:8,readers:['dn1','mn21','sn1.1',range.canonicalRef,'an1.1'],unicodeNfc:true,mobile:true,status:'PASS'}));
+console.log(JSON.stringify({base,locales:8,stats:true,readers:['dn1','mn21','sn1.1',range.canonicalRef,'an1.1'],unicodeNfc:true,mobile:true,status:'PASS'}));
