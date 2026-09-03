@@ -2,45 +2,12 @@
 
 const CONFIGURED_STATS_ENDPOINT=process.env.NEXT_PUBLIC_STATS_ENDPOINT?.replace(/\/$/,'');
 const PRODUCTION_STATS_ENDPOINT='https://thu-vien-kinh-nikaya.nhatkhoa-nikaya.workers.dev/api/stats';
-
-function statsEndpoint(){
-  if(CONFIGURED_STATS_ENDPOINT)return CONFIGURED_STATS_ENDPOINT;
-  if(typeof window!=='undefined'&&window.location.hostname.endsWith('.workers.dev'))return `${window.location.origin}/api/stats`;
-  return PRODUCTION_STATS_ENDPOINT;
-}
-
-function visitorId(){
-  try{
-    const key='nikaya:anon-stats-id';
-    let id=localStorage.getItem(key);
-    if(!id){id=crypto.randomUUID();localStorage.setItem(key,id)}
-    return id;
-  }catch{return 'anonymous'}
-}
-
-export function sendStat(type:'page_view'|'audio_play'|'audio_30s'|'audio_complete',data:Record<string,unknown>={}){
-  if(typeof window==='undefined')return;
-  const payload=JSON.stringify({
-    type,
-    visitorId:visitorId(),
-    path:location.pathname,
-    referrer:document.referrer||undefined,
-    ts:Date.now(),
-    ...data
-  });
-  const endpoint=statsEndpoint();
-  try{
-    if(navigator.sendBeacon){
-      navigator.sendBeacon(endpoint,new Blob([payload],{type:'application/json'}));
-      return;
-    }
-  }catch{}
-  void fetch(endpoint,{method:'POST',headers:{'content-type':'application/json'},body:payload,keepalive:true}).catch(()=>{});
-}
-
-export async function fetchStats(days=30){
-  const url=`${statsEndpoint()}?days=${Math.max(1,Math.min(90,days))}`;
-  const res=await fetch(url,{cache:'no-store'});
-  if(!res.ok)throw new Error(`Stats unavailable (${res.status})`);
-  return res.json();
-}
+function statsEndpoint(){if(CONFIGURED_STATS_ENDPOINT)return CONFIGURED_STATS_ENDPOINT;if(typeof window!=='undefined'&&window.location.hostname.endsWith('.workers.dev'))return `${window.location.origin}/api/stats`;return PRODUCTION_STATS_ENDPOINT}
+function visitorId(){try{const key='nikaya:anon-stats-id';let id=localStorage.getItem(key);if(!id){id=crypto.randomUUID();localStorage.setItem(key,id)}return id}catch{return'anonymous'}}
+function sessionId(){try{const key='nikaya:stats-session';const now=Date.now();const raw=sessionStorage.getItem(key);if(raw){const v=JSON.parse(raw);if(v?.id&&now-Number(v.last)<30*60_000){sessionStorage.setItem(key,JSON.stringify({id:v.id,last:now}));return v.id}}const id=crypto.randomUUID();sessionStorage.setItem(key,JSON.stringify({id,last:now}));return id}catch{return'anonymous-session'}}
+function device(){const ua=navigator.userAgent;return /ipad|tablet|android(?!.*mobile)/i.test(ua)?'tablet':/mobile|iphone|android/i.test(ua)?'mobile':'desktop'}
+function browser(){const ua=navigator.userAgent;if(/SamsungBrowser/i.test(ua))return'Samsung Internet';if(/Edg\//i.test(ua))return'Edge';if(/Chrome\//i.test(ua))return'Chrome';if(/Safari\//i.test(ua))return'Safari';if(/Firefox\//i.test(ua))return'Firefox';return'Other'}
+function os(){const ua=navigator.userAgent;if(/Android/i.test(ua))return'Android';if(/iPhone|iPad/i.test(ua))return'iOS/iPadOS';if(/Windows/i.test(ua))return'Windows';if(/Mac OS/i.test(ua))return'macOS';if(/Linux/i.test(ua))return'Linux';return'Other'}
+export type StatType='page_view'|'engaged'|'scroll_50'|'scroll_90'|'search'|'audio_play'|'audio_30s'|'audio_complete';
+export function sendStat(type:StatType,data:Record<string,unknown>={}){if(typeof window==='undefined')return;const payload=JSON.stringify({type,visitorId:visitorId(),sessionId:sessionId(),path:location.pathname,referrer:document.referrer||undefined,language:navigator.language,device:device(),browser:browser(),os:os(),ts:Date.now(),...data});const endpoint=statsEndpoint();try{if(navigator.sendBeacon){navigator.sendBeacon(endpoint,new Blob([payload],{type:'application/json'}));return}}catch{}void fetch(endpoint,{method:'POST',headers:{'content-type':'application/json'},body:payload,keepalive:true}).catch(()=>{})}
+export async function fetchStats(days=30){const url=`${statsEndpoint()}?days=${Math.max(1,Math.min(90,days))}`;const res=await fetch(url,{cache:'no-store'});if(!res.ok)throw new Error(`Stats unavailable (${res.status})`);return res.json()}
