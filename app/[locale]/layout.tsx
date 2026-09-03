@@ -2,6 +2,7 @@ import type {Metadata} from 'next';
 import {notFound} from 'next/navigation';
 import Header from '@/components/Header';
 import SiteFooter from '@/components/SiteFooter';
+import PageViewTracker from '@/components/PageViewTracker';
 import {dict,isDeferredLocale,isLocale,languageNames,locales,type Locale} from '@/lib/i18n';
 import {SITE_URL} from '@/lib/site';
 
@@ -30,5 +31,5 @@ export default async function LocaleLayout({children,params}:{children:React.Rea
   if(!isLocale(raw))notFound();
   const locale=raw as Locale;
   const rtl=locale==='ar'||locale==='ur';
-  return <div lang={locale} dir={rtl?'rtl':'ltr'} data-language={languageNames[locale]}><Header locale={locale}/>{children}<SiteFooter locale={locale}/></div>;
+  return <div lang={locale} dir={rtl?'rtl':'ltr'} data-language={languageNames[locale]}><PageViewTracker/><Header locale={locale}/>{children}<SiteFooter locale={locale}/></div>;
 }
