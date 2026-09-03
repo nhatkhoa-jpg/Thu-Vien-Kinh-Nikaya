@@ -7,6 +7,7 @@ import './mobile-public.css';
 import './public-polish-v2.css';
 import './site-pages.css';
 import './canon.css';
+import './stats.css';
 import type {Metadata} from 'next';
 import SiteStatsTracker from '@/components/SiteStatsTracker';
 
