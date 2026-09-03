@@ -1,0 +1,1 @@
+Stats V2 preserves privacy: no IP, email, or names; use anonymous visitor/session IDs, coarse geolocation, referrer domain, device class, engagement metrics, internal search terms, and conservative bot classification.
