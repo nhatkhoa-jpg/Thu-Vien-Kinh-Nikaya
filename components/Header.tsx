@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import {Activity,BookOpen,Headphones,Home,Library,Search} from 'lucide-react';
+import {Activity,Headphones,Home,Library,Search} from 'lucide-react';
 import {type Locale} from '@/lib/i18n';
 import {publicUi} from '@/lib/public-ui';
 import LanguageSelect from './LanguageSelect';
@@ -11,7 +11,7 @@ export default function Header({locale}:{locale:Locale}){
     <header className="topbar">
       <div className="shell nav">
         <Link className="logo" href={`/${locale}`} aria-label={u.brand}>
-          <span className="logoMark"><BookOpen size={20}/></span>
+          <span className="logoMark brandedLogoMark"><img src="/brand/nikaya-library-mark.svg" alt="" width="46" height="46"/></span>
           <span className="logoText"><strong>{u.brand}</strong><small>{u.brandSub}</small></span>
         </Link>
         <nav className="desktopNav" aria-label={u.primaryNav}>
@@ -20,7 +20,7 @@ export default function Header({locale}:{locale:Locale}){
           <Link href={`/${locale}/tam-tang`}>{u.canon}</Link>
           <Link href={`/${locale}#library`}>{u.library}</Link>
           <Link href={`/${locale}#featured`}>{u.listen}</Link>
-          <Link href={`/${locale}/tien-do`}><Activity size={14}/>{u.progress}</Link>
+          <Link href={`/${locale}/tien-do`}><Activity size={16}/>{u.progress}</Link>
         </nav>
         <div className="headerActions">
           <HeaderTools locale={locale}/>
