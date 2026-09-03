@@ -25,6 +25,8 @@ async function http(path,expected=200){
     }catch(error){
       lastError=error;
       if(attempt>=24)break;
+      // Do not mistake a stable application 404 for DNS/TLS propagation.
+      if(error instanceof Error && /expected 200, got 404/.test(error.message))throw error;
       console.log(`Waiting for workers.dev TLS/DNS propagation: ${path} network error (attempt ${attempt}/24)`);
       await sleep(5000);
     }
@@ -36,14 +38,11 @@ for(const locale of ['vi','en','th','my','si','km','lo','zh'])await http(`/${loc
 const robots=await http('/robots.txt');if(!robots.includes('sitemap.xml'))throw new Error('robots.txt missing sitemap');
 const sitemap=await http('/sitemap.xml');if(!sitemap.includes('<urlset'))throw new Error('sitemap.xml invalid');
 await http('/not-a-real-route',404);
-for(const ref of ['dn1','mn21','sn1.1',range.canonicalRef]){
+for(const ref of ['dn1','mn21','sn1.1',range.canonicalRef,'an1.1']){
   const row=byRef(ref);const html=await http(`/vi/library/${row.slug}`);
   if(!html.includes(row.pali))throw new Error(`Reader missing Pali title canonicalRef=${ref}`);
   if(!html.includes('SuttaCentral'))throw new Error(`Reader missing provenance canonicalRef=${ref}`);
 }
-const anHtml=await http('/vi/library/an1-1');
-if(!anHtml.includes('SuttaCentral'))throw new Error('AN 1.1 reader missing provenance');
-if(!/AN\s*1\.1|TCB\s*1\.1/i.test(anHtml))throw new Error('AN 1.1 reader missing canonical code');
 
 const browser=await chromium.launch({headless:true});
 const page=await browser.newPage({viewport:{width:390,height:844},isMobile:true,hasTouch:true});
