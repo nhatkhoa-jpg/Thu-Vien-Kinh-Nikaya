@@ -26,6 +26,12 @@ function viCodeFor(ref:string,collection:string){
   const suffix=ref.toLowerCase().replace(collection.toLowerCase(),'');
   return `${prefix} ${suffix}`.trim();
 }
+function versionTimestamp(value:string){
+  const match=String(value||'').match(/^\d{4}-\d{2}-\d{2}(?:T[^ ]+)?/);
+  if(!match)return 0;
+  const time=Date.parse(match[0]);
+  return Number.isFinite(time)?time:0;
+}
 
 const curated:Sutta[]=(suttasRaw as CanonicalSutta[]).map(s=>({id:s.id,canonicalRef:s.canonicalRef,slug:s.slug,code:s.code,viCode:s.viCode,collection:s.collection,pali:s.pali,vi:s.vi,en:s.en,topics:s.topics,sourceUrl:s.source.url,licenseShort:`${s.source.translator} · ${s.source.license}`,youtubeId:s.media.youtubeId,summaryVi:s.summary.vi,summaryEn:s.summary.en,practiceVi:s.practice.vi,practiceEn:s.practice.en,readMinutes:s.readMinutes,featured:s.featured,contentVersion:s.contentVersion}));
 const curatedRefs=new Set(curated.map(s=>s.canonicalRef.toLowerCase()));
@@ -55,7 +61,14 @@ const generated:Sutta[]=Object.values(materializedCatalog as Record<string,Mater
   }];
 });
 
-export const suttas:Sutta[]=[...curated,...generated].sort((a,b)=>a.collection.localeCompare(b.collection)||a.canonicalRef.localeCompare(b.canonicalRef,undefined,{numeric:true}));
+const allSuttas:Sutta[]=[...curated,...generated].sort((a,b)=>a.collection.localeCompare(b.collection)||a.canonicalRef.localeCompare(b.canonicalRef,undefined,{numeric:true}));
+const dated=[...allSuttas].filter(s=>versionTimestamp(s.contentVersion)>0).sort((a,b)=>versionTimestamp(b.contentVersion)-versionTimestamp(a.contentVersion));
+const recentRefs=new Set<string>();
+for(const collection of ['DN','MN','SN','AN','KN']){
+  dated.filter(s=>s.collection===collection).slice(0,2).forEach(s=>recentRefs.add(s.canonicalRef.toLowerCase()));
+}
+for(const s of dated){if(recentRefs.size>=8)break;recentRefs.add(s.canonicalRef.toLowerCase());}
+export const suttas:Sutta[]=allSuttas.map(s=>({...s,featured:recentRefs.has(s.canonicalRef.toLowerCase())}));
 const audioCatalog=audioRaw as AudioCatalog;
 const bookCatalog=booksRaw as BookCatalog;
 export function collectionDisplayCode(code:string,vi:boolean){if(!vi)return code;return collections.find(c=>c.code===code)?.viCode||code;}
