@@ -11,8 +11,8 @@
     "chirp3-hd": {
       "freeTierCharacters": 1000000,
       "projectSafetyLimitCharacters": 900000,
-      "usedCharacters": 12099,
-      "remainingProjectSafeCharacters": 887901,
+      "usedCharacters": 20738,
+      "remainingProjectSafeCharacters": 879262,
       "status": "SAFE"
     },
     "neural2": {
@@ -114,6 +114,18 @@
       ],
       "model": "wavenet",
       "workflowRun": "33599682252",
+      "result": "success"
+    },
+    {
+      "date": "2026-09-03",
+      "purpose": "progressive final-quality scripture audio",
+      "canonicalRef": "mn7",
+      "charactersPerVoice": 8639,
+      "voices": [
+        "vi-VN-Chirp3-HD-Aoede"
+      ],
+      "model": "chirp3-hd",
+      "workflowRun": "33791274578",
       "result": "success"
     }
   ]
