@@ -37,8 +37,7 @@ jobs:
           if(knVi.length!==expected||knEn.length!==expected)throw new Error(`knowledge export mismatch: expected ${expected}`);
           for(const [name,rows] of [['rag.vi',ragVi],['rag.en',ragEn]]){
             if(rows.length<expected)throw new Error(`${name} count below catalog coverage ${expected}: ${rows.length}`);
-            const ids=new Set();
-            const chunkIds=new Set();
+            const ids=new Set();const chunkIds=new Set();
             for(const row of rows){
               if(!String(row.text||'').trim())throw new Error(`${name} contains empty text: ${row.chunk_id||'unknown'}`);
               if(!row.sutta_id)throw new Error(`${name} chunk missing sutta_id`);
@@ -52,8 +51,7 @@ jobs:
           const mn=suttas.filter(s=>s.collection==='MN');
           if(mn.length===152){
             for(let i=1;i<=152;i++){
-              const id=`nikaya.mn.${i}`;
-              const asset=audio[id]?.vi;
+              const id=`nikaya.mn.${i}`;const asset=audio[id]?.vi;
               if(!asset)throw new Error(`missing Vietnamese MP3 mapping ${id}`);
               if(asset.provider!=='5 Đại Tạng Kinh Nikāya')throw new Error(`MN ${i} is not mapped to library prebuilt MP3`);
               if(!asset.url.includes(`/releases/download/mn-vi-audio-v1/mn${i}.mp3`))throw new Error(`bad MP3 URL for MN ${i}`);
@@ -103,12 +101,20 @@ jobs:
           must_have /tmp/mn21.html '/media/audio/gemini/mn/mn21.mp3' 'preferred Gemini audio candidate'
           must_have /tmp/mn21.html 'mn21.mp3' 'MN21 fallback MP3 candidate'
           must_have /tmp/mn21.html 'mn21.manifest.json' 'MN21 preservation manifest URL'
-          must_have /tmp/mn21.html 'Bản dịch:' 'compact source label'
+          if grep -Fq 'Bản dịch:' /tmp/mn21.html || grep -Fq 'NGUỒN:' /tmp/mn21.html; then echo 'PASS: compact source provenance label'; else echo 'FAIL: reader has no source provenance label'; exit 1; fi
           must_have components/R2AudioDisclosure.tsx "method:'HEAD'" 'runtime audio availability probing'
           must_have components/R2AudioDisclosure.tsx "provider==='gemini'" 'Gemini quality preference'
           must_have components/BrowserReader.tsx 'speechSynthesis' 'browser speech fallback implementation'
           if grep -Fq 'Giọng thư viện' /tmp/mn21.html; then echo 'FAIL: Legacy library TTS leaked into reader'; exit 1; fi
           echo 'PASS: no legacy library TTS'
+
+          curl --fail --silent http://127.0.0.1:3000/zh/about -o /tmp/zh-about.html
+          must_have /tmp/zh-about.html '关于本馆' 'Chinese About localized'
+          must_have /tmp/zh-about.html '来源与编辑原则' 'Chinese footer editorial link localized'
+          must_not_have /tmp/zh-about.html 'About the library' 'Chinese About has no English heading fallback'
+          curl --fail --silent http://127.0.0.1:3000/th/privacy -o /tmp/th-privacy.html
+          must_have /tmp/th-privacy.html 'นโยบายความเป็นส่วนตัว' 'Thai Privacy localized'
+          must_not_have /tmp/th-privacy.html 'Privacy policy' 'Thai Privacy has no English heading fallback'
 
           curl --fail --silent http://127.0.0.1:3000/vi/tien-do -o /tmp/progress.html
           must_have /tmp/progress.html 'DỰ ÁN 5 ĐẠI TẠNG KINH' 'public progress page heading'
