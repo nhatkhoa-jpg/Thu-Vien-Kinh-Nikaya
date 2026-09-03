@@ -20,9 +20,9 @@ export const revalidate=86400;
 
 export async function generateMetadata({params}:{params:Promise<{locale:string;slug:string}>}):Promise<Metadata>{
   const {locale:raw,slug}=await params;if(!isLocale(raw))return{};
-  const s=suttas.find(x=>x.slug===slug);if(!s)return{};const locale=raw as Locale;const vi=locale==='vi';const code=suttaDisplayCode(s,vi);
-  const localized=await getSuttaFullText(s.canonicalRef,locale);const displayTitle=localized?.title||(vi?s.vi:s.en);const title=`${code} · ${displayTitle}`;
-  const summary=vi?s.summaryVi:s.summaryEn;const description=summary||`${code} · ${displayTitle} · ${collectionDisplayCode(s.collection,vi)}`;
+  const s=suttas.find(x=>x.slug===slug);if(!s)return{};const locale=raw as Locale;const vi=locale==='vi';const en=locale==='en';const code=suttaDisplayCode(s,vi);
+  const localized=await getSuttaFullText(s.canonicalRef,locale);const displayTitle=localized?.title||(vi?s.vi:en?s.en:(s.pali||s.code));const title=`${code} · ${displayTitle}`;
+  const summary=vi?s.summaryVi:en?s.summaryEn:'';const description=summary||`${code} · ${displayTitle} · ${collectionDisplayCode(s.collection,vi)}`;
   const deferred=isDeferredLocale(locale);const canonicalLocale=deferred?'en':locale;
   return{title,description,robots:deferred?{index:false,follow:true}:undefined,alternates:{canonical:`${SITE_URL}/${canonicalLocale}/library/${slug}`,languages:Object.fromEntries(scriptureLocales.map(l=>[l,`${SITE_URL}/${l}/library/${slug}`]))},openGraph:{title,description,url:`${SITE_URL}/${canonicalLocale}/library/${slug}`,type:'article'}};
 }
@@ -30,19 +30,19 @@ export async function generateMetadata({params}:{params:Promise<{locale:string;s
 export default async function SuttaPage({params}:{params:Promise<{locale:string;slug:string}>}){
   const {locale:raw,slug}=await params;if(!isLocale(raw))notFound();
   const locale=raw as Locale;const d=dict(locale);const u=publicUi(locale);const s=suttas.find(x=>x.slug===slug);if(!s)notFound();
-  const vi=locale==='vi';const displayCode=suttaDisplayCode(s,vi);const displayCollection=collectionDisplayCode(s.collection,vi);
+  const vi=locale==='vi';const en=locale==='en';const displayCode=suttaDisplayCode(s,vi);const displayCollection=collectionDisplayCode(s.collection,vi);
   const related=suttas.filter(x=>x.collection===s.collection&&x.slug!==s.slug).slice(0,3);const audio=suttaAudio(s,locale);
   const canonicalKey=s.canonicalRef.toLowerCase();const collectionKey=s.collection.toLowerCase();
   const r2AudioSources=vi?[{src:`/media/audio/gemini/${collectionKey}/${canonicalKey}.mp3`,label:'Gemini · giọng đọc chất lượng cao',provider:'gemini' as const},{src:`/media/audio/${collectionKey}/${canonicalKey}.mp3`,label:'MP3 thư viện · dự phòng',provider:'local' as const},...(audio?[{src:audio.url,label:'MP3 thư viện · dự phòng',provider:'local' as const,downloadUrl:audio.downloadUrl,manifestUrl:audio.manifestUrl,trustedFallback:true}]:[])]:[];
   const localizedText=await getSuttaFullText(s.canonicalRef,locale);
   const englishFallback=!localizedText&&locale!=='en'?await getSuttaFullText(s.canonicalRef,'en'):null;
   const fullText=localizedText||englishFallback;const fallbackToEnglish=Boolean(!localizedText&&englishFallback);
-  const title=localizedText?.title||englishFallback?.title||(vi?s.vi:s.en);
+  const title=localizedText?.title||englishFallback?.title||(vi?s.vi:en?s.en:(s.pali||s.code));
   const relatedLocalized=await Promise.all(related.map(async r=>({s:r,text:locale==='en'?null:await getSuttaFullText(r.canonicalRef,locale)})));
   const sourceUrl=fullText?.sourceUrl||s.sourceUrl;
   const paragraphs=fullText?.segments.map(x=>x.text).filter(Boolean)||[];const plainText=paragraphs.join('\n\n');
   const sourceAuthor=(fullText?.author||'').replace(/^Bhikkhu\s+/i,'').trim();const sourceLabel=fullText?`${sourceAuthor||fullText.author} · SuttaCentral`:s.licenseShort;
-  const summary=(vi?s.summaryVi:s.summaryEn).trim();const practice=(vi?s.practiceVi:s.practiceEn).trim();const hasSummary=Boolean(summary);const hasPractice=Boolean(practice);
+  const summary=(vi?s.summaryVi:en?s.summaryEn:'').trim();const practice=(vi?s.practiceVi:en?s.practiceEn:'').trim();const hasSummary=Boolean(summary);const hasPractice=Boolean(practice);
   const measuredMinutes=plainText?Math.max(1,Math.ceil(plainText.split(/\s+/).filter(Boolean).length/200)):null;const readMinutes=s.readMinutes>0?s.readMinutes:measuredMinutes;const estimated=s.readMinutes<=0&&readMinutes!==null;
   const practiceNumber=hasSummary?'02':'01';const fullTextNumber=hasSummary&&hasPractice?'03':hasSummary||hasPractice?'02':'01';
 
@@ -58,7 +58,7 @@ export default async function SuttaPage({params}:{params:Promise<{locale:string;
 
         <section className="readerEssentials compactEssentials" aria-label={u.listenDownload}>
           {vi&&r2AudioSources.length>0?<R2AudioDisclosure sources={r2AudioSources} storageKey={`${locale}:${s.slug}`} sourceUrl={sourceUrl} vi={vi}/>:audio&&<details className="essentialDisclosure mp3Disclosure primaryMp3Disclosure" id="mp3"><summary title={u.listenSub}><span className="miniActionIcon"><Headphones size={17}/></span><span><strong>{u.listenLabel}</strong><small>{u.listenSub}</small></span><ChevronDown size={15} className="disclosureChevron"/></summary><div className="disclosureBody"><AudioPlayer src={audio.url} segments={audio.segments} manifestUrl={audio.manifestUrl} storageKey={`${locale}:${s.slug}`}/><div className="mp3Links"><a className="downloadLink" href={audio.downloadUrl||audio.url} target="_blank" rel="noreferrer"><Download size={16}/>{u.openDownloadMp3}</a>{audio.sourceUrl&&<a className="audioSource" href={audio.sourceUrl} target="_blank" rel="noreferrer">{u.textSource}<ExternalLink size={13}/></a>}</div></div></details>}
-          {plainText&&<BrowserReader text={plainText} locale={fallbackToEnglish?'en':locale}/>} 
+          {plainText&&<BrowserReader text={plainText} locale={fallbackToEnglish?'en':locale} uiLocale={locale}/>} 
           {paragraphs.length>0&&<details className="essentialDisclosure pdfDisclosure" id="pdf"><summary title={u.pdfGenerate}><span className="miniActionIcon"><FileText size={17}/></span><span><strong>PDF</strong><small>{u.pdfGenerated}</small></span><ChevronDown size={15} className="disclosureChevron"/></summary><div className="disclosureBody"><PdfDownloadButton code={displayCode} title={title} pali={s.pali} summary={summary} paragraphs={paragraphs} sourceLabel={sourceLabel} sourceUrl={sourceUrl} locale={fallbackToEnglish?'en':locale}/></div></details>}
         </section>
 
@@ -67,13 +67,13 @@ export default async function SuttaPage({params}:{params:Promise<{locale:string;
           {hasPractice&&<section><span className="textSectionLabel">{practiceNumber} · {d.readerPractice}</span><p>{practice}</p></section>}
           <section className="fullTextSection">
             <div className="fullTextHeader"><div><span className="textSectionLabel">{fullTextNumber} · {u.fullText}</span><h2>{u.readHere}</h2></div>{fullText&&<small>{fallbackToEnglish?'English · ':`${u.translation} · `}{sourceAuthor||fullText.author}</small>}</div>
-            {paragraphs.length&&fullText?<PassageCollector segments={fullText.segments} canonicalRef={s.canonicalRef} displayCode={displayCode} title={title} slug={slug} locale={fallbackToEnglish?'en':locale}/>:<div className="contentUnavailable"><p>{u.unavailable}</p></div>}
+            {paragraphs.length&&fullText?<PassageCollector segments={fullText.segments} canonicalRef={s.canonicalRef} displayCode={displayCode} title={title} slug={slug} locale={locale}/>:<div className="contentUnavailable"><p>{u.unavailable}</p></div>}
           </section>
           <section className="sourceReading compactSource"><div><span className="textSectionLabel">{u.source}</span><p>{fullText?<><strong>{fallbackToEnglish?'English translation':u.translation}:</strong> {sourceAuthor||fullText.author} <span aria-hidden="true">·</span> <a className="sourceInlineLink" href={sourceUrl} target="_blank" rel="noreferrer">{u.verifySource} <ExternalLink size={13}/></a></>:<><strong>{u.source}:</strong> {s.licenseShort} <span aria-hidden="true">·</span> <a className="sourceInlineLink" href={sourceUrl} target="_blank" rel="noreferrer">SuttaCentral <ExternalLink size={13}/></a></>}</p></div></section>
         </div>
       </article>
       <aside className="readerSide">{s.youtubeId&&<section className="sideCard"><h3>{d.relatedVideo}</h3><YouTubeEmbed videoId={s.youtubeId} title={`${displayCode} ${title}`}/></section>}</aside>
     </div>
-    {related.length>0&&<section className="relatedSection"><div className="sectionHead"><div><h2>{u.moreCollection}</h2></div></div><div className="relatedGrid">{relatedLocalized.map(({s:r,text})=><Link href={`/${locale}/library/${r.slug}`} key={r.slug}><span>{suttaDisplayCode(r,vi)}</span><strong>{text?.title||(vi?r.vi:r.en)}</strong><ArrowRight size={17}/></Link>)}</div></section>}
+    {related.length>0&&<section className="relatedSection"><div className="sectionHead"><div><h2>{u.moreCollection}</h2></div></div><div className="relatedGrid">{relatedLocalized.map(({s:r,text})=><Link href={`/${locale}/library/${r.slug}`} key={r.slug}><span>{suttaDisplayCode(r,vi)}</span><strong>{text?.title||(vi?r.vi:en?r.en:(r.pali||r.code))}</strong><ArrowRight size={17}/></Link>)}</div></section>}
   </div></main>;
 }
