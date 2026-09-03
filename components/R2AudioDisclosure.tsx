@@ -4,26 +4,28 @@ import {useEffect,useMemo,useState} from 'react';
 import {ChevronDown,Download,ExternalLink,Headphones} from 'lucide-react';
 import AudioPlayer from '@/components/AudioPlayer';
 
-type AudioCandidate={src:string;label:string;provider:'gemini'|'local';downloadUrl?:string;manifestUrl?:string};
+type AudioCandidate={src:string;label:string;provider:'gemini'|'local';downloadUrl?:string;manifestUrl?:string;trustedFallback?:boolean};
 type Props={sources:AudioCandidate[];storageKey:string;sourceUrl?:string;vi:boolean};
 
 export default function R2AudioDisclosure({sources,storageKey,sourceUrl,vi}:Props){
   const candidates=useMemo(()=>sources.filter(x=>Boolean(x.src)),[sources]);
-  const [selected,setSelected]=useState<AudioCandidate|null>(null);
+  const trustedFallback=useMemo(()=>candidates.find(x=>x.trustedFallback)||null,[candidates]);
+  const [selected,setSelected]=useState<AudioCandidate|null>(trustedFallback);
   useEffect(()=>{
     let live=true;
-    setSelected(null);
+    setSelected(trustedFallback);
     (async()=>{
       for(const candidate of candidates){
+        if(candidate.trustedFallback)continue;
         try{
           const response=await fetch(candidate.src,{method:'HEAD',cache:'no-store'});
           if(response.ok){if(live)setSelected(candidate);return;}
         }catch{}
       }
-      if(live)setSelected(null);
+      if(live)setSelected(trustedFallback);
     })();
     return()=>{live=false;};
-  },[candidates]);
+  },[candidates,trustedFallback]);
   if(!selected)return null;
   const bestAvailable=selected.provider==='gemini';
   return <details className="essentialDisclosure mp3Disclosure primaryMp3Disclosure" id="mp3-r2">
