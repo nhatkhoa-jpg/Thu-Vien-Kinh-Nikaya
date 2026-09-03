@@ -15,12 +15,15 @@ import BrowserReader from '@/components/BrowserReader';
 import PdfDownloadButton from '@/components/PdfDownloadButton';
 import ReaderQuickJump from '@/components/ReaderQuickJump';
 import PassageCollector from '@/components/PassageCollector';
+import ReaderRetentionSidebar from '@/components/ReaderRetentionSidebar';
 
 export const revalidate=86400;
 
+function cleanPublicTitle(value:string){return value.replace(/\s*\((?:bản Việt|Vietnamese)[^)]*(?:metadata|nguồn|source)[^)]*\)\s*$/i,'').replace(/\s*;\s*tiêu đề Việt chưa có trong metadata nguồn\s*/i,'').trim()}
+
 export async function generateMetadata({params}:{params:Promise<{locale:string;slug:string}>}):Promise<Metadata>{
   const {locale:raw,slug}=await params;if(!isLocale(raw))return{};
-  const s=suttas.find(x=>x.slug===slug);if(!s)return{};const locale=raw as Locale;const vi=locale==='vi';const code=suttaDisplayCode(s,vi);const displayTitle=vi?s.vi:s.en;const title=`${code} · ${displayTitle}`;const summary=vi?s.summaryVi:s.summaryEn;const description=summary||`${code} · ${displayTitle} · ${collectionDisplayCode(s.collection,vi)}`;
+  const s=suttas.find(x=>x.slug===slug);if(!s)return{};const locale=raw as Locale;const vi=locale==='vi';const code=suttaDisplayCode(s,vi);const displayTitle=cleanPublicTitle(vi?s.vi:s.en);const title=`${code} · ${displayTitle}`;const summary=vi?s.summaryVi:s.summaryEn;const description=summary||`${code} · ${displayTitle} · ${collectionDisplayCode(s.collection,vi)}`;
   const deferred=isDeferredLocale(locale);const canonicalLocale=deferred?'en':locale;
   return{title,description,robots:deferred?{index:false,follow:true}:undefined,alternates:{canonical:`${SITE_URL}/${canonicalLocale}/library/${slug}`,languages:Object.fromEntries(scriptureLocales.map(l=>[l,`${SITE_URL}/${l}/library/${slug}`]))},openGraph:{title,description,url:`${SITE_URL}/${canonicalLocale}/library/${slug}`,type:'article'}};
 }
@@ -29,12 +32,15 @@ export default async function SuttaPage({params}:{params:Promise<{locale:string;
   const {locale:raw,slug}=await params;if(!isLocale(raw))notFound();
   const locale=raw as Locale;const d=dict(locale);const u=publicUi(locale);const s=suttas.find(x=>x.slug===slug);if(!s)notFound();
   const vi=locale==='vi';const displayCode=suttaDisplayCode(s,vi);const displayCollection=collectionDisplayCode(s.collection,vi);
-  const related=suttas.filter(x=>x.collection===s.collection&&x.slug!==s.slug).slice(0,3);const audio=suttaAudio(s,locale);
-  const canonicalKey=s.canonicalRef.toLowerCase();const collectionKey=s.collection.toLowerCase();
+  const sameCollection=suttas.filter(x=>x.collection===s.collection);const currentIndex=sameCollection.findIndex(x=>x.slug===s.slug);const nextSutta=currentIndex>=0?sameCollection[currentIndex+1]||null:null;
+  const related=sameCollection.filter(x=>x.slug!==s.slug).slice(Math.max(0,currentIndex-1),Math.max(0,currentIndex-1)+4);const audio=suttaAudio(s,locale);
+  const recommended=suttas.filter(x=>x.slug!==s.slug&&(x.featured||x.collection===s.collection)).slice(0,4).map(x=>({slug:x.slug,code:suttaDisplayCode(x,vi),title:cleanPublicTitle(vi?x.vi:x.en),collection:collectionDisplayCode(x.collection,vi),hasAudio:Boolean(suttaAudio(x,locale))}));
+  const nextItem=nextSutta?{slug:nextSutta.slug,code:suttaDisplayCode(nextSutta,vi),title:cleanPublicTitle(vi?nextSutta.vi:nextSutta.en),collection:collectionDisplayCode(nextSutta.collection,vi),hasAudio:Boolean(suttaAudio(nextSutta,locale))}:null;
+  const canonicalKey=s.canonicalRef.toLowerCase();const collectionKey=s.collection.toLowerCase();const coverUrl=`/visuals/nikaya/${collectionKey}-book.svg`;
   const r2AudioSources=vi?[{src:`/media/audio/gemini/${collectionKey}/${canonicalKey}.mp3`,label:'Gemini · giọng đọc chất lượng cao',provider:'gemini' as const},{src:`/media/audio/${collectionKey}/${canonicalKey}.mp3`,label:'MP3 thư viện · dự phòng',provider:'local' as const},...(audio?[{src:audio.url,label:'MP3 thư viện · dự phòng',provider:'local' as const,downloadUrl:audio.downloadUrl,manifestUrl:audio.manifestUrl,trustedFallback:true}]:[])]:[];
   const fullText=await getSuttaFullText(s.canonicalRef,locale);
   const fallbackToEnglish=Boolean(fullText&&locale!=='en'&&fullText.language==='en');
-  const title=(!fallbackToEnglish&&fullText?.title?.trim())|| (vi?s.vi:s.en);
+  const title=cleanPublicTitle((!fallbackToEnglish&&fullText?.title?.trim())|| (vi?s.vi:s.en));
   const sourceUrl=fullText?.sourceUrl||s.sourceUrl;
   const paragraphs=fullText?.segments.map(x=>x.text).filter(Boolean)||[];const plainText=paragraphs.join('\n\n');
   const sourceAuthor=(fullText?.author||'').replace(/^Bhikkhu\s+/i,'').trim();const sourceLabel=fullText?`${sourceAuthor||fullText.author} · SuttaCentral`:s.licenseShort;
@@ -47,6 +53,7 @@ export default async function SuttaPage({params}:{params:Promise<{locale:string;
     <ReaderQuickJump locale={locale} currentSlug={slug}/>
     <div className="readerLayout">
       <article className="readerMain">
+        <div className="readerBookHero" aria-hidden="true"><img src={coverUrl} alt=""/></div>
         <div className="readerTitleMeta"><span className="readerCode dualCode"><strong>{displayCode}</strong>{vi&&<small>{s.code}</small>}</span>{readMinutes&&<span><Clock size={14}/>{estimated?'~':''}{readMinutes} {u.minutes}</span>}{audio&&<span><Headphones size={14}/>{u.mp3Available}</span>}</div>
         <h1>{title}</h1><p className="readerPali">{s.pali}</p><ReaderProgress id={`${locale}:${s.slug}`} locale={locale}/>
 
@@ -61,15 +68,12 @@ export default async function SuttaPage({params}:{params:Promise<{locale:string;
         <div className="suttaText">
           {hasSummary&&<section><span className="textSectionLabel">01 · {d.readerIntro}</span><p>{summary}</p></section>}
           {hasPractice&&<section><span className="textSectionLabel">{practiceNumber} · {d.readerPractice}</span><p>{practice}</p></section>}
-          <section className="fullTextSection">
-            <div className="fullTextHeader"><div><span className="textSectionLabel">{fullTextNumber} · {u.fullText}</span><h2>{u.readHere}</h2></div>{fullText&&<small>{fallbackToEnglish?'English · ':`${u.translation} · `}{sourceAuthor||fullText.author}</small>}</div>
-            {paragraphs.length&&fullText?<PassageCollector segments={fullText.segments} canonicalRef={s.canonicalRef} displayCode={displayCode} title={title} slug={slug} locale={fallbackToEnglish?'en':locale}/>:<div className="contentUnavailable"><p>{u.unavailable}</p></div>}
-          </section>
+          <section className="fullTextSection"><div className="fullTextHeader"><div><span className="textSectionLabel">{fullTextNumber} · {u.fullText}</span><h2>{u.readHere}</h2></div>{fullText&&<small>{fallbackToEnglish?'English · ':`${u.translation} · `}{sourceAuthor||fullText.author}</small>}</div>{paragraphs.length&&fullText?<PassageCollector segments={fullText.segments} canonicalRef={s.canonicalRef} displayCode={displayCode} title={title} slug={slug} locale={fallbackToEnglish?'en':locale}/>:<div className="contentUnavailable"><p>{u.unavailable}</p></div>}</section>
           <section className="sourceReading compactSource"><div><span className="textSectionLabel">{u.source}</span><p>{fullText?<><strong>{u.translation}:</strong> {sourceAuthor||fullText.author} <span aria-hidden="true">·</span> <a className="sourceInlineLink" href={sourceUrl} target="_blank" rel="noreferrer">{u.verifySource} <ExternalLink size={13}/></a></>:<><strong>{u.source}:</strong> {s.licenseShort} <span aria-hidden="true">·</span> <a className="sourceInlineLink" href={sourceUrl} target="_blank" rel="noreferrer">SuttaCentral <ExternalLink size={13}/></a></>}</p></div></section>
         </div>
       </article>
-      <aside className="readerSide">{s.youtubeId&&<section className="sideCard"><h3>{d.relatedVideo}</h3><YouTubeEmbed videoId={s.youtubeId} title={`${displayCode} ${title}`}/></section>}</aside>
+      <div className="readerSide">{s.youtubeId&&<section className="sideCard"><h3>{d.relatedVideo}</h3><YouTubeEmbed videoId={s.youtubeId} title={`${displayCode} ${title}`}/></section>}<ReaderRetentionSidebar locale={locale} currentSlug={slug} collection={displayCollection} currentCode={displayCode} currentTitle={title} coverUrl={coverUrl} translator={sourceAuthor||undefined} recommended={recommended} next={nextItem}/></div>
     </div>
-    {related.length>0&&<section className="relatedSection"><div className="sectionHead"><div><h2>{u.moreCollection}</h2></div></div><div className="relatedGrid">{related.map(r=><Link href={`/${locale}/library/${r.slug}`} key={r.slug}><span>{suttaDisplayCode(r,vi)}</span><strong>{vi?r.vi:r.en}</strong><ArrowRight size={17}/></Link>)}</div></section>}
+    {related.length>0&&<section className="relatedSection"><div className="sectionHead"><div><h2>{u.moreCollection}</h2></div></div><div className="relatedGrid">{related.map(r=><Link href={`/${locale}/library/${r.slug}`} key={r.slug}><span>{suttaDisplayCode(r,vi)}</span><strong>{cleanPublicTitle(vi?r.vi:r.en)}</strong><ArrowRight size={17}/></Link>)}</div></section>}
   </div></main>;
 }
