@@ -1,0 +1,162 @@
+name: Gemini Online TTS
+
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: Optional canonical ref such as sn1.1; blank = next item missing preferred Gemini audio
+        required: false
+        type: string
+  schedule:
+    - cron: '17 * * * *'
+
+permissions:
+  contents: read
+  actions: write
+
+concurrency:
+  group: gemini-online-tts
+  cancel-in-progress: false
+
+env:
+  GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+  GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+  R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+  R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+  R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+  R2_BUCKET_NAME: nikaya-media
+
+jobs:
+  render-upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Check online credentials
+        id: ready
+        shell: bash
+        run: |
+          set -euo pipefail
+          GEMINI="${GEMINI_API_KEY:-${GOOGLE_API_KEY:-}}"
+          if [ -z "$GEMINI" ]; then
+            echo 'ready=false' >> "$GITHUB_OUTPUT"
+            echo 'Gemini TTS is waiting for repository secret GEMINI_API_KEY (or GOOGLE_API_KEY).' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          for name in R2_ACCESS_KEY_ID R2_SECRET_ACCESS_KEY R2_ACCOUNT_ID R2_BUCKET_NAME; do
+            if [ -z "${!name:-}" ]; then
+              echo 'ready=false' >> "$GITHUB_OUTPUT"
+              echo "Missing required R2 repository secret/config: $name" >> "$GITHUB_STEP_SUMMARY"
+              exit 0
+            fi
+          done
+          echo 'ready=true' >> "$GITHUB_OUTPUT"
+
+      - name: Install renderer dependencies
+        if: steps.ready.outputs.ready == 'true'
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          python -m pip install --disable-pip-version-check --quiet google-genai boto3
+
+      - name: Snapshot existing R2 MP3 keys
+        if: steps.ready.outputs.ready == 'true'
+        shell: bash
+        run: |
+          python - <<'PY'
+          import boto3, os
+          endpoint=f"https://{os.environ['R2_ACCOUNT_ID']}.r2.cloudflarestorage.com"
+          s3=boto3.client('s3',endpoint_url=endpoint,aws_access_key_id=os.environ['R2_ACCESS_KEY_ID'],aws_secret_access_key=os.environ['R2_SECRET_ACCESS_KEY'])
+          bucket=os.environ['R2_BUCKET_NAME']
+          token=None; keys=[]
+          while True:
+              kw={'Bucket':bucket,'Prefix':'audio/'}
+              if token: kw['ContinuationToken']=token
+              r=s3.list_objects_v2(**kw)
+              keys += [x['Key'] for x in r.get('Contents',[]) if x['Key'].lower().endswith('.mp3')]
+              if not r.get('IsTruncated'): break
+              token=r.get('NextContinuationToken')
+          open('/tmp/r2-audio-keys.txt','w',encoding='utf-8').write('\n'.join(keys))
+          print(f'Existing R2 MP3: {len(keys)}')
+          PY
+
+      - name: Render one source-backed scripture with Gemini 3.1 Flash TTS
+        if: steps.ready.outputs.ready == 'true'
+        id: render
+        shell: bash
+        run: |
+          set +e
+          rm -rf dist/gemini-online
+          REF='${{ inputs.ref }}'
+          ARGS=(--existing-file /tmp/r2-audio-keys.txt --out dist/gemini-online)
+          if [ -n "$REF" ]; then ARGS+=(--ref "$REF"); fi
+          python scripts/gemini_github_tts.py "${ARGS[@]}" | tee /tmp/gemini-tts.log
+          RC=${PIPESTATUS[0]}
+          if [ "$RC" -eq 75 ]; then
+            echo 'quota=true' >> "$GITHUB_OUTPUT"
+            echo 'Gemini free-tier quota/rate limit reached. Existing local/browser fallbacks remain available; the next scheduled run will retry.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          if [ "$RC" -ne 0 ]; then exit "$RC"; fi
+          if grep -q '^NO_MISSING=1' /tmp/gemini-tts.log; then
+            echo 'done=true' >> "$GITHUB_OUTPUT"
+            echo 'Every currently materialized Vietnamese scripture already has preferred Gemini narration.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          META=$(find dist/gemini-online -maxdepth 1 -name '*.json' -type f | head -n1)
+          test -n "$META"
+          python - "$META" "$GITHUB_OUTPUT" <<'PY'
+          import json,sys
+          m=json.load(open(sys.argv[1],encoding='utf-8'))
+          with open(sys.argv[2],'a',encoding='utf-8') as f:
+              f.write(f"ref={m['canonicalRef']}\ncollection={m['collection'].lower()}\nsha256={m['audioSha256']}\nbytes={m['bytes']}\nvoice={m['voice']}\n")
+          PY
+
+      - name: Upload preferred Gemini MP3 to R2 and verify
+        if: steps.ready.outputs.ready == 'true' && steps.render.outputs.quota != 'true' && steps.render.outputs.done != 'true'
+        shell: bash
+        env:
+          REF: ${{ steps.render.outputs.ref }}
+          COLLECTION: ${{ steps.render.outputs.collection }}
+          EXPECTED_SHA: ${{ steps.render.outputs.sha256 }}
+          EXPECTED_BYTES: ${{ steps.render.outputs.bytes }}
+        run: |
+          python - <<'PY'
+          import boto3,hashlib,os,pathlib
+          ref=os.environ['REF']; coll=os.environ['COLLECTION']
+          p=pathlib.Path(f'dist/gemini-online/{ref}.mp3')
+          data=p.read_bytes(); sha=hashlib.sha256(data).hexdigest(); size=len(data)
+          assert sha==os.environ['EXPECTED_SHA']
+          assert size==int(os.environ['EXPECTED_BYTES'])
+          endpoint=f"https://{os.environ['R2_ACCOUNT_ID']}.r2.cloudflarestorage.com"
+          s3=boto3.client('s3',endpoint_url=endpoint,aws_access_key_id=os.environ['R2_ACCESS_KEY_ID'],aws_secret_access_key=os.environ['R2_SECRET_ACCESS_KEY'])
+          key=f'audio/gemini/{coll}/{ref}.mp3'
+          s3.put_object(Bucket=os.environ['R2_BUCKET_NAME'],Key=key,Body=data,ContentType='audio/mpeg',Metadata={'sha256':sha,'provider':'gemini-3.1-flash-tts-preview','tier':'preferred'})
+          head=s3.head_object(Bucket=os.environ['R2_BUCKET_NAME'],Key=key)
+          assert int(head['ContentLength'])==size
+          assert head.get('Metadata',{}).get('sha256')==sha
+          print(f'R2_UPLOAD_PASS key={key} bytes={size} sha256={sha}')
+          PY
+
+      - name: Preserve receipt as workflow artifact
+        if: steps.ready.outputs.ready == 'true' && steps.render.outputs.quota != 'true' && steps.render.outputs.done != 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: gemini-tts-${{ steps.render.outputs.ref }}-receipt
+          path: dist/gemini-online/${{ steps.render.outputs.ref }}.json
+          retention-days: 30
+
+      - name: Trigger Archive.org mirror after verified R2 upload
+        if: steps.ready.outputs.ready == 'true' && steps.render.outputs.quota != 'true' && steps.render.outputs.done != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run archive-mirror.yml --repo "$GITHUB_REPOSITORY"
+
+      - name: Summary
+        if: steps.ready.outputs.ready == 'true' && steps.render.outputs.quota != 'true' && steps.render.outputs.done != 'true'
+        run: |
+          echo "Preferred narration PASS: ${{ steps.render.outputs.ref }} -> Gemini 3.1 Flash TTS (${{ steps.render.outputs.voice }}) -> R2 audio/gemini/... -> Archive mirror. Existing PC/local audio remains untouched as fallback." >> "$GITHUB_STEP_SUMMARY"

@@ -1,70 +1,20 @@
-/* Public-facing visual polish v2. Loaded last so it can safely refine existing responsive styles. */
-.polishedHome{overflow:hidden}
-.polishedHero{position:relative}
-.polishedHero .heroCopy{position:relative;isolation:isolate;background:radial-gradient(circle at 88% 8%,rgba(176,113,34,.18),transparent 28%),radial-gradient(circle at 6% 100%,rgba(46,113,83,.11),transparent 32%),linear-gradient(145deg,#fffdf8,#f2ede4);box-shadow:0 24px 70px rgba(38,48,41,.08)}
-.polishedHero .heroCopy:after{content:"";position:absolute;right:-66px;top:-74px;width:250px;height:250px;border-radius:50%;border:1px solid rgba(166,106,31,.12);box-shadow:0 0 0 34px rgba(166,106,31,.035),0 0 0 68px rgba(166,106,31,.018);z-index:-1}
-.polishedHero .heroFocus{position:relative;background:radial-gradient(circle at 100% 0%,rgba(226,190,127,.18),transparent 28%),linear-gradient(155deg,#174637,#0f2c23 72%);box-shadow:0 26px 70px rgba(18,52,40,.18)}
-.polishedHero .heroFocus:before{content:"✦";position:absolute;right:28px;top:76px;font-family:Georgia,serif;font-size:84px;line-height:1;color:rgba(239,207,151,.08);pointer-events:none}
-.polishedHero .heroActions .btn{min-height:50px;padding-inline:21px}
-.heroStats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:30px}
-.heroStats>div{padding:13px 14px;border:1px solid rgba(219,213,201,.82);border-radius:16px;background:rgba(255,255,255,.66);backdrop-filter:blur(8px)}
-.heroStats strong{display:block;font-family:Georgia,"Times New Roman",serif;font-size:24px;letter-spacing:-.03em;color:var(--brand-dark)}
-.heroStats span{display:block;margin-top:2px;font-size:10px;line-height:1.4;font-weight:750;color:var(--muted)}
-.heroTrust{display:flex;align-items:center;gap:8px;margin-top:16px;color:#4e6458;font-size:11px;font-weight:750}
-.heroTrust svg{color:var(--brand);flex:0 0 auto}
-.homeStartBand{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:4px;margin-bottom:18px}
-.homeStartBand>a{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:12px;padding:15px 16px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.74);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
-.homeStartBand>a:hover{transform:translateY(-2px);border-color:#c8d5ce;box-shadow:0 16px 38px rgba(29,43,35,.08)}
-.homeStartBand .startIcon{width:42px;height:42px;display:grid;place-items:center;border-radius:13px;background:#eaf2ed;color:var(--brand)}
-.homeStartBand strong,.homeStartBand small{display:block}.homeStartBand strong{font-size:13px}.homeStartBand small{margin-top:3px;font-size:10px;line-height:1.35;color:var(--muted)}.homeStartBand>a>svg{color:#9aa49e}
-.polishedHome .sectionHead h2{max-width:900px}
-.polishedHome .collectionGrid{gap:14px}
-.polishedHome .collectionCard{min-height:278px;padding:22px;background:linear-gradient(165deg,#fff 0%,#fbfaf7 100%);box-shadow:0 1px 0 rgba(255,255,255,.9) inset}
-.polishedHome .collectionCard:after{content:attr(data-code);position:absolute;right:-4px;bottom:-19px;font-family:Georgia,"Times New Roman",serif;font-weight:900;font-size:82px;line-height:1;color:color-mix(in srgb,var(--card-accent,#a66a1f) 9%,transparent);letter-spacing:-.08em;pointer-events:none}
-.polishedHome .collectionCard h3{font-size:27px;position:relative;z-index:1}.polishedHome .collectionCard p,.polishedHome .collectionArrow{position:relative;z-index:1}
-.polishedHome .collectionArrow{background:#eef2ef;color:var(--brand)}
-.polishedHome .featuredCard{min-height:202px;border-color:#d9d7cf;box-shadow:0 12px 34px rgba(29,43,35,.035)}
-.polishedHome .featuredCard:nth-child(3n+1) .featuredVisual{background:linear-gradient(150deg,#ead7b7,#cad9d1)}
-.polishedHome .featuredCard:nth-child(3n+2) .featuredVisual{background:linear-gradient(150deg,#d8e0ce,#c6d8db)}
-.polishedHome .featuredCard:nth-child(3n) .featuredVisual{background:linear-gradient(150deg,#e4d4d1,#d6d0e3)}
-.polishedHome .featuredVisual:after{content:"“";position:absolute;left:11px;top:2px;font-family:Georgia,serif;font-size:58px;color:rgba(79,69,50,.09)}
-.polishedHome .audioDot{box-shadow:0 8px 20px rgba(30,90,69,.24)}
-.homeTrustBand{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:14px;margin-bottom:48px}
-.homeTrustBand>div{display:grid;grid-template-columns:auto 1fr;gap:12px;padding:19px;border:1px solid #d9ddd8;border-radius:20px;background:#f2f7f4}
-.homeTrustBand svg{color:var(--brand);margin-top:2px}.homeTrustBand strong,.homeTrustBand small{display:block}.homeTrustBand strong{font-size:13px}.homeTrustBand small{margin-top:5px;font-size:11px;line-height:1.5;color:var(--muted)}
-.polishedHome footer{border-top:1px solid var(--line);background:#efece4}.polishedHome .footerInner>div{display:grid;gap:4px}.polishedHome .footerInner small{font-size:10px;color:var(--muted);font-weight:650}
-.desktopNav a{display:inline-flex;align-items:center;gap:5px}
-
-@media(max-width:1100px){
-  .polishedHome .collectionGrid{grid-template-columns:repeat(3,1fr)}
-  .homeStartBand{grid-template-columns:1fr 1fr}.homeStartBand>a:last-child{grid-column:1/-1}
-}
-@media(max-width:760px){
-  .polishedHero{padding-top:24px;gap:14px}
-  .polishedHero .heroCopy{padding:30px 23px;border-radius:24px}
-  .polishedHero .heroCopy:after{right:-100px;top:-110px}
-  .polishedHero .hero h1{font-size:clamp(38px,12vw,54px);line-height:1.02;margin:13px 0 17px}
-  .polishedHero .lede{font-size:15px;line-height:1.65}
-  .polishedHero .heroActions{display:grid;grid-template-columns:1fr 1fr;margin-top:22px}
-  .polishedHero .heroActions .btn{padding:0 12px;font-size:12px}
-  .heroStats{grid-template-columns:repeat(3,1fr);gap:6px;margin-top:22px}
-  .heroStats>div{padding:11px 9px;border-radius:13px}.heroStats strong{font-size:20px}.heroStats span{font-size:9px}
-  .heroTrust{align-items:flex-start;font-size:10px;line-height:1.45}
-  .polishedHero .heroFocus{min-height:330px;border-radius:24px;padding:22px}
-  .polishedHero .heroFocus h2{font-size:36px}
-  .homeStartBand{grid-template-columns:1fr;gap:8px;margin-top:0}.homeStartBand>a:last-child{grid-column:auto}
-  .homeStartBand>a{padding:13px 14px;border-radius:16px}
-  .polishedHome .section{padding:32px 0}.polishedHome .sectionHead{margin-bottom:16px}.polishedHome .sectionHead h2{font-size:31px}
-  .polishedHome .collectionGrid{grid-template-columns:1fr 1fr;gap:9px}
-  .polishedHome .collectionCard{min-height:235px;padding:17px;border-radius:19px}.polishedHome .collectionCard h3{font-size:22px;margin-top:19px}.polishedHome .collectionCard p{font-size:11px}.polishedHome .collectionCard:after{font-size:60px}
-  .polishedHome .featuredRail{grid-template-columns:1fr}.polishedHome .featuredCard{grid-template-columns:92px 1fr;min-height:168px;border-radius:19px}.polishedHome .featuredBody{padding:15px}
-  .homeTrustBand{grid-template-columns:1fr;margin-bottom:92px}.homeTrustBand>div{padding:16px}
-  .polishedHome .librarySection{margin-top:8px}
-  .polishedHome footer{padding-bottom:74px}
-}
-@media(max-width:440px){
-  .polishedHero .heroActions{grid-template-columns:1fr}
-  .polishedHome .collectionGrid{grid-template-columns:1fr}
-  .polishedHome .collectionCard{min-height:220px}
-  .heroStats strong{font-size:18px}.heroStats span{font-size:8px}
-}
+/* Public-facing visual polish v4: calm, premium, scripture-first. */
+.polishedHome{overflow:hidden}.polishedHero{position:relative}
+.polishedHero .heroCopy{position:relative;isolation:isolate;background:linear-gradient(145deg,#fffdf8,#f5f2ea);box-shadow:0 18px 48px rgba(38,48,41,.06)}
+.polishedHero .heroCopy:after{content:"";position:absolute;right:-70px;top:-80px;width:230px;height:230px;border-radius:50%;border:1px solid rgba(154,113,55,.08);box-shadow:0 0 0 34px rgba(154,113,55,.02);z-index:-1}
+.polishedHero .heroFocus{position:relative;overflow:hidden;background:linear-gradient(155deg,#194838,#103126 75%);box-shadow:0 20px 52px rgba(18,52,40,.14);transition:background .45s ease}
+.polishedHero .heroFocus:before{content:"✦";position:absolute;right:28px;top:76px;font-family:Georgia,serif;font-size:78px;line-height:1;color:rgba(239,220,180,.055);pointer-events:none}
+/* All rotating hero slides stay in the same quiet forest palette. Tone classes only add a restrained accent. */
+.rotatingHero.toneEmerald,.rotatingHero.toneSaffron,.rotatingHero.toneIndigo,.rotatingHero.toneRuby,.rotatingHero.toneTeal{background:linear-gradient(155deg,#194838,#103126 75%)}
+.rotatingHero.toneSaffron{border-top:3px solid #b99054}.rotatingHero.toneIndigo{border-top:3px solid #7e817b}.rotatingHero.toneRuby{border-top:3px solid #9a7767}.rotatingHero.toneTeal{border-top:3px solid #668c82}.rotatingHero.toneEmerald{border-top:3px solid #789883}
+.heroCollection{font-size:10px;font-weight:800;padding:6px 9px;border-radius:999px;background:rgba(255,255,255,.09);color:#e8eee9}.rotatorDots{display:flex;justify-content:center;gap:7px;margin-top:14px}.rotatorDots button{width:7px;height:7px;padding:0;border:0;border-radius:50%;background:rgba(255,255,255,.26);cursor:pointer}.rotatorDots button[aria-current="true"]{width:20px;border-radius:8px;background:#d8bd86}
+.polishedHero .heroActions .btn{min-height:50px;padding-inline:21px}.heroStats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-top:30px}.heroStats>div{padding:13px 14px;border:1px solid #ded9cf;border-radius:16px;background:rgba(255,255,255,.58)}.heroStats strong{display:block;font-family:Georgia,"Times New Roman",serif;font-size:24px;color:var(--brand-dark)}.heroStats span{display:block;margin-top:2px;font-size:10px;font-weight:750;color:var(--muted)}.heroTrust{display:flex;align-items:center;gap:8px;margin-top:16px;color:#53665c;font-size:11px;font-weight:750}.heroTrust svg{color:#426d5b}
+.homeStartBand{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:4px;margin-bottom:18px}.homeStartBand>a{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:12px;padding:15px 16px;border:1px solid #ddd9d0;border-radius:18px;background:#fdfcf8;box-shadow:0 8px 24px rgba(29,43,35,.025)}.homeStartBand .startIcon{width:42px;height:42px;display:grid;place-items:center;border-radius:13px;background:#eaf0ec;color:#315f4d}.homeStartBand strong,.homeStartBand small{display:block}.homeStartBand small{margin-top:3px;font-size:10px;color:var(--muted)}
+.rotatingVerse{position:relative;display:block;min-height:270px;overflow:hidden;background:linear-gradient(135deg,#fbf8ef,#f3eee1)!important;border:1px solid #e1d8c8;box-shadow:0 12px 34px rgba(55,45,31,.04);transition:none}.rotatingVerse:after{content:"❧";position:absolute;right:7%;bottom:-35px;font-family:Georgia,serif;font-size:160px;color:#947345;opacity:.045}.rotatingVerse .canonPromoCopy{max-width:850px}.rotatingVerse .kicker{display:flex;align-items:center;gap:8px;color:#846331}.rotatingVerse h2{font-size:clamp(30px,4vw,46px);line-height:1.14;color:#17261f}.rotatingVerse p{color:#69655d}.verseActions{display:flex;align-items:center;gap:14px;flex-wrap:wrap}.verseActions a{color:#74562e}.verseActions button{display:inline-flex;align-items:center;gap:7px;border:1px solid #b9aa90;border-radius:999px;padding:9px 13px;background:#fffdf8;color:#67583f;font-weight:800;cursor:pointer}.verseDots{justify-content:flex-start}.verseDots button{background:#d5cbb9}.verseDots button[aria-current="true"]{background:#92703d}
+.polishedHome .collectionGrid{gap:14px}.polishedHome .collectionCard{min-height:278px;padding:22px;background:#fdfcf9;border-color:#ddd9d1;box-shadow:0 8px 24px rgba(29,43,35,.025)}.polishedHome .collectionCard:after{content:attr(data-code);position:absolute;right:-4px;bottom:-19px;font-family:Georgia,serif;font-weight:900;font-size:82px;color:rgba(42,83,66,.045);pointer-events:none}.polishedHome .collectionCard h3{font-size:27px;position:relative;z-index:1}.polishedHome .collectionArrow{background:#edf1ee;color:#315f4d}
+/* Collection identity is deliberately subtle: a thin accent instead of full multicolour cards. */
+.polishedHome .collectionCard:nth-child(1){border-top:3px solid #a7824d}.polishedHome .collectionCard:nth-child(2){border-top:3px solid #5e8876}.polishedHome .collectionCard:nth-child(3){border-top:3px solid #7b8179}.polishedHome .collectionCard:nth-child(4){border-top:3px solid #8f7669}.polishedHome .collectionCard:nth-child(5){border-top:3px solid #63837d}
+.polishedHome .featuredCard{min-height:202px;border-color:#dcd8cf;box-shadow:0 10px 28px rgba(29,43,35,.03);background:#fff}.polishedHome .featuredCard.collection-dn .featuredVisual,.polishedHome .featuredCard.collection-mn .featuredVisual,.polishedHome .featuredCard.collection-sn .featuredVisual,.polishedHome .featuredCard.collection-an .featuredVisual,.polishedHome .featuredCard.collection-kn .featuredVisual{background:linear-gradient(150deg,#eee9de,#dfe7e2)}.polishedHome .featuredCard.collection-dn{border-top:2px solid #a7824d}.polishedHome .featuredCard.collection-mn{border-top:2px solid #5e8876}.polishedHome .featuredCard.collection-sn{border-top:2px solid #7b8179}.polishedHome .featuredCard.collection-an{border-top:2px solid #8f7669}.polishedHome .featuredCard.collection-kn{border-top:2px solid #63837d}
+.homeTrustBand{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:14px auto 48px}.homeTrustBand>div{display:grid;grid-template-columns:auto 1fr;gap:12px;padding:19px;border:1px solid #d9ddd8;border-radius:20px;background:#f3f6f3}.homeTrustBand svg{color:#426d5b}.homeTrustBand strong,.homeTrustBand small{display:block}.homeTrustBand small{margin-top:5px;font-size:11px;color:var(--muted)}
+@media(max-width:760px){.polishedHero{padding-top:24px;gap:14px}.polishedHero .heroCopy{padding:30px 23px;border-radius:24px}.heroStats{grid-template-columns:repeat(2,1fr);gap:6px;margin-top:22px}.polishedHero .heroFocus{min-height:350px;border-radius:24px;padding:22px}.polishedHero .heroFocus h2{font-size:36px}.homeStartBand{grid-template-columns:1fr;gap:8px}.rotatingVerse{min-height:370px;margin-top:8px;padding:28px 22px}.rotatingVerse h2{font-size:31px}.polishedHome .collectionGrid{grid-template-columns:1fr 1fr;gap:9px}.polishedHome .featuredRail{grid-template-columns:1fr}.homeTrustBand{grid-template-columns:1fr;margin-bottom:92px}}
+@media(max-width:440px){.polishedHome .collectionGrid{grid-template-columns:1fr}.heroStats{grid-template-columns:repeat(2,1fr)}}

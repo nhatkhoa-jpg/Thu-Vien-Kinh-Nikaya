@@ -1,33 +1,44 @@
 'use client';
 
-import {useEffect,useState} from 'react';
+import {useEffect,useMemo,useState} from 'react';
 import {ChevronDown,Download,ExternalLink,Headphones} from 'lucide-react';
 import AudioPlayer from '@/components/AudioPlayer';
 
-type Props={src:string;storageKey:string;sourceUrl?:string;vi:boolean};
+type AudioCandidate={src:string;label:string;provider:'gemini'|'local';downloadUrl?:string;manifestUrl?:string};
+type Props={sources:AudioCandidate[];storageKey:string;sourceUrl?:string;vi:boolean};
 
-export default function R2AudioDisclosure({src,storageKey,sourceUrl,vi}:Props){
-  const [available,setAvailable]=useState(false);
+export default function R2AudioDisclosure({sources,storageKey,sourceUrl,vi}:Props){
+  const candidates=useMemo(()=>sources.filter(x=>Boolean(x.src)),[sources]);
+  const [selected,setSelected]=useState<AudioCandidate|null>(null);
   useEffect(()=>{
     let live=true;
-    fetch(src,{method:'HEAD',cache:'no-store'})
-      .then(response=>{if(live)setAvailable(response.ok);})
-      .catch(()=>{if(live)setAvailable(false);});
+    setSelected(null);
+    (async()=>{
+      for(const candidate of candidates){
+        try{
+          const response=await fetch(candidate.src,{method:'HEAD',cache:'no-store'});
+          if(response.ok){if(live)setSelected(candidate);return;}
+        }catch{}
+      }
+      if(live)setSelected(null);
+    })();
     return()=>{live=false;};
-  },[src]);
-  if(!available)return null;
+  },[candidates]);
+  if(!selected)return null;
+  const bestAvailable=selected.provider==='gemini';
   return <details className="essentialDisclosure mp3Disclosure primaryMp3Disclosure" id="mp3-r2">
-    <summary title={vi?'Nghe MP3 dựng sẵn, dùng trên mọi thiết bị':'Play the prebuilt MP3 on any device'}>
+    <summary title={vi?'Nghe giọng đọc dựng sẵn, dùng trên mọi thiết bị':'Play the best available prebuilt narration'}>
       <span className="miniActionIcon"><Headphones size={17}/></span>
-      <span><strong>{vi?'Nghe bài kinh':'Listen'}</strong><small>{vi?'MP3 VieNeu · mọi thiết bị':'VieNeu MP3 · all devices'}</small></span>
+      <span><strong>{vi?'Nghe bài kinh':'Listen'}</strong><small>{selected.label}</small></span>
       <ChevronDown size={15} className="disclosureChevron"/>
     </summary>
     <div className="disclosureBody">
-      <AudioPlayer src={src} storageKey={storageKey}/>
+      <AudioPlayer src={selected.src} manifestUrl={selected.manifestUrl} storageKey={`${storageKey}:${selected.provider}`}/>
       <div className="mp3Links">
-        <a className="downloadLink" href={src} target="_blank" rel="noreferrer"><Download size={16}/>{vi?'Mở / tải MP3':'Open / download MP3'}</a>
+        <a className="downloadLink" href={selected.downloadUrl||selected.src} target="_blank" rel="noreferrer"><Download size={16}/>{vi?'Mở / tải MP3':'Open / download MP3'}</a>
         {sourceUrl&&<a className="audioSource" href={sourceUrl} target="_blank" rel="noreferrer">{vi?'Văn bản đối chiếu':'Text source'}<ExternalLink size={13}/></a>}
       </div>
+      {!bestAvailable&&<p className="audioFallbackNote">{vi?'Giọng đọc chất lượng cao đang được bổ sung. Bản MP3 hiện tại vẫn nghe bình thường; bạn cũng có thể dùng chức năng đọc bằng trình duyệt.':'Higher-quality narration is still being added. The current MP3 remains available, and browser reading is another option.'}</p>}
     </div>
   </details>;
 }
