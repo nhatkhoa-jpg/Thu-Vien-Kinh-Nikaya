@@ -101,7 +101,7 @@ jobs:
           must_have /tmp/mn21.html '/media/audio/gemini/mn/mn21.mp3' 'preferred Gemini audio candidate'
           must_have /tmp/mn21.html 'mn21.mp3' 'MN21 fallback MP3 candidate'
           must_have /tmp/mn21.html 'mn21.manifest.json' 'MN21 preservation manifest URL'
-          if grep -Fq 'Bản dịch:' /tmp/mn21.html || grep -Fq 'NGUỒN:' /tmp/mn21.html; then echo 'PASS: compact source provenance label'; else echo 'FAIL: reader has no source provenance label'; exit 1; fi
+          must_have /tmp/mn21.html 'suttacentral.net/mn21/vi/' 'MN21 traceable Vietnamese source URL'
           must_have components/R2AudioDisclosure.tsx "method:'HEAD'" 'runtime audio availability probing'
           must_have components/R2AudioDisclosure.tsx "provider==='gemini'" 'Gemini quality preference'
           must_have components/BrowserReader.tsx 'speechSynthesis' 'browser speech fallback implementation'
