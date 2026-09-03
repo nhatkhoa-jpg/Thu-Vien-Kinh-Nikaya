@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastVerifiedAt": "2026-09-02T18:28:14+00:00",
+  "lastVerifiedAt": "2026-09-03T13:40:00+00:00",
   "collections": [
     {
       "collection": "DN",
@@ -11,20 +11,20 @@
       "pendingFullTextCount": 0,
       "audioCount": 34,
       "source": "SuttaCentral canonical tree + repository materialized corpus",
-      "lastVerifiedAt": "2026-09-02T18:28:14+00:00",
+      "lastVerifiedAt": "2026-09-03T13:40:00+00:00",
       "status": "complete"
     },
     {
       "collection": "MN",
       "canonicalCount": 152,
       "catalogCount": 152,
-      "vietnameseFullTextCount": 0,
+      "vietnameseFullTextCount": 152,
       "missingVietnameseCount": 0,
-      "pendingFullTextCount": 152,
+      "pendingFullTextCount": 0,
       "audioCount": 152,
       "source": "SuttaCentral canonical tree + repository materialized corpus",
-      "lastVerifiedAt": "2026-09-02T18:28:14+00:00",
-      "status": "in_progress"
+      "lastVerifiedAt": "2026-09-03T13:40:00+00:00",
+      "status": "complete"
     },
     {
       "collection": "SN",
@@ -35,20 +35,20 @@
       "pendingFullTextCount": 0,
       "audioCount": 0,
       "source": "SuttaCentral canonical tree + repository materialized corpus",
-      "lastVerifiedAt": "2026-09-02T18:28:14+00:00",
+      "lastVerifiedAt": "2026-09-03T13:40:00+00:00",
       "status": "complete"
     },
     {
       "collection": "AN",
       "canonicalCount": 1408,
-      "catalogCount": 2,
-      "vietnameseFullTextCount": 0,
-      "missingVietnameseCount": 0,
-      "pendingFullTextCount": 1408,
+      "catalogCount": 1408,
+      "vietnameseFullTextCount": 1395,
+      "missingVietnameseCount": 13,
+      "pendingFullTextCount": 0,
       "audioCount": 0,
       "source": "SuttaCentral canonical tree + repository materialized corpus",
-      "lastVerifiedAt": "2026-09-02T18:28:14+00:00",
-      "status": "in_progress"
+      "lastVerifiedAt": "2026-09-03T13:40:00+00:00",
+      "status": "complete"
     },
     {
       "collection": "KN",
@@ -59,7 +59,7 @@
       "pendingFullTextCount": 2,
       "audioCount": 0,
       "source": "SuttaCentral canonical tree + repository materialized corpus",
-      "lastVerifiedAt": "2026-09-02T18:28:14+00:00",
+      "lastVerifiedAt": "2026-09-03T13:40:00+00:00",
       "status": "in_progress"
     }
   ]
