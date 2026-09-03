@@ -1,6 +1,7 @@
 'use client';
 import {useEffect,useMemo,useRef,useState} from 'react';
 import {RotateCcw,RotateCw} from 'lucide-react';
+import {sendStat} from '@/lib/client-stats';
 
 const rates=[0.75,1,1.25,1.5,1.75,2];
 
@@ -8,10 +9,13 @@ type AudioSource={url:string;provider?:string};
 export type AudioSegment={id:string;duration?:number;sources:AudioSource[]};
 type PreservationManifest={version?:string;segments?:AudioSegment[]};
 
-export default function AudioPlayer({src,segments,manifestUrl,storageKey}:{src?:string;segments?:AudioSegment[];manifestUrl?:string;storageKey?:string}){
+export default function AudioPlayer({src,segments,manifestUrl,storageKey,title}:{src?:string;segments?:AudioSegment[];manifestUrl?:string;storageKey?:string;title?:string}){
  const ref=useRef<HTMLAudioElement>(null);
  const lastSavedRef=useRef(0);
  const rateRef=useRef(1);
+ const playedReportedRef=useRef(false);
+ const thirtyReportedRef=useRef(false);
+ const completeReportedRef=useRef(false);
  const [rate,setRate]=useState(1);
  const [segmentIndex,setSegmentIndex]=useState(0);
  const [sourceIndex,setSourceIndex]=useState(0);
@@ -33,6 +37,13 @@ export default function AudioPlayer({src,segments,manifestUrl,storageKey}:{src?:
  const segment=playlist[segmentIndex];
  const currentSrc=segment?.sources[sourceIndex]?.url;
  const key=`nikaya:audio:${storageKey||src||manifestUrl||playlist.map(x=>x.id).join('|')}`;
+ const audioId=storageKey||manifestUrl||src||playlist.map(x=>x.id).join('|');
+
+ useEffect(()=>{
+   playedReportedRef.current=false;
+   thirtyReportedRef.current=false;
+   completeReportedRef.current=false;
+ },[audioId]);
 
  useEffect(()=>{
    rateRef.current=rate;
@@ -78,8 +89,22 @@ export default function AudioPlayer({src,segments,manifestUrl,storageKey}:{src?:
      if(value&&rates.includes(Number(value.rate))){const r=Number(value.rate);rateRef.current=r;setRate(r);audio.playbackRate=r;audio.preservesPitch=true;}
    }catch{}
  }
+ function reportPlay(){
+   if(playedReportedRef.current)return;
+   playedReportedRef.current=true;
+   sendStat('audio_play',{audioId,title:title||storageKey||segment?.id||'Audio'});
+ }
+ function reportProgress(){
+   save(false);
+   const audio=ref.current;if(!audio)return;
+   if(!thirtyReportedRef.current&&audio.currentTime>=30){
+     thirtyReportedRef.current=true;
+     sendStat('audio_30s',{audioId,title:title||storageKey||segment?.id||'Audio'});
+   }
+ }
  async function nextSegment(){
    if(segmentIndex<playlist.length-1){switchSegment(segmentIndex+1);return;}
+   if(!completeReportedRef.current){completeReportedRef.current=true;sendStat('audio_complete',{audioId,title:title||storageKey||segment?.id||'Audio'})}
    try{localStorage.removeItem(key);}catch{}
  }
  function fallbackSource(){
@@ -96,7 +121,7 @@ export default function AudioPlayer({src,segments,manifestUrl,storageKey}:{src?:
  if(!currentSrc)return null;
  const provider=segment?.sources[sourceIndex]?.provider;
  return <div className="audioPlayer" data-segment={`${segmentIndex+1}/${playlist.length}`}>
-   <audio ref={ref} controls preload="metadata" src={currentSrc} onLoadedMetadata={restore} onTimeUpdate={()=>save(false)} onPause={()=>save(true)} onEnded={()=>void nextSegment()} onError={fallbackSource}/>
+   <audio ref={ref} controls preload="metadata" src={currentSrc} onLoadedMetadata={restore} onPlay={reportPlay} onTimeUpdate={reportProgress} onPause={()=>save(true)} onEnded={()=>void nextSegment()} onError={fallbackSource}/>
    <div className="audioTools">
      <button onClick={()=>seek(-15)} aria-label="Back 15 seconds"><RotateCcw size={16}/><span>15s</span></button>
      <div className="rateGroup" aria-label="Playback speed">{rates.map(v=><button key={v} className={rate===v?'activeRate':''} onClick={()=>update(v)}>{v}×</button>)}</div>
