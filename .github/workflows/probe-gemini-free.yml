@@ -1,0 +1,35 @@
+name: Probe Gemini Free Tier
+on:
+  push:
+    branches: [ops/secret-audit]
+    paths: [.github/workflows/probe-gemini-free.yml]
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+    steps:
+      - name: Verify Gemini text models
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "$GEMINI_API_KEY"
+          for model in gemini-3.5-flash-lite gemini-3.5-flash; do
+            code=$(curl -sS --max-time 45 -o /tmp/gemini.json -w '%{http_code}' \
+              -H 'content-type: application/json' \
+              -X POST "https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${GEMINI_API_KEY}" \
+              -d '{"contents":[{"parts":[{"text":"Return only JSON: {\"ok\":true,\"task\":\"probe\"}"}]}],"generationConfig":{"responseMimeType":"application/json","temperature":0.1}}')
+            python3 - "$model" "$code" <<'PY'
+          import json,sys
+          model,code=sys.argv[1],sys.argv[2]
+          d=json.load(open('/tmp/gemini.json',encoding='utf-8'))
+          text=''.join(p.get('text','') for p in (((d.get('candidates') or [{}])[0].get('content') or {}).get('parts') or []))
+          print(f'MODEL={model} HTTP={code} TEXT={text[:180]}')
+          if code!='200' or '"ok"' not in text:
+              print('ERROR=',(d.get('error') or {}).get('message',''))
+              raise SystemExit(1)
+          PY
+          done
