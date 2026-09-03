@@ -11,6 +11,7 @@ import './stats.css';
 import './high-contrast-ui.css';
 import './buddhist-home.css';
 import './sitewide-buddhist.css';
+import './sitewide-buddhist-extras.css';
 import type {Metadata} from 'next';
 import SiteStatsTracker from '@/components/SiteStatsTracker';
 
