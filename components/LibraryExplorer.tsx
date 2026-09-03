@@ -20,6 +20,7 @@ export default function LibraryExplorer({locale,placeholder,initialCollection='A
  const [collection,setCollection]=useState(initialCollection);
  const [format,setFormat]=useState<'ALL'|'AUDIO'>('ALL');
  const [visibleCount,setVisibleCount]=useState(PAGE_SIZE);
+ useEffect(()=>setCollection(initialCollection),[initialCollection]);
  const filtered=useMemo(()=>suttas.filter(s=>{
    const collectionName=collections.find(c=>c.code===s.collection);
    const hay=[s.code,s.viCode,s.collection,collectionName?.vi,collectionName?.en,s.pali,s.vi,s.en,s.summaryVi,s.summaryEn,s.practiceVi,s.practiceEn,...s.topics].filter(Boolean).join(' ').toLocaleLowerCase();
