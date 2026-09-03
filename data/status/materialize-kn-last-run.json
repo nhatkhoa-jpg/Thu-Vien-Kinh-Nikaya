@@ -1,0 +1,14 @@
+{
+  "collection": "KN",
+  "catalogCount": 2,
+  "verifiedBefore": 0,
+  "selected": 2,
+  "materializedThisRun": 0,
+  "missingVietnameseThisRun": [
+    "dhp1-20",
+    "snp1.8"
+  ],
+  "failures": {},
+  "remainingAfterRun": 0,
+  "lastRunAt": "2026-09-03T13:50:32+00:00"
+}
