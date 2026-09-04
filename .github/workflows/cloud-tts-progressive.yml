@@ -143,13 +143,14 @@ jobs:
           set -euo pipefail
           rm -rf dist/cloud-batch
           mkdir -p dist/cloud-batch
-          jq -c '.[]' /tmp/batch.json | while read -r item; do
+          jq -c '.[]' /tmp/batch.json > /tmp/batch.ndjson
+          while IFS= read -r item <&3; do
             REF=$(jq -r '.ref' <<<"$item")
             MODEL=$(jq -r '.model' <<<"$item")
             OUT="dist/cloud-batch/$REF"
             mkdir -p "$OUT"
             echo "Rendering $REF with $MODEL"
-            python3 scripts/build_cloud_tts_one.py --ref "$REF" --model "$MODEL" --out "$OUT"
+            python3 scripts/build_cloud_tts_one.py --ref "$REF" --model "$MODEL" --out "$OUT" </dev/null
             test -s "$OUT/$REF.mp3"
             test -s "$OUT/$REF.json"
             D=$(ffprobe -v error -show_entries format=duration -of default=nw=1:nk=1 "$OUT/$REF.mp3")
@@ -157,8 +158,8 @@ jobs:
           import sys
           assert float(sys.argv[1])>20
           PY
-            gh release upload "$RELEASE_TAG" "$OUT/$REF.mp3" "$OUT/$REF.json" --repo "$GITHUB_REPOSITORY" --clobber
-          done
+            gh release upload "$RELEASE_TAG" "$OUT/$REF.mp3" "$OUT/$REF.json" --repo "$GITHUB_REPOSITORY" --clobber </dev/null
+          done 3< /tmp/batch.ndjson
 
       - name: Update quota ledger and public audio catalog once for the batch
         if: steps.pick.outputs.done != 'true'
