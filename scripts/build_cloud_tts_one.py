@@ -11,6 +11,11 @@ VOICES={
  'neural2':'vi-VN-Neural2-A',
  'wavenet':'vi-VN-Wavenet-A',
 }
+MODEL_MAX_CHARS={
+ 'chirp3-hd':900,
+ 'neural2':3000,
+ 'wavenet':3000,
+}
 
 def fetch_json(url, attempts=5):
     last=None
@@ -78,18 +83,40 @@ def normalize(text):
     text=re.sub(r'\n{3,}','\n\n',text)
     return text.strip()
 
+def split_long_piece(text,max_chars):
+    text=text.strip()
+    if len(text)<=max_chars:return [text] if text else []
+    out=[]
+    rest=text
+    preferred=('; ',': ', ', ',' — ','— ')
+    while len(rest)>max_chars:
+        cut=0
+        for marker in preferred:
+            pos=rest.rfind(marker,0,max_chars+1)
+            if pos>=max_chars//2:
+                cut=max(cut,pos+len(marker))
+        if cut==0:
+            pos=rest.rfind(' ',0,max_chars+1)
+            if pos>0:cut=pos+1
+        if cut==0:cut=max_chars
+        out.append(rest[:cut].strip())
+        rest=rest[cut:].strip()
+    if rest:out.append(rest)
+    return out
+
 def chunks(text,max_chars=3200):
     paras=[p.strip() for p in text.split('\n') if p.strip()]
     out=[]; cur=''
     for p in paras:
-        bits=re.split(r'(?<=[.!?])\s+',p) if len(p)>max_chars else [p]
-        for b in bits:
-            bits2=[b[i:i+max_chars] for i in range(0,len(b),max_chars)] if len(b)>max_chars else [b]
-            for x in bits2:
+        sentence_bits=re.split(r'(?<=[.!?])\s+',p)
+        for sentence in sentence_bits:
+            for x in split_long_piece(sentence,max_chars):
                 cand=(cur+' '+x).strip()
-                if cur and len(cand)>max_chars: out.append(cur); cur=x
-                else: cur=cand
-    if cur: out.append(cur)
+                if cur and len(cand)>max_chars:
+                    out.append(cur);cur=x
+                else:
+                    cur=cand
+    if cur:out.append(cur)
     return out
 
 def synth(key,voice,text,out):
@@ -110,7 +137,10 @@ def main():
     key=os.environ['GOOGLE_TTS_API_KEY']; out=Path(a.out); out.mkdir(parents=True,exist_ok=True)
     text,chosen,source=fetch_text(a.ref)
     if len(text)<200: raise RuntimeError(f'{a.ref}: suspicious text {len(text)} chars')
-    pieces=chunks(text); part_files=[]
+    max_chars=MODEL_MAX_CHARS[a.model]
+    pieces=chunks(text,max_chars); part_files=[]
+    if not pieces or any(len(piece)>max_chars for piece in pieces):
+        raise RuntimeError(f'{a.ref}: invalid TTS chunking for {a.model}')
     for i,piece in enumerate(pieces,1):
         f=out/f'.part-{i:03d}.mp3'; synth(key,VOICES[a.model],piece,f); part_files.append(f)
     concat=out/'.concat.txt'; concat.write_text('\n'.join("file '%s'"%f.resolve().as_posix().replace("'","'\\''") for f in part_files),encoding='utf-8')
