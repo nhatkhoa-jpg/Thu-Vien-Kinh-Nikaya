@@ -314,45 +314,45 @@
   },
   "nikaya.mn.34": {
     "vi": {
-      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn34.mp3",
-      "label": "TB 34 · MP3 dựng sẵn tiếng Việt",
-      "provider": "5 Đại Tạng Kinh Nikāya",
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-cloud-audio-v1/mn34.mp3",
+      "label": "TB 34 · Google Cloud TTS",
+      "provider": "Google Cloud Text-to-Speech",
       "sourceUrl": "https://suttacentral.net/mn34/vi/minh_chau",
       "download": true
     }
   },
   "nikaya.mn.35": {
     "vi": {
-      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn35.mp3",
-      "label": "TB 35 · MP3 dựng sẵn tiếng Việt",
-      "provider": "5 Đại Tạng Kinh Nikāya",
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-cloud-audio-v1/mn35.mp3",
+      "label": "TB 35 · Google Cloud TTS",
+      "provider": "Google Cloud Text-to-Speech",
       "sourceUrl": "https://suttacentral.net/mn35/vi/minh_chau",
       "download": true
     }
   },
   "nikaya.mn.36": {
     "vi": {
-      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn36.mp3",
-      "label": "TB 36 · MP3 dựng sẵn tiếng Việt",
-      "provider": "5 Đại Tạng Kinh Nikāya",
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-cloud-audio-v1/mn36.mp3",
+      "label": "TB 36 · Google Cloud TTS",
+      "provider": "Google Cloud Text-to-Speech",
       "sourceUrl": "https://suttacentral.net/mn36/vi/minh_chau",
       "download": true
     }
   },
   "nikaya.mn.37": {
     "vi": {
-      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn37.mp3",
-      "label": "TB 37 · MP3 dựng sẵn tiếng Việt",
-      "provider": "5 Đại Tạng Kinh Nikāya",
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-cloud-audio-v1/mn37.mp3",
+      "label": "TB 37 · Google Cloud TTS",
+      "provider": "Google Cloud Text-to-Speech",
       "sourceUrl": "https://suttacentral.net/mn37/vi/minh_chau",
       "download": true
     }
   },
   "nikaya.mn.38": {
     "vi": {
-      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn38.mp3",
-      "label": "TB 38 · MP3 dựng sẵn tiếng Việt",
-      "provider": "5 Đại Tạng Kinh Nikāya",
+      "url": "https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-cloud-audio-v1/mn38.mp3",
+      "label": "TB 38 · Google Cloud TTS",
+      "provider": "Google Cloud Text-to-Speech",
       "sourceUrl": "https://suttacentral.net/mn38/vi/minh_chau",
       "download": true
     }
