@@ -25,8 +25,8 @@
     "wavenet": {
       "freeTierCharacters": 4000000,
       "projectSafetyLimitCharacters": 3600000,
-      "usedCharacters": 406078,
-      "remainingProjectSafeCharacters": 3193922,
+      "usedCharacters": 468694,
+      "remainingProjectSafeCharacters": 3131306,
       "status": "SAFE"
     }
   },
@@ -498,6 +498,54 @@
       ],
       "model": "neural2",
       "workflowRun": "33873517717",
+      "result": "success"
+    },
+    {
+      "date": "2026-09-04",
+      "purpose": "progressive final-quality scripture audio",
+      "canonicalRef": "mn39",
+      "charactersPerVoice": 25351,
+      "voices": [
+        "vi-VN-Wavenet-A"
+      ],
+      "model": "wavenet",
+      "workflowRun": "release-reconciliation",
+      "result": "success"
+    },
+    {
+      "date": "2026-09-04",
+      "purpose": "progressive final-quality scripture audio",
+      "canonicalRef": "mn40",
+      "charactersPerVoice": 11577,
+      "voices": [
+        "vi-VN-Wavenet-A"
+      ],
+      "model": "wavenet",
+      "workflowRun": "release-reconciliation",
+      "result": "success"
+    },
+    {
+      "date": "2026-09-04",
+      "purpose": "progressive final-quality scripture audio",
+      "canonicalRef": "mn41",
+      "charactersPerVoice": 12813,
+      "voices": [
+        "vi-VN-Wavenet-A"
+      ],
+      "model": "wavenet",
+      "workflowRun": "release-reconciliation",
+      "result": "success"
+    },
+    {
+      "date": "2026-09-04",
+      "purpose": "progressive final-quality scripture audio",
+      "canonicalRef": "mn42",
+      "charactersPerVoice": 12875,
+      "voices": [
+        "vi-VN-Wavenet-A"
+      ],
+      "model": "wavenet",
+      "workflowRun": "release-reconciliation",
       "result": "success"
     }
   ]
