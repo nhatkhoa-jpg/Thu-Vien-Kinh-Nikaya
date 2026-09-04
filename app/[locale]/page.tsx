@@ -5,6 +5,7 @@ import {collections,suttas,collectionDisplayCode,suttaDisplayCode,suttaAudio} fr
 import {getCorpusStats} from '@/lib/corpus-stats';
 import {homeUi} from '@/lib/home-ui';
 import LibraryExplorer from '@/components/LibraryExplorer';
+import LocalizedBookArt from '@/components/LocalizedBookArt';
 import {DhammapadaRotator,ScriptureHeroRotator} from '@/components/HomeRotators';
 import {notFound} from 'next/navigation';
 
@@ -56,7 +57,7 @@ export default async function LocaleHome({params,searchParams}:{params:Promise<{
 
    {vi?<div className="shell verseHome"><DhammapadaRotator verses={dhammapada.map(v=>({...v,href:`/${locale}?collection=KN#library`}))}/></div>:null}
 
-   <section className="section shell compactCollectionSection" id="collections"><div className="sectionHead compactHead"><div><span className="sectionLabel">01</span><h2>{h.exploreTitle}</h2><p>{h.exploreLead}</p></div></div><div className="collectionGrid collectionBookGrid">{collections.map(c=><Link data-code={collectionDisplayCode(c.code,vi)} className={`collectionCard collectionBookCard ${c.accent}`} href={`/${locale}?collection=${c.code}#library`} key={c.code}><div className="collectionBookArt" style={{backgroundImage:`url(${coverByCollection[c.code]})`}}/><div className="collectionBookBody"><div className="collectionTop"><span className="collectionCode dualCode"><strong>{collectionDisplayCode(c.code,vi)}</strong>{vi&&<small>{c.code}</small>}</span><span className="collectionCount">{c.count}</span></div><div><h3>{h.collectionNames[c.code]||localCollection(c.code)}</h3><p className="pali">{c.pali}</p><p>{h.collectionDescs[c.code]||''}</p></div><span className="collectionExplore">{vi?'Khám phá':'Explore'} <ArrowRight size={16}/></span></div></Link>)}</div></section>
+   <section className="section shell compactCollectionSection" id="collections"><div className="sectionHead compactHead"><div><span className="sectionLabel">01</span><h2>{h.exploreTitle}</h2><p>{h.exploreLead}</p></div></div><div className="collectionGrid collectionBookGrid">{collections.map(c=><Link data-code={collectionDisplayCode(c.code,vi)} className={`collectionCard collectionBookCard ${c.accent}`} href={`/${locale}?collection=${c.code}#library`} key={c.code}><LocalizedBookArt image={coverByCollection[c.code]} title={h.collectionNames[c.code]||localCollection(c.code)} pali={c.pali} className="collectionBookArt" compact/><div className="collectionBookBody"><div className="collectionTop"><span className="collectionCode dualCode"><strong>{collectionDisplayCode(c.code,vi)}</strong>{vi&&<small>{c.code}</small>}</span><span className="collectionCount">{c.count}</span></div><div><h3>{h.collectionNames[c.code]||localCollection(c.code)}</h3><p className="pali">{c.pali}</p><p>{h.collectionDescs[c.code]||''}</p></div><span className="collectionExplore">{vi?'Khám phá':'Explore'} <ArrowRight size={16}/></span></div></Link>)}</div></section>
 
    <section className="section librarySection" id="library"><div className="shell"><div className="sectionHead"><div><span className="sectionLabel">02</span><h2>{h.searchTitle}</h2><p>{h.searchLead}</p></div></div><LibraryExplorer locale={locale} placeholder={d.search} initialCollection={initialCollection}/></div></section>
 
