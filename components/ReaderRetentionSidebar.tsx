@@ -3,9 +3,10 @@
 import {useEffect,useMemo,useState} from 'react';
 import Link from 'next/link';
 import {ArrowRight,BookOpen,Flame,Headphones,Sparkles} from 'lucide-react';
+import LocalizedBookArt from '@/components/LocalizedBookArt';
 
 type Item={slug:string;code:string;title:string;collection:string;hasAudio?:boolean};
-type Props={locale:string;currentSlug:string;collection:string;currentCode:string;currentTitle:string;coverUrl:string;translator?:string;recommended:Item[];next?:Item|null};
+type Props={locale:string;currentSlug:string;collection:string;currentCode:string;currentTitle:string;coverUrl:string;coverPali?:string;translator?:string;recommended:Item[];next?:Item|null};
 type StatsPage={name:string;count:number;title?:string};
 
 const labels:Record<string,{info:string,popular:string,recommended:string,next:string,translator:string,collection:string,read:string,views:string}>={
@@ -24,7 +25,7 @@ export default function ReaderRetentionSidebar(p:Props){
  useEffect(()=>{let alive=true;fetch('/api/stats?days=30').then(r=>r.ok?r.json():null).then(data=>{if(!alive||!data?.topPages)return;const rows=(data.topPages as StatsPage[]).filter(x=>x.name.includes('/library/')&&!x.name.endsWith('/'+p.currentSlug)).slice(0,4);setPopular(rows)}).catch(()=>{});return()=>{alive=false}},[p.currentSlug]);
  const popularItems=useMemo(()=>popular.map(row=>{const slug=row.name.split('/library/')[1]?.split(/[?#]/)[0]||'';return{...row,slug}}).filter(x=>x.slug),[popular]);
  return <aside className="readerRetention" aria-label={l.info}>
-   <section className="retentionBookCard"><img src={p.coverUrl} alt={`${p.collection} book cover`} className="retentionBookCover"/><div><span>{p.currentCode}</span><h3>{p.currentTitle}</h3><p><strong>{l.collection}:</strong> {p.collection}</p>{p.translator&&<p><strong>{l.translator}:</strong> {p.translator}</p>}</div></section>
+   <section className="retentionBookCard"><LocalizedBookArt image={p.coverUrl} title={p.collection} pali={p.coverPali} className="retentionBookCover" compact/><div><span>{p.currentCode}</span><h3>{p.currentTitle}</h3><p><strong>{l.collection}:</strong> {p.collection}</p>{p.translator&&<p><strong>{l.translator}:</strong> {p.translator}</p>}</div></section>
    {popularItems.length>0&&<section className="retentionCard"><h3><Flame size={18}/>{l.popular}</h3><div className="retentionList">{popularItems.map(x=><Link href={`/${p.locale}/library/${x.slug}`} key={x.slug}><span className="retentionRank">{x.count}</span><div><strong>{x.title||x.slug.replace(/-/g,' ').toUpperCase()}</strong><small>{x.count} {l.views}</small></div><ArrowRight size={16}/></Link>)}</div></section>}
    <section className="retentionCard"><h3><Sparkles size={18}/>{l.recommended}</h3><div className="retentionList">{p.recommended.slice(0,4).map(x=><Link href={`/${p.locale}/library/${x.slug}`} key={x.slug}><span className="retentionIcon"><BookOpen size={16}/></span><div><strong>{x.code} · {x.title}</strong><small>{x.collection}{x.hasAudio?' · audio':''}</small></div>{x.hasAudio&&<Headphones size={15}/>}<ArrowRight size={16}/></Link>)}</div></section>
    {p.next&&<section className="retentionNext"><span>{l.next}</span><strong>{p.next.code} · {p.next.title}</strong><Link href={`/${p.locale}/library/${p.next.slug}`}>{l.read}<ArrowRight size={16}/></Link></section>}

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastVerifiedAt": "2026-09-03T13:50:32+00:00",
+  "lastVerifiedAt": "2026-09-04T10:17:12+00:00",
   "collections": [
     {
       "collection": "DN",
@@ -11,7 +11,7 @@
       "pendingFullTextCount": 0,
       "audioCount": 34,
       "source": "SuttaCentral canonical tree + repository materialized corpus",
-      "lastVerifiedAt": "2026-09-03T13:50:32+00:00",
+      "lastVerifiedAt": "2026-09-04T10:17:12+00:00",
       "status": "complete"
     },
     {
@@ -23,7 +23,7 @@
       "pendingFullTextCount": 0,
       "audioCount": 152,
       "source": "SuttaCentral canonical tree + repository materialized corpus",
-      "lastVerifiedAt": "2026-09-03T13:50:32+00:00",
+      "lastVerifiedAt": "2026-09-04T10:17:12+00:00",
       "status": "complete"
     },
     {
@@ -35,7 +35,7 @@
       "pendingFullTextCount": 0,
       "audioCount": 0,
       "source": "SuttaCentral canonical tree + repository materialized corpus",
-      "lastVerifiedAt": "2026-09-03T13:50:32+00:00",
+      "lastVerifiedAt": "2026-09-04T10:17:12+00:00",
       "status": "complete"
     },
     {
@@ -47,7 +47,7 @@
       "pendingFullTextCount": 0,
       "audioCount": 0,
       "source": "SuttaCentral canonical tree + repository materialized corpus",
-      "lastVerifiedAt": "2026-09-03T13:50:32+00:00",
+      "lastVerifiedAt": "2026-09-04T10:17:12+00:00",
       "status": "complete"
     },
     {
@@ -59,7 +59,7 @@
       "pendingFullTextCount": 0,
       "audioCount": 0,
       "source": "SuttaCentral canonical tree + repository materialized corpus",
-      "lastVerifiedAt": "2026-09-03T13:50:32+00:00",
+      "lastVerifiedAt": "2026-09-04T10:17:12+00:00",
       "status": "complete"
     }
   ]

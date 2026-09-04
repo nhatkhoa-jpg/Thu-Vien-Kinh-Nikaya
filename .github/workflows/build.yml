@@ -101,13 +101,26 @@ jobs:
           curl --fail --silent "$MN21_URL" -o /tmp/mn21.html || { echo "FAIL reader canonicalRef=mn21 URL=${MN21_URL}"; exit 1; }
           must_have /tmp/mn21.html 'compactEssentials' 'compact reader essentials'
           must_not_have /tmp/mn21.html 'V5.1-HOME-DN' 'public reader has no internal build marker'
-          must_have /tmp/mn21.html '/media/audio/gemini/mn/mn21.mp3' 'preferred Gemini audio candidate'
-          must_have /tmp/mn21.html 'mn21.mp3' 'MN21 fallback MP3 candidate'
-          must_have /tmp/mn21.html 'mn21.manifest.json' 'MN21 preservation manifest URL'
+          must_have /tmp/mn21.html 'Google Cloud TTS · giọng đọc chất lượng cao' 'preferred Cloud TTS narration'
+          must_have /tmp/mn21.html 'mn-vi-cloud-audio-v1/mn21.mp3' 'MN21 Cloud TTS catalog URL'
+          must_not_have /tmp/mn21.html '/media/audio/gemini/mn/mn21.mp3' 'obsolete Gemini-first audio candidate removed'
           must_have /tmp/mn21.html 'Bản dịch' 'localized compact source label'
-          must_have components/R2AudioDisclosure.tsx "method:'HEAD'" 'runtime audio availability probing'
-          must_have components/R2AudioDisclosure.tsx "provider==='gemini'" 'Gemini quality preference'
+          must_have components/R2AudioDisclosure.tsx "method:'HEAD'" 'runtime fallback audio availability probing'
+          must_not_have components/R2AudioDisclosure.tsx "provider==='gemini'" 'obsolete Gemini provider preference removed'
           must_have components/BrowserReader.tsx 'speechSynthesis' 'browser speech fallback implementation'
+          must_have 'app/[locale]/library/[slug]/page.tsx' "audio?.provider==='Google Cloud Text-to-Speech'" 'catalog Cloud TTS priority contract'
+          must_not_have 'app/[locale]/library/[slug]/page.tsx' '/media/audio/gemini/' 'reader source has no Gemini-first probing'
+          node <<'NODE'
+          const fs=require('fs');
+          const src=fs.readFileSync('app/[locale]/library/[slug]/page.tsx','utf8');
+          const cloud=src.indexOf('{highQualityAudio&&');
+          const browser=src.indexOf('{plainText&&<BrowserReader');
+          const legacy=src.indexOf('{vi&&lowQualitySources.length>0&&<R2AudioDisclosure');
+          if(cloud<0||browser<0||legacy<0||!(cloud<browser&&browser<legacy)){
+            throw new Error(`audio priority order invalid: cloud=${cloud}, browser=${browser}, legacy=${legacy}`);
+          }
+          console.log('PASS: audio priority order Cloud TTS -> browser/device -> legacy MP3');
+          NODE
           if grep -Fq 'Giọng thư viện' /tmp/mn21.html; then echo 'FAIL: Legacy library TTS leaked into reader'; exit 1; fi
           echo 'PASS: no legacy library TTS'
 
@@ -123,4 +136,4 @@ jobs:
           echo 'PASS: runtime TTS route absent'
           curl -L --fail --silent --range 0-4095 'https://github.com/nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya/releases/download/mn-vi-audio-v1/mn21.mp3' -o /tmp/mn21.part
           if [ "$(stat -c%s /tmp/mn21.part)" -le 1000 ]; then echo 'FAIL: MN21 MP3 range fetch too small'; exit 1; fi
-          echo 'V5.1 public home/progress/hybrid-audio preservation smoke test PASS'
+          echo 'V5.1 public home/progress/cloud-first audio smoke test PASS'
