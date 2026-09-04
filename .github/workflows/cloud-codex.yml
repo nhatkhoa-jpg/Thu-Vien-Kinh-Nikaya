@@ -1,0 +1,190 @@
+name: "🤖 Trọc Cloud Codex"
+
+on:
+  workflow_dispatch:
+    inputs:
+      task:
+        description: "Việc cần AI thực hiện trong repo"
+        required: true
+        type: string
+      model:
+        description: "Gemini model"
+        required: true
+        default: "gemini-3.7-flash"
+        type: choice
+        options:
+          - "gemini-3.7-flash"
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: cloud-codex-${{ github.repository }}-${{ github.event.issue.number || github.run_id }}
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  cloud-codex:
+    # workflow_dispatch is limited to collaborators; issue mode is additionally owner-only.
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'issues' && github.actor == github.repository_owner && startsWith(github.event.issue.title, '[AI JOB]'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install Gemini CLI
+        run: |
+          npm install --global @google/gemini-cli@latest
+          gemini --version
+
+      - name: Resolve task and model
+        id: task
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          DISPATCH_TASK: ${{ inputs.task }}
+          DISPATCH_MODEL: ${{ inputs.model }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: |
+          set -euo pipefail
+          if [[ "$EVENT_NAME" == "workflow_dispatch" ]]; then
+            printf '%s\n' "$DISPATCH_TASK" > "$RUNNER_TEMP/task.txt"
+            MODEL="${DISPATCH_MODEL:-gemini-3.7-flash}"
+          else
+            {
+              printf '%s\n\n' "$ISSUE_TITLE"
+              printf '%s\n' "$ISSUE_BODY"
+            } > "$RUNNER_TEMP/task.txt"
+            MODEL="gemini-3.7-flash"
+          fi
+          echo "model=$MODEL" >> "$GITHUB_OUTPUT"
+
+      - name: Validate Gemini credential
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          if [[ -z "${GEMINI_API_KEY:-}" ]]; then
+            echo "::error::Missing repository secret GEMINI_API_KEY"
+            exit 1
+          fi
+
+      - name: Notify issue that job started
+        if: github.event_name == 'issues'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue comment "${{ github.event.issue.number }}" --body "🤖 **Trọc Cloud Codex đã nhận việc.** Máy cloud GitHub đang xử lý. Run: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+
+      - name: Build agent prompt
+        run: |
+          cat > "$RUNNER_TEMP/cloud-codex-prompt.txt" <<'PROMPT_HEAD'
+          You are Trọc Cloud Codex, an autonomous software-engineering agent running on an ephemeral GitHub-hosted Ubuntu VM.
+
+          Complete the owner's task in the CURRENT repository. Make real code/content changes when the task asks for them; do not merely explain what should be changed.
+
+          Operating rules:
+          1. Work only inside the checked-out repository and /tmp. Never modify the runner OS outside what is needed to install/build/test project dependencies.
+          2. Read repository instructions first (AGENTS.md, GEMINI.md, README, package/build files, and relevant docs).
+          3. Do NOT read, print, search for, or expose secrets/credentials. Do NOT modify secret files or credential values.
+          4. Do NOT edit production deployment/hosting workflows, release credentials, or ops lanes unless the task explicitly requests that exact change.
+          5. Do NOT run git push, gh auth, merge, force-push, or publish a production release. A separate trusted workflow step creates the PR after you finish.
+          6. You MAY inspect files, edit/create/delete repository files, install normal project dependencies, and run build/test/lint/typecheck commands.
+          7. Iterate: inspect -> implement -> build/test -> diagnose failures -> fix -> retest. Do not stop after the first error if it is reasonably fixable.
+          8. Preserve unrelated work. Avoid broad rewrites when a targeted change is enough.
+          9. Before finishing, inspect git diff/status and make sure the requested result is coherent. If a test cannot pass because of an external dependency, explain that clearly in your final response.
+          10. Do not commit; leave all final changes in the working tree for the PR step.
+
+          OWNER TASK:
+          PROMPT_HEAD
+          cat "$RUNNER_TEMP/task.txt" >> "$RUNNER_TEMP/cloud-codex-prompt.txt"
+
+      - name: Run autonomous Gemini coding agent
+        id: gemini
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_CLI_TRUST_WORKSPACE: "true"
+          MODEL: ${{ steps.task.outputs.model }}
+        run: |
+          set +e
+          timeout --signal=INT 5h gemini \
+            --model "$MODEL" \
+            --approval-mode=yolo \
+            --output-format text \
+            --prompt "$(cat "$RUNNER_TEMP/cloud-codex-prompt.txt")" \
+            2>&1 | tee "$RUNNER_TEMP/cloud-codex.log"
+          GEMINI_EXIT=${PIPESTATUS[0]}
+          set -e
+          echo "exit_code=$GEMINI_EXIT" >> "$GITHUB_OUTPUT"
+          # Preserve partial useful edits even if the model hits a rate/turn/time limit.
+          exit 0
+
+      - name: Remove transient Gemini state
+        if: always()
+        run: |
+          rm -rf .gemini
+
+      - name: Show final diff
+        if: always()
+        run: |
+          git status --short
+          git diff --stat || true
+
+      - name: Upload agent log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cloud-codex-log-${{ github.run_id }}
+          path: ${{ runner.temp }}/cloud-codex.log
+          if-no-files-found: ignore
+          retention-days: 7
+
+      - name: Create pull request from agent changes
+        id: cpr
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ github.token }}
+          commit-message: "ai: cloud codex job ${{ github.run_id }}"
+          branch: "ai/cloud-codex-${{ github.run_id }}"
+          delete-branch: true
+          title: "🤖 Cloud Codex job ${{ github.run_id }}"
+          body: |
+            Automated by **Trọc Cloud Codex** using `${{ steps.task.outputs.model }}` on a GitHub-hosted runner.
+
+            Agent exit code: `${{ steps.gemini.outputs.exit_code }}`
+
+            Source run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+            Review the diff and CI before merging.
+
+      - name: Report result back to issue
+        if: always() && github.event_name == 'issues'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_URL: ${{ steps.cpr.outputs.pull-request-url }}
+          AGENT_EXIT: ${{ steps.gemini.outputs.exit_code }}
+        run: |
+          if [[ -n "${PR_URL:-}" ]]; then
+            MSG="✅ Cloud Codex đã hoàn thành và tạo PR: ${PR_URL} (agent exit ${AGENT_EXIT:-unknown})."
+          else
+            MSG="ℹ️ Cloud Codex đã kết thúc nhưng không có thay đổi code để tạo PR. Xem log: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          fi
+          gh issue comment "${{ github.event.issue.number }}" --body "$MSG"
