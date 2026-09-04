@@ -111,9 +111,13 @@ def is_quota_error(exc: Exception) -> bool:
 
 def render(ref: str, entry: dict, out_dir: Path) -> dict:
     from google import genai
-    key = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
+    key = (
+        os.environ.get("GEMINI_API_KEY_NIKAYA")
+        or os.environ.get("GEMINI_API_KEY")
+        or os.environ.get("GOOGLE_API_KEY")
+    )
     if not key:
-        raise RuntimeError("Missing GEMINI_API_KEY/GOOGLE_API_KEY")
+        raise RuntimeError("Missing GEMINI_API_KEY_NIKAYA/GEMINI_API_KEY/GOOGLE_API_KEY")
 
     text = scripture_text(entry)
     pieces = chunks(text)
