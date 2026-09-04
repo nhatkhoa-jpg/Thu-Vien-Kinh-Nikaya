@@ -4,7 +4,7 @@ import Link from 'next/link';
 import {ArrowLeft,Download,ExternalLink,Headphones,Clock,ArrowRight,FileText,ChevronDown,Languages} from 'lucide-react';
 import {dict,isDeferredLocale,isLocale,scriptureLocales,type Locale} from '@/lib/i18n';
 import {publicUi} from '@/lib/public-ui';
-import {suttas,collectionDisplayCode,suttaDisplayCode,suttaAudio} from '@/lib/data';
+import {collections,suttas,collectionDisplayCode,suttaDisplayCode,suttaAudio} from '@/lib/data';
 import {getSuttaFullText} from '@/lib/sutta-content';
 import {SITE_URL} from '@/lib/site';
 import AudioPlayer from '@/components/AudioPlayer';
@@ -16,6 +16,7 @@ import PdfDownloadButton from '@/components/PdfDownloadButton';
 import ReaderQuickJump from '@/components/ReaderQuickJump';
 import PassageCollector from '@/components/PassageCollector';
 import ReaderRetentionSidebar from '@/components/ReaderRetentionSidebar';
+import LocalizedBookArt from '@/components/LocalizedBookArt';
 
 export const revalidate=86400;
 
@@ -31,13 +32,14 @@ export async function generateMetadata({params}:{params:Promise<{locale:string;s
 export default async function SuttaPage({params}:{params:Promise<{locale:string;slug:string}>}){
   const {locale:raw,slug}=await params;if(!isLocale(raw))notFound();
   const locale=raw as Locale;const d=dict(locale);const u=publicUi(locale);const s=suttas.find(x=>x.slug===slug);if(!s)notFound();
-  const vi=locale==='vi';const displayCode=suttaDisplayCode(s,vi);const displayCollection=collectionDisplayCode(s.collection,vi);
+  const vi=locale==='vi';const displayCode=suttaDisplayCode(s,vi);const displayCollection=collectionDisplayCode(s.collection,vi);const collectionInfo=collections.find(c=>c.code===s.collection);
   const sameCollection=suttas.filter(x=>x.collection===s.collection);const currentIndex=sameCollection.findIndex(x=>x.slug===s.slug);const nextSutta=currentIndex>=0?sameCollection[currentIndex+1]||null:null;
   const related=sameCollection.filter(x=>x.slug!==s.slug).slice(Math.max(0,currentIndex-1),Math.max(0,currentIndex-1)+4);const audio=suttaAudio(s,locale);
   const recommended=suttas.filter(x=>x.slug!==s.slug&&(x.featured||x.collection===s.collection)).slice(0,4).map(x=>({slug:x.slug,code:suttaDisplayCode(x,vi),title:cleanPublicTitle(vi?x.vi:x.en),collection:collectionDisplayCode(x.collection,vi),hasAudio:Boolean(suttaAudio(x,locale))}));
   const nextItem=nextSutta?{slug:nextSutta.slug,code:suttaDisplayCode(nextSutta,vi),title:cleanPublicTitle(vi?nextSutta.vi:nextSutta.en),collection:collectionDisplayCode(nextSutta.collection,vi),hasAudio:Boolean(suttaAudio(nextSutta,locale))}:null;
   const canonicalKey=s.canonicalRef.toLowerCase();const collectionKey=s.collection.toLowerCase();const coverUrl=`/visuals/nikaya/${collectionKey}-book.svg`;
-  const r2AudioSources=vi?[{src:`/media/audio/gemini/${collectionKey}/${canonicalKey}.mp3`,label:'Gemini · giọng đọc chất lượng cao',provider:'gemini' as const},{src:`/media/audio/${collectionKey}/${canonicalKey}.mp3`,label:'MP3 thư viện · dự phòng',provider:'local' as const},...(audio?[{src:audio.url,label:'MP3 thư viện · dự phòng',provider:'local' as const,downloadUrl:audio.downloadUrl,manifestUrl:audio.manifestUrl,trustedFallback:true}]:[])]:[];
+  const highQualityAudio=vi&&audio?.provider==='Google Cloud Text-to-Speech'?audio:null;
+  const lowQualitySources=vi?[{src:`/media/audio/${collectionKey}/${canonicalKey}.mp3`,label:'Bản MP3 cũ · chất lượng dự phòng',provider:'local' as const},...(audio&&audio.provider!=='Google Cloud Text-to-Speech'?[{src:audio.url,label:'Bản MP3 thư viện · chất lượng dự phòng',provider:'local' as const,downloadUrl:audio.downloadUrl,manifestUrl:audio.manifestUrl}]:[])]:[];
   const fullText=await getSuttaFullText(s.canonicalRef,locale);
   const fallbackToEnglish=Boolean(fullText&&locale!=='en'&&fullText.language==='en');
   const title=cleanPublicTitle((!fallbackToEnglish&&fullText?.title?.trim())|| (vi?s.vi:s.en));
@@ -53,15 +55,17 @@ export default async function SuttaPage({params}:{params:Promise<{locale:string;
     <ReaderQuickJump locale={locale} currentSlug={slug}/>
     <div className="readerLayout">
       <article className="readerMain">
-        <div className="readerBookHero" aria-hidden="true"><img src={coverUrl} alt=""/></div>
+        <LocalizedBookArt image={coverUrl} title={displayCollection} pali={collectionInfo?.pali} className="readerBookHero" compact/>
         <div className="readerTitleMeta"><span className="readerCode dualCode"><strong>{displayCode}</strong>{vi&&<small>{s.code}</small>}</span>{readMinutes&&<span><Clock size={14}/>{estimated?'~':''}{readMinutes} {u.minutes}</span>}{audio&&<span><Headphones size={14}/>{u.mp3Available}</span>}</div>
         <h1>{title}</h1><p className="readerPali">{s.pali}</p><ReaderProgress id={`${locale}:${s.slug}`} locale={locale}/>
 
         {fallbackToEnglish&&<div className="contentFallbackNotice" role="note"><Languages size={18}/><div><strong>{u.fallbackTitle}</strong><p>{u.fallbackBody}</p></div></div>}
 
         <section className="readerEssentials compactEssentials" aria-label={u.listenDownload}>
-          {vi&&r2AudioSources.length>0?<R2AudioDisclosure sources={r2AudioSources} storageKey={`${locale}:${s.slug}`} sourceUrl={sourceUrl} vi={vi}/>:audio&&<details className="essentialDisclosure mp3Disclosure primaryMp3Disclosure" id="mp3"><summary title={u.listenLabel}><span className="miniActionIcon"><Headphones size={17}/></span><span><strong>{u.listenLabel}</strong><small>{u.listenSub}</small></span><ChevronDown size={15} className="disclosureChevron"/></summary><div className="disclosureBody"><AudioPlayer src={audio.url} segments={audio.segments} manifestUrl={audio.manifestUrl} storageKey={`${locale}:${s.slug}`}/><div className="mp3Links"><a className="downloadLink" href={audio.downloadUrl||audio.url} target="_blank" rel="noreferrer"><Download size={16}/>{u.openDownloadMp3}</a>{audio.sourceUrl&&<a className="audioSource" href={audio.sourceUrl} target="_blank" rel="noreferrer">{u.textSource}<ExternalLink size={13}/></a>}</div></div></details>}
+          {highQualityAudio&&<details className="essentialDisclosure mp3Disclosure primaryMp3Disclosure" id="mp3-cloud"><summary title="Google Cloud TTS · giọng đọc chất lượng cao"><span className="miniActionIcon"><Headphones size={17}/></span><span><strong>Nghe bài kinh</strong><small>Google Cloud TTS · giọng đọc chất lượng cao</small></span><ChevronDown size={15} className="disclosureChevron"/></summary><div className="disclosureBody"><AudioPlayer src={highQualityAudio.url} segments={highQualityAudio.segments} manifestUrl={highQualityAudio.manifestUrl} storageKey={`${locale}:${s.slug}:cloud`} title={`${displayCode} · ${title}`}/><div className="mp3Links"><a className="downloadLink" href={highQualityAudio.downloadUrl||highQualityAudio.url} target="_blank" rel="noreferrer"><Download size={16}/>{u.openDownloadMp3}</a>{highQualityAudio.sourceUrl&&<a className="audioSource" href={highQualityAudio.sourceUrl} target="_blank" rel="noreferrer">{u.textSource}<ExternalLink size={13}/></a>}</div></div></details>}
           {plainText&&<BrowserReader text={plainText} locale={fallbackToEnglish?'en':locale}/>} 
+          {vi&&lowQualitySources.length>0&&<R2AudioDisclosure sources={lowQualitySources} storageKey={`${locale}:${s.slug}`} sourceUrl={sourceUrl} vi={vi}/>} 
+          {!vi&&audio&&<details className="essentialDisclosure mp3Disclosure primaryMp3Disclosure" id="mp3"><summary title={u.listenLabel}><span className="miniActionIcon"><Headphones size={17}/></span><span><strong>{u.listenLabel}</strong><small>{u.listenSub}</small></span><ChevronDown size={15} className="disclosureChevron"/></summary><div className="disclosureBody"><AudioPlayer src={audio.url} segments={audio.segments} manifestUrl={audio.manifestUrl} storageKey={`${locale}:${s.slug}`} title={`${displayCode} · ${title}`}/><div className="mp3Links"><a className="downloadLink" href={audio.downloadUrl||audio.url} target="_blank" rel="noreferrer"><Download size={16}/>{u.openDownloadMp3}</a>{audio.sourceUrl&&<a className="audioSource" href={audio.sourceUrl} target="_blank" rel="noreferrer">{u.textSource}<ExternalLink size={13}/></a>}</div></div></details>}
           {paragraphs.length>0&&<details className="essentialDisclosure pdfDisclosure" id="pdf"><summary title={u.pdfGenerate}><span className="miniActionIcon"><FileText size={17}/></span><span><strong>PDF</strong><small>{u.pdfGenerated}</small></span><ChevronDown size={15} className="disclosureChevron"/></summary><div className="disclosureBody"><PdfDownloadButton code={displayCode} title={title} pali={s.pali} summary={summary} paragraphs={paragraphs} sourceLabel={sourceLabel} sourceUrl={sourceUrl} locale={fallbackToEnglish?'en':locale}/></div></details>}
         </section>
 
@@ -72,7 +76,7 @@ export default async function SuttaPage({params}:{params:Promise<{locale:string;
           <section className="sourceReading compactSource"><div><span className="textSectionLabel">{u.source}</span><p>{fullText?<><strong>{u.translation}:</strong> {sourceAuthor||fullText.author} <span aria-hidden="true">·</span> <a className="sourceInlineLink" href={sourceUrl} target="_blank" rel="noreferrer">{u.verifySource} <ExternalLink size={13}/></a></>:<><strong>{u.source}:</strong> {s.licenseShort} <span aria-hidden="true">·</span> <a className="sourceInlineLink" href={sourceUrl} target="_blank" rel="noreferrer">SuttaCentral <ExternalLink size={13}/></a></>}</p></div></section>
         </div>
       </article>
-      <div className="readerSide">{s.youtubeId&&<section className="sideCard"><h3>{d.relatedVideo}</h3><YouTubeEmbed videoId={s.youtubeId} title={`${displayCode} ${title}`}/></section>}<ReaderRetentionSidebar locale={locale} currentSlug={slug} collection={displayCollection} currentCode={displayCode} currentTitle={title} coverUrl={coverUrl} translator={sourceAuthor||undefined} recommended={recommended} next={nextItem}/></div>
+      <div className="readerSide">{s.youtubeId&&<section className="sideCard"><h3>{d.relatedVideo}</h3><YouTubeEmbed videoId={s.youtubeId} title={`${displayCode} ${title}`}/></section>}<ReaderRetentionSidebar locale={locale} currentSlug={slug} collection={displayCollection} currentCode={displayCode} currentTitle={title} coverUrl={coverUrl} coverPali={collectionInfo?.pali} translator={sourceAuthor||undefined} recommended={recommended} next={nextItem}/></div>
     </div>
     {related.length>0&&<section className="relatedSection"><div className="sectionHead"><div><h2>{u.moreCollection}</h2></div></div><div className="relatedGrid">{related.map(r=><Link href={`/${locale}/library/${r.slug}`} key={r.slug}><span>{suttaDisplayCode(r,vi)}</span><strong>{cleanPublicTitle(vi?r.vi:r.en)}</strong><ArrowRight size={17}/></Link>)}</div></section>}
   </div></main>;
