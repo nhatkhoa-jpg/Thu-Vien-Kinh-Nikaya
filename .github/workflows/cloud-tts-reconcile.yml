@@ -1,0 +1,105 @@
+name: Reconcile Google Cloud TTS Checkpoints
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows:
+      - Progressive Google Cloud TTS
+    types:
+      - completed
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/cloud-tts-reconcile.yml
+      - scripts/reconcile_cloud_tts_release.py
+  schedule:
+    - cron: "47 */2 * * *"
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: reconcile-google-cloud-tts-checkpoints
+  cancel-in-progress: false
+
+env:
+  RELEASE_TAG: mn-vi-cloud-audio-v1
+
+jobs:
+  reconcile:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.head_branch == 'main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Download release metadata and receipts
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          gh release view "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" >/dev/null
+          gh api "repos/$GITHUB_REPOSITORY/releases/tags/$RELEASE_TAG" > /tmp/cloud-tts-release.json
+          rm -rf /tmp/cloud-tts-receipts
+          mkdir -p /tmp/cloud-tts-receipts
+          gh release download "$RELEASE_TAG" \
+            --repo "$GITHUB_REPOSITORY" \
+            --pattern '*.json' \
+            --dir /tmp/cloud-tts-receipts \
+            --clobber
+
+      - name: Reconcile durable checkpoints with quota and public catalog
+        id: reconcile
+        run: |
+          set -euo pipefail
+          python3 scripts/reconcile_cloud_tts_release.py \
+            --release-json /tmp/cloud-tts-release.json \
+            --receipts-dir /tmp/cloud-tts-receipts \
+            --usage data/audio/cloud-tts-usage.json \
+            --sutta-catalog data/catalog/suttas.json \
+            --audio-catalog data/catalog/audio.json \
+            --repository "$GITHUB_REPOSITORY" \
+            --release-tag "$RELEASE_TAG" | tee /tmp/cloud-tts-reconcile-result.json
+
+          git add data/audio/cloud-tts-usage.json data/catalog/audio.json
+          if git diff --cached --quiet; then
+            echo 'changed=false' >> "$GITHUB_OUTPUT"
+          else
+            echo 'changed=true' >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit reconciled ledger and catalog
+        if: steps.reconcile.outputs.changed == 'true'
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'audio: reconcile durable Google Cloud TTS checkpoints [skip ci]'
+          git pull --rebase origin main
+          git push origin HEAD:main
+
+      - name: Publish repaired audio catalog to production
+        if: steps.reconcile.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          gh workflow run cloudflare-production.yml \
+            --repo "$GITHUB_REPOSITORY" \
+            --ref main \
+            -f reason='Reconciled durable Google Cloud TTS checkpoints'
+
+      - name: Summary
+        if: always()
+        run: |
+          echo '### Google Cloud TTS checkpoint reconciliation' >> "$GITHUB_STEP_SUMMARY"
+          if [ -s /tmp/cloud-tts-reconcile-result.json ]; then
+            cat /tmp/cloud-tts-reconcile-result.json >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo 'Reconciliation did not produce a result payload.' >> "$GITHUB_STEP_SUMMARY"
+          fi
