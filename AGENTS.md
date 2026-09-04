@@ -2,8 +2,8 @@
 
 ## Mandatory startup
 Before making any change, read `docs/WORK_DIRECTIVE.md`, `docs/CURRENT_STATE.md`,
-`PROJECT_STATE.md`, `README.md`, and `data/README.md`. Trust current `main`, CI,
-and machine-readable status over stale prose.
+`PROJECT_STATE.md`, `README.md`, `data/README.md`, and `GEMINI_KEY_ROUTING.md`.
+Trust current `main`, CI, and machine-readable status over stale prose.
 
 ## Product rules
 - The Vietnamese product name is `5 Đại Tạng Kinh Nikāya`.
@@ -19,6 +19,12 @@ and machine-readable status over stale prose.
 - Do not reintroduce browser neural/WASM TTS or server runtime TTS as the main listening architecture.
 - PDFs presented as the library's PDF must be generated from the library's current content, not linked from third-party PDF files.
 - YouTube is contextual supplementary media, not a homepage feed.
+
+## Gemini / API routing
+- Primary Gemini role for this repository is `GEMINI_API_KEY_NIKAYA` as documented in `GEMINI_KEY_ROUTING.md`.
+- Never expose a Gemini key to browser JavaScript/client bundles. Gemini calls must run through a trusted server/backend/worker.
+- Reserve keys are manual reserve capacity only; do not auto-switch on 429/quota.
+- GitHub Actions secrets do not automatically become Vercel runtime environment variables; deployed backends must receive the assigned secret through their own environment/secret configuration.
 
 ## Data rules
 - `data/catalog/*.json` is canonical metadata.
