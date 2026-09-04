@@ -1,0 +1,34 @@
+name: Probe Groq Free Tier
+on:
+  push:
+    branches: [ops/secret-audit]
+    paths: ['.github/workflows/probe-groq-free.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify Groq gpt-oss-20b
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "$GROQ_API_KEY"
+          code=$(curl -sS --max-time 30 -o /tmp/groq.json -w '%{http_code}' \
+            -H "Authorization: Bearer $GROQ_API_KEY" \
+            -H 'content-type: application/json' \
+            -X POST 'https://api.groq.com/openai/v1/chat/completions' \
+            -d '{"model":"openai/gpt-oss-20b","messages":[{"role":"user","content":"Return only JSON: {\"ok\":true,\"provider\":\"groq\"}"}],"reasoning_effort":"low","response_format":{"type":"json_object"},"temperature":0.1}')
+          python3 - "$code" <<'PY'
+          import json,sys
+          code=sys.argv[1]
+          d=json.load(open('/tmp/groq.json',encoding='utf-8'))
+          text=((d.get('choices') or [{}])[0].get('message') or {}).get('content','')
+          print('HTTP=',code,'MODEL=',d.get('model'),'TEXT=',text[:200])
+          if code!='200' or '"ok"' not in text:
+              print('ERROR=',(d.get('error') or {}).get('message',''))
+              raise SystemExit(1)
+          PY
