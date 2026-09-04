@@ -18,37 +18,42 @@ All seven projects are intended to remain Free Tier unless the owner explicitly 
 
 ## Current repository routing
 
-- `nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya` -> primary `GEMINI_API_KEY_NIKAYA`.
+- `nhatkhoa-jpg/Thu-Vien-Kinh-Nikaya` -> primary `GEMINI_API_KEY_NIKAYA` for Gemini Developer API work. Google Cloud Text-to-Speech remains a separate product/credential and must not be replaced by the Gemini key.
 - `nhatkhoa-jpg/TROC-TTS-Gemini-Cloud` -> primary `GEMINI_API_KEY_CLOUD`.
-- `nhatkhoa-jpg/TR-C-Gemini-TTS-Music-Gen-` -> primary `GEMINI_API_KEY_DEV` while this remains experimental/development workload. Reassign explicitly when promoted to production.
-- `nhatkhoa-jpg/TrocAutoStudio` -> **never embed a Gemini key in the Android APK**. Local/mobile code must call a trusted backend/proxy. Backend/CI experiments may use `GEMINI_API_KEY_DEV`; YouTube-specific backend work may use `GEMINI_API_KEY_YOUTUBE` server-side only.
-- `nhatkhoa-jpg/TrocAutoStudio-Releases` -> release-artifact repository; no Gemini runtime use.
+- `nhatkhoa-jpg/TR-C-Gemini-TTS-Music-Gen-` -> primary `GEMINI_API_KEY_DEV` while experimental/development workload.
+- `nhatkhoa-jpg/TrocAutoStudio` -> never embed a centrally managed Gemini key in the Android APK. Centrally managed Gemini access must go through a trusted backend/proxy.
+- `nhatkhoa-jpg/TrocAutoStudio-Releases` -> release artifacts plus Oracle A1/GCP infrastructure control. Release artifacts use no Gemini key; server-side infrastructure Gemini work uses `GEMINI_API_KEY_CLOUD`.
 - YouTube Command Center / YouTube automation backends -> `GEMINI_API_KEY_YOUTUBE`.
 - Facebook / Social Command Center backends -> `GEMINI_API_KEY_FACEBOOK`.
 
+## Nikaya migration state
+
+- `scripts/gemini_github_tts.py` prefers `GEMINI_API_KEY_NIKAYA` and keeps generic names only as legacy compatibility fallbacks.
+- Main reader/audio workflows currently using Piper or Google Cloud Text-to-Speech are intentionally not changed to Gemini credentials.
+- The shared cloud coding/autopilot worker lives in `TROC-TTS-Gemini-Cloud`, so its credential is CLOUD even when its target repository is Nikaya.
+
 ## Mandatory runtime rules
 
-1. Use only the assigned role secret for the workload. Do not pick a different key merely because it exists in the repository.
+1. Use only the assigned role secret for the workload.
 2. Never round-robin project keys to bypass Gemini quotas or provider rate limits.
-3. `RESERVE_01` and `RESERVE_02` are **manual reserve capacity** for a new project, credential incident, or deliberate workload reassignment. A 429/quota response alone is not permission to auto-switch to reserve.
+3. `RESERVE_01` and `RESERVE_02` are manual reserve capacity for new projects, credential incidents, or deliberate workload reassignment. A 429 alone is not permission to auto-switch.
 4. Handle 429 with Retry-After/exponential backoff and preserve job state.
-5. Never auto-failover from Free Tier to Paid Tier.
-6. Do not expose any Gemini credential to browser JavaScript, static HTML, React client bundles, Android resources, `BuildConfig`, APK assets, logs, telemetry, or user-visible error messages.
-7. GitHub Actions secrets exist only inside authorized workflow jobs. They do **not** automatically become Vercel/Oracle/Cloudflare runtime environment variables. Each deployed backend must receive its assigned secret through that platform's own secret/environment system.
-8. Prefer a backend/gateway for mobile/web clients. The backend reads the secret; the client receives only application data.
-9. When adding a new project, record its routing here before using Gemini.
+5. Never auto-failover Free Tier traffic to Paid Tier.
+6. Do not expose centrally managed Gemini credentials to browser JavaScript, static HTML, React client bundles, Android resources, `BuildConfig`, APK assets, logs, telemetry, or user-visible errors.
+7. GitHub Actions secrets do not automatically become Vercel/Oracle/Cloudflare runtime variables. Each trusted backend must receive its assigned secret through that platform/deployment path.
+8. When adding a new project, record its routing here before using Gemini.
 
 ## GitHub Actions mapping pattern
 
-For a server-side/CI job only, map the role-specific secret to the generic runtime name expected by the code:
+For server-side/CI Gemini work in this repository:
 
 ```yaml
 env:
   GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY_NIKAYA }}
 ```
 
-Use the correct role secret for that repository/workload. Never commit a literal key.
+Never commit a literal key.
 
 ## Handoff rule
 
-Any ChatGPT/Codex/Gemini agent taking over a Trọc project must read this file plus the repository `AGENTS.md` before changing Gemini/API integrations. If runtime wiring is missing, add it server-side without exposing the key to clients.
+Any ChatGPT/Codex/Gemini agent taking over a Trọc project must read this file plus the repository `AGENTS.md` before changing Gemini/API integrations.
