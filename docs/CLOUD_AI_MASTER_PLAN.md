@@ -1,7 +1,7 @@
 # Cloud AI Master Plan & Project Status
 
 *Last updated: September 5, 2026*
-*Active branch: work/cloud-ai-nikaya-auto-33933538904*
+*Active branch: work/cloud-ai-nikaya-auto-33949919417*
 *Project: Thu-Vien-Kinh-Nikaya (v2.0.0-mn-stage)*
 
 ## 1. Project Overview & Core Mandates
@@ -18,8 +18,9 @@
 - [x] DN corpus 34/34 complete.
 - [x] 8 public locales verified in smoke tests.
 - [x] Audio priority ordering (Cloud TTS / catalog narration -> browser speech -> local MP3 fallback).
-- [x] Stale smoke test assertion updates (aligning Playwright smoke expectations with current Cloud TTS / audio provider contracts rather than obsolete Gemini-first probing).
+- [x] Stale smoke test assertion updates (aligning expectations with current Cloud TTS / audio provider contracts rather than obsolete Gemini-first probing).
 - [x] Localized book artwork and clean mobile/desktop UX.
+- [x] Validated build and prebuild content registries successfully.
 
 ## 3. Current Priorities & Next Steps
 - [ ] Maintain green build, typecheck, and validation suites across all collections.
