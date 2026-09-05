@@ -98,7 +98,8 @@ if(!scriptureText.includes('Mong rằng'))throw new Error('MN21 Vietnamese graph
 await page.locator('details.primaryMp3Disclosure summary').click();
 if(!await page.locator('audio').isVisible())throw new Error('MP3 player missing');
 if(await page.locator('.rateGroup button').count()!==6)throw new Error('Playback speeds missing');
-if(!(await page.locator('body').innerHTML()).includes('mn21.manifest.json'))throw new Error('Segmented manifest fallback missing');
+const primaryAudioSrc=await page.locator('details.primaryMp3Disclosure audio').getAttribute('src');
+if(!primaryAudioSrc||!primaryAudioSrc.includes('/mn-vi-cloud-audio-v1/mn21.mp3'))throw new Error(`Google Cloud TTS primary MP3 missing: ${primaryAudioSrc||'no src'}`);
 if(!await page.locator('details.pdfDisclosure summary').isVisible())throw new Error('PDF control missing');
 if(!await page.locator('.readerToolbar.compactReaderToolbar').count())throw new Error('Reader progress/tools missing');
 if(!await page.getByRole('button',{name:'Lưu vị trí'}).count())throw new Error('Reader save-position control missing');
