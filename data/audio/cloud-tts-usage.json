@@ -11,22 +11,22 @@
     "chirp3-hd": {
       "freeTierCharacters": 1000000,
       "projectSafetyLimitCharacters": 900000,
-      "usedCharacters": 247065,
-      "remainingProjectSafeCharacters": 652935,
+      "usedCharacters": 270557,
+      "remainingProjectSafeCharacters": 629443,
       "status": "SAFE"
     },
     "neural2": {
       "freeTierCharacters": 1000000,
       "projectSafetyLimitCharacters": 900000,
-      "usedCharacters": 250269,
-      "remainingProjectSafeCharacters": 649731,
+      "usedCharacters": 262913,
+      "remainingProjectSafeCharacters": 637087,
       "status": "SAFE"
     },
     "wavenet": {
       "freeTierCharacters": 4000000,
       "projectSafetyLimitCharacters": 3600000,
-      "usedCharacters": 992312,
-      "remainingProjectSafeCharacters": 2607688,
+      "usedCharacters": 1042361,
+      "remainingProjectSafeCharacters": 2557639,
       "status": "SAFE"
     }
   },
@@ -1098,6 +1098,66 @@
       ],
       "model": "wavenet",
       "workflowRun": "33971840807",
+      "result": "success"
+    },
+    {
+      "date": "2026-09-05",
+      "purpose": "progressive final-quality scripture audio",
+      "canonicalRef": "mn89",
+      "charactersPerVoice": 13382,
+      "voices": [
+        "vi-VN-Wavenet-A"
+      ],
+      "model": "wavenet",
+      "workflowRun": "33977942381",
+      "result": "success"
+    },
+    {
+      "date": "2026-09-05",
+      "purpose": "progressive final-quality scripture audio",
+      "canonicalRef": "mn90",
+      "charactersPerVoice": 14856,
+      "voices": [
+        "vi-VN-Wavenet-A"
+      ],
+      "model": "wavenet",
+      "workflowRun": "33977942381",
+      "result": "success"
+    },
+    {
+      "date": "2026-09-05",
+      "purpose": "progressive final-quality scripture audio",
+      "canonicalRef": "mn91",
+      "charactersPerVoice": 23492,
+      "voices": [
+        "vi-VN-Chirp3-HD-Aoede"
+      ],
+      "model": "chirp3-hd",
+      "workflowRun": "33977942381",
+      "result": "success"
+    },
+    {
+      "date": "2026-09-05",
+      "purpose": "progressive final-quality scripture audio",
+      "canonicalRef": "mn92",
+      "charactersPerVoice": 12644,
+      "voices": [
+        "vi-VN-Neural2-A"
+      ],
+      "model": "neural2",
+      "workflowRun": "33977942381",
+      "result": "success"
+    },
+    {
+      "date": "2026-09-05",
+      "purpose": "progressive final-quality scripture audio",
+      "canonicalRef": "mn93",
+      "charactersPerVoice": 21811,
+      "voices": [
+        "vi-VN-Wavenet-A"
+      ],
+      "model": "wavenet",
+      "workflowRun": "33977942381",
       "result": "success"
     }
   ]
